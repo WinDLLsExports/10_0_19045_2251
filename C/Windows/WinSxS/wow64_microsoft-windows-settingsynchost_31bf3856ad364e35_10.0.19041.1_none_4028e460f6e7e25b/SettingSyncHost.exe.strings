@@ -1,0 +1,4098 @@
+         set BuildLabEx=%%k
+         set EditionId=%%k
+        )
+        copy /Y %SystemRoot%\System32\winevt\Logs\%1 %2
+        echo Logs in %caboutputpath%\%cabouput%
+        move /y "%fileoutputpath%\%cabouput%" "%caboutputpath%\." 2>&1>NUL
+        rd /s /q "%fileoutputpath%"
+        Set BuildArch=woa%BuildArch:~3%
+        set fileoutputpath=%USERPROFILE%\Desktop\RoamDiag.%_DATETIME%
+        set fileoutputpath=C:\data\test\Roamdiag.%_DATETIME%
+      )
+      if not errorlevel 0 (
+      set var01=%%g
+      set var02=!var01:/=%!
+      wevtutil epl %%g %2\!var02!.evtx
+    )
+    ) else (
+    call :CAB_DIR %1\%%i
+    call :CABIT %fileoutputpath%
+    echo %1\%%i >> %DIRECTIVEFILE%
+    echo %TARGET% does not exist.
+    for /f "tokens=1-3 delims=:. " %%i in ('echo %time%') do set _DATETIME=%_DATETIME%-%%i%%j%%k
+    for /f "tokens=1-3 delims=:. " %%i in ('echo %TIME%') do set _DATETIME=%_DATETIME%-%%i%%j%%k
+    for /f usebackq %%g in (`wevtutil el ^| findstr /i "%1"`) do (
+    goto :EOF
+    goto :PhoneEventLogs
+    goto :WindowsEventLogs
+    if %2!== "-outputpath" goto :EOF
+    if %2!==! goto :EOF
+    if %3!==! goto :EOF
+    if %IsPhone% equ 1 (
+    if /i "%%i"=="BuildLabEx" (
+    if /i "%%i"=="EditionId" (
+    if /I "%PROCESSOR_ARCHITECTURE%" EQU "ARM" (
+    if exist %fileoutputpath%\%cabouput% (
+    reg export HKCU\Software\Microsoft\Windows\CurrentVersion\Live "%fileoutputpath%\live_hkcu.reg"
+    reg export HKCU\Software\Microsoft\Windows\CurrentVersion\OneDriveOptIn "%fileoutputpath%\skydriveoptin.reg"
+    reg export HKCU\Software\Microsoft\Windows\CurrentVersion\SettingSync "%fileoutputpath%\settingsync_hkcu.reg"
+    reg export HKU\%default_app_sid%\Software\Microsoft\Windows\CurrentVersion\Live "%fileoutputpath%\live_hku.reg"
+    reg export HKU\%default_app_sid%\Software\Microsoft\Windows\CurrentVersion\OneDriveOptIn "%fileoutputpath%\skydriveoptin.reg"
+    reg export HKU\%default_app_sid%\Software\Microsoft\Windows\CurrentVersion\SettingSync "%fileoutputpath%\settingsync_hku.reg"
+    reg query HKCR\CLSID\%CollectionConfigGUID% /s >> %fileoutput%
+    reg query HKCR\CLSID\%SyncProviderGUID% /s >> %fileoutput%
+    REM --- If not empty, %%j is username of private builder (unused here)
+    Set BuildArch=%%k
+    Set BuildLab=%%i
+    Set BuildLab=%%l
+    Set BuildString=%%i.%%j.%%m
+    set cabouput=RoamingLogs.%_DATETIME%.cab
+    set caboutputpath=%fileoutputpath%
+    set fileoutputpath=%2
+    set fileoutputpath=%3
+    set fileoutputpath=%fileoutputpath%\temp
+    set IsPhone=1
+    set nocab=1
+ (%04x)
+ +Z(@
+ for SYNCGID prefix: 0x%016llx guid: %s 0x%08x
+ http://www.microsoft.com/windows0
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ SP%d.%d
+ SVWh|
+ uJY]
+ Windows
+!0^0p0
+!CP!CT
+!GP!GT
+!t$,!t$0
+!t$42
+!This program cannot be run in DOS mode.
+"%s" %s
+"C%R%f;
+"Microsoft Window
+#0Y0|0
+#bML"
+$`2X`F
+$0R0j0x0
+$h|`A
+$Microsoft Ireland Operations Limited1
+$Microsoft Ireland Operations Limited1&0$
+$QPSh
+$WShp
+%[^%]%%%%%u%%%%%s
+%[^/]/%[^
+%]}S&
+%1.1@1
+%d %s
+%d-%02d-%02dT%02d:%02d:%02d.%03dZ
+%d-%02d-%02dT%02d:%02d:%02dZ
+%d.%d
+%d.%d.%d.%d
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%Microsoft Windows Production PCA 2011
+%Microsoft Windows Production PCA 20110
+%s %d %d %s
+%s%c%s
+%s%s%s
+%s&View=%s
+%s&View=%s&InlineBlobs=False
+%s/%s
+%s/%s/%s
+%s: Failed to get the setting handler for collection (%s): 0x%08x
+%s:%s
+%s\%s
+%s\%s\%s
+%s\RoamDiag.%02d.%02d.%02d.%02d.%02d
+%s\RoamDiag.cmd
+%s\State
+%s-backup
+%sBITS-Packet-Type:Fragment
+%sContent-Type: application/web3s+xml
+%sContent-Type:multipart/related;boundary="%s"
+%UUUU+
+&%s=%s
+&0/040K0
+&070[0
+&SyncToken=%s
+(0<0S0p0<1Z2
+(caller: %p) 
+) else (
+)\ZEo^m/
+)Microsoft Root Certificate Authority 20100
+*** CSettingSyncTask shutdown ***
+*** CSettingSyncTask startup ***
+,0/pnUip/ibih/hmKnrsr9GLa+ecm0csrIXZIC3qm20M=0Z
+,050:0r0
+.?AVexception@@
+.?AVResultException@wil@@
+.00cfg
+.bss$00
+.bss$dk00
+.bss$pr00
+.bss$zz
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIY
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.data
+.data$00
+.data$00$brc
+.data$dk00
+.data$dk00$brc
+.data$pr00
+.data$r$brc
+.data$zz
+.data$zz$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.rdata
+.rdata$00
+.rdata$00$brc
+.rdata$brc
+.rdata$sxdata
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zz
+.rdata$zz$brc
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.SPh l@
+.text
+.text$di
+.text$lp00SettingSyncHost.exe!20_pri7
+.text$mn
+.text$mn$00
+.text$np
+.text$x
+.text$yd
+.text$zs
+.text$zy
+.text$zz
+.tls$
+.tls$ZZZ
+.xdata$x
+/Embedding
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+: :):.:>:E:L:S:Z:a:
+: :':.:5:<:C:J:Q:X:j:z:
+: :>:S:u:
+: ;%;7;
+: ;1;>;\;a;r;
+:!:+:a:
+:!;*;H;
+:":&:,:0:6:::@:D:J:N:b:f:v:
+:":7:H:
+:#:2:9:D:K:V:]:h:o:
+:#:M:
+:#:X:n:
+:#;1;;;c;q;{;
+:$:::?:N:X:]:w:
+:$:D:L:X:x:
+:$:N:
+:%;:;l;
+:%;[;{;
+:%;7;Q;X;_;f;m;t;2<G<Z=l=
+:%;f;k;
+:&:;:[:
+:&:A:~:
+:&:Z:{:
+:&;W;
+:(:`:
+:(:2:S:
+:(:7:>:Y:^:n:
+:(:K:^:
+:(;F;v;
+:):D:l:
+:):h:z:
+:):K:x:
+:);.;@;];
+:);`;g;
+:*:A:w:
+:,:::H:Q:c:s:}:
+:,:8:@:l:p:
+:,;A;S;a;~;
+:.:D:L:U:l:u:~:
+:/:C:
+:/:E:Z:p:
+:/:h:
+:/:H:a:w:|:
+::--------------------------------
+::-----------------------------------
+::--------------------------------------
+:: Get policy regkeys. Check EnableLUA if UAC prompt is off, then AAD GetTicket will fail
+:: Get the buildlabex string from the registry
+:: If this is an ARM machine, replace ARM with WOA for buildArch
+:: Parse the buildlabex string into the arch and lab info
+:':.:F:M:f:
+:':;:D:N:\:q:z:
+::;d;
+:;:A:
+:;;N;
+:?:S:l:
+:?;`;p;
+:?;E;m;
+:@:`:g:o:w:
+:@:h:v:
+:@:V:m:
+:[:`:p:u:
+:]:d:j:
+:`;j;
+:+:4:9:Q:
+:+:K:
+:<:T:v:
+:<;G;];w;
+:=:^:
+:>;i;
+:>;y;
+:0:<:s:
+:0:>:I:N:
+:0;G;\;
+:0W0d0n0
+:1:o:
+:1;D;
+:2:L:
+:2:N:j:}:
+:3:=:D:d:l:r:
+:3;P;j;t;z;
+:4:<:D:P:p:|:
+:4:9:?:I:h:|:
+:4:9:>:N:
+:4:j:o:
+:4:K:&;"<|<
+:4:L:Z:e:k:|:
+:4;];
+:4;<;
+:6:>:Z:i:
+:8:A:T:
+:8:D:d:l:x:
+:8;L;
+:8;T;^;{;
+:A:W:\:m:
+:B:L:
+:B:N:
+:CAB_DIR
+:CABIT
+:ExportEventLogs
+:F:g:
+:G:Q:c:
+:H:M:i:
+:H;w;
+:K:c:
+:m:<;
+:M;Z;|;
+:n:v:~:
+:O:Y:
+:P;m;
+:PhoneEventLogs
+:R:^:
+:R:z:
+:R;6<
+:v;};
+:WindowsEventLogs
+:Y:h:
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+; ;F;R;
+; ;H;~;
+;!;*;2;>;^;
+;!;G;
+;!<,<2<u<
+;";,;
+;";.;J;W;y;
+;#;3;O;|;
+;#;4;E;j;r;
+;$;,;4;<;D;L;T;\;d;l;t;|;
+;$;?;E;
+;$;D;P;p;|;
+;%;*;C;d;
+;%;,;l;s;z;
+;%;?;M;R;c;
+;%;@;q;};
+;%;+;0;A;S;b;l;
+;%;9;n;
+;%<.<K<Z<j<s<
+;%<C<m<
+;%<F<x<
+;(;;;g;x;
+;(;0;8;D;d;p;
+;(<2<O<Y<
+;);7;M;V;`;n;
+;);K;i;
+;*<1<Y<o<|<
+;,;;;L;[;y;
+;,;>;T;
+;,;H;
+;/;E;d;
+;/<m<
+;:;_;
+;;;v;
+;-;G;u;
+;-;S;y;
+;@<Q<
+;@<r<z<
+;\$@u
+;_<^?
+;_Xs+
+;{@so
+;~ls(
+;+>q>
+;=;e;o;y;
+;=;h;
+;=<Q<_<u<
+;0<:<
+;0<?<G<[<f<k<
+;0<7<L<_<t<
+;1;[;
+;1;Z;
+;1<J<W<
+;1<S<
+;2;];
+;2<@<]<i<
+;2<A<[<i<
+;3;8;I;D<O<T<f<k<|<
+;4<A<v<
+;5<<<z<
+;5<K<^<
+;6;g;
+;8<Q<y<
+;A;O;V;
+;B<m<
+;C@s<
+;CollectionId=%s
+;D$4r
+;D;L;r;
+;E;_;
+;E;b;
+;E<g<t<
+;F;Q;c;r;
+;f;t;
+;F<`<
+;G;o;
+;H;Q;W;s;
+;H<|<
+;H<==
+;K;m;
+;L<W<
+;LastSyncTime=%u:%u
+;m;t;
+;N<\<f<
+;NlsV
+;O<f<
+;P;[;m;z;
+;P;V;a;
+;P\sY
+;Q0t)S
+;Q0t+S
+;Q0t4
+;Q0t4S
+;r<w<
+;t$4u
+;w;B<
+? ?$?(?,?0?4?8?<?@?D?H?L?P?T?X?\?`?d?h?l?p?t?x?|?
+? ?>?J?c?k?
+? ?4?[?r?
+? ?I?i?q?w?
+?!?-?5?O?e?
+?"?.?:?F?R?`?l?x?
+?"?4?f?s?
+?#?0?V?b?
+?#?6?I?\?o?
+?#?C?
+?#?H?O?`?
+?$?(?,?0?P?s?
+?$?,?4?<?D?L?X?|?
+?$?D?L?X?x?
+?%?*?C?J?k?
+?%?1?>?J?
+?(?-?>?X?
+?(?7?I?f?l?x?
+?)?>?j?
+?)?>?s?
+?)?7?_?h?z?
+?,?=?\?
+?,?8?\?d?l?t?|?
+?,?N?W?]?q?
+?.?=?Q?`?o?
+?/?^?|?
+???a?
+??0exception@@QAE@ABV0@@Z
+??0exception@@QAE@XZ
+??1exception@@UAE@XZ
+??1type_info@@UAE@XZ
+?-?C?
+?-?J?y?
+?+???z?
+?+?M?R?]?{?
+?+?p?}?
+?<?F?o?
+?<?L?Q?a?f?u?z?
+?<?t?
+?2?;?E?S?g?p?z?
+?2?@?Q?
+?2?9?
+?2?D?R?
+?4?<?D?L?T?\?d?l?t?|?
+?5?X?
+?6?E?
+?7?~?
+?B?K?b?
+?E?[?z?
+?E?a?v?
+?E?Z?s?
+?h?z?
+?O?q?w?
+?onecore\internal\sdk\inc\wil\opensource/wil/resource.h
+?R?W?
+?terminate@@YAXXZ
+?V?f?t?
+?V?y?
+@.didat
+@.reloc
+@echo off
+@PPPPS
+@PShpu@
+@Qm6t
+@Wj V
+@YRVh
+[%hs(%hs)]
+[%hs]
+[-&LMb#{'
+[_9*O
+[_9*OI
+[SPSh
+\$$+|$ 
+\$(9^
+\$49^
+\%s\%s
+\182F2R2
+\metadatastore
+\pdcregisterer
+^`!~`
+^AB0+
+^D9;uX
+^oEZ_
+_^[Y]
+__CxxFrameHandler3
+__dllonexit
+__p__commode
+__p__fmode
+__set_app_type
+__setusermatherr
+__wgetmainargs
+_<Ku2V
+_amsg_exit
+_callnewh
+_cexit
+_controlfp
+_CxxThrowException
+_except_handler4_common
+_exit
+_ftol2
+_get_errno
+_InitiateConnectDisconnect is connecting(%d) or disconnecting(%d) from provider %s
+_initterm
+_lock
+_onexit
+_purecall
+_QueueOrDeferNextOperation - (%s) dwThrottleDelay is INFINITE
+_set_errno
+_unlock
+_UpdateSettingUnitMetadataUsingGlobalId
+_vsnprintf_s
+_vsnwprintf
+_wcmdln
+_wcsicmp
+_wcsnicmp
+_wcstoui64
+_XcptFilter
+`.data
+{|9\$
+{8j'PW
+{9FFC2606-A651-478A-A00B-79F79076CCB2}
+{B74AF551-07E0-4F25-9EB4-1B00144C8D3F}
+{BEF723E2-01AD-438B-A441-D0112DF5142A}
+{H97t]
+{IJCC
+|$ jl
+|$ RR
+|$$QW
+|$,SSS
+|$<PW
+|$4PQQ
+|$pPPP
+|AttemptSyncActivity
+|hK,_
+|u/<unknown>
+}_R7W
+}bgk#!F
+~,Ou,
+~@hXQ@
+< <$<(<,<0<4<8<<<@<D<H<L<P<T<X<\<`<d<h<l<p<t<x<|<
+< <,<1<X<q<
+< <;<c<
+< <@<R<x<
+< <+<:<V<e<t<
+< <1<
+< <1<G<R<i<{<
+< =s=~=
+<!<*<0<]<~<
+<!<]<
+<"<*<:<L<R<[<a<f<
+<"<,<6<C<V<q<
+<"<><
+<"<W<a<s<
+<"=_=
+<#<-<}<
+<#<-<5<B<Q<n<s<
+<#<5<B<K<]<j<s<
+<#<5<C<X<e<o<y<
+<#<7<><w<5=Q=q=x=
+<#=>=n=
+<#=6=X=^=n=
+<#=a=}=
+<$<,<4<<<D<L<X<x<
+<$<.<@<O<`<
+<$<D<P<p<x<
+<$<J<\<t<
+<$<J<V<
+<$=-=D=p=y=
+<$=W=z=
+<%<.<8<F<\<e<o<}<
+<%<-<
+<%<2<:<Y<_<p<
+<%s:%s>
+<&<-<4<o<v<}<
+<&<0<O<l<
+<&<G<
+<&<G<j<
+<(<2<9<E<g<s<z<
+<(<2<Y<t<
+<(<H<T<t<|<
+<)<.<><a<l<w<
+<*=h=
+<,<><C<H<
+<,<6<;<
+<.<F<q<
+</<?<b<
+</<8<V<
+</RelationshipNames></CollectionInterest>
+</SubscriptionId>
+<;=C=S=
+<@<_<.=_=
+<[=a=
+<\<s<~<
+<^=f=
+<{<h=
+<~<3=?=T=h=
+<-<`<
+<<<D<L<T<`<
+<'<0<
+<-<W<{<
+<'=:=[=
+<'=>=s=
+<><F<L<x<
+<0<S<]<c<
+<1<]<
+<2<:<H<y<
+<2<?<[<{<
+<2<8<M<{<
+<2=<=
+<3<Q<s<
+<3=;=A=b=l=
+<3=>=k=
+<3=J=^=
+<3=S=g=z=
+<4<O<
+<5<><P<
+<5<H<[<
+<5=C=c=
+<5=W=
+<6=?=D=[=
+<7<V<c<y<
+<8=F=t=
+<9<K<m<
+<9=L=`=
+<B=L=^=
+<B=T=b=
+<C<a<
+<C=g=r=
+<CollectionInterest><SecondsToExpiry>%u</SecondsToExpiry><RelationshipNames>
+<d<{<
+<D<z<
+<D=w=
+<E<m<
+<F<S<e<m<
+<F=]=
+<H<]<q<
+<h=m=~=
+<I<[<a<
+<I<o<x<~<
+<I<v<
+<J<S<n<
+<J=P=
+<N=p=
+<N=S=e=
+<N=S=Y=_=e=~=
+<NotificationSubscription><Url>%s</Url><SecondsToExpiry>%u</SecondsToExpiry><Scenarios><Scenario>%s</Scenario></Scenarios><DestinationType>Wns</DestinationType></NotificationSubscription>
+<Q<r<
+<RelationshipName>%s</RelationshipName>
+<s<y<
+<SubscriptionId>
+<SVWj
+<Y<|<
+= =$=(=,=0=4=8=<=@=D=H=L=P=T=X=\=`=d=h=l=p=t=x=|=
+= =$=(=,=4=<=D=L=T=X=\=`=d=h=l=p=t=x=|=
+= >>>M>
+= >'>5>B>T>k>
+= >a>
+=!=}=
+=!=2=S=u=G>c>
+=!>R>}>
+="=:=T=Z=`=e=r=
+="=g=
+="=V=h=
+=">=>_>h>r>
+=">6>?>D>O>Y>
+=">8>D>Z>
+=#=(==?
+=#=*=G=
+=#=k=
+=#>)>A>y>
+=#>*>f>m>
+=#>7>@>H>;?@?Q?
+=$=0=T=\=d=l=t=|=
+=$=5=G=O=e=v=
+=$=D=L=T=`=
+=%=B=K=Q=r=
+=&=-=2=E=b=
+=&=b=
+=&>L>l>
+=(=g=
+=(=N=Z=
+=(>6>
+=)=3=<=L=U=z=
+=)=a=t=
+=)=B=R=f=k={=
+=*=/=@=
+=*><>f>w>
+=*>9>H>c>
+=*>M>x>
+=,=;=P=n=z=
+=,=8=X=`=h=p=x=
+=,=A=X=h=
+=,>>>L>
+=,>p>
+=.=6=>=F=O=n=v=~=
+=.=S=X=
+=/=@=m=u=
+=/=E=N=Y=v=
+=;=Y=u=
+=?=H=/>9>E>
+=@=I=
+=[=q=
+=[>d>}>
+=_=k=
+=`>m>z>
+=+=;=D=T=g=
+=+=8=?=Y=b=i=
+=+>?>O>
+=+>F>i>u>
+=<>_>
+='=7=G=w=
+='=B=m=
+=>=s=x=
+='>l>
+='>X>
+=0=;=U=j=
+=1=X=_=
+=1>]>
+=1>7>s>
+=2=M=h=
+=3=P=W=\=g=m=u=
+=4=C=M=r=
+=5=w=
+=6=>=E=K=i=n=
+=6=A=h=
+=6=d=~=
+=6>J>s>
+=7=f=x=
+=7=h=~=
+=7=K=
+=8=@=H=T=t=|=
+=A>K>
+=A>M>
+=B>p>
+=B>X>
+=D>j>
+=F=P=
+=F>W>
+=G=^=
+=h=z=
+=J>l>
+=J>X>b>n>v>{>
+=K=`=x=
+=K={=
+=M=u=
+=N=o=}=
+=N=Y=u=
+=S>k>
+=U>^>p>
+=V>^>d>u>
+=X=c=
+=X>d>$???f?
+> ?'?8?H?P?b?
+> ?L?k?t?
+> >$>(>,>0>4>8><>@>D>H>L>P>T>X>\>`>d>h>l>p>t>x>|>
+> >)>0>J>_>r>
+> >@>H>P>X>d>
+>"?,?
+>">2>W>|>
+>#?2?_?
+>#?J?
+>#>2>G>_>j>w>|>
+>#>2>J>O>_>
+>#>S>c>x>
+>$?/?N?^?j?s?
+>$?J?
+>%?-?3?S?g?
+>%?Q?^?
+>&?/?V?u?
+>&?6?D?
+>&>.>;>C>P>o>x>
+>&>H>
+>&>H>`>
+>(?S?~?
+>(>>>S>j>
+>(>2><>F>P>Z>d>n>x>
+>(>H>P>X>
+>(>H>T>t>|>
+>)?5?:?S?q?
+>)>2><>J>^>g>q>
+>)>N>V>^>f>o>
+>*>M>
+>,>R>^>
+>.?7?
+>.>g>q>
+>:>G>Y>
+>;?D?K?
+>;>R>
+>'?d?y?
+>^>d>r>|>
+>+?^?y?
+>+?Z?n?
+>'>,>8>I>^>
+>'>8>O>]>n>
+>->C>W>b>m>
+>'>J>m>
+>'>k>
+>0>;>~?
+>0>>>C>f>{>
+>0>8>D>d>l>x>
+>0>b>z>
+>1?;?f?
+>1>Z>b>n>v>
+>3>i>o>
+>4?=?G?P?
+>4>K>s>|>
+>4>M>{>
+>4>X>
+>8>x>
+>a?g?
+>A>\>
+>B?K?n?z?
+>b?k?p?
+>B>x>
+>c?y?
+>D?r?
+>D>i>z>w?
+>E>\>
+>E>L>x>
+>F>M>o>
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>I>N>S>X>]>b>l>w>
+>M?h?
+>n?w?|?
+>S?^?z?
+>T>a>
+>V>d>w>
+>Z>g>n>u>
+0 0$0(0,00040<0D0H0L0T0X0\0`0d0h0l0p0t0x0
+0 0$0(0,0004080<0@0D0H0L0P0T0\0d0h0l0p0t0x0|0
+0 0$0(0,0004080<0@0D0H0L0P0T0X0\0`0d0h0l0p0t0x0|0
+0 0(00080@0H0P0X0`0h0p0x0
+0 0Z0s0
+0 1*141>1g1
+0 1*1u1@3J3
+0 1/1A1
+0 1+1X1i1w1|1
+0 1Q1{1
+0"0+0
+0#0C0
+0#0e0
+0#1V1
+0$0A0R0
+0$0D0L0X0x0
+0$0K1
+0%0,060M0z0
+0%0.0I0R0r0{0
+0(020P0s0
+0(0F0^0
+0(141x1
+0(1O1r1
+0)0;0T0q0
+0)1Q1o1
+0)1x1
+0*060<0P0a0h0s0
+0*0n0
+0,040<0D0P0p0|0
+0,1L1
+0.070@0[0m0v0
+0.0S0l0
+0.0T0`0
+0.0X0]0n0
+0.131m1
+0/0=0^0{0
+0/0A0J0
+0/0J0p0
+0/0N0|0
+0:0G0X0
+0:1E1
+0?1|1
+0@0F0
+0@0x0
+0@1j1p1
+0\0f0
+0]1f1
+0^0m0|0
+0+0=0R0|0
+0+1T1b1t1
+0<0H0M0z0
+0<1B1O1U1z1
+0=0[0
+0=0E0P0`0t0
+0>0]0
+0>1i1
+0>1M1\1}1
+000<0\0h0
+000W0
+0-0C0l0
+0'0G0R0r0}0
+0-0K0T0Z0n0
+0'1>1
+010>0O0c0
+010I0h0y0
+011;1R1f1l1
+012o2|2
+0'131]1f1l1
+020A0[0f0
+020C0_0
+020U0x0
+030F0
+030X0a0
+040<0D0L0T0\0h0
+040904B0
+040A0W0z0
+060;0P1
+070P0z0
+070V0a0
+071[1
+080A0M0U0g0
+080J0W0p0
+0A0R0s0
+0B0T0
+0f;1u
+0f1t1J2p2
+0h@AA
+0H0e0k0|0
+0hPiA
+0K1p3
+0L1n1{1
+-0n0u0
+0P0l0z0
+0P1i1
+0PhHl@
+0S0i0
+0Z1i1x1
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1 1%1*11191H1
+1 1+1V1_1
+1 1'1@1E1[1a1
+1 2Q2i2
+1 2u2
+1!1&1,11161;1@1F1N1V1j1}1
+1!141
+1!1J1
+1!2B2}2
+1"1)191
+1"1*1F1
+1"1@1f1
+1"2)2;2J2
+1#1\1~1
+1#1<1A1Q1
+1#2(2
+1$1,141<1H1h1t1
+1$1+1;1B1R1Z1
+1$1K1Y1k1y1
+1$2*22292@2a2
+1$292B2a2w2
+1%1^1w1
+1%151B1X1}1
+1%1h1n1
+1%2x2
+1&151J1\1
+1&1B1[1~1
+1(0&0
+1(161M1e1
+1(1H1P1X1`1h1p1x1
+1)1>1G1Q1_1s1|1
+1)1B1_1#2?2_2
+1)1U1b1
+1)2?2a2s2
+1*14191J1u1
+1*1W1l1G2
+1*2I2W2
+1,1H1U1\1c1u1
+1.151x1
+1.1g1
+1.1i1
+1/0-0
+1/2:2b2w2
+1:2k2}2
+1:2L2Q2
+1:3S3^3
+1;1G1
+1;2B2k2
+1;2M2^2}2
+1@1[1
+1@2E2U2
+1@2P2j2p2
+1[1n1
+1[235
+1[2b2
+1[2m2
+1+1i1t1
+1<2l2y2
+1<3A3i3n3
+1=1U1
+1=2_2
+10.0.19041.1
+10.0.19041.1 (WinBuild.160101.0800)
+100701213655Z
+111_1
+111>1E1X1j1w1~1
+111019184142Z
+112<2
+112P3
+1'151B1U1k1q1
+1'171R1
+1'2<2J2[2a2p2
+121]1
+141<1D1L1T1\1d1l1t1|1
+141F1L1c1|1
+142[2
+152c2
+152L2}2
+161;1G1w1
+161?1v1
+161`1
+162F2T2]2k2y2
+162g2
+171E1t1
+171m1v1
+181B1l1
+190502212436Z
+191008173835Z
+191E1W1b1w1
+192q2
+1A1G1
+1A26b
+1a2h2
+1B2K2Q2[2q2}2
+1C1U1
+1c1x1
+1D1l1
+1E1Z1a1
+1f1'2I2k2z2
+1F2`2
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+1L1k1
+1L1z1
+1M1Z1N2U2[2h2
+1O2a2t2~2
+1P1[1
+1P1[1|1
+1Ph ,A
+1Ph 9A
+1Ph$:A
+1Ph,+A
+1Ph\:A
+1Ph0-A
+1Phd8A
+1Q1`1m1w1
+1W1e1z1
+1W2f2w2
+1wsHp
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+2 2S2l2{2
+2!2<2V2
+2!262E2x2~2
+2!2m2x2
+2!3>3z4
+2"212D2S2b2
+2"373L3a3p3
+2"3C3o3
+2"3N3`354C4K4P4U4m4
+2#2,2<2G2N2^2i2r2
+2#2,282n2
+2#2R2
+2#2T2Y2h2y2
+2#3)3H3f3
+2#3^3
+2#3T3
+2$2*2>2O2g2q2
+2$2,242<2D2P2p2|2
+2$2,282X2`2l2
+2$252;2H2U2l2w2
+2$252I2^2t2
+2$282C2s2
+2$2D2P2p2|2
+2%2,2:2j2q2
+2%2;2t2|2
+2%232j2
+2%405J5q5v5{5
+2&2.2B2J2Q2
+2&373g3z3
+2&3L3
+2(222S2s2
+2)2@2Q2
+2)282
+2)2h2
+2)3?3\3c3
+2)323P3n3s3
+2*23292K2T2w2
+2*3L3T3Z3n3
+2,2W2
+2.2W2c2
+2.333D3
+2.3n3
+2/2?2
+2/24292Y2
+2:2t2
+2:3K3j3{3
+2;2Q2}2
+2;3S3_3
+2?2H2M2W2\2p2
+2@3L3Q3
+2_4f4N5R5V5
+2=3E3k3q3
+2>2[2d2i2{2
+2>3R3]3c3
+200502212436Z0p1
+20191207004507.113Z0
+20191207045542Z
+20191208045542Z0w0=
+210103173835Z0
+212W2t2
+2'2/2C2|2
+2-222S2
+222P2|2
+2'282a2p2
+229879+4541120
+2'2i2
+232g2r2
+232I2Z2{2
+232o2
+2-3w3
+242=2K2Q2~2
+242=2X2
+242h2
+250701214655Z0|1
+252@2M2T2f2
+252=2O2`2p2
+252y2
+253G3p3y3
+261019185142Z0
+262=2M2T2g2n2
+262i2
+263Y3r3x3
+282B2N2e2n2
+282E2h2u2
+283?3O3X3q3
+292n2s2
+293>3
+2C2g2w2
+2D2p2x2
+2e2r2
+2E2Z2d2
+2f2o2
+2G3h3
+2G3Q3c3
+2K2`2y2
+2k2v2
+2N2q2
+2o4!5u5
+2R2Z2`2
+2U2x2
+2Z3j3
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3 323
+3 4-4V4j4t4
+3!3'3A3J3O3`3
+3!3K3W3
+3!4*4G4|4
+3!434M4v4
+3!4'4N4d4z4
+3!4G4O4
+3"3n3
+3"3N3Y3^3
+3"4*404[4r4
+3"4w4
+3#3(393
+3#3)32383A3
+3#343J3]3p3}3
+3$3*3/343;3C3d3y3
+3$3+303@3W3
+3$3-3>3c3w3
+3$3-333
+3$434L4`4|4
+3%3L3
+3%3S3i3
+3&3A3W3`3n3
+3&3F3X3w3
+3(323>3U3^3x3
+3)3@3M3i3q3~3
+3)3^3h3
+3)373N3V3~3
+3)3b3n3y3
+3*3H3S3`3~3
+3*3N3[3n3v3
+3*3o3
+3*3P3Z3}3
+3*4?4P4
+3*4I4
+3,343@3d3l3t3|3
+3,3M3
+3.3[3
+3.3N3w3
+3.3Q3
+3/3:3B3
+3:3?3P3p3|3 4@4k4x4
+3;3D3[3
+3;3T3
+3?3L3o3|3+5Z5
+3?3Q3Y3
+3@3`3n3
+3+343:3Z3`3y3
+3<3H3X3i3z3
+3=3H3M3]3
+3=5B5j6
+3>3P3a3
+30\0l0{0
+303<3\3d3l3t3
+303>3v3
+304:4M4
+304N4d4k4
+313Z4
+323U3s3
+324J4X4n4
+324W4
+324w4
+3'333L3T3
+3333V
+3'4[4~4
+343<3D3L3T3\3d3l3t3|3
+344\4
+344H4m4
+344o4
+3'4R4}4
+354c4
+354X4b4
+394F4Y4h4
+3a4w4
+3B4b4|4
+3C3J3Q3g3
+3C4m4
+3C4W4
+3D3d3n3t3
+3D405
+3F3i3
+3g3m3y3
+3H3}3
+3H3b3
+3h3u3
+3h4~4
+3hpqA
+3J3d3
+3K3\3~3
+3k4q4
+3M3g3o3u3
+3O4Y4w4
+3Pj8h
+3Q3r3
+3S3x3
+3t4}4*5L5
+3T4q4
+3t4y4
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4,4L4T4`4
+4 4'4O4U4e4
+4 5:5D5k5
+4!474n4
+4"4(4/464=4D4^4
+4"4.4E4N4h4r4~4
+4"4:4Q4
+4"414@4O4^4m4|4
+4"4M4j4
+4#4?4c4
+4$4,444@4`4l4
+4$4,444<4D4L4X4x4
+4$434D4
+4$444=4E4W4t4n5
+4$474
+4%4:4O4g4y4
+4%4-474T4]4
+4%5*5<5f5p5u5
+4%5S5
+4%5Y5
+4&4,42484>4D4K4R4Y4`4g4n4u4}4
+4&474.5
+4&5/5J5
+4&5m5
+4&5X5w5
+4&6=6
+4(5_5
+4)545}5
+4*4A4
+4*4j4
+4*5V5t5
+4,4>4)5G5}5
+4,494
+4,4R4\4}4
+4,50585<5@5D5P5T5X5\5`5d5h5l5p5t5x5|5
+4/474T4_4}4
+4/4A4V4
+4/4E4j4
+4/4k4
+4/4K4W4t4
+4/4M4j4
+4/5:5G5N5`5v5
+4:4K4l4
+4:5^5w5
+4?4{4
+4?4z4
+4@4T4
+4+5=5F5K5]5
+4<4}4
+4>4M4i4r4x4
+40T0o0
+41484?4C4I4P4b4
+425F5S5]5z5
+425Y5b5
+434>4Q4V4k4p4
+444<4B4
+4'4p4
+4'4X4|4
+4-575
+464>4X4
+494e4
+494y4
+4A5G5u5
+4C4~4
+4C4U4a4j4p4u4z4
+4D4X4o4
+4E4q4
+4F4w4
+4h@oA
+4K5g5
+4L4W4y4
+4L5^5
+4L5e5v5
+4L5n5
+4N4s4
+4O5T5
+4t4}4
+4X4j4{4
+4Z4l4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5 5@5Q5
+5 6%6S6_6d6k6
+5!6K6h6
+5"5,5K5z5
+5"6E6h6
+5#5)5U5[5
+5#5-5K5P5a5k5
+5#5I5T5n5~5
+5$5,545@5`5h5p5x5
+5$505P5X5d5
+5$5f5
+5$5Z5|5
+5$626;6@6c6
+5$6H6`6x6
+5$6I6
+5$6T6
+5%5=5K5]5l5q5z5
+5%535o5
+5%5F5l5
+5%6<6S6
+5%686G6
+5&606g6q6|6
+5&6Q6~6
+5(5H5P5X5`5l5
+5(6V6^6d6
+5*6@6Q6o6
+5*6i6
+5,5=5
+5,6d6
+5,6J6O6_6
+5,6S6
+5.545:5@5F5L5S5Z5a5h5o5v5}5
+5/5O5k5
+5:5[5
+5:5A5H5O5.6I6d6
+5:5A5H5s5
+5;5C5n5v5~5
+5?6c6s6
+5@5L5
+5@5s5~5"6B6`6
+5@6U7X899?9D9O9U9^9d9
+5\5a5s5
+5+696H6a6
+5<5T5_5d5n5
+5<6D6`6i6o6
+5<6k6
+505A5d5
+515N5p5
+515Q5
+516g6o6t6
+525`5
+525C5S5b5q5
+525J5
+526U6
+535A5N5S5b5g5x5
+536C6u6
+5'5,5=5
+5'5:5A5J5Q5o5z5
+5'505:5H5\5e5o5}5
+5-525E5
+555>5C5j5
+555>5X5b5n5
+555O5
+5'5m5{5
+565a5
+5-6b6
+5-6c6
+576[6h6
+576G6t6
+576s6
+585>5D5J5o5
+585b5x5\6{6
+586I6c6x6
+586X6x6
+595O5|5
+5A5q5|5
+5c5h5
+5E5R5
+5E6[6
+5F5s5
+5g5r5
+5g6u6z6
+5H5^5
+5h6p6v6
+5J5s5
+5L5a5
+5L5c5
+5N5d5r5
+5o6|6
+5P5v5
+5S5k5t5
+5Wekodt[
+5X6l6
+5Z5h5o5y5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6h6p6t6x6|6
+6 6$6(6,6064686<6@6H6X6d6p6|6
+6 6%6=6R6
+6 6?6`6
+6 6U6
+6!6(6;6d6|6
+6!646K6R6s6y6
+6!666?6I6W6k6t6~6
+6!707?7S7b7q7
+6!7v7
+6"6*6N6W6
+6"7D7Y7
+6#656O6u6
+6#6-676<6M6
+6#6P6
+6#757
+6#7g7x7
+6$6,646<6D6L6X6x6
+6$626K6m6|6
+6%6.6H6R6^6
+6%6b6u6
+6%7_7n7
+6&6*6
+6&6,6a6
+6&7i7
+6(6E6o6v6}6
+6(6H6T6t6|6
+6)7A7G7P7W7
+6)7S7
+6*6]6y6
+6,6?6L6p6
+6,787[7h7y7
+6.6a6f6
+6.6H6O6
+6.6J6n6
+6.7l7u7
+6/666?6T6
+6/6L6
+6/7S7
+6:6P6
+6:7m7
+6;6y6
+6;7O7Z7`7
+6[7m7{7
+6]6b6s6
+6`6j6O7x7
+6`7f7w7
+6`7j7
+6+7?7O7x7
+6<6h6t6
+6<6R6{6
+6>6N6S6c6
+6>7^7
+6>7T7d7
+606^6
+60686@6H6P6\6|6
+606G6P6
+60797k7
+616G6
+616Q6
+617A7R7\7l7
+626]6
+626>6|6
+636J6F7L7X7_7e7
+646A6H6O6V6f6
+646V6c6u6}6
+657a7
+657G7L7^7x7
+657K7Y7e7j7t7
+6-6>6k6
+6'666=6R6Y6w6
+667]7i7t7
+667<7C7I7
+6-6k6p6
+6-6N6q697B7
+6-6u6z6
+676G6Q6e6n6x6
+676j6p6
+686H6\6r6
+687t7
+696B6X6
+696N6c6
+6a6~6
+6a7k7
+6B7b7
+6B7u7
+6D6P6]6g6n6
+6E6Y6
+6E7M7S7g7}7
+6F6e6
+6f6l6
+6h<iA
+6J6l6}6
+6K6a7
+6l6s6
+6N7]7l7
+6N7d7
+6Q6p6
+6Q7h7
+6U7w7}7
+6V6p6
+6Z7f7k7
+7 7$7(7,7074787@7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7 7?7K7
+7 727A7c7z7
+7 7U7^7p7
+7 8%8Z8
+7 8C8q8
+7 8g8
+7!7&7+727L7Q7
+7!7*707D7{7
+7!8.8T8
+7!888O8]8l8q8
+7!8X8
+7!8Z8k9
+7"7,7:7N7W7a7o7
+7"777
+7"7'787
+7"7M7[7x7
+7"8X8
+7#7N7Y7h7w7|7
+7$7,747<7D7H7P7X7`7d7h7p7x7
+7$7,787X7`7h7p7x7
+7$757n7w7|7
+7$8)8z8
+7$8L8
+7%7U7\7
+7%8d8w8
+7&737:7L7]7n7{7
+7&7a7r7
+7&7h7F8
+7&8?8J8o8~8
+7&858v8
+7&898
+7(879K9Z9
+7(8H8V8
+7)717
+7)8:8X8i8w8
+7)8T8
+7*7k7
+7,747<7D7L7T7\7d7l7t7|7
+7,767I7S7
+7,7C7N7w7
+7,7I7
+7,8S8
+7/7?7
+7/7b7
+7/888n8x8
+7:7_7
+7:8F8y8
+7?7]7
+7?7N7
+7?8b8
+7@7N7
+7\7y7
+7^9n9
+7`8h8n8
+7=7q7
+7=7U7
+7>7P7
+70@0K0R0[0f0m0v0
+707g7
+707Q7g7}7
+707S7
+70868G8h8~8
+718?8[8
+727S7p798j9
+727z7
+737C7^7l7s7|7
+737C7I7k7
+747@7G7L7Q7b7w7
+748=8
+748J8d8
+757J7
+767B7
+767Z7
+7'717H7R7a7
+7-777<7X7h7q7}7
+778C8K8S8c8k8s8
+778I8u8z8
+7'8<8o8w8
+787@7H7P7\7|7
+787A7[7h7q7
+787c7{7
+787X7u7
+798M8p8{8
+7A7[7r7x7
+7B7V7_7d7
+7B8Z8r8
+7D8a8~8
+7d8j8|8
+7e7j7|7
+7E7M7S7g7
+7H7~7
+7H8P8
+7I8O8Z8d8l8"9
+7l7*8V8w8
+7M7~7
+7m7r7
+7M7X7]7x7
+7P7h7q7
+7Ph(hA
+7Q7X7
+7Qh@qA
+7Qh4hA
+7R8X8l8
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8t8x8|8
+8 8(8
+8 8)80878>8E8L8
+8 9*9F9P9j9{9
+8 9H9M9
+8 9X9u9|9
+8"8,8F8K8Q8^8
+8"8T8b8o8
+8"9c9
+8#8$>,>G?S?
+8#8/8=8L8[8t8
+8#8H8N8l8
+8#9c9
+8#9V:a:z:
+8$8*8m8t8z8
+8$8,848<8D8L8X8x8
+8$8/848
+8$8<8_8m8
+8$898c8l8
+8$8D8L8T8\8d8l8x8
+8$8T8Y8l8
+8%858>8Q8V8
+8%8H8
+8%9.949
+8&8<8L8^8}8
+8&8o9
+8&8Z8
+8&9f9
+8&9I9
+8(;D;k;x;
+8(8.858P8W8k8r8
+8(8R8d8n8
+8(9f9
+8)838M8T8`8j8
+8)8l8
+8)91979R9Z9`9
+8)9X9b9
+8*8:8@8k8t8z8
+8*909W9
+8*91989>9C9
+8*98:
+8*9r9E:(;6;
+8*9W9
+8,848<8D8L8T8`8
+8,8A8G8Q8W8q8w8
+8,8F8l8
+8,9X9_9
+8:8E8^8
+8:8F8
+8;9@9S9
+8@8T8
+8@9K9P9u9
+8^8k8
+8+8@8Y8l8
+8+8H8Y8b8h8
+8+9?9
+8<8_8z8
+8<8j8
+8<9_9
+8=9O9]9}9
+8>9J9T9
+809Z9i9
+818L8m8r8
+818w8
+818W8r8
+828?8P8
+835GetMsaToken
+838_8j9
+838B8c8y8
+838V8p8u8
+838V8s8
+839V9
+848v8
+849B9_9i9{9
+859r9
+868;8W8
+868D8f8
+869?9D9V9g9q9
+869d9
+869L9
+878M8
+878w8
+879A9j9
+879E9e9
+879f9
+8'8.8
+8'8`8
+8'8{8
+8'818?8U8^8i8
+8'82878
+888Y8
+8-8A8
+8'989
+898n8
+8'9c9
+8a9g9
+8B8V8_8d8
+8B9N9m9
+8b9o:
+8C8S8
+8D8O8i8
+8D9M9S9
+8E9b9
+8F8O8T8f8w8
+8g8T9n9
+8i8n8
+8K8i8
+8L9U9~9
+8M%iBRSDS
+8N8y8
+8P8{8
+8P8y8
+8T8e8
+8U9\9
+8U9g9t9
+8V8d8
+8x8}8
+9 :=:a:
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+9 9)929;9D9_9l9u9~9
+9 9,9L9X9x9
+9 999V9o9
+9 9U9^9p9
+9!:F:
+9!9%9*90949T9
+9!979X9^9r9
+9!9'9V9i9
+9":.:4:E:X:l:
+9"9A9^9p9M:
+9"9M9
+9#:1:
+9#9,9B9
+9#9u9
+9$:?:D:R:
+9$:G:R:j:
+9$9,989X9`9p9
+9$9,989X9d9
+9$989O9z9
+9%:/:?:Y:i:z:
+9%9*9;9M9R9c9
+9&9/959e9u9
+9&919A9Q9b9f9l9p9
+9(9E9
+9):>:`:
+9*:/:
+9*:3:>:E:R:c:j:q:
+9*:4:9:K:\:f:
+9*9;9g9x9
+9,:5:<:C:J:Q:b:i:p:w:~:
+9,9@9T9
+9,939?9I9i9p9|9
+9.:`:
+9.9>9P9U9u9
+9.9r9
+9:9_9y9
+9':A:
+9-:Z:
+9;9i9w9
+9;9R9q9
+9?9]9
+9\$ u
+9\$4v@
+9_$t5
+9{lv_
+9}(uk
+9~(s+j
+9~@t#
+9~Dv:3
+9~lvP
+9+:p:}:
+9+929T9{9
+9<9_9~9
+9<9H9h9p9|9
+9>9J9
+90u9Ph
+91:W:v:
+919C9\9v9
+919l9
+91u,Q3
+959>9R9r9
+96:X:e:
+969C9]9d9k9r9
+969H9k9
+979b9~9
+98:f:m:r:
+99:^:
+99:|:
+9-9:9`9
+99:D:T:b:x:
+9'9[9{9
+9'90959<9
+9'9f9r9
+9-9S9
+9A9g9
+9A9I9U9
+9A9t9z9
+9B9c9
+9E:K:\:}:
+9H:l:
+9H@t09H8v+3
+9H9j9{9
+9i9y9
+9K\vG
+9K8tC9K@t>9KDt9
+9Klv}VW
+9L$(u
+9l9w9
+9M9o9w9|9
+9n9|9
+9O:]:u:
+9p<tJVj
+9P9b9
+9Q:s:
+9Q9l9
+9r9~9
+9s$t5
+9S:n:
+9s@t"9s8v
+9sHtK
+9v:{:
+9wlv+
+9y tW9y$tR
+9Y`vo
+A;Klr
+A4SVW
+Accept-Encoding:gzip
+AccessDenied
+AccountAddedOrChanged: Changed account matches default account. Ensuring it is initialized.
+AccountAddedOrChanged: No default account set. Ensuring changed account is uninitialized.
+AccountStateChange
+AccountSyncing
+AccountType
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+activatibleClassId
+ActivityError
+ActivityFailure
+ActivityIntermediateStop
+ActivityStoppedAutomatically
+Adding work for CollectionId: %s, SyncOperationFlags: %d, OperationId: %s, OperationOrigin: %d, Priority: %d, AccountType: %d
+AdjustTokenPrivileges
+AllowSyncMySettings
+AllowUploads
+APICode
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-com-l1-1-1.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-path-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-psapi-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-registry-l1-1-1.dll
+api-ms-win-core-shlwapi-legacy-l1-1-0.dll
+api-ms-win-core-shlwapi-obsolete-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-2-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-threadpool-legacy-l1-1-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-url-l1-1-0.dll
+api-ms-win-core-util-l1-1-0.dll
+api-ms-win-core-version-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-1.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-power-base-l1-1-0.dll
+api-ms-win-rtcore-ntuser-window-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-security-provider-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-shcore-obsolete-l1-1-0.dll
+api-ms-win-shcore-registry-l1-1-0.dll
+api-ms-win-shcore-stream-l1-1-0.dll
+api-ms-win-shcore-taskpool-l1-1-0.dll
+api-ms-win-shcore-thread-l1-1-0.dll
+api-ms-win-shell-shdirectory-l1-1-0.dll
+ApiSetQueryApiSetPresence
+App restore stuck with collection %s
+appdata.xschema.drx.live.com
+AppliancePC
+application/octet-stream
+application/web3s+xml
+application/xml
+Application:SettingsSync %s %s
+ApplySettingsEvent
+ApplyStagedCollection %s
+ApplyStagedCollection InitializeWithCollectionId (%s) hr = 0x%08x
+ApplyStagedCollection s_GetCollectionStagingFolder (%s) hr = 0x%08x
+ApplyStagedCollection s_GetRealHandlerForCollection (%s) hr = 0x%08x
+ApplyStagedCollection s_SetCollectionStagingState (%s) hr = 0x%08x
+ApplyStagedCollection() - Removing alternate staging folder (hr = 0x%08x)
+ApplyStagedCollection() - reverting staging state to CSS_STAGED (hr = 0x%08x)
+ApplyStagedCollection() Completed.
+ApplyStagedCollection() completed. (hr = 0x%08x)
+ApplyStagedCollection() s_ApplyStagedUnits (%s) hr = 0x%08x
+ApplyStagedCollectionFailure
+AppReadinessService
+AppRestoreMetadataEnumeration
+AppRestoreStuck
+AppStateRoamingHighPriorityWriteIntervalInSeconds
+AppStateRoamingSyncIntervalInSeconds
+AppXAllUserStore.dll
+AppxProvisioning.xml
+Assert
+assertVersion
+AssertWithArgs
+AttemptedOperations
+AttemptSyncActivity
+Authority
+Authorization:WLID1.1 %s
+AXWVh
+AXWVhxv@
+BackgroundUpload
+BackoffOnErrorsIntervalSeconds
+BackoffOnInvalidPolicyIntervalSeconds
+Backup
+-backup
+BackupDisabledInCloud
+BackupFeatureState
+backupid=%s&View=%s
+BackupNotAllowedOnNetwork
+BackupRampState
+BackupReasonCode
+BackupReplicaToTemp
+BackupRootURIAuthPolicy
+BackupSettingsURIAuthPolicy
+backupSyncAttempts
+BackupType
+bcrypt.dll
+BCryptCloseAlgorithmProvider
+BCryptCreateHash
+BCryptDestroyHash
+BCryptFinishHash
+BCryptGetProperty
+BCryptHashData
+BCryptOpenAlgorithmProvider
+Begin CSettingSyncTask::SyncAtLogon
+Begin CSettingSyncTask::SyncAtPostLogon
+Begin CSettingSyncTask::SyncAtPreLogon
+binary
+Binary
+BITS_POST
+BITS-Packet-Type:Create-Session
+BITS-Session-Id
+BITS-Session-Id:%s
+BITS-Supported-Protocols: {7df0354d-249b-430f-820d-3d2a9bef4931}
+BlockedByDataLoss
+BlockedClientVersion
+BlockNotificationChannels
+BootstrapRestore
+BrowserSettings
+browsersettings-autocompleteformdata-internet-explorer
+browsersettings-favoriteurls-internet-explorer
+browsersettings-wininet-internet-explorer
+bucketArgument1
+bucketArgument2
+buffer error
+C;\$4r
+C<;CDu
+CachedPolicyState
+call :CAB_DIR .
+call :ExportEventLogs Microsoft-Windows-AAD* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-AppxDeployment-Server* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-CloudStore* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-OneBackup* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-PackageStateRoaming* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-PushNotification-Developer* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-PushNotification-InProc* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-PushNotification-Platform* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-SettingSync* %fileoutputpath%
+call :ExportEventLogs Microsoft-Windows-Shell-Core* %fileoutputpath%
+callContext
+CallContext:[%hs] 
+CallingMethod
+CallingOperation
+CAppSyncSetting
+-CaptureDiag
+CBackupSyncProvider::_CreateSettingUnitMetadata
+CBackupSyncProvider::_SaveMetadataOnlyTombstone
+CBackupSyncProvider::_UpdateMetadata
+Changes
+ChangesHash still contain: %s
+ChannelCollectionInterestExpiryTime
+ChannelCollectionInterestRenewed
+ChannelCollectionInterestWLSSubscriptionId
+ChannelCollectionInterestWLSSubscriptionUri
+ChannelCollectionInterestWNSUri
+ChannelSettingsExpiryTime
+ChannelSettingsRenewed
+ChannelSettingsWLSSubscriptionId
+ChannelSettingsWLSSubscriptionUri
+ChannelSettingsWNSUri
+ChannelUserTileExpiryTime
+ChannelUserTileRenewed
+ChannelUserTileWLSSubscriptionId
+ChannelUserTileWLSSubscriptionUri
+ChannelUserTileWNSUri
+CharLowerBuffW
+CheckCollectionThrottlingFailed(Aggregate)
+CheckMetadataStores
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+ClientShouldUpload
+CLiveStorageMetabase::_UpdateSettingUnitMetadataUsingGlobalId: Invalid timestamp provided. Collection id: %s, SettingUnitId: %s, ModifiedTime: %I64d
+CLiveStorageMetabase::CreateAndTombstoneSettingUnitMetadataUsingGlobalId
+CLiveStorageMetabase::CreateSettingUnitMetadata
+CLiveStorageMetabase::CreateSettingUnitMetadata: Invalid timestamp provided. Collection id: %s, SettingUnitId: %s, ModifiedTime: %I64d
+CloseHandle
+CloseThreadpoolTimer
+CloseThreadpoolWait
+CloudBootstrapCompleteEvent
+-CloudDirtyTrigger
+CloudResponse
+CloudSettingsDirtyMarks
+CloudStore
+CloudUsertileDirtyMarks
+CLSDR::Read was redirected with url %s and hr 0x%08x
+CLSIDFromString
+CLt7P
+CoAddRefServerProcess
+CoCancelCall
+CoCreateFreeThreadedMarshaler
+CoCreateGuid
+CoCreateInstance
+CoDisableCallCancellation
+CoEnableCallCancellation
+CoFreeUnusedLibraries
+CoGetApartmentType
+CoGetCallContext
+CoGetInterfaceAndReleaseStream
+CoGetMalloc
+CoInitializeEx
+Collection not for account %s. Didn't save metadata
+CollectionCount
+CollectionId
+collectionId
+CollectionId
+CollectionId: %s
+CollectionId: %ws
+CollectionInterest
+CollectionInterestSubscriptionURI
+CollectionInterestSubscriptionURIAuthPolicy
+CollectionInterestSubscriptionURIScenarioName
+CollectionInterestSubscriptionURIServiceName
+CollectionMinimumMinutesBetweenRoamingUploads
+CollectionQuotaKB
+CollectionsToBackup
+CollectionsToDownload
+CollectionsToRestore
+CollectionsToUpload
+CollectionSyncStateStore
+CoMarshalInterThreadInterfaceInStream
+CommandLineToArgvW
+CompanyName
+CompareFileTime
+CompareStringOrdinal
+ComTaskPool created for SyncAtLogon context=%d
+COneDriveSettingSyncProvider::HandleCloudChangeNotification
+COneDriveSettingSyncProvider::HandleCloudChangeNotification: Device trust was refreshed after getting CCT_MSA_ACCOUNT_STATE event.
+Config
+ConnectedStandbyEntrySyncTimeoutInSeconds
+consumers
+Content-Encoding:gzip
+Content-ID
+Content-Id:<%s>
+Content-ID:<:%[^>]>
+Content-ID:<Photo>
+Content-Length
+Content-Range:Bytes %llu-%llu/%llu
+Content-Transfer-Encoding
+Content-Transfer-Encoding:binary
+Content-Type
+Content-Type:
+Content-Type:application/web3s+xml
+Content-Type:image/jpg
+Context
+ContextMessage
+ConvertSidToStringSidW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+copy /Y "%Windir%\Logs\SettingSync\SettingSync.etl" "%fileoutputpath%\SettingSync.backup.etl"
+copy /Y "%Windir%\Logs\SettingSync\ThemeUI.etl" "%fileoutputpath%\ThemeUI.backup.etl"
+copy /Y C:\data\systemdata\etw\selfhostcritical.etl* %fileoutputpath%
+CoRegisterClassObject
+CoReleaseMarshalData
+CoReleaseServerProcess
+CoResumeClassObjects
+CoRevokeClassObject
+CorruptedStructuredStateAppData
+CoSetProxyBlanket
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+Could not find syncGID for itemMetadata
+CoUninitialize
+count
+Count
+count
+Count
+CoverDocument
+CoverDocuments
+CoWaitForMultipleHandles
+CPt4P
+Create
+CreateCurrentDeviceFolder
+Created
+Created shutdown event. IsLongRunningServerDisabled: %d
+CreateDirectoryW
+CreateEventExW
+CreateEventW
+CreateFileW
+CreateMutexExW
+CreateOrUpdate
+CreateProcessW
+CreateSemaphoreExW
+CreateSettingUnitMetadata
+CreateThreadpoolTimer
+CreateThreadpoolWait
+CreateTimerQueueTimer
+CreateWellKnownSid
+CreateWindowExW
+CreateWorkerWindow failed. Releasing process ref.
+CreateWorkerWindow IsCurrentUserConnected: %d
+CreateWorkerWindow SHCreateThreadWithHandle: %d
+CreateXmlReader
+CreateXmlReaderInputWithEncodingName
+CreateXmlWriter
+Creating new metadata item for collectionId:%s settingUnitId:%s prefix:%llx uniqueId:%s
+CreationId
+CRYPT32.dll
+CryptBinaryToStringW
+CScheduleDelayedUploadsTask::_DoTask
+CSE: Added cloud work item (%u) to collection %s:  0x%08x
+CSE: Added collection: %s to the download on conflict list 0x%08x
+CSE: Added collection: %s to the upload on conflict list 0x%08x
+CSE: Added work SYNCOPERATIONFLAGS=%u to collection sync state: %s out of band completed: 0x%08x
+CSE: Collection %s was locked or we failed to get the remote policy provider, so the download was skipped and we cannot report success to the change detector
+CSE: Collection %s was marked as dirty. Attempting to add work and sync now 0x%08x
+CSE: Collection %s was removed as pending
+CSE: Create collection (no scan): %s out of band completed: 0x%08x
+CSE: Create collection (with scan): %s out of band completed: 0x%08x
+CSE: Failed to schedule sync for collection %s during FirstLogon:  0x%08x
+CSE: Finished work SYNCOPERATIONFLAGS=%u for collection sync state: %s out of band completed: 0x%08x
+CSE: Invalid WORK_ITEM %d
+CSE: Notifying collection %s operation: SYNCOPERATIONFLAGS=%u complete:  0x%08x
+CSE: OnConstraintConflict constraint conflict reason %d. Result - 0x%08x
+CSE: OnConstraintConflict Unknown constraint conflict - 0x%08x
+CSE: Remote replica tombstone cleanup completed with 0x%08x
+CSE: Retry backup with previous error 0x%08x
+CSE: Skip scheduling a backup MSF sync session for collection %s since all units are default - 0x%08x
+CSE: Skipping work SYNCOPERATIONFLAGS=%u for collection : %s because it's not locally created yet
+CSE: Skippping local to cloud sync for collection %s (fUnsyncedItemsExist: %d OR shouldForceUpload: %d)
+CSE: Skippping scheduling a local to cloud MSF sync session for collection %s 0x%08x
+CSE: Sync setup failed to perform post-sync sessions work, hr = 0x%08x
+CSE: Unable to clean state on ~CloudSyncEngine, due to no available INotifySyncOperationComplete object.
+CSE::_DoBackup for %s collection completed with 0x%08x
+CSE::_DoRestoreMetadataEnumeration completed with 0x%08x
+CSE::_DoRestoreOnSingleCollection for %s collection completed with 0x%08x
+CSE::_DoRoamingMetadataEnumeration completed with 0x%08x
+CSE::_DownloadCriticalCollections completed with 0x%08x
+CSE::_EnsureCurrentDeviceFolderExists completed with 0x%08x
+CSE::_EnsureMoveForRestoreSucceeds completed with 0x%08x
+CSE::_EnumerateRestoreCollections completed with 0x%08x
+CSE::_EnumerateRestoreCollections skipped for CLiveStorage::BACKUP_TYPE::APPLICATION
+CSE::_ScheduleOtherPreLogonCollections completed with 0x%08x
+CSE::_UpdateRestoreCollectionMetadata for %s completed with 0x%08x
+CSettingSyncTask: Device trust was refreshed during SyncAtPreLogon.
+CSST::GetRemoteBackupCollectionIds returned no collections since IsEnabled failed with : 0x%08x
+CSST::GetRemoteRoamingCollectionIds returned no collections since IsEnabled failed with : 0x%08x
+CSyncPolicy::IsCollectionPermittedToUploadByPolicy collection %s failed to get fIsProviderAllowed with hr 0x%08x
+Current count: %d
+Current count: %d, Previous count: %d
+Current count: %d, Previous count: Not found
+CURRENT_USER
+currentContextId
+currentContextMessage
+currentContextName
+CurrentTime
+D$ ;^0r
+D$ j'PS
+D$ P3
+D$ Ph
+D$ PhhQ@
+D$ Pj
+D$ PQQ
+D$ PW
+D$ SVW
+D$ V3
+D$ VP
+D$ VWjNj
+D$$C;
+D$$Ph
+D$$Ph`bA
+D$$Pj
+D$$PQQ
+D$$PW
+D$$Sj
+D$(!\$(!\$,!\$4
+D$(|}@
+D$(Bt
+D$(j'PS
+D$(Ph
+D$(Ph(Q@
+D$(Pj
+D$(PQQ
+D$(PV
+D$(PW
+D$(SV
+D$(SVW
+D$,!\$ 
+D$,!CP
+D$,PQ
+D$,PQQ
+D$,PW
+D$@+D$<)|$4
+D$@PQQ
+D$@SVW
+D$\+T$
+D$\PQQ
+D$`jGPh
+D$|Pj
+D$<PQQ
+D$<VP
+D$0Ph
+D$0Pj
+D$0PQ
+D$0PWWj
+D$0Sj
+D$0SVW
+D$4Pj
+D$4Pj/h8
+D$4XtY
+D$8SVW
+D$d=P
+D$dPh
+D$dPj
+D$DPQ
+D$LhTe@
+D$LPj
+D$LPQQ
+D$ph`j@
+D$Pj-P
+D$PPQQ
+D$pSVW
+D$PSVW
+D$t ?D
+D$TPW
+D$TPWjT
+D$TVW
+D$X`/F
+D$xPh
+D$xPj
+D$XPQ
+D$XVjN
+D:(A;;0x10003;;;WD)
+data error
+DatabaseSizes
+DataIntegrityCheckFilter
+DataSize
+DataUri
+DateModified
+DateModifiedOnClient
+DebugBreak
+DecodePointer
+Default Staging Location
+DefaultCollectionQuotaKB
+DefaultProviderGUID
+DefaultSaveToOneDriveRampState
+DefaultSaveToSkyDriveFeatureState
+DefWindowProcW
+del /f %DIRECTIVEFILE%
+Delay object cache removal
+DelayLoadFailureHook
+Delete
+DELETE
+DeleteCriticalSection
+DeletedInvalidMetadataAfterAlarmsRingtonesHandlerChange
+DeletedMetadataStores
+DeleteFileW
+DeleteLocalMetadataStore
+DeleteMetadataStoresActivity
+DeleteRemoteMetadataStore
+DeleteTimerQueueTimer
+Deleting %s to clear invalid syncgids
+depth=1
+depth=infinity
+depth=infinity&inlineblobs=true&view=windowsprofilephoto
+Desktop
+Destination:%s/%s/%s
+DestroyWindow
+DetectEdgeDataLossActivity
+DeviceAppBackupURI
+DeviceAppBackupURIAuthPolicy
+DeviceAppBackupURIServiceName
+DeviceBackupAndSync_Backup
+DeviceBackupAndSync_DeviceManagement
+DeviceBackupAndSync_Restore
+DeviceBackupRootURI
+DeviceBackupRootURIAuthPolicy
+DeviceBackupRootURIServiceName
+DeviceId
+DeviceIdToRestoreFrom
+devicemetadata.xschema.drx.live.com
+DeviceMetadataHelper
+DeviceMetadataUploaded
+DeviceOSBackupURI
+DeviceOSBackupURIAuthPolicy
+DeviceOSBackupURIServiceName
+DeviceTrustRefreshed
+DirtyLocalCollections
+DirtyRemoteCollections
+Disable minimum life span %s
+DisableLongRunningServer
+DisableMinimumLifeSpan clsid:%s
+DisableTelemetry
+DispatchMessageW
+Document
+DocumentStream
+DocumentStreamName
+DocumentStreams
+DocumentStreamType
+DOESNOTEXIST
+downloadSyncAttempts
+DuplicateHandle
+Duration
+DwordArgument
+E hHm@
+E PWVj
+E VWj
+E0FW3
+echo .set CabinetNameTemplate=%cabouput% >> %DIRECTIVEFILE%
+echo .set CompressionType=LZX >> %DIRECTIVEFILE%
+echo .set DestinationDir=%1 >> %DIRECTIVEFILE%
+echo .set DiskDirectoryTemplate= >> %DIRECTIVEFILE%
+echo .set InfFileName=%TEMPFILE% >> %DIRECTIVEFILE%
+echo .set MaxDiskSize=0 >> %DIRECTIVEFILE%
+echo .set RptFileName=%TEMPFILE% >> %DIRECTIVEFILE%
+echo =========== RSP Provider info ================= >> %fileoutput%
+echo Build path is %BuildPath% >> %fileoutput%
+echo done.
+echo Saving trace and roamdiag
+echo.
+echo. > %DIRECTIVEFILE%
+echo. >> %fileoutput%
+EDSVW
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+-Embedding
+EmptyStructuredState
+Enabled
+EncodePointer
+End CSettingSyncTask::SyncAtLogon 0x%08x
+End CSettingSyncTask::SyncAtPostLogon 0x%08x
+End CSettingSyncTask::SyncAtPreLogon 0x%08x
+EngineRunningEventDescriptor
+EnsureNoEdgeDataLossSuccess
+EnsurePSRCollectionIsNotStaged moving collection %s from staging. HRESULT: 0x%08x
+EnsurePSRCollectionIsNotStaged: %s is still staged.
+EnterCriticalSection
+EnterpriseServer
+EnumerateRestoreCollections
+EnumerationMode
+ErrorCode
+ErrorType
+EtwEventActivityIdControl
+EtwEventWriteTransfer
+EtwTraceMessage
+EventProviderEnabled
+EventRegister
+EventSetInformation
+EventUnregister
+EventWriteTransfer
+ewh/?y
+Exception
+Execute result
+ExpandEnvironmentStringsW
+Experience
+ext-ms-win-rtcore-ntuser-cursor-l1-1-0.dll
+ext-ms-win-session-winsta-l1-1-0
+ext-ms-win-session-winsta-l1-1-0.dll
+ext-ms-win-session-winsta-l1-1-1
+ext-ms-win-session-winsta-l1-1-2
+ext-ms-win-session-winsta-l1-1-3
+ext-ms-win-session-winsta-l1-1-4
+ext-ms-win-shell32-shellfolders-l1-1-0.dll
+F t.@
+F(4.@
+F,+V\-
+F,D.@
+f;D$Pu
+F;t$Xr
+F_^[]
+F0$(@
+f9|$f
+f9|$h
+f9L$fu
+Failed format message 0x%08x
+Failed to create backup sync policy - 0x%08x.
+Failed to create singleton instance with riid %s
+Failed to do save action:%d
+Failed to execute roamdiag script %s %s, error: 0x%08x
+FailFast
+Failing sync collectionId:%s settingUnitId:%s prefix:%llx uniqueId:%s
+failureCount
+failureId
+failureType
+FallbackError
+false
+File %hS line %d
+file error
+FileDescription
+fileName
+FileSyncRampState
+FileTimeToSystemTime
+FileVersion
+filter=%s&%s&View=%s
+Filter=%s&View=%s
+FinalInitialPayloadCollectionId: %s
+FindChangesMaxItemCount
+FindClose
+FindFirstFileW
+FindNextFileW
+FindResourceW
+FirstLogonSync
+Fl;Alt
+Fl;Ftu
+Folder
+Fonecoreuap\shell\roaming\cloudcommon\policies\throttledcollectionssyncpolicy.cpp
+foobar
+foobar.com
+for /F "tokens=1,2 delims=()" %%i in ("%BuildLab%") do (
+for /F "tokens=1-3 eol=%%" %%i in ('reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion" /v BuildLabEx') do (
+for /F "tokens=1-3 eol=%%" %%i in ('reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion" /v EditionId') do (
+for /F "tokens=1-5 delims=." %%i in ("%BuildLabEx%") do (
+for /f "tokens=2,3* delims=/ " %%i in ('echo %date%') do set _DATETIME=%%k%%i%%j
+for /f "tokens=3 delims= " %%a in ('reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\IdentityStore\Providers\%ProviderGUID%\SettingSync" /v SyncProvider') do (
+for /f "tokens=3 delims= " %%a in ('reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\IdentityStore\Providers\%ProviderGUID%\SettingSync /v CollectionConfig') do (
+for /f "tokens=6 delims=\" %%a in ('reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\IdentityStore\Providers') do (
+for /f %%i in ('dir /b /a:d %1') do (
+for /f %%i in ('dir /b /a:-d %1') do (
+ForceRestoreBackupMetadataTestHook
+FormatMessageW
+FormFactor
+FragmentSessionId
+Ft9~\|
+FullData
+FullyQualifiedCollectionId
+function
+FXhplA
+G( -@
+G(9O$u
+G;{lr
+G;|$$r
+G;~lr
+GD)_p)_l)_\
+GetAccountForCollection
+GetAccountUninitializedSettingHandlerFactoryInstanceFromFactoryId failure factory id:%s
+GetAppxProvisionFactory
+GetClassInfoW
+GetCollectionInterestURI
+GetCollectionInterestURIAuthPolicy
+GetCollectionInterestURIServiceName
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetFileAttributesExW
+GetFileAttributesW
+GetFileInformationByHandleEx
+GetFileVersionInfoExW
+GetFileVersionInfoSizeExW
+GetFullPathNameW
+GetGeoInfoW
+GetLastError
+GetMessageW
+GetModuleFileNameA
+GetModuleHandleExW
+GetModuleHandleW
+GetMsaLoginProofTokenFailed
+GetMsaToken
+GetMsaTokenFailed
+GetNamedSecurityInfoW
+GetOsSafeBootMode
+GetProcAddress
+GetProcessHeap
+GetProfileType
+GetRemoteBackupCollectionIdsActivity
+GetRemoteRoamingCollectionIdsActivity
+GetSettingHandlerFactoryInstanceFromFullyQualifiedCollectionId failure fqcid:%s
+GetSettingHandlerInstanceFromFullyQualifiedCollectionIdFailed
+GetSettingSyncOperationInfoForCollection
+GetSidSubAuthority
+GetStartupInfoW
+GetSystemDirectoryW
+GetSystemTime
+GetSystemTimeAsFileTime
+GetTempFileNameW
+GetTempPathW
+GetTickCount
+GetTickCount64
+GetTokenInformation
+GetTraceEnableFlags
+GetTraceEnableLevel
+GetTraceLoggerHandle
+GetUserGeoID
+GetUserTileURI
+GetUserTileURIAuthPolicy
+GetUserTileURIServiceName
+GetVersionExW
+GH#w4
+Gl+GpY=
+Glf+GdfH
+Glf+Gp
+Global\{4C5F9B40-E24C-4C97-BB56-E80B5BCA9EB9}
+GlobalBandwidth:%u:%u,
+GlobalBandwidthBucketCounter
+GlobalBandwidthBucketFilledTime
+GlobalCollection
+GlobalRequest:%u:%u,
+GlobalRequestBandwidthBucketDrainAmountPerDay
+GlobalRequestBandwidthBucketReservoirSize
+GlobalRequestBucketCounter
+GlobalRequestBucketDrainAmountPerDay
+GlobalRequestBucketFilledTime
+GlobalRequestBucketReservoirSize
+GlobalState
+goto :EOF
+GOTO :EOF
+goto :EOF
+GraceMonthUploadQuotaExceeded
+GzipDisabled
+H*0"ZOW
+H0;x4w
+H0N0x0
+HA1o7w
+HardwareID
+HasBackupDataLoss
+HashDigestLength
+HasPendingOperations: %s
+HasRestoreFailed
+HasSyncedBefore
+HasSyncedInitialPayloads
+Haven't synced before. Skip
+HeapAlloc
+HeapFree
+HeapSetInformation
+HighRes
+Hit invalid sync gid error 0x%08x
+Host Process for Setting Synchronization
+hresult
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+HResult
+hresult
+hrResult
+http://Passport.NET/purpose
+HttpOpenRequestW
+HttpQueryInfoW
+https
+HttpSendRequestW
+Hx!xx
+I0G1-0+
+IdentityChange
+IdentityHash
+if %IsPhone% equ 0 (
+if %IsPhone% equ 1 (
+if %IsPhone% equ 1 ( 
+if %nocab% equ 0 (
+if /I "%1" == "-nocab" (
+if /I "%1" == "-outputpath" (
+if /I "%EditionId%" EQU "MobileCore" ( 
+if [%CollectionConfigGUID%] neq [] (
+if [%SyncProviderGUID%] neq [] (
+if not exist %fileoutputpath% mkdir %fileoutputpath% 
+if not exist %TARGET% (
+IfCreated: %s
+IfInitialized: %s
+If-Match: %s
+If-None-Match: "%s"
+If-None-Match:%s
+IfPending: %s
+IfProcessed: %s
+IHVhT|A
+IiGM>nw
+image/jpg
+imageName
+imageSize
+Immediately delete all objects
+incompatible version
+IncrementalChanges
+Initial sync is complete, now attempting to sync collection: %s found in cloud. Add work result 0x%08x
+InitializeCriticalSection
+InitializeCriticalSectionEx
+Initialized
+InitializeSRWLock
+InitialSyncTime
+InitOnceBeginInitialize
+InitOnceComplete
+InitOnceExecuteOnce
+InlineBlobs=False&MaxItemCount=%u
+InlineBlobs=True&MaxInlinedBlobsKB=512
+insufficient memory
+InterestSourcesBitFlag
+InternalName
+InternetCloseHandle
+InternetConnectW
+InternetCrackUrlW
+InternetOpenW
+InternetQueryDataAvailable
+InternetReadFile
+InternetSetOptionW
+Invalid metadata stores deleted
+Invalid metadata stores need to be deleted
+Invalid sync error to record. 0x%08x
+InvalidateMsaTokenCache
+InvalidSyncGIdErrorHresult
+IsAoAc
+IsBackupAppDataEnabled: false
+IsBackupDisabled
+IsBackupEnabled
+IsBackupEnabled: false
+IsCallerDevice
+IsCreated: %s
+IsCurrentDevice
+IsDebuggerPresent
+IsDeleted
+IsDeviceTrusted
+ISettingUnit->GetData() fails 0x%08x
+IsNotAoAc
+IsPhoneDevice
+IsRoamingEnabled
+IsRoamingEnabled: %s
+IsSettingSyncEnabled: %s
+IStream_Copy
+IStream_Read
+IStream_Reset
+IStream_Size
+IStream_Write
+IStream_WriteStr
+iswalnum
+ItemAlreadyExists
+ItemDisabled
+ItemDoesNotExist
+Items
+itemURL
+j j!h
+j(j)h
+j.Xf;
+j.Yt$f9L$du
+j;Yf9M
+J@QSh@w
+j@Xj`
+j|h0t@
+j<Yf9M
+jAhhV@
+jhh tA
+j-j.h
+Jl;Nlt
+jShhV@
+j-Xf9
+jXhhV@
+K@PPP
+kernelbase.dll
+KX!CTh
+L$ Q3
+L$ QV
+L$$_^[3
+L$$Qh
+L$,_^[3
+L$,QP
+L$\^3
+L$\_^[3
+L$\_^3
+L$`;KPu
+L$|_^[3
+L$<_^[3
+L$08N$t/
+L$4^3
+L$4_^[3
+L$8QP
+L$8Sh
+L$d;KXu
+L$D_^[3
+L$dPW
+L$DQh@S@
+L$L_^[3
+L$Pf9
+L$t_^[3
+L$th 
+L$tPP
+l}Zu[&
+L+x`r
+l6qnk
+LastBackedupTime
+LastBackgroundUpload
+LastDownloadRemoteInterestTime
+LastErrorLevel
+LastFullSync
+LastGlobalBandwidthBucketDrainTime
+LastGlobalRequestBucketDrainTime
+LastInvalidSyncGIdError
+LastInvalidSyncGIdHresult
+LastModifiedTime
+LastOperationResult: 0x%08x
+LastOtherBandwidthBucketDrainTime
+LastOtherRequestBucketDrainTime
+LastTokenCacheInvalidationTime
+LastUploadLocalInterestTime
+LastUploadTime
+LastWindowsBandwidthBucketDrainTime
+LastWindowsLargeBandwidthBucketDrainTime
+LastWindowsLargeRequestBucketDrainTime
+LastWindowsRequestBucketDrainTime
+LCMapStringEx
+LeaveCriticalSection
+Legal_Policy_Statement
+LegalCopyright
+Length
+lineNumber
+LiveProviderRegistrar
+LiveStorageMetabaseInvalidModifiedTime(Aggregate)
+LiveStorageRedirect
+-LoadAndRunDiagScript
+-LoadAndRunDiagScriptNoCab
+LoadCursorW
+LoadResource
+Local
+Local\{0F579DF1-013E-4F61-BADB-4C88FC09B6AE}
+Local\SM0:%d:%d:%hs
+LocalAlloc
+LocalDataBaseSize
+LocalFree
+LocalReAlloc
+LocalSettingsDirtyMarks
+Location
+LockResource
+LogCollectionThrottledForUpload(Aggregate)
+LogHr
+Logon
+LogonFindChanges
+LookupPrivilegeValueW
+lSVWRQ3
+M0K0I
+MachineId
+MachineName
+Maintenance task: Device trust was refreshed and has changed.
+MakeCab /f %DIRECTIVEFILE% 2>&1>NUL
+malloc
+Manual
+Manufacturer
+MaxBitsFragmentSizeKB
+MaxCollectionIdNameLength=%d
+MaxEntriesFlushed
+MaxEntriesStored
+MaximumOperationFrequency
+memcmp
+memcpy
+memcpy_s
+memmove
+memmove_s
+memset
+message
+meta.edb
+Metadata stores didn't need to be deleted
+MetadataModifiedTime
+MetadataModifiedTimeInt64
+metastore\
+mh\jA
+Microsoft
+Microsoft Corporation
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1.0,
+Microsoft Corporation1-0+
+Microsoft Corporation1200
+Microsoft SettingsSync (%d.%d.%d.%d) Windows NT %d.%d
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp service
+Microsoft Time-Stamp service0
+Microsoft Windows0
+microsoft.microsoftedge_8wekyb3d8bbwe-0
+Microsoft.Windows.BackupAndRoaming.Diagnostics
+Microsoft.Windows.BackupAndRoaming.SyncEngine
+Microsoft.Windows.BackupAndRoaming.SyncOperations
+Microsoft.Windows.BackupAndRoaming.WilProvider
+Microsoft.Windows.TlgAggregateInternal
+Microsoft\Windows\SettingSync
+MigrationDownsyncMaxAttemptPeriodExceeded
+MimeType
+minATL$__a
+minATL$__f
+minATL$__m
+minATL$__z
+MinEntriesFlushed
+MinimumLifetime
+MinimumMinutesBetweenBackupAttempts
+MinimumMinutesBetweenSuccessfulBackupAttempts
+MinOSVersion
+mj>zjZ
+MKCOL
+Mobile
+Model
+Modified
+module
+ModuleCollection
+MoveBackupFolder
+MsaPolicyDocumentNotCached
+ms-appx:///foo/bar.ico
+Msg:[%ws] 
+msvcrt.dll
+MultiByteToWideChar
+multipart/related
+multipart/related;type="application/web3s+xml";start="%[^"]";boundary="%[^"]"
+multipart/related;type="application/web3s+xml";start="<%*[^>]>";boundary="%[^"]"
+N<PSW
+N0L0J
+Named
+need dictionary
+NetworkTypePolicyKey
+New state should be %d (0x%08x).
+NewMetadataItemCreated
+NewState
+ngpwwd2/H^
+NJ2"v
+No lifespan control %s
+NoAction
+-nocab -outputpath %s
+NoChanges
+nocollectionId
+Node:%ws relationshipname:%ws
+Normal
+notconnecteddefaultaccount
+NotificationSubscriptionLimitExceeded
+NotifyLocalSettingChange
+NotPresent
+NtCreateWnfStateName
+ntdll.dll
+NtPowerInformation
+NtQueryWnfStateData
+NtSetInformationFile
+NtSetInformationProcess
+NtSetInformationThread
+NtUpdateWnfStateData
+nullptr
+NumAllocationFailures
+NumBucketLimitReached
+NumFlushes
+NumLargeEventFailures
+NumRetries
+O*9y]
+O@PPPP
+o\)tI&
+O0M0K
+O0U1_1m1
+O8PPPP
+ObjectLength
+ODSSP: _GetRemoteCollectionIds with collectiontype %d failed with 0x%08x
+ODSSP: _GetRemoteCollectionIds with collectiontype %d succeeded and found %u collections
+Offset
+OhPiA
+OhQRPQ
+oK0D$"<
+Ol#O4
+OldAppIdsUnbound
+onecore\internal\sdk\inc\wil\opensource/wil/result.h
+onecore\internal\sdk\inc\wil\opensource\wil\filesystem.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\opensource\wil\win32_helpers.h
+onecore\internal\sdk\inc\wil\opensource\wil\winrt.h
+onecore\internal\sdk\inc\wil\Resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+onecoreuap\private\shell\inc\WnsRegistrarBase.h
+onecoreuap\shell\Roaming\CloudCommon\inc\PdcCacheObject.h
+onecoreuap\shell\roaming\cloudcommon\liveapi\getcollectioninterest.cpp
+onecoreuap\shell\roaming\cloudcommon\liveapi\livestorage.cpp
+onecoreuap\shell\roaming\cloudcommon\liveapi\livestoragedataretriever.cpp
+onecoreuap\shell\roaming\cloudcommon\liveapi\livestoragemetadataparser.cpp
+onecoreuap\shell\roaming\cloudcommon\liveapi\msatoken.cpp
+onecoreuap\shell\roaming\cloudcommon\liveapi\request.cpp
+onecoreuap\shell\roaming\cloudcommon\objectcachehelpers\objectcachehelpers.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\cloudsyncpolicymanager.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\policydataaccessor.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\policydocumentmanager.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\policydocumentpolicy.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\policyvalues.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\requestpolicy.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\syncpolicy.cpp
+onecoreuap\shell\roaming\cloudcommon\policies\uploadpolicy.cpp
+onecoreuap\shell\roaming\cloudcommon\telemetry\telemetry.cpp
+onecoreuap\shell\roaming\cloudcommon\utils\cloudbackuppropertystore.cpp
+onecoreuap\shell\roaming\cloudcommon\utils\cloudsyncutilities.cpp
+onecoreuap\shell\Roaming\CloudCommon\Utils\CollectionChangesSet.h
+onecoreuap\shell\roaming\cloudcommon\utils\livestoragemetabase.cpp
+onecoreuap\shell\roaming\cloudcommon\utils\livestoragesettingunit.cpp
+onecoreuap\shell\roaming\cloudcommon\utils\pdchelper.cpp
+onecoreuap\shell\roaming\cloudcommon\utils\recordsyncerror.cpp
+onecoreuap\shell\roaming\cloudcommon\utils\rfc3339date.cpp
+onecoreuap\shell\roaming\cloudcommon\wnsregistrarbase\wnschanneloperationhandler.cpp
+onecoreuap\shell\roaming\cloudcommon\wnsregistrarbase\wnsregistrarbase.cpp
+onecoreuap\shell\roaming\cloudcommon\wnsregistrarbase\WnsRegistrarBase.h
+onecoreuap\shell\roaming\cloudcommon\wnsregistrarbase\wnsregistrardatabase.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncengine\cloudsyncengine.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\backupsyncprovider.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\livestoragesyncprovider.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\onedrivesettingsyncprovider.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\onedrivesettingsyncremotechangedetector.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\onedrivesyncpolicy.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\onedrivewnsregistrar.cpp
+onecoreuap\shell\roaming\cloudsync\cloudsyncprovider\lib\roamingsecurityfactory.cpp
+onecoreuap\shell\roaming\common\account.cpp
+onecoreuap\shell\roaming\common\deviceutils.cpp
+onecoreuap\shell\roaming\common\dirtyremotecollectionstore.cpp
+onecoreuap\shell\roaming\common\hashutils.cpp
+onecoreuap\shell\roaming\common\loggingutils.cpp
+onecoreuap\shell\roaming\common\networkcosttypemonitor.cpp
+onecoreuap\shell\roaming\common\networkpolicy.cpp
+onecoreuap\shell\Roaming\Common\PackageStateStagedDataHelpers.h
+onecoreuap\shell\roaming\common\parsecollectionid.cpp
+onecoreuap\shell\roaming\common\policyutils.cpp
+onecoreuap\shell\roaming\common\registryutils.cpp
+onecoreuap\shell\roaming\common\roamdiagutils.cpp
+onecoreuap\shell\Roaming\Common\SettingUnitHelpers.h
+onecoreuap\shell\roaming\common\SettingUnitHelpers.h
+onecoreuap\shell\roaming\common\signalutil.cpp
+onecoreuap\shell\roaming\common\syncgidhelper.cpp
+onecoreuap\shell\roaming\common\tokenbrokerutils.cpp
+onecoreuap\shell\roaming\common\wamcollectionid.cpp
+onecoreuap\shell\roaming\common\winroamver.cpp
+onecoreuap\shell\roaming\settingsynchost\exe\main.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\collectionstagingmanager.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\queuegatekeeper.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\queuegatekeeper.h
+onecoreuap\shell\roaming\settingsynchost\lib\resumeorphanedoperationstask.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\scanforchangestask.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\settingsynctask.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\SingletonClassFactorybase.h
+onecoreuap\shell\Roaming\SettingSyncHost\lib\SingletonClassFactorybase.h
+onecoreuap\shell\roaming\settingsynchost\lib\syncorchestrator.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\syncrunnabletask.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\syncstate.cpp
+onecoreuap\shell\roaming\settingsynchost\lib\workqueue.cpp
+OneDriveBackup
+OneDriveRoaming
+OneDriveUploadBatch
+OnWorkFinished
+oobe.exe
+Oonecoreuap\shell\roaming\settingsynchost\lib\utils.cpp
+OpenEventW
+OpenProcessToken
+OpenSemaphoreW
+OpenThreadToken
+operation
+Operation
+Operation not found for %d, %s
+Operation to invalidate MSA WAM token cache timed out
+Operation to request web token timed out
+Operation: 0x%x
+OperationFlags
+OperationId
+OperationId:%ws operationOrigin:%d
+OperationOrigin
+operationstate_collections.txt
+operationstate_queuedoperations.txt
+operationstate_syncinfo.txt
+operationstate_workqueues.txt
+OptInChoice
+Orchestrator%s: %s
+OrchestratorIfCloudDirty: %s
+OrchestratorIfEndSyncBatchNeeded: %s
+OriginalFilename
+originatingBinary
+originatingContextId
+originatingContextMessage
+originatingContextName
+OsRestoreMetadataEnumeration
+OSVersion
+OtherBandwidth:%u:%u,
+OtherBandwidthBucketCounter
+OtherBandwidthBucketFilledTime
+OtherRequest:%u:%u,
+OtherRequestBandwidthBucketDrainAmountPerDay
+OtherRequestBandwidthBucketReservoirSize
+OtherRequestBucketCounter
+OtherRequestBucketDrainAmountPerDay
+OtherRequestBucketFilledTime
+OtherRequestBucketReservoirSize
+Outcome
+OutputDebugStringW
+-outputpath %s
+Overflow with eStage %u
+Overwrite
+owningpackage.xschema.drx.live.com
+Ox;pl
+OZw3(?
+P#|$8
+p<VP)
+P9w u
+PackageFamilyName
+PackageState
+packagestate
+packagestate-%s-%u
+packagestate-microsoft.microsoftedge_8wekyb3d8bbwe-0
+PagingToken
+ParseLiveMetadata
+PartA_PrivTags
+PathAllocCombine
+PathCchAppend
+PathGetCharTypeW
+PathStripPathW
+PDC activation revoked, Handle: %p, Activation handle: %p
+PDC activator client registration failed, Result: 0x%08x
+PDC activator client registration succeeded, Handle: %p
+PDC activator client unregistration failed, Result: 0x%08x, Handle: %p
+PDC activator client unregistration succeeded, Handle: %p
+PDC deactivation failed, Handle: %p, Activation handle: %p, Result: 0x%08x
+PDC deactivation not performed. Activation failed or activator was not initialized. PDC handle: %p
+PDCActivationHandle
+PdcClientRegistrationFailed
+PdcClientUnregistrationFailed
+PdcDeactivationFailed
+PDCHandle
+PdcRevocation
+PdcTaskClientRegister
+PdcTaskClientRequest
+PdcTaskClientUnregister
+Pdcv2ActivationClientActivate
+Pdcv2ActivationClientDeactivate
+Pdcv2ActivationClientRegister
+Pdcv2ActivationClientUnregister
+PendingOperations
+PendingRestore
+PerformanceServer
+PerformPdcActivation
+PerformSingleOperation
+Ph  A
+Ph `@
+Ph AA
+Ph l@
+Ph$0A
+Ph(=A
+Ph(l@
+Ph(Q@
+Ph,~A
+Ph,O@
+Ph,sA
+Ph@TA
+Ph`bA
+Ph`L@
+Ph`s@
+Ph|`A
+Ph|eA
+Ph|U@
+Ph<{@
+Ph<k@
+Ph<wA
+Ph0`@
+Ph4 A
+Ph48A
+Ph8rA
+Ph8SA
+PhDM@
+PhdM@
+PhH A
+PhHl@
+PhhQ@
+PhHSA
+PhhV@
+PhhvA
+PhL^@
+PhL{@
+PhLkA
+Phone
+PhoneDeviceId
+Photo
+PhotoStream
+PhotoUploadRampState
+Php/A
+PhPd@
+Phpm@
+PhPS@
+PhpS@
+PhPS@
+PhPsA
+PhTpA
+PhTR@
+Phxb@
+PhxQ@
+PhXSA
+Pj0h\{@
+Pj5h\{@
+PjAhP&A
+PjChhwA
+Pjqh(!A
+PlatformWorkaroundOnThePhone
+Policy
+PolicyBlob
+PolicyData
+PolicyDocument
+PolicyDocumentLastRefresh
+PolicyDocumentPollInterval
+PolicyDocumentPollIntervalSeconds
+PolicyDocumentUri
+policymanager.dll
+PolicyManager_GetPolicyInt
+PostQuitMessage
+PostUserTileURI
+PostUserTileURIAuthPolicy
+PostUserTileURIServiceName
+PowerDeterminePlatformRoleEx
+PPFVP
+PPPPh
+PPPPj
+PPPPPP
+PPPPPPP
+PPPPPV
+PPPPW
+PQh`e@
+PQh0V@
+PQhdM@
+PQhPLA
+PQPPPP
+PQQQQ
+PQQSVW
+PQRj+
+PQVRh
+PQVRh0
+PQVVRh@
+PreAuthURIAuthPolicy
+PreAuthURIServiceName
+PreAuthURIStrongAuthPolicy
+PreAuthURL
+PreAuthUrl
+PreviousCount
+PreviousCountFound
+PreviousSettingUnitCount
+PreviousState
+Priority
+Priority: %s
+PrioritySync
+PrioritySync1
+PrioritySync2
+ProcessIdToSessionId
+Processing collection '%s'
+ProductName
+ProductVersion
+ProfilePhoto
+ProfilePhoto:UserTileStatic
+ProfilePhoto:Win8Dynamic
+ProfilePhoto:Win8Static
+Promoted
+PROPSYS.dll
+PropVariantClear
+PropVariantToBoolean
+PropVariantToStringAlloc
+PropVariantToUInt32
+Provider
+ProviderId
+ProviderOperation
+ProvidersTombstoneExpiryInSeconds
+PRQj,h
+PRQj7h\{@
+PRQj-h
+PRVQh\{@
+PSCreateMemoryPropertyStore
+PSj!Z
+PSj4Z
+PSPropertyBag_WriteStr
+PSPropertyBag_WriteUnknown
+PSSjB
+PSSSS
+PSVWRj
+Publish sync result:0x%08x for collection:%s for wnf:{%d}{%d}
+PURPOSE_GETKEYDATA_ROAMING
+pushd %TARGET%
+puWI-D
+PvD{0
+PVhxk@
+PVjrZ
+PVSWj
+PVWQR
+PVWQRj+
+PVWQSj+
+PVWWRQ
+PWh ?A
+PWh4mA
+PWjUZ
+PWjXZ
+PWjYZ
+PWRVQj
+PWRVQj:h
+PWSSVh
+PWVSR
+px_#3,o9
+Q0U0Y0]0a0e0i0m0q0u0y0}0
+qCollectionId
+Qh ZA
+Qh$Y@
+Qh(Q@
+Qh(SA
+Qh,{@
+Qh@4A
+Qh@S@
+Qh`h@
+Qh|k@
+Qh01A
+Qh05A
+Qh4[A
+Qh4Y@
+Qh4ZA
+QhDM@
+QhdZA
+QhhO@
+QhhvA
+Qhl{@
+QhL{@
+QhP8A
+QhPS@
+qHResult
+QhX3A
+QhXZA
+QhxZA
+QISearch
+Qkkbal
+QLVQj
+qonecoreuap\shell\roaming\settingsynchost\lib\workqueue.h
+QPQh?
+QPQQQQ
+QQh8l@
+QQQQPQ
+QQQQQ
+QQSV3
+QQSVW
+QQSVW3
+QQSVWh
+QQSVWjZj
+QQSW3
+QQVW3
+QQVWj
+QQWh@
+QRPh\
+QRPh|
+QRPh<
+QSVW3
+QSVWh
+QSVWj
+QueryFullProcessImageNameW
+QueryPerformanceCounter
+QuotaUsed
+QVWj X
+R!s4Z
+r$PWSV
+r~akow
+R1h58
+r2f;E
+RaiseException
+RaiseFailFastException
+Range:bytes=%llu-%llu
+RangeRule
+RangeUploadMinSizeForBitsUpload
+realloc
+Received WM_ENDSESSION, shutting down. lParam: %#x
+Redmond1
+ReducePrivileges
+ReferencedCollection
+ReferencedCollections
+reg export HKLM\SOFTWARE\Microsoft\IdentityCRL "%fileoutputpath%\identitycrl.reg"
+reg export HKLM\Software\Microsoft\Windows\CurrentVersion\Live "%fileoutputpath%\live_hklm.reg"
+reg export HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System "%fileoutputpath%\systempolicies.reg"
+reg export HKLM\Software\Microsoft\Windows\CurrentVersion\SettingSync "%fileoutputpath%\settingsync_hklm.reg"
+reg export HKLM\Software\Policies\Microsoft\Windows\SettingSync "%fileoutputpath%\settingsync_policies.reg"
+reg query HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\IdentityStore\Providers /s >> %fileoutput%
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyValueW
+RegDeleteTreeW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+RegGetValueW
+RegisterClassW
+RegisterCollectionInterestURI
+RegisterCollectionInterestURIAuthPolicy
+RegisterCollectionInterestURIServiceName
+Registered
+RegisterTraceGuidsW
+Registrar
+RegOpenCurrentUser
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetValueExW
+RelationshipName
+ReleaseDelay
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+REM -----------
+REM --- If a private timebuild, BuildLab will have "branch(username)" form. Drop the username. ---
+REM * CAB IT! *
+REM CAB Helper
+RemoteDataBaseSize
+RemoteDeviceAppBackupURI
+RemoteDeviceAppBackupURIAuthPolicy
+RemoteDeviceAppBackupURIServiceName
+RemoteDeviceOsBackupURI
+RemoteDeviceOsBackupURIAuthPolicy
+RemoteDeviceOsBackupURIServiceName
+RemoteInterest
+RemoteMetadataStoreVersion
+remotemetastore\v1\
+RemoveDirectoryW
+ReplicasHaveBeenCleanedSinceLastFix
+ResetEvent
+ResolveDelayLoadedAPI
+ResourceID
+ResourceIDAccessURI
+ResourceIDAccessURIAuthPolicy
+ResourceIDAccessURIServiceName
+Restore
+Restore1
+Restore2
+Restore3
+RestoreBackupId
+restoreSyncAttempts
+RestoreURI
+RestoreURIAuthPolicy
+RestoreURIServiceName
+Resurrect without setting unit id collectionId:%s settingUnitId:%s
+ResurrectDeletedItemWithoutSettingUnitId
+ResyncNeeded
+Retry-After
+RetryPermittedAfter
+ReturnHr
+Reupload
+RhxQ@
+RoActivateInstance
+RoamingAPIQOS
+RoamingBatch
+RoamingDataExists
+RoamingReasonCode
+RoamingScenarioQOS
+RoamingSyncToken
+RoamingUnitsApplied
+RoamingUnitsTotal
+RoGetActivationFactory
+RoGetAgileReference
+RoGetMatchingRestrictedErrorInfo
+RoleDefinitionName
+RoOriginateError
+RoOriginateErrorW
+RootItemCount
+RoRegisterActivationFactories
+RoRevokeActivationFactories
+RoTransformError
+RPCRT4.dll
+RRRR+
+RRRSh
+RRWh@
+rs9Glrn
+RtlConvertSidToUnicodeString
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlFreeUnicodeString
+RtlGetSuiteMask
+RtlNotifyFeatureUsage
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlPublishWnfStateData
+RtlQueryFeatureConfiguration
+RtlRegisterFeatureConfigurationChangeNotification
+RtlSubscribeWnfStateChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlUnsubscribeWnfNotificationWaitForCompletion
+Running in async mode.
+S:(ML;CIOI;NXNWNR;;;ME)
+s@hpqA
+s_ApplyStagedUnits() collection = %s, (%u / %u), hr = 0x%08x
+s_ApplyStagedUnits() collection = %s, units = %u, hr = 0x%08x
+s_SetDateModifiedOnClientTime
+s_StartRoamingSyncOperation collectionId:%s priority:%d
+-SaveTrace
+ScenarioId
+SchedulePreLogonCollections
+ScheduleUploadComplete(Aggregate)
+SchemaVersion
+sDeviceTrusted
+sDWVh
+SeAssignPrimaryTokenPrivilege
+SeBackupPrivilege
+SeCreateTokenPrivilege
+SeDebugPrivilege
+SeIncreaseQuotaPrivilege
+SeMachineAccountPrivilege
+SeRemoteShutdownPrivilege
+SeRestorePrivilege
+service::%s::%s
+ServiceName
+SeSecurityPrivilege
+set BuildLabEx=
+Set BuildPath=%BuildLab%\%BuildString%\%BuildArch%
+set CollectionConfigGUID=%%a
+set default_app_sid=S-1-5-21-2702878673-795188819-444038987-2781
+set DIRECTIVEFILE="%1\Schema.ddf"
+set EditionId=
+set fileoutput="%fileoutputpath%\Diag-Roaming.txt"
+set IsPhone=0
+set nocab=0
+set ProviderGUID=%%a
+set SyncProviderGUID=%%a
+set TARGET="%1"
+set TEMPFILE="%1\TEMP"
+SeTakeOwnershipPrivilege
+SeTcbPrivilege
+SetEntriesInAclW
+SetEvent
+SetFileAttributesW
+SetFileTime
+SetLastError
+setlocal
+setlocal ENABLEDELAYEDEXPANSION
+SetNamedSecurityInfoW
+SetPriorityClass
+SetRestrictedErrorInfo
+SetThreadpoolTimer
+SetThreadpoolWait
+SetThreadPriority
+SettingHandlerFactory
+Settings
+SettingsSync_ChangeEnumeration
+SettingsSync_GetSettingUnitData
+SettingsSync_NotificationSubscription_CollectionInterest
+SettingsSync_NotificationSubscription_UserTile
+SettingsSync_NotificationSubscription_WindowsSettings
+SettingsSync_Upload
+SettingSync
+SettingSync\SyncData\RemoteNamespace\packagestate\microsoft.microsoftedge_8wekyb3d8bbwe-0
+SettingSyncCore.dll
+SettingSyncDiagnostics
+SettingSyncHost
+SettingSyncHost.exe
+settingsynchost.exe
+settingsynchost.exe -CaptureDiag "%fileoutputpath%"
+settingsynchost.exe -SaveTrace "%fileoutputpath%"
+settingsynchost.exe -StartTrace
+SettingSyncHost.pdb
+SettingSyncOperationInfoGUID: %s
+SettingUnitId
+SettingUnitMetadataFiletime
+SettingUnitModifiedTime
+SettingUnitModifiedTimeInt64
+SetUnhandledExceptionFilter
+SetWindowLongW
+SeUndockPrivilege
+Sh k@
+Sh ZA
+Sh,O@
+Sh,wA
+Sh`TA
+Sh0t@
+Sh4M@
+Sh4ZA
+Sh8\@
+Sh8rA
+SHA1Hash
+SHA256
+SHCORE.dll
+SHCreateMemStream
+SHCreateStreamOnFileW
+SHCreateThreadWithHandle
+SHDeleteKeyW
+SHDeleteValueW
+ShDM@
+ShdZA
+ShellLauncherReadyEvent
+SHGetKnownFolderPath
+ShH\@
+Shh}A
+ShHl@
+ShhV@
+SHOpenRegStream2W
+ShouldDeleteMetadataStores
+ShP8A
+ShPL@
+ShPS@
+SHRegGetPathW
+SHRegGetValueW
+SHRegSetPathW
+SHSetValueW
+SHStrDupW
+SHTaskPoolGetUniqueContext
+SHTaskPoolQueueTask
+Shutdown event fired. COM server is shutting down.
+ShutdownAction
+Shx]@
+ShxZA
+ShXZA
+SimulatedDelayTestHook
+SingletonCreateInstanceFailed
+SizeofResource
+SkyDriveFileSyncFeatureState
+SkyDrivePhotoUploadFeatureState
+SkyDriveVideoUploadFeatureState
+Slate
+Sleep
+Software\Classes\Local Settings\Software\Microsoft\Windows\CurrentVersion\AppContainer\Storage\microsoft.microsoftedge_8wekyb3d8bbwe\MicrosoftEdge\SettingSync
+SOFTWARE\Microsoft\SQMClient
+Software\Microsoft\Windows\CurrentVersion\AppSync
+Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\%d
+Software\Microsoft\Windows\CurrentVersion\Live\Roaming
+Software\Microsoft\Windows\CurrentVersion\OneDriveOptIn
+Software\Microsoft\Windows\CurrentVersion\OneDriveRamps
+Software\Microsoft\Windows\CurrentVersion\SettingSync
+Software\Microsoft\Windows\CurrentVersion\SettingSync\CollectionAccount
+Software\Microsoft\Windows\CurrentVersion\SettingSync\Extensions
+Software\Microsoft\Windows\CurrentVersion\SettingSync\HackHackPhone
+Software\Microsoft\Windows\CurrentVersion\SettingSync\MSADisconnectState
+Software\Microsoft\Windows\CurrentVersion\SettingSync\Notify
+Software\Microsoft\Windows\CurrentVersion\SettingSync\Security
+Software\Microsoft\Windows\CurrentVersion\SettingSync\SettingHandlerFactories
+Software\Microsoft\Windows\CurrentVersion\SettingSync\SyncData
+Software\Microsoft\Windows\CurrentVersion\SettingSync\SyncData\Bootstrap
+Software\Microsoft\Windows\CurrentVersion\SettingSync\SyncData\DeviceInterest
+Software\Microsoft\Windows\CurrentVersion\SettingSync\SyncData\Namespace
+Software\Microsoft\Windows\CurrentVersion\SettingSync\SyncData\RemoteCollectionInfo
+SOHOServer
+SourceResourceID
+SourceStreamName
+SourceStreamOffset
+Specific Error hit collectionId:%s settingUnitId:%s prefix:%llx uniqueId:%s hr:0x%08x providerOperation:%d syncOperation:%d
+SpecificSyncUnitErrorHitWithSyncGID
+SqmSleptSinceFirstBackgroundUploadScheduled
+srand
+SSSQh
+SSSRW
+SSSSh
+SSSSSSS
+SSVh@
+SSWh@
+SSWQInitialPayloadSyncEvent
+StagedPSRCollectionRecovery
+StagingAppVersionMismatch
+Start
+StartScreenImage
+StartStagingBackupDataAsync collectionId:%s priority:%d
+-StartTrace
+State
+StateVersion
+StillStagedAfterRecovery
+stream end
+stream error
+StreamDataStatus
+StreamSegment
+StreamSegments
+StringArgument
+StringFileInfo
+StringFromCLSID
+StringFromGUID2
+StringFromIID
+strncmp
+StrStrIW
+StrToIntExW
+SubscriptionCannotBeAddedInUpdate
+SubscriptionCountLimitExceeded
+Success
+Successfully invalidated the MSA WAM token cache
+SVWh@
+SVWiX
+SVWj@
+SVWj2j3
+SVWPh
+SVWPQ
+SVWQh
+SVWQj
+SWhhRA
+SWj?Z
+SWPhT|A
+swscanf_s
+SWSh?
+Sync operation started for %s, SyncOperationFlags: %d, IsDeviceTrusted: %s
+Sync setup initialization %s failed, hr = 0x%08x
+Sync setup uninitialization %s failed, hr = 0x%08x
+SyncAtPostLogon
+SyncAtPreLogon
+SyncGIDPrefix
+SyncGIDsOfFailingSync
+SyncGIDUniqueId
+SyncOperation
+SyncOperationEnded
+SyncOperationFlag
+SyncPolicy
+SyncResult
+SyncSessionThrottled
+SYNCSTATE_MANDATORYBACKUP
+SYNCSTATE_NONE
+SYNCSTATE_USERINITIATED
+SyncStateFlags: %s
+SyncToken=%s&View=%s
+SystemTimeToFileTime
+t$ QV
+T$ RP
+T$$!\$$
+t$$hDM@
+t$$hPcA
+t$$Ph
+T$$RP
+T$$RQ
+t$$VPj
+t$$Wh+
+t$$WVj
+T$(#L$
+T$(RP
+t$(VS
+t$(WV
+T$,RP
+t$`Pj'
+T$`RP
+t$<WP
+T$0RQ
+t$8hDM@
+T$hRP
+T$L#D$
+t$pVQ
+t)QQj
+t*hhW@
+t.jdWV
+t.VQj
+t\|~;
+t+jBXf
+t0h`\A
+Task: %ws, Subtask: %ws
+Task: %ws, Subtask: %ws, PDC handle: %p
+tAVWQ3
+TBCoreHResult
+TelemetryAssert
+TelemetryAssertDiagTrack
+TempBackupURI
+TempBackupURIAuthPolicy
+TempBackupURIServiceName
+TerminateProcess
+TestDontInlineBlobsOnFindChanges
+Thales TSS ESN:E041-4BEE-FA7E1%0#
+ThereWasAnInvalidSyncGIdError
+t-hHo@
+threadId
+ThrottleTime
+Ticket
+TimeBetweenRoamingAttempts
+timestamp
+TlgAggregateSummary
+TlP0X
+TokenBrokerHelpers-CachedWebAccount
+TokenBrokerHelpers-CWAImpersonate
+totalBytes
+TotalEntriesFlushed
+totalHits
+TotalSubItemSize
+toupper
+tracelog -flush selfhostcritical
+TraceMessage
+TransactionId
+TranslateMessage
+Translation
+tRj Z3
+TryAcquireSRWLockExclusive
+tsGyv2OO+0wpZ1ymIT3PydwQkuQ=
+TurnedOff
+TurnedOn
+tuSWh
+u Whp
+u$h|{@
+u$hdpA
+u$WSQ
+u&!D$
+u&QWS
+u&ShDM@
+u(h(hA
+u(WVj
+u*Whl
+u,!D$
+u.SSj
+u?;s\s
+u`8VXt
+u+PPP
+u<9_ 
+U0S0Q
+u1QSW
+u69w0
+u78SXt
+u-h(hA
+uJh4hA
+uK!D$
+um;G@s
+UMPDC.dll
+uMPPV
+UnableToSaveFindChangesMetadata
+Unavailable
+UnblockNotificationChannels
+UnhandledExceptionFilter
+unitCount
+UnitId
+UnitsFailed
+UnitsSize
+UnitsSucceeded
+Unknown
+UnregisterTraceGuids
+Unspecified
+uo8B)tj
+Update
+UpdateSettingUnitMetadata
+UploadBatchMaxDataSize
+UploadBatchMaxDocumentCount
+UploadLocalInterestIntervalInSeconds
+uploadSyncAttempts
+U-Q-{
+uQWhXKA
+UrlEscapeW
+uRVWj
+UserAgentBanned
+UserDomainAccount
+USERENV.dll
+UserId
+UserTile
+UserTileImages
+UserTileStatic
+UserTileSubscriptionURI
+UserTileSubscriptionURIAuthPolicy
+UserTileSubscriptionURIScenarioName
+UserTileSubscriptionURIServiceName
+Using collection account override: %s = [%s, %s, %s]
+USNJournalId
+utf-16
+uThdiA
+UuidCreate
+uUkG4
+uW!|$$
+v PhpR@
+v)Vjd3
+V_:X1:
+Value
+VarFileInfo
+VerQueryValueW
+Version mismatch while trying to apply staged collection %s with mode %d
+VersionNumberDoesNotMatch
+Vh ?A
+Vh tA
+Vh(j@
+Vh,O@
+VH;~Tr
+Vh@2A
+Vh@S@
+Vh@v@
+Vh`TA
+Vh0`@
+Vh0t@
+Vh8?A
+Vh8\@
+Vh8i@
+Vh8rA
+VhDM@
+VhH\@
+Vhh\@
+VhH\@
+Vhh\@
+Vhh}A
+VhHMA
+VhhQ@
+VhHuA
+VhhV@
+Vhx?A
+Vhx\@
+VhxQ@
+VideoUploadRampState
+View=%s
+view=windowsprofilephoto
+Vj.^3
+Vj\Xj-f
+VPhDM@
+VQhLwA
+VQj 3
+VQj@3
+vQO+t
+VS_VERSION_INFO
+VSj(Z
+VSj<Z
+VSjZZ
+VSWRQj
+VVRh@
+VVRhh
+VVSPj
+VVVVj
+VVVVP
+VWj(Z
+VWjNj
+VWRQh
+w+OQvr
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WamCollectionId: %ws
+Washington1
+WasThereAnInvalidSyncGIdError:%d InvalidSyncGIdHresult:0x%08x ReplicasHaveBeenCleanedSinceLastFix:%d phoneDevice:%d shouldDelete:%d
+wcschr
+wcsncmp
+wcsncpy_s
+wcsstr
+wcstok_s
+WebAccount
+WebProviderError
+WebProviderErrorAvailable
+WebTokenRequestStatus
+Wh tA
+Wh(Q@
+Wh(SA
+Wh,O@
+Wh\[A
+Wh`gE
+Wh`TA
+Wh<k@
+Wh07A
+Wh0t@
+Wh4M@
+Wh8?A
+Wh8\@
+WhDM@
+WhDY@
+WhhQ@
+WhHSA
+WhhtA
+WhhV@
+WhL[A
+Whl[A
+WhL{@
+WhP6A
+WhpbA
+WhPS@
+Whx]@
+Whx7A
+WhxQ@
+WideCharToMultiByte
+wilActivity
+WilError_03
+wilResult
+WilStaging_02
+Win8Dynamic
+Win8Static
+Windows
+Windows.ApplicationModel.Core.CoreApplication
+Windows.Foundation.Collections.IIterator`1<Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest>
+Windows.Foundation.Collections.IVector`1<Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest>
+Windows.Foundation.Collections.IVectorView`1<Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest>
+Windows.Foundation.PropertyValue
+Windows.Foundation.Uri
+Windows.Internal.Security.Authentication.Web.TokenBrokerInternal
+Windows.Internal.Security.WebAuthentication.AuthenticationManager
+Windows.Internal.SettingSync.SettingSyncTask
+Windows.Networking.Connectivity.NetworkInformation
+Windows.Networking.PushNotifications.PushNotificationChannelManager
+Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator
+Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest
+Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager
+Windows.Security.Authentication.Web.Core.WebTokenRequest
+Windows.Security.Credentials.WebAccount
+Windows.Security.Credentials.WebAccountProvider
+windows.settingsprovider_cw5n1h2txyewy
+Windows.System.Threading.ThreadPoolTimer
+Windows-AppSync
+WindowsBackup
+WindowsBackupFolder
+WindowsBackupTrustedFolder
+WindowsBandwidth:%u:%u,
+WindowsBandwidthBucketCounter
+WindowsBandwidthBucketFilledTime
+WindowsCompareStringOrdinal
+WindowsCreateString
+WindowsCreateStringReference
+windows-credentials
+WindowsDeleteString
+WindowsGetStringRawBuffer
+windows-inputpersonalization
+WindowsIsStringEmpty
+WindowsLargeBandwidth:%u:%u,
+WindowsLargeBandwidthBucketCounter
+WindowsLargeBandwidthBucketFilledTime
+WindowsLargeRequest:%u:%u,
+WindowsLargeRequestBandwidthBucketDrainAmountPerDay
+WindowsLargeRequestBandwidthBucketReservoirSize
+WindowsLargeRequestBucketCounter
+WindowsLargeRequestBucketDrainAmountPerDay
+WindowsLargeRequestBucketFilledTime
+WindowsLargeRequestBucketReservoirSize
+windows-lockscreen
+WindowsPackageSettings
+Windows-Personalization
+WindowsPhone
+windowsphone-alarms
+Windows-RemoteSyncDummyId
+WindowsRequest:%u:%u,
+WindowsRequestBandwidthBucketDrainAmountPerDay
+WindowsRequestBandwidthBucketReservoirSize
+WindowsRequestBucketCounter
+WindowsRequestBucketDrainAmountPerDay
+WindowsRequestBucketFilledTime
+WindowsRequestBucketReservoirSize
+Windows-ServicesBici
+WindowsSetting
+WindowsSettings.%s
+windowssettings.xschema.drx.live.com
+WindowsSettingsFolder
+WindowsSettingsSubscriptionURI
+WindowsSettingsSubscriptionURIAuthPolicy
+WindowsSettingsSubscriptionURIScenarioName
+WindowsSettingsSubscriptionURIServiceName
+WindowsSettingsTrustedFolder
+WindowsSettingsURI
+WindowsSettingsURIAuthPolicy
+WindowsSettingsURIServiceName
+WindowsSettingsV2
+Windows-SlideShow
+WindowsStoreUserApps
+WindowsStringHasEmbeddedNull
+Windows-Tethering
+windows-tethering
+Windows-Theme
+Windows-UserTile
+windows-wireless
+Windows-Wireless
+WININET.dll
+WinRoamErrors
+WinStationGetParentSessionId
+WinSync.dll
+WLID1.1 realm="WindowsLive", fault="BadContextToken", policy="%[^"]", ver="%*[^"]", target="%[^"]"
+WLRoamingSetting_CollectionInterest
+WLRoamingSetting_Settings
+WLRoamingSetting_UserTile
+wn>Jj
+WNF_STATE_NAME: %llu
+WnfMonitorStartup
+WorkerW
+WorkQueueType: %s
+Workstation
+WPh<VA
+WPhDY@
+WPWVS
+WQh m@
+WRhxQ@
+WriteFile
+WriteMode
+WriteStatus
+WShhIA
+WShx\@
+WSj=Z
+WSjYZ
+WVWWj
+WVWWWWWWWWSW
+WWVh@
+WWW-Authenticate
+WWWPh
+WWWSVS
+WWWVh
+x VVVVh
+x#hP^@
+x%Qh 
+x(WSV
+x*jBXf
+X/%t,
+x@VWh0
+x[9^`v
+x\PPh
+x_Qh 
+x_SVWh
+x`hXoA
+x0QQQWQ
+x3j@Xf
+X-ClientErrorCode
+X-HasMoreData
+xHj@j
+xIjBXf
+xIWh`UA
+xj9F`v
+xl;W`sZ
+XmlLite.dll
+xMWWWWWWW
+X-PagingToken
+xPh@dA
+xpj:h$bA
+XPQSh
+X-Region:%s
+X-RequestStats:ClientThrottled=
+X-RequestStats:CollectionId=%s
+X-RequestStats:UserInitiated=%s
+X-ResyncAction
+X-Scenario: %s
+X-Scenario: SettingsSync_ClientPolicy
+X-Scenario: SettingsSync_CollectionInterest
+X-Scenario: SettingsSync_UserTile
+X-SubscriptionIdToNotNotify:%s
+X-SyncOptions:CurrentSyncTokenOnly
+X-SyncStatus
+X-SyncToken
+X-TransactionId:%s
+X-UserAgent:%s
+y#Sh 
+y*hdM@
+y,Vhp
+y/ShP
+y@Vh 
+y\97u4
+Y__^[
+y1VWjk
+y497u&
+y4PhP
+yFVWj^
+yKVhp
+Yp;ytv
+yQShP
+z.9Wv

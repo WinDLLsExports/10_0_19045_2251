@@ -1,0 +1,174 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-webdavredir-mrxdav_31bf3856ad364e35_10.0.19041.1266_none_8970b8bd7aecfac3\mrxdav.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    rdbss.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B000 Import Address Table
+             1C000B480 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         B66 __C_specific_handler
+                         9A2 SeCaptureSubjectContext
+                         989 SeAccessCheck
+                         33B IoGetFileObjectGenericMapping
+                         9DD SeReleaseSubjectContext
+                         6F5 PsGetCurrentThreadId
+                         32C IoGetCurrentProcess
+                         59A MmMapLockedPagesSpecifyCache
+                          88 ExAcquireFastMutexUnsafe
+                         6E0 PsCreateSystemThread
+                         110 ExReleaseFastMutexUnsafe
+                          8E ExAcquireResourceExclusiveLite
+                         4D5 KeReadStateTimer
+                         517 KeSetTimerEx
+                         11B ExReleaseResourceLite
+                         6D2 ProbeForRead
+                         6D3 ProbeForWrite
+                          A3 ExAllocatePoolWithTag
+                         9B1 SeCreateClientSecurityFromSubjectContext
+                         9F3 SeTokenType
+                         6E4 PsDereferencePrimaryToken
+                         6E2 PsDereferenceImpersonationToken
+                          CA ExFreePoolWithTag
+                         459 KeEnterCriticalRegion
+                         B95 _wcsnicmp
+                         4A5 KeLeaveCriticalRegion
+                         4CA KeQueryTimeIncrement
+                         880 RtlInitUnicodeString
+                         483 KeInitializeEvent
+                         2C4 IoAllocateMdl
+                         352 IoGetTopLevelIrp
+                         3CF IoSetTopLevelIrp
+                         40D IofCallDriver
+                         530 KeWaitForSingleObject
+                         31D IoFreeMdl
+                         505 KeSetEvent
+                         BDF wcschr
+                         2F1 IoCreateFileEx
+                         5DE NtClose
+                         349 IoGetRelatedDeviceObject
+                         2C2 IoAllocateIrp
+                         31A IoFreeIrp
+                         814 RtlEqualUnicodeString
+                         663 ObReferenceObjectByHandle
+                         313 IoFileObjectType
+                         A8A ZwClose
+                          DB ExInitializeResourceLite
+                         A96 ZwCreateFile
+                         673 ObfDereferenceObject
+                          B5 ExDeleteResourceLite
+                          ED ExIsResourceAcquiredExclusiveLite
+                         380 IoRaiseInformationalHardError
+                         ADA ZwOpenKey
+                         A99 ZwCreateKey
+                         B50 ZwSetValueKey
+                         B18 ZwQueryValueKey
+                         AAB ZwDeleteValueKey
+                         8FA RtlPrefixUnicodeString
+                         585 MmGetSystemRoutineAddress
+                         400 IoWMIRegistrationControl
+                         48F KeInitializeTimerEx
+                         40E IofCompleteRequest
+                         711 PsGetProcessImageFileName
+                         8DA RtlMultiByteToUnicodeN
+                         7CA RtlCompareUnicodeString
+                         9F0 SeTokenIsRestricted
+                         9CF SeQueryAuthenticationIdToken
+                         2D1 IoBuildPartialMdl
+                         566 MmBuildMdlForNonPagedPool
+                         5AE MmProbeAndLockPages
+                         5C5 MmUnlockPages
+                         96D RtlUpcaseUnicodeString
+                         1C7 FsRtlIsNameInExpression
+                         844 RtlFreeUnicodeString
+                         AD8 ZwOpenFile
+                         B1A ZwQueryVolumeInformationFile
+                         134 ExSystemTimeToLocalTime
+                         94E RtlTimeToTimeFields
+                         AA9 ZwDeleteFile
+                         78A PsTerminateSystemThread
+                         450 KeDelayExecutionThread
+                          87 ExAcquireFastMutex
+                         10F ExReleaseFastMutex
+                         9C1 SeImpersonateClientEx
+                         4FC KeRundownQueue
+                         A6D ZwAllocateVirtualMemory
+                         488 KeInitializeQueue
+                         747 PsIsThreadTerminating
+                         4F3 KeRemoveQueueEx
+                         76F PsRevertToSelf
+                         494 KeInsertQueue
+                         ABC ZwFreeVirtualMemory
+                         9F4 SeUnlockSubjectContext
+                         9C4 SeLockSubjectContext
+                         BC3 strcmp
+
+    rdbss.sys
+             1C000B300 Import Address Table
+             1C000B780 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          9B RxRegisterMinirdr
+                          BB RxUnregisterMinirdr
+                          49 RxFsdDispatch
+                          79 RxNameCacheInitializeEx
+                          77 RxNameCacheFinalize
+                          20 RxCreateRxContext
+                          27 RxDereferenceAndDeleteRxContext_Real
+                          31 RxDispatchToWorkerThread
+                          6C RxLowIoGetBufferAddress
+                          AE RxSetMinirdrCancelRoutine
+                          69 RxLogEventWithAnnotation
+                          86 RxPostToWorkerThread
+                          4E RxGetRDBSSProcess
+                          76 RxNameCacheFetchEntryEx
+                          73 RxNameCacheCreateEntryEx
+                          71 RxNameCacheActivateEntry
+                          75 RxNameCacheExpireEntry
+                          72 RxNameCacheCheckEntry
+                          6B RxLowIoCompletion
+                           9 RxAssociateContextWithMid
+                          6E RxMapMidToContext
+                          6D RxMapAndDissociateMidFromContext
+                          93 RxReassociateMid
+                          1C RxCreateMidAtlas
+                          2D RxDestroyMidAtlas
+                          18 RxCompleteRequestEx
+                          45 RxFinishFcbInitialization
+                          40 RxFindEa
+                          46 RxFlushFcbInSystemCache
+                          11 RxCeFreeIrp
+                          A0 RxReleaseFcbResourceInMRx
+                          10 RxCeAllocateIrpWithMDL
+                           2 RxAcquireExclusiveFcbResourceInMRx
+                          38 RxFinalizeConnection
+                          B4 RxStopMinirdr
+                          B3 RxStartMinirdr
+                          1E RxCreateNetFobx
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT
+       1B000 PAGE
+        1000 PAGECONS

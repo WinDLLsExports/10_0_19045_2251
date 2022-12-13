@@ -1,0 +1,100 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-wpprecorder_31bf3856ad364e35_10.0.19041.1_none_cb2d33f4b1bd1134\WppRecorder.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009000 Import Address Table
+             1C0009160 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         42F KeAcquireSpinLockRaiseToDpc
+                         58A MmIsDriverVerifying
+                         842 RtlFreeUnicodeString
+                         87E RtlInitUnicodeString
+                         906 RtlQueryRegistryValues
+                         4E6 KeReleaseSpinLock
+                         505 KeSetEvent
+                         86C RtlGetVersion
+                         93E RtlStringFromGUID
+                         584 MmGetSystemRoutineAddress
+                         B7C _stricmp
+                          A3 ExAllocatePoolWithTag
+                          CA ExFreePoolWithTag
+                         530 KeWaitForSingleObject
+                          5D DbgPrint
+                         A88 ZwClose
+                         B4E ZwSetValueKey
+                         BCB strrchr
+                         AD8 ZwOpenKey
+                         4D9 KeRegisterBugCheckReasonCallback
+                         453 KeDeregisterBugCheckReasonCallback
+                         A61 WmiTraceMessage
+                         B64 __C_specific_handler
+                         400 IoWMIRegistrationControl
+                         483 KeInitializeEvent
+                         4CA KeQueryTimeIncrement
+                         B13 ZwQuerySystemInformation
+                          A2 ExAllocatePoolWithQuotaTag
+                         733 PsGetVersion
+                         533 KiBugCheckData
+                          77 EtwSetInformation
+                          66 DbgkWerCaptureLiveKernelDump
+                          7F EtwWriteTransfer
+                          79 EtwUnregister
+                          74 EtwRegister
+                         48B KeInitializeSpinLock
+
+  Section contains the following exports for WppRecorder.sys
+
+    00000000 characteristics
+    15060D00 time date stamp
+        0.00 version
+           1 ordinal base
+          17 number of functions
+          17 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000043F0 DllInitialize
+          2    1 000046F0 DllUnload
+          3    2 00001D60 WppAutoLogStart
+          4    3 00001A10 WppAutoLogStop
+          5    4 00001130 WppAutoLogTrace
+          6    5 00003040 imp_WppRecorderConfigure
+          7    6 00003150 imp_WppRecorderDumpLiveDriverData
+          8    7 00003180 imp_WppRecorderGetCounterHandle
+          9    8 000031A0 imp_WppRecorderGetTriageInfo
+         10    9 000031E0 imp_WppRecorderIsDefaultLogAvailable
+         11    A 00003220 imp_WppRecorderLinkCounters
+         12    B 000021C0 imp_WppRecorderLogCreate
+         13    C 00001B30 imp_WppRecorderLogDelete
+         14    D 00003280 imp_WppRecorderLogDumpLiveData
+         15    E 00002290 imp_WppRecorderLogGetDefault
+         16    F 00001D20 imp_WppRecorderLogSetIdentifier
+         17   10 000040D0 imp_WppRecorderReplay
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        1000 PAGE

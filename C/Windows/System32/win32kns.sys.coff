@@ -1,0 +1,115 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\win32kns.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NETIO.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009068 Import Address Table
+             1C0009228 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2C2 IoAllocateIrp
+                          A3 ExAllocatePoolWithTag
+                          CA ExFreePoolWithTag
+                         5C4 MmUnlockPages
+                         42F KeAcquireSpinLockRaiseToDpc
+                         4E6 KeReleaseSpinLock
+                         495 KeInsertQueueApc
+                         3AD IoReuseIrp
+                         289 HviGetHypervisorFeatures
+                         505 KeSetEvent
+                         446 KeClearEvent
+                         483 KeInitializeEvent
+                         530 KeWaitForSingleObject
+                         87E RtlInitUnicodeString
+                         2EF IoCreateDriver
+                         584 MmGetSystemRoutineAddress
+                         400 IoWMIRegistrationControl
+                         7C5 RtlCompareMemory
+                         31D IoFreeMdl
+                         28E HviIsAnyHypervisorPresent
+                         2C4 IoAllocateMdl
+                         566 MmBuildMdlForNonPagedPool
+                         31A IoFreeIrp
+                         47C KeInitializeApc
+                         4A5 KeLeaveCriticalRegion
+                          8D ExAcquirePushLockSharedEx
+                         117 ExReleasePushLockSharedEx
+                         116 ExReleasePushLockExclusiveEx
+                          8C ExAcquirePushLockExclusiveEx
+                         459 KeEnterCriticalRegion
+
+    NETIO.SYS
+             1C0009000 Import Address Table
+             1C00091C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         223 WskCaptureProviderNPI
+                         227 WskReleaseProviderNPI
+                         224 WskDeregister
+                         226 WskRegister
+
+    WppRecorder.sys
+             1C0009028 Import Address Table
+             1C00091E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 imp_WppRecorderConfigure
+                          10 imp_WppRecorderReplay
+                           C imp_WppRecorderLogDelete
+                           B imp_WppRecorderLogCreate
+                           4 WppAutoLogTrace
+                           2 WppAutoLogStart
+                           3 WppAutoLogStop
+
+  Section contains the following exports for WIN32KNS.SYS
+
+    00000000 characteristics
+    3558F93D time date stamp
+        0.00 version
+           1 ordinal base
+          12 number of functions
+          12 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0000C020 DllInitialize
+          3    1 0000A010 DllUnload
+          4    2 000030E0 IVBroadcast
+          5    3 00003C40 IVChildReInitialize
+          6    4 00001C50 IVFreeIVSRContext
+          7    5 00001230 IVInitialize
+          1    6 00003A60 IVRecv
+          8    7 00001590 IVRegisterChildLifetimeNotifications
+          9    8 00001550 IVResolveContainerId
+         10    9 00002F50 IVSend
+         11    A 000014B0 IVUninitialize
+         12    B 00001650 IVUnregisterChildLifetimeNotifications
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

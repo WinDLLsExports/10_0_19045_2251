@@ -1,0 +1,230 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\SysWOW64\drt.dll
+
+File Type: DLL
+
+  Image has the following delay load dependencies:
+
+    CRYPTBASE.dll
+    CRYPTSP.dll
+    WS2_32.dll
+
+  Section contains the following exports for drt.dll
+
+    00000000 characteristics
+    D33D291C time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          6    0 00002A10 DrtClose
+          7    1 00002B80 DrtContinueSearch
+          8    2 00002BD0 DrtEndSearch
+          1    3 00002CF0 DrtFlushCache
+          2    4 00002D90 DrtGetCacheStatsEx
+          9    5 00002C60 DrtGetEventData
+         10    6 00002C40 DrtGetEventDataSize
+         11    7 00002C80 DrtGetInstanceName
+         12    8 00002CA0 DrtGetInstanceNameSize
+         13    9 00002B20 DrtGetSearchPath
+         14    A 00002B00 DrtGetSearchPathSize
+         15    B 00002B60 DrtGetSearchResult
+         16    C 00002B40 DrtGetSearchResultSize
+          3    D 00002DB0 DrtHandlePowerEvent
+         17    E 000029E0 DrtOpen
+          4    F 00002CC0 DrtPingPeer
+         18   10 00002A30 DrtRegisterKey
+          5   11 00002D10 DrtStartPartitionDetection
+         19   12 00002AD0 DrtStartSearch
+         20   13 00002A70 DrtUnregisterKey
+         21   14 00002A50 DrtUpdateKey
+
+  Section contains the following delay load imports:
+
+    CRYPTBASE.dll
+              00000001 Characteristics
+              10033724 Address of HMODULE
+              10035000 Import Address Table
+              1003248C Import Name Table
+              10032560 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          10030C56               8 SystemFunction036
+
+    CRYPTSP.dll
+              00000001 Characteristics
+              10033728 Address of HMODULE
+              10035008 Import Address Table
+              10032494 Import Name Table
+              10032568 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          10030C71               2 CryptAcquireContextW
+          10030CBE               7 CryptDestroyHash
+          10030C8C              12 CryptGenRandom
+          10030C96              1C CryptReleaseContext
+          10030CA0               4 CryptCreateHash
+          10030CAA              19 CryptHashData
+          10030CB4              15 CryptGetHashParam
+
+    WS2_32.dll
+              00000001 Characteristics
+              1003372C Address of HMODULE
+              10035028 Import Address Table
+              100324B4 Import Name Table
+              10032588 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          10030CE3                 Ordinal     9
+          10030CC8                 Ordinal    15
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    ntdll.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    KERNEL32.dll
+    api-ms-win-core-perfcounters-l1-1-0.dll
+    api-ms-win-core-delayload-l1-1-1.dll
+    api-ms-win-core-delayload-l1-1-0.dll
+
+  Section contains the following imports:
+
+    msvcrt.dll
+              100340C8 Import Address Table
+              100342A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  4FD malloc
+                  4C5 free
+                  50B memmove
+                  1E8 _initterm
+                   79 __CxxFrameHandler3
+                  31A _purecall
+                  509 memcpy
+                   35 ?terminate@@YAXXZ
+                  16A _except_handler4_common
+                   6F _XcptFilter
+                  508 memcmp
+                  1A6 _ftol2
+                  111 _amsg_exit
+                  50D memset
+
+    ntdll.dll
+              10034104 Import Address Table
+              100342E4 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  951 wcspbrk
+                  43D RtlHashUnicodeString
+                   45 EtwEventWriteTransfer
+                  8B0 _i64tow_s
+                  8DC _vsnwprintf
+                   54 EtwTraceMessage
+                  458 RtlInitUnicodeString
+                   38 EtwEventActivityIdControl
+                   56 EtwUnregisterTraceGuids
+                   46 EtwGetTraceEnableFlags
+                   48 EtwGetTraceLoggerHandle
+                   47 EtwGetTraceEnableLevel
+                   4F EtwRegisterTraceGuidsW
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+              100340B4 Import Address Table
+              10034294 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   4E TerminateProcess
+                    C GetCurrentProcess
+                    D GetCurrentProcessId
+                   11 GetCurrentThreadId
+
+    KERNEL32.dll
+              10034000 Import Address Table
+              100341E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  12B DuplicateHandle
+                  106 DebugBreak
+                  349 HeapFree
+                  34C HeapReAlloc
+                  345 HeapAlloc
+                  2B4 GetProcessHeap
+                   FA CreateTimerQueue
+                  119 DeleteTimerQueueEx
+                   7A ChangeTimerQueueTimer
+                   99 CompareFileTime
+                  5D4 WaitForSingleObject
+                   FB CreateTimerQueueTimer
+                  11A DeleteTimerQueueTimer
+                  4A6 RegisterWaitForSingleObject
+                  5B4 UnregisterWaitEx
+                  513 SetEvent
+                   88 CloseHandle
+                   C1 CreateEventW
+                  261 GetLastError
+                  4C3 ResetEvent
+                  11E DisableThreadLibraryCalls
+                  57A Sleep
+                  44A QueryPerformanceCounter
+                  2E9 GetSystemTimeAsFileTime
+                  307 GetTickCount
+                  5AA UnhandledExceptionFilter
+                  56A SetUnhandledExceptionFilter
+                  35F InitializeCriticalSectionAndSpinCount
+                  110 DeleteCriticalSection
+                  131 EnterCriticalSection
+                  3BE LeaveCriticalSection
+
+    api-ms-win-core-perfcounters-l1-1-0.dll
+              10034090 Import Address Table
+              10034270 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    8 PerfSetCounterSetInfo
+                    9 PerfSetULongCounterValue
+                    4 PerfIncrementULongCounterValue
+                    C PerfStartProviderEx
+                    D PerfStopProvider
+                    3 PerfDeleteInstance
+                    0 PerfCreateInstance
+                    1 PerfDecrementULongCounterValue
+
+    api-ms-win-core-delayload-l1-1-1.dll
+              10034088 Import Address Table
+              10034268 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    1 ResolveDelayLoadedAPI
+
+    api-ms-win-core-delayload-l1-1-0.dll
+              10034080 Import Address Table
+              10034260 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    0 DelayLoadFailureHook
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .idata
+        3000 .reloc
+        1000 .rsrc
+       32000 .text

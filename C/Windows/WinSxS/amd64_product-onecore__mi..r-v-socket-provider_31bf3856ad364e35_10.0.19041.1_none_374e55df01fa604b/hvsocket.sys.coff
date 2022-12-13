@@ -1,0 +1,159 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_product-onecore__mi..r-v-socket-provider_31bf3856ad364e35_10.0.19041.1_none_374e55df01fa604b\hvsocket.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NETIO.SYS
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0015068 Import Address Table
+             1C0015350 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         110 ExReleaseFastMutexUnsafe
+                         4A5 KeLeaveCriticalRegion
+                         885 RtlInitializeGenericTableAvl
+                         15A ExpInterlockedPopEntrySList
+                         48B KeInitializeSpinLock
+                         8CE RtlLookupElementGenericTableAvl
+                         88B RtlInsertElementGenericTableAvl
+                         80B RtlEnumerateGenericTableAvl
+                          A3 ExAllocatePoolWithTag
+                         483 KeInitializeEvent
+                         515 KeSetTimer
+                         42F KeAcquireSpinLockRaiseToDpc
+                         47F KeInitializeDpc
+                         48D KeInitializeTimer
+                          7F EtwWriteTransfer
+                         4E6 KeReleaseSpinLock
+                         505 KeSetEvent
+                         441 KeCancelTimer
+                         14B ExUuidCreate
+                         4F6 KeResetEvent
+                         78B PsUnregisterSiloMonitor
+                         75F PsRegisterSiloMonitor
+                         785 PsStartSiloMonitor
+                         723 PsGetSiloContainerId
+                         599 MmMapLockedPagesSpecifyCache
+                          CA ExFreePoolWithTag
+                         530 KeWaitForSingleObject
+                         769 PsReturnPoolQuota
+                         672 ObfDereferenceObject
+                         674 ObfReferenceObject
+                         6DC PsChargeProcessPoolQuota
+                         99F SeCaptureSecurityDescriptor
+                          D8 ExInitializeNPagedLookasideList
+                         2B8 IoAcquireCancelSpinLock
+                         394 IoReleaseCancelSpinLock
+                         719 PsGetProcessServerSilo
+                         842 RtlFreeUnicodeString
+                         A97 ZwCreateKey
+                         72F PsGetThreadServerSilo
+                         93E RtlStringFromGUID
+                         6EB PsGetCurrentProcess
+                         A88 ZwClose
+                         B4E ZwSetValueKey
+                         2D5 IoCancelIrp
+                         31A IoFreeIrp
+                         2C2 IoAllocateIrp
+                         8B2 RtlIsGenericTableEmptyAvl
+                          77 EtwSetInformation
+                          B3 ExDeleteNPagedLookasideList
+                          79 EtwUnregister
+                         9A9 SeConvertStringSecurityDescriptorToSecurityDescriptor
+                          74 EtwRegister
+                          F3 ExQueryDepthSList
+                         15B ExpInterlockedPushEntrySList
+                         459 KeEnterCriticalRegion
+                          88 ExAcquireFastMutexUnsafe
+                         7F6 RtlDeleteElementGenericTableAvl
+                         9C2 SeLockSubjectContext
+                         9F2 SeUnlockSubjectContext
+                         9DB SeReleaseSubjectContext
+                         70F PsGetProcessId
+                         33B IoGetFileObjectGenericMapping
+                         9A1 SeCaptureSubjectContextEx
+                         40E IofCompleteRequest
+                          66 DbgkWerCaptureLiveKernelDump
+                         4CA KeQueryTimeIncrement
+                         987 SeAccessCheck
+
+    NETIO.SYS
+             1C0015010 Import Address Table
+             1C00152F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         180 NmrWaitForProviderDeregisterComplete
+                         17E NmrRegisterProvider
+                         1E9 TlDefaultRequestQueryDispatch
+                         1E8 TlDefaultRequestMessage
+                         17B NmrDeregisterProvider
+                         119 NetioInitializeWorkQueue
+                         11A NetioInsertWorkQueue
+                         16F NetioShutdownWorkQueue
+                         1EA TlDefaultRequestQueryDispatchEndpoint
+                         1ED TlDefaultRequestResume
+
+    NDIS.SYS
+             1C0015000 Import Address Table
+             1C00152E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          C7 NdisGetProcessObjectCompartmentId
+
+  Section contains the following exports for hvsocket.sys
+
+    00000000 characteristics
+     FC24B35 time date stamp
+        0.00 version
+           1 ordinal base
+          18 number of functions
+          18 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00022430 DllInitialize
+          2    1 00022460 DllUnload
+          3    2 00017120 HvSocketCreateAddressInfo
+          4    3 000198E0 HvSocketCreateProviderHandle
+          5    4 00017840 HvSocketDeleteAddressInfo
+          6    5 00019950 HvSocketDeleteProviderHandle
+          7    6 0000B740 HvSocketFillInterface
+          8    7 0001A2E0 HvSocketGetPartitionConnections
+          9    8 0001A580 HvSocketGetPartitionListeners
+         10    9 0001A100 HvSocketGetServiceInfo
+         11    A 00017BC0 HvSocketGetVmIdFromVmbusHandle
+         12    B 0000B890 HvSocketProviderStart
+         13    C 00021BF0 HvSocketProviderStop
+         14    D 00017930 HvSocketUpdateAddressInfo
+         15    E 00019A40 HvSocketUpdatePartitionProperties
+         16    F 0001A860 HvSocketUpdateProviderProperties
+         17   10 00019F20 HvSocketUpdateServiceInfo
+         18   11 00019D40 HvSocketUpdateServiceTable
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        5000 .rdata
+        2000 .reloc
+        1000 .rsrc
+        D000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+        D000 PAGE

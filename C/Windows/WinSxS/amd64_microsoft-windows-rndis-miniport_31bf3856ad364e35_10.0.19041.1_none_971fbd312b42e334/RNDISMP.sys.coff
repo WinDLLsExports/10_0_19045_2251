@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-rndis-miniport_31bf3856ad364e35_10.0.19041.1_none_971fbd312b42e334\RNDISMP.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000A118 Import Address Table
+             1C000A318 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         15B ExpInterlockedPushEntrySList
+                         40E IofCompleteRequest
+                         959 RtlUnicodeStringToAnsiString
+                         87E RtlInitUnicodeString
+                         334 IoGetDeviceProperty
+                         4CA KeQueryTimeIncrement
+                         566 MmBuildMdlForNonPagedPool
+                         2C4 IoAllocateMdl
+                          F3 ExQueryDepthSList
+                         42F KeAcquireSpinLockRaiseToDpc
+                         15A ExpInterlockedPopEntrySList
+                         599 MmMapLockedPagesSpecifyCache
+                         31D IoFreeMdl
+                          B3 ExDeleteNPagedLookasideList
+                          D8 ExInitializeNPagedLookasideList
+                         812 RtlEqualUnicodeString
+                         48B KeInitializeSpinLock
+                         4E6 KeReleaseSpinLock
+
+    NDIS.SYS
+             1C000A000 Import Address Table
+             1C000A200 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         11F NdisMCancelTimer
+                          A3 NdisFreeMemory
+                          15 NdisAllocateMemoryWithTag
+                         154 NdisMIndicateStatusComplete
+                         153 NdisMIndicateStatus
+                           C NdisAllocateBuffer
+                          1E NdisAllocatePacket
+                          AB NdisFreePacket
+                          AC NdisFreePacketPool
+                          9C NdisFreeBufferPool
+                           D NdisAllocateBufferPool
+                          20 NdisAllocatePacketPoolEx
+                          D5 NdisGetVersion
+                         131 NdisMCoRequestComplete
+                          40 NdisCloseConfiguration
+                         1C0 NdisReadConfiguration
+                         1A9 NdisOpenConfigurationKeyByIndex
+                         1AA NdisOpenConfigurationKeyByName
+                         1A7 NdisOpenConfiguration
+                         107 NdisInitializeWrapper
+                         172 NdisMRegisterMiniport
+                         1F0 NdisTerminateWrapper
+                         175 NdisMRegisterUnloadHandler
+                         103 NdisInitializeEvent
+                         200 NdisWaitEvent
+                         1B0 NdisPacketPoolUsage
+                         189 NdisMSleep
+                         1DE NdisSetEvent
+                         157 NdisMInitializeTimer
+                         148 NdisMGetDeviceProperty
+                         180 NdisMSetAttributesEx
+                         16C NdisMRegisterAdapterShutdownHandler
+                         1E8 NdisSetTimer
+                         177 NdisMRemoveMiniport
+
+  Section contains the following exports for RNDISMP.SYS
+
+    00000000 characteristics
+    21397220 time date stamp
+        0.00 version
+           1 ordinal base
+           5 number of functions
+           5 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001010 DllInitialize
+          2    1 00001010 DllUnload
+          3    2 00003290 RndisMIndicateReceive
+          4    3 00001020 RndisMInitializeWrapper
+          5    4 000022E0 RndisMSendComplete
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        6000 .text
+        1000 GFIDS
+        1000 INIT

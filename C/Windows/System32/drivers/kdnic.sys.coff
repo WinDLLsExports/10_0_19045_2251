@@ -1,0 +1,110 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\kdnic.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0006100 Import Address Table
+             1C0006318 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          F3 ExQueryDepthSList
+                         469 KeFlushQueuedDpcs
+                         41C KdPollBreakIn
+                          5A DbgBreakPointWithStatus
+                         15B ExpInterlockedPushEntrySList
+                         15A ExpInterlockedPopEntrySList
+                         159 ExpInterlockedFlushSList
+                         450 KeDelayExecutionThread
+                          E7 ExInterlockedRemoveHeadList
+                         48B KeInitializeSpinLock
+                          E4 ExInterlockedInsertTailList
+                         6CB PoStartNextPowerIrp
+                         307 IoDetachDevice
+                         40D IofCallDriver
+                         2EC IoCreateDevice
+                         584 MmGetSystemRoutineAddress
+                          D8 ExInitializeNPagedLookasideList
+                         585 MmGetVirtualForPhysical
+                         2CC IoAttachDeviceToDeviceStack
+                         906 RtlQueryRegistryValues
+                         304 IoDeleteDevice
+                         87E RtlInitUnicodeString
+                          B3 ExDeleteNPagedLookasideList
+                         12C ExSetTimerResolution
+
+    NDIS.SYS
+             1C0006000 Import Address Table
+             1C0006218 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         13D NdisMDeregisterMiniportDriver
+                          13 NdisAllocateMdl
+                          A2 NdisFreeMdl
+                          30 NdisCancelTimerObject
+                         152 NdisMIndicateReceiveNetBufferLists
+                         17D NdisMSendNetBufferListsComplete
+                          26 NdisAllocateTimerObject
+                          A9 NdisFreeNetBufferListPool
+                          16 NdisAllocateMemoryWithTagPriority
+                         179 NdisMResetComplete
+                          A3 NdisFreeMemory
+                         148 NdisMGetDeviceProperty
+                          18 NdisAllocateNetBufferAndNetBufferList
+                         155 NdisMIndicateStatusEx
+                         15F NdisMPauseComplete
+                         219 NdisWriteConfiguration
+                         1EA NdisSetTimerObject
+                         1A8 NdisOpenConfigurationEx
+                          40 NdisCloseConfiguration
+                          1B NdisAllocateNetBufferListPool
+                          A7 NdisFreeNetBufferList
+                         189 NdisMSleep
+                          B3 NdisFreeTimerObject
+                         1C0 NdisReadConfiguration
+                         184 NdisMSetMiniportAttributes
+                         1CD NdisReleaseRWLock
+                          21 NdisAllocateRWLock
+                         173 NdisMRegisterMiniportDriver
+                          AD NdisFreeRWLock
+                          D5 NdisGetVersion
+                           4 NdisAcquireRWLockWrite
+
+  Section contains the following exports for kdnic.sys
+
+    00000000 characteristics
+    9401D3B8 time date stamp
+        0.00 version
+           1 ordinal base
+           1 number of functions
+           1 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001770 CreateNetworkAdapter
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 PAGE

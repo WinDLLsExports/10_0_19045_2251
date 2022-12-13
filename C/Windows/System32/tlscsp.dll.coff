@@ -1,0 +1,195 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\tlscsp.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    ntdll.dll
+    bcrypt.dll
+    KERNEL32.dll
+
+  Image has the following delay load dependencies:
+
+    CRYPTSP.dll
+    ADVAPI32.dll
+    CRYPT32.dll
+
+  Section contains the following exports for tlscsp.dll
+
+    00000000 characteristics
+    B06C539F time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          7    0 000015C0 LsCsp_DecryptEnvelopedData
+          6    1 00003250 LsCsp_EncryptHwid
+          5    2 00001B50 LsCsp_GetServerData
+          9    3 00005330 LsCsp_RetrieveSecret
+          8    4 000052A0 LsCsp_StoreSecret
+          1    5 00004AD0 TLSCspInit
+          2    6 000049B0 TLSCspShutdown
+         10    7 00004BE0 TLSCspStartInstallCertificateThread
+          4    8 00001150 TLSFreeTSCertificate
+          3    9 00001080 TLSGetTSCertificate
+
+  Section contains the following imports:
+
+    msvcrt.dll
+             180009298 Import Address Table
+             18000AC60 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         491 memcmp
+                         492 memcpy
+                         17D _initterm
+                         486 malloc
+                         44C free
+                          AE _amsg_exit
+                          55 _XcptFilter
+                         4DC swprintf_s
+                          57 __C_specific_handler
+                          BF _callnewh
+                         496 memset
+
+    ntdll.dll
+             1800092F8 Import Address Table
+             18000ACC0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2F2 RtlCaptureContext
+                         4E8 RtlLookupFunctionEntry
+                         627 RtlVirtualUnwind
+
+    bcrypt.dll
+             180009248 Import Address Table
+             18000AC10 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          12 BCryptEncrypt
+                           6 BCryptCreateHash
+                          23 BCryptHashData
+                          25 BCryptImportKeyPair
+                           D BCryptDestroyHash
+                           2 BCryptCloseAlgorithmProvider
+                          1B BCryptFinishHash
+                          27 BCryptOpenAlgorithmProvider
+                           E BCryptDestroyKey
+
+    KERNEL32.dll
+             180009138 Import Address Table
+             18000AB00 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         3C1 LeaveCriticalSection
+                         30E GetTickCount
+                         2F0 GetSystemTimeAsFileTime
+                         222 GetCurrentThreadId
+                         21E GetCurrentProcessId
+                         44D QueryPerformanceCounter
+                         597 TerminateProcess
+                         21D GetCurrentProcess
+                         578 SetUnhandledExceptionFilter
+                         5B9 UnhandledExceptionFilter
+                         10E DelayLoadFailureHook
+                         4CA ResolveDelayLoadedAPI
+                         40B OpenMutexW
+                         1B1 FreeLibrary
+                         1E5 GetComputerNameW
+                         2B5 GetProcAddress
+                          F2 CreateThread
+                         3C8 LoadLibraryW
+                          88 CloseHandle
+                         521 SetEvent
+                         267 GetLastError
+                         588 Sleep
+                          C1 CreateEventW
+                         4B1 ReleaseMutex
+                         324 GetVersionExW
+                         5E3 WaitForSingleObject
+                          DC CreateMutexW
+                         367 InitializeCriticalSection
+                         122 DisableThreadLibraryCalls
+                         111 DeleteCriticalSection
+                         3CE LocalAlloc
+                         3D3 LocalFree
+                         135 EnterCriticalSection
+
+  Section contains the following delay load imports:
+
+    CRYPTSP.dll
+              00000001 Characteristics
+      000000018000C680 Address of HMODULE
+      000000018000E0B0 Import Address Table
+      000000018000A5E0 Import Name Table
+      000000018000A848 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    00000001800083D5    10 CryptExportKey
+                                    00000001800083C3    11 CryptGenKey
+                                    00000001800083B1     2 CryptAcquireContextW
+                                    0000000180008326    1C CryptReleaseContext
+                                    00000001800083E7     8 CryptDestroyKey
+
+    ADVAPI32.dll
+              00000001 Characteristics
+      000000018000C688 Address of HMODULE
+      000000018000E000 Import Address Table
+      000000018000A530 Import Name Table
+      000000018000A878 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180008514    20 AllocateAndInitializeSid
+                                    0000000180008526   25B RegCloseKey
+                                    0000000180008502   2D8 SetEntriesInAclW
+                                    00000001800084F0   264 RegCreateKeyExW
+                                    00000001800084DE   323 SystemFunction036
+                                    00000001800084CC   2A9 RegSetValueExW
+                                    00000001800083F9   299 RegQueryValueExW
+                                    00000001800084BA    5F CheckTokenMembership
+                                    0000000180008484   273 RegDeleteValueW
+                                    0000000180008496   28C RegOpenKeyExW
+                                    00000001800084A8   18F InitializeSecurityDescriptor
+                                    0000000180008538   2E8 SetSecurityDescriptorDacl
+
+    CRYPT32.dll
+              00000001 Characteristics
+      000000018000C690 Address of HMODULE
+      000000018000E068 Import Address Table
+      000000018000A598 Import Name Table
+      000000018000A8E0 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180008641    78 CertVerifySubjectCertificateContext
+                                    000000018000862F    1C CertCreateCertificateContext
+                                    000000018000854A    86 CryptEncodeObject
+                                    000000018000861D    25 CertDuplicateCertificateContext
+                                    00000001800085D5    E1 CryptUnprotectData
+                                    00000001800085E7    C3 CryptProtectData
+                                    00000001800085F9    82 CryptDecodeObject
+                                    000000018000860B    40 CertFreeCertificateContext
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        8000 .text

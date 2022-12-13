@@ -1,0 +1,237 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\SysWOW64\drtprov.dll
+
+File Type: DLL
+
+  Image has the following delay load dependencies:
+
+    WS2_32.dll
+    P2P.dll
+    CRYPTSP.dll
+
+  Section contains the following exports for drtprov.dll
+
+    00000000 characteristics
+    50688100 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001DF0 DrtCreateDerivedKey
+          2    1 00001DB0 DrtCreateDerivedKeySecurityProvider
+          3    2 00001D70 DrtCreateDnsBootstrapResolver
+          4    3 00001E10 DrtCreateNullSecurityProvider
+          5    4 00001D20 DrtCreatePnrpBootstrapResolver
+          6    5 00001DD0 DrtDeleteDerivedKeySecurityProvider
+          7    6 00001D90 DrtDeleteDnsBootstrapResolver
+          8    7 00001E70 DrtDeleteNullSecurityProvider
+          9    8 00001D50 DrtDeletePnrpBootstrapResolver
+
+  Section contains the following delay load imports:
+
+    WS2_32.dll
+              00000001 Characteristics
+              1000D344 Address of HMODULE
+              1000F03C Import Address Table
+              1000C850 Import Name Table
+              1000C9A4 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000BFAC               2 FreeAddrInfoW
+          1000BFA2                 Ordinal   115
+          1000BF98               7 GetAddrInfoW
+          1000BF8E                 Ordinal     8
+          1000BF73                 Ordinal   111
+          1000BFB6                 Ordinal   116
+
+    P2P.dll
+              00000001 Characteristics
+              1000D348 Address of HMODULE
+              1000F014 Import Address Table
+              1000C828 Import Name Table
+              1000C9C0 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000C021              68 PeerPnrpRegister
+          1000C017              6C PeerPnrpStartup
+          1000C00D              67 PeerPnrpGetEndpoint
+          1000C003              65 PeerPnrpEndResolve
+          1000BFF9              6B PeerPnrpStartResolve
+          1000BFEF              2F PeerFreeData
+          1000BFE5              5E PeerIdentityGetCryptKey
+          1000BFDB              6D PeerPnrpUnregister
+          1000BFC0              6A PeerPnrpShutdown
+
+    CRYPTSP.dll
+              00000001 Characteristics
+              1000D34C Address of HMODULE
+              1000F000 Import Address Table
+              1000C814 Import Name Table
+              1000C9E8 Bound Import Name Table
+              00000000 Unload Import Name Table
+                     0 time date stamp
+
+          1000C046              17 CryptGetProvParam
+          1000C05A               2 CryptAcquireContextW
+          1000C02B              1C CryptReleaseContext
+          1000C050               3 CryptContextAddRef
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    ntdll.dll
+    CRYPT32.dll
+    bcrypt.dll
+    ncrypt.dll
+    KERNEL32.dll
+
+  Section contains the following imports:
+
+    msvcrt.dll
+              1000E0F4 Import Address Table
+              1000E304 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  508 memcmp
+                  3EC _vsnwprintf
+                  570 wcschr
+                  4EC iswdigit
+                  1E7 _i64tow_s
+                  509 memcpy
+                  50B memmove
+                  309 _onexit
+                   9D __dllonexit
+                  3C4 _unlock
+                  260 _lock
+                  16A _except_handler4_common
+                   35 ?terminate@@YAXXZ
+                  1E8 _initterm
+                  4FD malloc
+                  4C5 free
+                  111 _amsg_exit
+                   6F _XcptFilter
+                   79 __CxxFrameHandler3
+                  50D memset
+
+    ntdll.dll
+              1000E158 Import Address Table
+              1000E368 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   54 EtwTraceMessage
+                  458 RtlInitUnicodeString
+                  43D RtlHashUnicodeString
+                   56 EtwUnregisterTraceGuids
+                   46 EtwGetTraceEnableFlags
+                   48 EtwGetTraceLoggerHandle
+                   47 EtwGetTraceEnableLevel
+                   4F EtwRegisterTraceGuidsW
+                   38 EtwEventActivityIdControl
+
+    CRYPT32.dll
+              1000E000 Import Address Table
+              1000E210 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   78 CertVerifySubjectCertificateContext
+                   7C CryptAcquireCertificatePrivateKey
+                   45 CertGetCertificateChain
+                   40 CertFreeCertificateContext
+                   79 CertVerifyTimeValidity
+                    4 CertAddCertificateContextToStore
+                   64 CertSaveStore
+                   2C CertEnumCertificatesInStore
+                   12 CertCloseStore
+                   3D CertFreeCertificateChain
+                   35 CertFindCertificateInStore
+                   59 CertOpenStore
+                   A8 CryptImportPublicKeyInfoEx2
+
+    bcrypt.dll
+              1000E0B0 Import Address Table
+              1000E2C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    D BCryptDestroyHash
+                   1B BCryptFinishHash
+                   19 BCryptExportKey
+                   1D BCryptGenRandom
+                   27 BCryptOpenAlgorithmProvider
+                   35 BCryptSetProperty
+                    8 BCryptDecrypt
+                   39 BCryptVerifySignature
+                   21 BCryptGetProperty
+                    E BCryptDestroyKey
+                   12 BCryptEncrypt
+                    2 BCryptCloseAlgorithmProvider
+                   23 BCryptHashData
+                    6 BCryptCreateHash
+                   24 BCryptImportKey
+                   1F BCryptGenerateSymmetricKey
+
+    ncrypt.dll
+              1000E148 Import Address Table
+              1000E358 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   5D NCryptSignHash
+                   40 NCryptDecrypt
+                   4B NCryptFreeObject
+
+    KERNEL32.dll
+              1000E038 Import Address Table
+              1000E248 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  349 HeapFree
+                  34C HeapReAlloc
+                  345 HeapAlloc
+                  2B4 GetProcessHeap
+                   F3 CreateThread
+                  261 GetLastError
+                  5D2 WaitForMultipleObjects
+                  106 DebugBreak
+                   88 CloseHandle
+                  4C6 ResolveDelayLoadedAPI
+                  10D DelayLoadFailureHook
+                  11E DisableThreadLibraryCalls
+                  35F InitializeCriticalSectionAndSpinCount
+                  110 DeleteCriticalSection
+                  57A Sleep
+                  44A QueryPerformanceCounter
+                  218 GetCurrentProcessId
+                  21C GetCurrentThreadId
+                  2E9 GetSystemTimeAsFileTime
+                  307 GetTickCount
+                  513 SetEvent
+                  56A SetUnhandledExceptionFilter
+                  217 GetCurrentProcess
+                  589 TerminateProcess
+                  131 EnterCriticalSection
+                  3BE LeaveCriticalSection
+                  5D4 WaitForSingleObject
+                   C1 CreateEventW
+                  5AA UnhandledExceptionFilter
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        1000 .idata
+        1000 .reloc
+        1000 .rsrc
+        C000 .text

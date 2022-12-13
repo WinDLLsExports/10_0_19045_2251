@@ -1,0 +1,210 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\USBAUDIO.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.DLL
+    USBD.SYS
+    ks.sys
+    WMILIB.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C001D188 Import Address Table
+             1C001D698 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          40 ExpInterlockedPushEntrySList
+                          30 ExQueryDepthSList
+                          4C IoBuildDeviceIoControlRequest
+                          B4 KeInitializeSemaphore
+                          46 IoAllocateIrp
+                          A2 IofCallDriver
+                          7A IoQueueWorkItem
+                          71 IoInitializeIrp
+                          B3 KeInitializeMutex
+                          42 IoAcquireRemoveLockEx
+                         12F RtlCompareUnicodeString
+                          80 IoReleaseRemoveLockEx
+                          7F IoReleaseRemoveLockAndWaitEx
+                          D7 KeWaitForMultipleObjects
+                          72 IoInitializeRemoveLockEx
+                          63 IoFreeIrp
+                         143 RtlGUIDFromString
+                          87 IoSetDeviceInterfaceState
+                         16D ZwCreateFile
+                          27 ExInterlockedInsertTailList
+                          60 IoFileObjectType
+                          D0 KeSetEvent
+                          6B IoGetDeviceProperty
+                          69 IoGetDeviceInterfaces
+                         132 RtlCopyUnicodeString
+                         910 RtlRaiseException
+                         106 PoDeletePowerRequest
+                         105 PoCreatePowerRequest
+                          C7 KeReleaseSpinLock
+                          C5 KeReleaseMutex
+                          B5 KeInitializeSpinLock
+                          3F ExpInterlockedPopEntrySList
+                          4F IoCancelIrp
+                          22 ExInitializeNPagedLookasideList
+                          19 ExDeleteNPagedLookasideList
+                         122 PsTerminateSystemThread
+                          59 IoCsqInsertIrp
+                          5B IoCsqRemoveNextIrp
+                          FD ObReferenceObjectByHandle
+                         121 PsCreateSystemThread
+                         101 ObfDereferenceObject
+                          A3 IofCompleteRequest
+                          A0 IoWMIWriteEvent
+                         176 ZwOpenKey
+                         180 ZwSetValueKey
+                         16B ZwClose
+                         17D ZwQueryValueKey
+                         15A RtlStringFromGUID
+                          79 IoOpenDeviceRegistryKey
+                         16E ZwCreateKey
+                         142 RtlFreeUnicodeString
+                         11A PoSetPowerRequest
+                         104 PoClearPowerRequest
+                          CF KeResetEvent
+                          D8 KeWaitForSingleObject
+                          B2 KeInitializeEvent
+                          9B IoWMIRegistrationControl
+                          1E ExFreePoolWithTag
+                          15 ExAllocatePoolWithTag
+                          65 IoFreeWorkItem
+                          E4 MmGetSystemRoutineAddress
+                          58 IoCsqInitialize
+                          C6 KeReleaseSemaphore
+                          7B IoRegisterDeviceInterface
+                          1D ExFreePool
+                         919 RtlRegisterFeatureConfigurationChangeNotification
+                         901 RtlQueryFeatureConfiguration
+                          77 EtwSetInformation
+                         337 IoGetDevicePropertyData
+                         902 RtlQueryFeatureConfigurationChangeStamp
+                          7F EtwWriteTransfer
+                         96A RtlUnregisterFeatureConfigurationChangeNotification
+                          79 EtwUnregister
+                         37F IoQueueWorkItemEx
+                          74 EtwRegister
+                         301 IoCsqInsertIrpEx
+                         2FF IoCsqInitializeEx
+                         58D MmIsDriverVerifying
+                          5E DbgPrintEx
+                         90A RtlQueryRegistryValues
+                         870 RtlGetVersion
+                         3B3 IoSetCompletionRoutineEx
+                         7C9 RtlCompareMemory
+                         119 PoRequestPowerIrp
+                         147 RtlInitUnicodeString
+                         135 RtlEqualUnicodeString
+                          75 IoInvalidateDeviceState
+                         117 PoRegisterDeviceForIdleDetection
+                          A7 KeAcquireSpinLockRaiseToDpc
+                          AB KeClearEvent
+                          48 IoAllocateWorkItem
+                         B68 __C_specific_handler
+
+    HAL.DLL
+             1C001D000 Import Address Table
+             1C001D510 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 KeQueryPerformanceCounter
+
+    USBD.SYS
+             1C001D010 Import Address Table
+             1C001D520 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E USBD_ParseDescriptors
+                           D USBD_ParseConfigurationDescriptorEx
+                           6 USBD_CreateConfigurationRequestEx
+
+    ks.sys
+             1C001D070 Import Address Table
+             1C001D580 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          73 KsGetObjectFromFileObject
+                          2F KsCreatePin
+                          8F KsPinGetAvailableByteCount
+                          8E KsPinGetAndGate
+                          CE KsStreamPointerClone
+                          D6 KsStreamPointerUnlock
+                          8C KsPinAttemptProcessing
+                          96 KsPinGetLeadingEdgeStreamPointer
+                          EC _KsEdit
+                          CC KsStreamPointerAdvanceOffsetsAndUnlock
+                          D5 KsStreamPointerSetStatusCode
+                          CB KsStreamPointerAdvanceOffsets
+                          CF KsStreamPointerDelete
+                          89 KsPinAcquireProcessingMutex
+                          A0 KsPinReleaseProcessingMutex
+                          78 KsGetPinFromIrp
+                          9F KsPinRegisterPowerCallbacks
+                          98 KsPinGetParentFilter
+                          6E KsGetFilterFromIrp
+                          6C KsGetDevice
+                          71 KsGetNextSibling
+                          17 KsAddItemToObjectBag
+                          B8 KsReleaseDevice
+                          2E KsCreateFilterFactory
+                          6D KsGetDeviceForDeviceObject
+                          11 KsAcquireDevice
+                          97 KsPinGetNextSiblingPin
+                          52 KsFilterFactorySetDeviceClassesState
+                          7D KsInitializeDriver
+                          B7 KsReleaseControl
+                          6F KsGetFirstChild
+                          42 KsDispatchIrp
+                          56 KsFilterGetFirstChildPin
+                          10 KsAcquireControl
+
+    WMILIB.SYS
+             1C001D030 Import Address Table
+             1C001D540 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WmiSystemControl
+                           2 WmiCompleteRequest
+
+    WppRecorder.sys
+             1C001D048 Import Address Table
+             1C001D558 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+
+  Summary
+
+        3000 .data
+        1000 .guids
+        2000 .idata
+        2000 .pdata
+        5000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       12000 .text
+        1000 GFIDS
+        1000 INIT
+       13000 PAGE

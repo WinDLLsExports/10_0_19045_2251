@@ -1,0 +1,4533 @@
+                ["Action active hours requirement met", "=", false],
+                ["Action active hours requirement met", "=", false]],
+                ["Action blocked by failure", "=", true]],
+                ["Action can affect user", "=", true]],
+                ["Action can show ux", "=", true]],
+                ["Action CTA requirement met", "=", false]],
+                ["Action Honor AutoUpdate Download Policy", "=", true],
+                ["Action Honor AutoUpdate Install Policy", "=", true],
+                ["Action is exclusive", "=", true],
+                ["Action is pausable", "=", false],
+                ["Action is perform on reboot", "=", true]],
+                ["Action is provider exclusive", "=", true],
+                ["Action needs Eula", "=", true],
+                ["Action Notify policy requirement met", "=", false]],
+                ["Action requires network", "=", false]],
+                ["Action Running", "=", true]],
+                ["Block Feature Updates until is in Future", "=", true]],
+                ["Bypass OOBE", "=", false],
+                ["Bypass scan throttle", "=", false],
+                ["Called from oobe", "=", false]],
+                ["Compliance deadline expired", "=", false],
+                ["Compliance deadline expired", "=", true]],
+                ["CTA always approved", "=", true]],
+                ["EDU work requirements met", "=", true]],
+                ["Exclusivity requirement met", "=", false]],
+                ["Failures for action", "<", 5]],
+                ["First use configured", "=", false]],
+                ["Free System Disk Space In MB", ">=", 4000]],
+                ["Has any success", "=", false]],
+                ["Has metered scan attempt", "=", false]],
+                ["Has metered scan attempt", "=", true],
+                ["Has scan success", "=", false],
+                ["Has scan success", "=", true],
+                ["Immediate install preferred", "=", false]],
+                ["Logon delay is passed", "=", false]],
+                ["Manager progressing", "=", false]],
+                ["Manager scanning", "=", false],
+                ["Manager working", "=", false]],
+                ["Minutes since discovery", "<", 4320]],
+                ["Minutes since discovery", "<", 43200]],
+                ["Minutes since first use", "<", 120],
+                ["Minutes since first use", "<", 120]],
+                ["Minutes since last metered scan attempt", "<=", 7200]],
+                ["Minutes since last metered scan attempt", ">", 7200]],
+                ["Minutes since last scan success", "<=", 7200]],
+                ["Minutes since last scan success", ">", 7200],
+                ["Minutes since regulation", "<", 720]],
+                ["Minutes since regulation", "<>", null],
+                ["Minutes since regulation", "<>", null]],
+                ["Minutes since success", "<", 43200]],
+                ["Oobe expedite allowed", "=", true]],
+                ["OOBE scan", "=", true]],
+                ["Pending exclusive content", "=", true]],
+                ["Policy active hours restricted", "=", true],
+                ["Policy active hours restricted", "=", true]],
+                ["Policy allow metered download", "=", true]],
+                ["Policy AutoInstall Scheduled", "=", true]],
+                ["Policy AutoUpdate Disabled", "=", true]],
+                ["Policy Exclude Drivers", "=", true]],
+                ["Policy Install at Maintenance Scheduled", "=", true],
+                ["Policy Install at Maintenance Scheduled", "=", true]],
+                ["Policy Notify To Download", "=", true]],
+                ["Policy Notify To Install", "=", true],
+                ["Policy Notify To Install", "=", true]],
+                ["Policy require update approval", "=", true],
+                ["Policy Scheduled Install", "=", false]],
+                ["Policy Scheduled Install", "=", true]],
+                ["Policy Update service allowed", "=", false],
+                ["Provider action is running", "=", true]],
+                ["Reboot Pending", "=", true]],
+                ["Same action is running", "=", true]],
+                ["Scan approved", "=", true]],
+                ["Scan throttled", "=", true]],
+                ["Serialization should block", "=", true]],
+                ["System active audio", "=", true]],
+                ["System active game", "=", true]],
+                ["System active user", "=", true]],
+                ["System battery level", ">", 70]],
+                ["System CTA", "=", false]],
+                ["System display requested", "=", true]],
+                ["System in use", "=", true],
+                ["System inside active hours", "=", false],
+                ["System inside active hours", "=", false]],
+                ["System inside active hours", "=", true]],
+                ["System is PPI", "=", true],
+                ["System is upgrade", "=", false],
+                ["System on AC power", "=", false]],
+                ["System on AC power", "=", true]],
+                ["System phone call ongoing", "=", true]],
+                ["System Wakes disabled by policy", "=", true]],
+                ["System Wakes on DC Threshold Failure Count", ">", 5],
+                ["Update approved by policy", "=", false]],
+                ["Update approved", "=", true]],
+                ["Update attempts last hour", ">", 10]],
+                ["Update blocked by provider", "=", true]],
+                ["Update critical", "=", false],
+                ["Update critical", "=", true]],
+                ["Update Driver", "=", false]],
+                ["Update Eula accepted", "=", false]],
+                ["Update feature", "=", true]],
+                ["Update has ux", "=", true],
+                ["Update high download priority", "=", true]],
+                ["Update is for os", "=", true]],
+                ["Update is mandatory", "=", true]],
+                ["Update maintenance approved", "=", false]],
+                ["Update maintenance approved", "=", true]],
+                ["Update metered approved", "=", false]],
+                ["Update metered approved", "=", true]],
+                ["Update minor impact", "=", true]],
+                ["Update oobe approved", "=", false]],
+                ["Update oobe approved", "=", true],
+                ["Update oobe approved", "=", true]],
+                ["Update overdue", "=", true]],
+                ["Update past deadline", "=", true]],
+                ["Update past OOBE", "=", false],
+                ["Update security", "=", false]],
+                ["Update seeker", "=", true],
+                ["Update should BypassBatteryChecks", "=", false],
+                ["Update should BypassPolicyRestrictions", "=", false],
+                ["Update should BypassUserPresenceChecks", "=", false],
+                ["Updates contain security update", "=", true]],
+                ["Use MsUpdateService Only", "=", true]],
+                ["User Activity Predicted", "=", true],
+                ["User Activity Predicted", "=", true]],
+                val ServerExecutable = s '%MODULE_RAW%'
+            "checks" : [
+            "checks" : [],
+            "result" : "BlockedByProvider"
+            "result" : "Delay Time After Oobe Complete"
+            "result" : "MaintenanceTime"
+            "result" : "NeedUserAgreementForPolicy"
+            "result" : "NeedUserInteraction"
+            "result" : "NeedUserInteractionForCTA"
+            "result" : "NeedUserInteractionForEula"
+            "result" : "Next active hours end"
+            "result" : "One hour from now"
+            "result" : "only unrestricted"
+            "result" : "Policy Scheduled Install Time"
+            "result" : "SeekerUpdate"
+            "result" : "Smart Scheduled Time"
+            "result" : "standard pricing"
+            "result" : "when not roaming"
+            "result" : 1000
+            "result" : 240
+            "result" : 28
+            "result" : 30
+            "result" : 500
+            "result" : 65
+            "result" : 800
+            "result" : 86400
+            "result" : 900
+            "result" : false
+            "result" : true
+            {
+            }
+            LocalServer32 = s '%MODULE%'
+            TypeLib = s '{5B799AE4-D3DF-472A-9506-110DBB655978}'
+            Version = s '1.0'
+        "name" : "Action active hours requirement met",
+        "name" : "Action CTA requirement met",
+        "name" : "Action Notify policy requirement met",
+        "name" : "Block Feature Updates Enabled",
+        "name" : "Continue action",
+        "name" : "Download metered",
+        "name" : "Download timeout in minutes",
+        "name" : "Download WU bypass regulation",
+        "name" : "Download WU fail on transient errors",
+        "name" : "Download WU ignore network cost for size",
+        "name" : "Download WU on battery",
+        "name" : "Download WU serialized",
+        "name" : "Download WU with update priority",
+        "name" : "EDU work requirements met",
+        "name" : "EndWorkThread timeout in minutes",
+        "name" : "Exclude Update",
+        "name" : "Exclusivity requirement met",
+        "name" : "Install timeout in minutes",
+        "name" : "Max Block Feature Updates days",
+        "name" : "No Commit LCU Allowed",
+        "name" : "Oobe expedite allowed",
+        "name" : "Prevent sleep",
+        "name" : "Scan timeout in minutes",
+        "name" : "Scan WU metered",
+        "name" : "Scan WU with driver sets",
+        "name" : "Scheduled work allowed on Battery",
+        "name" : "Serialization should block",
+        "name" : "Start action",
+        "name" : "Start scan",
+        "name" : "System Enable Prehibernate Wake",
+        "name" : "System in use",
+        "name" : "System Wake Allowed on Battery",
+        "name" : "System Wake Allowed",
+        "name" : "Update should use storage reserve",
+        "name" : "Update stickiness minutes",
+        "name" : "Update work ranking",
+        "name" : "UUP Fallback",
+        "rules" : [
+        {
+        }
+        },
+        }]
+        ForceRemove {D726464B-98F1-4627-86CD-4A082A1E5307} = s 'MoUsoCoreWorker Class'
+    %s on disk %d with ID %s
+    {
+    }
+    NoRemove CLSID
+ !"#$%&'()*+,-./
+ :"($-
+ \"P p
+ <Model>:
+ <Signal>:
+ A^^[
+ A^_^
+ A^_^][
+ A^A\_
+ A__]
+ A__^
+ A_A^_
+ A_A^_^[
+ A_A^A\
+ A_A^A\_^
+ A_A^A\_^][
+ A_A^A]
+ A_A^A]A\_
+ A_A^A]A\_^[
+ A_A^A]A\_^]
+' and CurrentVersionOnly=1)
+ errors encountered.
+ EulaAccepted
+ H3E H3E
+ HRESULT: 
+ ignored because it is disabled
+ ignored because it was completed
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ r"`$
+ r$t&j(`*((
+ Syntax error: 
+ updates
+ was overridden by test hooks to return 
+ Windows
+ z""$@&d*
+!\$(H
+!\$(I![
+!\$@E3
+!\$@H
+!\$@H!]
+!\$@L
+!\$0I
+!\$PH
+!D$ A
+!D$ H
+!D$`H
+!This program cannot be run in DOS mode.
+"%ws" %ws
+"&$&"
+"*$""
+","tables":[
+"0$0&
+"I9.t
+"WorkCompleted":"
+"WorkingState":"
+"z r$t&l(Z*
+"Z$b&
+####-##-##T##:##:##S
+##:##
+$H9P s
+$SOCWE
+$t5E3
+%04u-%02u-%02uT%02u:%02u:%02uZ
+%08x-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%hs: CreateDirectory(%s) failed with error code 0x%x.
+%hs: CreateFile failed for partition %s with error 0x%x
+%hs: CreateFile(%s) failed with error code 0x%x.
+%hs: CreateJunction(%s, %s) failed with error code 0x%x.
+%hs: DeleteFile(%s) failed with error code 0x%x.
+%hs: DeleteVolumeMountPoint(%s) failed with error code 0x%x.
+%hs: DeviceIoControl(FSCTL_DELETE_REPARSE_POINT) failed with error code 0x%x.
+%hs: DeviceIoControl(FSCTL_SET_REPARSE_POINT) failed with error code 0x%x.
+%hs: Failed to allocate reparse buffer.
+%hs: Failed to allocate target path.
+%hs: Failed to create formatting thread for partition %ws with error code 0x%x.
+%hs: Failed to query formatting thread exit code for partition %ws with error code 0x%x.
+%hs: Failed to start ETW with error code 0x%x.
+%hs: FileSystemUtility::CreateFileSystemUtility failed with error code 0x%x.
+%hs: FileSystemUtility::FormatVolume(%s, %s, %s) failed with error code 0x%x.
+%hs: Format of partition %ws failed with error code 0x%x.
+%hs: Formatted volume %s, waiting on new volume event.
+%hs: Formatting thread exit code failed for partition %ws with error code 0x%x.
+%hs: GetDiskFreeSpaceEx failed for path %s with error code 0x%x.
+%hs: GetDiskLayout failed with error code 0x%x.
+%hs: GetDiskNumber failed with error code 0x%x.
+%hs: GetTempPath() failed: 0x%x.
+%hs: GetVolume failed with error code 0x%x.
+%hs: GetVolumeFromPartitionName(%s) failed with error code 0x%x.
+%hs: GetVolumeInformation failed with ERROR_INVALID_PARAMETER.  Retrying in 1 second.
+%hs: GetVolumeInformation(%s) failed with error code 0x%x.
+%hs: IOCTL_DISK_SET_PARTITION_INFO_EX failed with error code 0x%x.
+%hs: Mount point for volume %s: %s.
+%hs: Not formatting partition '%s' as there is no file system specified.
+%hs: Not formatting partition as there is no partition name specified.
+%hs: Parameter 'pullFreeBytes' is nullptr.
+%hs: Parameter 'strPartition' is nullptr.
+%hs: 'pPartitions' is nullptr.
+%hs: pulBytesPerSector cannot be 0.
+%hs: RemoveJunction(%s) failed with error code 0x%x.
+%hs: RtlDosPathNameToNtPathName_U(%s) failed.
+%hs: SetDiskLayout failed with error code 0x%x.
+%hs: SetVolumeMountPoint(%s, %s) failed with error code 0x%x.
+%hs: Skipp waiting for a partition if there is no partition name specified.
+%hs: stLogPath is nullptr.
+%hs: 'strDiskName' is nullptr.
+%hs: 'strFileSystem' is nullptr.
+%hs: StringCchCat failed with error code 0x%x.
+%hs: StringCchCopy failed with error code 0x%x.
+%hs: StringCchCopy(%s) failed with error code 0x%x.
+%hs: StringCchCopy(ETW log path) failed with error code 0x%x.
+%hs: StringCchCopy(strFileSystem, RAW) failed with error code 0x%x.
+%hs: StringCchPrintf failed with error code 0x%x.
+%hs: StringCchPrintf(%s, %s) failed with error code 0x%x.
+%hs: 'strPartitionName' is nullptr.
+%hs: The GUID path for volume %s is nullptr.
+%hs: The parameter 'pullDiskSize' cannot be nullptr.
+%hs: The parameter 'pullSector' is nullptr.
+%hs: The parameter 'pullSectorCount' cannot be nullptr.
+%hs: The parameter 'pullSectorCount' is nullptr.
+%hs: The parameter 'pulPartitionStyle' cannot be nullptr.
+%hs: The parameter 'pulSectorSize' cannot be nullptr.
+%hs: The partition was not found on disk: %s.
+%hs: The source name and target partition must both be valid.
+%hs: The source name must be valid.
+%hs: This function was called with 'pullAttributes' set to nullptr.
+%hs: This function was called with 'pVolumeHandle' set to nullptr.
+%hs: UpdateDiskLayout failed with error code 0x%x.
+%hs: Volume %s arrived.
+%hs: VolumeTrackerList::FindFirstVolumeInList failed with error code 0x%x.
+%hs: VolumeTrackerList::FindNextVolumeInList failed with error code 0x%x.
+%hs: VolumeTrackerList::GetVolume(%s) failed with error code 0x%x.
+%hs: VolumeTrackerList::WaitForVolume failed with error 0x%x.
+%hs: VolumeTrackerList::WaitForVolume failed with error code 0x%x.
+%hs: VolumeTrackerList::WaitForVolume(%s) failed with error code 0x%x.
+%hs: VolumeTrackerVolume::CreateVolumeMountPointChangeNotification(%s) failed with error code 0x%x.
+%hs: VolumeTrackerVolume::GetMountPath failed with error code 0x%x.
+%hs: VolumeTrackerVolume::GetVolumePath failed with error code 0x%x.
+%hs: VolumeTrackerVolume::GetVolumePath(%s) failed with error code 0x%x.
+%hs: VolumeTrackerVolume::OpenDisk failed with error code 0x%x.
+%hs: VolumeTrackerVolume::OpenVolume failed with error code 0x%x.
+%hs: VolumeTrackerVolume::WaitForNewMountPoint(%s) failed with error code 0x%x.
+%hs: VolumeTrackerVolume::WaitForPartitionAttributeChange failed with error code 0x%x.
+%hs: WaitForPartition(%s) failed with error code 0x%x.
+%hs: Waiting for a mount point notification on %s.
+%hs: Waiting for format of partitions failed with error code 0x%x.
+%hs: Waiting on attribute change notification.
+%hs: Waiting on volume arrival notification.
+%hs:GetDiskGeometry failed with error 0x%x.
+%hs:LockAndDismountVolume failed with error code 0x%x.
+%hs:LockAndDismountVolume succeeded on %s.
+%hs:OpenVolume failed with error code 0x%x.
+%hu.%hu.%hu.%hu
+%I64u
+%OsDataDrive%\SystemData\NonEtwLogs
+%ProgramData%\Microsoft\Windows\APPREPOSITORY
+%ProgramData%\Microsoft\Windows\Models
+%ProgramData%\SoftwareDistribution\Logs\WindowsUpdate
+%ProgramData%\SoftwareDistribution\ReportingEvents.log
+%ProgramData%\USOPrivate\Data
+%ProgramData%\USOPrivate\TempLogs
+%ProgramData%\USOPrivate\Troubleshooting
+%ProgramData%\UsoPrivate\updatestore
+%ProgramData%\USOPrivate\UpdateStore\store.db
+%ProgramData%\USOPrivate\UsoLogs.dudiag
+%ProgramData%\USOShared
+%ProgramData%\USOShared\Logs\System
+%s %s
+%S: AddVolume failed with error code 0x%x.
+%s: Call to IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES failed, hr = 0x%x.
+%s: Call to IOCTL_STORAGE_QUERY_PROPERTY failed, hr = 0x%x.
+%s: CloseHandle failed with error 0x%x
+%S: CreateFile %s failed with error code 0x%x.
+%s: DeviceIoControl(FSCTL_DISMOUNT_VOLUME) failed with error 0x%x
+%s: DeviceIoControl(FSCTL_LOCK_VOLUME) failed with access denied.  Retrying in 1.5 seconds.
+%s: DeviceIoControl(FSCTL_LOCK_VOLUME) failed with error 0x%x
+%s: DeviceIoControl(FSCTL_UNLOCK_VOLUME) failed with error 0x%x
+%S: Dumping all volumes
+%s: Failed to allocate PDEVICE_MANAGE_DATA_SET_ATTRIBUTES.
+%s: Failed to get disk size information, hr = 0x%x.
+%s: FlushFileBuffers(VolumeHandle) failed with error code 0x%x.
+%s: FlushPartition(MainOS) failed with error code 0x%x.
+%S: GetDeviceInterfaceList failed with error 0x%x. Retrying after %d ms.
+%S: GetDeviceInterfaceProperty failed with error code 0x%x.
+%S: OpenDisk failed with error code 0x%x.
+%s: Parameter 'pbAllocationBitmap' cannot be NULL if *pcbAllocationBitmap is not 0.
+%s: Parameter 'pcbAllocationBitmap' is NULL.
+%S: RemoveVolume failed with error code 0x%x.
+%S: StorageService allocation failed with error 0x%x.
+%S: The partition style is invalid.
+%s: Unable to get allocation bitmap because the storage is not thin provisioning enabled, hr = 0x%x.
+%S: Unable to get volume %s with store ID %s with error code 0x%x.
+%s: Unexpected result from IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES.
+%s: Unexpected result from PDEVICE_DATA_SET_LB_PROVISIONING_STATE_V2.
+%s: Volume was not locked. Skipping.
+%S: VolumeTrackerList::CreateVolumeArrivalNotification failed with error 0x%x.
+%S: VolumeTrackerList::CreateVolumeTrackerList failed with error code 0x%x.
+%S: VolumeTrackerList::PopulateList failed with error code 0x%x.
+%S: VolumeTrackerVolume::CreatePartitionAttributeChangeNotification failed with error 0x%x.
+%S: VolumeTrackerVolume::CreatePartitionTypeChangeNotification failed with error 0x%x.
+%S: VolumeTrackerVolume::CreateVolumeFromPnpPath fails with error code 0x%x.
+%S: VolumeTrackerVolume::WaitForPartitionTypeChange failed with error 0x%x.
+%S: Waiting for %s with store ID %s failed with error code 0x%x.
+%s\storage_session_%x.etl
+%SystemDrive%\Data\SharedData\DuShared\UpdateHistory.xml
+%SystemDrive%\Data\SystemData\ETW
+%SystemDrive%\Data\SystemData\NonEtwLogs
+%SystemRoot%\imageupdate
+%systemroot%\system32\MusNotification.exe
+%systemroot%\system32\usoclient.exe
+%WINDIR%\System32\TestProvider.dll
+%WINDIR%\System32\UsoSelfhost.dll
+%ws %ws
+%ws[%ws]
+%Y-%m-%dT%H:%M:%S
+%z+kB
+%z+kW
+&:(F*
+&j*Z,"0`2(064j8l<`>
+&Rich'
+("x$,&q
+((0.2
+()$^.*+?[]|\-{},:=!
+(_^][
+(|$PH
+(0$0"
+(0&0$0"^
+(8HXh
+(A^_^[
+(A_A^A]A\_^][
+(Bytes % sizeof(WCHAR)) == 0
+(caller: %p) 
+(D$ f
+(D$@f
+(D$0f
+(D$0H
+(D$Pf
+(D$pf
+(D4*6r8.6i
+(default)->
+(error)
+(FrHhJ\LLN
+(L$`f
+(Mb=Lk
+(Product='
+(t$@H
+(t$`I
+(t$0H
+(T$Pf
+(t$pH
+)|$PH
+)D$@A
+)D$@H
+)D$@L
+)D$`A
+)D$`L
+)D$03
+)D$0E
+)D$0H
+)D$PA
+)E7fH
+)E'fI
+)L$@fH
+)L$`L
+)L$0f
+)L$PA
+)L$pM
+)t$@t
+)t$pH
+* $"4
+* ."* 
+* <". )
+* Line 
+*"*&*(6,T.*H*D*<*:*8T6*4*2
+*"t$j&^(T*
+*(***,*.*0
+*(*6*8*6*H*>*<*:*H
+***   Source File: %s, line %ld
+*** Assertion failed: %s
+**,r..,u
+*:,(.
+*|,0.
+*6(\ 0
+*tkD;
+*Z,40
+, (" $$&
+, Column 
+, DatabaseQueuedTime: 
+, RegisteredQeueuedTime: 
+,"Dynamic":
+,"Feature":
+,"FlightId":"
+,"Seeker":
+,,."0"(!
+,~(0$0"
+,04d6\8\:L<
+,2."0",
+,4Z8f
+,B>2@
+,tyfA
+,V.~0V2~4
+,v002d4
+. ""D$0&
+.$D&,(2*
+.%d.etl
+.(<f>`@TBJDxF
+.(0\2`4T6J8|:
+.*\.appx(bundle)?
+.*DB.*\.xml\.cab
+./DevDetail/SwV
+.:0F2\0@426
+.?AU?$default_delete@VCallerToken@SystemInterface@@@std@@
+.?AU?$default_delete@VCorrelationVector@Telemetry@SystemInterface@@@std@@
+.?AU?$default_delete@VStorageReserveManagerImpl@WU@Windows@@@std@@
+.?AU?$default_delete@VUpdateAction@Telemetry@SystemInterface@@@std@@
+.?AU?$default_delete@VUpdateProvider@@@std@@
+.?AU?$default_delete@VWuUpdateInternal@WU@Windows@@@std@@
+.?AU?$default_delete@VWuUpdateInternalImpl@WU@Windows@@@std@@
+.?AU?$equal_to@V?$variant@_NHV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@2@@std@@@std@@
+.?AU?$greater@V?$variant@_NHV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@2@@std@@@std@@
+.?AU?$greater_equal@V?$variant@_NHV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@2@@std@@@std@@
+.?AU?$less@V?$variant@_NHV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@2@@std@@@std@@
+.?AU?$less_equal@V?$variant@_NHV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@2@@std@@@std@@
+.?AU?$not_equal_to@V?$variant@_NHV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@V?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@2@@std@@@std@@
+.?AUuso_updater_exception@UO@Windows@@
+.?AUv2_updater_exception@UO@Windows@@
+.?AUwork_not_scheduled_exception@UO@Windows@@
+.?AV?$_Binder@U_Unforced@std@@P8UpdateManager@@EAAXXZPEAV3@@std@@
+.?AV?$_Fake_no_copy_callable_adapter@V<lambda_3ca476e6d912ccd539c7264d9117e460>@@@std@@
+.?AV?$_Fake_no_copy_callable_adapter@V<lambda_3d9ad92d56ce157d395c6d1b4d9c96db>@@@std@@
+.?AV?$_Fake_no_copy_callable_adapter@V<lambda_7b2cc4016820b06316287ecc900291ed>@@@std@@
+.?AV_com_error@@
+.?AV_Interruption_exception@details@Concurrency@@
+.?AV_System_error@std@@
+.?AV<lambda_00ae6b068a321d8f01fff41699ac4567>@@
+.?AV<lambda_052e919cc0e5399df76dff3972c0cac1>@@
+.?AV<lambda_06c945094243a9685dd2674195bb6dc3>@@
+.?AV<lambda_0987a7143c25b2bdd367e4bcfd2fc815>@@
+.?AV<lambda_0bc10caa519881748b1d9942fad7a213>@@
+.?AV<lambda_0c2cd0f95bd1ff780b4df7f75d80911f>@@
+.?AV<lambda_0f74a81560b78e1a4198cc70466d0336>@@
+.?AV<lambda_127472ed56e6d93205b5be0b1c5057b4>@@
+.?AV<lambda_129cd3721b44ae36c5dadb2befae36f1>@@
+.?AV<lambda_15220e623e11d2ccbb93453e95e1b42f>@@
+.?AV<lambda_161b1387b22d6b063b2f329e6f787139>@@
+.?AV<lambda_16df93a2eb0e614975f032873323f02a>@@
+.?AV<lambda_1a0f86cefcd10f5215d8fcfef83e5e36>@@
+.?AV<lambda_1a740e3ac7aa236fba25f8adc5e73c6e>@@
+.?AV<lambda_1b721956cc2ea8296766c895f9ebfd98>@@
+.?AV<lambda_1cd5bad97a9e5b60e801fe57d227d5fe>@@
+.?AV<lambda_200651f323594d88ac47b534ca089c9f>@@
+.?AV<lambda_228f2969bf252f288875e85b5595fbf3>@@
+.?AV<lambda_22d375345035b4f5d05a04dce99947c6>@@
+.?AV<lambda_26536c184fe9b89c834226b5c09bcb87>@@
+.?AV<lambda_2a04d61590385bc64cc27c9258471819>@@
+.?AV<lambda_2d793595d13d931fdd2a1e46bfe6526e>@@
+.?AV<lambda_2db24fca367b237dfa776ca1d30a8e6d>@@
+.?AV<lambda_32e748d9f6ebfa2b1f50d5c84b83f48e>@@
+.?AV<lambda_3301e8d6504e52e4df40e4f8892f4b85>@@
+.?AV<lambda_336e65342d382b6732219ed935551829>@@
+.?AV<lambda_339934569e637717646f6b0477ef0251>@@
+.?AV<lambda_33ec2e4cc29f2cd75ebd5615d7149847>@@
+.?AV<lambda_3453ea57ab2673e7c5afbd44ee33352a>@@
+.?AV<lambda_34c7cfcfaaaebae91e169cc5e1f23d0c>@@
+.?AV<lambda_35e860faa373f0a6df3071862886e690>@@
+.?AV<lambda_362ed3491b7943fa5e5c7fbec1be3268>@@
+.?AV<lambda_3876163ac36d0d805e7092e1621e2269>@@
+.?AV<lambda_38aa38d62c2c86a7595cf0369e7155cf>@@
+.?AV<lambda_39d3f35c596be3a742eb7bd29bda6f3e>@@
+.?AV<lambda_3bcdb44616b7e227daa25d416963ed48>@@
+.?AV<lambda_3c4239154a3f7b71c1c5ad42cf9c7f80>@@
+.?AV<lambda_3d38bf34dd40c91d8015c9df5e9bc1f1>@@
+.?AV<lambda_3dba33699287f7ec0982c6bf2e203099>@@
+.?AV<lambda_3e27e32a98efb1492982153467908a87>@@
+.?AV<lambda_3fa15a1a83fed2090335ceca2c14bc3b>@@
+.?AV<lambda_403f61e6223bf62d6d3ecfbca13561c3>@@
+.?AV<lambda_40d6a9f6e63cbe9f199792b546690cc8>@@
+.?AV<lambda_4182e40c9d6f0d9a3e1e6c13e0dde549>@@
+.?AV<lambda_49bc933a95083ad56376ce5adca7ba67>@@
+.?AV<lambda_4b20b8450389844f87e79aa684b08175>@@
+.?AV<lambda_4c09de663ce71f01248c40c1bd9b2869>@@
+.?AV<lambda_4db09ccce0312a8b524aebabcde82bfd>@@
+.?AV<lambda_4db567f9a858e3a28834a6f384a1e41d>@@
+.?AV<lambda_50902ef74cd8c85be8a844cd16c7d818>@@
+.?AV<lambda_5276679e5758940b42f624707938979e>@@
+.?AV<lambda_539a0f61f606d73aa434529111883c2e>@@
+.?AV<lambda_54d30a3d34e55dd1db5bd2c98beff7cf>@@
+.?AV<lambda_558e9a2f64e68e32642d18fd29afc143>@@
+.?AV<lambda_55fbe0a9d1adaa2dfa5fbdc88aafdef5>@@
+.?AV<lambda_56af778c681d805589c59e77bae54ae4>@@
+.?AV<lambda_589062a030a2a4c2245b8c23fddcfeec>@@
+.?AV<lambda_5b712ee6fbf83d4d1623b8f70fdc7175>@@
+.?AV<lambda_5e7fd7c9e01a160dc5467e5a34d466c1>@@
+.?AV<lambda_617386c4ed9148e4e493948e3d75ff99>@@
+.?AV<lambda_63e827cacc4a04eb1559c06b780ab99f>@@
+.?AV<lambda_652b382567b14bca3e38b13f786f38ed>@@
+.?AV<lambda_65a49ccacd833a02c538655191a7c1ba>@@
+.?AV<lambda_665ca2401d72db85afbfb0fe620bea54>@@
+.?AV<lambda_6664bc97b620c51779e292aebbadb4ab>@@
+.?AV<lambda_6c6fdd2f12e724e11d14d229929fd67c>@@
+.?AV<lambda_70df2cd3cc2818d988afb36a37f21ffb>@@
+.?AV<lambda_7127ea904990185a09cab5901b491f0c>@@
+.?AV<lambda_713ee8bbd6b08550d59c52695cab5ce3>@@
+.?AV<lambda_71bc0817a2f8cc1f193b626d1af52696>@@
+.?AV<lambda_74d9ffb45bd809ed20f493080703fffe>@@
+.?AV<lambda_763529b0c7473cbc215a52d189ac9b18>@@
+.?AV<lambda_765daa9e0aa9954083cfad33191aff33>@@
+.?AV<lambda_76e0ddb5939ddb6d6c1811cc34051427>@@
+.?AV<lambda_79a4393e94eb2d137e12bf1325aec1bb>@@
+.?AV<lambda_7c3d1cc7bd17513f14a90adfba03dabe>@@
+.?AV<lambda_7e7254ee12e3224d8d2000342cc58a97>@@
+.?AV<lambda_7f6a8534831777a15c6aa5b904f2015a>@@
+.?AV<lambda_8205f594eefbe9094ab84b6a4a85708c>@@
+.?AV<lambda_850b5949f4d7d61a97841811c2065942>@@
+.?AV<lambda_88257fe780ff0cd447f8290b89e75e91>@@
+.?AV<lambda_8d52c4f7f9c642d1b98dcf719b3fd064>@@
+.?AV<lambda_8f066b0d5c2e3083d89889cd301f30f9>@@
+.?AV<lambda_8fa6c4b38115cc094866eaff1f5aee6d>@@
+.?AV<lambda_91b2641eab517241d876f18caf9ffa68>@@
+.?AV<lambda_98ac1fed28d904e7aeceda6ec4c823a4>@@
+.?AV<lambda_99422f5e3468736931fdf0be5eb268aa>@@
+.?AV<lambda_995072ad574161f260abe7eb2fcddb38>@@
+.?AV<lambda_9b0c2e5fe33d7ffe33e52cea94f68817>@@
+.?AV<lambda_9f3691fef2d88c7aa98cfbb61a382b3b>@@
+.?AV<lambda_a154b8bc449582edc8d5fa246b2c2694>@@
+.?AV<lambda_a2afcc1f6bb8331af8dfa9bc1e98b374>@@
+.?AV<lambda_a493e9372397a999264e6d9994f3d6d0>@@
+.?AV<lambda_a550072f9c2b75e0e32138475a68bc52>@@
+.?AV<lambda_a92e67200f032f0eff46e5bb7a61f26d>@@
+.?AV<lambda_ae2d4a9cc7341d6392b8a975a3933aa5>@@
+.?AV<lambda_b0913c21704aefb7ac4202dab58c8faa>@@
+.?AV<lambda_b0dea54ced069405758dc0380281d4aa>@@
+.?AV<lambda_b16d3c27a79600c5fc00a6384ff6759f>@@
+.?AV<lambda_b198570046d4ba8f6d0492d2bf27bb44>@@
+.?AV<lambda_b39dbfaeb876d2b3a3e928ebd4769883>@@
+.?AV<lambda_b441f7365ed60d72418696e1b5737768>@@
+.?AV<lambda_b4f47b0cefa79841fd61e37244d58c45>@@
+.?AV<lambda_b692c4ddc59db0463c790e69fd4504c2>@@
+.?AV<lambda_b945c7033705225362e955968bb28d8a>@@
+.?AV<lambda_bab5738a352193d2c26bb46c810bce78>@@
+.?AV<lambda_bac5be690ce41825ebb739d5244f63cf>@@
+.?AV<lambda_bae7d89d28c7d514eeace83158aa44eb>@@
+.?AV<lambda_baf9ae5e15e96a4e525761c5b81883e0>@@
+.?AV<lambda_bb0d7567408be9399b0087008a3c19e7>@@
+.?AV<lambda_bb8d6325045b162b90c586c1d19e2863>@@
+.?AV<lambda_bc8af67a98d4fbf2f36b55785290d44b>@@
+.?AV<lambda_c0161695267140e94a27f27194f8012d>@@
+.?AV<lambda_c09a1aa9a22e0565ced1c6155394cc72>@@
+.?AV<lambda_c1d8b5af764463596dcd8dc0f1863f5d>@@
+.?AV<lambda_c2423d9edbc0b95c49e370cfbc66a1db>@@
+.?AV<lambda_c354811b1156f36c0192cd85e37fb4bc>@@
+.?AV<lambda_c4ac9b76e19831c3c6b7612687c48b2b>@@
+.?AV<lambda_c5c079b4494f8ad171c25fb63a87f5ec>@@
+.?AV<lambda_c7a9a496e7f02a4275c7683565b1ff8d>@@
+.?AV<lambda_c81d275e14e3c21acb7032928ce9dbcf>@@
+.?AV<lambda_c89c9e279bfcc3f9099a29c2ae8b5272>@@
+.?AV<lambda_d29dfa1528c3912fbe659b0e6c3183af>@@
+.?AV<lambda_d2ac83f13bc4a757ef25430df604da15>@@
+.?AV<lambda_d50271fd8a0015ff5298f932cd7f1e6c>@@
+.?AV<lambda_d6be465c6d185d65a1a02b44f445d146>@@
+.?AV<lambda_d6e6e743649e847a8459fc0817c29619>@@
+.?AV<lambda_d750453304a2ef8ab4b9bb5a268b6f1d>@@
+.?AV<lambda_d77da5cfb1dc21b02f78e3ea3ae75223>@@
+.?AV<lambda_db3e01e69610824589a1d9e8f61d30b3>@@
+.?AV<lambda_ddbdd665d6f3b70022c4e3c2ac03cb0d>@@
+.?AV<lambda_ddda19882a7d1731875296e93c9203d5>@@
+.?AV<lambda_dfac6e0f34ae2edffcffda0777af97ee>@@
+.?AV<lambda_e0a0e6e7244bf4eab014ab38176be061>@@
+.?AV<lambda_e1de5af2e6823d4b5ceb1222ff33b083>@@
+.?AV<lambda_e455f9ee1c6c44186427a03bb0983538>@@
+.?AV<lambda_e7873ff28b07991eb08f296f7385a9d1>@@
+.?AV<lambda_e84ebd24e4228787683d34cda9f234f8>@@
+.?AV<lambda_ec96319b160984538e4349072e975b23>@@
+.?AV<lambda_efa6b1437dc980cac8c3438e47b0659e>@@
+.?AV<lambda_f175585ca4e11dc4da0a8236ba2d412e>@@
+.?AV<lambda_f24385e9b2017146455b71df460299cf>@@
+.?AV<lambda_f25c37099038263181b5186a3fa41b37>@@
+.?AV<lambda_f3c35b520eef9242e89c5557db10a7ee>@@
+.?AV<lambda_f5a8447d703336f826fa7f91a50c8a80>@@
+.?AV<lambda_f8428409d5336b803208081fc4160829>@@
+.?AV<lambda_f916a91b206499c9ce8863b99c93723c>@@
+.?AV<lambda_f998599c858019e088078d9fd82b7530>@@
+.?AV<lambda_fba697b9673ce42b574cf4ad04c40293>@@
+.?AV<lambda_fcc07b840491668e7d738c28f4e8a969>@@
+.?AVbad_alloc@std@@
+.?AVbad_array_new_length@std@@
+.?AVbad_cast@std@@
+.?AVbad_optional_access@std@@
+.?AVbad_variant_access@std@@
+.?AVbad_weak_ptr@std@@
+.?AVCAtlException@ATL@@
+.?AVexception@std@@
+.?AVfilesystem_error@filesystem@std@@
+.?AVinvalid_argument@std@@
+.?AVinvalid_operation@Concurrency@@
+.?AVjson_exception@json@web@@
+.?AVlogic_error@std@@
+.?AVoverflow_error@std@@
+.?AVrange_error@std@@
+.?AVResultException@wil@@
+.?AVruntime_error@std@@
+.?AVSafeIntException@utilities@msl@@
+.?AVsystem_error@std@@
+.?AVtask_canceled@Concurrency@@
+.?AVtype_info@@
+.0:r<\>\@HB
+.00cfg
+.0DrF\H\JHL
+.B*D"BE
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.data
+.data$brc
+.data$r$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.F.HD
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.J*L"J
+.P6A_NAEAVvalue@json@web@@@Z
+.P6AIAEBT_PFIU_HISTORY_ENTRY@@AEBU?$pair@_N_N@std@@@Z
+.pdata
+.rdata
+.rdata$brc
+.rdata$r
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.u$H;3
+.u0fD9}
+.xdata
+.xdata$x
+/D$`v
+/fD;e
+/t-I;
+/u&M+
+/w5t+
+: EventsLost = 
+: FlushTrace failed with hr = 
+:!0remove_all
+:%u!H
+::RtlIsLBlobValid(Blob)
+::RtlIsLUnicodeStringValid(String)
+:\u;L
+:\u2L
+:\u7L
+:D8|$`t
+;w sEL
+??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+??0?$basic_ios@GU?$char_traits@G@std@@@std@@IEAA@XZ
+??0?$basic_iostream@GU?$char_traits@G@std@@@std@@QEAA@PEAV?$basic_streambuf@GU?$char_traits@G@std@@@1@@Z
+??0?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+??0?$basic_istream@GU?$char_traits@G@std@@@std@@QEAA@PEAV?$basic_streambuf@GU?$char_traits@G@std@@@1@_N@Z
+??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+??0?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAA@PEAV?$basic_streambuf@GU?$char_traits@G@std@@@1@_N@Z
+??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+??0?$basic_streambuf@GU?$char_traits@G@std@@@std@@IEAA@XZ
+??0?$codecvt@GDU_Mbstatet@@@std@@QEAA@_K@Z
+??0_Locinfo@std@@QEAA@PEBD@Z
+??0_Lockit@std@@QEAA@H@Z
+??0facet@locale@std@@IEAA@_K@Z
+??0task_continuation_context@Concurrency@@AEAA@XZ
+??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+??1?$basic_ios@GU?$char_traits@G@std@@@std@@UEAA@XZ
+??1?$basic_iostream@GU?$char_traits@G@std@@@std@@UEAA@XZ
+??1?$basic_istream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+??1?$basic_istream@GU?$char_traits@G@std@@@std@@UEAA@XZ
+??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+??1?$basic_ostream@GU?$char_traits@G@std@@@std@@UEAA@XZ
+??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+??1?$basic_streambuf@GU?$char_traits@G@std@@@std@@UEAA@XZ
+??1?$codecvt@GDU_Mbstatet@@@std@@MEAA@XZ
+??1_Locinfo@std@@QEAA@XZ
+??1_Lockit@std@@QEAA@XZ
+??1facet@locale@std@@MEAA@XZ
+??4?$_Yarn@D@std@@QEAAAEAV01@PEBD@Z
+??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z
+??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@_K@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@_N@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@H@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@I@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@J@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@K@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV01@P6AAEAVios_base@1@AEAV21@@Z@Z
+??Bid@locale@std@@QEAA_KXZ
+?__ExceptionPtrAssign@@YAXPEAXPEBX@Z
+?__ExceptionPtrCopy@@YAXPEAXPEBX@Z
+?__ExceptionPtrCreate@@YAXPEAX@Z
+?__ExceptionPtrCurrentException@@YAXPEAX@Z
+?__ExceptionPtrDestroy@@YAXPEAX@Z
+?__ExceptionPtrRethrow@@YAXPEBX@Z
+?__ExceptionPtrToBool@@YA_NPEBX@Z
+?_Addfac@_Locimp@locale@std@@AEAAXPEAVfacet@23@_K@Z
+?_CallInContext@_ContextCallback@details@Concurrency@@QEBAXV?$function@$$A6AXXZ@std@@_N@Z
+?_Capture@_ContextCallback@details@Concurrency@@AEAAXXZ
+?_Decref@facet@locale@std@@UEAAPEAV_Facet_base@3@XZ
+?_Execute_once@std@@YAHAEAUonce_flag@1@P6AHPEAX1PEAPEAX@Z1@Z
+?_Fiopen@std@@YAPEAU_iobuf@@PEBGHH@Z
+?_Getcat@?$codecvt@DDU_Mbstatet@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+?_Getcat@?$codecvt@GDU_Mbstatet@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+?_Getcat@?$ctype@G@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+?_Getcat@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+?_Getcoll@_Locinfo@std@@QEBA?AU_Collvec@@XZ
+?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ
+?_Gndec@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+?_Gndec@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IEAAPEAGXZ
+?_Incref@facet@locale@std@@UEAAXXZ
+?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXXZ
+?_Init@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IEAAXXZ
+?_Init@locale@std@@CAPEAV_Locimp@12@_N@Z
+?_Ipfx@?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA_N_N@Z
+?_Ipfx@?$basic_istream@GU?$char_traits@G@std@@@std@@QEAA_N_N@Z
+?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+?_Lock@?$basic_streambuf@GU?$char_traits@G@std@@@std@@UEAAXXZ
+?_LogCancelTask@_TaskEventLogger@details@Concurrency@@QEAAXXZ
+?_LogScheduleTask@_TaskEventLogger@details@Concurrency@@QEAAX_N@Z
+?_LogTaskCompleted@_TaskEventLogger@details@Concurrency@@QEAAXXZ
+?_LogTaskExecutionCompleted@_TaskEventLogger@details@Concurrency@@QEAAXXZ
+?_LogWorkItemCompleted@_TaskEventLogger@details@Concurrency@@QEAAXXZ
+?_LogWorkItemStarted@_TaskEventLogger@details@Concurrency@@QEAAXXZ
+?_New_Locimp@_Locimp@locale@std@@CAPEAV123@AEBV123@@Z
+?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ
+?_Osfx@?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAXXZ
+?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+?_Pninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IEAAPEAGXZ
+?_Random_device@std@@YAIXZ
+?_Release_chore@details@Concurrency@@YAXPEAU_Threadpool_chore@12@@Z
+?_ReportUnobservedException@details@Concurrency@@YAXXZ
+?_Reset@_ContextCallback@details@Concurrency@@AEAAXXZ
+?_Rethrow_future_exception@std@@YAXVexception_ptr@1@@Z
+?_Schedule_chore@details@Concurrency@@YAHPEAU_Threadpool_chore@12@@Z
+?_Syserror_map@std@@YAPEBDH@Z
+?_Throw_C_error@std@@YAXH@Z
+?_Throw_Cpp_error@std@@YAXH@Z
+?_Throw_future_error@std@@YAXAEBVerror_code@1@@Z
+?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+?_Unlock@?$basic_streambuf@GU?$char_traits@G@std@@@std@@UEAAXXZ
+?_Winerror_map@std@@YAHH@Z
+?_Winerror_message@std@@YAKKPEADK@Z
+?_Xbad_alloc@std@@YAXXZ
+?_Xbad_function_call@std@@YAXXZ
+?_XGetLastError@std@@YAXXZ
+?_Xinvalid_argument@std@@YAXPEBD@Z
+?_Xlength_error@std@@YAXPEBD@Z
+?_Xout_of_range@std@@YAXPEBD@Z
+?_Xregex_error@std@@YAXW4error_type@regex_constants@1@@Z
+?{uSH
+?=u$L
+?333333
+?always_noconv@codecvt_base@std@@QEBA_NXZ
+?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ
+?flush@?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV12@XZ
+?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+?gbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IEAAXH@Z
+?get@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@QEBA?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0AEAVios_base@2@AEAHPEAUtm@@PEBG4@Z
+?GetCurrentThreadId@platform@details@Concurrency@@YAJXZ
+?getloc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEBA?AVlocale@2@XZ
+?getloc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QEBA?AVlocale@2@XZ
+?getloc@ios_base@std@@QEBA?AVlocale@2@XZ
+?H!\$0E3
+?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A
+?id@?$codecvt@GDU_Mbstatet@@@std@@2V0locale@2@A
+?id@?$collate@G@std@@2V0locale@2@A
+?id@?$ctype@G@std@@2V0locale@2@A
+?id@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@2V0locale@2@A
+?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+?imbue@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAAXAEBVlocale@2@@Z
+?in@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z
+?in@?$codecvt@GDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAG3AEAPEAG@Z
+?is@?$ctype@G@std@@QEBA_NFG@Z
+?out@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z
+?out@?$codecvt@GDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBG1AEAPEBGPEAD3AEAPEAD@Z
+?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z
+?put@?$basic_ostream@GU?$char_traits@G@std@@@std@@QEAAAEAV12@G@Z
+?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ
+?sbumpc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QEAAGXZ
+?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+?setbuf@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAAPEAV12@PEAG_J@Z
+?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+?setstate@?$basic_ios@GU?$char_traits@G@std@@@std@@QEAAXH_N@Z
+?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ
+?sgetc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QEAAGXZ
+?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+?showmanyc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAA_JXZ
+?snextc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ
+?snextc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QEAAGXZ
+?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z
+?sputc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QEAAGG@Z
+?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z
+?sputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QEAA_JPEBG_J@Z
+?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+?sync@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAAHXZ
+?tolower@?$ctype@G@std@@QEBAGG@Z
+?tolower@?$ctype@G@std@@QEBAPEBGPEAGPEBG@Z
+?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+?uflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAAGXZ
+?uncaught_exception@std@@YA_NXZ
+?unshift@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEAD1AEAPEAD@Z
+?unshift@?$codecvt@GDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEAD1AEAPEAD@Z
+?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z
+?widen@?$basic_ios@GU?$char_traits@G@std@@@std@@QEBAGD@Z
+?widen@?$ctype@G@std@@QEBAGD@Z
+?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+?xsgetn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAA_JPEAG_J@Z
+?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+?xsputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MEAA_JPEBG_J@Z
+@(D8f(t1
+@.data
+@.didat
+@.reloc
+@8|$#t
+@8|$$t
+@8|$(t
+@8|$@
+@8|$@t
+@8|$@tQ
+@8|$0t
+@8|$0t4
+@8|$0t6
+@8|$0ta9|$D|[H
+@8|$0u
+@8|$h
+@8|$H
+@8|$h
+@8|$Ht(H
+@8|$htBH
+@8|$p
+@8|$pt
+@8|$pt)H
+@8|$t
+@8}'t&H
+@8}'tVH
+@8}wt9H
+@8>xB.>tD
+@80t?H
+@85O)
+@8i@td
+@8l$(t
+@8l$@t
+@8n(t
+@8p u
+@8p um
+@8p(t
+@8t$(t1H
+@8t$,u
+@8t$0
+@8t$0t
+@8t$0tBH
+@8t$0tDH
+@8t$0tEH
+@8t$1
+@8t$2t
+@8t$Ht
+@8t$Ht(H
+@8t$xt
+@8t$Xt"H
+@8t$xt(H
+@8t$Xt;H
+@8u@t
+@8u`t
+@8u8t
+@8u8t%H
+@8u8t-H
+@8uXt&H
+@8w`t
+@8x u+H
+@8x(t
+@8xHt
+@8y(t
+@8y@t
+@A^_]
+@A^_^
+@A^_^][
+@A^A]_^]
+@A_A^]
+@A_A^_
+@A_A^_^[
+@A_A^_^]
+@A_A^A\^[
+@A_A^A\_]
+@A_A^A\_^
+@A_A^A]
+@A_A^A]A\_
+@A_A^A]A\_^[
+@A_A^A]A\_^]
+@nB(DE
+@SUVWATAUAVAWH
+@SUVWATAVAW
+@SUVWATAVAWH
+@SUVWATAVH
+@SUVWAVAWH
+@SUVWAVH
+@SUVWAWH
+@SUVWH
+@SVWATAUAVAW
+@SVWATAUAVAWH
+@SVWATAVAWH
+@SVWAVAWH
+@SVWAVH
+@SVWH
+@tI;H
+@USVWATAUAVAWH
+@USVWATAVAWH
+@USVWAUAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWAWH
+@USVWH
+@USWH
+@zB"D@FdJ
+[ UVWAVAWH
+[%hs(%hs)]
+[%hs]
+[HKEY_LOCAL_MACHINE\{
+\$ D8
+\$ E3
+\$ H;]
+\$ HcD$$Hc
+\$ UH
+\$ UVWATAUAVAW
+\$ UVWATAUAVAWH
+\$ UVWATAVH
+\$ UVWAVAWH
+\$ UVWH
+\$ VWATAVAWH
+\$ VWAVH
+\$ WH
+\$(E3
+\$(H;
+\$(I;
+\$(L;
+\$@H+
+\$`A8~
+\$`E3
+\$`Hi
+\$0D8h 
+\$0D8h tRH
+\$0D8m
+\$0H;
+\$8E3
+\$8H;
+\$8H+\$0H
+\$HE3
+\$hE3
+\$HH;
+\$PE3
+\$PH;
+\$pI;
+\$pMk
+\$xE3
+\$XE3
+\$xE3
+\$XH!
+\$XH;
+\$xH;
+\$XHi
+\$xMi
+\.*.etl
+\??\Volume{
+\\.\MountPointManager
+\\.\PhysicalDrive
+\\.\PhysicalDrive%d
+\\.\PhysicalDrive%u
+\\?\Harddisk
+\\?\HardDisk%uPartition%u
+\\?\Harddisk%uPartition%u
+\\?\HardDisk%uPartition%u\
+\\?\Volume%s\
+\cbscore.dll
+\Device\HarddiskVolume
+\EnterpriseAttribution
+\Implemented Categories
+\Installation\Target
+\Microsoft\Windows\DiskCleanup
+\Microsoft\Windows\rempl\shell
+\Microsoft\Windows\UpdateOrchestrator
+\Microsoft\Windows\UpdateOrchestrator\Reboot
+\Microsoft\Windows\WindowsUpdate\AUSessionConnect
+\OOBE\Updates
+\OSUpgrade
+\RebootDowntime
+\Required Categories
+\Settings
+\Settings\ModelState
+\ssshim.dll
+\StickyUpdates
+\system32\ssshim.dll
+\syswow64\ssshim.dll
+\TestHooks
+\TestHooks\DecisionEngine
+\TestHooks\SettingsOverride
+\TestHooks\SettingsOverride\Mostack
+\UScheduler
+]HH9}
+^|H;N
+__C_specific_handler
+__CxxFrameHandler3
+__CxxFrameHandler4
+__std_terminate
+__std_type_info_compare
+__TlgCV__
+_c_exit
+_Cnd_broadcast
+_Cnd_destroy_in_situ
+_Cnd_do_broadcast_at_thread_exit
+_Cnd_init_in_situ
+_Cnd_register_at_thread_exit
+_Cnd_signal
+_Cnd_timedwait
+_Cnd_unregister_at_thread_exit
+_Cnd_wait
+_CxxThrowException
+_hI+_`H
+_hReadEvent
+_hWriteEvent
+_initterm
+_initterm_e
+_Lock_shared_ptr_spin_lock
+_ModelReplaced
+_Mtx_current_owns
+_Mtx_destroy_in_situ
+_Mtx_init_in_situ
+_Mtx_lock
+_Mtx_trylock
+_Mtx_unlock
+_o____lc_codepage_func
+_o___p__commode
+_o___pctype_func
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___stdio_common_vsnprintf_s
+_o___stdio_common_vsnwprintf_s
+_o___stdio_common_vsprintf_s
+_o___stdio_common_vswprintf
+_o___stdio_common_vswprintf_s
+_o___stdio_common_vswscanf
+_o__beginthreadex
+_o__callnewh
+_o__cexit
+_o__configthreadlocale
+_o__configure_wide_argv
+_o__create_locale
+_o__crt_atexit
+_o__errno
+_o__exit
+_o__free_locale
+_o__fseeki64
+_o__get_stream_buffer_pointers
+_o__get_wide_winmain_command_line
+_o__i64toa_s
+_o__i64tow_s
+_o__initialize_onexit_table
+_o__initialize_wide_environment
+_o__invalid_parameter_noinfo
+_o__invalid_parameter_noinfo_noreturn
+_o__localtime64_s
+_o__lock_file
+_o__ltow_s
+_o__mktime64
+_o__purecall
+_o__recalloc
+_o__register_onexit_function
+_o__seh_filter_exe
+_o__set_app_type
+_o__set_errno
+_o__set_fmode
+_o__set_new_mode
+_o__stricmp
+_o__ui64toa_s
+_o__ui64tow_s
+_o__ultow_s
+_o__unlock_file
+_o__wcsicmp
+_o__wcsnicmp
+_o__wcstod_l
+_o__wtoi
+_o__wtol
+_o_exit
+_o_fclose
+_o_fflush
+_o_fgetc
+_o_fgetpos
+_o_fgetwc
+_o_fputc
+_o_fputwc
+_o_fread
+_o_free
+_o_fsetpos
+_o_fwrite
+_o_iswspace
+_o_malloc
+_o_mbstowcs_s
+_o_pow
+_o_realloc
+_o_setvbuf
+_o_strncpy_s
+_o_strtol
+_o_strtoull
+_o_terminate
+_o_tolower
+_o_towlower
+_o_ungetc
+_o_ungetwc
+_o_wcscat_s
+_o_wcscpy_s
+_o_wcsftime
+_o_wcsncpy_s
+_o_wcstol
+_o_wcstoll
+_o_wcstoull
+_onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\mousoupdatehistoryentry.cpp
+_pUniqueIdBuffer
+_Query_perf_counter
+_Query_perf_frequency
+_register_thread_local_exe_atexit_callback
+_strDeviceObject
+_strPartitionName
+_Thrd_detach
+_Thrd_id
+_Thrd_join
+_Thrd_sleep
+_Unlock_shared_ptr_spin_lock
+_Wcscoll
+_Wcsxfrm
+_Xtime_get_ticks
+` AUAVAWH
+` AVH
+` UAVAWH
+`.rdata
+`A^_^
+`A^_^[]
+`A^A\_^]
+`A_A^_^]
+`A_A^A\_^[]
+`A_A^A]A\_^]
+{    
+{ ATAVAWH
+{ AVH
+{"Id":"
+{"ModuleID" : "DesktopInPlaceUpgrade"}
+{"ServiceId":"
+{"UpdaterId":"
+{"version":"
+{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}
+{|?uSH
+{|]uuH
+{CD73414F-7FE1-48CA-97E2-6DB8128D99FD}
+{xbu_
+{xbuY
+{xuuu
+{xxu}
+|$ ATAVAWH
+|$ AUAVAWH
+|$ AVH
+|$ D8zat
+|$ E2
+|$ E3
+|$ Hk
+|$ UATAUAVAWH
+|$ UAVAWH
+|$ UH
+|$$@8=
+|$$E3
+|$(@8=
+|$(A^
+|$(A_
+|$(H+
+|$(I;
+|$(M;
+|$@E3
+|$`E3
+|$`fD
+|$`H;
+|$0A_A^
+|$0E3
+|$0fD
+|$4D;
+|$8A_A^A\
+|$8A_A^A]
+|$8E3
+|$8E8uTt{H
+|$8fD97t
+|$8I;
+|$8L+
+|$hE3
+|$HE3
+|$hH;
+|$hL;
+|$Hu/I
+|$OI;
+|$PE3
+|$pH;
+|$PI;
+|$pI;
+|$PI;
+|$X<u&I
+|$XE3
+|$xfD
+|$XfD
+|$xH;
+|$xI;
+|$XL9{
+|&fD9A
+|_D8T
+|9fD9Q
+|D.\u
+|E.\t
+} I9^
+} I9_
+}/I9|$
+}'@8z(t
+}0H+}(H
+}7HcG
+}'D9"u
+}HH9}
+}LE9f
+}ZE9g
+~`L+~XI
+~+HcB
+<B\te
+<F.uPA
+<HcM8
+<K\u'fD
+<list count="0"></list>
+<Z>b@
+=L9o<
+>.F&>
+>`@TBlD
+>0@,>8
+>H.J"L*NFP0R^T0V
+0 &"}
+0 @"4$t& (2&D"
+0 h0j
+0$x&.(
+0.0.0.0
+0:|<\>\@HB
+00D4FQ
+00H2JQ
+0123456789ABCDEF0
+040904B0
+0A\_^
+0A^_]
+0A^_^
+0A^_^[]
+0A^_^][
+0A^A\_^]
+0A^A]_^]
+0A__^][
+0A_A^]
+0A_A^_
+0A_A^_^]
+0A_A^A\
+0A_A^A\_^
+0A_A^A\_^][
+0A_A^A]A\_
+0A_A^A]A\_^[
+0A_A^A]A\_^]
+0DrF\H\JHL
+0h4&6
+0hxj.lx
+0NxP.R
+0z2"4@6d:
+10.0.19041.2304
+10.0.19041.2304 (WinBuild.160101.0800)
+123456789ABCDEF
+2`4T6l8
+2019-01-01T12:00:00
+2333333
+2j442
+2z4z6
+3333333
+3D$8%x
+4 2Z66:T<4@XB0@ZD0@b2=
+4TBTDtH
+4TJTLHN1
+6(2*"(R
+608p:
+6l8L6
+6T8T:^<
+797t3A
+7fD;>u
+7H+t$ H
+7L+t$ I
+8\$(t
+8\$(t$H
+8\$@t
+8\$@tU
+8\$`t
+8\$0t
+8\$1t
+8\$8t%H
+8\$Dt
+8\$Pt
+8\$xt#H
+8_^][
+8A^_^[
+8A_A^A\_^[
+8A_A^A]A\_^
+8A_A^A]A\_^][
+8D$3t
+8D$4t
+8D$5t
+8D$9t
+8D$Pt?H
+8v6j2
+8X ue
+8Z:4>
+9\$(t
+9\$@L
+9\$@un8
+9\$0t
+9\$8t
+9\u:H
+9\u@H
+9\u3H
+9\u9H
+9\uBH
+9\uGH
+9\uJH
+9_Ht*
+9_Hu"H
+9_Hu@
+9{tu#
+9|$Ht
+9}0|uH
+92u'L
+9A98u6A9x
+9A9x 
+9C }!H
+9D$<t
+9D$0u
+9D$8t
+9D$8u
+9D$Pt
+9I9x 
+9l$0t
+9L$Dt
+9L$Pt(=
+9pXt\H
+9S|u`H
+9t$ t
+9T$`A
+9t$Pt
+9t$XH
+A H;A0u
+A H+A
+A$I+@
+a."=M
+A;GTu
+A;y }/H
+A^_^[
+A^_^[]
+A^_^][
+A^_^H
+A^A\]
+A^A\_^]
+A^A\_^][
+A^A]_^]
+A^A]A\_^
+A__^[]
+A_A\_
+A_A\_^]
+A_A^]
+A_A^]H
+A_A^^
+A_A^_
+A_A^_^[
+A_A^_^[]
+A_A^_^]
+A_A^_^][
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[
+A_A^A\_^[]
+A_A^A\_^][
+A_A^A]
+A_A^A]_]
+A_A^A]_^[]
+A_A^A]A\]
+A_A^A]A\^[
+A_A^A]A\_
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A`H+AXH
+A<fA;
+A0D8B(t)L
+A8_8t
+A9} ~;H
+A9D$`
+A9v u
+A9y }:I
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\settingobject.cpp
+Aborted
+Aborted - canceled
+Aborted - timeout
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+Action
+action
+Action %ws has dupe rule: %ws.
+Action %ws has invalid condition: %ws.
+Action %ws has invalid operator: %ws.
+Action blocked by failure
+Action can affect user
+Action can show ux
+Action Completed
+action context is missing
+Action Failure
+Action has no matches
+Action Honor AutoUpdate Download Policy
+Action Honor AutoUpdate Install Policy
+Action is exclusive
+Action is immediate
+Action is pausable
+Action is perform on reboot
+Action is provider exclusive
+Action name
+Action needs Eula
+Action not found
+Action requires network
+Action Running
+Action throttle after failure
+Action:
+ActionList.Install.xml
+ActionList.xml
+Active hours
+ActiveHoursEnd
+ActiveHoursStart
+ActivityError
+ActivityIntermediateStop
+ActivityStoppedAutomatically
+actualConfidence
+Add or Remove Programs
+addend
+AdjustTokenPrivileges
+Admin
+advapi32.dll
+ALfA;
+All Conditions Met
+AllocateAndInitializeSid
+allowed
+allowedFailures
+AllowedUpdateManagerCtorFailures
+AllowInPlaceUpgrade
+alnum
+alpha
+Already downloaded
+Already updated
+AlwaysAllowCTADownload
+Aonecore\internal\sdk\inc\wil\opensource/wil/result.h
+Api Caller
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-datetime-l1-1-1.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-2.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-file-l2-1-0.dll
+api-ms-win-core-file-l2-1-2.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-interlocked-l1-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-1.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-localization-obsolete-l1-2-0.dll
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-path-l1-1-0.dll
+api-ms-win-core-processenvironment-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-registry-l1-1-1.dll
+api-ms-win-core-rtlsupport-l1-1-0.dll
+api-ms-win-core-shlwapi-legacy-l1-1-0.dll
+api-ms-win-core-shutdown-l1-1-1.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-string-obsolete-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-2-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-timezone-l1-1-0.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-devices-config-l1-1-1.dll
+api-ms-win-eventing-controller-l1-1-0.dll
+api-ms-win-eventing-legacy-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-oobe-notification-l1-1-0.dll
+api-ms-win-power-base-l1-1-0.dll
+api-ms-win-power-setting-l1-1-0.dll
+api-ms-win-rtcore-ntuser-window-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-service-private-l1-1-0.dll
+api-ms-win-shcore-stream-winrt-l1-1-0.dll
+api-ms-win-stateseparation-helpers-l1-1-0.dll
+ApiSetQueryApiSetPresence
+APPID
+AppID
+Appraiser Driver Scan
+appraiser.dll
+approved
+Approved
+ApprovedByPolicy
+assetPath
+ATAVAWH
+ATL$__a
+ATL$__m
+ATL$__z
+Attempting to schedule time in the past
+AttentionRequired
+AttentionRequiredReason
+AttentionRequiredReasonTime
+Audience
+AutoAcceptEULA
+AutoRescanAllowed
+AutoRescanCount
+AutoRescanEnabled
+AXHc8I+
+B*D*F$H
+B@H9A@
+B@I9F@
+B\D\F\HdF
+B^2`pb\d\fJd
+backup_
+bad allocation
+bad array new length
+bad cast
+bad conversion
+Bad optional access
+bad variant access
+bad_weak_ptr
+BatterySaverEnabled
+BB{Qd4
+bcrypt.dll
+BCryptCloseAlgorithmProvider
+BCryptCreateHash
+BCryptDestroyHash
+BCryptFinishHash
+BCryptGetProperty
+BCryptHashData
+BCryptOpenAlgorithmProvider
+blank
+bldbrch=
+Block Feature Updates Enabled
+Block Feature Updates until
+Block Feature Updates until is in Future
+BlockedByProvider
+BlockedFeatureUpdates
+BlockFeatureUpdates
+BlockFeatureUpdates Marker set by USO API is removed
+BlockFeatureUpdates marker set by UUP Fallback is removed
+BlockFeatureUpdatesSource
+BlockFeatureUpdatesUntil
+Blocking Feature Updates until
+BQhI+
+broken promise
+BS_EFIESP
+BufferedTrace_
+Build=
+Builder
+builder=
+BuildNumber
+BuildTimestamp=
+Bypass OOBE
+Bypass scan throttle
+BypassBatteryChecks
+BypassOOBE:
+BypassPolicyRestrictions
+BypassThrottling:
+BypassUserPresenceChecks
+c AUAVAWH
+C D8U@u
+C H;C0t2f90t-f
+C$9C w4H
+C(@8n8tu
+C\$HH
+C|$0I
+C9fD9?u-
+Cab_CreateCab
+Cab_Extract
+CabAPI.dll
+callContext
+CallContext:[%hs] 
+callCount
+Called from oobe
+CalledFromOobe
+caller
+callerModule
+CallerProfile='AUv2' and IsInstalled=0 and DeploymentAction='Installation' or IsInstalled=0 and DeploymentAction='OptionalInstallation' or IsPresent=1 and DeploymentAction='Uninstallation' or IsInstalled=1 and DeploymentAction='Installation' and RebootRequired=1 or IsInstalled=0 and DeploymentAction='Uninstallation' and RebootRequired=1
+callerReturnAddressOffset
+CallNtPowerInformation
+canceled or paused
+Canceling non-reboot action on 
+CannotConnectToService
+cbscore.dll
+CbsCoreFinalize
+CbsCoreInitialize
+CBSInterface
+CcmExec
+CD$ A
+CD$(H
+CD$HH
+CD$xD
+ceilf
+CertVerifyCertificateChainPolicy
+ChangeStamp: 
+Charge and update
+Charge and update notifications
+CharLowerBuff
+CharLowerBuffW
+CharNextW
+CharUpperW
+CHD1p
+checks
+ChkdskEx
+ChkWuDrv
+CL$0L
+CL$hH
+CL$xH
+CloseHandle
+CloseImageStorageService
+CloseThreadpoolTimer
+CloseThreadpoolWait
+CloseVolumeHandle
+CLSID
+CLSID\
+ClusterAwareUpdating
+CM_Get_Device_Interface_List
+CM_Get_Device_Interface_List_Size
+CM_Get_Device_Interface_List_SizeW
+CM_Get_Device_Interface_ListW
+CM_Get_Device_Interface_Property
+CM_Get_Device_Interface_PropertyW
+cmdLine
+cntrl
+CoCreateFreeThreadedMarshaler
+CoCreateGuid
+CoCreateInstance
+CoGetMalloc
+CoImpersonateClient
+CoInitializeEx
+Commit
+CommitUpdate
+CompanyName
+CompatBlockIds
+CompatError
+complete
+Complete
+Completed
+Compliance deadline expired
+ComplianceDeadlineExpeditedThreshold
+ComplianceDeadlineInDays
+ComplianceGracePeriodInDays
+Component Categories
+Confidence Not Met
+connectivity
+context
+Continue action
+ControlTraceW
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+CopyFileW
+CopyString
+CoRegisterClassObject
+CoResumeClassObjects
+CoRevertToSelf
+CoRevokeClassObject
+CoreWorkerDebug
+CorrelationVector
+CorrelationVectors
+Corruption
+CoSuspendClassObjects
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+Could not obtain the work mutex lock
+CoUninitialize
+count
+CoWaitForMultipleHandles
+CREATE TABLE IF NOT EXISTS ACTIONRECORDS (            PROVIDERID            TEXT NOT NULL COLLATE NOCASE CHECK(PROVIDERID <> ''),            UPDATEID              TEXT NOT NULL COLLATE NOCASE CHECK(UPDATEID <> ''),            TIME                  TEXT,            ACTION                TEXT,            ACTIONCLASS           TEXT,            RESULT                INTEGER,            PRIMARY KEY(PROVIDERID, UPDATEID, TIME)            FOREIGN KEY(PROVIDERID, UPDATEID) REFERENCES UPDATES(PROVIDERID, UPDATEID) ON DELETE CASCADE);
+CREATE TABLE IF NOT EXISTS COMPLETEDUPDATES (            PROVIDERID            TEXT NOT NULL COLLATE NOCASE CHECK(PROVIDERID <> ''),            UPDATEID              TEXT NOT NULL COLLATE NOCASE CHECK(UPDATEID <> ''),            TIME                  TEXT,            TITLE                 TEXT,            DESCRIPTION           TEXT,            MOREINFOURL           TEXT,            HISTORYCATEGORY       TEXT,            UNINSTALL             INTEGER,            PRIMARY KEY(PROVIDERID, UPDATEID));
+CREATE TABLE IF NOT EXISTS PROVIDERSPROP (            PROVIDERID TEXT NOT NULL COLLATE NOCASE CHECK(PROVIDERID <> ''),            VARIABLE   TEXT NOT NULL COLLATE NOCASE CHECK(VARIABLE <> ''),            VALUE      TEXT,            TYPE       INTEGER,            PRIMARY KEY(PROVIDERID, VARIABLE));
+CREATE TABLE IF NOT EXISTS UPDATES (            PROVIDERID            TEXT NOT NULL COLLATE NOCASE CHECK(PROVIDERID <> ''),            UPDATEID              TEXT NOT NULL COLLATE NOCASE CHECK(UPDATEID <> ''),            SERIALIZEDUPDATE      BLOB,            PRIMARY KEY(PROVIDERID, UPDATEID));
+CREATE TABLE IF NOT EXISTS UPDATESPROP (            PROVIDERID TEXT NOT NULL COLLATE NOCASE CHECK(PROVIDERID <> ''),            UPDATEID   TEXT NOT NULL COLLATE NOCASE CHECK(UPDATEID <> ''),            VARIABLE   TEXT NOT NULL COLLATE NOCASE CHECK(VARIABLE <> ''),            VALUE      TEXT,            TYPE       INTEGER,            PRIMARY KEY(PROVIDERID, UPDATEID, VARIABLE)            FOREIGN KEY(PROVIDERID, UPDATEID) REFERENCES UPDATES(PROVIDERID, UPDATEID) ON DELETE CASCADE);
+CREATE TABLE IF NOT EXISTS VARIABLES (            KEY        TEXT NOT NULL COLLATE NOCASE CHECK(KEY <> ''),            VALUE      TEXT,            TYPE       INTEGER,            PRIMARY KEY(KEY));
+create_directories
+create_directory
+CreateDeploymentSession
+CreateDirectoryW
+CreateEvent
+CreateEventExW
+CreateEventW
+CreateFile
+CreateFileW
+CreateHardLinkW
+CreateImageLogger: Failed to allocate ImageLogger.
+CreateImageLogger: ImageLogger.Initialize failed.
+CreateImageStorageService failed with error code 0x%x.
+CreateImageStorageService: Error - this thread was created in a single threaded apartment.
+CreateImageStorageService: parameter 'ppService' is nullptr.
+CreateJunction
+CreateMutexExW
+CreatePartitionAttributeChangeNotification
+CreatePartitionTypeChangeNotification
+CreateProcessW
+CreateRandomAccessStreamOnFile
+CreateSemaphoreExW
+CreateStorageService
+CreateSymbolicLinkW
+CreateThread
+CreateThreadpoolTimer
+CreateThreadpoolWait
+CreateVolumeArrivalNotification
+CreateXmlReader
+CreateXmlWriter
+Creating a worker
+Creating new UpdateManager
+CRYPT32.dll
+CryptCATAdminAcquireContext
+CryptCATAdminCalcHashFromFileHandle
+CryptCATAdminEnumCatalogFromHash
+CryptCATAdminReleaseCatalogContext
+CryptCATAdminReleaseContext
+CryptCATCatalogInfoFromContext
+CT$ L
+CT$@L
+CT$`H
+CT$0H
+CT$8H
+CT$hH
+CT$HH
+CT$HL
+CT$pL
+CTA always approved
+CtfD;
+CtH;K
+currentContextId
+currentContextMessage
+currentContextName
+CurrentVersionSetupOOBE
+CxH9D
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+d$ E3
+D$ E3
+D$ fD
+D$ H;
+D$ H;C
+D$ H+
+D$ H+D$8u
+D$ H9}
+D$ Hk
+D$(8S
+D$(E3
+d$(E3
+D$(E3
+D$(H;G
+D$(H+
+D$(H+D$ H
+D$(H+D$@u
+D$(H9
+D$@!8!x
+D$@;D$0
+D$@E3
+D$@fD
+D$@H;
+D$@HcH
+D$@Hi
+D$@I;
+D$@L;
+D$`E3
+D$`H;
+D$`H;C
+D$`H+
+d$<E3
+D$0!\$(E3
+D$0!\$(H!\$ 
+D$09\$ tAL
+D$09r
+D$0D!t$(H
+D$0E3
+d$0E3
+D$0E3
+D$0fA
+D$0H;
+D$0H+
+D$0H+D$HH
+D$0Hc
+D$0HcH
+d$0I;
+D$0L;
+D$0tq
+D$0tu
+D$18Mhu
+D$49L$8t
+D$8D8Pp
+D$8E3
+D$8fD
+D$8H;
+D$8H+
+D$8H9D$@u
+d$8I;
+D$8Ik
+D$8L;
+D$H!|$H3
+D$HD8=_
+D$hD8f
+D$HE3
+D$hfD
+D$hfE
+D$HH;
+D$HH;D$hu@9U
+D$hH;E
+D$hH9D$`t
+D$HL;
+D$P!D$ L
+D$PE3
+D$pE3
+D$PE3
+D$pE3
+D$PfB
+D$pfD
+D$PfD
+D$pfD
+D$PfE
+D$PH!]
+D$PH;
+D$pH;
+D$PH;
+D$pH;
+D$PH;
+D$PH+E
+D$PHcH
+d$PI;
+D$pI;
+D$pt,A
+D$pt.
+D$T9p
+D$x@2
+D$X@8
+D$X8L$1t
+D$XD8|$5t
+D$XE3
+D$xE3
+D$XE3
+D$XfD
+D$xfD
+D$XH+E
+D$XH9]
+d$XL)t$Xf;
+D$zH9D$Hu
+d(f2j*l2n
+D:(A;;GA;;;SY)
+D:P(A;;FA;;;SY)(A;;FRFX;;;LS)(A;;FRFX;;;BA)
+D;d$d
+D;D$P}
+D;d$x
+D;d$X
+D;s }
+D;t$d
+D+D$x
+D+D$xD
+D8%d|
+D8@ct
+D8@gt
+D8` uB
+D8`(t
+D8`(t+H
+D8{$u
+D8|$ 
+D8|$(t
+D8|$(tAH
+D8|$`
+D8|$`t
+D8|$`u.
+D8|$0
+D8|$0t
+D8|$0u
+D8|$2t
+D8|$4
+D8|$6t
+D8|$8t
+D8|$Ht
+D8|$ht
+D8|$pt
+D8|$pt)H
+D8|$Xt%H
+D8~jteH
+D8B H
+D8d$ 
+D8d$,u
+D8d$`
+D8d$`t.H
+D8d$0t$H
+D8d$0u`H
+D8d$8t%Hc\$(H
+D8d$h
+D8d$pt
+D8D$Pt*
+D8d$X
+D8d$xt
+D8d$XtX
+D8d$Xu.
+D8d$Xu7
+D8e t
+D8e`t
+D8e`t'H
+D8e0t&H
+D8ept'H
+D8H(t
+D8h(t
+D8h(t!H
+D8I(te
+D8-k9
+D8l$@
+D8l$`t
+D8l$0
+D8l$4
+D8l$4u$L
+D8l$8uUH
+D8l$ht
+D8l$Ht
+D8l$tA
+D8m@t
+D8-NQ
+D8p @
+D8p(t|
+D8qhu
+D8t$!
+D8T$!
+D8t$(
+D8t$(u
+D8t$0
+D8t$pt
+D8t$pt"H
+D8t$pt(H
+D8t$PulI
+D8t$X
+D8t$Xt/H
+D8t$XtBH
+D8t$xtRD9t$htKH
+D8t$XuQH
+D8u@t
+D8u@t{L
+D8v(t%H
+D8x ug
+D8x(t
+D8yhu
+D9"tY
+D9"u&
+D9/u;D
+D9@ }
+D9{8t
+D9|$@H
+D9|$@t;A
+D9|$`
+D9|$`u
+D9|$x
+D9c u
+D9d$@
+D9d$\
+D9D$0A
+D9D$0t'
+D9d$D
+D9D$d
+D9d$D
+D9f u
+D9g u
+D9l$`A
+D9l$0u
+D9l$lu
+D9n u
+D9t$@H
+D9t$p
+D9t$PA
+D9't_
+D9wHt
+Data: 
+Data\MetaData
+Database
+database context is missing
+DatabaseReset
+DataExpDateEpoch_
+DataMigrationFramework
+DbgPrintEx
+DebugBreak
+Decision
+Decision engine build
+DecisionEngine
+DecisionEnginePatch
+DecisionLoad
+DecodeBase64W
+Default
+Default_Model_Id
+DefaultPayloadId
+Definition
+DefragSvc
+Delay Time After Oobe Complete
+DelayLoadFailureHook
+Delete
+DELETE FROM PROVIDERSPROP WHERE PROVIDERID = ? AND VARIABLE = ?
+DELETE FROM UPDATES
+DELETE FROM UPDATES WHERE PROVIDERID = ? AND UPDATEID = ?
+DELETE FROM UPDATESPROP WHERE PROVIDERID = ? AND UPDATEID = ? AND VARIABLE = ?
+DELETE FROM VARIABLES
+DELETE FROM VARIABLES WHERE KEY = ?
+DeleteCriticalSection
+DeleteFileW
+DeleteVolumeMountPointW
+DeploymentServer
+DeploymentServer.*\.etl
+Deprecated API called: %s
+deque<T> too long
+Deserialization failure
+DesktopKeepOnReminder
+DestBuildNumList_
+Destroying action
+details
+Device Driver Retrieval Client
+device interface property
+device list
+device object name
+DeviceAccess
+DeviceInventory.Detection.xml
+DeviceInventory.Install.xml
+DeviceInventory.xml
+DeviceIoControl
+DeviceUpdate
+deviceWokeUp
+digit
+Direct condition query
+directory_entry::last_write_time
+directory_entry::status
+directory_iterator::directory_iterator
+directory_iterator::operator++
+DiscoveryTime
+disk geometry buffer
+disk path buffer
+DiskCleanup
+DispatchMessageW
+Display
+disposition
+DMCmnUtils.dll
+DMF query returned false.
+dmiso8601utils.dll
+dnflh
+Download
+Download metered
+Download timeout in minutes
+Download WU bypass regulation
+Download WU fail on transient errors
+Download WU ignore network cost for size
+Download WU on battery
+Download WU serialized
+Download WU with update priority
+downloadJobId
+downloadResult
+Downloads are still needed prior to UA install
+drive layout buffer
+Driver
+DtuSelfhost
+DuplicateHandle
+DUShared
+DWS;z
+dynamic
+Dynamic Update
+DynamicInstalledProducts
+DynamicInstalledProductsArray
+E(f;0
+E;l$`
+E@H9G@
+E8w8t
+E8w8tcA
+E8wit
+E8wit.I
+E9g u
+E9't8
+E9'tc
+E9'u*
+E9V0u
+ED$`H
+EDU work requirements met
+EDU work requirements were met
+EFI\Microsoft\logs\DiagnosticLog.cab
+EFI\Microsoft\logs\DiagnosticLogSprayed.cab
+EFIESP
+EFIESP_MUNGED
+EHH9]
+EHH9}
+EHH9E
+enabled
+EnabledFeatureUsage
+EnableTraceEx2
+EncodeBase64W
+Ended work thread
+Ending work thread
+endTime
+EndTime
+EndWorkThread timeout in minutes
+EnhancedShutdownEnabled
+EnhancedUpdateAndShutdown
+EnterCriticalSection
+en-US
+EPH9V
+error
+ET$HH
+ETW Log Path: %s.
+EvaluateDownloadExpiration
+EvaluateScans: Setting interactive for AutoRescan
+EvaluatingWorkQueue
+EventActivityIdControl
+EventRegister
+EventRegisterMicrosoft_WindowsPhone_StorageHelper failed with error code 0x%x.
+EventSetInformation
+EventUnregister
+EventWriteString
+EventWriteTransfer
+Exception
+Exclude Update
+exists
+ExpandCabFile
+ExpandEnvironmentStringsW
+ExperimentID
+expirationTime
+ExternalReboot
+ext-ms-win-deployment-productenumerator-l1-1-0
+ext-ms-win-deployment-productenumerator-l1-1-0.dll
+ext-ms-win-session-usertoken-l1-1-0
+ext-ms-win-session-usertoken-l1-1-0.dll
+ext-ms-win-session-winsta-l1-1-0
+ext-ms-win-session-winsta-l1-1-0.dll
+ext-ms-win-session-winsta-l1-1-1
+ext-ms-win-session-winsta-l1-1-2
+ext-ms-win-session-winsta-l1-1-3
+ext-ms-win-session-winsta-l1-1-4
+ext-ms-win-session-wtsapi32-l1-1-0
+ext-ms-win-session-wtsapi32-l1-1-0.dll
+ext-ms-win-session-wtsapi32-l1-1-1
+ext-ms-win-storage-sense-l1-1-0
+ext-ms-win-storage-sense-l1-1-0.dll
+ext-ms-win-storage-sense-l1-2-0
+ext-ms-win-storage-sense-l1-2-1
+f D8e
+F H;F0
+F H;F0u
+F(@8}
+F,8\$@t
+f;D$@
+F@I9G@
+F~J,F
+F0D8#ubD8c
+F0D8`
+F0E8h
+f8V_G
+f9)u?H
+f9,Au
+f9,Ou
+f9;tzH
+f9<Au
+f9<Bu
+f9<Hu
+f9<Ju
+f9<Ku
+f9<Qu
+f94Au
+f94Bu
+f94Hu
+f94Ju
+f94Qu
+f9Axu[
+f9D$4
+f9D$D
+f9EXu
+f9T$8t
+fA9,@u
+fA9,Qu
+fA9|]
+fA9<@u
+fA9<Bu
+fA9<Hu
+fA9<Ku
+fA94@u
+fA96u
+fA9t]
+fA9Z*v$A
+Fail to schedule the chore!
+failed
+Failed to convert setting from JSON
+Failed to create the process
+FailFast
+failureCount
+failureId
+failures
+Failures for action
+failureType
+FallbackError
+false
+Fapi-ms-win-shell-shellfolders-l1-1-0.dll
+fB94ju
+fC9<wu
+fD; t
+fD;8u
+fD;8uwH
+fD9 t
+fD9 u
+fD9"t
+fD9#t
+fD9$^u
+fD9$_u
+fD9$Au
+fD9$Fu
+fD9$Gu
+fD9$Hu
+fD9$Ku
+fD9$Nu
+fD9$Ou
+fD9$Qu
+fD9$Xu
+fD9&u#L
+fD9,Ju
+fD9,nu
+fD9:t
+fD9|$8
+fD9<Au
+fD9<Ku
+fD9<xu
+fD90t
+fD90t,
+fD90u
+fD94Au
+fD94Cu
+fD94Gu
+fD94Hu
+fD94Ju
+fD94Xu
+fD97u
+fD9d]
+fD9dH
+FD9l9
+fD9t$8
+fD9t_
+fD9t}
+fD9tU
+fD9tu
+fE;8t
+fE9$Fu
+fE9$Ou
+fE9,~u
+fE9,Du
+fE9,Fu
+fE9,Nu
+fE9,Ou
+fE94Pu
+Feature
+Feature Update is Blocked
+Feature Update is still Blocked by USO API
+featureBaseVersion
+FeatureError
+FeatureHidePowerMenuRestart
+FeatureHidePowerMenuRestartDelayInMins
+FeatureHidePowerMenuShutdown
+FeatureHidePowerMenuShutdownDelayInMins
+featureId
+featureStage
+FeatureUpdateDownloadExpirationTimeInDays
+FeatureUpdateDownloadMaxExpirationTimeInDays
+FeatureUsage
+FeatureVariantUsage
+featureVersion
+FederatedScanFailure
+FederatedScanFailureTimeoutInMinutes
+FederatedScanPartialFailure
+fF9,{u
+fF94@u
+fF94Bu
+fF94zu
+fffffff
+fG9<Hu
+fH%w[
+FieldName
+file_size
+FileDescription
+fileName
+FilesToCollect
+FileSystemUtility object
+FileSystemUtility::CreateFileSystemUtility
+FileSystemUtility::FormatCallback
+FileSystemUtility::FormatVolumeEx
+FileSystemUtility::Initialize
+FileSystemUtility::ScanCallback
+FileSystemUtility::ScanVolume
+FileTimeToSystemTime
+FileType
+fileUrl
+FileVersion
+FindClose
+FindFirstFileExW
+FindNextFileW
+FindResourceExW
+First use configured
+FL$pH
+flightId
+Flighting
+Flist<T> too long
+FlushEtwSessions.log
+FlushFileBuffers
+FlushPartition
+FlushTraceW
+FMIFS
+FMIFS.DLL
+FodProvider
+Folder: \Microsoft\Windows\UpdateOrchestrator
+FollowupAction
+ForceRemove
+FormatEx2
+FormatMessageW
+FormatPartition
+FormatPartitionInternal
+FormatPartitionInternal2
+FormatPartitions
+FormatPartitions2
+FormatPartitionWithPath
+FormatThread
+FormatThread2
+Free System Disk Space In MB
+freeDiskSpaceInMB
+freeDiskSpaceInMBDelta
+FreeInstalledPackageInfo
+FreeLibrary
+FreeSid
+function
+FUPShared.dll
+future
+future already retrieved
+fZh4l
+G@H9F@
+G@H9G@
+G@I9G@
+G0D8`
+G8I9_
+GatedBlockedStatus
+GatedBlockId_
+generic
+GenuD
+GetCommandLineW
+GetCtacProvider
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDateFormatEx
+GetDefaultFileSystem
+GetDeviceInterfaceList
+GetDeviceInterfaceProperty
+GetDiskFreeSpaceExW
+GetDiskGeometry
+GetDiskLayout
+GetDiskLayoutInternal
+GetDiskName
+GetDiskNumAndPartitionCount
+GetDiskNumber
+GetDiskPath
+GetDiskSize
+GetDriveTypeW
+GetErrorMode
+GetETWLogPath
+GetExitCodeThread
+GetFileAttributesExW
+GetFileAttributesW
+GetFileInformationByHandle
+GetFileInformationByHandleEx
+GetFileSize
+GetFinalPathNameByHandleW
+GetFreeBytesOnVolume
+GetInstalledPackageInfo
+GetLastError
+GetLocalTime
+GetMainOSStoreId
+GetMessageW
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleA
+GetModuleHandleExW
+GetModuleHandleW
+GetNetworkConnectivityHint
+GetPartitionAttributes
+GetPartitionFileSystem
+GetPartitionOffset
+GetPartitionPath
+GetPartitionPath2
+GetPartitionPathNoContext
+GetPartitionSizeInSectors
+GetPartitionStyle
+GetPartitionType
+GetPersistedRegistryLocationW
+GetProcAddress
+GetProcessHeap
+GetProcessId
+GetSectorCount
+GetSectorSize
+GetSectorSizeFromHandle
+GetStartupInfoW
+GetStorageAllocationBitmap
+GetStoreId
+GetStoreIdAndInfoFromPartitionName
+GetStoreIdByPath
+GetStoreIdFromPartitionName
+GetSystemDirectoryW
+GetSystemTimeAsFileTime
+GetSystemWindowsDirectoryW
+GetTargetVersionList
+GetTempPathW
+GetTestProvider
+GetTickCount64
+GetTimeFormatEx
+Getting an update manager
+GetTokenInformation
+GetUpdateReserveManager
+GetUpdateResults
+GetUpdateResultsEx
+GetUserDefaultUILanguage
+GetVersionExW
+GetVolumeFromPartitionName
+GetVolumeInformationW
+GetVolumePathNamesForVolumeName
+GetVolumePathNamesForVolumeNameW
+gfffffffH
+gfffffffH+
+gfffffffI
+Global\LegacyUOProviderWorkCompleted
+Global\MoUsoCoreworkerRunning
+Global\UsoCoreWorkerExiting
+Global\UsoCoreWorkerRequestShutdown
+graph
+GStatus_
+GTD8}
+H SUVWATAUAVAWH
+H SUVWAVH
+H SVWH
+h UAVAWH
+H WATAUAVAWH
+H!\$0
+H!\$09
+H!\$8H
+H!\$H!\$@!\$0H!\$PH
+H!_(H!_0H!_8H!_@I
+H!_XH
+H!{ H!{(H
+H!|$(3
+H!|$@H
+H!|$0A
+H!|$0E3
+H!D$(L
+H!l$8H
+H!p E2
+H!p H!p
+H!t$ L
+H!t$0
+H!X !X
+H)D$@H
+h,2.&,
+H;:u*H;
+H;:uVH;
+H;\$ }
+H;\$(u
+H;\$@|
+H;\$8|
+H;\$8M
+H;\$8u
+H;\$p
+H;|$p
+H;|$P
+H;|$pt&H
+H;>u3H
+H;>u-H
+H;5.|
+H;5t|
+H;D$(u
+H;D$@
+H;H A
+H;N t
+H;O s
+H;P A
+H;q H
+H;Q s
+H;QhH
+H;S s
+H;t$(t
+H;t$H
+H;X s
+H;Z L
+h_^[]
+H_^[]
+H+\$8H
+H+L$(H
+H4604D
+H9\$@|
+H9\$`H
+H9\$8|
+H9\$X
+H9]8|eH9_8|
+H9]8} H9_8}
+H9]ot)H
+H9^8}
+H9_8| H9^8|
+H9_8|WI
+H9_8}
+H9_8}GE9'u
+H9|$@t+
+H9|$Ht
+H92tbH+2H
+H98toL
+H9A s
+H9C s!H
+H9C s!L
+H9C s#H
+H9D$0
+H9EXu
+H9H s
+H9l$@u
+H9oHs~H
+H9opu
+H9P s
+H9T$0u>H
+H9T$H
+H9V t
+H9Y8}
+H9Z8| H9Y8|
+H9Z8}
+hA_A^_^][
+HA_A^_^][
+hA_A^A]A\_^[]
+HA_A^A]A\_^[]
+hA_A^A]A\_^[]
+HACK_EFIESP
+HACK_EFIESP_MUNGED
+Hardware
+Has any success
+Has metered scan attempt
+Has scan success
+HashDigestLength
+HcL$0
+HcT$\E
+HeapAlloc
+HeapFree
+HeapReAlloc
+Hi\$`
+Hi\$0
+Hi\$8
+Hi|$@
+Hidden
+HKEY_CLASSES_ROOT
+HKEY_CURRENT_CONFIG
+HKEY_CURRENT_USER
+HKEY_DYN_DATA
+HKEY_LOCAL_MACHINE
+HKEY_PERFORMANCE_DATA
+HKEY_USERS
+HPD8a
+hresult
+HResult
+https://go.microsoft.com/fwlink/?linkid=2047078
+I;?t+H
+I;^(u;
+I;>u2H
+I;6u2H
+I;6u5
+I;D$P
+I;t$Pt
+I;y s.H
+I;y s/H
+I_QueryTagInformation
+i`H+iXH
+I`I+HXH
+I+H@H
+I=fE;
+I9(tc
+I9^8|
+I9^8}>
+I9_8|0H
+I9_8}
+I9_8}(D9'u
+I94$u=D
+I9Jhs
+I9Khs
+I9y s:I
+IBfE;
+IgnoreUpdate
+Ignoring first use time in the future
+Ignoring last failure time in the future
+Ignoring metered scan attempt time in the future
+Ignoring next refresh time too far in the future
+Ignoring pause start time in the future
+Ignoring reboot required time in the future
+Ignoring scan attempt time in the future
+Ignoring scan success time in the future
+Ignoring stickiness time in the future, resetting the time
+Ignoring update discovery time in the future
+Immediate install preferred
+ImpersonateLoggedOnUser
+Improperly registered UO V2 Updater - clsid is missing
+Improperly registered UO V2 Updater - updaterId is missing
+Improves the performance of Windows intelligence components
+inapplicable
+Inconsistent state data size in wnf_query
+Initialization
+InitializeConditionVariable
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeETW failed with error code 0x%x.
+InitializeETW: EnableTraceEx2 failed with error 0x%x.
+InitializeETW: failed to allocate the session properties buffer.
+InitializeETW: StartTrace failed with error 0x%x.
+InitializeETW: StringCbCopy(sessionName) failed with error 0x%x.
+InitializeETW: StringCchPrintf(logPath) failed with error 0x%x.
+InitializeETWSession
+InitializeSListHead
+InitializeSRWLock
+InitializeUpdateNotificationMgrTask
+InitiateShutdownW
+InitOnceBeginInitialization
+InitOnceBeginInitialization failed.
+InitOnceBeginInitialize
+InitOnceComplete
+InitOnceExecuteOnce
+input buffer
+INSERT OR REPLACE INTO ACTIONRECORDS (PROVIDERID, UPDATEID, TIME, ACTION, ACTIONCLASS, RESULT) VALUES (?, ?, ?, ?, ?, ?)
+INSERT OR REPLACE INTO COMPLETEDUPDATES (PROVIDERID, UPDATEID, TIME, TITLE, DESCRIPTION, MOREINFOURL, HISTORYCATEGORY, UNINSTALL) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+INSERT OR REPLACE INTO PROVIDERSPROP (PROVIDERID, VARIABLE, VALUE, TYPE) VALUES (?, ?, ?, ?)
+INSERT OR REPLACE INTO UPDATES (PROVIDERID, UPDATEID, SERIALIZEDUPDATE) VALUES (?, ?, ?)
+INSERT OR REPLACE INTO UPDATESPROP (PROVIDERID, UPDATEID, VARIABLE, VALUE, TYPE) VALUES (?, ?, ?, ?, ?)
+INSERT OR REPLACE INTO VARIABLES (KEY, VALUE, TYPE) VALUES (?, ?, ?)
+Install
+Install timeout in minutes
+InstallCancelled
+InstalledPackages.csv
+interactive
+Interface
+InternalName
+Internet
+Invalid
+Invalid connectivity level
+invalid hash bucket count
+invalid map<K, T> key
+Invalid number of operations in a check
+invalid stoi argument
+invalid stol argument
+invalid stoll argument
+invalid stoull argument
+invalid string position
+invalid unordered_map<K, T> key
+invalid vector<T> subscript
+InverseSemaphore
+InvStrCmpW
+IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
+IOCTL_DISK_GET_DRIVE_LAYOUT_EX
+IOCTL_DISK_SET_DRIVE_LAYOUT_EX
+IOCTL_DISK_UPDATE_PROPERTIES
+IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
+IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
+IOCTL_MOUNTMGR_QUERY_POINTS
+IOCTL_STORAGE_GET_DEVICE_NUMBER
+IOCTL_STORAGE_QUERY_PROPERTY
+IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
+IOCTL_VOLUME_IS_DYNAMIC
+IPHLPAPI.DLL
+IsDebuggerPresent
+isFeature
+IsFirstBoot
+isIpu
+IsIpuUpdate
+isOverdue
+isPpeEndpoint
+IsProcessorFeaturePresent
+isSeeker
+IsTestMode
+IsUpgradeRepair
+isV2Provider
+IT$ H
+J J"^$
+J@fE;
+J>fE;
+JBfE;
+JfE;0tDL
+JFfE;
+JgfE;
+JLfE;
+JufE;
+K SUVWATAVAWH
+K SVWH
+K(8J(tUH
+K0D8a
+K9T<8t
+kD$`<
+KeepAliveOnBatteryWarning
+kernel32.dll
+kernelbase.dll
+Key not found
+L!"E3
+L!\$(L
+L!|$PH
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+l$ fD
+L$ H!
+L$ H;
+L$ H;K
+L$ I;
+L$ I+
+L$ SUVWH
+L$ SVWATAUAVAWH
+L$ SWH
+l$ UAVAWH
+L$ USVWATAUAVAWH
+L$ UVWATAUAVAWH
+L$ UVWH
+l$ VWATAUAVH
+l$ VWATAVAW
+l$ VWATAVAWH
+l$ VWAV
+l$ VWAVH
+L$!D80
+L$(E3
+l$(E3
+L$(E3
+L$(H;
+L$(H;u
+L$(H+
+L$(H+L$ H
+L$(H3
+L$(I;
+l$@D9D$4t
+L$@E3
+L$@H+
+L$@H3
+L$@H9S
+L$@HcQ
+L$@I+
+L$@L;
+L$`D8|$Tu*L
+L$`E3
+l$`fA
+L$`H+
+L$`H3
+L$0E3
+l$0E3
+L$0H;
+L$0H+
+L$0H3
+L$0HcQ
+L$0L;
+l$4I;
+L$8E3
+l$8E3
+L$8E3
+l$8H;\$p
+L$8H+
+L$8H3
+L$8Hi
+L$h8_
+L$HE3
+L$hE3
+L$HE3
+l$hfD
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$HH91t
+l$HIi
+l$HIk
+L$PD9
+L$pE3
+L$PE3
+L$pE3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$PHcQ
+l$pM;
+L$XD8
+L$xE3
+L$XE3
+l$xfD
+L$XH;L$`t
+L$XH+
+L$XH3
+L$xH3
+L$XH3
+L$xH3
+L$XH3
+L$xH3
+L$XH3
+L$xH3
+L$XH3
+L$xH9
+L;@ s
+L;=/|
+L;=u|
+L;0u,H
+L;0u/H
+L;d$0
+L;J L
+L;T$H
+L;t$HH
+L\$`H
+L2N6PXR
+L9@ s
+L90u H
+L90u$H
+L95#,
+L95E2
+L95t1
+L97t@H
+L9A s
+L9d$@u
+L9eHv
+L9-i*
+L9J s
+L9J8}
+L9s tHH
+L9t$@t
+L9t$0t)eH
+L9t$P
+L9u0t=H
+L9W@t
+Label
+LaptopPlugInReminder
+Last run results
+Last run time
+lastCompletedTime
+LD$0H
+LdrAddRefDll
+LdrFastFailInLoaderCallout
+LdrUnloadDll
+LeaveCriticalSection
+Left-over characters in stream after parsing a JSON value
+Legacy UO Updater - failed to pause update: 
+Legacy UO Updater - Mismatched Queued times: UpdaterId: 
+Legacy UO Updater: 
+LegacyUOProvider
+LegacyUOProvider Scan Returned 
+LegacyUOProvider__
+LegacyUOUpdate - no work scheduled for this updater
+LegacyUOUpdate can't be created for a UO V2 Provider
+LegacyUOUpdate can't be created for USO
+LegacyUOUpdate unable to invoke callback for [%ws] : [%ws]
+LegalCopyright
+lineNumber
+LoadLibraryEx
+LoadLibraryExW
+LoadLibraryW
+LoadResource
+local only
+Local provider is not available on Desktop Windows.
+Local time conversion failed
+Local\SM0:%d:%d:%hs
+LocalAlloc
+LocalFree
+LocalInstall
+LocalOs
+LocalProvider
+LocalReAlloc
+LocalUpdate
+LocalUpdate:0
+LockAndDismountDiskVolumes
+LockAndDismountDiskVolumes2
+LockAndDismountVolumeByHandle
+Locking Process
+LockScreenContentServer.exe
+LogHr
+Logon delay is passed
+Logs\System
+Logs\User
+lower
+LowUptime
+LPRemove
+lstd::exception: %hs
+lstrcmpiW
+M H1E
+M9exu
+M9n8tFH
+M9nxt;H
+MAINOS
+maintenanceApproved context is missing
+MaintenanceTime
+Malformed array literal
+Malformed comment
+Malformed literal
+Malformed numeric literal
+Malformed object literal
+Malformed string literal
+Malformed token
+Managed
+manager context is missing
+Manager progressing
+Manager scanning
+Manager working
+ManagerStatus\
+map/set<T> too long
+Match 
+Max Block Feature Updates days
+Mb=Lk
+MBR_META_HEADER
+MbrMetaGetPartitionName
+MbrMetaGetPartitionOffset
+memcmp
+memcpy
+memmove
+memset
+message
+Message
+message
+Metadata
+metadata
+metadata.ini
+MetadataBadFieldType
+MetadataMissingField
+MeteredApproved
+MeteredScanAttemptTime
+MHH9]
+Microsoft
+Microsoft Corporation
+Microsoft.Windows.Update.Orchestrator.Decisions
+Microsoft.Windows.Update.Orchestrator.Worker
+Microsoft.Windows.Update.Orchestrator.WuProvider
+Microsoft.Windows.Wil.FeatureLogging
+Microsoft\
+Microsoft\Windows\UpdateOrchestrator
+MigratorStatus\
+minimumConfidence
+minimumDuration
+MinsToDelayAfterOobeComplete
+Minutes since discovery
+Minutes since first use
+Minutes since last metered scan attempt
+Minutes since last scan success
+Minutes since last update failure
+Minutes since regulation
+Minutes since success
+minutesSinceFederatedScanFailure
+MinutesSinceFederatedScanFailure
+minutesSinceFirstPendingReboot
+Mismatched braces
+MLMOD
+MLModelDownloadJob
+Model is not updated so skipping signal registration
+Model Validation
+modelCab
+modelCabFileName
+modelCountInPayload
+ModelDownloadActivity
+ModelDownloadSkipped
+modelFirstTimeUpdated
+modelId
+ModelJsonParsingActivity
+Models
+ModelUpdate_
+ModelUpdateActivity
+ModelUpdater
+ModelUpdaterStatus
+ModelVerificationActivity
+module
+Module
+module
+Module:
+Module_Raw
+mount point notification node
+MOUNTMGR_DOS_DEVICE_NAME
+MoUpdateOrchestrator
+MoUSO Core Worker Process
+MoUsoCoreWorker
+MoUsoCoreWorker.exe
+MoUSOCoreWorker.exe
+MoUsoCoreWorker.exe
+MoUsoCoreWorker.pdb
+MoUsoCoreWorkerRunning
+MoveFileExW
+MP9M`u
+MP9MXt
+Mscoree.dll
+Msg:[%ws] 
+msUpdateServiceOnly
+msvcp_win.dll
+MultiByteToWideChar
+MuseContent.SBC.cab
+mutable file system name
+mutable volume label
+mutable volume path
+ncalrpc
+NDfE;
+NdrClientCall3
+NdupProperties
+need another download
+NeedMoreSpace
+NeedNetwork
+NeedNonMeteredNetwork
+NeedUserAgreementForMeteredNetwork
+NeedUserAgreementForPolicy
+NeedUserInteraction
+NeedUserInteractionForCTA
+NeedUserInteractionForEula
+Nesting too deep
+newOptions
+Next active hours end
+Next good time
+Next run time
+nextAction
+NextRefreshTime
+nHp"r0t2vhx>z&|
+no answer
+No changes
+No Commit LCU Allowed
+No Conditions Met
+No exception data available
+No OS product present.
+No products present.
+no state
+No Updates Found
+No-Match 
+NoRemove
+not a boolean
+not a number
+not a string
+not an array
+not an object
+Not Enough Data
+Not supported
+NotificationUx
+NotificationUxBroker
+Notifying work thread of action completion
+Not-null check failed: Blob
+Not-null check failed: String
+NT GUID volume name
+NtClose
+ntdll.dll
+ntelA
+NtPowerInformation
+NtQueryWnfStateData
+NtUpdateWnfStateData
+O@D8q(t"H
+o\$PH
+O8I9^
+ObjectLength
+oD$ f
+OHL9y
+oL$0f
+oldOptions
+OldUsoUpdate::AcceptEula
+OldUsoUpdate::ApproveForOptionalInstall
+OldUsoUpdate::get_Categorization
+OldUsoUpdate::get_Deadline
+OldUsoUpdate::get_EulaAccepted
+OldUsoUpdate::get_EulaText
+OldUsoUpdate::get_InstallSize
+OldUsoUpdate::get_LastDeploymentChangeTime
+OldUsoUpdate::get_MaxDownloadSize
+OldUsoUpdate::get_MinDownloadSize
+OldUsoUpdate::get_MoreInfoUrls
+OldUsoUpdate::get_SupportUrl
+OldUsoUpdate::GetExProperty
+OldUsoUpdate::IsApprovedForOptionalInstall
+OldUsoUpdate::SetExProperty
+OLEAUT32.dll
+One hour from now
+onecore\base\lstring\lblob.cpp
+onecore\base\lstring\lunicode_string.cpp
+onecore\base\servicing\updatereservemanager\loaderlib\updatereservemanagerloader.cpp
+onecore\base\wcp\storage\storagehelper\onecorestorage.cpp
+onecore\enduser\srtlib\srt.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\common\lib\usocommon\filemanager.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\common\lib\usocommon\registrymanager.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\mostack\decisionengine\decisionengine.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\mostack\updatemanager\updatemanager.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\art\artsmartbusycheck.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\art\artsmartscheduler.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\coreworker\mousocoreworker.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\database\database.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\database\Database.h
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\callertoken.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\configuration.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\coreos.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\filesystem.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\flighting.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\logger.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\network.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\notification.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\policy.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\power.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\reboot.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\registry.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\scheduler.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\settings.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\testhooks.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\time.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\trust.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\usage.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\lib\windows.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\signal\signal.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\CallbackRegistration.hpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\completedupdatehistoryentry.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\mousoupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\mousoupdatecollection.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\mousoupdatehistoryentrycollection.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\oldusoupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\oldusoupdatecollection.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\oldusoupdatehistoryentry.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\taggedupdatemanager.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\taggedupdatemanager\taggedupdatesession.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\troubleshooting\troubleshooting.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\localprovider\localupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\localprovider\migration.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\localprovider\updateagent.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\modelupdater\modelpayload.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\modelupdater\modelupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\modelupdater\modelupdater.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\uoproviders\legacyuoprovider.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\uoproviders\legacyuoupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\uoproviders\uoprovider.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\uoproviders\uoupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\uoproviders\uoupdateaction.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\uoproviders\uoupdateactionprogresscallback.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\appraiser.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\coreoswuprovider.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\WuCallback.hpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\wuprovider.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\wustoragereserveimpl.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\wuupdate.cpp
+onecore\enduser\windowsupdate\muse\orchestrator\system\windows\updateproviders\wuprovider\wuupdateinternalimpl.cpp
+onecore\internal\sdk\inc\wil\opensource/wil/resource.h
+onecore\internal\sdk\inc\wil\opensource/wil/win32_helpers.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\opensource\wil\result_macros.h
+onecore\internal\sdk\inc\wil\opensource\wil\winrt.h
+onecore\internal\sdk\inc\wil\resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+onecoreuap\internal\shell\inc\OOBECompleteTime.h
+onecoreuap\internal\shell\inc\OobeRedirectionKeyHelper.h
+OneSettingsModelPayloadFailure
+OOBE scan
+OOBE ZDP
+OobeApproved
+oobeApproved
+OOBEComplete
+OOBECompleteTimestamp
+OobeCompleteTimeStamp
+OOBEUpdate
+OobeUpdates
+OOBEUpdateStarted
+OpenDisk
+OpenEventW
+OpenProcessToken
+OpenSemaphoreW
+OpenThreadToken
+OpenVolume
+operationType
+Optional
+OriginalFilename
+originatingContextId
+originatingContextMessage
+originatingContextName
+originCallerModule
+originCallerReturnAddressOffset
+originFile
+originLineNumber
+originModule
+originName
+OSDATA
+OsVersion=
+oT$@f
+Other
+other seeker approved
+OtherUpdate
+output buffer
+OutputDebugStringW
+Override out of date value for feature update based on WaaS because it is a managed device.
+Override out of date value for quality update based on WaaS because it is a managed device.
+p AWH
+p UWAVH
+p WATAUAVAWH
+p WAVAWH
+p.X0n2
+P08S0t)H
+pA^_^
+PA^_^
+PA^_^[]
+pA^_^[]
+PA^_^[]
+pA^_^][
+PA_A^_^[
+pA_A^_^]
+PA_A^_^]
+pA_A^_^]
+pA_A^_^]H
+pA_A^A\_^
+PA_A^A\_^[]
+PA_A^A\_^][
+pA_A^A]A\_^[
+PA_A^A]A\_^[
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+-Parameters:
+ParentBranchBuild
+ParseJson
+PART NAME N/A
+PartA_PrivTags
+Partition
+Partition,Name,Version
+patch
+path names buffer
+PathAllocCanonicalize
+PathCchAppend
+PathCchCanonicalize
+PathCchRemoveBackslash
+PathCchSkipRoot
+PathFileExistsW
+PathFindFileNameW
+pauseArg
+paused
+PauseQuery:
+PauseStartTime
+Pausing action on 
+payloadError
+payloadSettings
+pchBuffer
+PdcTaskClientRegister
+PdcTaskClientRequest
+PdcTaskClientUnregister
+pDriveLayout
+pdwDiskNumber
+PE_CreateProductEnumerator
+Pending exclusive content
+percentage
+PerformAction can not be called while currently running
+PerformAction is already running
+PerformingPreRebootActions
+phDisk
+phVolume
+pL;D$(u
+Policy
+Policy active hours restricted
+Policy allow metered download
+Policy AutoInstall Scheduled
+Policy AutoUpdate Disabled
+Policy Exclude Drivers
+Policy Install at Maintenance Scheduled
+Policy Notify To Download
+Policy Notify To Install
+Policy require update approval
+Policy Scheduled Install
+Policy Scheduled Install Time
+Policy Update service allowed
+PostReboot
+PostThreadMessageW
+PostUpdateUX\
+PowerClearRequest
+PowerCreateRequest
+PowerInformationWithPrivileges
+PowerMenuOptionsChanged
+PowerRequestsFound
+PowerSetRequest
+PowerSettingRegisterNotification
+PowerSettingUnregisterNotification
+POWRPROF.dll
+ppBuffer
+ppDiskGeometry
+ppDriveLayout
+PpfE;
+ppFileSystemUtility
+ppHeader
+ppNotifyEvent
+pPropertyKey
+ppVolume
+PRAGMA foreign_keys = on
+pragma integrity_check
+PRAGMA user_version
+PRAGMA user_version = 
+predictionType
+PREINSTALLED
+PreReboot
+Prevent sleep
+PreventSleep
+PrimaryOSProduct
+print
+Print Class Driver Retrieval Client
+process
+Process:
+Product enumerator is not present.
+productid
+ProductName
+ProductVersion
+profapi.dll
+Progress
+promise already satisfied
+provider
+Provider action is running
+provider context is missing
+Provider frequency in minutes
+Provider hidden
+Provider missing
+Provider supports AutoRescan
+Provider:
+ProvisionDevice
+ProvisioningStatus\
+pStoreId
+Publisher Intent
+publisherIntent
+pullOffset
+punct
+pUniqueId
+PzR"T@VdZ
+q(D8r(t
+Quality
+QualityShowPowerMenuRestart
+QualityShowPowerMenuRestartInMins
+QualityShowPowerMenuShutdown
+QualityShowPowerMenuShutdownInMins
+query
+Query action not found
+QueryActiveSession
+QueryAllTracesW
+QueryPerformanceCounter
+QueryTraceW
+QueryUserToken
+question
+Queued: 
+queuedTime
+QueueNumber
+R$fA;Z*
+R:*>t
+RaiseException
+RaiseFailFastException
+RDV WU
+ReadFile
+ReadMbrMetadataPartition
+ReadPolicy
+ReadPolicyWithFallback
+ReadyToReboot
+reason
+Reboot
+Reboot notifications
+Reboot Pending
+Reboot result not supported on Desktop Windows.
+Reboot timed out
+RebootDowntimeInfo
+rebootIds
+rebooting context is missing
+RebootRequiredTime
+Redirection Id %ws not found in default map.
+Reevaluation needed
+Refreshed
+RefreshImageStorageService
+RefreshInterval
+RefreshSettings
+RefreshVolumes
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyW
+RegDeleteTreeW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+RegGetValueW
+REGISTRY
+Registry type unsupported
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegServer
+RegSetKeyValueW
+RegSetValueExW
+regtype
+Regulated
+Rejecting action %ws: inconsistent rules
+Rejecting action %ws: invalid conditions or operators
+ReleaseEnterprisePolicyValue
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+ReleaseUpdatePolicyValue
+remove
+removed
+RemoveDirectoryW
+removedModelPath
+RemoveJunction
+rename
+ReportingBehaviorCritical
+requestType
+ReserveManager
+ReserveManager.dll
+ResetEvent
+ResetLog.txt
+ResolveDelayLoadedAPI
+RestartDevice
+RestartOrShutdownNoCommit
+Restarts
+result
+Result
+result
+ReturnHr
+Revert
+RevertOtherUpdatesForProduct
+RevertToSelf
+rMfD9?w
+RoActivateInstance
+RoGetActivationFactory
+RpcBindingFree
+RpcBindingFromStringBindingW
+RpcBindingSetAuthInfoExW
+RPCRT4.dll
+RpcStringBindingComposeW
+RpcStringFreeW
+RtlAllocateHeap
+RtlCaptureContext
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlDosPathNameToNtPathName_U
+RtlFreeHeap
+RtlGetPersistedStateLocation
+RtlLookupFunctionEntry
+RtlNotifyFeatureUsage
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlPublishWnfStateData
+RtlQueryFeatureConfiguration
+RtlRaiseStatus
+RtlReAllocateHeap
+RtlReallocateLBlob
+RtlReallocateLUnicodeString
+RtlRegisterFeatureConfigurationChangeNotification
+RtlSubscribeWnfStateChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlUnsubscribeWnfNotificationWaitForCompletion
+RtlVirtualUnwind
+rules
+RunPostScanTasks
+S 8T$`t"H
+S H9S(t
+s WAVAWH
+S-1-5-18
+SafeFreeDiskLayout
+SafeStringToDword
+SafeToEndReserveScenario
+Same action is running
+SBCModel.json
+SBCModel.txt
+SbcSmartSignalRegistered
+SbcTestEvaluationEnabled
+Scan approved
+Scan Count
+Scan Failure
+Scan throttled
+Scan timeout in minutes
+Scan WU metered
+Scan WU with driver sets
+ScanAttemptTime
+ScanCalled
+ScanError
+ScanErrorInteractive
+ScanErrorTime
+scanFrequency
+ScanInteractive:
+ScanNeeded: Forcing AutoRescan
+scanParameters context is missing
+ScanPartitionPath
+ScanService
+ScanTime
+ScanTriggerOOBETourniquet
+scenario
+Schedule
+Schedule Maintenance Work
+Schedule Scan
+Schedule Wake To Work
+Schedule Work
+Scheduled work allowed on Battery
+SECURITY
+SeekerUpdate
+SELECT PROVIDERID, UPDATEID, SERIALIZEDUPDATE FROM UPDATES
+SELECT PROVIDERID, UPDATEID, TIME, ACTION, ACTIONCLASS, RESULT FROM ACTIONRECORDS ORDER BY TIME DESC
+SELECT PROVIDERID, UPDATEID, TIME, TITLE, DESCRIPTION, MOREINFOURL, HISTORYCATEGORY, UNINSTALL FROM COMPLETEDUPDATES ORDER BY TIME DESC
+SELECT PROVIDERID, UPDATEID, TIME, TITLE, DESCRIPTION, MOREINFOURL, HISTORYCATEGORY, UNINSTALL FROM COMPLETEDUPDATES ORDER BY TIME DESC LIMIT 1
+SELECT SERIALIZEDUPDATE FROM UPDATES WHERE PROVIDERID = ? AND UPDATEID = ?
+SELECT TIME, ACTION, ACTIONCLASS, RESULT FROM ACTIONRECORDS WHERE PROVIDERID = ? AND UPDATEID = ? ORDER BY TIME DESC
+SELECT TIME, ACTION, ACTIONCLASS, RESULT FROM ACTIONRECORDS WHERE PROVIDERID = ? AND UPDATEID = ? ORDER BY TIME DESC LIMIT ?
+SELECT VALUE, TYPE FROM PROVIDERSPROP WHERE PROVIDERID = ? AND VARIABLE = ?
+SELECT VALUE, TYPE FROM UPDATESPROP WHERE PROVIDERID = ? AND UPDATEID = ? AND VARIABLE = ?
+SELECT VALUE, TYPE FROM VARIABLES WHERE KEY = ?
+service
+ServiceId
+SERVICING_METADATA
+ServicingInProgress
+SetAutoRescanAllowed
+SetAutoRescanEnabled
+SetDiskLayout
+SetEndOfFile
+SetErrorMode
+SetEvent
+SetFileAttributesW
+SetFileInformationByHandle
+SetFilePointer
+SetFilePointerEx
+SetLastError
+SetLoggingFunction
+SetPartitionAttributes
+SetPartitionType
+SetThreadpoolTimer
+SetThreadpoolWait
+settingName
+settings
+Settings
+settings
+SettingsETag
+settingsList
+SettingsList:: 
+SettingsRefreshInterval
+SetUnhandledExceptionFilter
+setup.exe
+SetupDisplayedEulaVersion
+SetVolumeMountPointW
+SharedData\DuShared\ResetLog.txt
+SharedData\DuShared\UpdateHistory.xml
+Shell_RequestShutdown
+ShellChromeAPI.dll
+SHGetKnownFolderPath
+ShutdownFlyoutOptions
+Shutting down manager
+signalCollectionId
+SignalCollectionRegistrationActivity
+SignalJsonParsingActivityAfterModelDownload
+SignalJsonParsingActivityBeforeModelDownload
+SignalPayloadAcknowledged
+SignalPayloadActivity
+SignalPayloadCleanupModels
+SignalPayloadDetectionActivity
+signalPayloadModelNeeded
+signalPayloadUniqueId
+SignalRegistered
+signalRegistrationBeforeModelDownload
+SignalRegistrationFailed
+signals
+SilentCleanup
+size_t val > ULONG max
+SizeofResource
+Skipping scan due to shutdown
+skipReason
+Sleep
+SleepConditionVariableCS
+Smart Scheduled Time
+SmartBusyCheck
+SmartBusyCheckEvaluation
+SmartBusyCheckEvaluationActivity
+SmartSchedulerDelayInMinutes
+SmartSchedulerDurationInMinutes
+SmartSchedulerEndHour
+SmartSchedulerEndMinute
+SmartSchedulerStartHour
+SmartSchedulerStartMinute
+-SOCW
+Software
+Software\Microsoft\DTU
+SOFTWARE\Microsoft\sih
+Software\Microsoft\UIX\ProductFeatures
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Update\TargetingInfo\DynamicInstalled
+SOFTWARE\Microsoft\Windows\CurrentVersion
+SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing\Interface
+SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Settings\Network
+Software\Microsoft\Windows\CurrentVersion\DataMigrationFramework\PersistentState\
+SOFTWARE\Microsoft\Windows\CurrentVersion\DeviceAccess
+Software\Microsoft\Windows\CurrentVersion\DeviceUpdate
+Software\Microsoft\Windows\CurrentVersion\OOBE\OOBECompleteTimestamp
+Software\Microsoft\Windows\CurrentVersion\ReserveManager
+SOFTWARE\Microsoft\Windows\CurrentVersion\ReserveManager
+SOFTWARE\Microsoft\Windows\CurrentVersion\Setup\OOBE
+Software\Microsoft\Windows\CurrentVersion\WindowsUpdate
+Software\Microsoft\Windows\CurrentVersion\WindowsUpdate\DTU
+Software\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
+SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\WINDOWSUPDATE\WINREUNINSTALLLIST
+Software\Microsoft\WindowsUpdate
+Software\Microsoft\WindowsUpdate\Orchestrator
+Software\Microsoft\WindowsUpdate\Orchestrator\Configurations
+Software\Microsoft\WindowsUpdate\Orchestrator\USOShared
+Software\Microsoft\WindowsUpdate\UX
+Software\Policies\Microsoft\Windows\WindowsUpdate
+source
+space
+sqlite3_bind_blob
+sqlite3_bind_int
+sqlite3_bind_text16
+sqlite3_busy_timeout
+sqlite3_close_v2
+sqlite3_column_blob
+sqlite3_column_bytes
+sqlite3_column_int
+sqlite3_column_text16
+sqlite3_exec
+sqlite3_finalize
+sqlite3_initialize
+sqlite3_open16
+sqlite3_prepare16_v2
+sqlite3_step
+srvsvc.dll
+SssBindServicingStack
+SssGetServicingStackFilePath
+SssGetServicingStackFilePathLength
+SssPreloadDownlevelDependencies
+SssReleaseServicingStack
+StageUpdate
+standard pricing
+Start action
+Start action query returned an unexpected type.
+Start scan
+Start scan query returned an unexpected type.
+startArg
+StartMaintenanceWork
+StartScan
+startTime
+StartTime
+StartTraceW
+StartWork
+state
+StateRepository-Machine\.srd.*
+status
+Stick
+stoi argument out of range
+stol argument out of range
+stoll argument out of range
+STORAGE_SESSION
+StorageReserveClearedOnFirstUse
+StorageService::CreateStorageService
+StorageService::CreateStorageService: This function was called with ppService set to NULL.
+StorageService::Initialize
+storeId.ulPartitionStyle
+StoreIsSpace
+StoreOperational.*\.etl
+stoull argument out of range
+strchr
+strDeviceInterface
+strDiskPath
+strFileSystem
+string too long
+StringCbCopyN
+StringCchCopy
+StringCchPrintf
+StringFileInfo
+StringFromGUID2
+-StringID:
+strMountPoint
+strMutableLabel
+strnlen
+strPartitionName
+strrchr
+strRoot
+strVolumePath
+SubmitRequestForSettings
+succeeded
+SUVWATAUAVAWH
+SUVWATAVAWH
+SUVWAVAWH
+SUVWAVH
+SUVWH
+SV RTM EULA
+SVATAUAVAWH
+SVATAVAWH
+SVAVH
+SVWATAUAVAWH
+SVWATAUAWH
+SVWATAVAWH
+SVWAVAWH
+SVWAVH
+SYSTEM
+system
+System
+System active audio
+System active game
+System active user
+System battery level
+System battery saver enabled
+System block requested
+System CTA
+System display requested
+System Enable Prehibernate Wake
+System has Internet
+System has network
+System inside active hours
+System is PPI
+System is upgrade
+System on AC power
+System phone call ongoing
+System power requested
+System Wake Allowed
+System Wake Allowed on Battery
+System Wakes disabled by policy
+System Wakes on DC Threshold Failure Count
+System\Setup
+System\Versions
+SystemSetup
+SystemTimeToFileTime
+SystemTimeToISO8601String
+SystemVersions
+T P"a
+t"D8=z;
+t#E9V0t
+t$ @8r(t
+t$ D8
+t$ D8t$d
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ E3
+T$ E3
+t$ H;
+T$ H;
+t$ Hk
+T$ I;
+t$ UH
+t$ UWATAVAWH
+t$ UWAUAVAWH
+t$ UWAVH
+t$ UWAWH
+t$ WATAUAVAWH
+t$ WATAVH
+t$ WAVAWH
+t$ WH
+t$!E8w8u M
+t$$L;
+t$(A_A^
+t$(E3
+T$(E3
+t$(E3
+T$(E3
+T$(H;WHt
+T$(H+
+t$(I;
+t$(L;
+T$@E3
+T$@H;
+T$@H+
+t$@L;
+T$@M;
+t$`D8
+T$`E3
+t$`fD
+t$`fD9t$`t8H
+T$`I;
+T$0@2
+t$0D8m
+T$0E3
+t$0H!t$8
+T$0H;
+T$0H+
+T$0I;
+T$0L+
+t$2@8w(
+T$4D8R
+T$8E3
+t$8E3
+T$8E3
+T$8fD
+T$8H;
+t$8H;
+T$8H+
+T$8H9T$@t
+T$8H9T$@t*L
+t$8I;
+t$8I+
+T$dfD
+T$DHi
+t$fD92t
+t$fD9I
+T$HD9J
+t$hH;
+T$HH+
+T$HH9T$Pt&L
+T$HI+
+t$HM;
+T$hsGH
+t$PE3
+T$PE3
+t$pH;
+t$PH;
+T$PH+
+T$pH+
+T$PH+
+T$PH9T$Xt-L
+t$pI;
+t$PI;t$PtR
+T$pL;
+T$PL;
+T$pM+
+T$RI+
+T$tL;
+T$XE3
+t$XE3
+T$XE3
+t$XfD9n
+T$xH;
+t$XH;
+T$xH+
+T$XH+
+T$xH+
+t$xH+|$0H
+T$xI;
+t$XI;
+T$xI;
+t$xM;
+t%8]kt
+t(v.z(|0~
+T(V2Z,\2^
+t)@8u
+t*fD9Q
+T*V*X$Z
+T.4n0\,a
+t:fA9(t4H
+t[fD9>tUA
+t^@8wHt
+t_H9{
+t>fD;>t83
+t1fD9I
+t1H+S
+t1I+V
+t2!t$LH
+t4@8z@t
+t4I+U
+t5fA9M
+tables
+TaggedUpdateSession::AddOptionalFeatures
+TaggedUpdateSession::EnableUwf
+TaggedUpdateSession::ExtendDownloadExpirationTimes
+TaggedUpdateSession::get_CanPause
+TaggedUpdateSession::get_IsInteractiveSession
+TaggedUpdateSession::get_LastUpdateDownloadTime
+TaggedUpdateSession::get_OptInToMU
+TaggedUpdateSession::get_SeekerUpdates
+TaggedUpdateSession::get_UpToDateStatus
+TaggedUpdateSession::GetCachedPolicy
+TaggedUpdateSession::GetCachedPolicyValue
+TaggedUpdateSession::GetCachedSettingArray
+TaggedUpdateSession::GetCachedSettingObject
+TaggedUpdateSession::GetCachedSettingValue
+TaggedUpdateSession::GetComplianceDeadlineState
+TaggedUpdateSession::GetEnterpriseCachedPolicy
+TaggedUpdateSession::GetEnterpriseCachedPolicyValue
+TaggedUpdateSession::GetEnterprisePolicy_IsWUfBEnabled
+TaggedUpdateSession::GetIsWaaSOutOfDate
+TaggedUpdateSession::GetPermanentSessionVariable
+TaggedUpdateSession::GetSessionProperty
+TaggedUpdateSession::GetSessionVariable
+TaggedUpdateSession::GetTotalHistoryCount
+TaggedUpdateSession::GetUpdateHistory
+TaggedUpdateSession::GetUpdatePayloadSize
+TaggedUpdateSession::GetUXRebootState
+TaggedUpdateSession::GetWaaSHoursOutOfDate
+TaggedUpdateSession::IsRestartAllowed
+TaggedUpdateSession::put_OptInToMU
+TaggedUpdateSession::put_UpToDateStatus
+TaggedUpdateSession::RefreshPolicyCacheValuesAndConfiguration
+TaggedUpdateSession::RefreshSettings
+TaggedUpdateSession::SetPermanentSessionVariable
+TaggedUpdateSession::SetSessionProperty
+TaggedUpdateSession::SetSessionVariable
+TaggedUpdateSession::SetSessionVariableAndUpdateUXState
+TaggedUpdateSession::StartDownload
+TaggedUpdateSession::StartModelUpdates
+TaggedUpdateSession::StartPostInstall
+TaggedUpdateSession::StartScheduleTime
+TaggedUpdateSession::SuspendSession
+TaggedUpdateSession::UnstickAllUpdates
+TaggedUpdateSession::UsoDisableUserInstallableContent
+TaggedUpdateSession::UsoEnableUserInstallableContent
+Task Name
+Task parameters
+Task to run
+tCH9t$8t'A
+t-D8e
+tDf9)u8H
+tEfD91u8H
+Temp = (*RtlReallocateStringRoutine)(Bytes, Blob->Buffer)
+Temp = (PUCHAR)((*RtlAllocateStringRoutine)(Bytes))
+TempLogs
+temporary GUID path
+TerminateProcess
+TermService
+Test hook
+Test Purpose
+testproviderenabled
+tFfD9
+tGI;4$u2H
+tHH;0u4H
+thH9khu
+This function cannot be called on a default constructed task
+threadId
+threshold
+TiAttemptedInitialization
+Time interval check
+Timed out waiting for Trusted Installer Signal - SafeToEndReserveScenario
+Timed out waiting for Trusted Installer Signal - TiAttemptedInitialization
+TimeStamp
+TimestampEpochString_
+title
+tJfD91u=H
+TlsAlloc
+TlsFree
+TlsGetValue
+TlsSetValue
+to@85t)
+-tOfA
+tofA;
+toH!\$8H
+toH9{
+tPD9}
+TranslateMessage
+Translation
+trD9t$p|kI
+Tried to load an unsigned UNP dll
+TriggerStorageCleanup
+Troubleshooting
+tt[fA
+ttH9khu
+TUUUUUU
+tVfD93tPH
+tvI+U
+twI;6u2H
+tX=x/
+TypeLib
+TYPELIB
+TZRVV
+TzSpecificLocalTimeToSystemTime
+U I9U(tdH
+u#H9<
+u&H9Z s
+u)A8y
+u`fD9
+u+fD9Q
+u>HiD$0
+u0D9} tZH
+U0H9U(t1H+U(H
+u0HcH<H
+u1H9L$Ht
+u2Hi8
+u48Y`t
+u7D;v s
+UATAUAVAWH
+UAVAWH
+ub'vb'v
+ucH;{ u]
+udD8u
+UDPMode
+ue@8t$ t
+UEXFAT.DLL
+uf@8l$0t
+UFAT.DLL
+UH;}0~
+uHH9_8}
+ui9L$ 
+UIXProductFeatures
+UMPDC.dll
+Unable to create 'C' locale.
+Unable to get an error message for error code: 
+Unexpected bool conversion type in a policy
+Unexpected token
+Unexpected type in decision table
+Unexpected variant type in a policy
+UnhandledExceptionFilter
+Uninstall
+UninstallTime
+uniqueId
+Unknown action
+Unknown action class
+Unknown ActionKind returned by IUniversalOrchestratorAction
+unknown error
+Unknown exception
+Unknown json error
+Unknown session attention
+Unknown UM action
+Unknown update attention
+Unknown UxClass
+Unlocking Process
+UnlockVolumeByHandle
+UnpCampaignGuids
+UnpUXDefaultCampaignGuid
+Unrecognized scenario, no score handler
+UnregServer
+Unstick
+UNTFS.DLL
+UO Provider -- failed to load provider id: 
+uo8X$t
+update
+Update
+update
+Update approved
+Update approved by policy
+Update attempts last hour
+Update blocked by provider
+update context is missing
+Update critical
+Update Driver
+Update Eula accepted
+Update feature
+Update flight
+Update has deadline in future
+Update has ux
+Update high download priority
+Update id
+Update is for os
+Update is mandatory
+Update maintenance approved
+Update Manager Constructed.
+Update manager did not respond to stop
+Update metered approved
+Update minor impact
+Update oobe approved
+Update overdue
+Update past deadline
+Update past OOBE
+Update product
+Update security
+Update seeker
+Update should BypassBatteryChecks
+Update should BypassPolicyRestrictions
+Update should BypassUserPresenceChecks
+Update should use storage reserve
+Update stickiness minutes
+UPDATE UPDATES SET SERIALIZEDUPDATE = ? WHERE PROVIDERID = ? AND UPDATEID = ?
+Update urgent
+Update work ranking
+UpdateAction
+UpdateAdded
+UpdateAgent cab missing
+UpdateAgent cab signing check failure
+UpdateAgent.cab
+UpdateAgent.dll
+UpdateAPI.dll
+UpdateApproved
+UpdateClassification
+updateCount
+UpdateCspStore.backup.xml
+UpdateCspStore.xml
+UpdateDiskLayout
+updateId
+updateKept
+UpdateLoadedFromDatabase
+UpdateManagerCreationFailuresExceeded
+UpdateManagerCtorFailures
+UpdateNotificationHelpers.dll
+UpdateOobeApproved
+UpdateOrchestrator
+UpdateOrchestratorConfigurationRoot
+UpdateOrchestratorCurrentVersionRoot
+UpdateOrchestratorRoot
+UpdateOrchestratorSharedRoot
+UpdatePolicy.dll
+Updater 
+updaterBehindSlaInDays
+updaterDisabled
+UpdateRemoved
+UpdateRemovedUnexpectedly
+UpdateResetToSafeAction
+updaterId
+updaterOOBEDurationInMinutes
+updaterPriority
+UpdaterStart
+updates
+Updates contain security update
+updates context is missing
+UpdateSavedToDatabase
+UpdatesDetected
+UpdateSessionOrchestration
+updatesInProgress context is missing
+updatestore
+UpdateStore
+updatestoretemp
+UpdateTaskSchedules.txt
+UpdateTimestamp
+UpdateType
+UpdateUsingStorageReserve
+UpdateUx
+UpgEx
+UpgEx_
+Upgrade
+upper
+uptimeMinutes
+uptimeMinutesDelta
+Use MsUpdateService Only
+UseMsUpdateServiceOnly:
+UsePowerButtonIcon
+UsePromotionalUxSurfaces
+User Activity Predicted
+usingInboxModel
+USO manager prevent sleep
+USO Worker
+USO_Network
+USOAPI
+UsoCoreLibWW
+UsoCoreWorker
+UsoLogs.dudiag
+UsoPPIUpdate
+USOPrivate
+UsoServicingStack
+USOShared
+UsoSvc
+UsoTroubleshooting.reg
+USVWATAUAVAWH
+USVWATAVAWH
+USVWAVH
+USVWH
+uTH9^
+UuidCreate
+UUP Fallback
+UUPFallback
+UUUUUUU
+UVWATAUAVAWH
+UVWATAVH
+UVWATAWH
+UVWAUAVH
+UVWAVAWH
+UWATAVAWH
+UWAUAVAWH
+UWAVH
+UWAWH
+UXElementStoreCampaignId
+uY9T$`vSL
+uyD8{ 
+uz8X$t
+uzH9A
+V V"V$V&V(V*V,V.V0V2V4V6V8V:V<V>V@VBVDVFVH
+Validation run
+ValidMbrMetadataPartitionExists
+VarFileInfo
+variant
+variantKind
+VAVAWH
+vb'vb'v
+VD8cxt
+VE";^
+vector<bool> too long
+vector<T> too long
+VerboseLogging
+VerifySelfSignedImageFile
+VerifyVersionInfoW
+VerSetConditionMask
+version
+Version change
+VIRT_EFIESP
+VirtualAlloc
+VirtualFree
+volume arrival event
+volume change notification node
+volume pnp path
+VOLUME_INDEX
+VOLUME_NODE
+volume's symbolic link path
+VolumeTrackerList
+VolumeTrackerList::AddVolume
+VolumeTrackerList::AddVolumes
+VolumeTrackerList::CreateVolumeTrackerList
+VolumeTrackerList::FindFirstVolumeInList
+VolumeTrackerList::GetVolume
+VolumeTrackerList::RefreshVolumes
+VolumeTrackerList::RemoveVolume
+VolumeTrackerList::WaitForVolume
+VolumeTrackerList::WaitForVolumeInternal
+VolumeTrackerVolume
+VolumeTrackerVolume::~VolumeTrackerVolume
+VolumeTrackerVolume::CancelChangeNotification
+VolumeTrackerVolume::CreateHiddenVolumePath
+VolumeTrackerVolume::CreatePartitionAttributeChangeNotification
+VolumeTrackerVolume::CreatePartitionTypeChangeNotification
+VolumeTrackerVolume::CreateVolumeFromPnpPath
+VolumeTrackerVolume::CreateVolumeMountPointChangeNotification
+VolumeTrackerVolume::GetDeviceObjectPath
+VolumeTrackerVolume::GetDeviceUniqueId
+VolumeTrackerVolume::GetGuidVolumePathFromNativePath
+VolumeTrackerVolume::GetMountPath
+VolumeTrackerVolume::GetMountPathsInternal
+VolumeTrackerVolume::GetPartitionInformation
+VolumeTrackerVolume::GetPartitionName
+VolumeTrackerVolume::GetVolumeExtentInformation
+VolumeTrackerVolume::GetVolumePath
+VolumeTrackerVolume::GetWellKnownGuidPath
+VolumeTrackerVolume::InitializeFromPnpPath
+VolumeTrackerVolume::IsBasicVolume
+VolumeTrackerVolume::IsValidDriveType
+VolumeTrackerVolume::LogMountPaths
+VolumeTrackerVolume::OpenDisk
+VolumeTrackerVolume::OpenVolume
+VolumeTrackerVolume::QueryDeviceInfo
+VolumeTrackerVolume::VolumeTrackerVolume
+VolumeTrackerVolume::WaitForNewMountPoint
+VolumeTrackerVolume::WaitForPartitionAttributeChange
+VolumeTrackerVolume::WaitForPartitionTypeChange
+vpDo|B
+VS_VERSION_INFO
+VT2VpX\Z\\JZ
+VUUUE3
+VUUUL
+VUUUUUUUH
+VWATAUAVAWH
+VWATAVAWH
+VWATH
+VWAVH
+VWAWH
+W I9W(t
+w(D8p
+w8@8u
+WaitForMultipleObjects
+WaitForPartition
+WaitForPartitions
+WaitForPartitionTypeChange
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WaitForThreadpoolWaitCallbacks
+Waiting for existing manager to finish
+WakeAllConditionVariable
+wakeOnDcFailureCount
+WasCommitEverNeeded
+WasRebootRequired
+WATAUAVAWH
+WATAWH
+WAVAWH
+wcscmp
+wcsncmp
+wcsnlen
+WdDo/?
+wG;dAq
+when not roaming
+WHS Console
+WideCharToMultiByte
+wilActivity
+WilError_03
+wilResult
+WilStaging_02
+windows
+Windows Anytime Upgrade
+Windows Defender Antivirus
+Windows Intelligence Update
+Windows MultiPoint Server
+Windows.Data.Json.JsonObject
+Windows.Foundation.Collections.PropertySet
+Windows.Foundation.PropertyValue
+Windows.Internal.Flighting.ClientAttributes
+Windows.Internal.Flighting.OneSettings.OneSettingsPayload
+Windows.Internal.PredictionUnit.PredictionEngine
+Windows.Internal.Signals.SignalEvaluator
+Windows.Internal.Signals.SignalRegistrationManager
+Windows.Storage.Streams.RandomAccessStreamReference
+WindowsCreateString
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsGetStringRawBuffer
+WindowsUpdate
+WindowsUpdatePolicies
+WindowsUpdateSignalRegistration
+WindowsUpdateSmartBusyCheck
+WindowsUpdateUXRoot
+winhttp.dll
+winsqlite3.dll
+WinStationQueryInformationW
+WINTRUST.dll
+WinVerifyTrust
+wjH9Q
+WNF_DMF_UX_COMPLETE status: 
+WorkBit
+workCompleted
+WorkingState
+WriteFile
+WritePriorityLock::AcquireRead
+WritePriorityLock::AcquireWrite
+WritePriorityLock::CreateWritePriorityLock
+WriteVolumeMountPoints
+WriteVolumeMountPoints2
+wsH9Q
+WTHelperGetProvSignerFromChain
+WTHelperProvDataFromStateData
+WTSEnumerateSessionsExW
+WTSFreeMemoryExW
+WuApplicabilityScan
+WUCurrentVersion
+WuDefaultSlaInMinutes
+WuDriverDefaultSlaInMinutes
+WuOobeDurationInMinutes
+WuProvider
+x ATAVAWH
+x ATH
+x AUAVAWH
+x AVAWH
+x AVAWI
+x AVH
+x AVL
+x AW3
+x AWH
+x UATAUAVAWH
+x UATAVH
+x UAVAWH
+X UVWATAUAVAWH
+X UVWAVAWH
+X UWAVH
+X X"X$X&*(v,D.
+X(t(H
+X:Z.\d^d`Xb
+x_^][
+XA_A]A\_^[
+xA_A]A\_^[
+xA_A^A]A\_^][
+XafE;
+xdigit
+XmlLite.dll
+y@@8z@t_H
+Y@H9;u+L
+Y`H+YXH
+Z X"L$
+z X"x&d(5

@@ -1,0 +1,1639 @@
+        <serviceList>             <service>                 <serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>                 <serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>                 <controlURL></controlURL>                 <eventSubURL></eventSubURL>                 <SCPDURL>RenderingControl.xml</SCPDURL>             </service>             <service>                 <serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>                 <serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>                 <controlURL></controlURL>                 <eventSubURL></eventSubURL>                 <SCPDURL>AVTransport.xml</SCPDURL>             </service>             <service>                 <serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>                 <serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>                 <controlURL></controlURL>                 <eventSubURL></eventSubURL>                 <SCPDURL>ConnectionManager_dmr.xml</SCPDURL>             </service>         </serviceList>     </device> </root>
+    <action>      <name>ConnectionComplete</name>      <argumentList>        <argument>          <name>ConnectionID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>GetCurrentConnectionIDs</name>      <argumentList>        <argument>          <name>ConnectionIDs</name>          <direction>out</direction>          <relatedStateVariable>CurrentConnectionIDs</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetCurrentConnectionInfo</name>      <argumentList>        <argument>          <name>ConnectionID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>        <argument>          <name>RcsID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_RcsID</relatedStateVariable>        </argument>        <argument>          <name>AVTransportID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_AVTransportID</relatedStateVariable>        </argument>        <argument>          <name>ProtocolInfo</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ProtocolInfo</relatedStateVariable>        </argument>        <argument>          <name>PeerConnectionManager</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionManager</relatedStateVariable>        </argument>        <argument>          <name>PeerConnectionID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>        <argument>          <name>Direction</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_Direction</relatedStateVariable>        </argument>        <argument>          <name>Status</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionStatus</relatedStateVariable>        </argument>      </argumentList>    </action>  </actionList>  <serviceStateTable>    <stateVariable sendEvents="yes">      <name>SourceProtocolInfo</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="yes">      <name>SinkProtocolInfo</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="yes">      <name>CurrentConnectionIDs</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ConnectionStatus</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>OK</allowedValue>        <allowedValue>ContentFormatMismatch</allowedValue>        <allowedValue>InsufficientBandwidth</allowedValue>        <allowedValue>UnreliableChannel</allowedValue>        <allowedValue>Unknown</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ConnectionManager</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Direction</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>Input</allowedValue>        <allowedValue>Output</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ProtocolInfo</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_ConnectionID</name>      <dataType>i4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_AVTransportID</name>      <dataType>i4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_RcsID</name>      <dataType>i4</dataType>    </stateVariable>  </serviceStateTable></scpd>
+    <action>      <name>GetCurrentTransportActions</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Actions</name>          <direction>out</direction>          <relatedStateVariable>CurrentTransportActions</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>GetMute</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Channel</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Channel</relatedStateVariable>        </argument>        <argument>          <name>CurrentMute</name>          <direction>out</direction>          <relatedStateVariable>Mute</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>GetVolume</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Channel</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Channel</relatedStateVariable>        </argument>        <argument>          <name>CurrentVolume</name>          <direction>out</direction>          <relatedStateVariable>Volume</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>Next</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>Previous</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>Pause</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>PrepareForConnection</name>      <argumentList>        <argument>          <name>RemoteProtocolInfo</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ProtocolInfo</relatedStateVariable>        </argument>        <argument>          <name>PeerConnectionManager</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionManager</relatedStateVariable>        </argument>        <argument>          <name>PeerConnectionID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>        <argument>          <name>Direction</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Direction</relatedStateVariable>        </argument>        <argument>          <name>ConnectionID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_ConnectionID</relatedStateVariable>        </argument>        <argument>          <name>AVTransportID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_AVTransportID</relatedStateVariable>        </argument>        <argument>          <name>RcsID</name>          <direction>out</direction>          <relatedStateVariable>A_ARG_TYPE_RcsID</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>Record</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>SetMute</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Channel</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Channel</relatedStateVariable>        </argument>        <argument>          <name>DesiredMute</name>          <direction>in</direction>          <relatedStateVariable>Mute</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>SetNextAVTransportURI</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>NextURI</name>          <direction>in</direction>          <relatedStateVariable>NextAVTransportURI</relatedStateVariable>        </argument>        <argument>          <name>NextURIMetaData</name>          <direction>in</direction>          <relatedStateVariable>NextAVTransportURIMetaData</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>SetPlayMode</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>NewPlayMode</name>          <direction>in</direction>          <relatedStateVariable>CurrentPlayMode</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>SetRecordQualityMode</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>NewRecordQualityMode</name>          <direction>in</direction>          <relatedStateVariable>CurrentRecordQualityMode</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <action>      <name>SetVolume</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Channel</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_Channel</relatedStateVariable>        </argument>        <argument>          <name>DesiredVolume</name>          <direction>in</direction>          <relatedStateVariable>Volume</relatedStateVariable>        </argument>      </argumentList>    </action>
+    <stateVariable sendEvents="no">      <name>AbsoluteCounterPosition</name>      <dataType>i4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentTransportActions</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="yes">      <name>LastChange</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_SeekMode</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>REL_TIME</allowedValue>        <allowedValue>TRACK_NR</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_SeekTarget</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_InstanceID</name>      <dataType>ui4</dataType>    </stateVariable>  </serviceStateTable></scpd>
+  </actionList>  <serviceStateTable>    <stateVariable sendEvents="no">      <name>PresetNameList</name>      <dataType>string</dataType>      <allowedValueList>      <allowedValue>FactoryDefaults</allowedValue>       </allowedValueList>    </stateVariable>    <stateVariable sendEvents="yes">      <name>LastChange</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>Mute</name>      <dataType>boolean</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>Volume</name>      <dataType>ui2</dataType>      <allowedValueRange>        <minimum>0</minimum>        <maximum>100</maximum>        <step>1</step>      </allowedValueRange>    </stateVariable>     <stateVariable sendEvents="no">      <name>A_ARG_TYPE_Channel</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>Master</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_InstanceID</name>      <dataType>ui4</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>A_ARG_TYPE_PresetName</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>FactoryDefaults</allowedValue>      </allowedValueList>    </stateVariable>  </serviceStateTable></scpd>
+  </actionList>  <serviceStateTable>    <stateVariable sendEvents="no">      <name>TransportState</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>STOPPED</allowedValue>        <allowedValue>PAUSED_PLAYBACK</allowedValue>        <allowedValue>PLAYING</allowedValue>        <allowedValue>TRANSITIONING</allowedValue>        <allowedValue>NO_MEDIA_PRESENT</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>TransportStatus</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>OK</allowedValue>        <allowedValue>ERROR_OCCURRED</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>PlaybackStorageMedium</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>NONE</allowedValue>        <allowedValue>NETWORK</allowedValue>        <allowedValue>UNKNOWN</allowedValue>        <allowedValue>HDD</allowedValue>        <allowedValue>CD-DA</allowedValue>        <allowedValue>DVD-VIDEO</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>RecordStorageMedium</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>NOT_IMPLEMENTED</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>PossiblePlaybackStorageMedia</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>PossibleRecordStorageMedia</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentPlayMode</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>NORMAL</allowedValue>        <allowedValue>SHUFFLE</allowedValue>        <allowedValue>REPEAT_ALL</allowedValue>      </allowedValueList>      <defaultValue>NORMAL</defaultValue>    </stateVariable>    <stateVariable sendEvents="no">      <name>TransportPlaySpeed</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>RecordMediumWriteStatus</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>NOT_IMPLEMENTED</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentRecordQualityMode</name>      <dataType>string</dataType>      <allowedValueList>        <allowedValue>NOT_IMPLEMENTED</allowedValue>      </allowedValueList>    </stateVariable>    <stateVariable sendEvents="no">      <name>PossibleRecordQualityModes</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>NumberOfTracks</name>      <dataType>ui4</dataType>      <allowedValueRange>        <minimum>0</minimum>        <maximum> 100000 </maximum>      </allowedValueRange>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentTrack</name>      <dataType>ui4</dataType>      <allowedValueRange>        <minimum>0</minimum>        <maximum> 100000 </maximum>        <step>1</step>      </allowedValueRange>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentTrackDuration</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentMediaDuration</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentTrackMetaData</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>CurrentTrackURI</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>AVTransportURI</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>AVTransportURIMetaData</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>NextAVTransportURI</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>NextAVTransportURIMetaData</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>RelativeTimePosition</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>AbsoluteTimePosition</name>      <dataType>string</dataType>    </stateVariable>    <stateVariable sendEvents="no">      <name>RelativeCounterPosition</name>      <dataType>i4</dataType>    </stateVariable>
+ <UDN>{EAFF557C-EE84-4eb0-B051-C0AD235DD600}</UDN> 
+ A^_^
+ A^A\_
+ A^A]_
+ A^A]A\_^][
+ A__]
+ A__^
+ A__^[]
+ A__^][
+ A_A^_
+ A_A^_^]
+ A_A^_H
+ A_A^A\
+ A_A^A\_]
+ A_A^A\_^
+ A_A^A\_^][
+ A_A^A]A\_
+ A_A^A]A\_^]
+ H3E H3E
+ http://www.microsoft.com/windows0
+ Microsoft Corporation. All rights reserved.
+ Microsoft Operations Puerto Rico1&0$
+ O-dW
+ OpbstrPlaybackStorageMediumWW
+ Operating System
+ t$E3
+ Windows
+ xmlns:pnpx="http://schemas.microsoft.com/windows/pnpx/2005/11"
+!|$(3
+!CP!ChH
+!CurrentTrackURIW
+!l$ 3
+!This program cannot be run in DOS mode.
+"A_ARG_TYPE_ProtocolInfoW
+"Microsoft Window
+$`2X`F
+$Microsoft Ireland Operations Limited1
+%d:%02d:%02d
+%GetDeviceCapabilitiesWWW
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%Microsoft Windows Production PCA 2011
+%Microsoft Windows Production PCA 20110
+%s%d:%02d:%02d
+%s%u/%u
+%ws\%ws
+&amp;
+&pbstrAbsoluteTimePositionWWW
+&quot;
+(_^][
+(A_A^A]A\_^[]
+(caller: %p) 
+(pbstrPeerConnectionManagerWW
+(t$ H
+(t$@H
+(t$0H
+(t$PH
+(t$pL
+(t$PL
+)9H|!
+)bstrNextURIW
+)D$0f
+)D$0H
+)D9o,
+)Microsoft Root Certificate Authority 20100
+)t$@L
+)t$PE
+,CRNb5PXu4ddruu6zCOh+8zyM59Q65u7GFYmEwKX02S8=0Z
+,NpbstrTransportStateW
+.){e5
+.[RelativeTimePosition
+.00cfg
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.data
+.data$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pA_ARG_TYPE_ConnectionIDW
+.pdata
+.rdata
+.rdata$brc
+.rdata$T$brc
+.rdata$zETW2
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata
+:@8y]tCH
+:@8y=tCH
+:bPrevious
+:dAVTransportURIWW
+:DLNA.ORG_PN=
+;|$Hr
+;|$Pr
+;NDuDD9~Du
+;Y%93
+?%DMRInternalLibWW
+?XUID=
+@.data
+@.didat
+@.reloc
+@8imuE
+@8t$$
+@8t$,
+@A^_^
+@A^A\_^]
+@A__]
+@A_A\_^]
+@A_A^]
+@A_A^_
+@A_A^_^]
+@A_A^A\
+@A_A^A\_^[]
+@A_A^A\_^][
+@A_A^A]
+@A_A^A]_^
+@A_A^A]A\_^]
+@SUVWATAUAVAWH
+@SUVWATAUAVH
+@SUVWATAVAWH
+@SUVWAVH
+@SUVWAWH
+@SVWH
+@t<D9e
+@USVWATAUAVAWH
+@USVWATAUAWH
+@USVWATAVAWH
+@USVWAUAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWAWH
+@USVWH
+@USWH
+@UVWH
+@UWAWH
+[%hs(%hs)]
+[%hs]
+[9}0t.
+[A_ARG_TYPE_ConnectionStatusW
+[AbsoluteCounterPositionW
+[CurrentPlayModeW
+[plA_ARG_TYPE_AVTransportIDWWd
+[s=$i/
+\$ E3
+\$ UH
+\$ UVWATAUAVAWH
+\$ UVWAVAWH
+\$ UVWH
+\$HH9Y8
+\$HH9YX
+\$pI;
+\ActivatableClassId
+\Application
+\AVTransport.xml
+\ConnectionManager_dmr.xml
+\CustomProperties
+\IconLarge.jpg
+\IconLarge.png
+\IconSmall.jpg
+\IconSmall.png
+\PlayToReceiver
+\RenderingControl.xml
+]|pIX
+^jpbstrTransportPlaySpeedW
+__C_specific_handler
+__CxxFrameHandler3
+__dllonexit
+__SHARED
+_amsg_exit
+_callnewh
+_errno
+_initterm
+_lock
+_ltow_s
+_onexit
+_purecall
+_ultow_s
+_unlock
+_vsnwprintf
+_wcsicmp
+_wcsnicmp
+_wtof
+_wtoi
+_wtoi64
+_XcptFilter
+` UAUAWH
+` UAVAWH
+`.rdata
+`A^^]
+`A^A\_^]
+`A^A]_^]
+`A_A^A]A\_^]
+`pbstrCurrentTrackURI
+`XNextAVTransportURIMetaDataWW
+{ ATAVAWH
+{ AVH
+{01CD0F29-DA4E-4157-897B-6275D50C4F11}
+{D1607DBC-E323-4be2-86A1-48A42A28441E}
+|$ ATAVAWH
+|$ AVH
+|$ E3
+|$ UATAUAVAWH
+|$ UATAVH
+|$ UATAWH
+|$ UAVAWH
+|$ UH
+|$0E3
+|$8E3
+|$hH9
+|$PE3
+|$XE3
+|,D9}
+|-D9e
+|hK,_
+}1$_=C
+~_1>A
+~HD+y
+</depth><url>
+</deviceType>
+</df:X_containerId>
+</dlna:X_DLNACAP>
+</Event>
+</friendlyName>
+</height><depth>
+</iconList>
+</InstanceID>
+</manufacturer>
+</manufacturerURL>
+</mimetype><width>
+</modelDescription>
+</modelName>
+</modelNumber>
+</modelURL>
+</res></item></DIDL-Lite>
+</serialNumber>
+</url></icon>
+</width><height>
+<?xml version="1.0"  encoding="utf-8"?><scpd xmlns="urn:schemas-upnp-org:service-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <actionList>    <action>      <name>GetProtocolInfo</name>      <argumentList>        <argument>          <name>Source</name>          <direction>out</direction>          <relatedStateVariable>SourceProtocolInfo</relatedStateVariable>        </argument>        <argument>          <name>Sink</name>          <direction>out</direction>          <relatedStateVariable>SinkProtocolInfo</relatedStateVariable>        </argument>      </argumentList>    </action>
+<?xml version="1.0"  encoding="utf-8"?><scpd xmlns="urn:schemas-upnp-org:service-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <actionList>    <action>      <name>ListPresets</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>CurrentPresetNameList</name>          <direction>out</direction>          <relatedStateVariable>PresetNameList</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>SelectPreset</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>PresetName</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_PresetName</relatedStateVariable>        </argument>      </argumentList>    </action>
+<?xml version="1.0"  encoding="utf-8"?><scpd xmlns="urn:schemas-upnp-org:service-1-0">  <specVersion>    <major>1</major>    <minor>0</minor>  </specVersion>  <actionList>    <action>      <name>SetAVTransportURI</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>CurrentURI</name>          <direction>in</direction>          <relatedStateVariable>AVTransportURI</relatedStateVariable>        </argument>        <argument>          <name>CurrentURIMetaData</name>          <direction>in</direction>          <relatedStateVariable>AVTransportURIMetaData</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetMediaInfo</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>NrTracks</name>          <direction>out</direction>          <relatedStateVariable>NumberOfTracks</relatedStateVariable>        </argument>        <argument>          <name>MediaDuration</name>          <direction>out</direction>          <relatedStateVariable>CurrentMediaDuration</relatedStateVariable>        </argument>        <argument>          <name>CurrentURI</name>          <direction>out</direction>          <relatedStateVariable>AVTransportURI</relatedStateVariable>        </argument>        <argument>          <name>CurrentURIMetaData</name>          <direction>out</direction>          <relatedStateVariable>AVTransportURIMetaData</relatedStateVariable>        </argument>        <argument>          <name>NextURI</name>          <direction>out</direction>          <relatedStateVariable>NextAVTransportURI</relatedStateVariable>        </argument>        <argument>          <name>NextURIMetaData</name>          <direction>out</direction>          <relatedStateVariable>NextAVTransportURIMetaData</relatedStateVariable>        </argument>        <argument>          <name>PlayMedium</name>          <direction>out</direction>          <relatedStateVariable>PlaybackStorageMedium</relatedStateVariable>        </argument>        <argument>          <name>RecordMedium</name>          <direction>out</direction>          <relatedStateVariable>RecordStorageMedium</relatedStateVariable>        </argument>        <argument>          <name>WriteStatus</name>          <direction>out</direction>          <relatedStateVariable>RecordMediumWriteStatus</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetTransportInfo</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>CurrentTransportState</name>          <direction>out</direction>          <relatedStateVariable>TransportState</relatedStateVariable>        </argument>        <argument>          <name>CurrentTransportStatus</name>          <direction>out</direction>          <relatedStateVariable>TransportStatus</relatedStateVariable>        </argument>        <argument>          <name>CurrentSpeed</name>          <direction>out</direction>          <relatedStateVariable>TransportPlaySpeed</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetPositionInfo</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Track</name>          <direction>out</direction>          <relatedStateVariable>CurrentTrack</relatedStateVariable>        </argument>        <argument>          <name>TrackDuration</name>          <direction>out</direction>          <relatedStateVariable>CurrentTrackDuration</relatedStateVariable>        </argument>        <argument>          <name>TrackMetaData</name>          <direction>out</direction>          <relatedStateVariable>CurrentTrackMetaData</relatedStateVariable>        </argument>        <argument>          <name>TrackURI</name>          <direction>out</direction>          <relatedStateVariable>CurrentTrackURI</relatedStateVariable>        </argument>        <argument>          <name>RelTime</name>          <direction>out</direction>          <relatedStateVariable>RelativeTimePosition</relatedStateVariable>        </argument>        <argument>          <name>AbsTime</name>          <direction>out</direction>          <relatedStateVariable>AbsoluteTimePosition</relatedStateVariable>        </argument>        <argument>          <name>RelCount</name>          <direction>out</direction>          <relatedStateVariable>RelativeCounterPosition</relatedStateVariable>        </argument>        <argument>          <name>AbsCount</name>          <direction>out</direction>          <relatedStateVariable>AbsoluteCounterPosition</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetDeviceCapabilities</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>PlayMedia</name>          <direction>out</direction>          <relatedStateVariable>PossiblePlaybackStorageMedia</relatedStateVariable>        </argument>        <argument>          <name>RecMedia</name>          <direction>out</direction>          <relatedStateVariable>PossibleRecordStorageMedia</relatedStateVariable>        </argument>        <argument>          <name>RecQualityModes</name>          <direction>out</direction>          <relatedStateVariable>PossibleRecordQualityModes</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>GetTransportSettings</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>PlayMode</name>          <direction>out</direction>          <relatedStateVariable>CurrentPlayMode</relatedStateVariable>        </argument>        <argument>          <name>RecQualityMode</name>          <direction>out</direction>          <relatedStateVariable>CurrentRecordQualityMode</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>Stop</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>Play</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Speed</name>          <direction>in</direction>          <relatedStateVariable>TransportPlaySpeed</relatedStateVariable>        </argument>      </argumentList>    </action>    <action>      <name>Seek</name>      <argumentList>        <argument>          <name>InstanceID</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_InstanceID</relatedStateVariable>        </argument>        <argument>          <name>Unit</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_SeekMode</relatedStateVariable>        </argument>        <argument>          <name>Target</name>          <direction>in</direction>          <relatedStateVariable>A_ARG_TYPE_SeekTarget</relatedStateVariable>        </argument>      </argumentList>    </action>
+<?xml version="1.0"?> <root xmlns="urn:schemas-upnp-org:device-1-0" xmlns:df="http://schemas.microsoft.com/windows/2008/09/devicefoundation" 
+<AVTransportURI val="
+<AVTransportURIMetaData val="
+<CurrentMediaDuration val="
+<CurrentPlayMode val="
+<CurrentRecordQualityMode val="
+<CurrentTrack val="
+<CurrentTrackDuration val="
+<CurrentTrackMetaData val="
+<CurrentTrackURI val="
+<CurrentTransportActions val="
+<deviceType>
+<df:X_containerId>
+<DIDL-Lite xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/" xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/"><item><upnp:class>object.item</upnp:class><res protocolInfo="*:*:*:*">
+<dlna:X_DLNACAP xmlns:dlna="urn:schemas-dlna-org:device-1-0">
+<dlna:X_DLNADOC xmlns:dlna="urn:schemas-dlna-org:device-1-0">DMR-1.50</dlna:X_DLNADOC>
+<Event xmlns="urn:schemas-upnp-org:metadata-1-0/AVT/">
+<Event xmlns="urn:schemas-upnp-org:metadata-1-0/RCS/">
+<friendlyName>
+<icon><mimetype>
+<iconList>
+<InstanceID val="
+<manufacturer>
+<manufacturerURL>
+<microsoft:magicPacketWakeSupported>1</microsoft:magicPacketWakeSupported>
+<modelDescription>
+<modelName>
+<modelNumber>
+<modelURL>
+<Mute channel="Master" val="
+<NextAVTransportURI val="
+<NextAVTransportURIMetaData val="
+<NULL>
+<NumberOfTracks val="
+<pbstrTransportStatus
+<PlaybackStorageMedium val="
+<pnpx:X_deviceCategory>MediaDevices</pnpx:X_deviceCategory><pnpx:X_hardwareId>VEN_0125&amp;DEV_0010&amp;REV_0001 VEN_0125&amp;DEV_0010</pnpx:X_hardwareId>
+<PossiblePlaybackStorageMedia val="
+<PossibleRecordQualityModes val="
+<PossibleRecordStorageMedia val="
+<PresetNameList val="
+<RecordMediumWriteStatus val="
+<RecordStorageMedium val="
+<serialNumber>
+<TransportPlaySpeed val="
+<TransportState val="
+<TransportStatus val="
+<Volume channel="Master" val="
+=L9o<
+=y07C
+> <specVersion> <major>1</major> <minor>0</minor> </specVersion> <device> 
+>3B>`U3
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>m|l2
+0123456789ABCDEF
+040904B0
+0A^_^
+0A^_^][
+0A^_^H
+0A^A\_^]
+0A__^
+0A_A^_
+0A_A^_^]
+0A_A^A\
+0A_A^A\_^
+0A_A^A]_^
+0A_A^A]_^[]
+0A_A^A]A\]
+0A_A^A]A\_
+0A_A^A]A\_^]
+0CurrentTrackMetaData
+1(0&0
+1/0-0
+10.0.19041.1415
+10.0.19041.1415 (WinBuild.160101.0800)
+100701213655Z
+111019184142Z
+14RecordMediumWriteStatusW
+1h!Z.
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+20211208215102Z
+20211209032849.416Z0
+20211209215102Z0w0=
+210114190217Z
+210902182341Z
+220411190217Z0
+220901182341Z0p1
+229879+4675800
+250701214655Z0|1
+261019185142Z0
+2y80T
+4Stop
+6kH M
+8\$@u
+8\$@u*H
+8\t!f
+8_^[]
+89:u!
+89:u6
+8H!0H
+8YMuB
+8YmuB
+9{dtF
+9|$Hv:H
+9}0t H
+90v,H
+9A98u6A9x
+9C`t@
+9Cdt=
+9cListPresetsW
+9D$ uM3
+9M4tVA
+9N4tH
+9NTtN
+9NTtW
+9O$tQ
+9O(v#
+9O4t>
+9O4tB
+9ODtQ
+9OTt>
+9OTtB
+9OTtN
+9PresetNameListWW
+9rPt%H
+9rPtAA
+9T$PvAD
+9u@v{H
+9u0u/H
+9uHv-
+9w(vsL
+A!4$I
+A(;A,H
+A(A;@
+A(t&H
+A,9A(
+A/XEs
+A^_^[]
+A^A\]
+A^A\_^]
+A^A]]
+A__^][
+A_A\]
+A_A]]
+A_A]A\
+A_A]A\_^
+A_A^]
+A_A^_
+A_A^_^[]
+A_A^_^]
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[]
+A_A^A]
+A_A^A]_]
+A_A^A]_^[]
+A_A^A]A\]
+A_A^A]A\_
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+A_ARG_TYPE_AVTransportID
+A_ARG_TYPE_ChannelWW
+A_ARG_TYPE_ConnectionManager
+A_ARG_TYPE_Direction
+A_ARG_TYPE_InstanceIDWWW
+A_ARG_TYPE_PresetNameWWW
+A_ARG_TYPE_RcsID
+A9,$u
+A94$u
+ABS_COUNT
+AbsoluteTimePosition
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+Action Failed
+activatibleClassId
+AHA;@
+AL9AH
+AllowPlayToStreaming
+ApbstrConnectionIDsWWd
+apbstrCurrentPresetListWW
+api-ms-win-appmodel-runtime-l1-1-0.dll
+api-ms-win-appmodel-runtime-l1-1-1.dll
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-com-l1-1-1.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-featurestaging-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-kernel32-legacy-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-1.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-registry-l1-1-1.dll
+api-ms-win-core-rtlsupport-l1-1-0.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-string-l2-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-util-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-1.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-power-setting-l1-1-0.dll
+api-ms-win-rtcore-ntuser-synch-l1-1-0.dll
+api-ms-win-rtcore-ntuser-window-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-base-l1-2-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-shcore-stream-l1-1-0.dll
+api-ms-win-shcore-thread-l1-1-0.dll
+api-ms-win-shell-shellfolders-l1-1-0.dll
+ApiSetQueryApiSetPresence
+APPID
+application/vnd.ms-playtoapp
+application/vnd.ms-playtoapp;target="
+AppUserModelID
+aSinkProtocolInfo
+ATAVAWH
+ATL$__a
+ATL$__z
+audio/
+audio/3gpp2
+audio/wav
+audio/x-flac
+audio/x-matroska
+AVTransportURIMetaDataWW
+b/8|+
+bDesiredMute
+bHcW@
+bhPYj
+bstrChannelW
+bstrCurrentURIMetaDataWW
+bstrCurrentURIWW
+bstrSpeedWWW
+bstrTargetWW
+bstrUnit
+bVYMw
+BX9A4t
+Bx9ATt
+C~mfnetcore.dll
+c>UWZ>
+CallbackMayRunLong
+CallContext:[%hs] 
+CharLowerW
+CheckTokenCapability
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+CloseHandle
+CloseThreadpoolTimer
+CloseThreadpoolWait
+CMFPropVariant::AppendElement
+CMFPropVariant::Copy
+CMFPropVariant::CreateZeroElementArray
+CMFPropVariant::GetElementDataAsVariant
+CMFPropVariant::GetElementDataPtr
+CMFPropVariant::InsertElement
+CMFPropVariant::SetElementData
+CMFPropVariantConvert::GetVarTypeSize
+CoCreateFreeThreadedMarshaler
+CoCreateGuid
+CoCreateInstance
+CoGetApartmentType
+CoImpersonateClient
+CoInitializeEx
+CoMarshalInterface
+CompanyName
+CompareStringOrdinal
+ContainerID
+Content Types
+ConvertStringSecurityDescriptorToSecurityDescriptorW
+CoReleaseMarshalData
+CoRevertToSelf
+CoSetProxyBlanket
+CoTaskMemAlloc
+CoTaskMemFree
+CoUninitialize
+CoWaitForMultipleHandles
+CpI!9H
+CreateDirectoryW
+CreateEventExW
+CreateEventW
+CreateFileW
+CreateMutexExW
+CreatePropertyStore
+CreateSemaphoreExW
+CreateStreamOnHGlobal
+CreateThread
+CreateThreadpoolTimer
+CreateThreadpoolWait
+CreateWellKnownSid
+CurrentConnectionIDs
+CurrentMediaDuration
+CurrentTrack
+D!d$pE3
+D!t$$H
+D$ E3
+d$ E3
+D$ E3
+D$ fD
+D$ H;
+D$"Hc
+D$(E3
+D$@E3
+d$@E3
+D$@H;
+D$`E3
+D$`I;
+D$0E3
+D$0f;
+D$0H!t$0H
+D$0H;
+D$0p/
+d$8D9
+D$8H;
+D$8H;D$(u
+D$hA;
+D$HE3
+D$pfD
+D$T9F
+D$xA;
+D$xE;
+D:(A;OICI;GA;;;LS)(A;OICI;GA;;;AU)(A;OICI;GA;;;SY)(A;OICI;GA;;;BU)(A;OICI;GA;;;BA)
+D;}(r
+D;}Hr
+D;A,sOA
+D;E(r
+D;eHr
+D;G,s)H
+D;GLs)H
+D;u(r
+D;wHt
+D8|$`
+D8s(tOH
+D8t$(t+D
+D8v)u
+D9%6J
+D9&u:I
+D9|$d
+D9|$t
+D9}`t
+D90v.H
+D9d$H
+D9gl|
+D9gpt
+D9l$||
+D9l$h
+D9l$HutL
+ddores.dll
+DebugBreak
+DecodePointer
+DelayLoadFailureHook
+DeleteCriticalSection
+DestroyIcon
+DIALUDN
+Digital Media Player
+Digital Media Player and Renderer
+Digital Media Receiver DLL
+Digital Media Renderer
+DisableThreadLibraryCalls
+DispatchMessageW
+DllCanUnloadNow
+DllGetActivationFactory
+DllGetClassObject
+DLNA.AlbumArtURI
+DLNA.ItemClass
+DLNA.ProtocolInfo
+dlna-playsingle:
+DMR Media PlayerWW 
+DMRServer.dll
+DMRServer.pdb
+DpbstrSeekTargetW
+DuiDesiredVolumeW
+DuplicateHandle
+DwRichk
+E(=csm
+E@;EH
+e^pbstrA_ARG_TYPE_PresetNameWW
+E0H!}0H
+E8=csm
+E8H!u8H
+Eh=csm
+EH=csm
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+EncodePointer
+EnterCriticalSection
+epy&n
+ERROR_OCCURRED
+Et,@8
+EventRegister
+EventUnregister
+EventWriteTransfer
+EX;0r
+Ex=csm
+EX=csm
+Ex9FTtqA
+Exception
+EXD;0r
+EXL9B
+ext-ms-win-casting-receiver-l1-1-0
+ext-ms-win-casting-receiver-l1-1-0.dll
+ext-ms-win-casting-receiver-l1-1-1
+ext-ms-win-casting-receiver-l1-1-1.dll
+ext-ms-win-ntuser-gui-l1-1-0.dll
+ext-ms-win-ntuser-message-l1-1-0
+ext-ms-win-ntuser-message-l1-1-0.dll
+ext-ms-win-ntuser-message-l1-1-1
+ext-ms-win-ntuser-message-l1-1-2
+ext-ms-win-ntuser-message-l1-1-3
+ext-ms-win-shell-shell32-l1-2-0
+ext-ms-win-shell-shell32-l1-2-1
+ext-ms-win-shell-shell32-l1-2-1.dll
+ext-ms-win-shell-shell32-l1-2-2
+ext-ms-win-shell-shell32-l1-2-3
+ext-ms-win-shell-shell32-l1-3-0
+f;D$ 
+f;D$@uXH
+f9,Gu
+f9,Ou
+f9,Xu
+f9<Au
+f9<Fu
+f94Au
+f94Bu
+f94Ju
+fA;<$
+fA9<@u
+fA9<Au
+fA9<Lu
+fA90M
+fA91M
+fA94@u
+fA94Au
+fA94Hu
+fA94Qu
+fA98L
+fA98t
+fA99L
+fA9DM
+fA9Z*v$A
+FactoryDefaults
+FailFast
+fB$h@kz
+fB94cu
+fB94Qu
+fC9<Qu
+fC9D}
+fC9De
+fD9$Fu
+fD9$Xu
+fD9)H
+fD9*H
+fD9,Ju
+fD9,xu
+fD9,yu
+fD9<Cu
+fD9<Zu
+fD93t
+fD94^u
+fD94Cu
+fD94Pu
+fE9(H
+fE9)L
+fE9,~u
+fE9,Hu
+fE9,Iu
+fE9,Ku
+fE9,Lu
+fE9+L
+fE94@u
+fE94Du
+fF9$Au
+FileDescription
+FileVersion
+FindResourceExW
+FindStringOrdinal
+Format not supported for playback
+FormatApplicationUserModelId
+FormatMessageW
+FreeLibrary
+FreeLibraryAndExitThread
+FreeLibraryWhenCallbackReturns
+FSetAVTransportURIWWW
+FX9G4
+FX9G4t;
+Fx9GTt;
+fY?aJ
+G@H;GHs
+G`H9_h
+g38]Q
+GetComputerNameExW
+GetComputerNameW
+GetCurrentConnectionIDsW
+GetCurrentConnectionInfo
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetCurrentTransportActionsWW
+GetFileAttributesW
+GetForegroundWindow
+GetLastError
+GetMediaInfo
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetMuteW
+GetPlatformSpecificDMRIcon
+GetPositionInfoW
+GetProcAddress
+GetProcessHeap
+GetProcessReference
+GetProtocolInfoW
+GetRestrictedErrorInfo
+GetSystemTimeAsFileTime
+GetThreadPriority
+GetTickCount
+GetTickCount64
+GetTokenInformation
+GetTraceEnableFlags
+GetTraceEnableLevel
+GetTraceLoggerHandle
+GetTransportInfo
+GetTransportSettings
+GetVolumeWWW
+GetWindowThreadProcessId
+Gp9D$@
+H L;x
+H UATAUAVAWH
+h UAVAWH
+h VWAVH
+H WATAUAVAWH
+H!\$@H
+H!]@H
+H!_ H
+H!_(E3
+H!_@3
+H!_8H
+H!{PH!{XH!{`@
+H!|$PH
+H!|$x
+H!sHH
+H!t$@
+H!T$8H
+H!t$x
+H!w0E
+H;Q0s
+H;S v
+H;S(v
+H;W(s
+H;YHr
+H;YHs f
+H0I!v(A
+H9_hu
+H9_PtDH
+H9_Xt"
+H9|$Pt
+H9~0t
+H9l$@~
+H9S(u
+H9uPt
+HA_A^A]A\_^][
+H'bstrNextURIMetaDataW
+HcD$$H
+HeapAlloc
+HeapDestroy
+HeapFree
+HeapReAlloc
+HeapSize
+HpbstrCurrentTrackMetaDataWWW
+HpbstrSourceW
+http://
+http-get
+http-get:*:%s:*
+https
+https://
+https://windows.microsoft.com
+https://www.microsoft.com
+I!>I!?I
+I0G1-0+
+IconLarge.jpg
+IconLarge.png
+IconSmall.jpg
+IconSmall.png
+IDMRAVTransportService InterfaceWW
+IDMRAVTransportServiceWW
+IDMRConnectionManagerServiced
+IDMRRenderingControlService InterfaceW
+IDMRRenderingControlServiceW
+iHe7l
+Image
+image/
+image/jpeg
+image/png
+InitializeCriticalSection
+InitializeCriticalSectionEx
+InitializeSRWLock
+InitOnceBeginInitialize
+InitOnceComplete
+InitOnceExecuteOnce
+Input
+install-app://
+InstanceIDWW
+InternalName
+Invalid Args
+Invalid connection reference
+Invalid InstanceID
+Invalid Name
+Invalid parameter passed to C runtime function.
+IsDebuggerPresent
+IsErrorPropagationEnabled
+IsStartScreenVisible
+IsSystemInSilentBootMode
+iswalpha
+iswdigit
+IsXuidOfSignedInUser
+jZplResIDW
+K0;D$`
+K0;D$p@
+K0H9{
+kernelbase.dll
+KpbstrAVTransportURIMetaDataW
+KXLIE
+L!l$`H!\$@H
+L!l$XL!l$xD!m
+L$ E3
+L$ H;
+L$ SH
+L$ SUVWH
+L$ SVWH
+L$ VH
+L$ VWATAUAWH
+l$ VWATAVAWH
+l$ VWAUAVAWH
+l$ VWAVH
+L$ WH
+L$(H3
+L$@9L$ t
+L$@D!l$HH
+L$@E3
+L$@H3
+L$@L;
+L$`D;
+L$`H;
+L$`H3
+L$0D;wHt
+L$0E3
+L$0H;
+L$0H3
+L$8D9L$8t
+L$8E3
+L$hH3
+L$HH3
+L$l;8u
+l$PE3
+L$PH;
+L$pH9
+l$XE3
+L$XH3
+L$XL+
+L$XL9
+L9\$(t
+L9\$(t#fH
+L9{@u
+L9{0t#H
+L9|$Xt
+L9|$Xt%H
+L9~ u
+L9O@t
+L9't"
+LastChangeWW
+LcA<E3
+lConnectionIDWWW
+Lct$ I
+LeaveCriticalSection
+Legal_Policy_Statement
+LegalCopyright
+LoadResource
+Local\SM0:%d:%d:%hs
+LocalFree
+LockResource
+LogHr
+M! M!!M!"D!'D!&E!&H
+M$kY<
+m]]9(
+M0K0I
+M9 u"H
+M9 u%H
+M9 u(H
+malloc
+Master
+memcmp
+memcpy
+memcpy_s
+memmove
+memmove_s
+memset
+Method GetCurrentConnectionIDs
+Method GetCurrentConnectionInfoWWW%
+Method GetCurrentTransportActionsW
+Method GetDeviceCapabilitiesWW
+Method GetMediaInfoWWW
+Method GetMute
+Method GetPositionInfo
+Method GetProtocolInfo
+Method GetTransportInfoWWW
+Method GetTransportSettingsWWW
+Method GetVolumeWW
+Method ListPresets
+Method NextWWW
+Method PauseWW
+Method PlayWWW
+Method PreviousWWW
+Method SeekWWW
+Method SelectPresetWWW
+Method SetAVTransportURIWW
+Method SetMute
+Method SetNextAVTransportURIWW
+Method SetPlayMode!
+Method SetVolumeWW
+Method StopWWW
+MFCreateSourceResolver
+MFCreateStreamOnMFByteStreamEx
+MFGetCallStackTracingWeakReference
+MFGetSupportedDLNAProfileInfo
+MFGetSupportedMimeTypes
+MFGetSystemTime
+MFPlat.DLL
+MFPutWorkItem
+MFShutdown
+MFStartup
+Microsoft
+Microsoft Corporation
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1)0'
+Microsoft Corporation1.0,
+Microsoft Corporation1200
+Microsoft SDK Customer
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+Microsoft Windows0
+microsoft.com
+microsoft.com:*:
+Microsoft.Windows.MediaFoundation.CallStack
+minATL$__a
+minATL$__f
+minATL$__m
+minATL$__z
+Msg:[%ws] 
+MsgWaitForMultipleObjectsEx
+ms-playtoapp-
+ms-playto-audio
+ms-playto-image
+ms-playto-video
+msvcrt.dll
+MultiByteToWideChar
+n\Mn+
+N0L0J
+nCurrentTrackDuration
+NdisPMCapabilityState
+NETWORK
+NewPlayModeW
+NO_MEDIA_PRESENT
+NONE,NETWORK,UNKNOWN,HDD,CD-DA,DVD-VIDEO
+NORMAL
+NOT_IMPLEMENTED
+NpbstrPossibleRecordStorageMediaW
+nRecordStorageMediumW
+N-tg':
+NumberOfTracksWW
+o\$PH
+O0M0K
+oD$ f
+oK0D$"<
+OKI`.
+oL$0f
+OLEAUT32.dll
+olz(K
+onecore\internal\sdk\inc\wil\opensource/wil/registry.h
+onecore\internal\sdk\inc\wil\opensource/wil/resource.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\shell\shcore\libs\comtaskpool\taskpoolprivate.cpp
+OpenProcess
+OpenProcessToken
+OpenSemaphoreW
+OpenThreadToken
+OpH!u0H
+OriginalFilename
+oT$@f
+OutputDebugStringA
+OutputDebugStringW
+Ox@8q(t
+oXH9_`u
+p AWH
+p WATAUAVAWH
+p WAVAWH
+PA^_]
+PA^_^[]
+PA^_^][
+pA^A\_^]
+pA_A]A\_^[]
+PA_A^_^]
+pA_A^_^]
+PA_A^_^]
+PA_A^A\_^[]
+PA_A^A]A\_^]
+PackageFamilyNameFromFullName
+Pause
+PAUSED_PLAYBACK
+PAUSED_RECORDING
+PauseWWW
+pbCurrentMuteWWW
+pbMuteWW
+pbstrA_ARG_TYPE_ChannelW
+pbstrA_ARG_TYPE_ConnectionManagerWWWd
+pbstrA_ARG_TYPE_ConnectionStatusd
+pbstrA_ARG_TYPE_DirectionWWWd
+pbstrA_ARG_TYPE_ProtocolInfod
+pbstrActionsd
+pbstrAVTransportURIW
+pbstrCurrentConnectionIDsWWWd
+pbstrCurrentMediaDurationWWW
+pbstrCurrentPlayMode
+pbstrCurrentRecordQualityModeWWW
+pbstrCurrentTrackDurationWWW
+pbstrCurrentTransportActions
+pbstrDirectionWW
+pbstrLastChangeW
+pbstrNextAVTransportURIMetaDataW
+pbstrNextAVTransportURIW
+pbstrPossibleRecordQualityModesW
+pbstrPresetNameListW
+pbstrProtocolInfoWWW
+pbstrRecordMediumWriteStatus
+pbstrRecordStorageMedium
+pbstrRelativeTimePositionWWW
+pbstrSinkProtocolInfoWWWd
+pbstrSinkWWWd
+pbstrStatusW
+PeekMessageW
+plA_ARG_TYPE_ConnectionIDWWWd
+plA_ARG_TYPE_RcsIDWWd
+plAbsoluteCounterPositionWWW
+plAVTransportIDW
+Play speed not supported
+PlaybackStorageMediumWWW
+PLAYING
+PlaySpeeds
+plPeerConnectionIDWW
+plRelativeCounterPositionWWW
+PMCapabilitiesParam
+PossiblePlaybackStorageMedia
+PossibleRecordStorageMediaWW
+PostThreadMessageW
+PowerSettingRegisterNotification
+PowerSettingUnregisterNotification
+pRelativeTimePositionWWW
+Previous
+ProductName
+ProductVersion
+Property A_ARG_TYPE_AVTransportIDW
+Property A_ARG_TYPE_ChannelWWW
+Property A_ARG_TYPE_ConnectionIDWW!
+Property A_ARG_TYPE_ConnectionManagerW
+Property A_ARG_TYPE_ConnectionStatusWW%
+Property A_ARG_TYPE_DirectionW 
+Property A_ARG_TYPE_InstanceID
+Property A_ARG_TYPE_PresetName
+Property A_ARG_TYPE_ProtocolInfoWW 
+Property A_ARG_TYPE_RcsIDW
+Property A_ARG_TYPE_SeekModeWW
+Property A_ARG_TYPE_SeekTarget
+Property AbsoluteCounterPositionWW 
+Property AbsoluteTimePositionW 
+Property AVTransportURIMetaDataWWW
+Property AVTransportURIWWW
+Property CurrentConnectionIDsW$
+Property CurrentMediaDurationW
+Property CurrentPlayModeWW
+Property CurrentRecordQualityModeW#
+Property CurrentTrackDurationW
+Property CurrentTrackMetaDataW
+Property CurrentTrackURIWW
+Property CurrentTrackW
+Property CurrentTransportActionsWW
+Property LastChangeWWW
+Property MuteW
+Property NextAVTransportURIMetaDataWWW
+Property NextAVTransportURIWWW#
+Property NumberOfTracksWWW
+Property PlaybackStorageMedium
+Property PossiblePlaybackStorageMediaW#
+Property PossibleRecordQualityModesWWW
+Property PossibleRecordStorageMediaWWW
+Property PresetNameListWWW
+Property RecordMediumWriteStatusWW!
+Property RecordStorageMediumWW%
+Property RelativeCounterPositionWW 
+Property RelativeTimePositionW
+Property SinkProtocolInfoW
+Property SourceProtocolInfoWWW
+Property TransportPlaySpeedWWW 
+Property TransportStateWWW
+Property TransportStatusWW
+Property VolumeWWW
+PROPSYS.dll
+PropVariantClear
+PropVariantCopy
+ProtocolInfo
+PSCreateMemoryPropertyStore
+PSGetNameFromPropertyKey
+puiCurrentVolume
+puiVolumeWWW
+pulA_ARG_TYPE_InstanceID
+pulCurrentTrackW
+pulInstanceIDWWW
+pulNumberOfTracksWWW
+punkRemoteEndpointInfoWW
+PUpbstrSourceProtocolInfoWd
+q0;D$@
+Q0;D$0
+qlA_ARG_TYPE_SeekTargetWWW
+qsort
+qsort_s
+QueryPerformanceCounter
+R!s4Z
+R$fA;Z*
+r(D9g
+r*D9g
+r~akow
+RaiseException
+RaiseFailFastException
+realloc
+Record
+RecordFeatureUsage
+RECORDING
+Redmond1
+RegCloseKey
+RegCreateKeyExW
+RegEnumKeyExW
+RegEnumValueW
+RegGetValueW
+RegisterExitSilentBootModeNotification
+RegisterTraceGuidsW
+RegNotifyChangeKeyValue
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegSetKeyValueW
+REL_TIME
+RelativeCounterPositionW
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+RemoteAddress
+REPEAT_ALL
+ResetEvent
+ResolveDelayLoadedAPI
+Resource not found
+ResumeThread
+ReturnHr
+rHbstrPresetNameWW
+RoActivateInstance
+RoGetActivationFactory
+RoGetAgileReference
+RoGetMatchingRestrictedErrorInfo
+RoInitialize
+RoOriginateError
+RoOriginateErrorW
+ROOT\WMI
+RoReportFailedDelegate
+RoTransformError
+RoUninitialize
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+rtsp://
+rtsp-rtp-udp
+s<D9e
+Seek mode not supported
+Seek,X_DLNA_SeekTime
+SELECT * FROM MSNdis_PMCapabilities
+SelectPreset
+SetAVTransportUri
+SetEvent
+SetLastError
+SetMuteW
+SetPlatformSpecificDMRProperties
+SetPlayModeW
+SetProcessReference
+SetRestrictedErrorInfo
+SetThreadpoolTimer
+SetThreadpoolWait
+SetThreadPriority
+SettingRegPath
+SetUnhandledExceptionFilter
+SetVolumeWWW
+SHCreateMemStream
+SHCreateStreamOnFileEx
+SHCreateStreamOnFileW
+SHDefExtractIconW
+SHGetKnownFolderPath
+SHGetThreadRef
+SHSetThreadRef
+SHUFFLE
+SizeofResource
+Sleep
+SleepConditionVariableSRW
+Software\Classes\
+Software\Classes\Extensions\ContractId\Windows.Protocol\PackageId
+Software\Microsoft\PlayToReceiver
+Software\Microsoft\PlayToReceiver\Apps
+SourceProtocolInfoWW
+SpbstrSeekModeWWW
+sPossibleRecordQualityModesWW
+sSetNextAVTransportURIWWW
+stdole2.tlbWWW8
+STOPPED
+StringFileInfo
+StringFromCLSID
+strncpy_s
+strnlen
+SubscribeFeatureStateChangeNotification
+SUVWATAVAWH
+System.Author
+System.Comment
+System.DateModified
+System.ItemName
+System.ItemUrl
+System.Media.ClassPrimaryID
+System.Media.DateReleased
+System.Media.Duration
+System.MIMEType
+System.Music.AlbumArtist
+System.Music.AlbumTitle
+System.Music.Artist
+System.Music.Composer
+System.Music.Genre
+System.Photo.DateTaken
+System.Rating
+System.RecordedTV.OriginalBroadcastDate
+System.RecordedTV.ProgramDescription
+System.RecordedTV.RecordingTime
+System.SimpleRating
+System.Title
+System.Video.Actor
+t @8i
+t D8y
+t!@8i
+t!D8a
+t!D8y
+t";WPu
+t"D8=
+t"D8y
+t"E8b
+t#D8i
+T$ E3
+t$ E3
+T$ E3
+t$ UWATAVAWH
+t$ UWAUAVAWH
+t$ UWAVH
+t$ UWAWH
+t$ WATAUAVAWH
+t$ WATAVH
+t$ WAVAWH
+t$ WH
+T$$D!t$ H
+t$(D9t$ t
+T$@E3
+t$0E3
+T$0E3
+T$8E3
+T$8H!\$8
+t$D9u
+t$E8z
+T$HH!t$@H!t$H
+t$HH9u
+T$HHi
+T$l;Q
+T$pE3
+t%E8b
+t(D8{
+t.f92u
+t.fA9
+t.fD9*u
+t:fA99t:I
+t[I!?L
+T^r|B
+t+H9^
+t<D9e
+t<fA90u
+T<X4M%
+t0fA90u
+t0fE9(u
+t0fE9+u
+t4D8y
+t4fA91t1H
+t5fE9)u
+t6fA9
+t7D9@
+t7fD9
+t7fE9
+t8D8x
+t9f91u
+tAfA98u
+target
+tBfE9
+tCfE9
+td@8=
+t-D9e
+tDD8I
+TerminateProcess
+Test.MiracastReceiverDRTTest_10.0.10000.0_x64__8wekyb3d8bbwe
+t'f91t%I
+t-fD9)t*H
+tfH9X
+tG9^HtBH
+tG9^htBH
+tG9ohtBH
+t-H!t$0H
+Thales TSS ESN:7880-E390-80141%0#
+thE8b
+thH!T$@H
+tJD8x
+TlP0X
+TlsAlloc
+TlsGetValue
+TlsSetValue
+tMD9z
+towupper
+tqD8x
+TraceMessage
+TRACK_NR
+Transition not available
+TRANSITIONING
+TranslateMessage
+Translation
+Transport is locked
+TransportPlaySpeedWW
+TransportStateWW
+TransportStatusW
+TrySubmitThreadpoolCallback
+tvH!\$PH
+TYPELIB
+u D9J
+U H!\$hL
+u HcA<H
+u#D9R
+u(H!G@H
+u(H!GHH
+U0H!]
+U0H!]8M
+U0S0Q
+u8D9R
+U8H!]
+u'9sPt19s`t,9sTu'H
+UATAUAVAWH
+UAUAVH
+UAVAWH
+uFD9R
+uGH9A
+uhD+p
+ulInstanceID
+UnhandledExceptionFilter
+UNKNOWN_STATE
+UNKNOWN_STATUS
+UNLOADED
+UnregisterExitSilentBootModeNotification
+UnregisterTraceGuids
+UnsubscribeFeatureStateChangeNotification
+uOi@Y
+UpbstrPossiblePlaybackStorageMediaWWW
+uRf9G
+urn:schemas-upnp-org:device:MediaRenderer:1
+urn:upnp-org:serviceId:AVTransport
+urn:upnp-org:serviceId:ConnectionManager
+urn:upnp-org:serviceId:RenderingControl
+UROtNULL
+USVWATAUAVAWH
+USVWAUAVAWH
+USVWAVH
+uuid:
+UVAVH
+UVWATAUAVAWH
+UVWATAVH
+UVWATAWH
+UVWAUAVH
+UVWAVAWH
+UWATAVAWH
+UWAUAVAWH
+UWAVH
+UWAWH
+uXH9_
+v$9Uw5
+VarFileInfo
+video/
+video/3gpp2
+video/avi
+video/quicktime
+video/wtv
+video/x-matroska
+video/x-matroska-3d
+video/x-ms-dvr
+video/x-msvideo
+VLuKp
+VolumeWW
+VS_VERSION_INFO
+VWATAVAWH
+VWAUAVAWH
+VWAVH
+VWAWH
+WaitForMultipleObjects
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WaitForThreadpoolWaitCallbacks
+WakeAllConditionVariable
+WakeOnMagicPacket
+WaNja
+Washington1
+WATAUAVAWH
+WATAVH
+WAUAVH
+WAVAWH
+wcschr
+wcscmp
+wcsncmp
+wcspbrk
+wcsrchr
+wcsstr
+wcstok_s
+W'CurrentTransportActionsW
+WENextAVTransportURIWW
+WilError_03
+Windows Digital Media Renderer
+Windows.Foundation.AsyncOperationCompletedHandler`1<Windows.Storage.Streams.IRandomAccessStreamWithContentType>
+Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IKeyValuePair`2<String, Object>>
+Windows.Foundation.Collections.IIterable`1<Windows.Foundation.Collections.IKeyValuePair`2<String, String>>
+Windows.Foundation.Collections.IIterator`1<String>
+Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Collections.IKeyValuePair`2<String, Object>>
+Windows.Foundation.Collections.IIterator`1<Windows.Foundation.Collections.IKeyValuePair`2<String, String>>
+Windows.Foundation.Collections.IIterator`1<Windows.Media.Streaming.PlaySpeed>
+Windows.Foundation.Collections.IKeyValuePair`2<String, Object>
+Windows.Foundation.Collections.IKeyValuePair`2<String, String>
+Windows.Foundation.Collections.IMap`2<String, Object>
+Windows.Foundation.Collections.IMap`2<String, String>
+Windows.Foundation.Collections.IMapView`2<String, Object>
+Windows.Foundation.Collections.IMapView`2<String, String>
+Windows.Foundation.Collections.IVector`1<String>
+Windows.Foundation.Collections.IVector`1<Windows.Media.Streaming.PlaySpeed>
+Windows.Foundation.Collections.IVectorView`1<String>
+Windows.Foundation.Collections.IVectorView`1<Windows.Media.Streaming.PlaySpeed>
+Windows.Foundation.Collections.PropertySet
+Windows.Foundation.Diagnostics.AsyncCausalityTracer
+Windows.Foundation.IAsyncAction
+Windows.Foundation.IAsyncAction Windows.Media.PlayTo.PlayToReceiver.StartAsync
+Windows.Foundation.IAsyncAction Windows.Media.PlayTo.PlayToReceiver.StopAsync
+Windows.Foundation.IAsyncOperation`1<Windows.Storage.Streams.IRandomAccessStreamWithContentType>
+Windows.Foundation.PropertyValue
+Windows.Foundation.Uri
+Windows.Management.Deployment.PackageManager
+Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs
+Windows.Media.PlayTo.Internal.ValidateUriRequestedEventArgs
+Windows.Media.PlayTo.MuteChangeRequestedEventArgs
+Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs
+Windows.Media.PlayTo.PlayToReceiver
+Windows.Media.PlayTo.SourceChangeRequestedEventArgs
+Windows.Media.PlayTo.VolumeChangeRequestedEventArgs
+Windows.Media.Streaming.Internal.ContentDirectoryItem
+Windows.Media.Streaming.Internal.ResElementSorter
+Windows.Storage.Streams.RandomAccessStreamReference
+WindowsCompareStringOrdinal
+WindowsConcatString
+WindowsCreateString
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsDuplicateString
+WindowsGetStringLen
+WindowsGetStringRawBuffer
+WindowsIsStringEmpty
+WindowsStringHasEmbeddedNull
+WriteFile
+WS&U6
+Ww*[k
+x ATAUAWH
+x ATAVAWH
+x ATH
+x AUAVAWH
+x AVH
+x AWH
+x UATAUAVAWH
+X UVWATAUAVAWH
+x*D9u
+x,D8m
+x,fA;
+X_DLNA_PS=
+x_HcK
+x`I9](tZ
+x`I9]HtZ
+x0f;t$@u)L
+x3D9u
+x3H;t$@t
+x4f;t$@u-L
+xA_A^A]A\_^[]
+XA_A^A]A\_^][
+xA_A^A]A\_^][
+xA_ARG_TYPE_SeekModeW
+x'D8u
+xdD9e
+XFCurrentRecordQualityMode
+xfL9n0u
+xG8\$0u
+xH8\$0u
+xkHcK
+xmlns:microsoft="urn:schemas-microsoft-com:WMPDMR-1-0"
+XUID=
+xXHcA
+Y@H;YHr
+Y@H9;u+L
+y<D9e
+y0;D$`
+Y1{^mO
+YHL!d$`L
+z.9Wv
+z0;D$ 
+ZhH!|$ L
+Zof1G

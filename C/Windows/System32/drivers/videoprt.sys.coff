@@ -1,0 +1,263 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\videoprt.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    watchdog.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009010 Import Address Table
+             1C0009308 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          A3 ExAllocatePoolWithTag
+                         530 KeWaitForSingleObject
+                         440 KeBugCheckEx
+                         4D0 KeReadStateEvent
+                         42F KeAcquireSpinLockRaiseToDpc
+                         48B KeInitializeSpinLock
+                         4E6 KeReleaseSpinLock
+                         505 KeSetEvent
+                         42D KeAcquireSpinLockAtDpcLevel
+                         446 KeClearEvent
+                         4E8 KeReleaseSpinLockFromDpcLevel
+                          CA ExFreePoolWithTag
+                         483 KeInitializeEvent
+                         2BA IoAcquireRemoveLockEx
+                         450 KeDelayExecutionThread
+                         396 IoReleaseRemoveLockEx
+                         980 RtlWriteRegistryValue
+                         B8D _vsnwprintf
+                         B13 ZwQuerySystemInformation
+                         47F KeInitializeDpc
+                         7A6 RtlAppendUnicodeStringToString
+                         359 IoInitializeTimer
+                         B1B ZwReadFile
+                         660 ObQueryNameString
+                         487 KeInitializeMutex
+                         407 IoWriteErrorLogEntry
+                         7A7 RtlAppendUnicodeToString
+                         7B7 RtlCheckRegistryKey
+                         AB4 ZwEnumerateValueKey
+                         7E4 RtlCreateRegistryKey
+                         2A8 InbvCheckDisplayOwnership
+                         96B RtlUpcaseUnicodeString
+                         842 RtlFreeUnicodeString
+                         3D6 IoStartTimer
+                         4E3 KeReleaseMutex
+                         A97 ZwCreateKey
+                         BD6 vDbgPrintEx
+                         2AA InbvEnableBootDriver
+                         304 IoDeleteDevice
+                         3D9 IoStopTimer
+                         358 IoInitializeRemoveLockEx
+                         6C2 PoSetPowerState
+                         906 RtlQueryRegistryValues
+                         306 IoDeleteSymbolicLink
+                          70 EtwActivityIdControl
+                         AB8 ZwFlushKey
+                         86C RtlGetVersion
+                         373 IoQueryDeviceDescription
+                         6ED PsGetCurrentProcessSessionId
+                         BDD wcschr
+                         393 IoRegisterShutdownNotification
+                         93E RtlStringFromGUID
+                         AB2 ZwEnumerateKey
+                         BEB wcsstr
+                         584 MmGetSystemRoutineAddress
+                         2EC IoCreateDevice
+                         B16 ZwQueryValueKey
+                         400 IoWMIRegistrationControl
+                         AD6 ZwOpenFile
+                         14B ExUuidCreate
+                         40E IofCompleteRequest
+                         893 RtlIntegerToUnicodeString
+                         B00 ZwQueryInformationFile
+                         9E7 SeSinglePrivilegeCheck
+                         2F8 IoCreateSymbolicLink
+                         2C1 IoAllocateErrorLogEntry
+                         A88 ZwClose
+                         B4E ZwSetValueKey
+                         BE9 wcsrchr
+                         AD8 ZwOpenKey
+                         87E RtlInitUnicodeString
+                         496 KeInsertQueueDpc
+
+    HAL.dll
+             1C0009000 Import Address Table
+             1C00092F8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    watchdog.sys
+             1C0009258 Import Address Table
+             1C0009550 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C WdLogEvent5_WdAssertion
+                          49 WdLogNewEntry5_WdAssertion
+                          1E VpInitialize
+                           0 DMgrAcquireGdiViewId
+                           4 DMgrWriteDeviceCountToRegistry
+                          18 SMgrGdiCallout
+                           3 DMgrReleaseGdiViewId
+
+  Section contains the following exports for VIDEOPRT.SYS
+
+    00000000 characteristics
+    11047A73 time date stamp
+        0.00 version
+           1 ordinal base
+         120 number of functions
+         120 number of names
+
+    ordinal hint RVA      name
+
+          1    0          ScsiPortNotification (forwarded to VIDEOPRT.VideoPortNotification)
+          2    1 0000A0C0 VideoPortAcquireDeviceLock
+          3    2 00001600 VideoPortAcquireSpinLock
+          4    3 00001630 VideoPortAcquireSpinLockAtDpcLevel
+          5    4 0000D040 VideoPortAllocateBuffer
+          6    5 0000A010 VideoPortAllocateCommonBuffer
+          7    6 0000A010 VideoPortAllocateContiguousMemory
+          8    7 000022E0 VideoPortAllocatePool
+          9    8 0000A010 VideoPortAssociateEventsWithDmaHandle
+         10    9          VideoPortCheckForDeviceExistance (forwarded to VIDEOPRT.VideoPortCheckForDeviceExistence)
+         11    A 0000A040 VideoPortCheckForDeviceExistence
+         12    B 00001780 VideoPortClearEvent
+         13    C          VideoPortCompareMemory (forwarded to NTOSKRNL.RtlCompareMemory)
+         14    D 0000D1B0 VideoPortCompleteDma
+         15    E 0000A2F0 VideoPortCreateEvent
+         16    F 00003DD0 VideoPortCreateSecondaryDisplay
+         17   10 0000A290 VideoPortCreateSpinLock
+         18   11 0000A040 VideoPortDDCMonitorHelper
+         19   12 0000A070 VideoPortDbgReportComplete
+         20   13 0000A010 VideoPortDbgReportCreate
+         21   14 0000A040 VideoPortDbgReportSecondaryData
+         22   15 00001E90 VideoPortDebugPrint
+         23   16 000016A0 VideoPortDeleteEvent
+         24   17 000015D0 VideoPortDeleteSpinLock
+         25   18 0000D1B0 VideoPortDisableInterrupt
+         26   19 0000A010 VideoPortDoDma
+         27   1A 0000D1B0 VideoPortEnableInterrupt
+         28   1B 0000D1B0 VideoPortEnumerateChildren
+         29   1C 000025C0 VideoPortFlushRegistry
+         30   1D 0000A070 VideoPortFreeCommonBuffer
+         31   1E 0000A070 VideoPortFreeDeviceBase
+         32   1F 00002310 VideoPortFreePool
+         33   20 0000D1B0 VideoPortGetAccessRanges
+         34   21 0000A040 VideoPortGetAgpServices
+         35   22 0000A0A0 VideoPortGetAssociatedDeviceExtension
+         36   23 0000A0B0 VideoPortGetAssociatedDeviceID
+         37   24 0000A010 VideoPortGetBusData
+         38   25 0000A010 VideoPortGetBytesUsed
+         39   26 0000A010 VideoPortGetCommonBuffer
+         40   27 00001120 VideoPortGetCurrentIrql
+         41   28 0000A010 VideoPortGetDeviceBase
+         42   29 0000B920 VideoPortGetDeviceData
+         43   2A 0000A010 VideoPortGetDmaAdapter
+         44   2B 0000A010 VideoPortGetDmaContext
+         45   2C 0000A010 VideoPortGetMdl
+         46   2D 0000C0A0 VideoPortGetRegistryParameters
+         47   2E 0000A010 VideoPortGetRomImage
+         48   2F 000039E0 VideoPortGetVersion
+         49   30 0000D1B0 VideoPortGetVgaStatus
+         50   31 0000C170 VideoPortInitialize
+         51   32 0000D1B0 VideoPortInt10
+         52   33 000014E0 VideoPortInterlockedDecrement
+         53   34 000014B0 VideoPortInterlockedExchange
+         54   35 000014C0 VideoPortInterlockedIncrement
+         55   36 0000A040 VideoPortIsNoVesa
+         56   37 0000A010 VideoPortLockBuffer
+         57   38 0000A040 VideoPortLockPages
+         58   39 00002100 VideoPortLogError
+         59   3A 0000D1B0 VideoPortMapBankedMemory
+         60   3B 0000A010 VideoPortMapDmaMemory
+         61   3C 0000D1B0 VideoPortMapMemory
+         62   3D          VideoPortMoveMemory (forwarded to NTOSKRNL.RtlMoveMemory)
+         63   3E 00001570 VideoPortNotification
+         64   3F 0000A070 VideoPortPutDmaAdapter
+         65   40 00002720 VideoPortQueryPerformanceCounter
+         66   41 0000D160 VideoPortQueryServices
+         67   42 00001550 VideoPortQuerySystemTime
+         68   43 00001520 VideoPortQueueDpc
+         69   44 0000A070 VideoPortReadPortBufferUchar
+         70   45 0000A070 VideoPortReadPortBufferUlong
+         71   46 0000A070 VideoPortReadPortBufferUshort
+         72   47 0000A040 VideoPortReadPortUchar
+         73   48 0000A010 VideoPortReadPortUlong
+         74   49 0000A010 VideoPortReadPortUshort
+         75   4A 00001220 VideoPortReadRegisterBufferUchar
+         76   4B 00001280 VideoPortReadRegisterBufferUlong
+         77   4C 00001250 VideoPortReadRegisterBufferUshort
+         78   4D 00001130 VideoPortReadRegisterUchar
+         79   4E 000011D0 VideoPortReadRegisterUlong
+         80   4F 00001180 VideoPortReadRegisterUshort
+         81   50 000017A0 VideoPortReadStateEvent
+         82   51 0000A130 VideoPortRegisterBugcheckCallback
+         83   52 0000D0C0 VideoPortReleaseBuffer
+         84   53 0000A070 VideoPortReleaseCommonBuffer
+         85   54 0000A100 VideoPortReleaseDeviceLock
+         86   55 00001650 VideoPortReleaseSpinLock
+         87   56 00001680 VideoPortReleaseSpinLockFromDpcLevel
+         88   57 0000A040 VideoPortScanRom
+         89   58 0000A010 VideoPortSetBusData
+         90   59 0000A070 VideoPortSetBytesUsed
+         91   5A 0000A070 VideoPortSetDmaContext
+         92   5B 00001750 VideoPortSetEvent
+         93   5C 0000D120 VideoPortSetRegistryParameters
+         94   5D 0000D1B0 VideoPortSetTrappedEmulatorPorts
+         95   5E 0000A040 VideoPortSignalDmaComplete
+         96   5F          VideoPortStallExecution (forwarded to HAL.KeStallExecutionProcessor)
+         97   60 0000D1B0 VideoPortStartDma
+         98   61 000026A0 VideoPortStartTimer
+         99   62 000026E0 VideoPortStopTimer
+        100   63 0000A040 VideoPortSynchronizeExecution
+        101   64 0000A070 VideoPortUnlockBuffer
+        102   65 0000A040 VideoPortUnlockPages
+        103   66 0000A040 VideoPortUnmapDmaMemory
+        104   67 0000D1B0 VideoPortUnmapMemory
+        105   68 0000D1B0 VideoPortVerifyAccessRanges
+        106   69 000017C0 VideoPortWaitForSingleObject
+        107   6A 0000A070 VideoPortWritePortBufferUchar
+        108   6B 0000A070 VideoPortWritePortBufferUlong
+        109   6C 0000A070 VideoPortWritePortBufferUshort
+        110   6D 0000A070 VideoPortWritePortUchar
+        111   6E 0000A070 VideoPortWritePortUlong
+        112   6F 0000A070 VideoPortWritePortUshort
+        113   70 000013D0 VideoPortWriteRegisterBufferUchar
+        114   71 00001430 VideoPortWriteRegisterBufferUlong
+        115   72 00001400 VideoPortWriteRegisterBufferUshort
+        116   73 000012B0 VideoPortWriteRegisterUchar
+        117   74 00001370 VideoPortWriteRegisterUlong
+        118   75 00001310 VideoPortWriteRegisterUshort
+        119   76 00003DB0 VideoPortZeroDeviceMemory
+        120   77          VideoPortZeroMemory (forwarded to NTOSKRNL.RtlZeroMemory)
+
+  Summary
+
+        1000 .data
+        2000 .edata
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        4000 PAGE
+        1000 PAGEDATA

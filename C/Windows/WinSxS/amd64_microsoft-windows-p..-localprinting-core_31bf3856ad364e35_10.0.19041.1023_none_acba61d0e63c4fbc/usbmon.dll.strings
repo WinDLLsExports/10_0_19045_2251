@@ -1,0 +1,3047 @@
+            <psf2:PwgRasterDocumentType psf2:PageOutputColor="%s">%s</psf2:PwgRasterDocumentType>
+            <psk:FeedDirection xsi:type="xsd:QName" psf2:psftype="Property">%s</psk:FeedDirection>
+            <psk:FeedFace psf2:psftype="Property" xsi:type="xsd:QName">%s</psk:FeedFace>
+            <psk:MediaSizeHeight xsi:type="xsd:integer" psf2:psftype="ScoredProperty">%d</psk:MediaSizeHeight>
+            <psk:MediaSizeWidth xsi:type="xsd:integer" psf2:psftype="ScoredProperty">%d</psk:MediaSizeWidth>
+            <psk:PagesPerSheet psf2:psftype="ScoredProperty" xsi:type="xsd:integer">%d</psk:PagesPerSheet>
+            <psk:ResolutionX psf2:psftype="ScoredProperty" xsi:type="xsd:integer">%d</psk:ResolutionX>
+            <psk:ResolutionY psf2:psftype="ScoredProperty" xsi:type="xsd:integer">%d</psk:ResolutionY>
+            <psk12:BorderlessImageableSize xsi:type="psf2:ImageableAreaType" psf2:psftype="Property">0,0,%d,%d</psk12:BorderlessImageableSize>
+            <psk12:MediaSizeLoaded xsi:type="xsd:QName" psf2:psftype="ScoredProperty">%s</psk12:MediaSizeLoaded>
+            <psk12:PortraitImageableSize xsi:type="psf2:ImageableAreaType" psf2:psftype="Property">%d,%d,%d,%d</psk12:PortraitImageableSize>%s
+        <!-- pclm-raster-back-side -->
+        <!-- pwg-raster-document-sheet-back -->
+        <!-- pwg-raster-document-type-supported -->
+        <%s psf2:psftype="Option" psf2:default="%s"/>
+        <%s psf2:psftype="Option" psf2:default="%s">
+        <%s psf2:psftype="Option" psf2:deviceProcessed="true" psf2:default="%s"/>
+        </%s>
+        </ns0000:%s>
+        </ns0000:DPI%dx%d>
+        </psf:Option>
+        </psf2:PwgRasterDocumentTypesSupported>
+        <element name="BuiltIn"         type="bidi:BUILT_IN"/>
+        <element name="Const"           type="bidi:CONST"/>
+        <element name="Event"           type="bidi:EVENT"/>
+        <element name="IndexedProperty"    type="bidi:INDEXED_PROPERTY"/>
+        <element name="IndexedProperty" type="bidi:INDEXED_PROPERTY"/>
+        <element name="NonIndexedProperty" type="bidi:NON_INDEXED_PROPERTY"/>
+        <element name="PortStatus" type="bidi:PortStatusType" minOccurs="0" maxOccurs="1"/>
+        <element name="Property"        type="bidi:PROPERTY"/>
+        <element name="Property" type="bidi:PROPERTY" minOccurs="1" maxOccurs="unbounded"/>
+        <element name="Value"              type="bidi:VALUE"/>
+        <element name="Value"           type="bidi:VALUE"/>
+        <ns0000:%s psf2:psftype="Option" psf2:default="%s">
+        <ns0000:%s psf2:psftype="Option" psf2:default="%s">%s
+        <ns0000:BacksideTumble psf2:DuplexType="%s">true</ns0000:BacksideTumble>
+        <ns0000:DPI%dx%d psf2:psftype="Option" psf2:default="%s">
+        <ns0000:False psf2:psftype="Option" psf2:default="%s"/>
+        <ns0000:True psf2:psftype="Option" psf2:default="%s"/>
+        <psf:DataType psf2:psftype="Property" xsi:type="xsd:QName">xsd:integer</psf:DataType>
+        <psf:DefaultValue psf2:psftype="Property" xsi:type="xsd:integer">%d</psf:DefaultValue>
+        <psf:Mandatory psf2:psftype="Property" xsi:type="xsd:QName">psk:Unconditional</psf:Mandatory>
+        <psf:MaxValue psf2:psftype="Property" xsi:type="xsd:integer">%d</psf:MaxValue>
+        <psf:MinValue psf2:psftype="Property" xsi:type="xsd:integer">%d</psf:MinValue>
+        <psf:Multiple psf2:psftype="Property" xsi:type="xsd:integer">1</psf:Multiple>
+        <psf:Option psf2:psftype="Option" psf2:default="%s">
+        <psf:UnitType psf2:psftype="Property" xsi:type="xsd:string">copies</psf:UnitType>
+        <psf2:InvalidCombinationEntry psf2:feature="%s" psf2:option="%s"/>
+        <psf2:PwgRasterBacksideTumble psf2:DuplexType="%s">true</psf2:PwgRasterBacksideTumble>
+        <psf2:PwgRasterDocumentTypesSupported>%s
+        <psk:AutoSelect psf2:psftype="Option" default="%s"/>%s
+        <psk:Borderless psf2:psftype="Option"/>
+        <psk:Collated psf2:psftype="Option" psf2:default="true"/>
+        <psk:None psf2:psftype="Option" psf2:default="true"/>
+        <psk:Reverse psf2:psftype="Option" psf2:default="%s"/>
+        <psk:Standard psf2:psftype="Option" psf2:default="%s"/>
+        <psk:Uncollated psf2:psftype="Option" />
+        targetNamespace="http://schemas.microsoft.com/windows/2010/09/printing/usbbidi">
+        xmlns:bidi="http://schemas.microsoft.com/windows/2010/09/printing/usbbidi"
+      </choice>
+      </sequence>
+      <BuiltIn name='CompatibleId'     id='DeviceInfo:CompatibleId'/>
+      <BuiltIn name='HardwareId'       id='DeviceInfo:HardwareId'/>
+      <BuiltIn name='IEEE1284DeviceId' id='DeviceInfo:IEEE1284DeviceId'/>
+      <BuiltIn name='Manufacturer'     id='DeviceInfo:Manufacturer'/>
+      <BuiltIn name='ModelName'        id='DeviceInfo:ModelName'/>
+      <BuiltIn name='SerialNumber'     id='DeviceInfo:SerialNumber'/>
+      <BuiltIn name='VidPid'           id='DeviceInfo:VidPid'/>
+      <choice>
+      <Code>0</Code>
+      <Code>10</Code>
+      <Code>2</Code>
+      <Code>3</Code>
+      <Code>4</Code>
+      <Code>5</Code>
+      <Code>6</Code>
+      <Code>7</Code>
+      <Code>8</Code>
+      <element name="Code" type="int"/>
+      <element name="Keyword" type="bidi:string64"/>
+      <element name="Severity" type="int"/>
+      <element name="Status" type="bidi:StatusEntryType" maxOccurs="unbounded" />
+      <enumeration value="BIDI_BLOB"/>
+      <enumeration value="BIDI_BOOL"/>
+      <enumeration value="BIDI_ENUM"/>
+      <enumeration value="BIDI_FLOAT"/>
+      <enumeration value="BIDI_INT"/>
+      <enumeration value="BIDI_STRING"/>
+      <enumeration value="BIDI_TEXT"/>
+      <enumeration value="Get"/>
+      <enumeration value="GetSet"/>
+      <enumeration value="Set"/>
+      <extension base="bidi:INDEXED_PROPERTY"/>
+      <Keyword>AttentionRequired</Keyword>
+      <Keyword>DoorOpen</Keyword>
+      <Keyword>MarkerSupplyEmpty</Keyword>
+      <Keyword>MarkerSupplyLow</Keyword>
+      <Keyword>MediaEmpty</Keyword>
+      <Keyword>MediaJam</Keyword>
+      <Keyword>MediaNeeded</Keyword>
+      <Keyword>None</Keyword>
+      <Keyword>OutputAreaFull</Keyword>
+      <maxLength value='64'/>
+      <pattern value="\w+"/>
+      <pattern value='\w+'/>
+      <sequence minOccurs="1" maxOccurs="unbounded">
+      <Severity>0</Severity>
+      <Severity>1</Severity>
+      <Severity>2</Severity>
+      Copyright (c) Microsoft Corporation.  All rights reserved.
+      USB Printing Bidi Extension XML Schema for Print Class Driver v1.0
+    <!-- copies-default, copies-supported -->
+    <!-- finishings-default, finishings-supported -->
+    <!-- media-default, media-supported, media-col-database -->
+    <!-- media-left-margin-supported, media-right-margin-supported, media-top-margin-supported, media-bottom-margin-supported, media-col-database -->
+    <!-- media-source-default, media-source-supported, media-source-feed-direction -->
+    <!-- media-type-supported -->
+    <!-- multiple-document-handling-default, multiple-document-handling-supported -->
+    <!-- number-up-supported -->
+    <!-- orientation-requested-default -->
+    <!-- output-bin-default, output-bin-supported -->
+    <!-- pdf-fit-to-page-default, pdf-fit-to-page-supported -->
+    <!-- Preferred PDL = %s -->
+    <!-- presentation-direction-number-up-default, presentation-direction-number-up-supported -->
+    <!-- print-color-mode-default, print-color-mode-supported, pwg-raster-document-type-supported -->
+    <!-- Printer = %s -->
+    <!-- printer-resolution-default, %s -->
+    <!-- print-quality-default, print-quality-supported -->
+    <!-- print-scaling-default, print-scaling-supported -->
+    <!-- sides-default, sides-supported -->
+    </complexContent>
+    </complexType>
+    </documentation>
+    </ns0000:JobNUpPresentationDirection>
+    </ns0000:JobPdfFitToPage>
+    </Property>
+    </psf2:DocumentFormatOptions>
+    </psf2:InvalidCombination>
+    </psk:DocumentCollate>
+    </psk:JobBindAllDocuments>
+    </psk:JobCopiesAllDocuments>
+    </psk:JobDuplexAllDocumentsContiguously>
+    </psk:JobHolePunch>
+    </psk:JobInputBin>
+    </psk:JobNUpAllDocumentsContiguously>
+    </psk:JobOutputBin>
+    </psk:JobPageOrder>
+    </psk:JobStapleAllDocuments>
+    </psk:PageBorderless>
+    </psk:PageMediaSize>
+    </psk:PageMediaType>
+    </psk:PageOrientation>
+    </psk:PageOutputColor>
+    </psk:PageOutputQuality>
+    </psk:PageResolution>
+    </psk:PageScaling>
+    </restriction>
+    </sequence>
+    </Status>
+    <attribute name="accessType"        type="bidi:ACCESS_TYPE"  use="required"/>
+    <attribute name="drvPrinterEvent"   type="boolean"           use="optional"/>
+    <attribute name="id"                type="string"   use="required"/>
+    <attribute name="name"              type="bidi:VALUE_NAME"   use="required"/>
+    <attribute name="name"              type="string"   use="required"/>
+    <attribute name="name" type="bidi:PROPERTY_NAME" use="required"/>
+    <attribute name="queryKey"          type="string"            use="optional"/>
+    <attribute name="refreshInterval"   type="integer"           use="optional"/>
+    <attribute name="type"              type="bidi:BIDI_TYPE"    use="required"/>
+    <attribute name="value"             type="string"            use="required"/>
+    <complexContent>
+    <complexType>
+    <data name="%s/%s"><value>%s</value></data>
+    <documentation>
+    <ns0000:JobNUpPresentationDirection psf2:psftype="Feature">%s
+    <ns0000:JobPdfFitToPage psf2:psftype="Feature">
+    <ns0000:PagesPerMinute xsi:type="xsd:integer" psf2:psftype="Property">%d</ns0000:PagesPerMinute>
+    <ns0000:PagesPerMinuteColor xsi:type="xsd:integer" psf2:psftype="Property">%d</ns0000:PagesPerMinuteColor>
+    <Property name='DeviceInfo'>
+    <psf2:CapabilitiesChangeID xsi:type="xsd:string">%d</psf2:CapabilitiesChangeID>
+    <psf2:DocumentFormatOptions>%s%s
+    <psf2:InvalidCombination>
+    <psk:DocumentCollate psf2:psftype="Feature">
+    <psk:DocumentCollate psf2:psftype="Feature">%s
+    <psk:JobBindAllDocuments psf2:psftype="Feature">%s
+    <psk:JobCopiesAllDocuments psf2:psftype="ParameterDef">
+    <psk:JobDuplexAllDocumentsContiguously psf2:psftype="Feature">%s
+    <psk:JobHolePunch psf2:psftype="Feature">%s
+    <psk:JobInputBin psf2:psftype="Feature">
+    <psk:JobNUpAllDocumentsContiguously psf2:psftype="Feature">%s
+    <psk:JobOutputBin psf2:psftype="Feature">%s
+    <psk:JobPageOrder psf2:psftype="Feature">
+    <psk:JobStapleAllDocuments psf2:psftype="Feature">%s
+    <psk:PageBorderless psf2:psftype="Feature">
+    <psk:PageMediaSize psf2:psftype="Feature">%s
+    <psk:PageMediaType psf2:psftype="Feature">%s
+    <psk:PageOrientation psf2:psftype="Feature">%s
+    <psk:PageOutputColor psf2:psftype="Feature">%s
+    <psk:PageOutputQuality psf2:psftype="Feature">%s
+    <psk:PageResolution psf2:psftype="Feature">%s
+    <psk:PageScaling psf2:psftype="Feature">%s
+    <restriction base="string">
+    <restriction base='string'>
+    <sequence minOccurs="1" maxOccurs="unbounded">
+    <sequence>
+    <Status>
+    version="2">
+    xmlns:ns0000="http://schemas.microsoft.com/windows/2018/04/printing/printschemakeywords/Ipp"
+    xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework"
+    xmlns:psf2="http://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2"
+    xmlns:psk="http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords"
+    xmlns:psk12="http://schemas.microsoft.com/windows/2013/12/printing/printschemakeywordsv12"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2"
+   <ns0000:RenderCopiesInPrinter xsi:type="xsd:string" psf2:psftype="Property">%s</ns0000:RenderCopiesInPrinter>
+  </annotation>
+  </complexType>
+  </element>
+  </PortStatus>
+  </Property>
+  </simpleType>
+  <annotation>
+  <complexType name ="PortStatusType">
+  <complexType name ="StatusEntryType">
+  <complexType name="BUILT_IN" >
+  <complexType name="CONST">
+  <complexType name="EVENT">
+  <complexType name="INDEXED_PROPERTY">
+  <complexType name="NON_INDEXED_PROPERTY">
+  <complexType name="PROPERTY">
+  <complexType name="VALUE">
+  <element name="Schema">
+  <PortStatus>
+  <Property name='Printer'>
+  <simpleType name="ACCESS_TYPE">
+  <simpleType name="BIDI_TYPE">
+  <simpleType name="PROPERTY_NAME">
+  <simpleType name="VALUE_NAME">
+  <simpleType name='string64'>
+ A^_^
+ A^A\_
+ A_A^_
+ A_A^A\
+ A_A^A\_^
+ A_A^A]
+ A_A^A]A\_
+ A_A^A]A\_^]
+ H;\$8u
+ H;]Pu
+ H3E H3E
+ Job (ID =%u), already cancelled !!!
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ Retrieve Printer Data Failed: No Operation Attributes
+ Retrieve Printer Data Failed: No Operation Attributes Group
+ Retrieve Printer Data Failed: No value in Language Attribute
+ Windows
+!\$ D
+!\$(L
+!|$p3
+!D$ L
+!D$`H
+!JavaScriptExecutionTerminatedData
+!t$LL
+!This program cannot be run in DOS mode.
+!uXkw
+"#AddFloat
+"name" attribute is not a string
+#GetInt32
+#w~t_
+$7H+9H
+%%s%%s%s
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%I64d
+%s%03u
+%s%c%c%s
+%s%c%s
+&`BidiType
+&pArrayWW
+($pbstrSchemaWd
+()$^.*+?[]|\-{},:=!
+(caller: %p) 
+(D$0H
+(JobID = %u)
+(t$ H
+(t$@H
+(t$@L
+(t$`H
+)t$ H
+)t$@I
+*[@psf2:psftype='Feature']
+*[@psf2:psftype='Option']
+*[@psf2:psftype='ParameterDef']
+*[@psf2:psftype='Property']
+*[@psf2:psftype='ScoredProperty']
+*envelope*
+*labels*
+*photographic*
+*stationery*
+.?AU?$default_delete@VIppJobControl@PrintCore@@@std@@
+.?AUctype_base@std@@
+.?AUhr_error@@
+.?AUIFailureCallback@details@wil@@
+.?AV?$_Iosb@H@std@@
+.?AV?$_Ref_count@$$CBVPrintDeviceCapabilitiesValue@PrintDeviceCapabilitiesOM@@@std@@
+.?AV?$_Ref_count@$$CBVPwgRasterDocumentType@PrintDeviceCapabilitiesOM@@@std@@
+.?AV?$_Ref_count_obj@VNamespaceUri@PrintDeviceCapabilitiesOM@@@std@@
+.?AV?$_Ref_count_obj@VPrintDeviceCapabilitiesValue@PrintDeviceCapabilitiesOM@@@std@@
+.?AV?$_Ref_count_obj@VPrintTicket@PrintDeviceCapabilitiesOM@@@std@@
+.?AV?$_Ref_count_obj@VQualifiedName@PrintDeviceCapabilitiesOM@@@std@@
+.?AV?$basic_ios@GU?$char_traits@G@std@@@std@@
+.?AV?$basic_ostream@GU?$char_traits@G@std@@@std@@
+.?AV?$basic_streambuf@GU?$char_traits@G@std@@@std@@
+.?AV?$basic_stringbuf@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@
+.?AV?$ctype@G@std@@
+.?AV_Facet_base@std@@
+.?AV_Ref_count_base@std@@
+.?AVbad_alloc@std@@
+.?AVbad_cast@@
+.?AVCAtlException@ATL@@
+.?AVexception@@
+.?AVfacet@locale@std@@
+.?AVfailure@ios_base@std@@
+.?AVios_base@std@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVPrintSchemaException@PrintCore@@
+.?AVregex_error@std@@
+.?AVResultException@wil@@
+.?AVruntime_error@std@@
+.?AVsystem_error@std@@
+.?AVTraceLoggingProvider@wil@@
+.?AVWindowsError@PrintCore@@
+.\WriteWWW
+.00cfg
+.bss$00
+.bss$01
+.bss$03
+.bss$dk00
+.bss$dk01
+.bss$pr00
+.bss$pr01
+.bss$zz
+.CRT$XCA
+.CRT$XCC
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.data
+.data$00
+.data$00$brc
+.data$dk00$brc
+.data$dk01$brc
+.data$pr00
+.data$r$brc
+.data$zz
+.data$zz$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gehcont
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$00
+.rdata$01
+.rdata$brc
+.rdata$r
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zz
+.rdata$zz$brc
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.t,f;
+.text
+.text$di
+.text$lp00usbmon.dll!30_clientonly
+.text$lp01usbmon.dll!30_clientonly
+.text$lp03usbmon.dll!35_hybridboot
+.text$mn
+.text$mn$00
+.text$np
+.text$x
+.text$yd
+.text$zy
+.text$zz
+.tls$
+.tls$ZZZ
+.u(H;
+.xdata
+.xdata$x
+//bidi:Notification
+//Const | //Value | //BuiltIn | //Event
+//PortStatus
+/C8v1H
+/fD;e
+/PrinterBidiSchemaElementType_EnumWWWd
+/psf2:PrintDeviceCapabilities/psf2:CapabilitiesChangeID
+:IPrinterBidiSchemaElementWWW
+;\$,r
+;|$,r
+;D$8t
+;N$|fH
+;x }MI
+??_V@YAXPEAX@Z
+??0bad_cast@@QEAA@AEBV0@@Z
+??0bad_cast@@QEAA@PEBD@Z
+??0exception@@QEAA@AEBQEBD@Z
+??0exception@@QEAA@AEBQEBDH@Z
+??0exception@@QEAA@AEBV0@@Z
+??0exception@@QEAA@XZ
+??1bad_cast@@UEAA@XZ
+??1exception@@UEAA@XZ
+??1type_info@@UEAA@XZ
+??3@YAXPEAX@Z
+??8type_info@@QEBAHAEBV0@@Z
+?{uQH
+?IPrinterScriptableSequentialStreamWW,
+?terminate@@YAXXZ
+?what@exception@@UEBAPEBDXZ
+@.data
+@.didat
+@.reloc
+@85P>
+@8l$h
+@8xdu*
+@A]A\_
+@A^_]
+@A^_^
+@A^_^[]
+@A__^][
+@A_A]A\_^[]
+@A_A^]
+@A_A^_
+@A_A^_^]
+@A_A^A\
+@A_A^A\_]
+@A_A^A\_^
+@A_A^A\_^[]
+@A_A^A]A\_
+@A_A^A]A\_^]
+@D t"
+@HA98tm
+@Qm6t
+@SUVWATAUAVAWH
+@SUVWATAVAWH
+@SUVWATAVH
+@SUVWATH
+@SUVWAUAVAWH
+@SUVWAV
+@SUVWAVAWH
+@SUVWAVH
+@SUVWAWH
+@SUVWH
+@SVWATAUAVAW
+@SVWATAUAVAWH
+@SVWH
+@UATAUAVAWH
+@UAVAWH
+@USVWATAUAVAWH
+@USVWATAUAVH
+@USVWATAUAWH
+@USVWATAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWAWH
+@USVWH
+@USWH
+@UVWATAUAVAWH
+@UVWATAVH
+@UVWAVAWH
+@UVWH
+@UWATAVAWH
+@UWAVH
+@VWATAVAWH
+@VWATH
+@VWAVH
+@VWAWH
+@WATAUAVAWH
+@WATAVH
+@WAVAWH
+@wcit
+[ UVWH
+[%hs(%hs)]
+[%hs]
+\$ A;
+\$ E3
+\$ H;_
+\$ UH
+\$ UVWATAUAVAW
+\$ UVWATAUAVAWH
+\$ UVWATAVH
+\$ UVWAVAWH
+\$ UVWH
+\$(E3
+\$@E3
+\$@H!\$HH
+\$@H;\$P
+\$`H;^
+\$0E3
+\$0fD9;
+\$0H;
+\$0H;X
+\$0H+
+\$8E3
+\$8H;
+\$hH;^
+\$pD8c
+\$PE3
+\$PHc
+\$PI;
+\$XH;
+\$XH;]
+\$XH;X
+\\?\Root#RDPBUS#0000#{28d78fad-5a12-11d1-ae5b-0000f803a8c2}\TS
+\\CSR|
+\Printer.Capabilities:Data
+\Printer.Capabilities:UncachedData
+\Printer.Configuration:DocumentFormat
+\Printer.DeviceInfo.NetworkingInfo:IPAddress
+\Printer.DeviceInfo:CompatibleId
+\Printer.DeviceInfo:FriendlyName
+\Printer.DeviceInfo:HardwareId
+\Printer.DeviceInfo:IEEE1284DeviceId
+\Printer.DeviceInfo:Manufacturer
+\Printer.DeviceInfo:ModelName
+\Printer.Resources:Data
+\Printer.Resources:Language
+\Printer.Status.Summary:State
+\Printer.Status.Summary:StateReason
+]PH;_
+]XH;]Pt
+]XL9c
+___lc_codepage_func
+___lc_collate_cp_func
+___lc_handle_func
+___mb_cur_max_func
+__C_specific_handler
+__crtCompareStringA
+__crtLCMapStringA
+__crtLCMapStringW
+__CxxFrameHandler3
+__dllonexit
+__pctype_func
+__TlgCV__
+__uncaught_exception
+_0f9+u
+_amsg_exit
+_callnewh
+_CxxThrowException
+_errno
+_get_errno
+_Hf9+t
+_initterm
+_ismbblead
+_lock
+_onexit
+_purecall
+_ReadBindDocuments
+_ReadDpi
+_ReadFeedDirection
+_ReadHolePunch
+_ReadInputBin
+_ReadJobDuplexQN
+_ReadJobNUp
+_ReadJobNUpDirection
+_ReadNoOfCopies
+_ReadOutputBin
+_ReadPageBorderless
+_ReadPageColor
+_ReadPageDimensions
+_ReadPageMediaSize
+_ReadPageMediaType
+_ReadPageOrientation
+_ReadPageOutputQualityQN
+_ReadPageScaling
+_ReadPdfFitToPage
+_ReadRenderCopiesInPrinter
+_ReadStapleDocuments
+_set_errno
+_stricmp
+_unlock
+_vsnprintf
+_vsnprintf_s
+_vsnwprintf
+_wcsdup
+_wcsicmp
+_wcsnicmp
+_wsetlocale
+_wtof
+_wtoi
+_wtol
+_XcptFilter
+`.rdata
+`A^_^
+`A^_^[]
+`A_A^_^[
+`A_A^A\_^][
+`A_A^A]A\_^]
+`anonymous-namespace'::GetAttributeValue
+`anonymous-namespace'::GetPrintSchemaKeyword
+{|]u"
+{||urH
+{|-uiH
+|$ "u
+|$ AVH
+|$ AWH
+|$ E3
+|$ H+
+|$ I;
+|$(A^
+|$(E3
+|$(H+
+|$@H;
+|$@L;
+|$0H+
+|$0I;|$
+|$8H+
+|$HPs
+|$pA!?H
+|$PI+
+|$PM;
+|AddInt32
+|SuccessW
+}0H+}(H
+~ u:I
+~8D8~@u;L9?u$E3
+~tagSTREAM_SEEKWW 
+</bidi:Schema>
+</PrintDeviceCapabilities>
+</root>
+</schema>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0'?>
+<}wRI
+<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2010/09/printing/usbbidi">
+<DeviceBusyWW
+<PrintDeviceCapabilities
+<root>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+=L9o<
+040904B0
+0A\_^
+0A\_^][
+0A^_^
+0A^A\_
+0A^A\_^]
+0A^A]A\_^
+0A__^
+0A__^[]
+0A_A^_
+0A_A^_^[
+0A_A^_^]
+0A_A^A\
+0A_A^A\_^
+0A_A^A]_^
+0A_A^A]A\]
+0A_A^A]A\_
+0A_A^A]A\_^[
+0A_A^A]A\_^]
+10.0.19041.1023
+10.0.19041.1023 (WinBuild.160101.0800)
+1284_CID_MS_IPP
+2333333
+3D$H%x
+7fD;>u
+8"t H
+8"t#H
+8\$0t
+89:u,9z
+8A^_^[
+8A_A^A]A\_^][
+8PrinterBidiLibWW
+9!t*I
+9_ u-H
+9_TtE9_Xt@
+9{Dt H
+90tFH
+9A9x 
+9bstrValueWWW
+9C }!H
+9Ct|DD
+9k$tI9k(tDH;
+9s$tE9s(t@H;
+9s8s"H
+9T$HA
+A wcrwH
+A!~D3
+A(strgH
+A;E$}oH
+A@wcitD
+A^_^[]
+A^_^][
+A^A\_
+A^A\_^]
+A^A]_^]
+A^A]A\_^[]
+A_A]_^]
+A_A]A\_^
+A_A^]
+A_A^_
+A_A^_^[
+A_A^_^[]
+A_A^_^]
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[]
+A_A^A]
+A_A^A]_]
+A_A^A]_^
+A_A^A]_^][
+A_A^A]A\]
+A_A^A]A\_
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A_A^A]A\_^][
+a~ACD
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/JobActivity
+abort
+accessType
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+ActivityError
+ActivityIntermediateStop
+ActivityStoppedAutomatically
+AddBlobW
+AddBoolW
+AddEnumW
+AddNullW
+AddRequeryKeyWWW
+address family not supported
+address in use
+address not available
+address_family_not_supported
+address_in_use
+address_not_available
+AddStringWWW
+ADt"H
+ADt{I
+ADtHI
+advapi32.dll
+alnum
+alpha
+already connected
+already_connected
+Alternate
+AlternateRoll
+Amedia-size
+anyDH
+anyDu
+API enter
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-1.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-io-l1-1-0.dll
+api-ms-win-core-io-l1-1-1.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+api-ms-win-core-memory-l1-1-0.dll
+api-ms-win-core-misc-l1-1-0.dll
+api-ms-win-core-privateprofile-l1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-registry-l1-1-1.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-synch-l1-2-1.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-core-threadpool-l1-2-0.dll
+api-ms-win-core-util-l1-1-0.dll
+api-ms-win-devices-query-l1-1-0.dll
+api-ms-win-devices-swdevice-l1-1-0.dll
+api-ms-win-devices-swdevice-l1-1-1.dll
+api-ms-win-eventing-classicprovider-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+APPID
+AppID
+application/oxps
+application/PCLm
+application/pdf
+argument list too long
+argument out of domain
+Array
+At least one option required
+ATAVAWH
+AttentionRequired
+attributes-charset
+attributes-natural-language
+AutoSelect
+BacksideTumble
+bad address
+bad allocation
+bad cast
+bad file descriptor
+bad locale name
+bad message
+bad_address
+bad_file_descriptor
+Base Name
+BD t[
+bidi:Notification
+bidi:Schema/PortStatus/Status[Keyword='%s']/Code
+bidi:Schema/PortStatus/Status[Keyword='%s']/Severity
+BIDI_BLOB
+BIDI_BOOL
+BIDI_ENUM
+BIDI_FLOAT
+BIDI_INT
+BIDI_NULL
+BIDI_STRING
+BIDI_TEXT
+BidiFiles
+BidiSPMFile
+BidiUSBFile
+BidiUSBJSFile
+BidiUSBStatusInterface
+BidiWSDFile
+Black_1
+black_1
+black_16
+Black_16
+black_8
+Black_8
+blank
+Borderless
+Bottom
+broken pipe
+bstrQueryKey,
+bstrSchemaWW
+BuiltIn
+bValueWW
+ByPassTray
+C H;C(t
+C(H9C 
+C@!{DH
+C@9C<
+C@9C<vZH
+C@9C<w
+C@H9{
+C\$(H
+C|$HI
+C9fD97
+CalculateExtent Error: Negative extent: leftMargin = %d, rightMargin = %d, topMargin = %d, bottomMargin = %d, paperWidth = %d, paperHeight = %d
+callContext
+CallContext:[%hs] 
+calloc
+CancelIo
+CancelIoEx
+Cancelling job %u due to network communication error
+Can't find root "PrintDeviceCapabilities" node
+Can't find root "PrintTicket" node
+Can't parse sRGB value
+CatalogFile
+CD$0D
+CD$0H
+CD$8H
+CD$HD
+CD$hH
+Center
+cfgmgr32.dll
+CFGMGR32.dll
+CGetBoolW
+CHANx
+Characters
+CharNextW
+child node missing
+CHstrgH
+CID_MS_GENERICPRINT
+CLASSIC
+CloseHandle
+ClosePrinter
+CloseThreadpoolTimer
+CLSID
+CLSIDFromProgID
+CM_Disable_DevNode
+CM_Enable_DevNode
+CM_Get_Device_Interface_ListW
+CM_Get_Device_Interface_PropertyW
+CM_Get_DevNode_PropertyW
+CM_Get_Parent
+CM_Locate_DevNodeW
+CM_Reenumerate_DevNode_Ex
+CM_Register_Notification
+CM_Unregister_Notification
+Cmyk_16
+cmyk_16
+cmyk_8
+Cmyk_8
+cntrl
+CoCreateInstance
+CoGetClassObject
+color
+Color
+Color format value missing
+Colored
+Column
+CommitWW 
+CompanyName
+Compliance
+Component Categories
+Conditional
+connection aborted
+connection already in progress
+connection refused
+connection reset
+connection_aborted
+connection_already_in_progress
+connection_refused
+connection_reset
+Const
+ConstraintScript
+copies
+copies-default
+copies-supported
+CoTaskMemAlloc
+CoTaskMemFree
+CoTaskMemRealloc
+Count of BidiSchema - %d
+Count of requested BidiSchema - %d
+cover-open
+CoWaitForMultipleHandles
+Create a print job
+Created IPP Operations object (printerUri = %s, requestingUserName = %s, requestingUserUri = %s)
+CreateEventW
+CreateFileMappingW
+CreateFileW
+Create-Job attributes: %S
+CreateMutexExW
+CreatePort
+CreateSemaphoreExW
+CreateSemaphoreW
+CreateStreamOnHGlobal
+CreateThread
+CreateThreadpoolTimer
+CreateWellKnownSid
+Creating IPP Cancel-Job request (requestId = %d, jobId = %d)
+Creating IPP Create-Job request (requestId = %d, jobName = %s)
+Creating IPP Get-JobAttributes request (requestId = %d, jobId = %d)
+Creating IPP Get-Jobs request (requestId = %d)
+Creating IPP Get-PrintDeviceCapabilities request (requestId = %d)
+Creating IPP Get-PrintDeviceResources request (requestId = %d, naturalLanguage = %s)
+Creating IPP Get-PrinterAttributes request (requestId = %d)
+Creating IPP Print-Job request (requestId = %d, jobName = %s, documentFormat = %s)
+Creating IPP Send-Document request (requestId = %d, jobId = %d, documentFormat = %s)
+Creating IPP Validate-Job request (requestId = %d, jobName = %s, documentFormat = %s)
+CRIMp
+crit3
+cross device link
+CRYPT32.dll
+CryptBinaryToStringW
+CryptStringToBinaryW
+currentContextId
+currentContextMessage
+currentContextName
+Cx<bu
+D!`$H
+D!p$H
+D#D$@D
+D$  L
+D$ E3
+d$ E3
+D$ E3
+D$ fD
+D$ H;
+D$ H9
+d$ L9a
+d$ UAVAWH
+D$(E3
+D$(H;
+D$(H9
+D$(L+
+D$(strgH
+d$,fD
+D$@8H
+D$@E3
+D$@fD
+D$@I;
+D$@I+
+D$@L+
+D$`E8p
+D$`H;
+D$0;CDw
+D$08H
+D$0E3
+D$0fD98t
+D$0H;
+D$0H+
+D$0H9
+D$0I;
+D$0L;
+D$0strgH
+D$8.H
+D$80H
+D$88H
+D$89s\t
+D$8E3
+D$8H;
+D$8H9
+D$8strgH
+D$H!D$@
+D$H8H
+D$HE3
+D$hH;
+D$HH+D$@H
+D$HH9D$@
+D$pE3
+D$PE3
+d$pE3
+D$pE8{
+D$PfD
+d$pfD
+D$PH;
+D$PH9D$H
+d$pI;
+D$t9A
+D$T9p
+D$xE3
+D$XfE
+D$XH;
+D$xH9D$pt
+D$XI;
+D;{ }
+D;b`u
+D;d$@
+D;L$|
+D;v }VL
+D;zdt
+D8"u3H
+D8%H/
+D8c@t[
+D8d$Ru
+D8u0u/L
+D9&tZA
+D9|$8
+D9A t
+D9A$t
+D9A(t
+D9CPH
+D9kxtCH
+D9l$Tv
+D9OHt3
+D9p$@
+D9yPt
+DafChallengeDevicePresence
+DafChallengeDevicePresence for %s returned hr=0x%x
+DafCloseChallengeContext
+DafCreateChallengeContext
+DataFile
+DataFileType
+DataType
+DBT_DEVICEARRIVAL
+DBT_DEVICEREMOVECOMPLETE
+DD$ H
+DebugBreak
+decimal
+DecodePointer
+default
+Defaulting to 300dpi since printer only reports non-square DPI for printer-resolution-supported
+DefaultValue
+degrees
+DelayLoadFailureHook
+Delete
+DeleteCriticalSection
+DemandStartEnabled
+destination address required
+destination_address_required
+Detail
+DevCloseObjectQuery
+DevCreateObjectQuery
+DevCreateObjectQueryFromId
+DevFreeObjectProperties
+DevFreeObjects
+DevGetObjectProperties
+DevGetObjects
+device or resource busy
+device_bidi_pdc.xml
+deviceassociation.dll
+DeviceInfo:CompatibleId
+DeviceInfo:HardwareId
+DeviceInfo:IEEE1284DeviceId
+DeviceInfo:Manufacturer
+DeviceInfo:ModelName
+DeviceInfo:SerialNumber
+DeviceInfo:VidPid
+DeviceIoControl
+DevicePath
+deviceProcessed
+DevmodeMap
+digit
+directory not empty
+DisableThreadLibraryCalls
+DllAllocSplMem
+DllFreeSplMem
+DllMain
+Document
+DocumentCollate
+DocumentCopiesAllPages
+DocumentDuplex
+DocumentFormat
+document-format
+DocumentFormat: %S
+document-format-default
+document-format-details
+document-format-details-supported
+DocumentFormatOptions section
+document-format-preferred
+document-format-supported
+DocumentInputBin
+document-source-application-name
+document-source-application-version
+door-open
+DriverConfig
+DriverFile
+DriverName
+DriverRender
+drvPrinterEvent
+DuplexType
+DuplexType attribute missing
+DuplicateHandle
+DuplicateTokenEx
+Dynamic Print Monitor
+DynaMon.dll
+E(=csm
+e`t'H
+e1SetBoolWX
+E8=csm
+E9} ~:H
+E9V0u
+EdgeStitch
+EDP://EnterpriseIds
+EDP://EvaluationFlags
+EDP://ExemptEnterpriseIds
+EDP://PolicyFlags
+Eh=csm
+EH=csm
+EmbeddedConfigurationFormat
+Empty job state response - marking job (requestId = %d, SpoolerJobId = %u) as printed
+EnableJavaScriptDebugging
+EncodePointer
+EndDoc (JobID = %u)
+endPrintJob
+EnterCriticalSection
+EnumPrintersW
+EnumSchema
+en-US
+Envelope
+Error
+-error
+Error reading from buffer - given number of bytes to read (%u) at position (%u) exceeds buffer size (%zu bytes)
+Error retrieving Job Print Ticket
+Error sending IPP create-job request: 0x%x
+Error sending IPP validate-job request: 0x%x
+Error sending print-job request: 0x%x
+Error setting port status
+Error setting port status for port %s: 0x%x
+ERROR: Document already started
+ErrorMessage
+ErrorText
+EtwTraceMessage
+Event
+EventActivityIdControl
+EventData
+EventEnabled
+EventFile
+EventRegister
+EventSetInformation
+EventUnregister
+EventWrite
+EventWriteTransfer
+EX=csm
+Ex=csm
+Exception
+executable format error
+executive
+EXH;E@t
+EXH;EPt
+EXH;EPtIH
+ExitProcess
+ExtensionFileLoadFailedData
+f#D$@H
+f;D$@uhD
+F0D8#ubD8c
+F8I;8t#H
+f9,Au
+f9,Cu
+f9,Zu
+f9.u*I;
+f9<Au
+f9<Bu
+f9<Ju
+f9<Nu
+f94Bu
+f94Ju
+f98tP
+fA;R*s\I
+fA9,Cu
+fA9<$t
+fA9<$u
+fA9<@u
+fA9<Cu
+fA9<Du
+fA94@u
+fA96u
+FaceDown
+FaceUp
+faceUp
+face-up
+Failed hr=0x%x
+Failed to Cancel (JobID = %u), Response Code 0x%x
+Failed to complete EndDoc (JobID = %u), IPP response status code 0x%x
+Failed to complete EndDoc (JobID = %u): 0x%x
+Failed to complete EndDoc for cancellation (JobID = %u), Response Code 0x%x
+Failed to complete EndDoc for cancellation (JobID = %u): 0x%x
+Failed to convert string to UTF-8
+Failed to convert string to wstring
+Failed to create threadpool timer
+Failed to get job status from printerUrl = %s, job Id = %d: 0x%x, Response Code 0x%x, mark this job for deletion.
+Failed to get job status from printServiceUrl = %s, Response Code 0x%x
+Failed to get job status from printServiceUrl = %s: 0x%x
+Failed to get size to convert string to UTF-8
+Failed to get size to convert string to wstring
+Failed to retrieve IPP printer attributes (JobID = %u), Response Code 0x%x
+Failed to retrieve IPP printer attributes (JobID = %u): 0x%x
+Failed to retrieve IPP printer attributes (PrinterUrl = %ws)
+Failed to retrieve IPP printer state (PrinterUrl = %ws), Response Code 0x%x
+Failed to retrieve IPP printer status (PrinterUrl = %ws): 0x%x
+Failed to send IPP cancel-job request
+FailFast
+FailingLine
+failureCount
+failureId
+failureType
+FallbackError
+false
+False
+fB9,Bu
+fB9<@u
+fB9<~u
+fB9<su
+fB94Bu
+fC9,Qu
+fC9<lu
+fC9<Qu
+fC94Gu
+fD;;u
+fD;<_u
+fD;0t~H;
+fD;8uwH
+fD9 u
+fD9$Au
+fD9$Qu
+fD9$xu
+fD9&u
+fD9(t
+fD9*H
+fD9,Fu
+fD9,Hu
+fD9,Ju
+fD9,Nu
+fD9+t
+fD9<Au
+fD9<Cu
+fD9<zu
+fD90t(L
+fD90t,
+fD94Bu
+fD94Gu
+fD94Hu
+fD94ou
+fD94xu
+fD94Zu
+fD96u
+fD97w
+fD98t
+fD99t
+fD9d$X
+fE9$^u
+fE9$vu
+fE9<tu
+fE91tFI
+feature
+Feature
+Feature/Parameter name missing
+Feature/Parameter name must begin with a scoping prefix
+FeedDirection
+feedDirectionOverride
+fF9$~u
+fF9<Ou
+fF94Bu
+file exists
+file too large
+FileDescription
+fileName
+filename too long
+filename_too_long
+FilePath
+FileType
+FileVersion
+FindResourceExW
+FindResourceW
+finishings
+finishings-default
+finishings-supported
+Flags
+flipped
+FoldEngineeringZ
+FoldHalf
+FoldLetter
+FoldParallel
+FoldZ
+ForceRemove
+FormatMessageW
+FPrinterBidiSchemaElementType_NullWWWd
+FreeLibrary
+FreePrintPropertyValue
+Function
+function
+Function
+function not supported
+fValueWW
+GEFailureW
+generic
+GetAll
+GetBooleanValue - not a boolean type: 0x%x
+GetBytesX
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDateTimeValue - not a DateTime type: 0x%x
+GetFileAttributesW
+GetFileSize
+GetFileSizeEx
+GetIntegerPairValue - not an integer pair type: 0x%x
+GetIntegerValue - not an integer type: 0x%x
+GetIsEdpEnabled
+GetJobNamedPropertyValue
+GetJobW
+GetLastError
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetOverlappedResult
+GetPrinterDataActivity
+GetPrinterDataW
+GetPrinterDriverW
+GetPrinterW
+GetPrivateProfileSectionW
+GetPrivateProfileStringW
+GetProcAddress
+GetProcessHeap
+GetReadStreamWWW
+getSchemas
+GetServerPolicy
+GetSet
+getStatus
+GetStringTypeW
+GetStringValue - not a string type: 0x%x
+GetStringWWW
+GetSystemTimeAsFileTime
+GetTempFileNameW
+GetTempPathW
+GetTickCount
+GetTickCount64
+GetTokenInformation
+GetTraceEnableFlags
+GetTraceEnableLevel
+GetTraceLoggerHandle
+GetUserDefaultLocaleName
+GetValues: IPP attribute '%s' contains no values
+GetWithArg BidiSchema requested by Get - %s
+GetWithArgument
+GetWriteStreamWW
+GHA;F
+graph
+gUR?~7
+H UATAUAVAWH
+h UAVAWH
+H UVWATAUAVAWH
+H!\$`H
+H!\$P
+H!]HH
+H!|$PH
+H!}0H
+H!T$HH
+H!t$X
+H!t$XA
+H;\$ t)
+H;\$ tL
+H;\$@tYH
+H;\$`
+'H;\$`u
+H;\$Ht(D
+H;\$P
+H;\$Ps
+H;]Pt
+H;]Pu
+H;|$8t
+H;~Hr
+H;1t#H
+H;8u2H
+H;EPu
+H;t$hu
+H+7H;W
+H+D$ u
+H+D$(H
+H+L$8H
+H+N I
+H9\$ 
+H9\$ u(H
+H9\$`
+H9\$0thH
+H9\$p
+H9\$P
+H9\$X
+H9\$xt*H
+H9^Hw4H;
+H9_(H
+H9{`ti@8
+H9{Hs>H
+H9}PtfD
+H9~(u@D
+H9A u8H
+H9A(H
+H9Ahs
+H9C(u
+H9D$(t
+H9D$0t
+H9D$ptS
+H9G0w
+H9GPu
+H9o8u
+H9xHu
+hA^_^[
+HA_A^_^][
+hA_A^A]A\_^[]
+hagaki
+Hagaki
+Hardware
+HardwareId
+HcL$ HcD$$H
+HeapAlloc
+HeapFree
+HeavyweightPaper
+HKEY_CLASSES_ROOT
+HKEY_CURRENT_CONFIG
+HKEY_CURRENT_USER
+HKEY_DYN_DATA
+HKEY_LOCAL_MACHINE
+HKEY_PERFORMANCE_DATA
+HKEY_USERS
+HolePunch
+HolePunchDualBottom
+HolePunchDualLeft
+HolePunchDualRight
+HolePunchDualTop
+HolePunchMultipleBottom
+HolePunchMultipleLeft
+HolePunchMultipleRight
+HolePunchMultipleTop
+HolePunchQuadBottom
+HolePunchQuadLeft
+HolePunchQuadRight
+HolePunchQuadTop
+HolePunchTripleBottom
+HolePunchTripleLeft
+HolePunchTripleRight
+HolePunchTripleTop
+host unreachable
+host_unreachable
+HostBasedDevice
+hresult
+HResult
+hresult
+HResult
+hresult
+HTREE\ROOT\0
+http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework
+http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords
+http://schemas.microsoft.com/windows/2005/03/printing/bidi
+http://schemas.microsoft.com/windows/2010/09/printing/usbbidi
+http://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11
+http://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2
+http://schemas.microsoft.com/windows/2013/12/printing/printschemakeywordsv12
+http://schemas.microsoft.com/windows/2018/04/printing/printschemakeywords/Ipp
+http://www.w3.org/2001/XMLSchema
+http://www.w3.org/2001/XMLSchema-instance
+I;EPs6I
+IcO$I
+identifier removed
+IGNORE
+IIDFromString
+illegal byte sequence
+image/pwg-raster
+ImageableArea value is not number
+ImageableAreaType
+ImpersonatePrinterClient
+ImpersonatePrinterClient failed.
+inappropriate io control operation
+Incompatible type detected for DefaultValue
+Incorrect boolean XML value
+index-3x5
+index-4x6
+index-5x8
+IndexedProperty
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializePrintMonitor2
+InitOnceBeginInitialize
+InitOnceComplete
+integer
+Interface
+Interface Number
+Internal error
+InternalName
+interrupted
+invalid argument
+Invalid ImageableArea value format
+invalid map/set<T> iterator
+Invalid parameter passed to C runtime function.
+invalid seek
+invalid string position
+invalid vector<T> subscript
+invalid_argument
+InvalidCombination section
+InvalidCombinationEntry
+InvalidCombinationEntry missing psf2:option entry
+invoice
+io error
+ios_base::badbit set
+ios_base::eofbit set
+ios_base::failbit set
+iostream
+iostream stream error
+IPP get-jobs request failed
+IPP PDC: %S
+IPP status code=0x%x
+IppJobStatus
+IPrinterScriptablePropertyBagWWWX
+IPrinterScriptableStream
+IPrinterScriptUsbJobContextReturnCodesWW
+IPrinterScriptUsbJobContextWX
+IPrinterScriptUsbWritePrintDataProgressW
+Iregex_error(error_collate): The expression contained an invalid collating element name.
+is a directory
+IsDebuggerPresent
+isdigit
+islower
+iso_a3_297x420mm
+iso_a4_210x297mm
+iso_a5_148x210mm
+iso_a6_105x148mm
+iso-a3
+iso-a4
+iso-a5
+iso-a6
+IsPortActive
+IsSecure
+Issuing challenge for %s
+isupper
+IsWellKnownSid
+iswspace
+Japan
+JavaScriptException
+JavaScriptExecutionErrorData
+jis_b4_257x364mm
+jis_b5_182x257mm
+jis-b4
+jis-b5
+Job %u was Cancelled
+Job Pages Per Set not present in Job property bag: 0x%x
+Job was Cancelled
+Job was Cancelled: return Success
+Job: %u, restarted due to communication error
+Job: JOB_CONTROL_RETAIN [JobID = %u]
+JOB_CONTROL_RELEASE [JobID = %u]
+JobActivity
+JobBindAllDocuments
+JobCancel
+JobCollateAllDocuments
+JobCopiesAllDocuments
+JobDuplexAllDocumentsContiguously
+JobEnd
+JobHolePunch
+job-id
+JobId: %d, Command: %d
+JobId: %d, Status: %d
+JobInputBin
+Job-level JobPagesPerSet
+Job-level PrintTicket
+job-name
+JobNUpAllDocumentsContiguously
+JobNUpPresentationDirection
+JobOutputBin
+job-pages-per-set
+job-pages-per-set-supported
+JobPdfFitToPage
+JobRestarted
+JobStapleAllDocuments
+job-state
+JobState = %d (requestId = %d, jobId = %d)
+job-state-reasons
+jpn_hagaki_100x148mm
+JS1K5
+JScript
+K SVWH
+k VWATAVAWH
+K<!{\D+
+KcbReadWW
+KERNELBASE.dll
+kernelbase.dll
+klh3K
+KOJobPropertyBagWW
+KpH91t
+KValueWWW
+L!d$ H
+L$ E3
+L$ H;O
+l$ I;l$
+L$ SH
+L$ SUVWAUAVAWH
+L$ SWH
+L$ USVWATAUAVAWH
+L$ USVWATAVAWH
+L$ USWH
+l$ VWATAVAW
+l$ VWATAVAWH
+l$ VWAUAVAWH
+l$ VWAVH
+l$ VWAWH
+L$ WH
+l$(E3
+L$(E3
+L$(fD
+L$@!\$(L
+L$@E3
+L$@H;L$Hu
+L$@H3
+L$@I+
+L$`A9y }=I
+L$`H3
+L$`I;
+L$0E3
+L$0H;
+L$0H;H
+L$0H;L$8u
+L$0H3
+L$0I;
+L$4E3
+L$8E3
+L$8H;
+L$8H;K
+L$8H;L$@u
+L$8H;N
+L$8H;O
+l$8H+
+L$8H3
+L$hE3
+L$HE3
+L$HH;
+L$HH;L$Pu
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH3
+L$HL+
+L$PD9
+L$pE3
+l$pfD
+L$pH;
+l$pH;
+L$pH;
+L$PH;
+L$pH;N
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+l$TfD
+L$XE3
+L$xE3
+L$XE3
+L$xH;N
+L$XH+
+L$XH3
+L$xH3
+L$XH3
+L$xH3
+L$XI;
+'L;|$`u
+L;9tDI
+L;d$hu
+L;L$pt
+L;L$pu
+L9{@u
+L9{0t#H
+L9|$0t
+L9}@u
+L96t3H
+L9D$(
+L9hHt
+L9Ihv(H
+L9OPt
+labels
+labels-colored
+labels-glossy
+labels-high-gloss
+labels-inkjet
+labels-matte
+labels-permanent
+labels-satin
+labels-security
+labels-semi-gloss
+Landscape
+LargeCapacity
+last-document
+LcA<E3
+LdrFastFailInLoaderCallout
+LeaveCriticalSection
+LegalCopyright
+Letterhead
+LEVL@
+LightweightPaper
+lineNumber
+list<T> too long
+lntdll.dll
+LoadLibraryExW
+LoadResource
+LoadStringW
+LOCAL
+Local\SM0:%d:%d:%hs
+LocalAlloc
+localeconv
+LocalFree
+LockResource
+lOffsetW
+LogHr
+LongEdgeFirst
+long-edge-first
+lower
+lstrcmpiW
+lstrcmpW
+lValueWW
+M;4$t.I
+M0H;K
+M9't9L
+Mailbox1
+Mailbox10
+Mailbox11
+Mailbox12
+Mailbox13
+Mailbox14
+Mailbox15
+Mailbox16
+Mailbox17
+Mailbox18
+Mailbox19
+Mailbox2
+Mailbox20
+Mailbox21
+Mailbox22
+Mailbox23
+Mailbox24
+Mailbox25
+Mailbox3
+Mailbox4
+Mailbox5
+Mailbox6
+Mailbox7
+Mailbox8
+Mailbox9
+mailto:
+MainRoll
+malloc
+Mandatory
+-manifest.ini
+Manual
+map/set<T> too long
+MapViewOfFile
+Marking job (SpoolerJobId = %u) as completed
+MaxBufferSize
+MaxLength
+MaxValue
+MbstrName
+media
+media-bottom-margin
+media-bottom-margin-supported
+media-col
+media-col-database
+media-col-database contains a collection with no media-size or media-size-name
+media-col-database contains a collection with x-dimension set to RangeOfInteger
+media-col-database contains a collection with y-dimension set to RangeOfInteger
+media-col-default
+media-col-ready
+media-col-supported
+media-default
+media-empty
+media-jam
+media-left-margin
+media-left-margin-supported
+media-needed
+media-right-margin
+media-right-margin-supported
+MediaSizeHeight
+MediaSizeLoaded
+media-size-name
+MediaSizeWidth
+media-source
+media-source-default
+media-source-feed-direction
+media-source-properties
+media-source-supported
+media-supported
+media-supported attribute not found in IPP printer attributes
+media-top-margin
+media-top-margin-supported
+media-type
+media-type-supported
+memchr
+memcmp
+memcpy
+memcpy_s
+memmove
+memmove_s
+memset
+message
+Message
+message
+message size
+message_size
+microns
+Microsoft
+Microsoft Corporation
+Microsoft IPP Class Driver
+Microsoft USB Port Monitor Bidi Extensions Type LibraryWWW
+Microsoft.Windows.Print.IppAdapterCommon
+Microsoft.Windows.Print.IppAdapterCore
+Microsoft.Windows.Print.IppCommon
+Microsoft.Windows.Print.IppConfigConverter
+Microsoft.Windows.Print.IppMon
+Microsoft.Windows.Print.JScriptLib
+Microsoft.Windows.Print.USBMon
+Microsoft-Windows-PrintService-USBMon
+Microsoft-Windows-PrintService-USBMon/Debug
+Middle
+Min/Max properties indicate different DataType
+MinLength
+MinValue
+Missing boolean XML value
+Missing Min/Max property
+missing psf2:feature entry
+module
+Module
+module
+Module_Raw
+monochrome
+MPH;K
+MS-CV
+Msg:[%ws] 
+msvcrt.dll
+MultiByteToWideChar
+multiple-document-handling
+multiple-document-handling-default
+multiple-document-handling-supported
+MyMailbox
+N(H+N I
+N`|TH
+N0I!~(
+na_5x7_5x7in
+na_executive_7.25x10.5in
+na_govt-letter_8x10in
+na_index-3x5_3x5in
+na_index-4x6_4x6in
+na_index-5x8_5x8in
+na_invoice_5.5x8.5in
+na_ledger_11x17in
+na_legal_8.5x14in
+na_letter_8.5x11in
+na-8x10
+na-legal
+na-letter
+Namespace issue
+Namespace not found in document
+namespace::node()
+Namespaces not defined
+NERetryWWW
+network down
+network reset
+network unreachable
+network_down
+network_reset
+network_unreachable
+NIPrinterBidiSchemaResponsesW
+no buffer space
+no child process
+No compatible Mopria PDLs
+No IPP attribute value found for given Print Schema keyword '%S'
+No Job Attributes Group present in IPP response.  Using default job-id
+No job-id present in IPP response.  Using default job-id
+no link
+no lock available
+no message
+no message available
+No page orientation present in PrintTicket
+No Print Schema keyword found for given attribute value: %S
+No PrinterAttributes group found in IPP response (JobID = %u)
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+no_buffer_space
+no_protocol_option
+NonIndexedProperty
+No-op for (JobID = %u) because the job was never committed by the printer and we never sent data to the printer
+NoRemove
+normal
+NorthAmerica
+not a directory
+not a socket
+not a stream
+Not a valid decimal
+Not a valid integer
+not connected
+not enough memory
+not supported
+not_a_socket
+not_connected
+no-value
+ns0000:
+ns0000:_
+ns0000:BacksideTumble
+ns0000:Bind
+ns0000:BusinessCard2x3.5
+ns0000:BusinessCard55x85mm
+ns0000:BusinessCard55x91mm
+ns0000:Colored
+ns0000:EdgeStitch
+ns0000:English14x17
+ns0000:EnglishPhoto-L
+ns0000:Fill
+ns0000:Fit
+ns0000:FoldEngineeringZ
+ns0000:FoldHalf
+ns0000:FoldLetter
+ns0000:FoldParallel
+ns0000:FoldZ
+ns0000:HeavyweightPaper
+ns0000:HolePunch
+ns0000:HolePunchDualBottom
+ns0000:HolePunchDualLeft
+ns0000:HolePunchDualRight
+ns0000:HolePunchDualTop
+ns0000:HolePunchMultipleBottom
+ns0000:HolePunchMultipleLeft
+ns0000:HolePunchMultipleRight
+ns0000:HolePunchMultipleTop
+ns0000:HolePunchQuadBottom
+ns0000:HolePunchQuadLeft
+ns0000:HolePunchQuadRight
+ns0000:HolePunchQuadTop
+ns0000:HolePunchTripleBottom
+ns0000:HolePunchTripleLeft
+ns0000:HolePunchTripleRight
+ns0000:HolePunchTripleTop
+ns0000:Letterhead
+ns0000:LightweightPaper
+ns0000:MetricPhoto-L
+ns0000:None
+ns0000:NorthAmerica3x5
+ns0000:NorthAmerica5x8
+ns0000:Photo10x12
+ns0000:Photo4x4
+ns0000:Photo5x5
+ns0000:Photo89x89mm
+ns0000:Staple
+NtClose
+ntdll.dll
+NtOpenFile
+NtQueryWnfStateData
+NtSetInformationToken
+NtUpdateWnfStateData
+number-up
+number-up-supported
+Numeric
+nValueWWX
+O |QH
+o\$PH
+oD$ f
+oe_14x17_14x17in
+oe_business-card_2x3.5in
+oe_photo-10r_10x12in
+oe_photo-l_3.5x5in
+oe_square-photo_4x4in
+oe_square-photo_5x5in
+oe-photo
+oL$0f
+OLEAUT32.dll
+olSizeWWWX
+om_business-card_55x85mm
+om_business-card_55x91mm
+om_card_54x86mm
+om_dsc-photo_89x119mm
+om_photo-l_89x119mm
+om_square-photo_89x89mm
+om-card
+om-dsc-photo
+om-photo
+onecore\internal\sdk\inc\wil\opensource/wil/result.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+onecoreuap\internal\printscan\inc\private\print\platform\config\PrintDeviceCapabilitiesOM_T.h
+onecoreuap\internal\printscan\inc\private\print\platform\RAIIObjects.h
+onecoreuap\internal\printscan\inc\Serialization.h
+onecoreuap\internal\printscan\inc\serialization.h
+onecoreuap\printscan\print\drivers\rendercommon\pthelper.cpp
+onecoreuap\printscan\print\ipp\ippadaptercore\ippjob.cpp
+onecoreuap\printscan\print\ipp\ippadaptercore\ippjobcompletionlist.cpp
+onecoreuap\printscan\print\ipp\ippadaptercore\ippjobhandler.cpp
+onecoreuap\printscan\print\ipp\ippadaptercore\ippstatushandler.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\documentformatoptions.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\feature.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\helperclasses.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\invalidcombination.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\parameter.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\parser.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\printdevicecapabilities.cpp
+onecoreuap\printscan\print\mobileprint\config\printdevicecapabilitieslib\src\property.cpp
+onecoreuap\printscan\print\shared\ippcommon\ippencoding.cpp
+onecoreuap\printscan\print\shared\ippcommon\IppHelpers.h
+onecoreuap\printscan\print\shared\ippcommon\Serialization.h
+onecoreuap\printscan\print\shared\ippconfigconverter\IppConfigCommon.h
+onecoreuap\printscan\print\shared\ippconfigconverter\ipppdcattributemapper.cpp
+onecoreuap\printscan\print\shared\ippconfigconverter\ipppdrgenerator.cpp
+onecoreuap\printscan\print\shared\ippconfigconverter\ippprintticketparser.cpp
+onecoreuap\printscan\print\spooler\jscriptlib\jscriptdocument.cpp
+onecoreuap\private\printscan\inc\RegHelpers.h
+one-sided
+Only String/QName ParameterDef can have Min/MaxLength properties, must have Min/MaxValue properties
+OpenPrinterW
+OpenSemaphoreW
+OpenThreadToken
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+operation_in_progress
+operation_not_supported
+operation_would_block
+operations-supported
+option
+Option
+Optional
+orientation-requested-default
+OriginalFilename
+originatingContextId
+originatingContextMessage
+originatingContextName
+oT$@f
+OtherMetric
+output-area-almost-full
+output-area-full
+output-bin
+output-bin-default
+output-bin-supported
+OutputDebugStringA
+OutputDebugStringW
+OutputFormat
+owner dead
+p AWH
+p WATAUAVAWH
+pA^_^
+PA^_^
+pA^_^
+PA^_^[]
+PA^_^][
+pA^_^][
+pA_A^_^]
+PA_A^_^]
+pA_A^_^]
+PA_A^A\_^[]
+PA_A^A]_^][
+pA_A^A]A\_^[
+PA_A^A]A\_^[
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+PageBorderless
+pagedelivery
+PageInputBin
+PageMediaSize
+PageMediaType
+PageOrientation
+PageOutputColor
+PageOutputColor attribute missing
+PageOutputQuality
+PageResolution
+PageScaling
+PageSizeName
+pages-per-minute
+pages-per-minute-color
+PagesPerSheet
+ParameterDef
+ParameterDef must have DefaultValue since it can't be generated
+ParameterInit
+ParameterRef
+Parsing failure
+PartA_PrivTags
+pbstrValueWWX
+pbValueWX
+pcbWrittenWW
+PCL4RES.dll
+PCL5ERES.dll
+PCL5URES.dll
+pclm-raster-back-side
+pclm-source-resolution-supported
+PCLXL.dll
+PDC: %S
+pdf-fit-to-page
+pdf-fit-to-page-default
+pdf-fit-to-page-supported
+pdl attribute missing
+PdlOverride
+PDR: %S
+percent
+permission denied
+permission_denied
+Photo
+photographic
+photographic-archival
+photographic-film
+photographic-glossy
+photographic-high-gloss
+photographic-matte
+photographic-satin
+photographic-semi-gloss
+plPositionWW
+pnValueWX
+points
+Port Description
+Port Number
+Port: %s
+Port: %s , Action: %s Schema: %s
+Port: %s , Action: Get/GetAll Schema: %s
+Port: %s , Action: GetWithArg Schema: %s
+Port: %s, all print jobs finished - clearing port status
+Port: %s, job completion list size: %d
+Port: %s, resetting HTTP connection.
+Port: %s, write operation failed. hr=0x%x 
+PortName
+portName
+Portrait
+PortType
+ppArrayW,
+ppPropertyBagWWW
+ppReturnCodesWWW
+ppStreamX
+PresentationDirection
+presentation-direction-number-up
+presentation-direction-number-up-default
+presentation-direction-number-up-supported
+print
+Print Service JScriptHost
+Print.ResourcesLib.dll
+print-color-mode
+print-color-mode-default
+print-color-mode-supported
+PrintConfig.dll
+PrintCore::IppBidiHandler::_BidiEnumSchema
+PrintCore::IppBidiHandler::_BidiGet
+PrintCore::IppBidiHandler::_BidiGetDocumentFormat
+PrintCore::IppBidiHandler::_BidiGetPDC
+PrintCore::IppBidiHandler::_BidiGetPDR
+PrintCore::IppBidiHandler::_BidiGetWithArg
+PrintCore::IppBidiHandler::_DetermineRequestedSchema
+PrintCore::IppBidiHandler::SendRecvBidiData
+PrintCore::IppConfigHelper::RetrievePrinterPdc
+PrintCore::IppConfigHelper::RetrievePrinterPdl
+PrintCore::IppJob::_GetJobIDFromIppResponse
+PrintCore::IppJob::~IppJob
+PrintCore::IppJob::CancelDoc
+PrintCore::IppJob::CreatePrintJobRequestOnIppPrinter
+PrintCore::IppJob::EndDoc
+PrintCore::IppJob::GetPrinterAttributesFromIppPrinter
+PrintCore::IppJob::MapIppStatusToHResult
+PrintCore::IppJob::SetJobFinished
+PrintCore::IppJob::SetJobStatus
+PrintCore::IppJob::Write
+PrintCore::IppJobCompletionList::_CancelCommunicationErrorJobs
+PrintCore::IppJobCompletionList::_RemoveAllFinishedJobs
+PrintCore::IppJobCompletionList::Add
+PrintCore::IppJobCompletionList::GetJobWithSpoolerJobId
+PrintCore::IppJobCompletionList::SyncJobListStatusFromCloudPrinter
+PrintCore::IppJobCompletionList::SyncJobListStatusFromPrinter
+PrintCore::IppJobControl::GetJobInfo
+PrintCore::IppJobControl::GetJobPagesPerSet
+PrintCore::IppJobControl::GetJobPagesPerSet::<lambda_cc4606b2041083038b0c28453754e179>::operator ()
+PrintCore::IppJobControl::GetJobPrintTicket
+PrintCore::IppJobControl::JobControl
+PrintCore::IppJobControl::SetJobStatus
+PrintCore::IppJobControl::SetPortStatus
+PrintCore::IppJobHandler::_ChallengePrinter
+PrintCore::IppJobHandler::CancelPrintJob
+PrintCore::IppJobHandler::EndPrintJob
+PrintCore::IppJobHandler::RestartPrintJob
+PrintCore::IppJobHandler::StartPrintJob
+PrintCore::IppJobHandler::WriteJobBytes
+PrintCore::IppOperations::CreateCancelJobRequest
+PrintCore::IppOperations::CreateCreateJobRequest
+PrintCore::IppOperations::CreateGetJobAttributesRequest
+PrintCore::IppOperations::CreateGetJobsRequest
+PrintCore::IppOperations::CreateGetPrintDeviceCapabilitiesRequest
+PrintCore::IppOperations::CreateGetPrintDeviceResourcesRequest
+PrintCore::IppOperations::CreateGetPrinterAttributesRequest
+PrintCore::IppOperations::CreatePrintJobRequest
+PrintCore::IppOperations::CreateSendDocumentRequest
+PrintCore::IppOperations::CreateValidateJobRequest
+PrintCore::IppOperations::GetCompatiblePdl
+PrintCore::IppOperations::IppOperations
+PrintCore::IppPdcAttributeMapper::MapPdcFeaturesFromPrinterAttributes
+PrintCore::IppPrintTicketParser::_AddMediaColAttributes
+PrintCore::IppStatusHandler::_QueryPrinterState
+PrintCore::IppStatusHandler::_UpdatePrinterStatus
+PrintCore::IppStatusHandler::~IppStatusHandler
+PrintDeviceCapabilities document
+PrintDeviceResources document
+PrintedPageCount
+PRINTENUM
+Printer doesn't support required printer-is-accepting-jobs attribute
+Printer doesn't support the required printer-state attribute (PrinterUrl = %ws)
+Printer doesn't support the required printer-state-reasons attribute (PrinterUrl = %ws)
+Printer is busy and not accepting new jobs right now
+Printer not accepting new jobs right now
+Printer state: %d, printer state reasons: %S
+Printer supports media-col job template attribute but not media-left-margin/media-right-margin/media-top-margin/media-bottom-margin member attributes
+Printer supports media-col job template attribute but not media-size member attribute.  Falling back to media job template attribute
+Printer supports media-col job template attribute but not media-source member attribute.  Falling back to media-source job template attribute
+Printer supports media-col job template attribute but not media-type member attribute.  Falling back to media-type job template attribute
+PrinterAttributes is empty (JobID = %u).  PrinterAttributes group size: %zd
+PrinterBidiSchemaElementType_BlobWWW
+PrinterBidiSchemaElementType_BoolWWWd
+PrinterBidiSchemaElementType_Intd
+PrinterBidiSchemaElementType_StringWd
+PrinterBidiSchemaElementType_TextWWWd
+PrinterDriverID
+PrinterExtensionUrl
+printer-is-accepting-jobs
+PrinterMakeAndModel
+printer-make-and-model
+PrinterName
+printer-output-tray
+printer-resolution
+printer-resolution-default
+printer-resolution-supported
+printer-state
+printer-state-reasons
+printer-stopped
+printer-uri
+Print-Job attributes: %S
+print-quality
+print-quality-default
+print-quality-supported
+PrintQueueV4DriverDirectory
+print-scaling
+print-scaling-default
+print-scaling-supported
+printscan\print\spooler\monitors\dynamon\ippusbport.cpp
+printscan\print\spooler\monitors\ippadaptercommon\ippadaptercommonutil.cpp
+printscan\print\spooler\monitors\ippadaptercommon\ippbidihandler.cpp
+printscan\print\spooler\monitors\ippadaptercommon\ippjobcontrol.cpp
+PrintTicket can't have ImageableArea value
+PrintTicket Copies option exceeds integer max
+PrintTicket document
+prntvpt.dll
+ProcessedByteCountWW7
+ProductName
+ProductVersion
+Property
+PropertyBag
+protocol error
+protocol not supported
+protocol_not_supported
+PRVA`
+psf:Feature
+psf:Option
+psf:ParameterInit
+psf:ParameterRef
+psf:PrintTicket
+psf:Property
+psf:ScoredProperty
+psf:Value
+psf2:DocumentFormatOptions
+psf2:DuplexPageOrder
+psf2:EmbeddedConfigurationFormat
+psf2:EmbeddedConfigurationFormats/psf2:EmbeddedConfigurationFormatEntry
+psf2:InvalidCombination
+psf2:InvalidCombinationEntry
+psf2:PrintDeviceCapabilities
+psf2:PwgRasterBacksideTumble
+psf2:PwgRasterDocumentTypesSupported/psf2:PwgRasterDocumentType
+psf2:RenderUpscaleDPI
+psk:AutoSelect
+psk:Bale
+psk:BindBottom
+psk:BindLeft
+psk:BindRight
+psk:BindTop
+psk:Borderless
+psk:BottomLeft
+psk:BottomRight
+psk:Collated
+psk:Color
+psk:CreditCard
+psk:Draft
+psk:EdgeStitchBottom
+psk:EdgeStitchLeft
+psk:EdgeStitchRight
+psk:EdgeStitchTop
+psk:EnvelopePlain
+psk:FaceDown
+psk:FaceUp
+psk:Fold
+psk:Grayscale
+psk:High
+psk:ISOA3
+psk:ISOA4
+psk:ISOA5
+psk:ISOA6
+psk:JapanHagakiPostcard
+psk:JISB4
+psk:JISB5
+psk:JobInputBin
+psk:JogOffset
+psk:Label
+psk:Landscape
+psk:LeftBottom
+psk:LeftTop
+psk:LongEdgeFirst
+psk:Monochrome
+psk:None
+psk:Normal
+psk:NorthAmerica4x6
+psk:NorthAmerica5x7
+psk:NorthAmerica8x10
+psk:NorthAmericaExecutive
+psk:NorthAmericaLegal
+psk:NorthAmericaLetter
+psk:NorthAmericaStatement
+psk:NorthAmericaTabloid
+psk:OneSided
+psk:PageBorderless
+psk:PageMediaSize
+psk:PageMediaType
+psk:Photographic
+psk:PhotographicGlossy
+psk:PhotographicHighGloss
+psk:PhotographicSemiGloss
+psk:Plain
+psk:Portrait
+psk:ReverseLandscape
+psk:RightBottom
+psk:RightTop
+psk:SaddleStitch
+psk:ShortEdgeFirst
+psk:StapleBottomLeft
+psk:StapleBottomRight
+psk:StapleDualBottom
+psk:StapleDualLeft
+psk:StapleDualRight
+psk:StapleDualTop
+psk:StapleTopLeft
+psk:StapleTopRight
+psk:TopLeft
+psk:TopRight
+psk:Transparency
+psk:Trim
+psk:TwoSidedLongEdge
+psk:TwoSidedShortEdge
+psk:Uncollated
+pTypeWWW
+punct
+pValueWW
+PWG5100.3
+PwgRasterBacksideTumble
+pwg-raster-document-resolution-supported
+pwg-raster-document-sheet-back
+PwgRasterDocumentType
+pwg-raster-document-type-supported
+QAddTextW
+qDt"H
+qDt$H
+Qhttp://manifests.microsoft.com/win/2011/04/windows/printing/spooler/usbmon/events
+Qkkbal
+QName
+QName ParameterDef can't have Min/MaxValue properties, must have Min/MaxLength properties
+QName ParameterDef must have DefaultValue
+Querying printer for job status
+queryKey
+QueryPerformanceCounter
+QueueProperties
+r o1zF
+raB3G
+RAbortTheJobW
+RaiseException
+RaiseFailFastException
+read only file system
+ReadFile
+realloc
+recyclable
+refcA
+refcE3
+refcH
+refreshInterval
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyValueW
+RegDeleteKeyW
+RegDeleteValueW
+RegEnumKeyExW
+RegEnumValueW
+regex_error
+regex_error(error_backref): The expression contained an invalid back reference.
+regex_error(error_badbrace): The expression contained an invalid range in a { expression }.
+regex_error(error_badrepeat): One of *?+{ was not preceded by a valid regular expression.
+regex_error(error_brace): The expression contained mismatched { and }.
+regex_error(error_brack): The expression contained mismatched [ and ].
+regex_error(error_complexity): The complexity of an attempted match against a regular expression exceeded a pre-set level.
+regex_error(error_ctype): The expression contained an invalid character class name.
+regex_error(error_escape): The expression contained an invalid escaped character, or a trailing escape.
+regex_error(error_paren): The expression contained mismatched ( and ).
+regex_error(error_parse)
+regex_error(error_range): The expression contained an invalid character range, such as [b-a] in most encodings.
+regex_error(error_space): There was insufficient memory to convert the expression into a finite state machine.
+regex_error(error_stack): There was insufficient memory to determine whether the regular expression could match the specified character sequence.
+regex_error(error_syntax)
+RegGetValueW
+RegisterTraceGuidsW
+REGISTRY
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetKeyValueW
+RegSetValueExW
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+Removing completed job %u from completion list
+RenderCopiesInPrinter
+-report
+requested-attributes
+requesting-user-name
+requesting-user-uri
+RequestLang
+requestStatus
+RequiredClass
+ResetEvent
+ResolutionX
+ResolutionY
+ResolveDelayLoadedAPI
+resource deadlock would occur
+resource unavailable try again
+ResourceFile
+resources-are-not-ready
+result out of range
+Retrieve PDC/PDR operation failed.
+Retrieve Printer Data operation failed.
+Retrieve printer PDC operation failed (IPP status code: %d): 0x%x
+Retrieve printer PDC operation failed: 0x%x
+Retrieve printer PDL operation failed (IPP status code: %d): 0x%x
+Retrieve printer PDL operation failed: 0x%x
+Retrieved Job Pages Per Set: %d
+Retrieved Job Print Ticket: %S
+RetrievePrintDeviceCapabilitiesFromDevice
+RetrievePrinterDataResult
+RetrievePrintPageDescriptionLanguageFromDevice
+ReturnCodesW
+ReturnHr
+Reverse
+ReverseLandscape
+ReverseOddFirst
+ReversePortrait
+RevertToPrinterSelf
+RevertToPrinterSelf failed.
+RevertToSelf
+Right
+Roll1
+Roll10
+Roll2
+Roll3
+Roll4
+Roll5
+Roll6
+Roll7
+Roll8
+Roll9
+Root node
+Root Node
+rotated
+RouterAllocBidiMem
+RouterAllocBidiResponseContainer
+RouterCreatePrintAsyncNotificationChannel
+RouterFreeBidiMem
+RouterFreeBidiResponseContainer
+RPCRT4.dll
+RtlAllocateHeap
+RtlCaptureContext
+RtlClearBit
+RtlCreateUnicodeString
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlFreeHeap
+RtlFreeUnicodeString
+RtlInitUnicodeString
+RtlLookupFunctionEntry
+RtlNotifyFeatureUsage
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlQueryFeatureConfiguration
+RtlRegisterFeatureConfigurationChangeNotification
+RtlSetBit
+RtlSubscribeWnfStateChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlUnsubscribeWnfNotificationWaitForCompletion
+RtlVirtualUnwind
+s<;s@vk
+Schema
+schemas.microsoft.com/windows/2003/08/printing/printschemakeywords
+-schemas.microsoft.com/windows/2018/04/printing/printschemakeywords/Ipp
+ScoredProperty
+SECURITY
+Selected PDL (document-format-default): %S
+Selected PDL (document-format-preferred): %S
+Selected PDL (document-format-supported): %S
+Selected PDL (PdlOverride): %S
+SelectionNamespaces
+separate-documents-collated-copies
+separate-documents-uncollated-copies
+Serial Number
+service-off-line
+Set Job (JobID = %u) failed hr=0x%x
+SetErrorMode
+SetEvent
+SetFilePointerEx
+SetInt32
+SetJobW
+SetLastError
+setlocale
+SetPortW
+SetPrinterW
+setSchema
+SetStringWWWX
+SetThreadpoolTimer
+SetThreadToken
+Setting job status (SpoolerJobId: %d): 0x%x
+SetTokenInformation
+SetUnhandledExceptionFilter
+setupapi
+SETUPAPI.dll
+SetupDiCallClassInstaller
+SetupDiCreateDeviceInfoList
+SetupDiCreateDeviceInfoListExW
+SetupDiDestroyDeviceInfoList
+SetupDiEnumDeviceInfo
+SetupDiEnumDeviceInterfaces
+SetupDiGetClassDevsW
+SetupDiGetDeviceInterfaceDetailW
+SetupDiGetDevicePropertyW
+SetupDiOpenDeviceInfoW
+SetupDiOpenDeviceInterfaceRegKey
+SetupDiOpenDeviceInterfaceW
+SetupDiSetClassInstallParamsW
+sgray_1
+SGray_1
+sgray_16
+SGray_16
+SGray_8
+sgray_8
+SHCreateStreamOnFileW
+SHLWAPI.dll
+Should have both Min/Max range definition
+Should have DataType property
+Shutting down status polling thread pool
+sides
+sides-default
+sides-supported
+SizeofResource
+Skipping nUP feature - number-up-supported not using 1SetOf Integer (Tag is 0x%x)
+Sleep
+SleepConditionVariableSRW
+Software
+Source
+space
+SpoolerJobId
+SPOOLSS.DLL
+sprintf_s
+Srgb_16
+srgb_16
+Srgb_8
+srgb_8
+Stacker1
+Stacker10
+Stacker2
+Stacker3
+Stacker4
+Stacker5
+Stacker6
+Stacker7
+Stacker8
+Stacker9
+Standard
+Standard Dynamic Printing Port Monitor DLL
+Staple
+startPrintJob
+state not recoverable
+stationery
+stationery-archival
+stationery-bond
+stationery-coated
+stationery-colored
+stationery-cotton
+stationery-fine
+stationery-heavyweight
+stationery-heavyweight-coated
+stationery-inkjet
+stationery-letterhead
+stationery-lightweight
+stationery-preprinted
+stationery-pre-punched
+Status Polling thread pool shut down
+std::exception: %hs
+stdole2.tlbWWW
+Stopped
+strchr
+strcmp
+strcspn
+stream timeout
+STREAM_SEEK_CURW 
+STREAM_SEEK_ENDW
+STREAM_SEEK_SETW 
+streamSeekWW
+strgH
+strgL
+string
+String ParameterDef must have Min/MaxLength properties
+string too long
+StringFileInfo
+SubDetail
+SUVWATAUAVAWH
+SUVWAVH
+SVWATAUAVAWH
+SVWAVAWH
+SVWAVH
+SWD\PRINTENUM\%ws
+SwDeviceClose
+SwDeviceCreate
+SwDeviceSetLifetime
+system
+SYSTEM
+System\CurrentControlSet\Control\Print
+SYSTEM\CurrentControlSet\Control\Print\Monitors\USB Monitor\Ports
+SYSTEM\CurrentControlSet\Control\Print\Monitors\USB Monitor\UsbPortList
+SYSTEM\CurrentControlSet\Control\Print\Monitors\WSD Port\Adapters\IPP
+t L;L$pt E
+t!D9t$pu
+t"D8=
+t$ AWH
+t$ E3
+T$ E3
+t$ fD
+t$ H9q
+t$ L9
+T$ t6I
+t$ UWATAVAWH
+t$ WATAUAVAWH
+t$ WATAVH
+t$ WAVAW
+t$ WAVAWH
+t$ WH
+t$(H+
+t$(I;t$
+T$@H;S`t
+t$@I;
+t$@t(
+t$`+t$X3
+t$`fD
+T$0A;
+T$0E3
+T$8L+
+T$HE3
+t$HH;
+t$P+t$H
+T$PE3
+T$pH;
+T$PL;
+T$XE3
+t$xE3
+T$XE3
+T$xH;
+t&E9V0t E
+t*fA98t$H
+t*fE9E
+t*H;\$`t*
+t*L;|$`t*
+t:y"I
+t@<!t1<#t-H
+t@L;H
+t\H91uW
+t{D9N
+t~fA9<$twH
+t7HcS
+tabloid
+tagPrinterBidiSchemaElementTypeWd
+tCf9]
+tcH!|$PL
+TEMP$
+TemporaryStreams
+TEMPP
+TerminateProcess
+TerminateThread
+text file busy
+tGD9{PuAH
+threadId
+tIfE98tCI
+tIH9{ tCH9{(t=H9{0t7H9{8t1H
+timed out
+timed_out
+tj@85
+tJD9y
+tlnkH
+tlstH
+tmH9ZhtgH
+tnLcSt
+tobottom-toleft
+tobottom-toright
+tOH9{
+toleft-tobottom
+toleft-totop
+tolower
+toner-empty
+toner-low
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
+too_many_files_open
+toright-tobottom
+toright-totop
+totop-toleft
+totop-toright
+toupper
+towlower
+TpAllocAlpcCompletion
+TpAllocIoCompletion
+TpAllocPool
+TpAllocTimer
+TpAllocWait
+TpAllocWork
+TpCallbackMayRunLong
+TpPostWork
+TpReleaseAlpcCompletion
+TpReleaseIoCompletion
+TpReleasePool
+TpReleaseTimer
+TpReleaseWait
+TpReleaseWork
+TpSetPoolMaxThreads
+TpSetTimer
+TpSetWait
+TpSimpleTryPost
+TpStartAsyncIoOperation
+TpWaitForAlpcCompletion
+TpWaitForIoCompletion
+TpWaitForTimer
+TpWaitForWait
+TpWaitForWork
+TraceInfo
+TraceMessage
+TraceWarning
+Translation
+transparency
+Tray1
+Tray10
+Tray11
+Tray12
+Tray13
+Tray14
+Tray15
+Tray16
+Tray17
+Tray18
+Tray19
+Tray2
+Tray20
+Tray3
+Tray4
+Tray5
+Tray6
+Tray7
+Tray8
+Tray9
+TROPH
+TROPu
+TSPortsEnumAllLimit
+TTBL,
+tU9hPuP
+tUH9{
+TUUUUUU
+two-sided-long-edge
+two-sided-short-edge
+Type is not integer
+Type is not QName
+Type is not string
+TYPELIB
+TypeLib
+u HcA<H
+u,A8i
+u,E8y
+u`f9C
+u4@8|$Rt
+u59_Tt09_Xt+H
+U8A;B
+u8H;Y
+U8L9:u
+u99GTt49GXt/H
+UATAUAVAWH
+UAVAWH
+uBL!u
+uF9D$0t@H
+Uncollated
+Unconditional
+UnhandledExceptionFilter
+unires.dll
+UnitType
+Unknown
+unknown
+unknown error
+UnmapViewOfFile
+Unrecognized DataType
+UnregisterClassA
+UnregisterTraceGuids
+Unspecified.
+unsupported
+Unsupported BidiSchema requested for Get - %s
+Unsupported BidiSchema requested for GetWithArg - %s
+Unsupported types for Min/Max Range
+UnsupportedSchema
+upper
+uqD;D$xu
+uRichW
+USB%03u
+USBMON.DLL
+UsbMon.pdb
+USBMon_Task_ExtensionFile_Load
+USBMon_Task_JavaScript_Execution
+USBPRINT\
+USER32.dll
+Using default Print Schema value '%S', for IPP attribute '%S'
+USVWATAUAVAWH
+USVWAVH
+uTD9o8uNH
+utf-8
+uUA9x
+UuidCreate
+UVAVH
+uvD9=
+UVWATAUAVAWH
+UVWATAVH
+UVWAUAVH
+UVWAUAWH
+UVWAVAWH
+UWATAVAWH
+UWAUAVAWH
+UWAVH
+UWAWH
+uxxPH
+uzH9A
+V A9V$u
+v;fD;
+V4_Connection_Name
+V4_DocumentFormat
+V4_Merged_ConfigFile_Name
+V4_PrintDeviceCapabilities
+Validate-Job attributes: %S
+validate-job returned successful-ok-ignored-or-substituted-attributes: %S
+value
+Value
+Value element
+Value has unrecognized xsi:type
+Value node missing, or missing xsi:type attribute
+value too large
+VarFileInfo
+vector<bool> too long
+vector<T> too long
+Verify XML is well-formed
+Version
+VS_VERSION_INFO
+VWATAUAVAWH
+VWATAUAVH
+VWATAUAWH
+VWATAVAWH
+VWAUAVAWH
+VWAVH
+VWAWH
+w$H9Q
+w&H9Q
+WaitForMultipleObjects
+WaitForMultipleObjectsEx
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WakeAllConditionVariable
+-warning
+WATAUAVAWH
+WATAUH
+WATAVH
+WAVAWH
+wcschr
+wcscmp
+wcsncmp
+wcsncpy_s
+wcsrchr
+wcsstr
+wcstod
+wcstok_s
+wcstol
+WEVT_TEMPLATE
+WEVTL
+WideCharToMultiByte
+wilActivity
+WilError_03
+wilResult
+WilStaging_02
+WIN://PKG
+WIN://PKGHOSTID
+WIN://SYSAPPID
+win:Informational
+winspool.drv
+WINUSB.DLL
+WinUsb_AbortPipe
+WinUsb_Free
+WinUsb_GetOverlappedResult
+WinUsb_Initialize
+WinUsb_ReadPipe
+WinUsb_SetCurrentAlternateSetting
+WinUsb_WritePipe
+wn>Jj
+WriteFile
+writePrintData
+wrong protocol type
+wrong_protocol_type
+x ATAVAWH
+x AUAVAWH
+x AVH
+x AVL
+x AWH
+x UATAUAVAWH
+x UAVAWH
+XA^A\_^][
+xA_A^_^][
+XA_A^A]A\_^
+xBH9\$ht;E3
+xdigit
+x-dimension
+x-dimension member attribute not found within media-size collection
+xDt.H
+xDt3H
+xf9|$Xr`L
+xk;\$8sLL
+XML snippet - out of memory
+XML snippet exceeds %u characters
+XML snippet failed
+xmlns
+xmlns:bidi='http://schemas.microsoft.com/windows/2005/03/printing/bidi'
+xmlns:bidi='http://schemas.microsoft.com/windows/2010/09/printing/usbbidi'
+xmlns:psf='http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework' xmlns:psf2='http://schemas.microsoft.com/windows/2013/12/printing/printschemaframework2' xmlns:psk='http://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords' xmlns:psk11='http://schemas.microsoft.com/windows/2013/05/printing/printschemakeywordsv11' xmlns:psk12='http://schemas.microsoft.com/windows/2013/12/printing/printschemakeywordsv12' xmlns:ns0000='http://schemas.microsoft.com/windows/2018/04/printing/printschemakeywords/Ipp' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+xPrinterBidiSchemaElementType_FloatWWd
+xqA;v
+Y@H9;u+L
+y|?u?
+Y3SetSizeW
+y-dimension
+y-dimension member attribute not found within media-size collection
+YDt.H
+yDt0H
+YDt-H
+ySetBytes
+yxcuA
+z wcrw
+z@wcitA
+z@wcitH
+ZDthH

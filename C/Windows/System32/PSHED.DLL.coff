@@ -1,0 +1,126 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\PSHED.DLL
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B030 Import Address Table
+             1C000B1D8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         A45 WheaConfigureErrorSource
+                         597 MmMapIoSpaceEx
+                         B16 ZwQueryValueKey
+                         483 KeInitializeEvent
+                         A54 WheaLogInternalEvent
+                         530 KeWaitForSingleObject
+                         A48 WheaGetErrorSource
+                         A88 ZwClose
+                         AD8 ZwOpenKey
+                         459 KeEnterCriticalRegion
+                         A97 ZwCreateKey
+                         512 KeSetSystemGroupAffinityThread
+                         474 KeGetEffectiveIrql
+                          8C ExAcquirePushLockExclusiveEx
+                         6BF PoSetHiberRange
+                         4FB KeRevertToUserGroupAffinityThread
+                         116 ExReleasePushLockExclusiveEx
+                         4A9 KeLowerIrql
+                          CA ExFreePoolWithTag
+                         532 KfRaiseIrql
+                         B4E ZwSetValueKey
+                         4B4 KeQueryActiveProcessorCountEx
+                         4A5 KeLeaveCriticalRegion
+                         246 HalDispatchTable
+                         B8D _vsnwprintf
+                         95C RtlUnicodeStringToInteger
+                         5F5 NtGetEnvironmentVariableEx
+                         612 NtQueryEnvironmentVariableInfoEx
+                         265 HalPrivateDispatchTable
+                         505 KeSetEvent
+                         5C6 MmUnmapIoSpace
+                         87E RtlInitUnicodeString
+                          A3 ExAllocatePoolWithTag
+                         4AE KeProcessorGroupAffinity
+                         440 KeBugCheckEx
+                         8E6 RtlPcToFileName
+
+    HAL.dll
+             1C000B000 Import Address Table
+             1C000B1A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          12 HalEnumerateEnvironmentVariablesEx
+                          53 KeFlushWriteBuffer
+                           9 HalBugCheckSystem
+                          55 KeStallExecutionProcessor
+                          40 HalSetEnvironmentVariableEx
+
+  Section contains the following exports for PSHED.dll
+
+    00000000 characteristics
+    4C55DC99 time date stamp
+        0.00 version
+           1 ordinal base
+          30 number of functions
+          30 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000CA90 PshedAllocateMemory
+          2    1 00001BE0 PshedArePluginsPresent
+          3    2 000014E0 PshedAttemptErrorRecovery
+          4    3 000015A0 PshedBugCheckSystem
+          5    4 000013F0 PshedClearErrorRecord
+          6    5 00001810 PshedDisableErrorSource
+          7    6 00002750 PshedDoPfa
+          8    7 00001750 PshedEnableErrorSource
+          9    8 00001420 PshedFinalizeErrorRecord
+         10    9 0000CAC0 PshedFreeMemory
+         11    A 0000C2F0 PshedGetAllErrorSources
+         12    B 00002000 PshedGetBootErrorPacket
+         13    C 000015C0 PshedGetErrorSourceInfo
+         14    D 000027C0 PshedGetHalEnlightenments
+         15    E 000018E0 PshedGetInjectionCapabilities
+         16    F 000026B0 PshedInitAvailable
+         17   10 000026D0 PshedInitGlobal
+         18   11 00002710 PshedInitProc
+         19   12 0000F4B0 PshedInitialize
+         20   13 00001A00 PshedInjectError
+         21   14 00002300 PshedIsSystemWheaEnabled
+         22   15 00001B70 PshedMarkHiberPhase
+         23   16 00001320 PshedReadErrorRecord
+         24   17 0000C4B0 PshedRegisterPlugin
+         25   18 00001010 PshedRetrieveErrorInfo
+         26   19 00001680 PshedSetErrorSourceInfo
+         27   1A 000027A0 PshedSetHalEnlightenments
+         28   1B 000027E0 PshedSynchronizeExecution
+         29   1C 0000C9E0 PshedUnregisterPlugin
+         30   1D 000011C0 PshedWriteErrorRecord
+
+  Summary
+
+        3000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        6000 .rsrc
+        5000 .text
+        1000 GFIDS
+        3000 INIT
+        1000 PAGE
+        1000 PAGELK

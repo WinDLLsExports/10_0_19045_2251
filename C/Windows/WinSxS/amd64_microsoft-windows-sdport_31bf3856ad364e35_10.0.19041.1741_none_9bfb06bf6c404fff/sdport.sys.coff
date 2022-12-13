@@ -1,0 +1,192 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-sdport_31bf3856ad364e35_10.0.19041.1741_none_9bfb06bf6c404fff\sdport.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0013018 Import Address Table
+             1C0013420 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         309 IoDetachDevice
+                         846 RtlFreeUnicodeString
+                         30D IoDisconnectInterrupt
+                         48D KeInitializeSpinLock
+                         306 IoDeleteDevice
+                         35A IoInitializeRemoveLockEx
+                         7DF RtlCopyUnicodeString
+                         2CC IoAttachDeviceToDeviceStack
+                         395 IoRegisterShutdownNotification
+                         336 IoGetDeviceProperty
+                          A3 ExAllocatePoolWithTag
+                         2EE IoCreateDevice
+                         40F IofCallDriver
+                          CA ExFreePoolWithTag
+                         485 KeInitializeEvent
+                         410 IofCompleteRequest
+                         428 KeAcquireInStackQueuedSpinLock
+                         498 KeInsertQueueDpc
+                         10F ExReleaseFastMutex
+                         2C0 IoAllocateDriverObjectExtension
+                         443 KeCancelTimer
+                          87 ExAcquireFastMutex
+                         69B PoFxPowerControl
+                         517 KeSetTimer
+                         691 PoFxActivateComponent
+                         697 PoFxIdleComponent
+                         4C0 KeQueryInterruptTimePrecise
+                         507 KeSetEvent
+                         4AB KeLowerIrql
+                         448 KeClearEvent
+                         534 KfRaiseIrql
+                         59C MmMapLockedPagesSpecifyCache
+                         532 KeWaitForSingleObject
+                         378 IoQueryFullDriverPath
+                         6AA PoFxSetComponentWake
+                         3DC IoSynchronousCallDriver
+                         31C IoFreeIrp
+                         568 MmBuildMdlForNonPagedPool
+                         2C4 IoAllocateMdl
+                         69C PoFxPowerOnCrashdumpDevice
+                         882 RtlInitUnicodeString
+                         55C MmAllocateContiguousNodeMemory
+                         577 MmFreeContiguousMemory
+                         582 MmGetPhysicalAddress
+                         31F IoFreeMdl
+                         2C2 IoAllocateIrp
+                         6A1 PoFxRegisterCrashdumpDevice
+                         2C7 IoAllocateWorkItem
+                         524 KeSynchronizeExecution
+                         AB0 ZwDeviceIoControlFile
+                         530 KeWaitForMultipleObjects
+                         42F KeAcquireSpinLockAtDpcLevel
+                         37F IoQueueWorkItemEx
+                         322 IoFreeWorkItem
+                         4EA KeReleaseSpinLockFromDpcLevel
+                         33C IoGetDriverObjectExtension
+                         429 KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         4E2 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         2BA IoAcquireRemoveLockEx
+                         33A IoGetDmaAdapter
+                         38C IoRegisterDeviceInterface
+                         398 IoReleaseRemoveLockEx
+                         7A7 RtlAnsiStringToUnicodeString
+                         481 KeInitializeDpc
+                         35E IoInvalidateDeviceState
+                         3B6 IoSetDeviceInterfaceState
+                         6AE PoFxUnregisterDevice
+                         675 ObfDereferenceObject
+                         6E2 PsCreateSystemThread
+                         B8F _vsnprintf
+                         668 ObReferenceObjectByPointer
+                         48F KeInitializeTimer
+                         5C9 MmUnmapIoSpace
+                         3A1 IoReportInterruptActive
+                         879 RtlInitAnsiString
+                         665 ObReferenceObjectByHandle
+                         2E9 IoConnectInterruptEx
+                         6AB PoFxSetDeviceIdleTimeout
+                         59A MmMapIoSpaceEx
+                         3A2 IoReportInterruptInactive
+                         ADA ZwOpenFile
+                         897 RtlIntegerToUnicodeString
+                         46B KeFlushQueuedDpcs
+                         A8C ZwClose
+                         6CE PoStartNextPowerIrp
+                         328 IoGetAttachedDeviceReference
+                         7C9 RtlCompareMemory
+                         6A9 PoFxSetComponentResidency
+                         6A2 PoFxRegisterDevice
+                         684 PoCallDriver
+                         6A7 PoFxReportDevicePoweredOn
+                         6BE PoRequestPowerIrp
+                         6AD PoFxStartDevicePowerManagement
+                         695 PoFxCompleteIdleState
+                         6A8 PoFxSetComponentLatency
+                         692 PoFxCompleteDevicePowerNotRequired
+                         694 PoFxCompleteIdleCondition
+                         90B RtlQueryRegistryValuesEx
+                         B1A ZwQueryValueKey
+                         ADC ZwOpenKey
+                         987 RtlxAnsiStringToUnicodeSize
+                         2D0 IoBuildDeviceIoControlRequest
+                         2D2 IoBuildSynchronousFsdRequest
+                         35D IoInvalidateDeviceRelations
+                         496 KeInsertQueue
+                         4F2 KeRemoveQueue
+                         48A KeInitializeQueue
+                         3D4 IoSizeofWorkItem
+                         35C IoInitializeWorkItem
+                         3E2 IoTryQueueWorkItem
+                         677 ObfReferenceObject
+                         50F KeSetPriorityThread
+                         B91 _vsnwprintf
+                         78C PsTerminateSystemThread
+                         4E0 KeReleaseInStackQueuedSpinLock
+
+    HAL.dll
+             1C0013000 Import Address Table
+             1C0013408 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+                          55 KeStallExecutionProcessor
+
+  Section contains the following exports for sdport.sys
+
+    00000000 characteristics
+    6A7C63ED time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00015010 DllInitialize
+          2    1 000012B0 SdPortCompleteRequest
+          3    2 000013F0 SdPortGetPciConfigSpace
+          4    3 000159C0 SdPortInitialize
+          5    4 00001310 SdPortPoFxPowerControl
+          6    5 000015C0 SdPortReadRegisterBufferUchar
+          7    6 00001550 SdPortReadRegisterBufferUlong
+          8    7 00001580 SdPortReadRegisterBufferUshort
+          9    8 00001530 SdPortReadRegisterUchar
+         10    9 000014F0 SdPortReadRegisterUlong
+         11    A 00001510 SdPortReadRegisterUshort
+         12    B 00001410 SdPortSetPciConfigSpace
+         13    C 00001470 SdPortWait
+         14    D 00001670 SdPortWriteRegisterBufferUchar
+         15    E 000015F0 SdPortWriteRegisterBufferUlong
+         16    F 00001630 SdPortWriteRegisterBufferUshort
+         17   10 000014D0 SdPortWriteRegisterUchar
+         18   11 00001490 SdPortWriteRegisterUlong
+         19   12 000014B0 SdPortWriteRegisterUshort
+LINK : warning LNK4078: multiple 'INIT' sections found with different attributes (C2000040)
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 INIT
+        4000 PAGE

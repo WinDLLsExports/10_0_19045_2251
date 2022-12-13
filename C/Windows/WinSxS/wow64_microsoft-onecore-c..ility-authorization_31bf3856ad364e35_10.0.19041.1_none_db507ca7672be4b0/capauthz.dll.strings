@@ -1,0 +1,1478 @@
+      <xs:any minOccurs="0"/>
+      <xs:attribute name="Name" type="ST_CustomCapability" use="required"/>
+      <xs:attribute name="Value" type="xs:boolean" use="required"/>
+      <xs:documentation>Custom capabilities should be a string in the form of Company.capabilityName_PublisherId</xs:documentation>
+      <xs:element ref="AuthorizedEntities" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="AuthorizedEntity" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element ref="AuthorizedEntity" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element ref="Catalog" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="CustomCapabilities" minOccurs="1" maxOccurs="1"/>
+      <xs:element ref="CustomCapability" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element ref="DeveloperModeOnly" minOccurs="0" maxOccurs="1"/>
+      <xs:field xpath="@Name"/>
+      <xs:maxLength value="255"/>
+      <xs:maxLength value="32767"/>
+      <xs:maxLength value="64"/>
+      <xs:minLength value="1"/>
+      <xs:minLength value="15"/>
+      <xs:minLength value="4"/>
+      <xs:minLength value="64"/>
+      <xs:pattern value="[^\s]|([^\s].*[^\s])"/>
+      <xs:pattern value="[A-Fa-f0-9]+"/>
+      <xs:pattern value="[A-Za-z0-9\+\/\=]+"/>
+      <xs:pattern value="[A-Za-z0-9][-_.A-Za-z0-9]*_[a-hjkmnp-z0-9]{13}"/>
+      <xs:selector xpath="s:CustomCapabilities/s:CustomCapability"/>
+    </xs:annotation>
+    </xs:complexType>
+    </xs:restriction>
+    </xs:sequence>
+    </xs:unique>
+    <xs:annotation>
+    <xs:attribute name="AllowAny" type="xs:boolean" use="optional"/>
+    <xs:attribute name="AppPackageFamilyName" type="ST_NonEmptyString" use="required"/>
+    <xs:attribute name="CertificateSignatureHash" type="ST_CertificateSignatureHash" use="required"/>
+    <xs:complexType>
+    <xs:restriction base="ST_NonEmptyString">
+    <xs:restriction base="xs:string">
+    <xs:sequence>
+    <xs:unique name="Unique_CustomCapability_Name">
+  </xs:complexType>
+  </xs:element>
+  </xs:simpleType>
+  <xs:complexType name="CT_AuthorizedEntities">
+  <xs:complexType name="CT_AuthorizedEntity">
+  <xs:complexType name="CT_CustomCapabilities">
+  <xs:complexType name="CT_CustomCapabilityDescriptor">
+  <xs:element name="AuthorizedEntities" type="CT_AuthorizedEntities" />
+  <xs:element name="AuthorizedEntity" type="CT_AuthorizedEntity" />
+  <xs:element name="Catalog" type="ST_Catalog" />
+  <xs:element name="CustomCapabilities" type="CT_CustomCapabilities" />
+  <xs:element name="CustomCapability">
+  <xs:element name="CustomCapabilityDescriptor" type="CT_CustomCapabilityDescriptor">
+  <xs:element name="DeveloperModeOnly">
+  <xs:simpleType name="ST_Catalog">
+  <xs:simpleType name="ST_CertificateSignatureHash">
+  <xs:simpleType name="ST_CustomCapability">
+  <xs:simpleType name="ST_NonEmptyString">
+  targetNamespace="http://schemas.microsoft.com/appx/2016/sccd"
+  targetNamespace="http://schemas.microsoft.com/appx/2018/sccd"
+  xmlns:s="http://schemas.microsoft.com/appx/2016/sccd"
+  xmlns:s="http://schemas.microsoft.com/appx/2018/sccd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://schemas.microsoft.com/appx/2016/sccd">
+  xmlns="http://schemas.microsoft.com/appx/2018/sccd">
+ !"""#$ &&&%%%%%%%
+ 0'0b0
+ http://www.microsoft.com/windows0
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ SVWj
+ t) g;
+ Windows
+!fExisted
+!This program cannot be run in DOS mode.
+!-y}[
+"Microsoft Window
+#2}"+
+#comment
+#document
+#text
+$`2X`F
+$Microsoft Ireland Operations Limited1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%Microsoft Windows Production PCA 2011
+%Microsoft Windows Production PCA 20110
+%wLtC
+%wNtE
+%wOtF
+%wPtG
+%w't%
+&#xD;
+&amp;
+&PWSV
+&quot;
+(*m_State.ParseState.pfnCompareSpecialString)(&m_State.ParseState, Extent, &ss, pResult, 0)
+(caller: %p) 
+(DestinationMaximumLength == 0) || (DestinationBuffer != 0)
+(DynamicBuffer == 0) || (DynamicBuffer->Length == 0)
+(FixedSizeBuffer != 0) || (DynamicBuffer != 0)
+(Flags & ((0x00000002) | (0x00000004))) != ((0x00000002) | (0x00000004))
+(kER[rAs
+(LocationHeader->ulFlags & ~((0x00000001) | (0x00000002) | (0x00000003))) == 0
+(NamespaceURI == 0) || RtlIsLUtf8StringValid(NamespaceURI)
+(Params->InputType == Windows::Microdom::Rtl::CreateMicrodomSource::Binary) || (Params->InputType == Windows::Microdom::Rtl::CreateMicrodomSource::Xml)
+(Params->SourceType == Windows::Microdom::Rtl::CreateMicrodomSource::Stream) || (Params->SourceType == Windows::Microdom::Rtl::CreateMicrodomSource::BlobProvider) || (Params->SourceType == Windows::Microdom::Rtl::CreateMicrodomSource::Blob)
+(Properties.Elements != 0) && (Results.Elements != 0)
+(SourceCount == 0) || (Sources != 0)
+(ulElementType == (0x2)) || (ulElementType == (0x3)) || (ulElementType == (0x5)) || (ulElementType == (0x1)) || (ulElementType == (0x6)) || (ulElementType == (0x7)) || (ulElementType == (0x4))
+)Microsoft Root Certificate Authority 20100
+***   Source File: %s, line %ld
+*** Assertion failed: %s
+*ppvAlloc = RtlAllocateHeap((((PPEB)__readfsdword(((LONG)(LONG_PTR)&(((TEB *)0)->ProcessEnvironmentBlock))))->ProcessHeap), 0, cb)
+,0004080<0@0D0L0l0
+,GaQuZ3n/WSmwTPxSlIJphctfSokhM9jqI/0k4BVT920=0Z
+.&.`1
+.?AVbad_alloc@std@@
+.?AVexception@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.?AVResultException@wil@@
+.00cfg
+.can.xml
+.CRT$XCA
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.data
+.data$brc
+.data$r$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.rdata
+.rdata$brc
+.rdata$sxdata
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$x
+.text$yd
+.w.t,
+.xdata$x
+//*[local-name()='AuthorizedEntities']/@AllowAny
+//*[local-name()='AuthorizedEntity']
+//*[local-name()='Catalog']
+//*[local-name()='CustomCapability']/@Name
+//*[local-name()='DeveloperModeOnly']/@Value
+:!:5:?:S:w:
+:";);m;t;
+:$:0:<:H:T:`:l:x:
+:$:L:}:
+:%:U:\:p:{:
+:/:G:z:
+:/;];
+::;G;
+::BUCL::Rtl::Add<SIZE_T>( *pcElements, 10, NewCapacity)
+::BUCL::Rtl::Add<SIZE_T>( cElements, 10, NewCapacity)
+::RtlIsLBlobValid(Blob)
+::RtlIsLBlobValid(Data)
+::RtlIsLBlobValid(Destination)
+::RtlIsLBlobValid(Source)
+::RtlIsLUtf8StringValid(&Sources[i])
+::RtlIsLUtf8StringValid(Candidates[i])
+::RtlIsLUtf8StringValid(Destination)
+::RtlIsLUtf8StringValid(Source)
+::RtlIsLUtf8StringValid(String)
+::RtlIsLUtf8StringValid(StringIn)
+::RtlXmlExtentToUtf8String( 0, &m_State.ParseState.RawTokenState, &Src, TempString.GetMutablePointer(), &cRequired)
+:+=;=B=g={=
+:<;p;
+:>;K;X;w;
+:0:6:Q:
+:2:\:
+:2;H;b;
+:4;?;M;g;
+:a:l:z:
+:A;p;
+:MdLct
+:MdSpt
+:N;v;
+:P:`:l:t:
+:p;w;
+:r:=;M;a;
+:y;w=
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;q<
+; ;(;4;<;D;L;P;X;`;l;t;|;
+;#=.=<=
+;$;D;L;X;x;
+;$;L;^;o;
+;$<+<N<`<
+;(;9;a;h;n;{;
+;,<@<f<
+;:;U;z;
+;?<N<
+;-=C=S=c=l=u=
+;2;F;Y;
+;6<B<n<
+;7;C;T;h;r;
+;8;@;
+;B<S<g<
+;h;m;
+;I<{<
+;K;w<
+;M;c;i;{;
+;u;|;
+;W;l;
+?!?-?5?D?U?^?j?r?
+?$?,?4?@?H?`?h?x?
+?$?,?4?<?D?L?T?\?d?l?t?|?
+?%?M?X?c?{?
+?&?1?
+?&?1?;?N?
+?&?1?w?
+?)?\?
+?.?6?<?H?b?p?
+??_V@YAXPAX@Z
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABQBDH@Z
+??0exception@@QAE@ABV0@@Z
+??0exception@@QAE@XZ
+??1exception@@UAE@XZ
+??1type_info@@UAE@XZ
+??3@YAXPAX@Z
+?+?:?
+?1?`?v?
+?MdDlt
+?terminate@@YAXXZ
+?w$tQ
+?w<t6
+?what@exception@@UBEPBDXZ
+@.didat
+@.reloc
+[%hs(%hs)]
+[%hs]
+^95 V
+^95`V
+^H!FL
+_^[+P
+_^[Y]
+__CxxFrameHandler3
+__dllonexit
+__rv.NewCursorValue != 0
+__rv.UcsCharacter != (0xffffffff)
+_amsg_exit
+_callnewh
+_CxxThrowException
+_except_handler4_common
+_initterm
+_lock
+_onexit
+_purecall
+_unlock
+_vsnprintf_s
+_vsnwprintf
+_wcsicmp
+_XcptFilter
+`.data
+`PAGER32C
+|hK,_
+}bgk#!F
+~h_^]
+< <,<E<\<u<
+< <D<L<T<\<d<l<t<|<
+<"<1<Q<d<l<~<
+<(<4<@<L<X<d<p<|<
+<)=^=j=u=
+</xs:schema>
+<?xml version="1.0" encoding="UTF-8"?>
+<@=D=H=L=P=T=X=\=h=
+<@=T=d=t=
+<+<7<@<G<d<
+<>=K=
+<>=L=U=
+<'>m>w>
+<0@0e1l1z1
+<2<6<B<F<R<V<
+<4<@<K<h<
+<4=F=q=y=
+<A<d<m<w<
+<G=|=
+<N<U<
+<V<l<y<
+<X<_<s<~<
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+= =$=(=,=0=4=V=
+= =*=F=P=
+=$=0=T=\=d=l=t=|=
+=(>h>
+=(>u>
+=?>P>
+=<=H=S=q=
+=<>C>Q>
+=>=G=
+=>=G=n=w=
+=>>]>o>
+=9=?=Q=^=~=
+=b?i?
+=b=g=w=}=
+=B=O=
+=C>O>Z>u>
+=E=o=~=
+=i>~>
+=K=[=k=t=}=
+=L>t>
+>!?W?~?
+>$>,>4><>D>L>T>\>d>l>t>|>
+>$>.>8>B>L>V>`>j>t>~>
+>&>D>
+>)>X>
+>*>I>Z>x>
+>/>:>D>X>{>
+>:???t?
+>@?}?
+>+>?>
+>+>Z?
+><>D>P>X>
+>0>H>
+>2???L?i?
+>2>>>W>y>
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>MdDtt
+>MdSpt
+>Y>s>
+0 0$0(0,0004080<0D0L0T0\0d0
+0!0=0{0
+0"1B1I1g1|1
+0$0,040@0d0l0t0|0
+0$0,040<0D0L0T0\0d0l0t0
+0$0,040<0D0L0T0\0d0l0t0|0
+0$020h0
+0$0f0
+0&191@1N1
+0)0V0r0
+0)5g7
+0,0i0
+0,1k1u1
+0.0>0N0U0
+0.9.2342.19200300.100.1.1
+0/060D0l0s0
+0+0]0
+000|0
+000b0
+0'0-0N0v0
+001h1q1
+040904B0
+041C1N1g1
+070M0U0
+0C1K1c1x1
+0N0W0n0u0
+0R1^1i1
+0U1`1n1W2
+1 2*2>2E2S2v2
+1!1^1g1
+1!2C2a2
+1!2R2
+1"1=1K1p1
+1"1C1N1\1s1
+1#1-1S1_1x1
+1$1,141<1D1L1T1\1d1l1t1|1
+1$2T2]2<3Y3
+1$4U4
+1%2,2:2T2y2
+1(0&0
+1(141S1
+1(1H1P1\1d1
+1(2S2
+1)1o1
+1,0*0
+1.3.6.1.4.1.311.76.28.1
+1.3.6.1.5.5.7.3.8
+1/1T1
+1;2F2T2n2
+1_1h1}1
+10.0.19041.1
+10.0.19041.1 (WinBuild.160101.0800)
+100701213655Z
+111019184142Z
+132:2H2p2
+190502212436Z
+191113214035Z
+1E1Q1\1y1
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+1I1d1
+1j2h3
+2 2$2,2@2`2h2l2t2x2
+2$2,242<2D2L2T2\2l2t2|2
+2&2b2
+2)242L2R2Z2u2
+2)2D2
+2,2<2D2L2T2\2d2p2
+2,3P3c3p3
+2.2>2L2[2j2y2
+2/2Y2w2
+2;2K2a2v2~2
+200502212436Z0p1
+20191207004534.17Z0
+20191207075338Z
+20191208075338Z0t0:
+203Q3W3t3
+210211214035Z0
+229879+4541120
+2-2j2
+242Y2
+250701214655Z0|1
+252K2S2
+261019185142Z0
+272<2A2h2x2}2
+272j2^3
+2B3e3
+2H2k2W3\3
+2I3v3
+2p2~2
+3 3)3;3
+3 4|4
+3!3`3
+3$3,343<3D3L3T3\3d3l3t3|3
+3$4-464O4X4
+3%3<3D3T3v3
+3)404>4
+3*3U3a3l3
+3;4H4
+3;4h4s4z4
+30383@3L3l3t3|3
+313@3G3
+31393@3F3L3z3
+3'3G3V3h3v3
+343@3H3`3t3|3
+3E3i3
+3E4i4
+3I3n3
+3k4w4
+3M3W3i3|3
+4!585p5
+4!5O5~5
+4"4A4Y4x4
+4$4,444<4D4L4T4\4d4l4t4|4
+4$4/4J4|4
+4$575A5w5
+4%424B4L4Y4c4m4
+4&4.4y4
+4(4H4P4X4`4l4
+4,434o4z4
+4<5@5D5H5L5P5T5X5\5`5d5h5
+4-5|5
+464^4
+464D4p4|4
+485F5M5
+4a5|5
+4c5~5
+4I4_4
+4K5V5d5.6J6U6\6
+4O5{5
+4o9t9y9
+4X4f4q4
+4Y4q4
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5 5(50585\5d5l5t5|5
+5#525O5[5
+5$6-6;6M6[8f8t85;
+5;5C5
+5+5>5U5n5
+5=6G6O6W6
+505L5h5
+515]5
+515U5j5~5
+536T6[6
+5'5=5
+5-53595L5
+566L6
+595H5{5
+5A596Y6
+5E5p5
+5I6z6
+5S5i5
+5W6f8p8
+5Z6a6o6
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+6%6;6M6_6
+6*767A7\7
+6*7E7`7{7
+6@6P6z6
+6[7f7t7
+6+6J6
+6<6r6
+6=6M6
+60686@6H6T6t6|6
+647=7D7f7o7v7
+667;7
+6-7S7'8
+6B6[6f6w6
+6E6P6^6{6
+6I7V7
+6T6?7
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7!8Y8
+7"707
+7%7+7^7
+7&7`7
+7`7t7
+7+8I:S:z:
+7<7P7b7y7
+7=7K7V7]7d7o7v7}7
+7152M3c3
+727H7e7x7
+737:7U7k7}7
+737P7u7
+748?8M8g8
+748|8
+758V8r8
+7-8[8
+7'8X8c8q8
+7F8M8[8}8
+7N7Y7g7
+7o7z7
+7T7o7z7
+7U8d8j8
+7Y7v7
+8 8(808@8H8P8`8h8p8
+8 8,848x8
+8 8+8H8
+8 uT9X
+8"8'8-878A8Q8a8g8r8x8
+8$9+9t9
+8%8N8q8
+8*818?8y8
+8,9W9d9q9
+8;8K8_8p8
+8_9Y:d:k:
+8+8]8
+818Z8q8
+819@9
+819D9S9h9
+888m8
+8-949
+8B8N8`8i8v8
+8D9_9
+8m9t9
+8w,t'
+9 u"A;
+9$:?:
+9$:P:
+9%:):-:1:5:9:=:A:E:I:M:Q:U:Y:]:a:e:i:m:q:u:y:}:
+9&:2:=:`:t:
+9(949@9L9X9d9p9|9
+9):?:k:}:
+9):I:Z:t:
+9.9i9
+9^ t2j4
+9_9l9Z;|;
+9~(s+j
+919=9H9
+939=9L9
+939M9
+939V9j9
+95:B:5;
+96:i:
+979M9
+97u"3
+989H9T9\9
+98ug9Y
+99:_:k:v:
+99:F:
+9A0vq
+9d9r9x9
+9E0vr
+9G9T9a9
+9MdHdt
+9S0vmR
+9T9R=
+9W:i:
+9X`v^j
+A,;F8u
+A4;F<t6
+activateAsUser
+address family not supported
+address in use
+address not available
+address_family_not_supported
+address_in_use
+address_not_available
+AdjustTokenPrivileges
+AllCachedCapabilities
+AllCachedMemberCapability
+already connected
+already_connected
+api-ms-win-appmodel-runtime-internal-l1-1-3.dll
+api-ms-win-appmodel-unlock-l1-1-0.dll
+api-ms-win-core-apiquery-l1-1-0.dll
+api-ms-win-core-com-l1-1-0.dll
+api-ms-win-core-debug-l1-1-0.dll
+api-ms-win-core-delayload-l1-1-0.dll
+api-ms-win-core-errorhandling-l1-1-0.dll
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-handle-l1-1-0.dll
+api-ms-win-core-heap-l1-1-0.dll
+api-ms-win-core-heap-l2-1-0.dll
+api-ms-win-core-libraryloader-l1-2-0.dll
+api-ms-win-core-libraryloader-l1-2-1.dll
+api-ms-win-core-localization-l1-2-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-profile-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-registry-l1-1-1.dll
+api-ms-win-core-string-l1-1-0.dll
+api-ms-win-core-synch-l1-1-0.dll
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+api-ms-win-eventing-provider-l1-1-0.dll
+api-ms-win-security-base-l1-1-0.dll
+api-ms-win-security-lsalookup-l2-1-0.dll
+api-ms-win-security-provider-l1-1-0.dll
+api-ms-win-security-sddl-l1-1-0.dll
+api-ms-win-shcore-stream-l1-1-0.dll
+ApiSetQueryApiSetPresence
+ApplicationFlags
+AppPackageFamilyName
+AppPackageType
+argument list too long
+argument out of domain
+ATTLIST
+Authorization
+awHtC
+b0f0l0p0
+B0R0}0
+bad address
+bad allocation
+bad file descriptor
+bad message
+bad_address
+bad_file_descriptor
+Blob->Buffer = (PUCHAR)((*RtlAllocateStringRoutine)(Bytes))
+broken pipe
+BUCL::Rtl::Add(cbReturnSize, cbThisSize, cbReturnSize)
+BUCL::Rtl::Add(pCachedInfo->m_ulChildCount, pCachedInfo->m_ulAttributeCount, cNecessary)
+BUCL::Rtl::Add<SIZE_T>( cbNecessary, Iter.Key.Length, sizeof(UCHAR), cbNecessary)
+BUCL::Rtl::Add<SIZE_T>( sizeof(MICRODOM_HEADER), cbStringPoolSize, cbDomLayoutSize, cbPositionDataSize, cbDoctypeDataSize, cbRequiredSize)
+BUCL::Rtl::Add<SIZE_T>(DataLength, OldLength, TempSize)
+BUCL::Rtl::AddInPlaceWithOverflowCheck(&cbRequired, (*EncodingSizer)(ucsch))
+BUCL::Rtl::AddInPlaceWithOverflowCheck(&MaximumLength, Sources[i].Length)
+BUCL::Rtl::ConvertInteger(pObject->m_cChildren, pDocument->usChildNodes)
+BUCL::Rtl::Increment(m_NextStringId)
+BUCL::Rtl::Multiply(WorkingBufferSize, MultiplicativeGrowthFactor, WorkingBufferSize)
+BUCL::Rtl::QuickSort(Pairs, CompareStringSlot)
+C;X`s
+C<+C(
+CachedCapabilityClass
+CallContext:[%hs] 
+Capabilities
+Capability
+Capability Authorization APIs
+CapabilityClass
+CAPAUTHZ
+capauthz.dll
+capauthz.pdb
+CapSids
+CBaseCanonicalizer::Canonicalize
+CC14NCanonicalizer::CanonicalizeAttributes
+CC14NCanonicalizer::GetElementAttributes
+CDATA
+CertCloseStore
+CertCreateCertificateChainEngine
+CertDuplicateCertificateContext
+CertFindCertificateInStore
+CertFreeCertificateChain
+CertFreeCertificateChainEngine
+CertFreeCertificateContext
+CertGetCertificateChain
+CertGetCertificateContextProperty
+CertGetEnhancedKeyUsage
+CertGetNameStringW
+CertificateSignatureHash
+CertVerifyCertificateChainPolicy
+Cf9Y*
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+CloseHandle
+CloserElement = this->AllocateStreamObject()
+CMicrodom
+CMicrodom_Blob
+CMicrodomBuilder::AddString
+CMicrodomBuilder::CElementNameToAttributeListTable::Find
+CMicrodomBuilder::CElementNameToAttributeListTable::MaybeInsert
+CMicrodomBuilder::CFourStringIdTable<struct _MICRODOM_XML_ATTDEF const *>::Initialize
+CMicrodomBuilder::CFourStringIdTable<unsigned short>::Initialize
+CMicrodomBuilder::CNamespaceNameExistenceCheck::AddAndCheckExistence
+CMicrodomBuilder::CNamespaceNamePrefixToAttDef::Find
+CMicrodomBuilder::CNamespaceNamePrefixToAttDef::Insert
+CMicrodomBuilder::ConstructAndWriteMicrodom
+CMicrodomBuilder::ConsumeAttdef
+CMicrodomBuilder::ConsumeCData
+CMicrodomBuilder::ConsumeComment
+CMicrodomBuilder::ConsumeEntityDecl
+CMicrodomBuilder::ConsumePCData
+CMicrodomBuilder::ConsumeProcessingInstruction
+CMicrodomBuilder::DetermineStringTableSize
+CMicrodomBuilder::EndAttlist
+CMicrodomBuilder::EndElement
+CMicrodomBuilder::GetXmlDomSize
+CMicrodomBuilder::Initialize
+CMicrodomBuilder::InsertDefaultAttributes
+CMicrodomBuilder::ProduceStringTable
+CMicrodomBuilder::StartAttlist
+CMicrodomBuilder::StartDocument
+CMicrodomBuilder::StartElement
+CMicrodomBuilder::WriteXmlDom
+CMicrodomXmlWalker::XmlError
+CoCreateInstance
+CompanyName
+connection aborted
+connection already in progress
+connection refused
+connection reset
+connection_aborted
+connection_already_in_progress
+connection_refused
+connection_reset
+constrainedImpersonation
+ConvertSidToStringSidW
+ConvertStringSidToSidW
+CopySid
+CoTaskMemAlloc
+CoTaskMemFree
+CouldMultiUserAppsBehaviorBePossibleForPackage
+CP9C<t
+CreateFileW
+CreateMutexExW
+CreateSemaphoreExW
+cross device link
+CRtlGrowingList<struct _XMLDOC_ATTRIBUTE,50,6>::Initialize
+CRtlXMLDSIGCanonicalizer<class CRtlXMLDSIGC14NCanonicalizer>::Canonicalize
+CRtlXMLDSIGCanonicalizer<class CRtlXMLDSIGC14NCanonicalizer>::CreateInterface
+CRtlXMLDSIGCanonicalizer<class CRtlXMLDSIGExcC14NCanonicalizer>::Canonicalize
+CRtlXMLDSIGCanonicalizer<class CRtlXMLDSIGExcC14NCanonicalizer>::CreateInterface
+CRtlXMLDSIGCanonicalizerFactory::CreateInterface
+CRtlXMLDSIGCanonicalizerTearoff<class CRtlXMLDSIGC14NCanonicalizer>::Canonicalize
+CRtlXMLDSIGCanonicalizerTearoff<class CRtlXMLDSIGExcC14NCanonicalizer>::Canonicalize
+CRtlXMLDSIGObjectFactory<struct Windows::XMLDSIG::Rtl::IRtlXMLDSIGCanonicalizer>::GetObject
+CRtlXMLDSIGObjectFactoryTearoff<class CRtlXMLDSIGCanonicalizerFactory,struct Windows::XMLDSIG::Rtl::IRtlXMLDSIGCanonicalizer>::GetObject
+CRYPT32.dll
+CryptCATAdminAcquireContext2
+CryptCATAdminCalcHashFromFileHandle2
+CryptCATAdminReleaseContext
+CryptHashCertificate2
+CryptMsgClose
+CryptMsgGetParam
+CryptQueryObject
+CustomCapSids
+CXmlCursor::CompareExtents
+CXmlCursor::CompareStrings
+CXmlCursor::DecodeExtent
+CXmlCursor::Next
+CXmlCursor::XmlAlloc
+CXmlLogicalState::{dtor}::<lambda_0fd40d3b956627884e315ff69db4f18c>::operator ()
+CXmlLogicalState::Initialize
+CXmlNamespaceManager::Initialize
+D$ SV
+D$ SVW
+D$$lR
+D$(PQ
+D$,$T
+D$,XS
+D$8SVW
+D$PPQ
+D$PSVW
+DbgPrintEx
+de! ]x
+DebugBreak
+Decoder != 0
+DefaultAttribute.Allocate()
+DelayLoadFailureHook
+DeleteFileW
+Deprovision
+DeprovisionApplicationCapabilities
+DeriveAppContainerSidFromAppContainerName
+destination address required
+destination_address_required
+DestinationMaximumLength >= SourceLength
+developmentModeNetwork
+Device Capabilities
+device or resource busy
+DeviceCapabilities
+DeviceCapSids
+DevUnlocked
+directory not empty
+DisableThreadLibraryCalls
+DOCTYPE
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+ELEMENT
+Encoder != 0
+encoding
+EncodingSizer != 0
+EnterpriseID
+ENTITIES
+ENTITY
+Entity.Length != 0
+en-US
+Error
+Error Code
+ErrorCode
+EventData
+EventRegister
+EventUnregister
+EventWriteTransfer
+EVNTX
+Exception
+executable format error
+Existing PackageType
+ext-ms-win-kernel32-package-l1-1-0.dll
+ext-ms-win-shell-embeddedmode-l1-1-0
+ext-ms-win-shell-embeddedmode-l1-1-0.dll
+F0C;X
+f9:tbR
+f99tbQ
+f99tE
+f9FHu
+f9XBt
+FailFast
+FBf;E
+fFound
+FH;A8
+file exists
+File Name
+file too large
+FileDescription
+filename too long
+filename_too_long
+FileVersion
+FindResourceW
+FIXED
+FormatMessageW
+FPt<h
+fU4mf
+FullPackageName
+function not supported
+G}7++G
+generic
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetLastError
+GetLengthSid
+GetModuleFileNameA
+GetModuleHandleExW
+GetModuleHandleW
+GetProcAddress
+GetProcessHeap
+GetSidIdentifierAuthority
+GetSidSubAuthority
+GetSidSubAuthorityCount
+GetSystemTimeAsFileTime
+GetTickCount
+HA1o7w
+HeapAlloc
+HeapFree
+host unreachable
+host_unreachable
+http://schemas.microsoft.com/appx/2016/sccd
+http://schemas.microsoft.com/appx/2018/sccd
+http://www.w3.org/2000/09/xmldsig#
+http://www.w3.org/2000/xmlns/
+http://www.w3.org/2001/10/xml-exc-c14n#
+http://www.w3.org/TR/2001/REC-xml-c14n-20010315
+http://www.w3.org/XML/1998/namespace
+I0G1-0+
+identifier removed
+IDREF
+IDREFS
+illegal byte sequence
+IMPLIED
+inappropriate io control operation
+InitializeAcl
+Intermediate
+InternalDevUnlock
+InternalName
+interrupted
+invalid argument
+invalid seek
+invalid string position
+invalid_argument
+io error
+iostream
+iostream stream error
+is a directory
+IsDebuggerPresent
+IsDeveloperModeEnabled
+IsEmbeddedModeAllowed
+IsSideloadingEnabled
+IsValidSid
+j < ValidProperties.Length
+j Xf9E
+j,hH2
+j\Xf9Dz
+j=Xf;Dy
+J0V;A
+JdS_K
+kernelbase.dll
+KERNELBASE.dll
+KeyName
+Kf;Dy
+L$,_^[3
+L$\_^[3
+L$4_^[3
+L$D_^[3
+L$T_^[3
+L+x`r
+Legal_Policy_Statement
+LegalCopyright
+list<T> too long
+LoadResource
+Local\SM0:%d:%d:%hs
+LocalAlloc
+LocalFree
+Locals.Allocate()
+LocationHeader != 0
+LocationHeader->Signature == ('cLdM')
+LogHr
+LookupPrivilegeValueW
+m.Reserved < m_NamedNodeMaps.Size()
+m_AttdefListTable.FindOrInsertIfNotPresent( ulElementName, NewAttdefList, &pAttdefList)
+m_AttdefListTable.Initialize()
+m_CurrentStreamObject != 0
+m_Entries.Allocate(PoolHeader->TotalCount)
+m_MicrodomDataBlob.Length >= sizeof(MICRODOM_HEADER)
+m_PropertyCache.Allocate(m_LayoutCache.TotalObjectCount())
+m_pTargetObject->IsNamedNodeMapValid(NodeMap)
+m_StoredTable.Find(Pair, ppAttDef)
+m_StoredTable.Find(Pair, ppusAttrListNumber)
+m_StoredTable.FindOrInsertIfNotPresent(p, (USHORT)0, 0, &fExisted)
+m_StoredTable.FindOrInsertIfNotPresent(Pair, pAttDef)
+m_StoredTable.FindOrInsertIfNotPresent(Pair, Value, 0, pfExisted)
+m_StoredTable.Initialize()
+M0K0I
+MACHINE\SOFTWARE\Microsoft\SecurityManager\CapAuthz
+MACHINE\SOFTWARE\Microsoft\SecurityManager\CapAuthz\ApplicationsEx
+malloc
+map/set<T> too long
+MemberCapability
+MemberCapabilityClass
+memcmp
+memcpy
+memcpy_s
+memmove
+memset
+Message
+message size
+message_size
+MicrodomImplementation::CDomLayoutCache::AdvanceCachedPointer
+MicrodomImplementation::CDomLayoutCache::DecodeElementCounts
+MicrodomImplementation::CDomLayoutCache::FindObject
+MicrodomImplementation::CDomLayoutCache::GetNodeChildren
+MicrodomImplementation::CDomPositionCache::AttachToPositionList
+MicrodomImplementation::CDomPositionCache::GetLocation
+MicrodomImplementation::CMicrodom::CreateInterface
+MicrodomImplementation::CMicrodom::DecodeXmlString
+MicrodomImplementation::CMicrodom::FindObject
+MicrodomImplementation::CMicrodom::GetDocumentNodeSet
+MicrodomImplementation::CMicrodom::GetElementById
+MicrodomImplementation::CMicrodom::GetElementNodeSet
+MicrodomImplementation::CMicrodom::GetElementsByTagName
+MicrodomImplementation::CMicrodom::GetElementsByTagNameCommon
+MicrodomImplementation::CMicrodom::GetNamedNodeMapItem
+MicrodomImplementation::CMicrodom::GetNamedNodeMapLength
+MicrodomImplementation::CMicrodom::GetNodeMapNamedItem
+MicrodomImplementation::CMicrodom::Initialize
+MicrodomImplementation::CMicrodom::IRtlMicrodom_Cast
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::CTempOutputStream::CreateInterface
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetAttribute
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetAttributeNode
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetAttributeNS
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetAttributeNSNode
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetDocument
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetDocumentElement
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetDocumentNodeSet
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetElementById
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetElementNodeSet
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetElementsByTagName
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetElementsByTagNameNS
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetItem
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetMicrodomBinaryRepresentation
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetNamedItem
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetNamedItemNs
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetPropertiesSetup
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetXml
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::HasAttribute
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::HasAttributeNs
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::HasAttributes
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::HasChildNodes
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::Length
+MicrodomImplementation::CreateBinaryMicrodomFromXml
+MicrodomImplementation::CStringpoolCache::AttachToStringPool
+MicrodomImplementation::CStringpoolCache::FindString
+MicrodomImplementation::DecodeXmlCharacterToUcsChar
+MicrodomWriterImplementation::CMicrodomWriter::CreateInterface
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::BeginOpenElement
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::CloseElement
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::EmitAttribute
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::EndOpenElement
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::WriteCData
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::WriteComment
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::WriteEscapedString
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::WriteProcessingInstruction
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::WriteRawString
+MicrodomWriterImplementation::CMicrodomWriter_IRtlMicrodomXmlWriter::WriteText
+Microsoft
+Microsoft America Operations1&0$
+Microsoft Corporation
+Microsoft Corporation1
+Microsoft Corporation1%0#
+Microsoft Corporation1&0$
+Microsoft Corporation1.0,
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+Microsoft Windows0
+Microsoft-OneCore-Capability-Authorization
+Microsoft-OneCore-Capability-Authorization/Operational
+Microsoft-OneCore-Capability-Authorization/Verbose
+Msg:[%ws] 
+msvcrt.dll
+N0L0J
+Namespace != 0
+NDATA
+network down
+network reset
+network unreachable
+network_down
+network_reset
+network_unreachable
+New PackageType
+NewAttdef = this->AllocateStreamObject()
+NewAttlist = this->AllocateStreamObject()
+NewAttlistClose = this->AllocateStreamObject()
+NewAttribute = this->AllocateStreamObject()
+NewCData = this->AllocateStreamObject()
+NewComment = this->AllocateStreamObject()
+NewDocument = this->AllocateStreamObject()
+NewElement = this->AllocateStreamObject()
+NewEntityDecl = this->AllocateStreamObject()
+NewInstance.Allocate()
+NewParser
+NewPcData = this->AllocateStreamObject()
+NewProcessingInstruction = this->AllocateStreamObject()
+NewTearoff.Allocate()
+NMTOKEN
+NMTOKENS
+no buffer space
+no child process
+no link
+no lock available
+no message
+no message available
+No more than one flag set check failed: __e
+no protocol option
+no space on device
+no stream resources
+no such device
+no such device or address
+no such file or directory
+no such process
+no_buffer_space
+no_protocol_option
+NodeIndex < m_pTargetObject->m_LayoutCache.TotalObjectCount()
+NodeMap != Windows::Microdom::Rtl::NamedNodeMap::InvalidValue()
+not a directory
+not a socket
+not a stream
+not connected
+not enough memory
+not supported
+not_a_socket
+not_connected
+NOTATION
+Not-null check failed: AlgorithmURI
+Not-null check failed: Blob
+Not-null check failed: Character
+Not-null check failed: ComparisonResult
+Not-null check failed: Context
+Not-null check failed: Data
+Not-null check failed: DataBlock
+Not-null check failed: Decoder
+Not-null check failed: Destination
+Not-null check failed: Disposition
+Not-null check failed: Document
+Not-null check failed: DocumentNode
+Not-null check failed: fHasAttribute
+Not-null check failed: fHasAttributes
+Not-null check failed: fHasChildNodes
+Not-null check failed: Length
+Not-null check failed: Matches
+Not-null check failed: MatchIndex
+Not-null check failed: NodeList
+Not-null check failed: NodeSet
+Not-null check failed: Out
+Not-null check failed: Params
+Not-null check failed: Params->Source.pBlob
+Not-null check failed: Params->Source.pIStream
+Not-null check failed: pDocument
+Not-null check failed: pInputOctetStream
+Not-null check failed: pMicrodom
+Not-null check failed: pOutputOctetStream
+Not-null check failed: pOutputStream
+Not-null check failed: ppDefaultCanonicalizerFactory
+Not-null check failed: ppDefaultInterface
+Not-null check failed: ppObject
+Not-null check failed: PseudoKeyOut
+Not-null check failed: pStream
+Not-null check failed: pWriter
+Not-null check failed: Result
+Not-null check failed: Root
+Not-null check failed: Source
+Not-null check failed: String
+Not-null check failed: String1
+Not-null check failed: String2
+Not-null check failed: StringIn
+Not-null check failed: Target
+Not-null check failed: Value
+Not-null check failed: Writer
+ntdll.dll
+NtYieldExecution
+O0M0K
+ObjectHeader->uElementType == ucObjectType
+oK0D$"<
+OLEAUT32.dll
+onecore\base\lstring\lblob.cpp
+onecore\base\lstring\lutf8_string.cpp
+onecore\base\lstring\ucsdecoders.cpp
+onecore\base\xml\dsig_basecanonicalizer.cpp
+onecore\base\xml\dsig_c14ncanonicalizer.cpp
+onecore\base\xml\dsig_canonicalizer.h
+onecore\base\xml\dsig_canonicalizerfactory.h
+onecore\base\xml\dsig_core.cpp
+onecore\base\xml\dsig_factory.h
+onecore\base\xml\udom_builder.cpp
+onecore\base\xml\udom_microdom.cpp
+onecore\base\xml\udom_writer.cpp
+onecore\base\xml\udom_xmlcursor.cpp
+onecore\base\xml\udom_xmlwalker.h
+onecore\ds\security\authz\capauthz\sccd\lib\sccdparser.cpp
+onecore\ds\security\authz\capauthz\sccd\lib\sccdverify.cpp
+onecore\internal\base\inc\rtl_object_library.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+OPCOx
+OpenProcessToken
+OpenSemaphoreW
+operation canceled
+operation in progress
+operation not permitted
+operation not supported
+operation would block
+operation_in_progress
+operation_not_supported
+operation_would_block
+OriginalFilename
+OutputDebugStringW
+owner dead
+p_f98t
+PackageFamilyNameFromFullName
+PackageName
+PackageSid
+PackageType
+PAGER32C
+Pairs.Allocate(m_StringTable.GetEntryCount())
+Params->fRequireUtf8
+pDoctype->ulSignature == ('tDdM')
+pDomLayout->ulSignature == ('lDdM')
+Performance
+permission denied
+permission_denied
+pHeader->ulOffsetToDomLayout < pHeader->ulTotalSize
+pHeader->ulOffsetToPositionData < pHeader->ulTotalSize
+pHeader->ulOffsetToStringPool < pHeader->ulTotalSize
+pHeader->ulSignature == ('dHdM')
+pHeader->ulTotalSize == m_MicrodomDataBlob.Length
+Pj2jl
+PolicyUpdated
+PoolHeader != 0
+PoolHeader->Signature == ('pSdM')
+Principal Class
+PrincipalClass
+principalClass_DevUnlock
+principalClass_DevUnlock_Internal
+ProductName
+ProductVersion
+Properties.Length == Results.Length
+protocol error
+protocol not supported
+protocol_not_supported
+ProvisionApplicationCapabilities
+ProvisionApplicationCapabilitiesEx
+PRVAl
+PSQWV
+pStringPool->Signature == ('pSdM')
+PUBLIC
+QgL#n
+QQSVW
+QRPh04
+QRPhP4
+QueryApplicationCapabilities
+QueryApplicationCapabilitiesEx
+QueryAuthorization
+QueryPerformanceCounter
+QWh@5
+QWhl5
+QWjYP
+R!s4Z
+r~akow
+RaiseFailFastException
+read only file system
+Redmond1
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteTreeW
+RegEnumKeyExW
+RegFlushKey
+RegGetValueW
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetKeyValueW
+RegSetValueExW
+ReleaseMutex
+ReleaseSemaphore
+REQUIRED
+ResolveDelayLoadedAPI
+resource deadlock would occur
+resource unavailable try again
+result out of range
+ReturnHr
+RichC
+Root != Root.InvalidValue()
+RRRRRRQ
+RSDSl
+rTiCzi
+RtlAllocateHeap
+RtlAllocateLBlob
+RtlAppendLBlobToLBlob
+RtlAppendLUtf8StringToLUtf8String
+RtlAppendUcsCharacterToLUtf8String
+RtlCompareEncodedLBlobs
+RtlConcatenateLUtf8Strings
+RtlCopyLBlob
+RtlCopySid
+RtlCreateDefaultMicrodomXmlWriter
+RtlCreateMicrodom
+RtlDecodeLUtf8StringToCharacter
+RtlDeriveCapabilitySidsFromName
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlDuplicateLBlob
+RtlDuplicateLUtf8String
+RtlDuplicateLUtf8StringToLUnicodeString
+RtlEqualSid
+RtlFreeHeap
+RtlGetCharacterSetDecoder
+RtlGetDefaultInterface
+RtlHashEncodedLBlob
+RtlInitializeGrowingList( this, sizeof(TStoredObject), m_ulElementsPerChunk, (PVOID)m_InternalBuffer, sizeof(m_InternalBuffer), Allocator )
+RtlInitializeSmartLBlobWritingContext
+RtlInitUnicodeString
+RtlIsLBlobValid(BinaryData)
+RtlIsLBlobValid(Source)
+RtlIsLUtf8StringValid(ElementId)
+RtlIsLUtf8StringValid(LocalName)
+RtlIsLUtf8StringValid(LocalName) || (LocalName == 0)
+RtlIsLUtf8StringValid(Name)
+RtlIsLUtf8StringValid(NamespaceURI)
+RtlIsLUtf8StringValid(NamespaceURI) || (NamespaceURI == 0)
+RtlIsLUtf8StringValid(Source)
+RtlIsLUtf8StringValid(TagName) || (TagName == 0)
+RtlLengthSid
+RtlMatchLUtf8StringAgainstPointerList
+RtlNsInitialize(this, Comparison, pvCompareContext, Alloc)
+RtlNtStatusToDosError
+RtlNtStatusToDosErrorNoTeb
+RtlpSmartLBlobWritingContextResizePolicy
+RtlRaiseStatus
+RtlReAllocateHeap
+RtlReallocateLBlob
+RtlReallocateLUtf8String
+RtlTranscodeLBlobs
+RtlUnicodeToUTF8N
+RtlValidSid
+RtlWriteDataIntoSmartLBlobWritingContext
+RtlWriteMicrodomXml
+RtlXmlDefaultCompareStrings(&m_State.ParseState, Left, Right, pResult)
+RtlXmlDestroyNextLogicalThing(this)
+RtlXmlDetermineStreamEncoding(&TokenizerState, &EncodingLength)
+RtlXmlInitializeNextLogicalThing(this, &Init)
+RtlXmlInitializeTokenization(&TokenizerState, &TokenizerInit)
+RtlXmlNextLogicalThing( &m_State, &m_Namespaces, &m_CurrentThing, &m_AttributeList )
+RVPh8
+S-1-15-3-
+S-1-15-3-1024-1023893147-235863880-425656572-4266519675-2590647553-3475379062-430000033-3360374247
+S-1-15-3-1024-2136653787-990173382-3730014305-3794374500-1001559012-3111233883-485923750-2526317185
+SCCDFreeParsedElements
+SCCDParseFile
+SCCDValidateAppxFile
+SCCDValidateCatalogFile
+SeRestorePrivilege
+SeTakeOwnershipPrivilege
+SetLastError
+SetNamedSecurityInfoW
+SetUnhandledExceptionFilter
+Sha256
+SHA256
+SHA384
+Sha384
+Sha512
+SHA512
+SHCreateMemStream
+SideLoading
+SignedFilePath
+SizeofResource
+Sleep
+Software\Microsoft\SecurityManager
+Software\Microsoft\SecurityManager\AuthorizationRules\Capability
+Software\Microsoft\SecurityManager\CapabilityClasses
+Software\Microsoft\SecurityManager\CapAuthz
+Software\Microsoft\SecurityManager\CapAuthz\ApplicationsEx
+Software\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\
+Software\Microsoft\SecurityManager\CapAuthz\HasRepaired
+Software\Microsoft\SecurityManager\CapAuthz\HasRepaired\VolatileChildTest
+Software\Microsoft\SecurityManager\CapDBRedirect
+Software\Microsoft\SecurityManager\PrincipalClasses
+Source.Length >= 2
+Source.Length >= 3
+SPQWV
+SSSSj
+standalone
+State
+state not recoverable
+stream timeout
+string too long
+StringFileInfo
+StringId < m_Entries.Length
+SVWj@
+SVWQQ3
+SVWu.
+swprintf_s
+swscanf_s
+SYSTEM
+system
+t$<WP
+t$pVQ
+t&f;E
+t=Wj,j
+t0h82
+t1VPQ
+Temp = (*RtlReallocateStringRoutine)(Bytes, Blob->Buffer)
+Temp = (PUCHAR)((*RtlAllocateStringRoutine)(Bytes))
+TEMP@
+TEMP`
+TEMP0
+TEMP8
+TempElements.Allocate(NewCapacity)
+TempNodes.Allocate(this->m_LayoutCache.TotalObjectCount())
+TempNodes.Allocate(UpperIndex - TheElement.Reserved)
+TempTempElements.Allocate(NewCapacity)
+TEMPx
+TerminateProcess
+text file busy
+Thales TSS ESN:2264-E33E-780C1%0#
+TheDocument.Reserved == m_pTargetObject->m_LayoutCache.DocumentId()
+TheElement != TheElement.InvalidValue()
+TheEndElement = this->AllocateStreamObject()
+TheNode != TheNode.InvalidValue()
+this->m_PositionList.Allocate(LocationHeader->ulItemCount)
+Thumbprint
+timed out
+timed_out
+tIWPd
+TlP0X
+TmpNodes.Resize(cNecessary)
+too many files open
+too many files open in system
+too many links
+too many symbolic link levels
+too_many_files_open
+Translation
+trPWQ
+TTBL`
+tx8^\t
+u!hx-
+U0S0Q
+UCS-2
+UCS-4
+ugQWQjAZ
+ulIndex < m_Header->ulTotalNodeCount
+ulLocation < m_PositionList.Length
+ulValue < MultFactor
+ulWhich < TheMap->Length
+UnhandledExceptionFilter
+unknown error
+uNPPV
+USERENV.dll
+UTF-16
+UTF-8
+v(hh,
+Valid flags check failed: Flags
+value too large
+VarFileInfo
+vector<T> too long
+Verbose
+version
+VS_VERSION_INFO
+VVVVQ
+W93uH3
+WaitForSingleObject
+WaitForSingleObjectEx
+Warning
+Washington1
+wcsncmp
+WEVT\ 
+WEVT_TEMPLATE
+whichDoc.Reserved == m_pTargetObject->m_LayoutCache.DocumentId()
+whichElement != Windows::Microdom::Rtl::Element::InvalidValue()
+WideCharToMultiByte
+WilError_03
+win:Error
+win:Info
+win:Informational
+win:Start
+win:Stop
+win:Verbose
+win:Warning
+Windows::Rtl::CRtlObjectTypeDescription<class CRtlXMLDSIGC14NCanonicalizer>::CreateInstance
+Windows::Rtl::CRtlObjectTypeDescription<class CRtlXMLDSIGC14NCanonicalizer>::CreateTearoff
+Windows::Rtl::CRtlObjectTypeDescription<class CRtlXMLDSIGCanonicalizerFactory>::CreateInstance
+Windows::Rtl::CRtlObjectTypeDescription<class CRtlXMLDSIGCanonicalizerFactory>::CreateTearoff
+Windows::Rtl::CRtlObjectTypeDescription<class CRtlXMLDSIGExcC14NCanonicalizer>::CreateInstance
+Windows::Rtl::CRtlObjectTypeDescription<class CRtlXMLDSIGExcC14NCanonicalizer>::CreateTearoff
+Windows::Rtl::CRtlObjectTypeDescription<class MicrodomImplementation::CMicrodom>::CreateInstance
+Windows::Rtl::CRtlObjectTypeDescription<class MicrodomImplementation::CMicrodom>::CreateTearoff
+Windows::Rtl::CRtlObjectTypeDescription<class MicrodomWriterImplementation::CMicrodomWriter>::CreateInstance
+Windows::Rtl::CRtlObjectTypeDescription<class MicrodomWriterImplementation::CMicrodomWriter>::CreateTearoff
+Windows::XMLDSIG::Rtl::RtlGetDefaultXMLDSIGCanonicalizerFactory
+WINTRUST.dll
+WinVerifyTrust
+WQWh?
+WriteFile
+wrong protocol type
+wrong_protocol_type
+WTHelperGetProvSignerFromChain
+WTHelperProvDataFromStateData
+WWh82
+WWWWQS
+X- }Y9
+Xf9ABt
+xmlns
+Y__^[
+ySSSP
+z.9Wv

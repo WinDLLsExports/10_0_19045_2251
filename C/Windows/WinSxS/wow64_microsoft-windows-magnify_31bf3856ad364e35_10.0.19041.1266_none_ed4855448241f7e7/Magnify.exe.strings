@@ -1,0 +1,2403 @@
+            
+                                    <ColumnDefinition Width="*"/>
+                                    <TextBlock Grid.Row="6">%s</TextBlock>
+                                </Grid.ColumnDefinitions>
+                                </HyperlinkButton.Content>
+                                <ColumnDefinition/>
+                                <Grid.ColumnDefinitions>
+                                <HyperlinkButton.Content>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>     <!-- hyperlink up to create even spacing throughout Flyout control -->
+                                <RowDefinition Height="0.25*"/> <!-- 0.25* Pushes combobox down closer to hyperlink and pulls -->
+                                <TextBlock Grid.Column="0" Text="%s" HorizontalAlignment="Left" Foreground="{StaticResource MainGrayFillColor}" />
+                                <TextBlock Grid.Column="1" Text="%s" HorizontalAlignment="Center" Foreground="{StaticResource MainGrayFillColor}" />
+                                <TextBlock Grid.Column="2" Text="%s" HorizontalAlignment="Right" Foreground="{StaticResource MainGrayFillColor}" />
+                                AutomationProperties.Name="%s"
+                                Foreground="Red"
+                                Grid.Column="0"
+                                Grid.Row="0"
+                                Grid.Row="1"
+                                Grid.Row="4"
+                                Grid.Row="5"
+                                Grid.Row="6"
+                                Margin="0,0,0,12" />
+                                Maximum="20"
+                                MaxWidth="400"/>
+                                Minimum="0"
+                                MinWidth="400"
+                                Name="ReadingDisabledWarning"/>
+                                Name="SettingsButton">
+                                Name="SliderTitle"
+                                Name="VoiceCombobox"
+                                Name="VoiceSpeedSlider"
+                                PlaceholderText="%s"
+                                StepFrequency="1"
+                                Text=""
+                                Text="%s"
+                                TextWrapping="Wrap"
+                                TickFrequency="1"
+                                TickPlacement="BottomRight">
+                                ToolTipService.ToolTip="%s"
+                                Visibility="Collapsed"
+                            </Grid.ColumnDefinitions>
+                            </Grid.RowDefinitions>
+                            </Grid>
+                            </HyperlinkButton>
+                            </Slider>
+                            <ComboBox
+                            <Grid HorizontalAlignment="Stretch" Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                            <HyperlinkButton
+                            <Slider
+                            <TextBlock
+                            <TextBlock Grid.Row="3" Grid.Column="0" Text="%s" />
+                           <TextBlock
+                        </Grid>
+                        <Grid MinWidth="400" MaxWidth="400" MinHeight="206">
+                        <TextBlock Name="FastForwardButtonHotkey" Text="" Style="{StaticResource BaseToolTipTextStyle}" />
+                        <TextBlock Name="PlayButtonHotkey" Text="" Style="{StaticResource BaseToolTipTextStyle}" />
+                        <TextBlock Name="ReadFromPointToggleHotkey" Text="" Style="{StaticResource BaseToolTipTextStyle}" />
+                        <TextBlock Name="RewindButtonHotkey" Text="" Style="{StaticResource BaseToolTipTextStyle}" />
+                        <TextBlock Text="%s" Style="{StaticResource BaseToolTipTextStyle}" />
+                        <TextBlock Text="%s" Style="{StaticResource ToolTipNameStyle}" />
+                    </Flyout>
+                    </StackPanel>
+                    <ColumnDefinition/>
+                    <Flyout ShouldConstrainToRootBounds="False" AutomationProperties.Name="%s">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="FocusVisualMargin" Value="0" />
+                    <Setter Property="FontFamily" Value="Segoe UI" />
+                    <Setter Property="FontSize" Value="12" />
+                    <Setter Property="FontWeight" Value="SemiBold" />
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                    <Setter Property="LineHeight" Value="14" />
+                    <Setter Property="Margin" Value="0,0,0,8" />
+                    <Setter Property="MaxWidth" Value="320" />
+                    <Setter Property="MinHeight" Value="48" />
+                    <Setter Property="MinWidth" Value="48" />
+                    <Setter Property="TextWrapping" Value="WrapWholeWords" />
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                    <StackPanel Style="{StaticResource HotkeyToolTipPanelStyle}">
+                    FontFamily="Segoe UI Regular"
+                    FontSize="15"
+                    Grid.Column="0"
+                    HorizontalAlignment="Center"
+                    MinWidth="54"/>
+                    Name="ZoomLabel"
+                    Stroke="{StaticResource MainGrayFillColor}"
+                    StrokeThickness="1"
+                    Text="200%"
+                    TextAlignment="Center"
+                    UseLayoutRounding="True"/>
+                    VerticalAlignment="Center"
+                    Y1="1"
+                    Y2="21"
+                 I use 4 pixel margins at the start/end of the markup to push the ends of the left/right-most buttons into view -->
+                <!-- #(FF)ACACAC color from the UI redlines. -->
+                <!-- Arrow point with speaker icon -->
+                <!-- Cog icon -->
+                <!-- Minus icon -->
+                <!-- Next icon -->
+                <!-- Play icon -->
+                <!-- Plus icon -->
+                <!-- Previous icon -->
+                <!-- Tooltip -->
+                </Button.Flyout>
+                </Grid.ColumnDefinitions>
+                </Style>
+                </ToolTipService.ToolTip>
+                <Button.Flyout>
+                <FontIcon Glyph="&#xF8AA;" />
+                <FontIcon Glyph="&#xF8AB;" />
+                <FontIcon Glyph="&#xF8AC;" />
+                <FontIcon Glyph="&#xF8AD;" />
+                <FontIcon Glyph="&#xF8B0;" />
+                <FontIcon Glyph="&#xF8B3;" />
+                <FontIcon Name="PlayPauseIcon" Glyph="&#xF5B0;" />
+                <Grid.ColumnDefinitions>
+                <Line
+                <SolidColorBrush x:Key="MainGrayFillColor" Color="#FFACACAC" />
+                <Style x:Key="BaseToolTipTextStyle" TargetType="TextBlock">
+                <Style x:Key="HotkeyToolTipPanelStyle" TargetType="StackPanel">
+                <Style x:Key="ToolbarButtonStyle" TargetType="ContentControl">
+                <Style x:Key="ToolTipNameStyle" BasedOn="{StaticResource BaseToolTipTextStyle}" TargetType="TextBlock">
+                <TextBlock
+                <ToolTipService.ToolTip>
+                AutomationProperties.AccessKey="%s"
+                AutomationProperties.Name="%s"
+                IsEnabled="False">
+                Margin="0,0,4,0">
+                Margin="4,0,1,0">
+                Name="FastForwardButton"
+                Name="PlayButton"
+                Name="ReadFromPointToggle"
+                Name="RewindButton"
+                Name="SettingsFlyoutButton"
+                Name="ZoomInButton"
+                Name="ZoomOutButton"
+                Style="{StaticResource ToolbarButtonStyle}"
+                Style="{StaticResource ToolbarButtonStyle}">
+            <!-- Note: it seems like the stackpanel has 4 pixels eaten by the parent window on either side no matter what.
+            </Button>
+            </Grid>
+            </StackPanel.Resources>
+            </ToggleButton>
+            <Button
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="54" MinHeight="48">
+            <Grid MinWidth="4" MinHeight="48" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel.Resources>
+            <ToggleButton
+          language="*" />
+          name="Microsoft.Windows.Common-Controls"
+          processorArchitecture="*"
+          publicKeyToken="6595b64144ccf1df"
+          type="win32"
+          version="6.0.0.0"
+        </StackPanel>
+        <assemblyIdentity
+        <requestedExecutionLevel level="asInvoker" uiAccess="true"/>
+        Background="Transparent"
+        HorizontalAlignment="Center"
+        MinHeight="49"
+        MinWidth="407"
+        Orientation="Horizontal"
+        Padding="0,-1,0,0"
+        TabFocusNavigation="Cycle"
+        VerticalAlignment="Center"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      </requestedPrivileges>
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2</dpiAwareness>
+      <longPathAware xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">true</longPathAware>
+      <maxversiontested Id="10.0.18226.0"/>
+      <requestedPrivileges>
+    </application>
+    </dependentAssembly>
+    </security>
+    </windowsSettings>
+    <application>
+    <dependentAssembly>
+    <security>
+    <windowsSettings>
+    name="Microsoft.Windows.EndUser.Magnify"
+    processorArchitecture="x86"
+    type="win32"/>
+    version="5.1.0.0"
+  </application>
+  </compatibility>
+  </dependency>
+  </trustInfo>
+  <application xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+  <dependency>
+  <description>Magnifier</description>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ u5WVQ
+ Windows
+!0'060L0W0p0
+!t$T!t$X
+!This program cannot be run in DOS mode.
+"_^[]
+#enduser\ezap\magnify\registryutils.cpp
+$_^[]
+$j:j-k
+$j:j-Zj
+$SVWj
+$WSWS
+$WSWSQP
+%hs!%p: 
+%hs(%d) tid(%x) %08X %ws
+%hs(%u)\%hs!%p: 
+%s %s %s %s
+%s /start %s %s %s %s
+%s\ATConfig
+%SystemRoot%\System32\ATBroker.exe
+&amp;
+&apos;
+&quot;
+(_^[]
+(caller: %p) 
+(null)
+),?"4B=
+*efR\
+,00040D0h0t0
+,h\iG
+,magnifierpane
+,Narrator
+.?AUhresult_access_denied@winrt@@
+.?AUhresult_canceled@winrt@@
+.?AUhresult_changed_state@winrt@@
+.?AUhresult_class_not_available@winrt@@
+.?AUhresult_error@winrt@@
+.?AUhresult_illegal_delegate_assignment@winrt@@
+.?AUhresult_illegal_method_call@winrt@@
+.?AUhresult_illegal_state_change@winrt@@
+.?AUhresult_invalid_argument@winrt@@
+.?AUhresult_no_interface@winrt@@
+.?AUhresult_not_implemented@winrt@@
+.?AUhresult_out_of_bounds@winrt@@
+.?AUhresult_wrong_thread@winrt@@
+.?AV<lambda_29dd38b82d4ecc00119730b9616920c4>@@
+.?AV<lambda_4013e39a269475d66e69d59e8ce986f7>@@
+.?AV<lambda_5f3588abc2f3054346f18443439331f3>@@
+.?AV<lambda_934a3122e6600925285b1d48e4dfceeb>@@
+.?AV<lambda_b5337c5db94b5858b14afecbfe432324>@@
+.?AV<lambda_b58334dd4cd13f41ba75d5f565de8bd8>@@
+.?AV<lambda_e34572ee5715fdef4b7ddb3fbf48624e>@@
+.?AVbad_alloc@std@@
+.?AVbad_array_new_length@std@@
+.?AVbad_variant_access@std@@
+.?AVCAtlException@ATL@@
+.?AVexception@std@@
+.?AVinvalid_argument@std@@
+.?AVout_of_range@std@@
+.?AVResultException@wil@@
+.?AVtype_info@@
+.00cfg
+.CRT$XCA
+.CRT$XCAA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIAC
+.CRT$XIC
+.CRT$XIZ
+.CRT$XLA
+.CRT$XLZ
+.CRT$XPA
+.CRT$XPZ
+.CRT$XTA
+.CRT$XTZ
+.data
+.data$brc
+.data$r$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.rdata
+.rdata$brc
+.rdata$r$brc
+.rdata$sxdata
+.rdata$T$brc
+.rdata$zETW0
+.rdata$zETW1
+.rdata$zETW2
+.rdata$zETW9
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.rtc$IAA
+.rtc$IZZ
+.rtc$TAA
+.rtc$TZZ
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.tls$
+.tls$ZZZ
+.xdata$x
+/hardwarebuttonlaunch
+/launchnarratorhome
+/launchquickstart
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+: :':2:8:?:N:^:
+: :0:<:\:h:p:
+: ;Q;q;v;
+: ;x;
+:":K:`:z:
+:#:/:<:K:Q:W:]:c:k:s:
+:#;;;A;R;s;
+:$:,:4:<:D:P:X:
+:$:,:L:h:x:
+:$:D:L:X:|:
+:%:*:b:y:
+:%:9:M:a:q:
+:&:5:G:T:j:w:
+:(:H:P:X:`:l:t:
+:):Y:c:k:u:}:
+:,:G:b:}:
+:,;d;
+:.:=:_:h:w:
+:.:V:
+:/:::W:q:|:
+::;L;
+:-:9:b:o:
+:@:[:|:
+:@:X:p:
+:+:H:Y:
+:+;J;\;
+:<:h:
+:=:[:a:
+:>:D:
+:>:G:z:
+:>:W:|:
+:>;N;c;m;|;
+:1&828\8
+:1:M:^:q:
+:1:Z:h:n:|:
+:4:h:
+:4;a;
+:6:S:a:
+:8:l:
+:8:P:]:
+:9:T:Y:i:
+:a;-<<<D<S<o=
+:B:J:|:
+:B:S:Z:
+:E:[:
+:E:`:{:
+:H:X:d:l:
+:h:y:
+:H;};i<
+:I:Z:
+:O:t:
+:O:V:
+:P:q:
+:S;a;k;u;{;
+:T:f:
+:X;i;
+:Z;e;m;
+; ;$;(;,;0;4;8;<;@;D;H;L;P;T;X;\;`;d;h;l;p;t;x;|;
+; ;(;\;l;x;
+; ;0;<;D;x;
+; ;0;5;@;];c;
+; ;8;\;l;x;
+;!;&;6;N;
+;!;/;6;;;@;b;j;o;x;};
+;!;B;g;v;
+;!<h<
+;";D;
+;#;o;
+;$;,;8;X;d;
+;$;X;h;t;|;
+;$<)<
+;%;@;s;
+;&;2;
+;(;?;s;
+;(;1;j;~;
+;(;4;@;L;X;d;p;|;
+;(;9;e;u;
+;);6;L;T;Z;m;t;~;
+;,;B;|;
+;,;p;
+;,;X;a;
+;.;3;D;];b;s;
+;.;S;Y;m;
+;:<D<Q<a<
+;';,;B;};
+;-;=;];x;
+;^<k<w<
+;~`t4
+;<;p;
+;-<N<S<
+;>;E;L;
+;0;~;
+;0<z<
+;1;s;y;
+;3<Y<a<
+;4<u<
+;5<]<
+;6>b>{>
+;7;I;p;
+;9~,t'
+;AluA
+;Apu?
+;ApuI
+;Atu7
+;Bhu;
+;BhuE
+;Blu=
+;Blu1
+;Bpu7
+;Btu3
+;Btu5
+;C(t)
+;C<S<{<
+;D;I;Y;j;|;
+;D;T;`;
+;E;T;\;v;
+;E<a<s<
+;G<N<
+;H;O;\;c;q;};
+;HHs 
+;HHs$9
+;j<q<|<
+;Jhu1
+;M<`<
+;O;w;
+;p<|<$=4=c=p=}=
+;t04u
+;V;h;
+;V;w;
+;Y;c;
+;Z<v<
+? ?<?L?X?`?
+?!?H?]?
+?"?'?5?;?@?Z?n?
+?#?/?K?Y?a?r?~?
+?#?:?{?
+?#?1?H?V?m?{?
+?$?0?P?X?d?
+?(?@?H?P?d?l?t?
+?(?5?H?Q?i?s?
+?)?5?A?H?
+?*?s?
+?,?4?<?H?P?p?x?
+?,?D?Y?
+?.?B?
+?-?=?u?
+??0?$basic_ios@GU?$char_traits@G@std@@@std@@IAE@XZ
+??0?$basic_iostream@GU?$char_traits@G@std@@@std@@QAE@PAV?$basic_streambuf@GU?$char_traits@G@std@@@1@@Z
+??0?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAE@XZ
+??1?$basic_ios@GU?$char_traits@G@std@@@std@@UAE@XZ
+??1?$basic_iostream@GU?$char_traits@G@std@@@std@@UAE@XZ
+??1?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAE@XZ
+??6?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEAAV01@I@Z
+?-?I?b?z?
+?_Lock@?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAEXXZ
+?_Pninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+?_Throw_C_error@std@@YAXH@Z
+?_Throw_Cpp_error@std@@YAXH@Z
+?_Unlock@?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAEXXZ
+?_Xbad_function_call@std@@YAXXZ
+?_Xlength_error@std@@YAXPBD@Z
+?_Xout_of_range@std@@YAXPBD@Z
+?<?D?P?p?x?
+?<?L?X?`?
+?1?>?
+?3???
+?333?
+?333333
+?6?a?
+?8?@?N?T?X?`?f?j?u?
+?e?v?
+?E?W?b?}?
+?F?P?k?
+?ffffff
+?gbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+?H?X?d?
+?imbue@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEXABVlocale@2@@Z
+?M?{?
+?N?{?
+?O?h?
+?setbuf@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEPAV12@PAG_J@Z
+?showmanyc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE_JXZ
+?sync@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHXZ
+?uflow@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGXZ
+?xsgetn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE_JPAG_J@Z
+?xsputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE_JPBG_J@Z
+@.didat
+@.reloc
+@PQRj
+[%hs(%hs)]
+[%hs]
+\$ ;Ch
+\Cursors\
+\Magnifier.lnk
+\Narrator.lnk
+\On-Screen Keyboard.lnk
+^$9^<t
+^(9^$t
+^<9^@t
+^4^[]
+^8_^[
+^89^4~
+_^[Y]
+__CxxFrameHandler3
+__std_terminate
+_=hPG
+_9~(u
+_9=@PG
+_c_exit
+_Cnd_do_broadcast_at_thread_exit
+_CxxThrowException
+_except_handler4_common
+_finite
+_initterm
+_initterm_e
+_isnan
+_Mtx_destroy_in_situ
+_Mtx_init_in_situ
+_Mtx_lock
+_Mtx_unlock
+_o___p__commode
+_o___std_exception_copy
+_o___std_exception_destroy
+_o___stdio_common_vsnprintf_s
+_o___stdio_common_vswprintf
+_o___stdio_common_vswscanf
+_o__beginthreadex
+_o__callnewh
+_o__cexit
+_o__CIatan2
+_o__CIcos
+_o__CIfmod
+_o__CIlog
+_o__CIpow
+_o__CIsin
+_o__CIsqrt
+_o__configthreadlocale
+_o__configure_wide_argv
+_o__controlfp_s
+_o__crt_atexit
+_o__errno
+_o__exit
+_o__get_wide_winmain_command_line
+_o__hypot
+_o__initialize_onexit_table
+_o__initialize_wide_environment
+_o__invalid_parameter_noinfo
+_o__invalid_parameter_noinfo_noreturn
+_o__ltow_s
+_o__purecall
+_o__register_onexit_function
+_o__seh_filter_exe
+_o__set_app_type
+_o__set_fmode
+_o__set_new_mode
+_o__wcsicmp
+_o__wcslwr_s
+_o__wtoi
+_o_ceil
+_o_exit
+_o_floor
+_o_free
+_o_iswspace
+_o_malloc
+_o_memcpy_s
+_o_realloc
+_o_terminate
+_o_wcscat_s
+_o_wcscpy_s
+_o_wcstok
+_o_wcstok_s
+_register_thread_local_exe_atexit_callback
+_Thrd_detach
+_Thrd_id
+_Thrd_join
+`.data
+`anonymous-namespace'::WriteAccessibilityConfigStringListToRegistry
+`uW!M
+{ModifierKey}
+{SE8=-
+{Speed}
+{xj2P
+|$PPj
+} VWi
+}WjHVR
+~ _^3
+~ _^Y]
+~$9~(t
+~(_^]
+~h_^]
++0#1F1
++020x0
++Axtw
++D$$P
++F<= 
++F<=,
++G@;C
++L$4Q
++N<;H
++t$(@P
++T$(Q+
+< </<7<F<N<]<
+< <1<A<|<
+< <y<
+< =N=a=m=y=
+<!-- Copyright (c) Microsoft Corporation -->
+<"<2<:<R<\<y<
+<"=5=;=n=:>
+<#<-<3<9<?<C<I<M<W<\<l<
+<#=,=J=y=
+<$<,<`<p<|<
+<$<,<4<@<`<l<
+<$<,<4<@<d<l<t<|<
+<$<D<P<p<x<
+<$=`=t=
+<%<+<7<F<r<
+<%<4<E<N<Z<b<r<
+<%=~=
+<&=+=u=
+<&=D=
+<(<:<
+<(<0<d<l<t<
+<(<9<G<X<
+<(<C<
+<)<<<N<j<
+<*=5===H=P=[=c=n=
+<,=W=
+</assembly>
+<:=L=V=e=
+<;=R=b=
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<+<><Z<o<
+<+<5<I<}<
+<'<l<
+<0<@<L<l<x<
+<0<4<D<H<P<h<x<|<
+<0>D?
+<1<?<Y<^<
+<1=N=k=
+<3<U<f<q<
+<5<K<
+<5<x<
+<6<V<w<
+<7<V<
+<7=s=y=}=
+<8<H<T<t<|<
+<9<K<h<
+<948s
+<A<\<x<
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<B=I=U=`=r=
+<D<|<
+<G<}<
+<I<Y<v<
+<P)9Y
+<StackPanel
+<W=|=
+<Y=z=
+<Z=w=
+= =$=(=,=4=L=T=X=\=`=d=h=l=p=t=x=|=
+= =,=4=<=D=L=T=d=
+= =,=4=h=x=
+= =,=L=T=\=h=
+= ='=D=V=
+= >%>:>V>p>
+=!=/=]=y=
+=!=R=
+=#=(=B=G=]=
+=#=,=5=>=[=
+=#>>>Y>b?
+=$=.=?=G=N=T=Z=`=p=
+=$=<=A=\=y=
+=$=0=P=X=`=l=
+=$=2=8===a=
+=$>4?
+=%=*=I=N=
+=(=5=L=~=
+=(=C=^=y=
+=(=H=P=X=d=
+=)=6=>=K=U=
+=)=N>s>
+=*=d=
+=,=4=@=`=h=t=
+=,=T=`=r=x=~=
+=.=>=H=e=
+=?=Z=h=s=
+=@=u=
+=[>o>
+=+=C=P=~=
+=<=_=
+===}=
+===B=
+===G=N=S=[=
+=>?\?h?
+=>>C>S>u>z>
+=->n>
+=0=s=
+=6>X>f>
+=8>S>
+=B=]=h=v=}=
+=C=I=Y=
+=k=|=
+=L9o<
+=P=r=
+=V=^=r=z=
+=w>*?
+=z=E>
+=Z=w=
+> >K>n>
+>!?*?
+>!?<?a?|?
+>!>->5>K>S>c>n>}>
+>!>D>
+>">2>B>R>b>r>
+>">6>>>R>Z>n>v>
+>#>N>j>
+>$?5?
+>$?N?
+>$>,>4><>D>L>\>d>l>t>|>
+>$>_>t>{>
+>$>->2>B>d>m>r>
+>$>0>8>l>|>
+>$>0>P>\>|>
+>$>6>E>I>x>
+>&?0?=?O?
+>&?K?
+>&>5>N>c>k>
+>(?=?D?N?Y?h?x?
+>(>z>
+>)?o?
+>,>3>W>j>}>
+>,>4><>D>P>p>x>
+>,>P>`>l>t>
+>:?F?}?
+>??L?a?u?|?
+>?>T>{>
+>'?Z?
+>_>p>
+>+?w?|?
+>+>6>L>T>
+>+>B>Q>W>e>
+>=>C>
+>->A>^>
+>0?9?y?
+>0>8>D>d>p>x>
+>1?@?
+>1>p>
+>3>T>o>
+>4>?>D>k>
+>4>W>r>
+>9>I>O>U>k>
+>B>Q>v>
+>B>T>
+>D?q?
+>G>V>d>
+>h?z?
+>I>O>
+>K>b>
+>K>T>Z>d>j>u>
+>ku?Sj[
+>L?S?^?p?u?
+>LS\?rpi
+>m?v?~?
+>N>\>n>
+>P>k>
+>T>o>
+>u>|>
+>X?i?
+>Y?l?
+>Z?x?
+0 0$0(0,000t0x0
+0 0$0,0004080<0@0D0H0
+0 0*0G0
+0 0,0L0X0`0
+0!0M0
+0!1S1\1a1
+0!7t8
+0"0W0f0
+0"1=1h1
+0#000M0
+0#040
+0#11181C1]1w1
+0#1e1q1
+0%050I0S0h0n0
+0%0A0Q3
+0&0/0<0b0z0
+0&040K0Y0i0y0
+0&070J0_0
+0(080R0^0d0q0
+0*0[0p0
+0*0A0K0^0c0u0
+0,0G0r0
+0,1<1H1h1t1
+0,1g1
+0.1S1f1|1
+0/090H0R0X0>1G1
+0:0]0
+0:2U2
+0;7rUw
+0\0k0
+0{1-2H2c2k2q2
+0=0c0~0
+0=1r1w1
+00050B0|0
+0'090>0J0^0{0
+0-1]1r1
+010}0
+021S1
+03090e0{0
+030e0
+031Z1
+040904B0
+040D0P0p0|0
+040T0
+070\0
+070F0M0W0b0p0
+080D0d0l0x0
+080D0V0i0
+0A0a0j0
+0D0T0`0h0
+0F1_1~1
+0H0[0u0
+0hPA@
+0K1`1
+0L0x0
+0n0w0
+0P0`0l0
+0P0X0w0}0
+0P6\6h6
+0Q0[0f0
+0Qh(B@
+0Qh<4@
+0Qh8B@
+0R1h1o1}1
+0U1\1g1y1~1
+0Z0k0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1 1T1d1p1
+1!1:1I1~1
+1!1E1
+1"1(1.141:1@1F1L1R1X1^1d1j1p1v1|1
+1"1'1;1z1
+1"212
+1#141
+1#2:2P2_2t2
+1$1*1
+1$1,181X1`1h1p1x1
+1$1>1
+1$101P1\1|1
+1$191J1
+1%121?1Y1^1e1
+1%161c1v1
+1%2,232:2A2z2
+1&1H1v1
+1&2/2G2P2
+1(1@1X1p1
+1(171>1Y1
+1*#2:
+1*1a1
+1*1B1R1y1
+1,1B1T1`1
+1,1G1{1
+1,3n3
+1.252@2R2W2c2w2
+1:1{1
+1;1@1P1d1
+1@1c1j1q1
+1<1D1P1X1
+1=1m1
+10.0.19041.1266
+10.0.19041.1266 (WinBuild.160101.0800)
+10181D1L1d1
+1-1H1c1v1
+132D2O2T2
+141M1i1
+151\1
+151P1k1
+151Z1
+161D1[1
+181I1_1
+1A1V1]1g1r1
+1A3~5
+1d1T3`3
+1D2l2r2
+1H1Z1
+1J1Y1
+1j223F3/6
+1L1\1t1x1
+1M2`2p2
+1T2^2
+1T2d2
+1tHs<
+1w2}2
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+2 2&2,222i3o3t3
+2 2(242T2\2d2p2
+2 2<2Y2u2
+2 232F2W2a2x2
+2 2q2}2
+2 3.3a3
+2!373=4r5
+2"3i3x3
+2#2+232?2H2M2S2]2g2w2
+2#232o2y223=3O3U3Z3`3t3
+2#3C3X3j3{3
+2$2,242<2D2L2T2\2d2l2t2|2
+2$202P2X2d2
+2$232E2[2
+2$25292=2A2E2I2M2Q2U2Y2]2a2e2q2
+2$3B3s3|3
+2%2P2
+2%3)3
+2&2.242E2J2X2^2n2s2
+2&2C2
+2(2H2X2|2
+2)2b2
+2)2B2h2
+2)3T3w3
+2*222a2g2
+2,282@2X2`2h2l2p2x2
+2,3R3f3
+2.3a3
+2;2l2y2
+2?2b2
+2@2b2
+2@3b3
+2[3s3
+2<2O2
+202H2`2x2
+202H2O2`2f2k2
+213@3^3
+2'2B2]2x2
+2-2E2K2
+232[2q2
+242<2H2h2t2
+252_2
+282A2F2T2Z2_2u2
+282H2T2\2
+283v3
+292B2G2r2X3]3r3
+292S2_2u2z2
+2b3l3y3
+2C2l2
+2E3P3z3
+2E9js1,s;
+2G2Y2~2
+2i3z3
+2T2Z2i2q2z2
+2V2x2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3 3&3*32363<3@3F3J3P3T3Z3^3d3h3v3
+3 3@3L3l3x3
+3 3A3J3
+3 404W4r4|4E5
+3 4B4g4~4
+3!323P3b3
+3!4B4I4R4`4h4
+3"4.494n4t4
+3$3,343<3D3L3T3\3d3
+3$3,343<3D3L3T3\3d3l3x3
+3$383G3V3;4#6)6
+3$4<4
+3%3\3/4=4Q4X4m4
+3%3-353=3H3M3S3]3g3z3
+3&3J3Q3`3
+3(3H3P3\3|3
+3)3X3d3
+3*3B3]3j3z3
+3*4A4j4
+3,383@3t3
+3,4`4
+3.3=3m3|3
+3.393D3
+3.3y3
+3;3N3
+3@3P3\3|3
+3@3T3x3
+3]4d4o4
+3+414
+3<3v3
+30383L3T3X3`3t3|3
+303i3
+303S3n3
+313@3F3L3S3Z3c3
+313Z3d3
+324G4S4l4
+333P3]3b3x3~3
+3'3I3k3
+3'3J3_3v3
+343G3Y3
+343R3k3
+3'454V4p4x4
+364F4t4
+374b4
+374K4f4s465S5
+383X3x3
+384k4~4
+393O3g3
+394k4
+3A3H3X3z3
+3B3y3
+3I4q4v4{4
+3J4f4
+3S3g3r3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4@4H4T4t4|4
+4!41484?4Q4x4
+4!5E5X5k5p5}5
+4"4U4
+4"5]5
+4#434>4L4R4X4a4y4
+4$40484l4|4
+4$40484P4t4
+4$4D4L4X4x4
+4$4W4a4
+4$5)575=5P5U5c5i5
+4$5,545@5`5h5t5
+4$545@5H5|5
+4&4*42494>4C4H4N4W4]4g4m4s4w4}4
+4&4Q4|4
+4&5\5
+4(4]4i4
+4)4e4x4
+4*414
+4*4n4
+4*v^{
+4,4<4H4P4
+4,4s4x4
+4[1denduser\ezap\magnify\readingoperationtracker.cpp
+4[5w5
+4+474P4i4w4
+40484L4T4\4`4h4p4x4
+404T4]4
+414S4g4
+4-434M4X4c4
+444n4v4|4
+445G5
+4-464Q4
+4-535
+464o4
+465`5
+484X4x4
+4D4c4
+4F4m4B5d5
+4M4S4W4
+4O4r4|4
+4S5V6
+4SVW3
+4y425i5
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5 5$5,545<5@5H5\5d5h5p5x5
+5 5&5Z5
+5 5(5\5l5x5
+5!5*5.5
+5"5,5B5M5
+5#575K5_5s5
+5$5)545
+5$5+575O5`5
+5$5D5L5T5\5h5
+5$6O6z6
+5%5/5
+5%5+5H5_5~5
+5%5J5
+5&505:5D5N5X5b5l5v5
+5&50555G5d5k5|5
+5&5-5F5M5f5m5
+5(505X5
+5(5n5|5
+5(656U6
+5)5>5
+5)6.6@6d6r6
+5)6G6
+5*5I5
+5,585X5`5h5t5|5
+5.585U5
+5.6b6g6~6
+5.6I6T6Y6j6
+5;5e5
+5@5I5U5^5j5v5}5
+5+565?5H5Q5{5
+5+595B5_5g5u5}5
+5+5K5g5
+5+5Q5`5
+5>5M5d5h5m5s5y5
+5>5X5
+505@5X5m5z5
+516C6Y6_6
+52676G6^6
+546P6d6x6
+5'5]5g5x5
+5'50575F5O5x5
+555A5m5
+5'6>6X6f6v6
+5-6u6
+575U5d5|5
+576\6
+576V6
+585X5x5
+5b5o5
+5D5j5y5
+5D5T5`5h5
+5I5w5
+5ineI
+5J5O5_5~5
+5l9l>
+5N6T6
+5ntel
+5O5^5x5
+5O5r5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+6 6,646T6p6
+6 6<6L6T6X6`6|6
+6 707<7D7x7
+6!6*60666<6B6P6g6{6
+6!636j6
+6"7)777F7U7
+6#656X6j6
+6#747j7
+6#7N7q7
+6$6/6e6l6y6
+6$6?6Z6u6
+6$60686l6|6
+6%6)6h6m6}6
+6&6,62686>6S6X6^6d6n6{6
+6&6e6{6
+6&6J6i9
+6&757M7\7l7r7
+6&7D7
+6(616:6C6L6U6^6g6p6y6
+6(626:6c6
+6)6?6M6Y6a6
+6,6<6F6S6]6g6y6
+6,7S7
+6:6v6
+6]7d7L8P8T8
+6+6N6
+6+7:7@7Q7_7
+6+CpP
+6<6D6P6p6x6
+6<6g6
+6=6N6^6y687{7
+626K6_6
+627;7f7q7
+646<6D6L6T6\6d6l6t6
+646F6o6w6~6
+647K7h7
+686g6o6N7
+686X6x6
+69~$u=
+6B6f7p7
+6D6i6
+6D6T6`6h6
+6F:=?
+6F7a7
+6h6t6x6
+6I7{7
+6I7X7
+6J6T6k6
+6L6R6e6
+6L7P7T7X7\7`7d7h7
+6Q7_7
+6r9v9z9~9
+6Z6g6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7 7(7\7l7x7
+7 7,7X7
+7 7D7H7T7|7
+7 8+8<8b8u8
+7"767H7}7
+7"7-737E7T7f7x7
+7"9>9
+7#7'727>7G7r7x7
+7#80898M8Z8a8
+7$707P7X7`7l7t7
+7$7M7X7h7m7s7}7
+7$7X7d7
+7$8Y8n8{8
+7%8?8
+7&7,7
+7&7:7
+7&767F7f7
+7(767D7J7O7Z7d7s7y7
+7(7-7;7A7S7X7f7l7|7
+7(888D8d8l8t8
+7)7:7K7h7x7
+7)7A7r7
+7)8W8
+7,747@7`7l7
+7,787@7t7
+7.8=8Y8j8q8
+7.8I8]8h8
+7@8m8
+7[8e8r8
+7]7m7
+7<7[7b7
+707P7
+717=7
+717B7n7
+737<7
+738c8i8{8
+757A7G7k7q7
+758C8Q8e8~8
+767D7P7\7e7
+767e7
+7'7-7>7b7k7|7
+7'7D7
+7-7T7u7
+788G8v8
+798L8d8
+79wTt2
+7A7g7r7
+7c8w8
+7D7T7`7h7
+7E839
+7h\iG
+7I8[8`8r8
+7j8u8
+7L7U7|7
+7L8Q8a8
+7o8t8,929B9c9y9
+7R8q8K9t9
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+8 8&868;8I8O8^8x8
+8 8(80888@8H8T8t8|8
+8 888P8
+8 8i8x8
+8 8T8d8p8x8
+8 9C9w9
+8!828C8U8s8
+8!8C8\8n8
+8"828
+8"8C8J8
+8#919@9G9
+8$8,848<8D8L8d8p8
+8$8+80898>8G8[8c8i8w8
+8$80888
+8&9@9Z9p98:J:
+8)9e9l9
+8*8G8d8v8
+8,8~8
+8:9D9x9
+8@8|8
+8<8D8P8p8
+8=8C8\8
+8=9S9z9
+80>0D0P0U0e0
+808`8
+808H8
+818<8D8O8f8
+838V8y8
+849h9
+858r8
+868Q8l8
+869C9
+878F8X8o8
+879s9{9
+8'8O8
+898V8
+8'9J9\9b9f9z9
+8b9t9
+8C8U8
+8c9j9u9
+8C9L9v9
+8C9R9
+8F8z8
+8g8w8
+8G9W9w9
+8H8S8
+8M8f8q8
+8N9Z9j9v9
+8p9y9
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+9 9$9(9,9h9
+9 9/979C9V9]9
+9 9<9
+9 909@9P9\9d9
+9 9'9<9M9
+9"9L9
+9#:0:4:
+9$9,949<9D9L9T9\9d9l9t9|9
+9$979
+9$9f9
+9%:?:^:u:
+9&9]9n9u9
+9&9+9<9P9^9u9{9
+9&9H9V9s9
+9(9=9I9P9U9[9g9t9
+9(9H9T9t9|9
+9*9V9c9
+9,:`:
+9,989X9d9
+9,9H9X9d9l9
+9::A:H:P:g:
+9;:N:
+9@:j:u:
+9@:n:<;h;v;
+9_(s-j
+9_htt9
+9}\tk9]
+9~\t?
+9~8tA
+9<9D9P9p9x9
+9<9h9
+9= kG
+9=9B9R9j9w9
+90<4<8<<<@<D<H<L<P<T<X<\<`<d<A?G?S?
+909l9
+92:D:m: ;m;
+93:@:v:
+949L9
+949O9t9
+959H9c9t9
+959k9f:w:
+97uuj`
+989S9v9
+9'909<9D9S9x<
+9'9d9i9y9
+9-9J9V9b9n9
+9A:o:
+9C ua
+9F@w!
+9G8~@
+9I:M;S;i;
+9i<d>
+9i9'?8?
+9I9g9s9
+9K@tg
+9M0tU
+9N9r9
+9Q9c9
+9tHs<
+9wLt6
+A8;A<u
+ACCESSIBILITY_TOPMOST
+AccessibilityXamlUICallbackWindowClass
+AccessibleObjectFromEvent
+AccessibleObjectFromWindow
+AcquireSRWLockExclusive
+AcquireSRWLockShared
+Active
+addend
+AdjustWindowRectEx
+AdjustWindowRectExForDpi
+ADVAPI32.dll
+aero_helpsel.cur
+aero_link.cur
+AllocateAndInitializeSid
+animations
+api-ms-win-core-synch-l1-2-0.dll
+api-ms-win-core-winrt-error-l1-1-0.dll
+api-ms-win-core-winrt-error-l1-1-1.dll
+api-ms-win-core-winrt-l1-1-0.dll
+api-ms-win-core-winrt-string-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-private-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-shcore-scaling-l1-1-1.dll
+ApplicationName
+AQShd
+At5QQ
+ATExe
+Attributes
+audiodescription
+Ax+At
+b;C u[
+B9}\t,9U
+bad allocation
+bad array new length
+bad variant access
+BeginDeferWindowPos
+BeginPaint
+Bottom
+bottomleft_zoomout
+bottomright_zoomout
+Bp+Bh
+ButtonBackgroundDisabled
+ButtonForegroundDisabled
+C$PhT
+C@!t$P
+C++/WinRT version:2.0.190620.2
+callContext
+CallContext:[%hs] 
+callerModule
+callerReturnAddressOffset
+CallNextHookEx
+caretbrowsing
+caretwidth
+CenterTextInsertionPoint
+CheckTokenMembership
+Cl+CdP
+CL9q0u
+ClassicDocked
+ClassicDockPosition
+ClassicShowCursor
+ClassicWindowCX
+ClassicWindowCY
+ClassicWindowHeight
+ClassicWindowWidth
+ClassicWindowX
+ClassicWindowY
+ClipCursor
+close
+CloseDesktop
+CloseHandle
+CloseThreadpoolTimer
+CoCreateFreeThreadedMarshaler
+CoCreateInstance
+CoIncrementMTAUsage
+CoInitialize
+CoInitializeEx
+ColorFilter
+colorfiltering
+CombineRgn
+ComboLBox
+COMCTL32.dll
+CompanyName
+CompareStringOrdinal
+CompareStringW
+Configuration
+Control Panel\Cursors
+ConvertSidToStringSidW
+CopyRect
+CopySettingsToLockedDesktop
+CoTaskMemAlloc
+CoTaskMemFree
+CoUninitialize
+CoWaitForMultipleObjects
+Cp+ChP
+CreateBitmap
+CreateBrushIndirect
+CreateCompatibleDC
+CreateEventExW
+CreateEventW
+CreateMutexExW
+CreateMutexW
+CreateProcessW
+CreateRectRgn
+CreateSemaphoreExW
+CreateSolidBrush
+CreateThread
+CreateThreadpoolTimer
+CreateWindowExW
+Ct+Cl
+Ct+Clk
+Ct+ClP
+Ct+ClP3
+currentContextId
+currentContextMessage
+currentContextName
+Cx+Cpj
+CxhOnlyUse
+D$ +D$
+D$ h\lG
+D$ Pj
+D$ PQ
+D$ PQQ
+D$ QQ
+D$ SV
+D$$@P
+D$$@Pj
+D$$VW
+D$$YY
+D$(PQ
+D$(PQQ
+D$(SV
+D$,+D$$P
+D$,PQQ
+D$,QQ
+D$,VW
+D$@+B
+D$@=hPG
+D$@PQQ
+D$`SVW
+D$|Pj
+D$|PVj
+D$<PW
+D$<WP
+D$0Pj
+D$8jHj
+D$8PQQ
+D$8SVWj
+D$D+B
+D$D+D$<
+D$D+D$<VPj
+D$DPjgj
+D$h;G
+D$H+D$@VPj
+D$hSV3
+D$hSVW
+D$l;G
+D$L+D$Dh
+D$LRP
+D$P;D$$t
+D$P+D$HP
+D$pjdPV
+D$PPW
+D$PSSjPh
+D$PSV
+D$tVP
+D$X;D$,
+D$xSVW
+D0b0l0}021Q1
+DebugBreak
+Default
+DefaultAccountSAMName
+DefaultImmersiveSwitchMode
+DefaultMode
+DeferWindowPos
+DefWindowProcW
+DeleteCriticalSection
+DeleteDC
+DeleteFileW
+DeleteObject
+DeleteProcThreadAttributeList
+Description
+DestroyCursor
+DestroyWindow
+DisableAudio
+DispatchMessageW
+Display.Cpl Desktop
+docked
+DtCSV
+DV2ControlHost
+dwmapi.dll
+DwmIsCompositionEnabled
+DwmSetWindowAttribute
+Dz;9u
+E PWV
+E(+E P
+E(+G8
+E(SVW
+E,+G<
+E0`0}0
+enabled
+EnabledFeatureUsage
+EndDeferWindowPos
+EndPaint
+enduser\ezap\magnify\animation.cpp
+enduser\ezap\magnify\CommonHelpers.h
+enduser\ezap\magnify\elementtotextpatternelementresolver.cpp
+enduser\ezap\magnify\fullscreenmagnifier.cpp
+enduser\ezap\magnify\lensmagnifier.cpp
+enduser\ezap\magnify\magnifier.cpp
+enduser\ezap\magnify\magnifiermain.cpp
+enduser\ezap\magnify\magnifierui.cpp
+enduser\ezap\magnify\magwindow.cpp
+enduser\ezap\magnify\mousepointerstatemanager.cpp
+enduser\ezap\magnify\optionskeeper.cpp
+enduser\ezap\magnify\pointtoreadingtargetresolver.cpp
+enduser\ezap\magnify\readingmanagerloader.cpp
+enduser\ezap\magnify\readingoperationcomposer.cpp
+enduser\ezap\magnify\ReadingOperationComposer.h
+enduser\ezap\magnify\readingplatformadapter.cpp
+enduser\ezap\magnify\ReadingTargetConverter.h
+enduser\ezap\magnify\readingtargetnavigationprovider.cpp
+enduser\ezap\magnify\SafeArrayUtil.h
+enduser\ezap\magnify\systementityfinder.cpp
+enduser\ezap\magnify\telemetryhelper.cpp
+enduser\ezap\magnify\textrangeutils.cpp
+enduser\ezap\magnify\textselection.cpp
+enduser\ezap\magnify\uiathreadhelper.cpp
+enduser\ezap\magnify\util.cpp
+enduser\ezap\magnify\viewporttransformer.cpp
+enduser\ezap\magnify\wineventrefilter.cpp
+enduser\ezap\magnify\wineventrefilter.h
+enduser\ezap\magnify\xamluiwrapper.cpp
+enduser\ezap\voicecommon\legacysapirenderadapter.cpp
+enduser\ezap\xamlcommon\xamlresourceutils.cpp
+enduser\ezap\XamlCommon\XamlResourceUtils.h
+enduser\ezap\xamlcommon\xamlui.cpp
+EnterCriticalSection
+EnumDisplayMonitors
+en-US
+EqualRect
+EventRegister
+EventSetInformation
+EventUnregister
+EventWriteTransfer
+Exception
+ExpandEnvironmentStringsW
+F(_^[
+F,;F(t
+F8;F<t{
+FailFast
+failureCount
+failureId
+failureType
+FallbackError
+FastForward
+FastForwardButton
+FastForwardButtonHotkey
+Fd+F\
+featureBaseVersion
+FeatureError
+featureId
+featureStage
+FeatureUsage
+FeatureVariantUsage
+featureVersion
+Fenduser\ezap\magnify\focustracker.cpp
+Fenduser\ezap\magnify\readingeventprocessor.cpp
+Fh+F`
+FileDescription
+fileName
+FileVersion
+FillRect
+FillRgn
+filterkeys
+FilterType
+FindResourceExW
+FindWindowW
+Finvalid string position
+focusborderheight
+focusborderwidth
+FocusTracker::~FocusTracker
+FocusTracker::FocusTracker
+FocusTracker::Initialize
+FocusTracker::Uninitialize
+FollowCaret
+FollowFocus
+FollowMouse
+FollowNarrator
+FormatMessageW
+Fp+Fh
+FreeLibrary
+FreeSid
+Ft+Fl
+Ft+FlP
+Ft+FlV
+Ft+FlW
+fullscreen
+FullscreenMagnifier::~FullscreenMagnifier
+FullscreenMagnifier::FullscreenMagnifier
+FullscreenMagnifier::Initialize
+FullscreenMagnifier::OnMagnifierHotKey
+FullscreenMagnifier::OptionsChanged
+FullscreenMagnifier::Run
+FullscreenTouchWindow::~FullscreenTouchWindow
+FullscreenTouchWindow::FullscreenTouchWindow
+FullScreenTrackingMode
+function
+Fx+FpP
+Fx+Fttj
+G,Php
+G,PSWh
+G<9G@t
+GDI32.dll
+GdipAlloc
+GdipCloneBrush
+GdipCreateFont
+GdipCreateFontFamilyFromName
+GdipCreateFromHDC
+GdipCreatePen1
+GdipCreateSolidFill
+GdipDeleteBrush
+GdipDeleteFont
+GdipDeleteFontFamily
+GdipDeleteGraphics
+GdipDeletePen
+GdipDrawLine
+GdipDrawString
+GdipFillRectangle
+GdipFree
+gdiplus.dll
+GdiplusShutdown
+GdiplusStartup
+GdipSetInterpolationMode
+GdipSetSmoothingMode
+GdipSetTextRenderingHint
+GdipStringFormatGetGenericTypographic
+GetAncestor
+GetAsyncKeyState
+GetClassNameW
+GetClientRect
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetCursorPos
+GetDC
+GetDesktopWindow
+GetDoubleClickTime
+GetDpiForMonitor
+GetDpiForWindow
+GetFileAttributesW
+GetFocus
+GetForegroundWindow
+GetGUIThreadInfo
+GetKeyboardLayout
+GetKeyState
+GetLastError
+GetLocaleInfoEx
+GetMessagePos
+GetMessageW
+GetModuleFileNameA
+GetModuleHandleExW
+GetModuleHandleW
+GetMonitorInfoW
+GetObjectW
+GetParent
+GetPhysicalCursorPos
+GetPointerDeviceRects
+GetPointerDevices
+GetPointerFrameInfoHistory
+GetPointerInfo
+GetProcAddress
+GetProcessDefaultLayout
+GetProcessHeap
+GetRestrictedErrorInfo
+GetShellWindow
+GetStartupInfoW
+GetStockObject
+GetSysColor
+GetSystemInfo
+GetSystemMetrics
+GetSystemTimeAsFileTime
+GetThreadDesktop
+GetTickCount
+GetTickCount64
+GetTokenInformation
+GetTraceEnableFlags
+GetTraceEnableLevel
+GetTraceLoggerHandle
+GetUserDefaultLCID
+GetUserNameExW
+GetUserObjectInformationW
+GetWindow
+GetWindowLongW
+GetWindowRect
+GetWindowRgn
+GetWindowTextW
+GetWindowThreadProcessId
+Global\Windows.Machine.OOBE
+GlobalAddAtomW
+GlobalAlloc
+GlobalDeleteAtom
+globalhotkey
+Gt+Gl+
+hardwarebuttonlaunch
+HeapAlloc
+HeapDestroy
+HeapFree
+HeapReAlloc
+HeapSetInformation
+HeapSize
+highcontrast
+hilight
+HKEY_CURRENT_USER
+HKEY_LOCAL_MACHINE
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices
+Hp+HhQj
+hresult
+Ht+Hl
+Ht+HlQV+
+Hz"bVW
+Inconsistent state data size in wnf_query
+indows.UI.Accessibility.ScreenReaderService
+InflateRect
+InitCommonControlsEx
+Initialize
+InitializeConditionVariable
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InitializeCriticalSectionEx
+InitializeProcThreadAttributeList
+InitializeSListHead
+InitialReadingSpeed
+InitialReadingVoice
+InitOnceBeginInitialize
+InitOnceComplete
+InterlockedPushEntrySList
+InternalName
+IntersectRect
+InvalidateRect
+Invert
+IsDebuggerPresent
+IsIconic
+IsProcessInJob
+IsProcessorFeaturePresent
+IsRectEmpty
+IsWindow
+IsWindowVisible
+j"j h
+j[^jU
+j2XjdZ;
+jdAZ;
+K32EnumProcesses
+K32EnumProcessModules
+K32GetModuleBaseNameW
+kernel32.dll
+KERNEL32.dll
+kernelbase.dll
+keyboardcues
+keyboardpref
+KH9S4tE9S,t@9sLt;
+KillTimer
+KPSVVWW
+Kx+Kpk
+L$$_^[3
+L$,_^[3
+L$,_^3
+L$\_^[3
+L$|_^[3
+L$4^3
+L$4_^[3
+L$4_^3
+L$d^3
+L$l_^
+L$L_^[3
+L$P@Q
+L$t_^[3
+L$T_^[3
+L$t_^[3
+L$T_^3
+L0`0t0|0
+language
+LaunchCflScenario
+LaunchUserOOBE
+LeaveCriticalSection
+LegalCopyright
+LensHeight
+LensMagnifier::Initialize
+LensMagnifier::LensMagnifier
+LensMagnifier::OnMagnifierHotKey
+LensMagnifier::OptionsChanged
+LensMagnifier::Run
+LensWidth
+lineNumber
+LineTo
+LoadCursorW
+LoadIconW
+LoadImageW
+LoadLibraryExA
+LoadLibraryExW
+LoadResource
+LoadStringW
+Local\SM0:%d:%d:%hs
+LocalFree
+LockResource
+LogHr
+lstd::exception: %hs
+M(+M 
+M,+M$
+MagInitialize
+Magnification
+MAGNIFICATION.dll
+MagnificationMode
+Magnifier
+Magnifier Touch
+Magnifier Touch Window
+MagnifierFocusChangedEventClass
+magnifierpane
+MagnifierTouchWindowClass
+MagnifierUIWindowDeltaX
+MagnifierUIWindowDeltaY
+MagnifierUIWindowMinimized
+MagnifierWindow
+Magnify.pdb
+MagnifyChangeFocus
+MagnifyChangeZoomLevel
+MagnifyGetOption
+MagnifyHandledTouchPan
+MagnifyHandledTouchZoom
+MagnifyLaunch
+MagnifyReadingStarted
+MagnifyReadingStopped
+MagnifySaveOption
+MagnifySetOption
+MagnifyShutDown
+MagSetFullscreenColorEffect
+MagSetFullscreenTransform
+MagSetFullscreenUseBitmapSmoothing
+MagSetInputTransform
+MagSetLensUseBitmapSmoothing
+MagSetWindowSource
+MagSetWindowTransform
+MagShowSystemCursor
+MagUIClass
+MagUIIconClass
+MagUninitialize
+map/set<T> too long
+MapVirtualKeyExW
+MapWindowPoints
+MbP?fff?
+memcmp
+memcpy
+memmove
+memmove_s
+memset
+message
+messageduration
+Microsoft
+Microsoft Corporation
+Microsoft Screen Magnifier
+Microsoft.Windows.Magnifier.Asimov
+Microsoft.Windows.Settings.Accessibility
+Microsoft.Windows.Wil.FeatureLogging
+Microsoft: Magnifier Touch Window
+Microsoft: Magnifier Touch Window Button
+MinimizeOptions
+minimumhitradius
+ModifierKey
+module
+MonitorFromPoint
+MonitorFromRect
+mousekeys
+MoveToEx
+Msg:[%ws] 
+MSScreenMagnifierAlreadyExistsMutex
+MSScreenMagnifierContextAreaMutex
+msvcp_win.dll
+MultiByteToWideChar
+N 99t
+N$99t
+N(99t
+N,99t
+N@99t
+N<99t
+N099t
+N499t
+N8;N<u
+N899t
+Narrator
+ND99t
+NH99t
+NL99t
+noutilman
+ntdll.dll
+NtQueryWnfStateData
+NtUpdateWnfStateData
+NTVWWWj
+Nx+Np
+O v<QP
+O$9O(t
+OffsetRect
+ole32.dll
+OLEACC.dll
+OLEAUT32.dll
+onecore\internal\sdk\inc\wil\opensource/wil/com.h
+onecore\internal\sdk\inc\wil\opensource\wil\resource.h
+onecore\internal\sdk\inc\wil\opensource\wil\result_macros.h
+onecore\internal\sdk\inc\wil\Resource.h
+onecore\internal\sdk\inc\wil\Staging.h
+OOBEComplete
+OpenInputDesktop
+OpenJobObjectW
+OpenMutexW
+OpenProcess
+OpenProcessToken
+OpenSemaphoreW
+OptionKeyName
+OptionStringValue
+OptionValue
+OriginalFilename
+originatingContextId
+originatingContextMessage
+originatingContextName
+originCallerModule
+originCallerReturnAddressOffset
+originFile
+originLineNumber
+originModule
+originName
+OutputDebugStringW
+overlappedcontent
+page=SettingsPageEaseOfAccessMagnifier
+PanningWidgets::Initialize
+PanningWidgets::PanningWidgets
+PartA_PrivTags
+PassiveAutoStartBehavior
+Ph(7@
+Ph(B@
+Ph8B@
+PhD-@
+PhL4@
+PhtkG
+Pj j 
+PlayButton
+PlayButtonHotkey
+PlayOrPause
+PlayPauseIcon
+pLQQQQh
+PostMessageW
+PostQuitMessage
+Pp+PhQR+
+PPPPh
+PPPPj
+PPVSPh
+PQht@@
+PQj)Z
+PQQQQQQQ3
+PQQSV
+PQQSVW
+PQQVW
+PQRj+
+PQSVW
+PQVVRh@PG
+process
+ProcessIdToSessionId
+ProductName
+ProductVersion
+Profile
+PRRRR
+PRSSh
+PRVQhp
+PShp<@
+PSShH
+PSSSSSSSj
+PSVWQ
+PtInRect
+PVVRh
+PVWQRj+
+q0~2(3
+Qh(5@
+Qh|*@
+QhHB@
+QPVQQ
+QPWWh
+QQ@PQ
+QQhD-@
+QQhL4@
+QQQQP
+QQRh@PG
+QQSVW
+QQSVWh\iG
+QQSVWj
+QQVh@PG
+QQWh@PG
+QSPh LA
+QSVQQ3
+QSVW3
+QSVWj
+QueryPerformanceCounter
+QueryPerformanceFrequency
+r(WSQ
+RaiseException
+RaiseFailFastException
+ReadFromPointer
+ReadFromPointToggle
+ReadFromPointToggleHotkey
+ReadingAction
+ReadingActionSource
+ReadingCommandIssued
+ReadingDisabledWarning
+ReadingDuration
+RealGetWindowClassW
+RectWndClass
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyW
+RegDeleteTreeW
+RegEnumKeyExW
+RegEnumValueW
+RegGetValueW
+RegisterApplicationRestart
+RegisterClassExW
+RegisterClassW
+RegisterHotKey
+RegisterPointerDeviceNotifications
+RegisterTraceGuidsW
+RegLoadMUIStringW
+RegNotifyChangeKeyValue
+RegOpenKeyExW
+RegQueryValueExW
+RegQueryValueW
+RegSetValueExW
+ReleaseDC
+ReleaseMutex
+ReleaseSemaphore
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+RemovePropW
+ResetEvent
+RestoreLegacyMode
+ReturnHr
+Rewind
+RewindButton
+RewindButtonHotkey
+Right
+RoActivateInstance
+RoGetActivationFactory
+RoGetAgileReference
+RoGetMatchingRestrictedErrorInfo
+RoOriginateLanguageException
+RRRRj
+RRRRP
+RtlDisownModuleHeapAllocation
+RtlDllShutdownInProgress
+RtlNotifyFeatureUsage
+RtlNtStatusToDosErrorNoTeb
+RtlPublishWnfStateData
+RtlQueryFeatureConfiguration
+RtlRegisterFeatureConfigurationChangeNotification
+RtlSubscribeWnfStateChangeNotification
+RtlUnregisterFeatureConfigurationChangeNotification
+RtlUnsubscribeWnfNotificationWaitForCompletion
+RunningState
+rwWSQ
+S _^[
+s(j&Y
+Screen Magnifier Fullscreen Window
+Screen Magnifier Lens Window
+Screen Magnifier Window
+ScreenMagnifier
+ScreenMagnifier.exe
+ScreenMagnifierLensPanningWindow
+screen-saver
+seconds
+Secur32.dll
+SecureConfiguration
+SecureDesktopAccommodation
+SecureMSScreenMagnifierAlreadyExistsMutex
+Segoe UI Symbol
+selectedFilter
+SelectObject
+SendInput
+SendMessageTimeoutW
+SendMessageW
+SendNotifyMessageW
+SessionTime
+SetActiveWindow
+SetCursor
+SetDesktopColorTransform
+SetEvent
+SetFocus
+SetFullscreenMagnifierOffsetsDWMUpdated
+SetLastError
+SetLayeredWindowAttributes
+SetPhysicalCursorPos
+SetProcessShutdownParameters
+SetPropW
+SetRect
+SetRectEmpty
+SetRestrictedErrorInfo
+SetSystemCursor
+SetThreadpoolTimer
+SetTimer
+SettingConfiguration
+SettingsButton
+SettingsFlyoutButton
+SetUnhandledExceptionFilter
+SetWindowLongW
+SetWindowPlacement
+SetWindowPos
+SetWindowRgn
+SetWindowsHookExW
+SetWinEventHook
+SHAppBarMessage
+SHELL32.dll
+ShellExecuteW
+SHGetKnownFolderPath
+ShowMagnifier
+showsounds
+ShowWindow
+SilenceLength.SpeakSessionEnd
+SilenceLength.SpeakSessionStart
+SimpleProfile
+SizeofResource
+Sleep
+SleepConditionVariableCS
+SliderTitle
+Software\Microsoft\ColorFiltering
+Software\Microsoft\ScreenMagnifier
+Software\Microsoft\ScreenMagnifier\WinKeyPlusStarted
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATConfig
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\ATConfig
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\ATConfig\
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\ATConfig\colorfiltering
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\ATConfig\magnifierpane
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\OOBE
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\OOBE
+Software\Microsoft\Windows NT\CurrentVersion\Accessibility\Session
+Software\Microsoft\Windows NT\CurrentVersion\AccessibilityTemp
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\CandidateAccountManager
+SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\CFL\ExperienceManagerData
+Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE
+Software\Microsoft\Wisp\Touch
+soundsentry
+SpeechSpeed
+SpeechVoice
+SRH.DLL
+SRPQh
+SSSjW
+st+{p+slj
+StartExe
+StartList::CreateATProcess
+StartList::SaveSessionKey
+StartList::SaveSettings
+StartList::Synchronize
+StartParams
+Startup
+stickykeys
+string too long
+StringFileInfo
+SVWj@
+SVWjH3
+SVWjXXP3
+SVWPh<
+SVWQQ
+SYSTEM\CurrentControlSet\Control\MiniNT
+SystemParametersInfoW
+SystemSetting
+t$$FVj
+t$$PV
+T$(@h
+T$(99tQ
+T$(PR
+t$<WP
+T$0QQV
+t$0RR
+t$pVQ
+t&=9u
+t.;:u
+t.VVVV
+t:h\iG
+t?9q(u:
+t?jPSSj
+t@j\V
+t-=:u
+T0I1A2
+t0j0^VP
+t'9V$
+TabletPenServiceHelperClass
+TapThreshold
+tDh\iG
+tEh\iG
+TerminateOnDesktopSwitch
+TerminateProcess
+tgh\iG
+threadId
+togglekeys
+topleft_zoomin
+topright_zoomin
+TraceMessage
+TranslateMessage
+Translation
+TSVW3
+tXh\iG
+u PPh
+u"hxfG
+u#!t$L
+u$hP7@
+u$jDP
+u$WSQ
+u&PPh
+u(9V8r
+u(WVP
+u)j0Xj1Zf;E
+u*h\iG
+u>9C u'9E
+u19~$t1
+uAVWj.Y
+u'hp7@
+UiaClientsAreListening
+UiaHostProviderFromHwnd
+UiaRaiseAutomationEvent
+UiaRaiseStructureChangedEvent
+UiaReturnRawElementProvider
+UIAutomationCore.DLL
+Undefined
+UnhandledExceptionFilter
+UnhookWindowsHookEx
+UnhookWinEvent
+UnionRect
+Unknown exception
+uNPPV
+UnregisterClassA
+UnregisterHotKey
+UnregisterTraceGuids
+UpdateLayeredWindow
+UpdateProcThreadAttribute
+UpdateWindow
+uPSSh
+UseBitmapSmoothing
+USER32.dll
+UserInput
+UserInterface
+ut9_ u
+uZSW3
+V09V(wG
+VarFileInfo
+variant
+variantKind
+vector<T> too long
+VendorPreferred
+VirtualProtect
+VirtualQuery
+VoiceCombobox
+VoiceSpeedSlider
+VQPWV
+VS_VERSION_INFO
+VVGWWVVh
+VVRh@PG
+VWh\iG
+VWj&Y
+VWj43
+w 8_>t
+w(h4,@
+WaitForMultipleObjects
+WaitForSingleObject
+WaitForSingleObjectEx
+WaitForThreadpoolTimerCallbacks
+WakeAllConditionVariable
+wcschr
+wcscspn
+wcsncmp
+wcsrchr
+wcsspn
+WEVT_TEMPLATE
+Wh8@@
+WilError_03
+wilResult
+WilStaging_02
+windowarranging
+WindowFromPhysicalPoint
+Windows.Foundation.PropertyValue
+windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel
+Windows.System.Profile.SystemSetupInfo
+Windows.System.Threading.ThreadPoolTimer
+Windows.UI.Core.CoreWindow
+Windows.UI.Xaml.Automation.AutomationProperties
+Windows.UI.Xaml.Controls.Button
+Windows.UI.Xaml.Controls.ComboBox
+Windows.UI.Xaml.Controls.FontIcon
+Windows.UI.Xaml.Controls.HyperlinkButton
+Windows.UI.Xaml.Controls.Primitives.ToggleButton
+Windows.UI.Xaml.Controls.Slider
+Windows.UI.Xaml.Controls.TextBlock
+Windows.UI.Xaml.Hosting.DesktopWindowXamlSource
+Windows.UI.Xaml.Hosting.WindowsXamlManager
+Windows.UI.Xaml.Hosting.XamlSourceFocusNavigationRequest
+Windows.UI.Xaml.Input.KeyboardAccelerator
+Windows.UI.Xaml.Markup.XamlReader
+Windows.UI.Xaml.Media.SolidColorBrush
+WindowsCreateString
+WindowsCreateStringReference
+WindowsDeleteString
+WindowsDeleteStringBuffer
+WindowsDuplicateString
+WindowsGetStringRawBuffer
+WindowsPreallocateStringBuffer
+WindowsPromoteStringBuffer
+windowtracking
+windowtrackingtimeout
+windowtrackingzorder
+Winlogon
+WinlogonAccess
+winrt::hresult_error: %ls
+WinSqmAddToStream
+WinSqmIncrementDWORD
+WinSqmIsOptedIn
+WinSqmSetDWORD
+wIt=j
+WPVRj
+WSjFR
+WWSSSSh
+WWWWh
+WWWWWh
+x$kGd0P
+X[_^]
+x5jH3
+y$Vh`
+Y__^[
+y7Ph,
+Y8_^[
+YF;s4|
+YG;~4|
+yQh\iG
+ZoomInButton
+ZoomIncrement
+ZoomLabel
+ZoomOutButton
+ZoomValue

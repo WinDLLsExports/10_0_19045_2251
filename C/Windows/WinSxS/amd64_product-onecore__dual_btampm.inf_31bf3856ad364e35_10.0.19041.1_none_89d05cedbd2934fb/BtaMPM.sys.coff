@@ -1,0 +1,112 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_product-onecore__dual_btampm.inf_31bf3856ad364e35_10.0.19041.1_none_89d05cedbd2934fb\BtaMPM.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    cng.sys
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009038 Import Address Table
+             1C00091D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          A5 ExAllocateTimer
+                          A8 ExCancelTimer
+                         672 ObfDereferenceObject
+                         6DF PsCreateSystemThread
+                         48B KeInitializeSpinLock
+                         2D0 IoBuildDeviceIoControlRequest
+                         333 IoGetDeviceObjectPointer
+                         4E6 KeReleaseSpinLock
+                         956 RtlUTF8ToUnicodeN
+                         505 KeSetEvent
+                         662 ObReferenceObjectByHandle
+                          B6 ExDeleteTimer
+                         42D KeAcquireSpinLockAtDpcLevel
+                         82B RtlFindMessage
+                          A3 ExAllocatePoolWithTag
+                         4E8 KeReleaseSpinLockFromDpcLevel
+                         40D IofCallDriver
+                          CA ExFreePoolWithTag
+                         483 KeInitializeEvent
+                         530 KeWaitForSingleObject
+                         331 IoGetDeviceInterfaces
+                         A88 ZwClose
+                         3E7 IoUnregisterPlugPlayNotification
+                         391 IoRegisterPlugPlayNotification
+                         42F KeAcquireSpinLockRaiseToDpc
+                         12B ExSetTimer
+                         B8D _vsnwprintf
+                         400 IoWMIRegistrationControl
+                         584 MmGetSystemRoutineAddress
+                          C9 ExFreePool
+                         87E RtlInitUnicodeString
+
+    cng.sys
+             1C0009028 Import Address Table
+             1C00091C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3E SystemPrng
+
+    WppRecorder.sys
+             1C0009000 Import Address Table
+             1C0009198 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           3 WppAutoLogStop
+                          10 imp_WppRecorderReplay
+                           2 WppAutoLogStart
+                           4 WppAutoLogTrace
+
+  Section contains the following exports for btampm.sys
+
+    00000000 characteristics
+    404D70E4 time date stamp
+        0.00 version
+           1 ordinal base
+          14 number of functions
+          14 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00003AD0 BtaMpmBuildIndirectStringFromMessageWithSingleUTF8Arg
+          2    1 00002890 BtaMpmConnectionRequest
+          3    2 00004030 BtaMpmGetRemoteDeviceProfileVersionAndAttribute
+          4    3 00002100 BtaMpmGetStatus
+          5    4 00001CA0 BtaMpmRegister
+          6    5 0000A5F0 BtaMpmRegisterPnp
+          7    6 00002E80 BtaMpmSuspendRequest
+          8    7 00003020 BtaMpmUnregister
+          9    8 000033B0 BtaMpmUnregisterPnp
+         10    9 000022B0 BtaMpmUpdateConnectionStatus
+         11    A 00002790 BtaMpmUpdatePlayStatus
+         12    B 00002650 BtaMpmUpdateSuspendStatus
+         13    C 0000A280 DllInitialize
+         14    D 0000A510 DllUnload
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

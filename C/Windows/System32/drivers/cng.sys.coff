@@ -1,0 +1,237 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\cng.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00B0010 Import Address Table
+             1C00B0438 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         441 KeBugCheck
+                          79 EtwUnregister
+                          74 EtwRegister
+                         431 KeAcquireSpinLockRaiseToDpc
+                         489 KeInitializeMutex
+                         9FE SkInitializePushLock
+                         48D KeInitializeSpinLock
+                         4E5 KeReleaseMutex
+                         A01 SkReleasePushLockExclusive
+                         4E8 KeReleaseSpinLock
+                         532 KeWaitForSingleObject
+                         9FB SkAcquirePushLockExclusive
+                         866 RtlGetPersistedStateLocation
+                         882 RtlInitUnicodeString
+                         A9B ZwCreateKey
+                         B1A ZwQueryValueKey
+                         B52 ZwSetValueKey
+                         B4D ZwSetSystemInformation
+                         2C7 IoAllocateWorkItem
+                         12B ExSetTimer
+                         442 KeBugCheckEx
+                          A5 ExAllocateTimer
+                         4CE KeQueryUnbiasedInterruptTime
+                         37F IoQueueWorkItemEx
+                         623 NtQuerySystemInformation
+                          A3 ExAllocatePoolWithTag
+                         452 KeDelayExecutionThread
+                         335 IoGetDeviceObjectPointer
+                         3EA IoUnregisterPlugPlayNotificationEx
+                         393 IoRegisterPlugPlayNotification
+                         2C2 IoAllocateIrp
+                          CA ExFreePoolWithTag
+                         40F IofCallDriver
+                         37E IoQueueWorkItem
+                         A8C ZwClose
+                         A3E VslExchangeEntropy
+                         A00 SkQuerySecureKernelInformation
+                         996 SeAuditFipsCryptoSelftests
+                         675 ObfDereferenceObject
+                         671 ObSetSecurityObjectByPointer
+                         306 IoDeleteDevice
+                         752 PsLookupProcessByProcessId
+                         104 ExRegisterExtension
+                         587 MmGetSystemRoutineAddress
+                         2EE IoCreateDevice
+                         402 IoWMIRegistrationControl
+                         485 KeInitializeEvent
+                         59C MmMapLockedPagesSpecifyCache
+                         410 IofCompleteRequest
+                         773 PsSetCreateProcessNotifyRoutine
+                         9D1 SeQueryAuthenticationIdToken
+                         10F ExReleaseFastMutex
+                         B06 ZwQueryInformationProcess
+                         9DF SeReleaseSubjectContext
+                         6EE PsGetCurrentProcess
+                          87 ExAcquireFastMutex
+                         9F6 SeUnlockSubjectContext
+                         70C PsGetProcessCreateTimeQuadPart
+                         9C6 SeLockSubjectContext
+                         9A4 SeCaptureSubjectContext
+                         B17 ZwQuerySystemInformation
+                         AAD ZwDeleteValueKey
+                         B72 _local_unwind
+                          7F EtwWriteTransfer
+                         3AF IoReuseIrp
+                         4F9 KeRestoreExtendedProcessorState
+                         859 RtlGetEnabledExtendedFeatures
+                         4FF KeSaveExtendedProcessorState
+                         870 RtlGetVersion
+                         474 KeGetCurrentProcessorNumberEx
+                         B68 __C_specific_handler
+                         ADC ZwOpenKey
+                         9FC SkAllocatePool
+                         9FD SkFreePool
+                         9FF SkIsSecureKernel
+                          B5 ExDeleteResourceLite
+                         45B KeEnterCriticalRegion
+                          8E ExAcquireResourceExclusiveLite
+                          8F ExAcquireResourceSharedLite
+                         11B ExReleaseResourceLite
+                         4F8 KeResetEvent
+                          DB ExInitializeResourceLite
+                         4A7 KeLeaveCriticalRegion
+                         BE9 wcsncmp
+                         7CC RtlCompareUnicodeString
+                         7AA RtlAppendUnicodeStringToString
+                         B94 _wcsicmp
+                         B5C ZwUnloadDriver
+                         AC8 ZwLoadDriver
+                         7DF RtlCopyUnicodeString
+                         2D0 IoBuildDeviceIoControlRequest
+                         507 KeSetEvent
+                         AB6 ZwEnumerateKey
+                         665 ObReferenceObjectByHandle
+                          C2 ExEventObjectType
+                         9E1 SeReportSecurityEventWithSubCategory
+                         897 RtlIntegerToUnicodeString
+                         9E4 SeSetAuditParameter
+                         8E2 RtlNtStatusToDosError
+                         B91 _vsnwprintf
+                         7AB RtlAppendUnicodeToString
+                         960 RtlUnicodeStringToInteger
+                         B97 _wcsnicmp
+                         4A8 KeLeaveGuardedRegion
+                         677 ObfReferenceObject
+                         45C KeEnterGuardedRegion
+                         B0E ZwQueryKey
+                         8E3 RtlNtStatusToDosErrorNoTeb
+                         AB8 ZwEnumerateValueKey
+                         AAC ZwDeleteKey
+                         BE4 wcscpy_s
+                         BCE strnlen
+                         15A ExpInterlockedPopEntrySList
+                         15B ExpInterlockedPushEntrySList
+                          D9 ExInitializePagedLookasideList
+                          F3 ExQueryDepthSList
+                          B4 ExDeletePagedLookasideList
+                         BB9 qsort
+                         B69 __chkstk
+                         BE2 wcscmp
+
+    HAL.dll
+             1C00B0000 Import Address Table
+             1C00B0428 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+  Section contains the following exports for cng.sys
+
+    00000000 characteristics
+    24A2F192 time date stamp
+        0.00 version
+           1 ordinal base
+          63 number of functions
+          63 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0005F3E0 BCryptAddContextFunctionProvider
+          2    1 0002BBD0 BCryptCloseAlgorithmProvider
+          3    2 0000D720 BCryptCreateHash
+          4    3 00050560 BCryptCreateMultiHash
+          5    4 0001DD70 BCryptDecrypt
+          6    5 00050770 BCryptDeriveKey
+          7    6 00050940 BCryptDeriveKeyCapi
+          8    7 00050D60 BCryptDeriveKeyPBKDF2
+          9    8 0000D3B0 BCryptDestroyHash
+         10    9 0000CBF0 BCryptDestroyKey
+         11    A 00051020 BCryptDestroySecret
+         12    B 0000D270 BCryptDuplicateHash
+         13    C 00006E30 BCryptDuplicateKey
+         14    D 0001DC20 BCryptEncrypt
+         15    E 00051110 BCryptEnumAlgorithms
+         16    F 000514E0 BCryptEnumProviders
+         17   10 00051770 BCryptExportKey
+         18   11 00051AE0 BCryptFinalizeKeyPair
+         19   12 0000D470 BCryptFinishHash
+         20   13 0002C110 BCryptFreeBuffer
+         21   14 0000D640 BCryptGenRandom
+         22   15 00051BC0 BCryptGenerateKeyPair
+         23   16 0000CA80 BCryptGenerateSymmetricKey
+         24   17 00023720 BCryptGetFipsAlgorithmMode
+         25   18 0000DBC0 BCryptGetProperty
+         26   19 0002C4D0 BCryptHash
+         27   1A 00005B00 BCryptHashData
+         28   1B 00029EB0 BCryptImportKey
+         29   1C 0002BE50 BCryptImportKeyPair
+         30   1D 0000C330 BCryptKeyDerivation
+         31   1E 0001E7C0 BCryptOpenAlgorithmProvider
+         32   1F 00051D60 BCryptProcessMultiOperations
+         33   20 000607F0 BCryptRegisterConfigChangeNotify
+         34   21 00060820 BCryptRegisterProvider
+         35   22 00008050 BCryptResolveProviders
+         36   23 00051DF0 BCryptSecretAgreement
+         37   24 0001E450 BCryptSetProperty
+         38   25 0002F490 BCryptSignHash
+         39   26 000615D0 BCryptUnregisterConfigChangeNotify
+         40   27 000615F0 BCryptUnregisterProvider
+         41   28 000152F0 BCryptVerifySignature
+         42   29 0005BE00 CngGetFipsAlgorithmMode
+         43   2A 00054120 EntropyPoolTriggerReseedForIum
+         44   2B 0000F640 EntropyProvideData
+         45   2C 0002CEC0 EntropyRegisterCallback
+         46   2D 00022370 EntropyRegisterSource
+         47   2E 00022270 EntropyUnregisterSource
+         48   2F 00021510 SslDecrementProviderReferenceCount
+         49   30 000211E0 SslDecryptPacket
+         50   31 000210F0 SslEncryptPacket
+         51   32 00053B60 SslExportKey
+         52   33 00053C10 SslExportKeyingMaterial
+         53   34 00021550 SslFreeObject
+         54   35 00021390 SslImportKey
+         55   36 00021360 SslIncrementProviderReferenceCount
+         56   37 000212C0 SslLookupCipherLengths
+         57   38 00021480 SslLookupCipherSuiteInfo
+         58   39 00053D00 SslOpenProvider
+         59   3A 00054640 SymCrypt802_11SaeCustomCommitCreate
+         60   3B 00054940 SymCrypt802_11SaeCustomCommitProcess
+         61   3C 00054E80 SymCrypt802_11SaeCustomDestroy
+         62   3D 00054F70 SymCrypt802_11SaeCustomInit
+         63   3E 0000AA80 SystemPrng
+
+  Summary
+
+        3000 .data
+        1000 .edata
+        2000 .idata
+        5000 .pdata
+       1D000 .rdata
+        2000 .reloc
+        4000 .rsrc
+       8A000 .text
+        1000 GFIDS
+        1000 INIT

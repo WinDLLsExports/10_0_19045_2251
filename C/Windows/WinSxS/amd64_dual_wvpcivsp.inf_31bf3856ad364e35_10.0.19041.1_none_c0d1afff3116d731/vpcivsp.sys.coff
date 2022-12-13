@@ -1,0 +1,184 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_wvpcivsp.inf_31bf3856ad364e35_10.0.19041.1_none_c0d1afff3116d731\vpcivsp.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+    winhvr.sys
+    vmbkmclr.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0018050 Import Address Table
+             1C00184B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         42F KeAcquireSpinLockRaiseToDpc
+                         4E6 KeReleaseSpinLock
+                         505 KeSetEvent
+                          90 ExAcquireRundownProtection
+                         530 KeWaitForSingleObject
+                         A88 ZwClose
+                         4F6 KeResetEvent
+                         11C ExReleaseRundownProtection
+                         7C8 RtlCompareUnicodeString
+                         2C7 IoAllocateWorkItem
+                         440 KeBugCheckEx
+                         BD1 swscanf_s
+                         3E8 IoUnregisterPlugPlayNotificationEx
+                         446 KeClearEvent
+                         391 IoRegisterPlugPlayNotification
+                         320 IoFreeWorkItem
+                         483 KeInitializeEvent
+                         37C IoQueueWorkItem
+                         7A6 RtlAppendUnicodeStringToString
+                         7C2 RtlCmDecodeMemIoResource
+                         7A7 RtlAppendUnicodeToString
+                         459 KeEnterCriticalRegion
+                          DC ExInitializeRundownProtection
+                         7DB RtlCopyUnicodeString
+                         93E RtlStringFromGUID
+                         4A5 KeLeaveCriticalRegion
+                         515 KeSetTimer
+                         47F KeInitializeDpc
+                         B64 __C_specific_handler
+                         48D KeInitializeTimer
+                          9F ExAllocatePool2
+                         31D IoFreeMdl
+                         441 KeCancelTimer
+                         4DC KeReleaseGuardedMutex
+                         424 KeAcquireGuardedMutex
+                         55D MmAllocateMdlForIoSpace
+                         120 ExReleaseSpinLockExclusive
+                          77 EtwSetInformation
+                         484 KeInitializeGuardedMutex
+                         103 ExRegisterCallback
+                         910 RtlRbInsertNodeEx
+                          B0 ExCreateCallback
+                         8F8 RtlPrefixUnicodeString
+                          7F EtwWriteTransfer
+                         122 ExReleaseSpinLockShared
+                          98 ExAcquireSpinLockShared
+                          96 ExAcquireSpinLockExclusive
+                         911 RtlRbRemoveNode
+                          79 EtwUnregister
+                         584 MmGetSystemRoutineAddress
+                         246 HalDispatchTable
+                          74 EtwRegister
+                         400 IoWMIRegistrationControl
+                         5C7 MmUnmapLockedPages
+                         40E IofCompleteRequest
+                         331 IoGetDeviceInterfaces
+                         147 ExUnregisterCallback
+                         87E RtlInitUnicodeString
+                         3F9 IoWMIExecuteMethod
+                          CA ExFreePoolWithTag
+                          A3 ExAllocatePoolWithTag
+                         3FB IoWMIOpenBlock
+                          69 EmClientRuleEvaluate
+                         842 RtlFreeUnicodeString
+                         672 ObfDereferenceObject
+                         14D ExWaitForRundownProtectionRelease
+                         48B KeInitializeSpinLock
+                         4CA KeQueryTimeIncrement
+                          66 DbgkWerCaptureLiveKernelDump
+                          5E DbgPrintEx
+                         3FC IoWMIQueryAllData
+
+    WppRecorder.sys
+             1C0018028 Import Address Table
+             1C0018488 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 imp_WppRecorderReplay
+                           2 WppAutoLogStart
+                           4 WppAutoLogTrace
+                           3 WppAutoLogStop
+
+    winhvr.sys
+             1C0018380 Import Address Table
+             1C00187E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          29 WinHvDetachDevice
+                          96 WinHvUnmapDeviceInterrupt
+                           C WinHvAttachDevice
+                          76 WinHvReserveDeviceInterrupt
+                           D WinHvAttachDeviceRemote
+                          6B WinHvQueryDeviceInterruptTarget
+                          77 WinHvReserveDeviceInterruptRemote
+                          2A WinHvDetachDeviceRemote
+                           A WinHvAssertDeviceInterrupt
+                          55 WinHvMapDeviceInterruptEx
+
+    vmbkmclr.sys
+             1C0018290 Import Address Table
+             1C00186F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          37 VmbChannelPause
+                          3C VmbChannelSaveContinue
+                          53 VmbConvertVmbusHandleToKernelHandle
+                          14 VmbChannelGetPointer
+                          49 VmbChannelStart
+                          56 VmbPacketFree
+                          25 VmbChannelInitSetProcessPacketCallbacks
+                          28 VmbChannelInitSetStateChangeCallbacks
+                           5 VmbChannelCleanup
+                          67 VmbServerChannelInitSetOfferData
+                          45 VmbChannelSetPointer
+                          60 VmbPacketSetCompletionRoutine
+                          6A VmbServerChannelInitSetTargetInterfaceId
+                          3D VmbChannelSaveEnd
+                           2 VmbChannelAllocate
+                          30 VmbChannelPacketDeferToPassive
+                          64 VmbServerChannelInitSetFlags
+                          3A VmbChannelRestoreFromBuffer
+                          5C VmbPacketSend
+                           A VmbChannelDisable
+                          2F VmbChannelPacketComplete
+                          6D VmbServerChannelInitSetVmbusHandle
+                          23 VmbChannelInitSetMaximumPacketSize
+                          59 VmbPacketGetPointer
+                          55 VmbPacketAllocate
+                          62 VmbPacketSetPointer
+                           D VmbChannelGetInterfaceInstance
+                           B VmbChannelEnable
+                          3B VmbChannelSaveBegin
+
+    WDFLDR.SYS
+             1C0018000 Import Address Table
+             1C0018460 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 WdfVersionBind
+                           9 WdfVersionUnbindClass
+                           7 WdfVersionBindClass
+                           8 WdfVersionUnbind
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        3000 .rdata
+        2000 .reloc
+        1000 .rsrc
+       12000 .text
+        1000 GFIDS
+        1000 INIT
+        1000 NONPAGE
+       17000 PAGE

@@ -1,0 +1,109 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_battery.inf_31bf3856ad364e35_10.0.19041.1_none_d59603485d87e1fc\battc.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WMILIB.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0006018 Import Address Table
+             1C00061E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         907 RtlQueryRegistryValuesEx
+                         47F KeInitializeDpc
+                         3B4 IoSetDeviceInterfaceState
+                         484 KeInitializeGuardedMutex
+                         10F ExReleaseFastMutex
+                         3DA IoSynchronousCallDriver
+                         31A IoFreeIrp
+                         672 ObfDereferenceObject
+                         87E RtlInitUnicodeString
+                         48D KeInitializeTimer
+                         7DB RtlCopyUnicodeString
+                         333 IoGetDeviceObjectPointer
+                         AEB ZwPowerInformation
+                          7F EtwWriteTransfer
+                         505 KeSetEvent
+                         3E8 IoUnregisterPlugPlayNotificationEx
+                         391 IoRegisterPlugPlayNotification
+                         441 KeCancelTimer
+                         674 ObfReferenceObject
+                          87 ExAcquireFastMutex
+                         2C7 IoAllocateWorkItem
+                         320 IoFreeWorkItem
+                          A3 ExAllocatePoolWithTag
+                         4DC KeReleaseGuardedMutex
+                          CA ExFreePoolWithTag
+                         483 KeInitializeEvent
+                         424 KeAcquireGuardedMutex
+                         40E IofCompleteRequest
+                         530 KeWaitForSingleObject
+                         503 KeSetCoalescableTimer
+                         515 KeSetTimer
+                         B8D _vsnwprintf
+                         4CA KeQueryTimeIncrement
+                         2B8 IoAcquireCancelSpinLock
+                         37C IoQueueWorkItem
+                         394 IoReleaseCancelSpinLock
+                          77 EtwSetInformation
+                          72 EtwEventEnabled
+                          79 EtwUnregister
+                          7A EtwWrite
+                          74 EtwRegister
+                         38A IoRegisterDeviceInterface
+                         2C2 IoAllocateIrp
+                         7C8 RtlCompareUnicodeString
+
+    WMILIB.SYS
+             1C0006000 Import Address Table
+             1C00061D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 WmiSystemControl
+                           2 WmiCompleteRequest
+
+  Section contains the following exports for BATTC.SYS
+
+    00000000 characteristics
+    FF322591 time date stamp
+        0.00 version
+           1 ordinal base
+           9 number of functions
+           9 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00007070 BatteryClassInitializeDevice
+          2    1 000077C0 BatteryClassIoctl
+          3    2 00007CA0 BatteryClassQueryWmiDataBlock
+          4    3 000010B0 BatteryClassStatusNotify
+          5    4 00007990 BatteryClassSystemControl
+          6    5 00007540 BatteryClassUnload
+          7    6 00001210 BatteryClassUpdateData
+          8    7 0000B020 DllInitialize
+          9    8 00007010 DllUnload
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        2000 .rsrc
+        2000 .text
+        1000 GFIDS
+        1000 INIT
+        3000 PAGE

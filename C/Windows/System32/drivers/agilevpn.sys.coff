@@ -1,0 +1,242 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\agilevpn.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NDIS.SYS
+    NETIO.SYS
+    fwpkclnt.sys
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0018380 Import Address Table
+             1C00189B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         360 IoIs32bitProcess
+                         396 IoReleaseCancelSpinLock
+                         8AB RtlIpv6AddressToStringA
+                         7C9 RtlCompareMemory
+                         489 KeInitializeMutex
+                         4E5 KeReleaseMutex
+                         59C MmMapLockedPagesSpecifyCache
+                         45B KeEnterCriticalRegion
+                          8E ExAcquireResourceExclusiveLite
+                         11B ExReleaseResourceLite
+                         4A7 KeLeaveCriticalRegion
+                          79 EtwUnregister
+                          74 EtwRegister
+                         ADC ZwOpenKey
+                         481 KeInitializeDpc
+                         491 KeInitializeTimerEx
+                         4C4 KeQueryMaximumProcessorCountEx
+                         519 KeSetTimerEx
+                         516 KeSetTargetProcessorDpcEx
+                         443 KeCancelTimer
+                         B1A ZwQueryValueKey
+                          CA ExFreePoolWithTag
+                         429 KeAcquireInStackQueuedSpinLockAtDpcLevel
+                         4E2 KeReleaseInStackQueuedSpinLockFromDpcLevel
+                         919 RtlRegisterFeatureConfigurationChangeNotification
+                         4CC KeQueryTimeIncrement
+                         4E0 KeReleaseInStackQueuedSpinLock
+                         428 KeAcquireInStackQueuedSpinLock
+                         8A3 RtlIpv4AddressToStringA
+                         410 IofCompleteRequest
+                         8AE RtlIpv6AddressToStringW
+                          A3 ExAllocatePoolWithTag
+                         8AA RtlIpv4StringToAddressW
+                          C9 ExFreePool
+                         8A6 RtlIpv4AddressToStringW
+                         595 MmLockPagableDataSection
+                         8B2 RtlIpv6StringToAddressW
+                         78C PsTerminateSystemThread
+                         534 KfRaiseIrql
+                         448 KeClearEvent
+                         4AB KeLowerIrql
+                         507 KeSetEvent
+                         4E8 KeReleaseSpinLock
+                         4FD KeRevertToUserGroupAffinityThread
+                          F3 ExQueryDepthSList
+                         514 KeSetSystemGroupAffinityThread
+                         15B ExpInterlockedPushEntrySList
+                         15A ExpInterlockedPopEntrySList
+                         431 KeAcquireSpinLockRaiseToDpc
+                         479 KeGetProcessorNumberFromIndex
+                         474 KeGetCurrentProcessorNumberEx
+                          DB ExInitializeResourceLite
+                         4B6 KeQueryActiveProcessorCountEx
+                         A8C ZwClose
+                         532 KeWaitForSingleObject
+                         485 KeInitializeEvent
+                          D8 ExInitializeNPagedLookasideList
+                         96A RtlUnregisterFeatureConfigurationChangeNotification
+                         665 ObReferenceObjectByHandle
+                          7F EtwWriteTransfer
+                         902 RtlQueryFeatureConfigurationChangeStamp
+                         48D KeInitializeSpinLock
+                         882 RtlInitUnicodeString
+                         6E2 PsCreateSystemThread
+                         675 ObfDereferenceObject
+                          B3 ExDeleteNPagedLookasideList
+                          B5 ExDeleteResourceLite
+                         901 RtlQueryFeatureConfiguration
+
+    NDIS.SYS
+             1C0018010 Import Address Table
+             1C0018640 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B NdisAdvanceNetBufferListDataStart
+                          1A NdisAllocateNetBufferListContext
+                         122 NdisMCmCreateVc
+                          4A NdisCmDispatchIncomingCall
+                         12E NdisMCoIndicateStatusEx
+                         121 NdisMCmActivateVc
+                          49 NdisCmDispatchCallConnected
+                         123 NdisMCmDeactivateVc
+                          4F NdisCmMakeCallComplete
+                         124 NdisMCmDeleteVc
+                          46 NdisCmCloseCallComplete
+                          A1 NdisFreeIoWorkItem
+                          55 NdisCmRegisterSapComplete
+                          4C NdisCmDispatchIncomingCloseCall
+                          48 NdisCmDeregisterSapComplete
+                         200 NdisWaitEvent
+                         1DF NdisSetOptionalHandlers
+                         127 NdisMCmRegisterAddressFamilyEx
+                          A8 NdisFreeNetBufferListContext
+                         1D3 NdisResetEvent
+                         12B NdisMCoIndicateReceiveNetBufferLists
+                          19 NdisAllocateNetBufferList
+                          70 NdisCopySendNetBufferListInfo
+                          A7 NdisFreeNetBufferList
+                           5 NdisAcquireReadWriteLock
+                         1CE NdisReleaseReadWriteLock
+                         1CD NdisReleaseRWLock
+                          A0 NdisFreeGenericObject
+                           4 NdisAcquireRWLockWrite
+                          11 NdisAllocateGenericObject
+                          AD NdisFreeRWLock
+                         104 NdisInitializeReadWriteLock
+                          21 NdisAllocateRWLock
+                         133 NdisMCoSendNetBufferListsComplete
+                          9D NdisFreeCloneNetBufferList
+                         184 NdisMSetMiniportAttributes
+                         1BE NdisQueueIoWorkItem
+                          A5 NdisFreeMemoryWithTagPriority
+                          16 NdisAllocateMemoryWithTagPriority
+                         1C8 NdisRegisterDeviceEx
+                          1B NdisAllocateNetBufferListPool
+                         1DE NdisSetEvent
+                         1D4 NdisRetreatNetBufferDataStart
+                           A NdisAdvanceNetBufferDataStart
+                           E NdisAllocateCloneNetBufferList
+                          A9 NdisFreeNetBufferListPool
+                          BA NdisGetDataBuffer
+                          1D NdisAllocateNetBufferPool
+                         1D5 NdisRetreatNetBufferListDataStart
+                         173 NdisMRegisterMiniportDriver
+                         103 NdisInitializeEvent
+                          74 NdisDeregisterDeviceEx
+                         13D NdisMDeregisterMiniportDriver
+                          12 NdisAllocateIoWorkItem
+                          D5 NdisGetVersion
+
+    NETIO.SYS
+             1C00181D0 Import Address Table
+             1C0018800 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         100 NetioDereferenceNetBufferList
+                          E3 NetioAllocateAndReferenceCloneNetBufferList
+                         1B9 RtlCopyBufferToMdl
+                         201 WfpNblInfoClone
+                          ED NetioAllocateMdl
+                         1C2 RtlGetNextExpiredTimerWheelEntry
+                         1D0 RtlUpdateCurrentTimerWheelTick
+                         1CD RtlResumeTimerWheel
+                         1B4 RtlCleanupTimerWheel
+                         1B5 RtlCleanupTimerWheelEntry
+                         1C5 RtlInitializeTimerWheelEntry
+                         1C1 RtlGetNextExpirationTimerWheelTick
+                         1C3 RtlIndicateTimerWheelEntryTimerStart
+                         1CB RtlIsTimerWheelSuspended
+                         1CE RtlReturnTimerWheelEntry
+                         1C4 RtlInitializeTimerWheel
+                         1CF RtlSuspendTimerWheel
+                          47 GetIfEntry2
+                         17B NmrDeregisterClient
+                          2F FreeMibTable
+                          74 InternalCreateOrRefIpForwardEntry2
+                          51 GetIpInterfaceEntry
+                          5E GetUnicastIpAddressTable
+                         179 NmrClientAttachProvider
+                          6E InitializeIpInterfaceEntry
+                          1D DeleteIpForwardEntry2
+                         180 NmrWaitForClientDeregisterComplete
+                          44 GetBestRoute2
+                          6D InitializeIpForwardEntry
+                         17E NmrRegisterClient
+                           0 AgileVPNDispatchTableInit
+                          50 GetIpForwardTable2
+
+    fwpkclnt.sys
+             1C00182D8 Import Address Table
+             1C0018908 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2A FwpmEngineClose0
+                          30 FwpmFilterAdd0
+                          E2 FwpsSignalIPsecDecryptCompleteIkeV20
+                          32 FwpmFilterDeleteById0
+                          76 FwpmTransactionBegin0
+                          62 FwpmProviderDeleteByKey0
+                          C4 FwpsInjectionHandleCreate0
+                          E8 FwpsVirtualIfTunnelInfoSet0
+                          B9 FwpsFreeNetBufferList0
+                           9 FwpiCalloutUnregisterAndDeleteByKey0
+                          E7 FwpsVirtualIfTunnelInfoGet0
+                          2D FwpmEngineOpen0
+                          C0 FwpsInjectNetworkSendAsync0
+                          6D FwpmSubLayerAdd0
+                           7 FwpiCalloutRegisterAndAddWithoutDevice0
+                          4A FwpmProviderAdd0
+                          77 FwpmTransactionCommit0
+                          A0 FwpsAllocateNetBufferAndNetBufferList0
+                          6F FwpmSubLayerDeleteByKey0
+                          C5 FwpsInjectionHandleDestroy0
+
+    HAL.dll
+             1C0018000 Import Address Table
+             1C0018630 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+  Summary
+
+        6000 .data
+        2000 .idata
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        3000 .rsrc
+        B000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE
+        5000 PAGEAVpn

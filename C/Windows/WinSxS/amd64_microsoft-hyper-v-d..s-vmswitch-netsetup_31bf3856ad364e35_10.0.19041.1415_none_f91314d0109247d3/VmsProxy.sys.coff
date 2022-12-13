@@ -1,0 +1,134 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-hyper-v-d..s-vmswitch-netsetup_31bf3856ad364e35_10.0.19041.1415_none_f91314d0109247d3\VmsProxy.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+    vmbkmclr.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009048 Import Address Table
+             1C0009368 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4A5 KeLeaveCriticalRegion
+                          A3 ExAllocatePoolWithTag
+                         7DD RtlCopyUnicodeString
+                         2F8 IoCreateSymbolicLink
+                         48B KeInitializeSpinLock
+                         38B IoRegisterDriverReinitialization
+                         483 KeInitializeEvent
+                          CA ExFreePoolWithTag
+                         673 ObfDereferenceObject
+                         40E IofCompleteRequest
+                         505 KeSetEvent
+                         446 KeClearEvent
+                         42F KeAcquireSpinLockRaiseToDpc
+                         4E6 KeReleaseSpinLock
+                         8C7 RtlLengthRequiredSid
+                         889 RtlInitializeSid
+                         943 RtlSubAuthoritySid
+                         65E ObOpenObjectByPointer
+                         B12 ZwQuerySecurityObject
+                         852 RtlGetDaclSecurityDescriptor
+                         8C9 RtlLengthSid
+                         7E0 RtlCreateAcl
+                         848 RtlGetAce
+                         116 ExReleasePushLockExclusiveEx
+                         794 RtlAddAccessAllowedAce
+                         7E7 RtlCreateSecurityDescriptor
+                         92F RtlSetDaclSecurityDescriptor
+                         B49 ZwSetSecurityObject
+                         A8A ZwClose
+                         117 ExReleasePushLockSharedEx
+                         304 IoDeleteDevice
+                         2EC IoCreateDevice
+                         30A IoDeviceObjectType
+                         367 IoIsWdmVersionAvailable
+                         793 RtlAbsoluteToSelfRelativeSD
+                         BDF wcschr
+                         B95 _wcsnicmp
+                         9B9 SeExports
+                         8C8 RtlLengthSecurityDescriptor
+                         B7A _snwprintf
+                         9A1 SeCaptureSecurityDescriptor
+                         866 RtlGetSaclSecurityDescriptor
+                         863 RtlGetOwnerSecurityDescriptor
+                         859 RtlGetGroupSecurityDescriptor
+                         844 RtlFreeUnicodeString
+                         A99 ZwCreateKey
+                         B18 ZwQueryValueKey
+                         B50 ZwSetValueKey
+                         ADA ZwOpenKey
+                          8D ExAcquirePushLockSharedEx
+                          8C ExAcquirePushLockExclusiveEx
+                         459 KeEnterCriticalRegion
+                         530 KeWaitForSingleObject
+                         400 IoWMIRegistrationControl
+                         585 MmGetSystemRoutineAddress
+                         79A RtlAddAce
+                         880 RtlInitUnicodeString
+
+    WppRecorder.sys
+             1C0009000 Import Address Table
+             1C0009320 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           E imp_WppRecorderLogGetDefault
+                           5 imp_WppRecorderConfigure
+                           B imp_WppRecorderLogCreate
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           9 imp_WppRecorderIsDefaultLogAvailable
+
+    vmbkmclr.sys
+             1C0009218 Import Address Table
+             1C0009538 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 VmbChannelGetPointer
+                           5 VmbChannelCleanup
+                           2 VmbChannelAllocate
+                          45 VmbChannelSetPointer
+                          6A VmbServerChannelInitSetTargetInterfaceId
+                          24 VmbChannelInitSetPrimaryChannel
+                           B VmbChannelEnable
+                           A VmbChannelDisable
+                          49 VmbChannelStart
+                          37 VmbChannelPause
+                          3B VmbChannelSaveBegin
+                          3C VmbChannelSaveContinue
+                          3D VmbChannelSaveEnd
+                          3A VmbChannelRestoreFromBuffer
+                          25 VmbChannelInitSetProcessPacketCallbacks
+                          28 VmbChannelInitSetStateChangeCallbacks
+                          68 VmbServerChannelInitSetSaveRestorePacketCallbacks
+                          29 VmbChannelInitSuppressQueueManagement
+                          58 VmbPacketGetInlinePacketContextPointer
+                          60 VmbPacketSetCompletionRoutine
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

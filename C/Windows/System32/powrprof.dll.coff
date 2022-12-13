@@ -1,0 +1,545 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\powrprof.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+    api-ms-win-crt-private-l1-1-0.dll
+    api-ms-win-crt-string-l1-1-0.dll
+    ntdll.dll
+    api-ms-win-core-registry-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-security-base-l1-1-0.dll
+    api-ms-win-core-synch-l1-1-0.dll
+    api-ms-win-core-heap-l2-1-0.dll
+    api-ms-win-core-libraryloader-l1-2-0.dll
+    api-ms-win-core-handle-l1-1-0.dll
+    RPCRT4.dll
+    api-ms-win-core-debug-l1-1-0.dll
+    api-ms-win-core-processthreads-l1-1-1.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-core-interlocked-l1-1-0.dll
+    api-ms-win-core-localization-private-l1-1-0.dll
+    api-ms-win-core-heap-l1-1-0.dll
+    api-ms-win-eventing-provider-l1-1-0.dll
+    api-ms-win-core-threadpool-l1-2-0.dll
+    api-ms-win-core-synch-l1-2-0.dll
+    api-ms-win-core-realtime-l1-1-1.dll
+    api-ms-win-core-delayload-l1-1-1.dll
+    api-ms-win-core-delayload-l1-1-0.dll
+
+  Image has the following delay load dependencies:
+
+    WMICLNT.dll
+    api-ms-win-devices-query-l1-1-0.dll
+    api-ms-win-service-private-l1-1-0.dll
+    UMPDC.dll
+
+  Section contains the following exports for POWRPROF.dll
+
+    00000000 characteristics
+    AB2F15B1 time date stamp
+        0.00 version
+           1 ordinal base
+         126 number of functions
+         126 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001A30 CallNtPowerInformation
+          2    1 000051B0 CanUserWritePwrScheme
+          3    2 00005260 DeletePwrScheme
+          4    3 00009EE0 DevicePowerClose
+          5    4 00009FF0 DevicePowerEnumDevices
+          6    5 0000A630 DevicePowerOpen
+          7    6 0000A6B0 DevicePowerSetDeviceState
+          8    7 000053D0 EnumPwrSchemes
+          9    8 0000AD80 GUIDFormatToGlobalPowerPolicy
+         10    9 0000B240 GUIDFormatToPowerPolicy
+         11    A 00005A40 GetActivePwrScheme
+         12    B 00005B00 GetCurrentPowerPolicies
+         13    C 000026F0 GetPwrCapabilities
+         14    D 00005B90 GetPwrDiskSpindownRange
+         15    E 00005BF0 IsAdminOverrideActive
+         16    F 00005C00 IsPwrHibernateAllowed
+         17   10 00005C60 IsPwrShutdownAllowed
+         18   11 00005CB0 IsPwrSuspendAllowed
+         19   12 00005D10 LoadCurrentPwrScheme
+         20   13 00005D10 MergeLegacyPwrScheme
+         21   14 0000F5C0 PowerApplyPowerRequestOverride
+         22   15 0000DE70 PowerApplySettingChanges
+         23   16 0000B860 PowerCanRestoreIndividualDefaultPowerScheme
+         24   17 0000B980 PowerClearUserAwayPrediction
+         25   18 000107C0 PowerCloseEnvironmentalMonitor
+         26   19 00011370 PowerCloseLimitsMitigation
+         27   1A 00011BD0 PowerCloseLimitsPolicy
+         28   1B 0000DF10 PowerCreatePossibleSetting
+         29   1C 0000DFC0 PowerCreateSetting
+         30   1D 00007820 PowerDebugDifPowerPolicies
+         31   1E 000080E0 PowerDebugDifSystemPowerPolicies
+         32   1F 000087C0 PowerDebugDumpPowerPolicy
+         33   20 00008BB0 PowerDebugDumpPowerScheme
+         34   21 000095B0 PowerDebugDumpSystemPowerCapabilities
+         35   22 00009820 PowerDebugDumpSystemPowerPolicy
+         36   23 0000E060 PowerDeleteScheme
+         37   24 000028C0 PowerDeterminePlatformRole
+         38   25 00002910 PowerDeterminePlatformRoleEx
+         39   26 0000E100 PowerDuplicateScheme
+         40   27 00001290 PowerEnumerate
+         41   28 000018E0 PowerGetActiveScheme
+         42   29 0000F650 PowerGetActualOverlayScheme
+         43   2A 0000F940 PowerGetAdaptiveStandbyDiagnostics
+         44   2B 0000F730 PowerGetEffectiveOverlayScheme
+         45   2C 0000CE30 PowerGetOverlaySchemes
+         46   2D 0000BA10 PowerGetUserAwayMinPredictionConfidence
+         47   2E 0000E2F0 PowerImportPowerScheme
+         48   2F 00002E90 PowerInformationWithPrivileges
+         49   30 0000CF80 PowerIsSettingRangeDefined
+         50   31 0000BB40 PowerOpenSystemPowerKey
+         51   32 0000BBC0 PowerOpenUserPowerKey
+         52   33 0000BC40 PowerPolicyToGUIDFormat
+         53   34 0000D180 PowerReadACDefaultIndex
+         54   35 00001010 PowerReadACValue
+         55   36 00001700 PowerReadACValueIndex
+         56   37 0000D280 PowerReadACValueIndexEx
+         57   38 0000D2B0 PowerReadDCDefaultIndex
+         58   39 0000D3B0 PowerReadDCValue
+         59   3A 0000D4A0 PowerReadDCValueIndex
+         60   3B 0000D4E0 PowerReadDCValueIndexEx
+         61   3C 0000D510 PowerReadDescription
+         62   3D 00001360 PowerReadFriendlyName
+         63   3E 0000D560 PowerReadIconResourceSpecifier
+         64   3F 0000D5B0 PowerReadPossibleDescription
+         65   40 0000D600 PowerReadPossibleFriendlyName
+         66   41 0000D650 PowerReadPossibleValue
+         67   42 0000D750 PowerReadSecurityDescriptor
+         68   43 0000D930 PowerReadSettingAttributes
+         69   44 0000DB20 PowerReadValueIncrement
+         70   45 0000DC20 PowerReadValueMax
+         71   46 0000DD20 PowerReadValueMin
+         72   47 0000DE20 PowerReadValueUnitsSpecifier
+         73   48 0000F810 PowerReapplyActiveScheme
+         74   49 00010930 PowerRegisterEnvironmentalMonitor
+         75   4A 0000FD30 PowerRegisterForEffectivePowerModeNotifications
+         76   4B 00011500 PowerRegisterLimitsMitigation
+         77   4C 00011CB0 PowerRegisterLimitsPolicy
+         78   4D 000029B0 PowerRegisterSuspendResumeNotification
+         79   4E 0000E4B0 PowerRemovePowerSetting
+         80   4F 0000C1B0 PowerReplaceDefaultPowerSchemes
+         81   50 00011F50 PowerReportLimitsEvent
+         82   51 0000C250 PowerReportThermalEvent
+         83   52 0000E550 PowerRestoreACDefaultIndex
+         84   53 0000E640 PowerRestoreDCDefaultIndex
+         85   54 0000C2B0 PowerRestoreDefaultPowerSchemes
+         86   55 0000C340 PowerRestoreIndividualDefaultPowerScheme
+         87   56 0000F8A0 PowerSetActiveOverlayScheme
+         88   57 000010D0 PowerSetActiveScheme
+         89   58 0000FAE0 PowerSetAlsBrightnessOffset
+         90   59 0000FB30 PowerSetBrightnessAndTransitionTimes
+         91   5A 0000C3E0 PowerSetUserAwayPrediction
+         92   5B 00001140 PowerSettingAccessCheck
+         93   5C 0000C570 PowerSettingAccessCheckEx
+         94   5D 00001FA0 PowerSettingRegisterNotification
+         95   5E 00001FD0 PowerSettingRegisterNotificationEx
+         96   5F 00002590 PowerSettingUnregisterNotification
+         97   60 00010130 PowerUnregisterFromEffectivePowerModeNotifications
+         98   61 00002BF0 PowerUnregisterSuspendResumeNotification
+         99   62 00010B60 PowerUpdateEnvironmentalMonitorState
+        100   63 00010C20 PowerUpdateEnvironmentalMonitorThresholds
+        101   64 00011760 PowerUpdateLimitsMitigation
+        102   65 0000E730 PowerWriteACDefaultIndex
+        103   66 0000E810 PowerWriteACValueIndex
+        104   67 0000E900 PowerWriteDCDefaultIndex
+        105   68 0000E9E0 PowerWriteDCValueIndex
+        106   69 0000EAD0 PowerWriteDescription
+        107   6A 0000EBC0 PowerWriteFriendlyName
+        108   6B 0000ECA0 PowerWriteIconResourceSpecifier
+        109   6C 0000ED90 PowerWritePossibleDescription
+        110   6D 0000EE80 PowerWritePossibleFriendlyName
+        111   6E 0000EF70 PowerWritePossibleValue
+        112   6F 0000F060 PowerWriteSecurityDescriptor
+        113   70 0000F160 PowerWriteSettingAttributes
+        114   71 0000F240 PowerWriteValueIncrement
+        115   72 0000F320 PowerWriteValueMax
+        116   73 0000F400 PowerWriteValueMin
+        117   74 0000F4E0 PowerWriteValueUnitsSpecifier
+        118   75 00006440 ReadGlobalPwrPolicy
+        119   76 00006620 ReadProcessorPwrScheme
+        120   77 000067A0 ReadPwrScheme
+        121   78 000069E0 SetActivePwrScheme
+        122   79 00006C40 SetSuspendState
+        123   7A 00007160 ValidatePowerPolicies
+        124   7B 000072C0 WriteGlobalPwrPolicy
+        125   7C 00006620 WriteProcessorPwrScheme
+        126   7D 00007620 WritePwrScheme
+
+  Section contains the following imports:
+
+    api-ms-win-crt-runtime-l1-1-0.dll
+             180014390 Import Address Table
+             18001BB80 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          36 _initterm
+                          37 _initterm_e
+
+    api-ms-win-crt-private-l1-1-0.dll
+             180014308 Import Address Table
+             18001BAF8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          93 _o__cexit
+                          A0 _o__configure_narrow_argv
+                          C2 _o__execute_onexit_table
+                         13C _o__initialize_narrow_environment
+                         13D _o__initialize_onexit_table
+                         187 _o__itow_s
+                         259 _o__seh_filter_dll
+                         462 memcpy
+                         2CD _o__wcsicmp
+                         446 _o_wcscpy_s
+                          70 _o___stdio_common_vswprintf
+                          62 _o___stdio_common_vfprintf
+                          60 _o___std_type_info_destroy_list
+                          43 _o___acrt_iob_func
+                           C __C_specific_handler
+                         461 memcmp
+
+    api-ms-win-crt-string-l1-1-0.dll
+             1800143A8 Import Address Table
+             18001BB98 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          83 memset
+
+    ntdll.dll
+             180014418 Import Address Table
+             18001BC08 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         2AD RtlAcquireSRWLockExclusive
+                          AD LdrUnloadDll
+                         60B RtlUnsubscribeWnfNotificationWithCompletionCallback
+                         5D3 RtlSubscribeWnfStateChangeNotification
+                         546 RtlQueryWnfStateData
+                         484 RtlInitializeSRWLock
+                         60A RtlUnsubscribeWnfNotificationWaitForCompletion
+                         636 RtlWnfDllUnloadCallback
+                          67 LdrAddRefDll
+                         404 RtlGetActiveConsoleId
+                         3F6 RtlFreeHeap
+                         2D3 RtlAllocateHeap
+                         4FE RtlNtStatusToDosError
+                         17D NtInitiatePowerAction
+                         518 RtlPublishWnfStateData
+                         1BC NtPowerInformation
+                         60C RtlUnsubscribeWnfStateChangeNotification
+                         2F3 RtlCaptureContext
+                         4E9 RtlLookupFunctionEntry
+                         628 RtlVirtualUnwind
+                         2D6 RtlAllocateWnfSerializationGroup
+                         565 RtlReleaseSRWLockExclusive
+
+    api-ms-win-core-registry-l1-1-0.dll
+             180014220 Import Address Table
+             18001BA10 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 RegDeleteKeyExW
+                          25 RegQueryValueExW
+                          1C RegOpenCurrentUser
+                           0 RegCloseKey
+                          21 RegQueryInfoKeyW
+                          14 RegGetValueW
+                          2E RegSetValueExW
+                           E RegEnumKeyExW
+                           3 RegCreateKeyExW
+                          1E RegOpenKeyExW
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             180014110 Import Address Table
+             18001B900 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D SetLastError
+                           5 GetLastError
+                           F SetUnhandledExceptionFilter
+                          11 UnhandledExceptionFilter
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             1800141B0 Import Address Table
+             18001B9A0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          11 GetCurrentThreadId
+                           C GetCurrentProcess
+                          34 ProcessIdToSessionId
+                           D GetCurrentProcessId
+                          10 GetCurrentThread
+                          4E TerminateProcess
+                          33 OpenThreadToken
+
+    api-ms-win-security-base-l1-1-0.dll
+             1800143E0 Import Address Table
+             18001BBD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          15 AdjustTokenPrivileges
+                          59 RevertToSelf
+                          2E FreeSid
+                          16 AllocateAndInitializeSid
+                          46 ImpersonateSelf
+                          1B CheckTokenMembership
+
+    api-ms-win-core-synch-l1-1-0.dll
+             180014278 Import Address Table
+             18001BA68 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          27 ResetEvent
+                          29 SetEvent
+                           6 CreateEventW
+                          18 InitializeCriticalSection
+                          1D LeaveCriticalSection
+                          36 WaitForSingleObject
+                          11 EnterCriticalSection
+                           F DeleteCriticalSection
+
+    api-ms-win-core-heap-l2-1-0.dll
+             180014168 Import Address Table
+             18001B958 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 LocalAlloc
+                           3 LocalFree
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+             180014190 Import Address Table
+             18001B980 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 DisableThreadLibraryCalls
+
+    api-ms-win-core-handle-l1-1-0.dll
+             180014138 Import Address Table
+             18001B928 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 CloseHandle
+
+    RPCRT4.dll
+             180014090 Import Address Table
+             18001B880 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         210 RpcStringBindingComposeW
+                         226 UuidToStringW
+                         214 RpcStringFreeW
+                         220 UuidEqual
+                         176 RpcBindingFromStringBindingW
+                         174 RpcBindingFree
+                          2E I_RpcExceptionFilter
+                         21D UuidCreate
+                          A4 NdrClientCall3
+
+    api-ms-win-core-debug-l1-1-0.dll
+             1800140E0 Import Address Table
+             18001B8D0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 IsDebuggerPresent
+
+    api-ms-win-core-processthreads-l1-1-1.dll
+             1800141F0 Import Address Table
+             18001B9E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2F IsProcessorFeaturePresent
+
+    api-ms-win-core-profile-l1-1-0.dll
+             180014200 Import Address Table
+             18001B9F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             1800142D0 Import Address Table
+             18001BAC0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 GetSystemTimeAsFileTime
+
+    api-ms-win-core-interlocked-l1-1-0.dll
+             180014180 Import Address Table
+             18001B970 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 InitializeSListHead
+
+    api-ms-win-core-localization-private-l1-1-0.dll
+             1800141A0 Import Address Table
+             18001B990 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 LoadStringByReference
+
+    api-ms-win-core-heap-l1-1-0.dll
+             180014148 Import Address Table
+             18001B938 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 HeapFree
+                           2 HeapAlloc
+                           0 GetProcessHeap
+
+    api-ms-win-eventing-provider-l1-1-0.dll
+             1800143B8 Import Address Table
+             18001BBA8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           4 EventSetInformation
+                           5 EventUnregister
+                           9 EventWriteTransfer
+                           3 EventRegister
+
+    api-ms-win-core-threadpool-l1-2-0.dll
+             1800142E0 Import Address Table
+             18001BAD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 CloseThreadpoolTimer
+                          1A SetThreadpoolTimer
+                           C CreateThreadpoolTimer
+                          22 WaitForThreadpoolTimerCallbacks
+
+    api-ms-win-core-synch-l1-2-0.dll
+             1800142C0 Import Address Table
+             18001BAB0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2D Sleep
+
+    api-ms-win-core-realtime-l1-1-1.dll
+             180014210 Import Address Table
+             18001BA00 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 QueryInterruptTime
+
+    api-ms-win-core-delayload-l1-1-1.dll
+             180014100 Import Address Table
+             18001B8F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 ResolveDelayLoadedAPI
+
+    api-ms-win-core-delayload-l1-1-0.dll
+             1800140F0 Import Address Table
+             18001B8E0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 DelayLoadFailureHook
+
+  Section contains the following delay load imports:
+
+    WMICLNT.dll
+              00000001 Characteristics
+      000000018001D980 Address of HMODULE
+      0000000180020040 Import Address Table
+      000000018001A1B8 Import Name Table
+      000000018001A3B8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    00000001800041E8     D WmiOpenBlock
+                                    00000001800041D6     2 WmiDevInstToInstanceNameW
+                                    0000000180004078     0 WmiCloseBlock
+                                    00000001800041B2    1A WmiSetSingleInstanceW
+                                    000000018000418E    16 WmiQuerySingleInstanceW
+
+    api-ms-win-devices-query-l1-1-0.dll
+              00000001 Characteristics
+      000000018001D988 Address of HMODULE
+      0000000180020070 Import Address Table
+      000000018001A1E8 Import Name Table
+      000000018001A3C8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180004103     0 DevCloseObjectQuery
+                                    00000001800041C4     1 DevCreateObjectQuery
+                                    00000001800041A0     3 DevCreateObjectQueryFromId
+
+    api-ms-win-service-private-l1-1-0.dll
+              00000001 Characteristics
+      000000018001D990 Address of HMODULE
+      0000000180020090 Import Address Table
+      000000018001A208 Import Name Table
+      000000018001A408 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    0000000180004297     D I_ScSendPnPMessage
+                                    00000001800041FA     6 I_ScPnPGetServiceName
+                                    0000000180004285    12 I_ScValidatePnPService
+
+    UMPDC.dll
+              00000001 Characteristics
+      000000018001D998 Address of HMODULE
+      0000000180020000 Import Address Table
+      000000018001A178 Import Name Table
+      000000018001A428 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018000438E    11 PdcReleaseRwLockExclusive
+                                    000000018000437C     B PdcPortSendMessage
+                                    000000018000436A     0 PdcAcquireRwLockExclusive
+                                    0000000180004358    1A PdcSleep
+                                    0000000180004334     A PdcPortOpen
+                                    0000000180004346     9 PdcPortClose
+                                    00000001800042A9    15 PdcRwLockInitialize
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        A000 .rdata
+        1000 .reloc
+       29000 .rsrc
+       12000 .text

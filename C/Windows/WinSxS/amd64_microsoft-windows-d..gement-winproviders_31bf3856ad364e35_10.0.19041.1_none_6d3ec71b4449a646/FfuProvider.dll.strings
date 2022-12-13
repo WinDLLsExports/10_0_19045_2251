@@ -1,0 +1,2495 @@
+                            of a different size.
+                            split FFU files.
+                    Size = %d
+               BlockSize = %d
+               ChunkSize = %d
+               Signature = %s
+              DevicePath = %s
+              PlatformId = 
+              StoreIndex = %d
+              UpdateType = %d
+             AlgorithmId = %d
+             CatalogSize = %d
+            MajorVersion = %d
+            MinorVersion = %d
+           ChunkSizeInKB = %d
+           HashTableSize = %d
+          ManifestLength = %d
+          NumberOfStores = %d
+         FinalTableCount = %d
+         FinalTableIndex = %d
+        /ApplyDrive:\\.\PhysicalDrive0 
+        /CaptureDrive:\\.\PhysicalDrive0 /Name:Drive0 
+        /Compress:default 
+        /FileSize:650 
+        /PlatformIds:Microsoft.MSM8994.P6211 
+        DevicePathLength = %d
+        StorePayloadSize = %I64u
+       InitialTableCount = %d
+       InitialTableIndex = %d
+      DISM.exe /Apply-Ffu /ImageFile:flash.ffu 
+      DISM.exe /Capture-Ffu /ImageFile:install.ffu 
+      DISM.exe /Optimize-Ffu /ImageFile:flash.ffu 
+      DISM.exe /Split-Image /ImageFile:flash.ffu /SFUFile:flash.sfu 
+     FlashOnlyTableCount = %d
+     FlashOnlyTableIndex = %d
+    CompressionAlgorithm = %d
+    Example: 
+    Examples: 
+    WriteDescriptorCount = %d
+   FullFlashMajorVersion = %d
+   FullFlashMinorVersion = %d
+   WriteDescriptorLength = %d
+  /ImageFile:<path_to_image_file> /SFUFile:<path_to_sfu> /FileSize:<MB-Size> 
+  /Name:<Name>
+  [/CheckIntegrity] 
+  [/Compress:{default|none}] 
+  [/Description:Description] [/PlatformIds:<platform_ids>] 
+  [/PartitionNumber:<partition_number>] 
+  [/SFUFile:<pattern>] 
+  Applies an .ffu image to a specified physical drive. 
+  Attributes = %llu
+  Boot Indicator = %s
+  Captures a physical disk image to a new FFU file. 
+  created file. 
+  Disk size = %I64u Bytes (%.2f Gb)
+  File System = %s
+  Hidden Sectors = %d
+  Name = %s
+  No associated volume
+  operation. 
+  Optimizes a FFU image. 
+  Partition Id = %s
+  Partition Length = %lld
+  Partition Length = %llu
+  Partition Type = %d
+  Partition Type = %s
+  pattern and location of split files. 
+  Recognized Partition = %s
+  Rewrite Partition = %s
+  specified, the default is the partition that has Windows installed. 
+  Splits an existing .ffu file into multiple read-only split FFU files. 
+  Starting Offset = %lld
+  Starting Offset = %llu
+  to be added to the image. If not specified, platform id will be '*'. 
+  Use /Compress to specify the type of compression used for the initial capture 
+  Use /FileSize to specify the maximum size in megabytes (MB) for each 
+  Use /PartitionNumber to specify the partition to be optimized. If it is not 
+  Use /PlatformIds to specify one or more platform ids (separate with semicolon) 
+  Use /SFUFile to reference split FFU files (SFUs). <pattern> is the naming 
+  Volume Name = %s
+  Volume Snapshots = %s
+ !"#$%&'()*+,-./0123@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ImageFlash  
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ A^_^
+ A_A^_
+ A_A^_^]
+ A_A^A\
+ A_A^A\_^
+ A_A^A]_^
+ A_A^A]A\_
+ A_A^A]A\_^]
+------------ FFU layout ---------------------------------
+ H3E H3E
+----------- Image Header ----------------------------------
+ Microsoft Corporation. All rights reserved.
+ Operating System
+-------- Security Header ----------------------------------
+----------- Store Header ----------------------------------
+--- Updated disk layout ---------------------------------
+ ValidateDescriptorCount = %d
+ Windows
+! !!!"!#!$!%!&!'!(!)!*!+!,!-!.!/!0!1!2!3!4!5!6!7!8!9!:!;!<!=!>!?!@!A!B!C!D!E!F!G!H!I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z![!\!]!^!_!p!q!r!s!t!u!v!w!x!y!z!{!|!}!~!
+!\$(E3
+!\$(H
+!\$@L
+!\$03
+!\$PL
+!]P9]
+!|$@9|$D
+!|$HE
+!|$HH
+!fExisted
+!L$(H
+!p!q!r!s!t!u!v!w!x!y!z!{!|!}!~!
+!T$ M
+!This program cannot be run in DOS mode.
+"Call into specific imaging provider failed for GetImageInfoCollection."
+"Could not compare mount directories"
+"Could not deserialize the XML buffer correctly."
+"Could not find image manager interface."
+"Could not get absolute path name for the mount path"
+"Error executing command"
+"Failed to cleanup invalid mount points."
+"Failed to create an IDismImage object."
+"Internal error in command line parsing."
+"The specified image does not exist in the specified image container."
+"Unable to get FFU image information."
+#comment
+#document
+#text
+$ntfs.log
+$Recycle.Bin
+%02x 
+%08lx-%04x-%04x-%02x%02x-%02x%02x%02x%02x%02x%02x
+%d.%d
+%d.%d.%d.%d
+%I64u
+%lu_%lu_%lu
+%s#%d failed with 0x%x.
+%s%d%s
+%S:%d
+%s\%s
+%s\%s.mui
+%s\%s\%s.mui
+%s\*.*
+%s\\%s
+%s\Control\Class\{4D36E966-E325-11CE-BFC1-08002BE10318}
+%s\Control\MUI\UILanguages
+%s\Control\Nls\Language
+%s\Control\ProductOptions
+%s\Control\Windows
+%s\Recovery\WindowsRE\ReAgent.xml
+%s\System32\Config
+%s\System32\ntoskrnl.exe
+%s\Windows
+%s\Windows\System32\Recovery\ReAgent.xml
+%s_%lu_%lu_%lu
+%s_%s%d.%s
+%s=%s
+%w^tR
+%w`tT
+%watU
+%wctW
+%wetY
+%wgt[
+&amp;
+&apos;
+&quot;
+(_^][
+(A_A^_^][
+(D$ fH
+(D$@f
+(D$@H
+(D$@L
+(D$0fH
+(D$0H
+(D$Pf
+(D$PH
+(D$PL
+(Partition) Attributes is not present in manifest.
+(Partition) Id is not present in manifest.
+(Partition) Name is longer than 35 characters.
+(Partition) Name is not present in manifest.
+(Partition) Type is not present in manifest.
+)ryb:
+)t$@H
+.?AU?$CAtlValidateModuleConfiguration@$00VCFfuProviderModule@@@ATL@@
+.?AU_ATL_MODULE70@ATL@@
+.?AUIClassFactory@@
+.?AUIDismCommand@@
+.?AUIDismCommandCollection@@
+.?AUIDismFfuProvider@@
+.?AUIDismFfuProvider2@@
+.?AUIDismHelpItem@@
+.?AUIDismHelpItemCollection@@
+.?AUIDismImage@@
+.?AUIDismImageInfo@@
+.?AUIDismImageInfoCollection@@
+.?AUIDismImageManager@@
+.?AUIDismMountedImageInfo@@
+.?AUIDismMountedImageInfoCollection@@
+.?AUIDismObject@@
+.?AUIDismProvider@@
+.?AUIDismProviderPrivate@@
+.?AUIDismSupportCommands@@
+.?AUIDispatch@@
+.?AUIEnumVARIANT@@
+.?AUISupportErrorInfo@@
+.?AUIUnknown@@
+.?AV?$CAtlDllModuleT@VCFfuProviderModule@@@ATL@@
+.?AV?$CAtlModuleT@VCFfuProviderModule@@@ATL@@
+.?AV?$CComAggObject@VCFfuImageInfo@@@ATL@@
+.?AV?$CComAggObject@VCFfuManager@@@ATL@@
+.?AV?$CComAggObject@VCFfuMountedImageInfo@@@ATL@@
+.?AV?$CComCoClass@VCDISMCommand@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMCommandCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMHelpItem@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMHelpItemCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCFfuImage@@$1?CLSID_FfuImage@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCFfuImageInfo@@$1?CLSID_FfuImageInfo@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCFfuImageInfoCollection@@$1?CLSID_FfuImageInfoCollection@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCFfuManager@@$1?CLSID_FfuManager@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCFfuMountedImageInfo@@$1?CLSID_FfuMountedImageInfo@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCFfuMountedImageInfoCollection@@$1?CLSID_FfuMountedImageInfoCollection@@3U_GUID@@B@ATL@@
+.?AV?$CComContainedObject@VCFfuImageInfo@@@ATL@@
+.?AV?$CComContainedObject@VCFfuManager@@@ATL@@
+.?AV?$CComContainedObject@VCFfuMountedImageInfo@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismMountedImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismMountedImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@VCDISMCommand@@@ATL@@
+.?AV?$CComObject@VCDISMCommandCollection@@@ATL@@
+.?AV?$CComObject@VCDISMHelpItem@@@ATL@@
+.?AV?$CComObject@VCDISMHelpItemCollection@@@ATL@@
+.?AV?$CComObject@VCFfuImage@@@ATL@@
+.?AV?$CComObject@VCFfuImageInfo@@@ATL@@
+.?AV?$CComObject@VCFfuImageInfoCollection@@@ATL@@
+.?AV?$CComObject@VCFfuManager@@@ATL@@
+.?AV?$CComObject@VCFfuMountedImageInfo@@@ATL@@
+.?AV?$CComObject@VCFfuMountedImageInfoCollection@@@ATL@@
+.?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@
+.?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@
+.?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismCommandCollection@@$1?IID_IDismCommandCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@PEAUIDismCommand@@U?$_CopyItfFromAdaptItf@UIDismCommand@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismHelpItemCollection@@$1?IID_IDismHelpItemCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@PEAUIDismHelpItem@@U?$_CopyItfFromAdaptItf@UIDismHelpItem@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismImageInfoCollection@@$1?IID_IDismImageInfoCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@@std@@@std@@PEAUIDismImageInfo@@U?$_CopyItfFromAdaptItf@UIDismImageInfo@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismMountedImageInfoCollection@@$1?IID_IDismMountedImageInfoCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@@std@@@std@@PEAUIDismMountedImageInfo@@U?$_CopyItfFromAdaptItf@UIDismMountedImageInfo@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismMountedImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$IDispatchImpl@UIDismCommandCollection@@$1?IID_IDismCommandCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismFfuProvider2@@$1?_GUID_a192440b_5e7b_4538_a48b_3dfe9e043086@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismHelpItemCollection@@$1?IID_IDismHelpItemCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismImage@@$1?_GUID_9bb62bf9_01a0_49a7_be40_fb5445b29bef@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismImageInfo@@$1?_GUID_7970de73_63e8_43e9_9f61_81bdc748f29b@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismImageInfoCollection@@$1?IID_IDismImageInfoCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismImageManager@@$1?_GUID_a654ff2f_d9fa_4df1_aabf_982c0a3c5f52@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismMountedImageInfo@@$1?_GUID_ee9b6624_8acc_440c_9564_f5d7568d6e01@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismMountedImageInfoCollection@@$1?IID_IDismMountedImageInfoCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismProvider@@$1?_GUID_33f93018_edb7_4092_978a_4b37d5dfb1c0@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismProviderPrivate@@$1?_GUID_2114daec_42fd_4847_8a04_5f2dde3276a3@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismSupportCommands@@$1?_GUID_7234ec82_c68b_4c4e_ba1d_d333f5b87b37@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismImageInfo@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismMountedImageInfo@@@@V?$vector@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismMountedImageInfo@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AVbad_alloc@std@@
+.?AVCAtlException@ATL@@
+.?AVCAtlModule@ATL@@
+.?AVCComClassFactory@ATL@@
+.?AVCComObjectRootBase@ATL@@
+.?AVCDISMCommand@@
+.?AVCDISMCommandCollection@@
+.?AVCDISMHelpItem@@
+.?AVCDISMHelpItemCollection@@
+.?AVCFfuImage@@
+.?AVCFfuImageInfo@@
+.?AVCFfuImageInfoCollection@@
+.?AVCFfuManager@@
+.?AVCFfuMountedImageInfo@@
+.?AVCFfuMountedImageInfoCollection@@
+.?AVCFfuProviderModule@@
+.?AVexception@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.\%s.mui
+.\%s\%s.mui
+.00cfg
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.data
+.data$brc
+.data$r$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gfids
+.giats
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.pdata
+.rdata
+.rdata$brc
+.rdata$r
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$mn$00
+.text$x
+.text$yd
+.w,t*
+.xdata
+.xdata$x
+/Apply-Ffu /ImageFile:<path_to_image_file> /ApplyDrive:<physical_drive_path> 
+/Capture-Ffu /ImageFile:<path_to_image_file> /CaptureDrive:<physical_drive_path> 
+/Optimize-Ffu /ImageFile:<path_to_image_file> 
+/Split-Ffu 
+::RtlIsLUtf8StringValid(&Sources[i])
+::RtlIsLUtf8StringValid(Candidates[i])
+::RtlIsLUtf8StringValid(StringIn)
+:MdLcu
+:MdSpt
+:MdSpu
+;{u(f
+;{u*f
+;|$xt
+;G(v(H
+??0exception@@QEAA@AEBQEBD@Z
+??0exception@@QEAA@AEBV0@@Z
+??0exception@@QEAA@XZ
+??1exception@@UEAA@XZ
+??1type_info@@UEAA@XZ
+?MdDlu
+?terminate@@YAXXZ
+?w$tU
+?what@exception@@UEBAPEBDXZ
+?wMtD
+?wOtF
+?wQtH
+@.data
+@.didat
+@.reloc
+@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>@@@?456789:;<=@@@@@@@
+@8{8t
+@8t$T
+@A^_]
+@A^_^
+@A^_^][
+@A^A\_^]
+@A_A^]
+@A_A^_
+@A_A^_^]
+@A_A^A\
+@A_A^A\^[
+@A_A^A\_^
+@A_A^A\_^][
+@A_A^A]
+@A_A^A]A\_^]
+@SUVWATAUAVAWH
+@SUVWATAVAWH
+@SUVWAUAVAWH
+@SUVWAVAWH
+@SUVWAVH
+@SUVWH
+@SVWH
+@USVH
+@USVWATAUAVAWH
+@USVWATAUAWH
+@USVWATAVAWH
+@USVWAUAVAWH
+@USVWAVAWH
+@USVWAVH
+@USVWAWH
+@USVWH
+@USWATAUAVAWH
+@USWH
+[%s] is not recognized by the DISM FFU provider.
+[CatalogFiles]
+[CatalogHeader]
+[Partition %d]
+\$ A;
+\$ E3
+\$ UH
+\$ UVWATAUAVAWH
+\$ UVWAVAWH
+\$ UVWH
+\$ VWAVH
+\$ WH
+\$(E3
+\$@E3
+\$0D9|$<
+\$0E3
+\$0fE
+\$8I!
+\$pL9s t?D8shu9D8siu3
+\$X;X
+\$XH;
+\\%s\%s
+\\.\PHYSICALDRIVE%d
+\\?\GLOBALROOT%s%s
+\GLOBAL??\
+\Implemented Categories
+\Required Categories
+\StringFileInfo\%04x%04x\%s
+\system32\ntoskrnl.exe
+\VarFileInfo\Translation
+]PH!]H3
+]XH!|$XH!|$PH!|$HH!|$@H!|$8H!|$0H
+^ H;^(
+_@88t
+__C_specific_handler
+__CxxFrameHandler3
+__dllonexit
+__RELPATH
+__RTDynamicCast
+__rv.UcsCharacter != (0xffffffff)
+_amsg_exit
+_CxxThrowException
+_initterm
+_lock
+_onexit
+_purecall
+_stricmp
+_unlock
+_vscwprintf
+_vsnprintf
+_vsnwprintf
+_wcsicmp
+_wcsnicmp
+_XcptFilter
+` UAUAVH
+` UAVAWH
+`.rdata
+`A^_]
+`A^_^
+`A^_^[]
+`A_A\_^]
+`A_A]A\_^
+`A_A^_^[
+`A_A^A\^]
+`A_A^A\_^][
+`A_A^A]A\_^]
+`J;D?`
+{ AVH
+{1A597235-6378-4910-9F8B-720FEE9357A3}
+{bf1a281b-ad7b-4476-ac95-f47682990ce7}
+{J}u!H
+{J}u#H
+|$ AVH
+|$ E3
+|$ sL@
+|$ UAVAWH
+|$ UH
+|$(E2
+|$(E3
+|$(I;
+|$@D9
+|$@E3
+|$` t.
+|$`E3
+|$`fD
+|$0A_A^
+|$8H!|$@L
+|$dI;
+|$H9]
+|$HE3
+|$HfD
+|$HH9|$p
+|$PE3
+|$X#t&
+|$X%u
+|$X\u
+|$XE3
+|$XNu1A
+|$X'u%A
+|H!T$PL
+<?xml version='1.0' encoding='utf-8'?>
+<_R8b
+<FFU><IMAGE TYPE="FFU"><NAME /><DESCRIPTION /><TOTALBYTES /><WIMBOOT /><DIRCOUNT /><FILECOUNT /><CREATIONTIME /><LASTMODIFICATIONTIME /><WINDOWS><ARCH /><HAL /><EDITIONID /><INSTALLATIONTYPE /><PRODUCTTYPE /><PRODUCTSUITE /><SYSTEMROOT /><VERSION><MAJOR /><MINOR /><BUILD /><SPBUILD /><SPLEVEL /></VERSION><LANGUAGES><DEFAULT /><LANGUAGE /></LANGUAGES></WINDOWS><FFU><VERSION><MAJOR /><MINOR /><FFUMAJOR /><FFUMINOR /></VERSION><ANTITHEFTVERSION /><UEFI /><COMPRESSION /><SECTORSIZE /><MINSECTORCOUNT /><STORECOUNT /><PLATFORMIDS /><CATALOG><SERIAL /><ISSUER /><SUBJECT /></CATALOG><OPTIMIZED><PARTITIONNUMBER /></OPTIMIZED></FFU></IMAGE></FFU>
+<G\t!f
+=L9o<
+040904B0
+0A^^[
+0A^_]
+0A^_^
+0A^A]A\_^
+0A_A^]
+0A_A^_
+0A_A^_^[
+0A_A^_^]
+0A_A^A\
+0A_A^A\_^
+0A_A^A\_^[]
+0A_A^A\_^][
+0A_A^A]A\_
+0A_A^A]A\_^]
+10.0.19041.1
+10.0.19041.1 (WinBuild.160101.0800)
+4Rich
+8\$1uoE;|$
+8_^][
+8A^_^[
+8A^A\_^][
+8A_A^^[
+8A_A^A\_^[
+8A_A^A]A\_^][
+9(t-H
+9(tTH
+9\$xt
+9]0v,
+9]Pt+M
+9{ v@L
+9>t]H
+9A$uaI
+9A98u6A9x
+9D$ u
+9D$8u
+9D$Xu2L
+9j u&
+9MdHdu
+9qPvzH
+9s v,
+9s(tEH
+9t$\t
+9t$\u
+9t$Pt
+9t$XvXH
+9Y(uG3
+9Y0t@3
+A required option is missing from the command-line.
+A;^@t
+A]A\_^]
+A^_^[]
+A^_^][
+A^A\_^]
+A^A]]
+A^A]A\_]
+A_A\_^]
+A_A]A\_]
+A_A]A\_^[]
+A_A^]
+A_A^_
+A_A^_^[]
+A_A^_^]
+A_A^A\
+A_A^A\_]
+A_A^A\_^
+A_A^A\_^[]
+A_A^A\_^][
+A_A^A]_]
+A_A^A]_^[]
+A_A^A]A\]
+A_A^A]A\_
+A_A^A]A\_[]
+A_A^A]A\_^
+A_A^A]A\_^[
+A_A^A]A\_^[]
+A_A^A]A\_^]
+A0D!b
+A0D!r
+A0D!z
+A8D8`xuCH
+A8D8`xuVH
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+AcquireSRWLockExclusive
+AdjustTokenPrivileges
+ADVAPI32.dll
+advapi32.dll
+af-ZA
+alpha
+alpha64
+am-ET
+ANTI_THEFT_ENABLED
+Anti-theft check failed because the machine uses legacy BIOS.
+Anti-theft feature is not supported on this machine.
+Anti-theft feature not required in the image.
+ANTITHEFTVERSION
+AntiTheftVersion
+AP9Cl
+api-ms-win-core-file-l1-1-0.dll
+api-ms-win-core-file-l1-2-0.dll
+api-ms-win-core-heap-obsolete-l1-1-0.dll
+api-ms-win-core-libraryloader-l1-1-0.dll
+api-ms-win-core-localization-l1-2-0.dll
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+api-ms-win-core-processthreads-l1-1-0.dll
+api-ms-win-core-registry-l1-1-0.dll
+api-ms-win-core-sysinfo-l1-1-0.dll
+Append cannot be used with FFU images.
+Append is not supported with FFU images.
+APPID
+Applies an .ffu image.
+applydrive
+Apply-Ffu
+apply-ffu
+Applying image
+ar-AE
+ar-BH
+Architecture
+ar-DZ
+ar-EG
+ar-IQ
+ar-JO
+ar-KW
+ar-LB
+ar-LY
+arm64
+ar-MA
+arn-CL
+ar-OM
+ar-QA
+ar-SA
+ar-SY
+ar-TN
+ar-YE
+as-IN
+ATAVAWH
+ATL$__a
+ATL$__m
+ATL$__z
+AttachVirtualDisk
+ATTLIST
+Attributes
+AUAVAWH
+az-Cyrl
+az-Cyrl-AZ
+az-Latn
+az-Latn-AZ
+B(A9A
+B,A9A
+B|$`D
+B0A9A
+ba-RU
+bcrypt.dll
+BCryptCloseAlgorithmProvider
+BCryptCreateHash
+BCryptDestroyHash
+BCryptFinishHash
+BCryptGetProperty
+BCryptHashData
+BCryptOpenAlgorithmProvider
+be-BY
+bg-BG
+bin-NG
+BMSRE
+BMSRH
+bn-BD
+bn-IN
+bo-CN
+br-FR
+bs-Cyrl
+bs-Cyrl-BA
+bsearch
+bs-Latn
+bs-Latn-BA
+BUILD
+C(L9w
+C\9ADu
+C`9ALt
+C8!C(H
+C8H+9L
+CAbstractDisk::AcquireExclusiveAccess
+CAbstractDisk::AreVolumesReady
+CAbstractDisk::AssociateIoCompletionPort
+CAbstractDisk::DismountAllVolumes
+CAbstractDisk::Extend
+CAbstractDisk::FindVolume
+CAbstractDisk::GetDiskPartitionNumber
+CAbstractDisk::GetDriveLayoutInfoEx
+CAbstractDisk::GetVolumePath
+CAbstractDisk::Initialize
+CAbstractDisk::InitializeInternal
+CAbstractDisk::IsDiskOffline
+CAbstractDisk::ReauctionDisk
+CAbstractDisk::ReenumerateDisk
+CAbstractDisk::RevertExclusiveAccess
+CAbstractDisk::SetDiskOfflineAttribute
+CAbstractDisk::SetDriveLayoutInfoEx
+CAbstractDisk::UpdateDiskProperties
+CAbstractWriter::AccumulateHashableBlocks
+CAbstractWriter::ReleaseFileHandle
+CAbstractWriter::UpdateOffset
+ca-ES
+ca-ES-valencia
+Cannot apply an FFU image onto the same disk.
+Cannot capture an FFU image from the same disk.
+Cannot re-optimize an optimized image.
+capturedrive
+capture-ffu
+Capture-Ffu3Captures a physical disk image into a new FFU file.
+CaptureIOWorkerCallback
+Capturing image
+Catalog length = %d, Hashtable length = %d
+CCaptureIODispatcher::CreateInstance
+CCaptureIODispatcher::GetNextIOTask
+CCaptureIODispatcher::Initialize
+CCompressedPayloadWriterT<class CEmptyType>::CreateInstance
+CCompressedPayloadWriterT<class CEmptyType>::Done
+CCompressedPayloadWriterT<class CEmptyType>::Initialize
+CCompressedPayloadWriterT<class CEmptyType>::PreWrite
+CCompressedPayloadWriterT<class CEmptyType>::UpdateOffset
+CCompressedStoreHeaderWriterT<class CEmptyType>::CreateInstance
+CCompressedStoreHeaderWriterT<class CEmptyType>::Done
+CCompressedStoreHeaderWriterT<class CEmptyType>::Initialize
+CCompressedStoreHeaderWriterT<class CEmptyType>::PreWrite
+CDATA
+CDF doesn't contain any member.
+cdf Parse Error Callback - Area (0x%x), Error (0x%x), %s.
+CDiskOptimizer::CompactAndShrink
+CDiskOptimizer::CreateInstance
+CDiskOptimizer::Initialize
+CDiskOptimizer::PurgeVolume
+CDiskReader::CreateInstance
+CDiskReader::GetBlockAllocationBitmap
+CDiskReader::GetBlockAllocationBitmapNtfs
+CDiskReader::GetBlockAllocationBitmapVolumeRawCopy
+CDiskReader::GetCurrentControlSet
+CDiskReader::GetNtfsVolumeBitmap
+CDiskReader::GetOsInfoBinaryArchitecture
+CDiskReader::GetOsInfoHalName
+CDiskReader::GetOsInfoLanguages
+CDiskReader::GetOsInformation
+CDiskReader::GetOsVolumeGuid
+CDiskReader::Initialize
+CDiskReader::IsVolumeSnapshotsPresent
+CDiskReader::PreRead
+CDiskWriter::CreateInstance
+CDiskWriter::Initialize
+CDiskWriter::PreWrite
+CDiskWriter::StageStoragePool
+CElementModification::ChangeTextValue
+CertCloseStore
+CertDuplicateCertificateContext
+CertFreeCertificateChain
+CertFreeCertificateContext
+CertFreeCTLContext
+CertGetCertificateChain
+CertGetCertificateContextProperty
+CertGetNameStringW
+CFfuHash::CalculateHash
+CFfuHash::CheckHash
+CFfuHash::CheckHashes
+CFfuHash::CheckPayloadHash
+CFfuHash::CreateInstance
+CFfuHash::Initialize
+CFfuHash::SetPayloadOffset
+CFfuImage::CreateFfuImage
+CFfuImage::Initialize
+CFfuImage::Remount
+CFfuImage::Save
+CFfuImage::Unmount
+CFfuImageInfo::CreateFfuImageInfo
+CFfuImageInfo::GetPropertyEx
+CFfuImageInfo::Initialize
+CFfuImageInfo::Mount
+CFfuImageInfoCollection::CreateFfuImageInfoCollection
+CFfuImageInfoCollection::Initialize
+CFfuManager::Apply
+CFfuManager::ApplyImage
+CFfuManager::Capture
+CFfuManager::CaptureImage
+CFfuManager::CleanupMountpoints
+CFfuManager::ExecuteCmdLine
+CFfuManager::Final_OnConnect
+CFfuManager::GetCommandCollection
+CFfuManager::GetHelpItemCollection
+CFfuManager::GetImageInfoCollection
+CFfuManager::GetMountedImageInfoCollection
+CFfuManager::InternalCmdApply
+CFfuManager::InternalCmdCapture
+CFfuManager::InternalCmdGetTopLevelOption
+CFfuManager::InternalCmdOptimize
+CFfuManager::InternalExecuteCmd
+CFfuManager::InternalValidateOptions
+CFfuManager::OnConnect
+CFfuManager::Optimize
+CFfuManager::OptimizeImage
+CFfuManager::Split
+CFfuManager::SplitImage
+CFfuMiscHelpersT<class CEmptyType>::GenerateCatalog
+CFfuMiscHelpersT<class CEmptyType>::GenerateTempFileName
+CFfuMiscHelpersT<class CEmptyType>::GetSignerInfoFromCatalog
+CFfuMiscHelpersT<class CEmptyType>::IsCatalogMicrosoftProductionSigned
+CFfuMiscHelpersT<class CEmptyType>::LogDriveLayoutInfo
+CFfuMiscHelpersT<class CEmptyType>::ValidateNotOnTheSameDisk
+CFfuMountedImageInfo::CreateFfuMountedImageInfo
+CFfuMountedImageInfo::Initialize
+CFfuMountedImageInfoCollection::CreateFfuMountedImageInfoCollection
+CFfuMountedImageInfoCollection::Initialize
+CFfuReader::AssociateIoCompletionPort
+CFfuReader::CreateInstance
+CFfuReader::GetFileTime
+CFfuReader::GetManifest
+CFfuReader::GetNextIOTask
+CFfuReader::Initialize
+CFfuReader::LogPlatformIdComparison
+CFfuReader::LogStoreHeader
+CFfuReader::PostApply
+CFfuReader::PostRead
+CFfuReader::PreApply
+CFfuReader::ProcessManifest
+CFfuReader::ProcessWriteDescriptors
+CFfuReader::ReadImageHeader
+CFfuReader::ReadSecurityHeader
+CFfuReader::ReadStoreHeader
+CFfuReader::Validate
+CFfuReader::ValidateHeaderSignature
+CFfuReader::ValidatePlatformId
+CFfuStorageUtilsT<class CEmptyType>::GetVolumeSupportedSizeInternal
+CFfuStorageUtilsT<class CEmptyType>::GetVolumeSupportedSizeT
+CFfuStorageUtilsT<class CEmptyType>::ResizeVolumeT
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CCompressedStoreHeaderWriterT<class CEmptyType>,class CCompressedPayloadWriterT<class CEmptyType> >::CreateInstance
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CCompressedStoreHeaderWriterT<class CEmptyType>,class CCompressedPayloadWriterT<class CEmptyType> >::Done
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CCompressedStoreHeaderWriterT<class CEmptyType>,class CCompressedPayloadWriterT<class CEmptyType> >::Initialize
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CCompressedStoreHeaderWriterT<class CEmptyType>,class CCompressedPayloadWriterT<class CEmptyType> >::PreWrite
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CStoreHeaderWriterT<class CEmptyType>,class CPayloadWriterT<class CEmptyType> >::CreateInstance
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CStoreHeaderWriterT<class CEmptyType>,class CPayloadWriterT<class CEmptyType> >::Done
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CStoreHeaderWriterT<class CEmptyType>,class CPayloadWriterT<class CEmptyType> >::Initialize
+CFfuWriterAsyncT<class CSecurityHeaderWriterT<class CEmptyType>,class CImageHeaderWriterT<class CEmptyType>,class CStoreHeaderWriterT<class CEmptyType>,class CPayloadWriterT<class CEmptyType> >::PreWrite
+CFileTransport::AssociateIoCompletionPort
+CFileTransport::CreateInstance
+CFileTransport::GetFileTime
+CFileTransport::GetHandleIndex
+CFileTransport::GetInfoByFileOffset
+CFileTransport::Initialize
+CFileTransport::Read
+CFilteredTransport::AssociateIoCompletionPort
+CFilteredTransport::CheckPayloadHash
+CFilteredTransport::CreateInstance
+CFilteredTransport::GetFileTime
+CFilteredTransport::GetNextPayloadBlockInfo
+CFilteredTransport::Initialize
+CFilteredTransport::Read
+CFilteredTransport::SkipPadding
+CFilteredTransport::StartHashCheck
+CharLowerBuffW
+CharNextW
+Check the image container first for existing images.
+chr-Cher
+chr-Cher-US
+CImageHeaderWriterT<class CEmptyType>::Done
+CImageHeaderWriterT<class CEmptyType>::PreWrite
+Cleaning up image
+CloseHandle
+CLSID\
+Cluster size (%llu) is larger than block size (%d) which is not supported
+CManifest::CreateInstance
+CManifest::Find
+CManifest::FindArray
+CManifest::FindU
+CManifest::GetDriveLayoutInfoEx
+CManifest::Initialize
+CManifest::IsOptimized
+CManifest::ParseManifestByLine
+CManifest::Serialize
+CManifest::StripLastNewlineCharacters
+CManifest::TokenizeStringByLineA
+CManifestCategory::AppendBoolean
+CManifestCategory::AppendDword
+CManifestCategory::AppendGUID
+CManifestCategory::AppendLongLong
+CManifestCategory::AppendString
+CManifestCategory::Clone
+CManifestCategory::CreateInstance
+CManifestCategory::Find
+CManifestCategory::FindU
+CManifestCategory::Init
+CMicrodom
+CMicrodom_Blob
+CMicrodomBuilder::CNamespaceNameExistenceCheck::AddAndCheckExistence
+CMicrodomBuilder::ConsumeCData
+CMicrodomBuilder::EndAttlist
+CMicrodomBuilder::EndElement
+CMicrodomBuilder::InsertDefaultAttributes
+CMicrodomBuilder::StartElement
+CMountHelpersT<class CEmptyType>::ClearSessionRegData
+CMountHelpersT<class CEmptyType>::DeleteMountPath
+CMountHelpersT<class CEmptyType>::DeleteSessionRegPath
+CMountHelpersT<class CEmptyType>::GetCanonicalPath
+CMountHelpersT<class CEmptyType>::GetMountedImageInfoFromSessionRegData
+CMountHelpersT<class CEmptyType>::GetMountState
+CMountHelpersT<class CEmptyType>::GetProperMountPath
+CMountHelpersT<class CEmptyType>::GetSessionRegPath
+CMountHelpersT<class CEmptyType>::Mount
+CMountHelpersT<class CEmptyType>::MountPathExists
+CMountHelpersT<class CEmptyType>::ReadSessionRegDataByMountPath
+CMountHelpersT<class CEmptyType>::ReadSessionRegDataByRegPath
+CMountHelpersT<class CEmptyType>::SessionRegPathExists
+CMountHelpersT<class CEmptyType>::UpdateOptimizedPartitionNumber
+CMountHelpersT<class CEmptyType>::VerifyMountPath
+CMountHelpersT<class CEmptyType>::WriteSessionRegData
+CMutexT<class CEmptyType>::Lock
+CNameValueArray::Clone
+CNameValueArray::FindForName
+CNameValueArray::InsertNew
+CoCreateGuid
+CoCreateInstance
+COfflineHiveT<class CEmptyType>::GetDwordValue
+COfflineHiveT<class CEmptyType>::GetMultiStringValue
+COfflineHiveT<class CEmptyType>::GetStringValue
+COfflineHiveT<class CEmptyType>::GetValue
+COfflineHiveT<class CEmptyType>::Init
+co-FR
+CoInitializeEx
+Commit is not supported with FFU images.
+CompanyName
+CompareStringW
+compress
+COMPRESSION
+Compression
+Compression algorithm used in the FFU is not supported.
+Compression time = %lld ms
+ControlSet%03d
+Copied ReAgent.xml to the recovery partition.
+CopyFileExW
+CopyFileW
+CoSetProxyBlanket
+CoTaskMemFree
+Could not enumerate mount points
+Could not instantiate console handler in ImageInfo
+Could not instantiate message handler in ImageInfo
+Could not read string from resources
+Could not send progress to the DISM framework
+Could not send progress update to the DISM framework
+Could not terminate progress to the DISM framework
+CoUninitialize
+CPayloadWriterT<class CEmptyType>::CreateInstance
+CPayloadWriterT<class CEmptyType>::Done
+CPayloadWriterT<class CEmptyType>::Initialize
+CPayloadWriterT<class CEmptyType>::PreWrite
+CPayloadWriterT<class CEmptyType>::UpdateOffset
+CProgress::EndProgress
+CProgress::ReportProgress
+CProgress::StartProgress
+CreateDirectoryW
+CreateEventW
+CreateFileMappingW
+CreateFileW
+CreateIoCompletionPort
+CreateMutexW
+CreateVirtualDisk
+CreationTime
+CRtlCompressionT<class CEmptyType>::Compress
+CRtlCompressionT<class CEmptyType>::Init
+CRtlDecompressionT<class CEmptyType>::Decompress
+CRtlDecompressionT<class CEmptyType>::Init
+CRYPT32.dll
+crypt32.dll
+CryptCATCDFClose
+CryptCATCDFEnumMembersByCDFTagEx
+CryptCATCDFOpen
+CryptMsgClose
+CryptMsgGetAndVerifySigner
+CryptMsgGetParam
+CryptQueryObject
+cs-CZ
+CSDVersion
+CSecurityHeaderWriterT<class CEmptyType>::CreateInstance
+CSecurityHeaderWriterT<class CEmptyType>::Done
+CSecurityHeaderWriterT<class CEmptyType>::Initialize
+CSecurityHeaderWriterT<class CEmptyType>::PreWrite
+CStoreHeaderWriterT<class CEmptyType>::CreateInstance
+CStoreHeaderWriterT<class CEmptyType>::Done
+CStoreHeaderWriterT<class CEmptyType>::Initialize
+CStoreHeaderWriterT<class CEmptyType>::PreWrite
+Current
+CWin32PrivilegeT<class CEmptyType>::Done
+CWin32PrivilegeT<class CEmptyType>::Init
+CWinreHelper::GetOSVolumePath
+CWinreHelper::GetRecoveryVolumePath
+CWinreHelper::Update
+CWinreHelper::UpdateLocationNode
+CWinreHelper::UpdateReAgentXml
+CWriterHelperT<class CEmptyType>::SerializePlatformIds
+CXmlCursor::Next
+cy-GB
+D!t$ L
+D$ A;
+D$ E3
+D$ H#
+D$ H+
+D$ M#
+D$(" 
+D$(E3
+D$(fD9 u?H
+D$(H!|$ E3
+D$(H;X
+D$(H+
+D$(H+G H
+D$(I+
+D$@D;
+D$@E3
+D$@L;d$P|
+D$`D9`
+D$`E3
+D$`H+
+D$`H9D$8t
+D$`I;
+D$`I;E
+D$0A;
+D$0E3
+D$0H!\$(
+D$0H;
+D$0H+
+D$49G
+D$8E3
+D$8H;
+D$BDi
+D$CM;
+D$DDtXH
+D$hA;
+D$HE3
+D$HH;|$p
+D$hH+
+D$hH+D$p
+D$HH9
+D$P;B
+D$P9B
+D$PA;
+D$pE3
+D$PE3
+D$pH+
+D$PH+
+D$PH9
+D$PL;
+D$TEi
+D$X!|$LL
+D$XE3
+D$xH+
+D$xH+D$0
+D$xI;
+D;|$<
+D;d$@
+D;d$D
+D;d$Xr
+D;H$u
+D;H,u
+D;l$\
+D;P(u
+D;P0t
+D;X$u
+D?@L;
+D?8A;
+D?pL;
+D8A8u
+D8d$\
+D8d$\tR
+D8d$\u
+D8D$D
+D8d$hu-
+D8n1u
+D8n1uOA
+D9.ud;
+D9;ukH
+D9{,A
+D9{,t
+D9{|u
+D9|$`u
+D9|$H
+D9>ulE3
+D98t/
+D9D$8
+D9d$8t
+D9d$xt
+D9e@u
+D9l$||`H
+D9l$D
+D9l$H
+D9l$P
+D9mwu
+D9mXu7H
+D9mXu8A
+D9t$X
+D9t$Xu
+D9u0t2A
+D9u0u
+da-DK
+de-AT
+de-CH
+Decompression time = %lld ms, Hash time = %lld ms, Disk I/O time = %lld ms, File I/O time = %lld ms
+de-DE
+DEFAULT
+default
+DefaultAttribute.Allocate()
+DefaultLanguage
+DeleteCriticalSection
+Deleted %s successfully.
+DeleteFileW
+DeleteVolumeMountPointW
+de-LI
+de-LU
+Description
+description
+DESCRIPTION
+Description_U
+DetachVirtualDisk
+DeviceIoControl
+DevicePlatformId%d
+DIRCOUNT
+DirCount
+DisableThreadLibraryCalls
+Disk has no layout
+Disk I/O time = %lld ms, File I/O time = %lld ms
+Disk Id =  %s
+Disk Id is not present in manifest
+Disk size = %lld, Ffu disk size = %lld.
+Disk size is not a multiple of block size.
+DISM Ffu Provider
+DISM FFU Provider
+dismcore.tlbWW
+DllCanUnloadNow
+DllGetClassObject
+DLLGetDISMProviderCLSID
+DllRegisterServer
+DllUnregisterServer
+DOCTYPE
+Drive path = %s
+dsb-DE
+dv-MV
+dz-BT
+E fD9
+E I+F
+E(=csm
+E(H9E v
+E(I9E v
+E/Zf4[
+E;&v+
+E_E9H
+E8,7u
+E8=csm
+E94$s
+E9g@t-A
+EditionId
+EDITIONID
+EditionID
+Eh=csm
+EH=csm
+EH9\$ t<H
+ELEMENT
+el-GR
+en-029
+en-AE
+en-AU
+en-BZ
+en-CA
+encoding
+en-GB
+en-HK
+en-ID
+en-IE
+en-IN
+en-JM
+en-MY
+en-NZ
+en-PH
+en-SG
+Ensure that /%1 or /%2 is specified.
+EnterCriticalSection
+ENTITIES
+ENTITY
+Entity.Length != 0
+en-TT
+en-US
+en-ZA
+en-ZW
+EPH9E(t
+es-419
+es-AR
+es-BO
+es-CL
+es-CO
+es-CR
+es-CU
+es-DO
+es-EC
+es-ES
+es-ES_tradnl
+es-GT
+es-HN
+es-MX
+es-NI
+es-PA
+es-PE
+es-PR
+es-PY
+es-SV
+es-US
+es-UY
+es-VE
+et-EE
+EtwEventEnabled
+EtwEventRegister
+EtwEventUnregister
+EtwEventWrite
+eu-ES
+EwD;H
+EX=csm
+Ex=csm
+EXD98t
+eXIcv
+F D8d$\t
+F E98uzH
+f;*t$H
+f;A$u
+f;A.u
+f;T$lt
+f;T$lu
+f9,~u
+f9,Qu
+f9,yu
+f9\$v
+f9<Au
+f9<Ku
+f94Au
+f94Gu
+f9D$Pt
+f9D$x
+f9D$xH
+f9hrt
+f9YBu
+fA;<$u
+fA9,Xu
+fA9|@
+fA94Fu
+fA9Qrv
+fA9qxu
+Failed to acquire exclusive disk access. hr = 0x%x.
+Failed to add the command to the collection.
+Failed to apply an FFU image to '%s'.
+Failed to capture an FFU image from '%s'.
+Failed to convert from LongLong to Dword
+Failed to create .sfu file.
+Failed to create .sfu path
+Failed to create a new command collection.
+Failed to create a new command object.
+Failed to create buffer.
+Failed to create copy of .sfu filepath.
+Failed to create the image info collection.
+Failed to create the mounted image info collection.
+Failed to delete backing VHD/X file %s (0x%x).
+Failed to delete session information in registry (0x%x).
+Failed to delete volume mount point %s (0x%x).
+Failed to detach VHD/X %s (0x%x).
+Failed to detach virtual disk (0x%x).
+Failed to get a temporary path for the scratch directory.
+Failed to get file size.
+Failed to get IDismEventManager interface from driver provider parent.
+Failed to get mount information.
+Failed to get NTFS allocation bitmap. Fall back to do a raw copy
+Failed to get the Configuration interface from the provider store.
+Failed to get the display type.
+Failed to get the format type.
+Failed to get the parent's interface from OnConnect
+Failed to initialize the console event handler.
+Failed to initialize the message handler.
+Failed to open .ffu file.
+Failed to open virtual disk %s (0x%x).
+Failed to optimize the FFU image '%s'.
+Failed to parse anti-theft versions in the image.
+Failed to QI for the IDismCommandCollection interface.
+Failed to QI the CDISMHelpItemCollection for IDismHelpItemCollection.
+Failed to read all the disk write descriptors. hr = 0x%x.
+Failed to read correct number of bytes from .ffu file.
+Failed to read from .ffu file.
+Failed to read the expected amount of padding after the image header.
+Failed to read the expected amount of padding after the security header.
+Failed to resize volume with WMI error code %d.
+Failed to set surface cache policy.
+Failed to set volume size to %lld while the maximum allowed value is %lld.
+Failed to set volume size to %lld while the minimum allowed value is %lld.
+Failed to write correct number of bytes to .sfu file.
+Failed to write header to .sfu file.
+Failed to write to .sfu file.
+fa-IR
+False
+fB9,Au
+fD;3u
+fD9 t
+fD9!t
+fD9#t
+fD9$Au
+fD9$Bu
+fD9$ru
+fD9$yu
+fD9,Au
+fD9,Ct
+fD9,yu
+fD9,Zu
+fD9@Bt{H
+fD9{rr
+fD9}ht
+fD9<Au
+fD9<Cu
+fD9<Yu
+fD90t
+fD90u
+fD91t
+fD93t
+fD94Au
+fD94Cu
+fD94yu
+fD9EX
+fE9$Nu
+fE9$vu
+fE9<$u
+fE9Yrr
+fF9$@u
+ff-Latn
+ff-Latn-NG
+ff-Latn-SN
+FFU COMMANDS:
+FFU doesn't exist at %s.
+FFU Path
+FFU version (%d.%d.%d.%d) is currently not supported.
+FFU\IMAGE
+FFU\IMAGE\CREATIONTIME
+FFU\IMAGE\DESCRIPTION
+FFU\IMAGE\FFU
+FFU\IMAGE\FFU\CATALOG
+FFU\IMAGE\FFU\OPTIMIZED
+FFU\IMAGE\FFU\OPTIMIZED\PARTITIONNUMBER
+FFU\IMAGE\FFU\PLATFORMIDS
+FFU\IMAGE\FFU\VERSION
+FFU\IMAGE\LASTMODIFICATIONTIME
+FFU\IMAGE\NAME
+FFU\IMAGE\WINDOWS
+FFU\IMAGE\WINDOWS\LANGUAGES
+FFU\IMAGE\WINDOWS\VERSION
+FfuApplyImage
+FfuApplyInternal
+FfuCaptureImage
+FfuCaptureInternal
+FfuCommands)Information on the available FFU commands
+FfuDeleteImageMounts
+FfuDeleteImageMountsInternal
+FfuGetImageInformation
+FfuGetInformationInternal
+FfuGetMountedImageInfo
+FfuImage Class
+FfuImageInfo
+FfuImageInfo Class#
+FfuImageInfoCollection ClassWW
+FfuImageInfoCollectionWW,
+FfuLog
+FFUMAJOR
+FfuManager
+FfuManager ClassWW
+FfuManagerWWd
+FFUMINOR
+ffumount
+FfuMountedImageInfo ClassW
+FfuMountedImageInfoCollection ClassWWW
+FfuMountedImageInfoW
+FfuMountImage
+FfuMountInternal
+FfuOptimizeImage
+FfuOptimizeInternal
+FfuProvider
+FfuProvider 1.0 Type LibraryWW
+FfuProvider.dll
+FfuProvider.DLL
+FfuProvider.pdb
+FfuProviderDelayLoadHook: Intercepted call to %S!%S
+FfuProviderDelayLoadHook: Unhandled delay-load procedure %S!%S was called
+FfuProviderDelayLoadHook: Unknown reason: %u
+FFUs do not support extra mount flags like readonly, optimize and checkintegrity.  These flags will be ignored.
+FfuUnmountImage
+FfuUnmountInternal
+fi-FI
+FileCount
+FILECOUNT
+FileDescription
+filesize
+FileVersion
+fil-PH
+FindClose
+FindFirstFileW
+FindFirstVolumeW
+FindNextFileW
+FindNextVolumeW
+FindResourceExW
+FindVolumeClose
+FIXED
+fo-FO
+For more information about valid syntax, refer to the help.
+For more information, refer to the help.
+FormatMessageW
+fr-029
+fr-BE
+fr-CA
+fr-CD
+fr-CH
+fr-CI
+fr-CM
+FreeLibrary
+fr-FR
+fr-HT
+fr-LU
+fr-MA
+fr-MC
+fr-ML
+fr-RE
+fr-SN
+Full Flash Major Version
+Full Flash Minor Version
+FullFlash
+fy-NL
+G$H;A$u
+g(M9't
+G8H9ppt
+ga-IE
+gd-GB
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThread
+GetCurrentThreadId
+GetDiskFreeSpaceW
+GetDriveTypeW
+GetFileAttributesW
+GetFileInformationByHandle
+GetFileSize
+GetFileSizeEx
+GetFileTime
+GetFileVersionInfoExW
+GetFileVersionInfoSizeExW
+GetFirmwareEnvironmentVariableW
+GetFullPathNameW
+GetLastError
+GetModuleFileNameW
+GetModuleHandleExW
+GetModuleHandleW
+GetOSVersion
+GetOverlappedResult
+GetProcAddress
+GetProcessHeap
+GetQueuedCompletionStatus
+GetSupportedSize
+GetSystemFirmwareTable
+GetSystemInfo
+GetSystemTimeAsFileTime
+GetTempPathW
+GetThreadLocale
+GetTickCount
+GetVersionExW
+GetVirtualDiskInformation
+GetVirtualDiskPhysicalPath
+GetVolumeInformationByHandleW
+GetVolumeNameForVolumeMountPointW
+GetVolumePathNameW
+gfffffffI
+gl-ES
+Global\FFU_REG_MUTEX
+Global\FFU_VOLUME_MUTEX
+gn-PY
+gsw-FR
+gu-IN
+H E;i
+H SUVWATAUAVAWH
+H SUVWATAVH
+H SUVWAVAWH
+H SVH
+H SVWAVH
+H UATAUAVAWH
+H UVWATAUAVAWH
+h VWAVH
+H!\$ 
+H!\$ E3
+H!\$ H
+H!\$(E3
+H!\$(H
+H!\$@3
+H!\$@I
+H!\$0
+H!\$0!\$(
+H!\$0D
+H!\$0H
+H!\$8H!\$0E3
+H!]8E3
+H!]HL
+H!|$ L
+H!|$0D
+H!|$0E3
+H!|$0M
+H!|$8A
+H!}@I
+H!0H!p
+H!E(L
+H!t$ E3
+H!t$ H
+H!t$ L
+H!t$(H
+H!t$0D
+H!t$0E3
+H!t$0H
+H!T$8H
+H!t$PA
+H!t$pL
+H!t$xI
+H!U H!U
+H!X H!X(H
+H;\$(sML
+H;]@u
+H;]Pu
+H;>u#
+H;l$8t
+H;Mg}
+H;Q(r
+H;s(u
+H;t$P
+H;t$p
+h_^[]
+H+} H
+H+~ H
+H+~ I
+H+D$0Hi
+H+D$PHi
+H+EHHi
+H+N H9F H
+H+O H9G H
+H+w H
+H9\$P
+H9\$X
+H9]Pu
+H9_ s
+H9_ t
+H9_(t
+H9_0t
+H9_8t
+H9_Ht
+H9|$0uKA
+H9A r
+H9C(u
+H9Cxt
+H9D$`u
+H9D$0t
+H9k t
+H9k(t
+H9k0t
+H9l$@t'eH
+H9Q r>H
+H9s u!L
+H9S(u
+H9t$Ht2H
+H9u7t
+H9z tE
+hA^_^[
+hA^A\_^[]
+HA_A^^[
+hA_A^_^[]
+HA_A^_^][
+HA_A^A]A\_^[]
+hA_A^A]A\_^[]
+ha-Latn
+ha-Latn-NG
+Hash checker has already been set previously.
+Hash time: %lld ms
+Hash validation of payload block %d failed with 0x%08x.
+HashDigestLength
+HashTable.blob=%s
+haw-US
+Hcl$ D
+Hcl$p
+HcL$P
+HeapAlloc
+HeapDestroy
+HeapFree
+HeapReAlloc
+HeapSize
+he-IL
+hiberfil.sys
+HighPart
+hi-IN
+hJ;D?h
+HL$(H;
+hr-BA
+hr-HR
+hsb-DE
+http://www.w3.org/2000/09/xmldsig#
+http://www.w3.org/2000/xmlns/
+http://www.w3.org/XML/1998/namespace
+hu-HU
+hy-AM
+I_RpcMapWin32Status
+I8D8axu.D
+I8D8axu-D
+I9^ u
+I9^@u
+I9E t
+I9E@t
+ibb-NG
+iD;}gt
+id-ID
+IDREF
+IDREFS
+IFfuImage
+ig-NG
+ii-CN
+imagefile
+IMPLIED
+Initial catalog length = %d, Final catalog length = %d
+InitializeCriticalSection
+InitializeCriticalSectionAndSpinCount
+InstallationType
+INSTALLATIONTYPE
+InstallLanguage
+InternalName
+Invalid flags specified for the Unmount operation
+Invalid image header.
+Invalid manifest.
+Invalid security header.
+Invalid store header.
+invalid string position
+IOWorkerCallback
+is-IS
+IsManiOSStore
+ISSUER
+IsVolumeSnapshotted
+iswspace
+it-CH
+it-IT
+iu-Cans
+iu-Cans-CA
+iu-Latn
+iu-Latn-CA
+j < ValidProperties.Length
+ja-JP
+K SUVWAVH
+K SUVWH
+K SVWH
+k VWATAVAWH
+k VWAUAVAWH
+k@D9k8t
+ka-GE
+kernel32.dll
+KERNEL32.dll
+kk-KZ
+kl-GL
+km-KH
+kn-IN
+kok-IN
+ko-KR
+kr-Latn-NG
+ks-Arab
+ks-Deva-IN
+ku-Arab
+ku-Arab-IQ
+ky-KG
+L!}XH
+L!0L!p
+L!8L!x
+L!l$ H
+L!p(H
+L!pHH
+L!t$ H
+L$ E3
+l$ E3
+L$ E3
+l$ E3
+L$ E3
+L$ SH
+L$ SUVWH
+L$ SVWAVAWH
+L$ SWH
+L$ USVWATAVH
+L$ UWATAVAWH
+l$ VWATAVAWH
+L$ VWATAVAWH
+l$ VWAVH
+l$ VWAWH
+L$ WATAUAVAWH
+l$(E3
+L$(E3
+L$(H;
+L$(H3
+L$@E3
+L$@H3
+L$`fD
+L$`H3
+l$<D;
+L$0E3
+L$0H;
+L$0H3
+L$4;L$@ui
+L$8E3
+L$8H+H
+L$8H3
+L$8Hi
+L$8M;e
+L$8tAH
+L$HE3
+L$hH+L$0Hi
+L$HH3
+L$hH3
+L$HH3
+L$hH3
+L$HH9t$ht"H
+l$LE3
+L$PE3
+L$PH=
+L$PH3
+L$pH3
+L$PH3
+L$pH3
+L$PH3
+l$PH9^
+l$PL+F
+L$PL+F
+L$XD8d$\uV
+L$XE3
+L$xE3
+L$xH3
+L$XH3
+L;|$`
+L;C(u
+L;C(u_H9Q
+L;d$@E
+L;d$@s
+L+~ M
+L+u L
+L9 t=H
+L9@ u
+L9|$`t
+L91u'
+L98t>H
+L99u3
+L9c u
+L9c u>H
+L9d$8t
+L9d$ht
+L9eg~
+L9I t
+L9l$@
+L9l$@t
+L9l$`t*eH
+L9l$0tcM
+L9l$0u
+L9l$Pu
+L9n u
+L9q u
+L9t$P
+la-001
+LANGUAGE
+Language%d
+Last block overlaps with the last partition.
+LastModificationTime
+lb-LU
+LcA<E3
+LCMapStringW
+Lct$`M
+LeaveCriticalSection
+LegalCopyright
+list<T> too long
+LoadLibraryExA
+LoadLibraryExW
+LoadResource
+LoadStringW
+LocalAlloc
+LocalFree
+LocalTopLevelHelp
+LockResource
+lo-LA
+LookupPrivilegeValueW
+LowPart
+lt-LT
+lv-LV
+m_CurrentStreamObject != 0
+m_StoredTable.FindOrInsertIfNotPresent(p, (USHORT)0, 0, &fExisted)
+MAJOR
+Major Version
+malloc
+Manifest
+Manifest has improper newline formatting. hr = 0x%x.
+MapViewOfFile
+MatchingDeviceId
+Maximum Partition Count = %d
+MaxPartitionCount
+MaxPartitionCount is not present in manifest.
+MdDlA
+MdDtL
+MdDtu
+MdSpI
+memcmp
+memcpy
+memcpy_s
+memmove
+memmove_s
+memset
+MicrodomImplementation::CDomLayoutCache::DecodeElementCounts
+MicrodomImplementation::CMicrodom::DecodeXmlString
+MicrodomImplementation::CMicrodom::GetElementsByTagName
+MicrodomImplementation::CMicrodom_IRtlMicrodomTearoff::GetPropertiesSetup
+MicrodomImplementation::CStringpoolCache::FindString
+MicrodomImplementation::DecodeXmlCharacterToUcsChar
+Microsoft
+Microsoft Corporation
+Microsoft Primitive Provider
+Microsoft\Windows NT\CurrentVersion
+MINOR
+Minor Version
+MINSECTORCOUNT
+MinSectorCount
+MinSectorCount is not present in manifest
+mi-NZ
+Mismatch platform ID.
+Mismatch platform Id: Device: %s, Image: %s
+mk-MK
+ml-IN
+mn-Cyrl
+mni-IN
+mn-MN
+mn-Mong
+mn-Mong-CN
+mn-Mong-MN
+moh-CA
+More than 1 [%s] %s found.
+More than 1 optimized partitions found.
+More than 1 recovery partitions found.
+Mount Disk Path
+Mount Path
+Mount Version
+Mounting image
+MPD9#
+MPD9f@
+MPD9mX
+mr-IN
+ms-BN
+MSFT_Partition
+MSFT_Partition WHERE DiskNumber='%d' AND PartitionNumber='%d'
+ms-MY
+msvcrt.dll
+mt-MT
+MUI\%04hx
+MultiByteToWideChar
+mXIcv
+my-MM
+n H;n(
+N0I!^(
+Name_U
+Name=%s
+nb-NO
+NDATA
+ne-IN
+ne-NP
+NewAttlistClose = this->AllocateStreamObject()
+NewAttribute = this->AllocateStreamObject()
+NewCData = this->AllocateStreamObject()
+nl-BE
+nl-NL
+NMTOKEN
+NMTOKENS
+nn-NO
+No commit flags are allowed with Ffus and will be ignored.
+No information was found for the mount path.
+No name associated with manifest value %s. hr = 0x%x.
+No platform ID found in BIOS. Skip checking.
+Node %s's GUID doesn't match with the disk's. Skip updating.
+Node %s's GUID is empty.
+Not present
+NOTATION
+nso-ZA
+NtClose
+NtCreateFile
+ntdll.dll
+NtOpenFile
+NtQueryInformationFile
+NtReadFile
+NtSetInformationFile
+NtWaitForSingleObject
+NtWriteFile
+NtYieldExecution
+Number of big blocks = %d (%d bytes)
+Number of worker threads = %d
+O u+M
+o\$PH
+oc-FR
+oD$ f
+offset
+OffsetInSectors
+OffsetInSectors is not present in manifest.
+oL$0f
+OLE32.dll
+OLEAUT32.dll
+om-ET
+onecore\base\lstring\lutf8_string.cpp
+onecore\base\ntsetup\opktools\dism\providers\ffuprovider\dll\ffuimage.cpp
+onecore\base\ntsetup\opktools\dism\providers\ffuprovider\dll\ffuimageinfo.cpp
+onecore\base\ntsetup\opktools\dism\providers\ffuprovider\dll\ffuimageinfocollection.cpp
+onecore\base\ntsetup\opktools\dism\providers\ffuprovider\dll\ffumanager.cpp
+onecore\base\ntsetup\opktools\dism\providers\ffuprovider\dll\ffumountedimageinfo.cpp
+onecore\base\ntsetup\opktools\dism\providers\ffuprovider\dll\ffumountedimageinfocollection.cpp
+onecore\base\xml\udom_builder.cpp
+onecore\base\xml\udom_microdom.cpp
+onecore\base\xml\udom_modify.cpp
+onecore\base\xml\udom_xmlcursor.cpp
+OpenProcessToken
+OpenThreadToken
+OpenVirtualDisk
+Optimization: Shift %d blocks on and after block %d
+Optimized
+Optimized Partition Number
+optimize-ffu
+Optimize-FfukOptimizes a FFU file so that it can be applied to storage 
+Optimizing image
+OriginalFilename
+or-IN
+OSVersion
+OSVolumeFinder::Evaluate
+oT$@f
+OutputDebugStringW
+P !X I
+p WATAUAVAWH
+p WAVAWH
+PA^_^
+PA^_^[]
+pA^_^[]
+pA^_^][
+PA^_^][
+PA^A\_^]
+pA__^[]
+PA_A\_^]
+PA_A^_^]
+pA_A^_^]
+PA_A^_^]
+PA_A^A\_^[]
+pA_A^A]_^[]
+PA_A^A]_^][
+PA_A^A]A\_[]
+PA_A^A]A\_^[
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pA_A^A]A\_^]
+PA_A^A]A\_^]
+pa-Arab
+pa-Arab-PK
+pagefile.sys
+pa-IN
+pap-029
+Partition
+Partition #d does not exist as the partition count is %d.
+Partition %d is not 1 MB aligned.
+Partition Count = %d
+Partition counts do not match - %d vs %d.
+Partition for optimization: #%d
+Partition length (%llu) is not a multiple of cluster size (%d)
+Partition starting offset (%llu) is not a multiple of cluster size (%llu)
+Partition Style = GPT
+Partition Style = MBR
+Partition Style = RAW
+Partition styles do not match - %d vs %d.
+Partition[%d] attributes do not match - %llu vs %llu.
+Partition[%d] IDs do not match.
+Partition[%d] lengths do not match - %llu vs %llu.
+Partition[%d] names do not match - %s vs %s.
+Partition[%d] offsets do not match - %llu vs %llu.
+Partition[%d] types do not match.
+PARTITIONNUMBER
+partitionnumber
+Payload block count = %d
+pFfuMountedImageInfoCollectionWWW
+PID=%d %s - %s(hr:0x%x)
+PID=%d TID=%d %s - %s
+PID=%d TID=%d %s - %s(hr:0x%x)
+PJ;D?P
+Platform IDs matched.
+Platform Ids matched: Device: %s, Image: %s
+PLATFORMID
+platformids
+pl-PL
+PostQueuedCompletionStatus
+Present
+Production signed FFU is not supported.
+ProductName
+PRODUCTSUITE
+ProductSuite
+ProductType
+PRODUCTTYPE
+ProductVersion
+ProgIDFromCLSID
+Property Optimized is set but there are no partitions which has UseAllSpace set.
+prs-AF
+ps-AF
+pt-BR
+pt-PT
+PUBLIC
+Q tzL
+qps-Latn-x-sh
+qps-ploc
+qps-ploca
+qps-plocm
+quc-Latn
+quc-Latn-GT
+QueryDosDeviceW
+QueryPerformanceCounter
+QueryPerformanceFrequency
+quz-BO
+quz-EC
+quz-PE
+r:H;E
+r6L!b
+RaiseException
+ReadFile
+ReAgent.xml is not found in the recovery partition. Skip copying.
+Recovery partition exists but ReAgent.xml is not found in the OS volume.
+Recovery partition is not found. Skipping.
+RECYCLER
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyW
+RegEnumKeyExW
+RegEnumKeyW
+RegFlushKey
+Registry key for %s already exists.
+Registry key for %s does not exist.
+RegLoadKeyW
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetKeySecurity
+RegSetValueExW
+RegUnLoadKeyW
+ReleaseMutex
+ReleaseSRWLockExclusive
+Remount is not supported with FFU images.
+RemoveDirectoryW
+REQUIRED
+Resize
+Resizing volume (\\?\HARDDISK%dPARTITION%d) to %lld bytes.
+RewritePartition
+RewritePartition is not present in manifest.
+rm-CH
+ro-MD
+Root\Microsoft\Windows\Storage
+ro-RO
+RPCRT4.dll
+rpcrt4.dll
+RpcStringFreeW
+RtlAllocateHeap
+RtlAreBitsClear
+RtlCaptureContext
+RtlClearAllBits
+RtlCompressBuffer
+RtlConcatenateLUtf8Strings
+RtlDecompressBufferEx
+RtlDosPathNameToNtPathName_U_WithStatus
+RtlExpandEnvironmentStrings
+RtlFindSetBits
+RtlFreeHeap
+RtlGetCompressionWorkSpaceSize
+RtlInitializeBitMap
+RtlInitUnicodeString
+RtlLookupFunctionEntry
+RtlMatchLUtf8StringAgainstPointerList
+RtlNtStatusToDosError
+RtlNumberOfSetBits
+RtlRaiseStatus
+RtlRandom
+RtlReAllocateHeap
+RtlSetBits
+RtlVirtualUnwind
+RtlXmlNextLogicalThing( &m_State, &m_Namespaces, &m_CurrentThing, &m_AttributeList )
+ru-MD
+ru-RU
+rw-RW
+s WAVAWH
+s(I!S
+sah-RU
+sa-IN
+Save is not supported with FFU images.
+sd-Arab
+sd-Arab-PK
+sd-Deva-IN
+SearchPathW
+SeBackupPrivilege
+SectorSize
+SECTORSIZE
+SectorSize is not present in manifest
+se-FI
+Select
+SELECT * FROM %s
+se-NO
+SeRestorePrivilege
+SERIAL
+se-SE
+Session Registry Path has already been used.
+SeSystemEnvironmentPrivilege
+SetArchitectureNode
+SetEvent
+SetFileAttributesW
+SetFilePointer
+SetFilePointerEx
+SetLastError
+SetThreadLocale
+SetThreadUILanguage
+SetUnattendNodeArrayFromManifest
+SetUnattendNodeDword
+SetUnattendNodeFiletime
+SetUnattendNodeFromManifest
+SetUnattendNodeFromManifestU
+SetUnattendNodeLonglong
+SetUnattendNodeString
+SetUnhandledExceptionFilter
+SetVolumeMountPointW
+sfufile
+SHA256
+Signature = %d
+SignedImage 
+si-LK
+SizeMax
+SizeMin
+SizeofResource
+Skip resizing volume
+Skipped %s for deletion (0x%x).
+Skipping node %s.
+sk-SK
+Sleep
+sl-SI
+sma-NO
+sma-SE
+smj-NO
+smj-SE
+smn-FI
+sms-FI
+Software
+SOFTWARE\Microsoft\DISM\Mounted FFUs
+so-SO
+Source.Length >= 2
+Source.Length >= 3
+SPBUILD
+SPLEVEL
+SPLevel
+split-ffu
+Split-FfuaSplits an existing .ffu file into multiple read-only
+Splitting image
+sq-AL
+sr-Cyrl
+sr-Cyrl-BA
+sr-Cyrl-CS
+sr-Cyrl-ME
+sr-Cyrl-RS
+sr-Latn
+sr-Latn-BA
+sr-Latn-CS
+sr-Latn-ME
+sr-Latn-RS
+staged
+standalone
+Starting LCN is expected to be 0 but it is %llu
+Starting Usable Offset = %llu
+Starting usable offsets do not match - %llu vs %llu.
+StartingUsableOffset
+StartingUsableOffset is not present in manifest.
+Storage pool %s
+Store
+STORECOUNT
+StoreId
+strchr
+String operation exception!
+string too long
+StringFileInfo
+StringFromGUID2
+StringId < m_Entries.Length
+st-ZA
+SUBJECT
+Successfully applied the FFU at %s.
+Successfully attached the virtual at %s.
+Successfully created a virtual disk file at %s.
+Successfully set surface cache policy.
+Successfully written the session info to HKEY\%s.
+SUVWATAVAWH
+SUVWAVAWH
+SUVWAVH
+SVATAUAVAWH
+SVATAVAWH
+SVAVAWH
+SVAVH
+sv-FI
+sv-SE
+SVWATAUAVAWH
+SVWATAVAWH
+SVWAVAWH
+SVWAVH
+swapfile.sys
+sw-KE
+swscanf
+syr-SY
+SYSTEM
+System
+SYSTEMROOT
+SystemRoot
+t L!x
+t!fD;
+t#L9B
+t$ E3
+T$ E3
+t$ E3
+t$ I3
+t$ UWATAUAVH
+t$ UWATAVAWH
+t$ UWAUAVAWH
+t$ UWAVH
+t$ WATAUAVAWH
+t$ WAVAWH
+t$ WH
+T$(E3
+t$(E3
+T$(E3
+t$(E3
+T$(E3
+t$(E3
+T$(H;
+T$@9r
+T$@E3
+T$@fD;m
+T$@H!u
+t$`fD9t$`t8H
+t$0E3
+t$4E3
+T$8E3
+T$8H;
+T$HE3
+T$hH+
+T$hI;
+T$HL9|$0t
+t$L9B
+t$P;D$D
+t$PE3
+t$pE3
+T$PE3
+t$PE3
+t$PH;
+t$PHc
+T$X9P
+T$xE3
+T$xI+
+t$XL+
+t%L9b u
+t*H!p
+t,L!p
+t,LcL$`L
+t.HcC<
+t/D9@ u
+t/H9k u
+t;H9{
+t^fE;,$tWH
+t`;GDr[;G@r&
+t+H9^
+t4A9~
+t69j u#
+t9D9@ u
+t9D9g(t
+t9H!phH!ppH!pxH!p`H!ppH!
+ta-IN
+ta-LK
+Target disk cannot accommodate the optimized FFU.
+Target disk has a different sector size (%llu) than the image (%llu).
+Target disk size is too small for the FFU.
+tBH9S(u7
+te-IN
+TempTempElements.Allocate(NewCapacity)
+TerminateProcess
+tfD9}
+tffD9\$xA
+tFfD9qBu
+tg-Cyrl
+tg-Cyrl-TJ
+The /%1 and /%2 options cannot be used together on the command-line.
+The /%1 option is missing an argument.
+The /%1 option is not recognized in this context.
+The argument specified with the /Format option is not supported with this command.
+The argument specified with the /Format option is not supported with this command.  For more information about valid syntax, refer to the help.
+The command-line is missing the /%1 option.
+The FFU has payload for more than 1 store.
+The image doesn't have a name and it's likely to be a Mobile/Onecore FFU, which is currently not supported.
+The mount path %s has already been used.
+The mount path %s is not empty.
+The mount path %s is not found.
+The specified image does not exist in the specified image container.
+The specified image is invalid.
+TheEndElement = this->AllocateStreamObject()
+this->ChildList[u]->Text != 0
+th-TH
+ti-ER
+ti-ET
+tk-TM
+tn-BW
+tn-ZA
+toHcD$0H
+Total time: %lld ms
+TOTALBYTES
+TotalSectors
+TotalSectors is not present in manifest.
+Translation
+tr-TR
+Try the operation again without the Append switch.
+TrySubmitThreadpoolCallback
+tSfD9#tML
+ts-ZA
+tt-RU
+TYPELIB
+tZfD9&tTH
+tzm-Arab-MA
+tzm-Latn
+tzm-Latn-DZ
+tzm-Tfng
+tzm-Tfng-MA
+u HcA<H
+u.H9-
+u+L!t$(L
+u3L9-
+UATAUAVAWH
+UAUAVH
+UAVAWH
+uCH9]
+UCS-2
+UCS-4
+UD9T$0
+ug-CN
+ugL9I
+uk-UA
+ulValue < MultFactor
+umI!S
+Unable to create a handle to %s.
+Unable to open CDF file.
+Unable to query InstallationType in registry: 0x%x
+Unable to read the full security header.
+UnhandledExceptionFilter
+Unknown Error
+UnmapViewOfFile
+Unmount the image or clean up the ffu and then try again.
+Unmounting image
+unstaged
+Unsupported anti-theft versions %u.%u.
+Unsupported Mount Version %d.
+Updating node %s's offset from %s to %s.
+ur-IN
+ur-PK
+uS9D$HuMD
+Usable Length = %llu
+UsableLength
+UsableLength is not present in manifest.
+Use /Unmount-image with /Commit flag instead.
+UseAllSpace
+USER32.dll
+USVWATAUAVAWH
+USVWATAUAWH
+USVWATAVAWH
+USWATAUAVAWH
+UTF-16
+UTF-8
+uTf9C
+UuidCreate
+UuidToStringW
+UVATAVAWH
+UVWATAUAVAWH
+UVWATAUH
+UVWATAVH
+UVWATAWH
+UVWAVAWH
+UWATAUAVH
+UWATAUAWH
+UWATAVAWH
+UWAUAVAWH
+UWAVH
+uz-Cyrl
+uz-Cyrl-UZ
+uz-Latn
+uz-Latn-UZ
+v L;v(
+v,9_Ht
+ValidateDescriptorLength = %d
+VarFileInfo
+vector<T> too long
+VerQueryValueW
+version
+VERSION.dll
+ve-ZA
+VH;>t&H
+VHD Id
+VHD Path
+VHD Storage Device Id
+VHD/X ID mismatched. VHD/X has %s while Session Reg has %s.
+VirtDisk.dll
+virtdisk.dll
+Virtual disk detached successfully.
+VirtualProtect
+VirtualQuery
+vi-VN
+Volume bitmap size is too large
+Volume can be resized anywhere between %lld and %lld.
+Volume can be resized anywhere between %lld and %lld. Resizing to %lld.
+VS_VERSION_INFO
+vssapi.dll
+vswprintf_s
+VWATAUAVAWL
+VWATAUAVH
+VWATAUAWH
+VWATAVAWH
+VWAVH
+WaitForSingleObject
+WATAUAVAWH
+WAVAWH
+wcscat_s
+wcschr
+wcscmp
+wcscpy_s
+wcsncpy_s
+wcsrchr
+wcstol
+wcstoul
+WideCharToMultiByte
+Wimboot
+WIMBOOT
+Windows\CSC
+WindowsRE
+WindowsRE version %d is not supported.
+WindowsRE\ImageLocation
+WindowsRE\WinreLocation
+WINTRUST.dll
+wintrust.dll
+WlfD;
+wnH9]
+wo-SN
+Write-descriptor length = %d
+WriteFile
+x ATAVAWH
+x AUAVAWH
+x AVAWD
+x AVE3
+x AVH
+x UATAUAVAWH
+x UAVAWH
+X UVWATAUAVAWH
+x#D9e
+x*H9]/t H
+x.!\$ L
+x:H;]
+x?H;}
+x@D8d$\u9
+x_^[]
+x3D8d$\u,
+x7L9E
+xA_A^_^[]
+XA_A^_^][
+XA_A^A]A\^[
+xA_A^A]A\_^[]
+XA_A^A]A\_^[]
+xA_A^A]A\_^[]
+XA_A^A]A\_^][
+xCD8d$\u<
+xg9\$ t_H
+xh-ZA
+XJ;D?X
+xmlns
+xPD8|$!t
+xSE8e
+xYE8nTtQH
+xZE8e
+y uDH
+y(uDH
+Y@H9;u+L
+y0uDH
+yi-001
+yo-NG
+YZFfuProviderLibWW
+Zf4[E
+Zf4[E3
+zh-CN
+zh-Hans
+zh-Hant
+zh-HK
+zh-MO
+zh-SG
+zh-TW
+zu-ZA

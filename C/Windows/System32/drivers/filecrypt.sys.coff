@@ -1,0 +1,170 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\filecrypt.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    FLTMGR.SYS
+    ksecdd.sys
+    tbs.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0008170 Import Address Table
+             1C0008590 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         8F8 RtlPrefixUnicodeString
+                         345 IoGetLowerDeviceObject
+                          F3 ExQueryDepthSList
+                         7DB RtlCopyUnicodeString
+                         1C6 FsRtlIsMobileOS
+                         87E RtlInitUnicodeString
+                         15B ExpInterlockedPushEntrySList
+                         2C4 IoAllocateMdl
+                         672 ObfDereferenceObject
+                         566 MmBuildMdlForNonPagedPool
+                         33B IoGetFileObjectGenericMapping
+                          B3 ExDeleteNPagedLookasideList
+                         7A7 RtlAppendUnicodeToString
+                         B64 __C_specific_handler
+                         987 SeAccessCheck
+                         15A ExpInterlockedPopEntrySList
+                         97C RtlVolumeDeviceToDosName
+                         5A7 MmMdlPageContentsState
+                         86C RtlGetVersion
+                          79 EtwUnregister
+                         31D IoFreeMdl
+                          D8 ExInitializeNPagedLookasideList
+                          A3 ExAllocatePoolWithTag
+                          74 EtwRegister
+                         B16 ZwQueryValueKey
+                          CA ExFreePoolWithTag
+                         B93 _wcsnicmp
+                          7F EtwWriteTransfer
+                         AB2 ZwEnumerateKey
+                         B0A ZwQueryKey
+                         7E7 RtlCreateUnicodeString
+                         842 RtlFreeUnicodeString
+                         18B FsRtlDissectName
+                         7C8 RtlCompareUnicodeString
+                         802 RtlDowncaseUnicodeString
+                         96B RtlUpcaseUnicodeString
+                         887 RtlInitializeSid
+                         941 RtlSubAuthoritySid
+                         9A8 SeConvertSidToStringSid
+                         9A9 SeConvertStringSecurityDescriptorToSecurityDescriptor
+                         B4E ZwSetValueKey
+                         AB8 ZwFlushKey
+                         483 KeInitializeEvent
+                         906 RtlQueryRegistryValues
+                         584 MmGetSystemRoutineAddress
+                         884 RtlInitializeGenericTable
+                          87 ExAcquireFastMutex
+                         80D RtlEnumerateGenericTableWithoutSplaying
+                         7F5 RtlDeleteElementGenericTable
+                         10F ExReleaseFastMutex
+                         8CD RtlLookupElementGenericTable
+                         88A RtlInsertElementGenericTable
+                         8E0 RtlNumberGenericTableElements
+                         852 RtlGetElementGenericTable
+                         4CA KeQueryTimeIncrement
+                         7A1 RtlAnsiCharToUnicodeChar
+                         862 RtlGetPersistedStateLocation
+                         7A6 RtlAppendUnicodeStringToString
+                         6FF PsGetHostSilo
+                         2F1 IoCreateFileEx
+                         B10 ZwQuerySecurityObject
+                         9A7 SeConvertSecurityDescriptorToStringSecurityDescriptor
+                         599 MmMapLockedPagesSpecifyCache
+                         A88 ZwClose
+                         AD8 ZwOpenKey
+                         326 IoGetAttachedDeviceReference
+
+    FLTMGR.SYS
+             1C0008000 Import Address Table
+             1C0008420 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          CC FltQueueGenericWorkItem
+                          74 FltGetFsZeroingOffset
+                          60 FltFreeGenericWorkItem
+                          34 FltCreateFileEx
+                          6B FltGetDiskDeviceObject
+                          FA FltSetVolumeContext
+                          AA FltLockUserBuffer
+                          28 FltClose
+                          F7 FltSetStreamContext
+                          17 FltCancelFileOpen
+                          FC FltStartFiltering
+                          87 FltGetStreamContext
+                          D7 FltReleaseFileNameInformation
+                          C9 FltQueryVolumeInformation
+                          6E FltGetFileNameInformation
+                          9F FltIsDirectory
+                          CD FltReadFile
+                          D4 FltReleaseContext
+                          2F FltCompletePendedPostOperation
+                          11 FltAllocateGenericWorkItem
+                          69 FltGetDestinationFileNameInformation
+                          97 FltGetVolumeProperties
+                          B8 FltParseFileNameInformation
+                          96 FltGetVolumeName
+                           B FltAllocateContext
+                          8E FltGetVolumeContext
+                          D1 FltRegisterFilter
+                         106 FltUnregisterFilter
+                          EE FltSetFsZeroingOffsetRequired
+                          E8 FltSetCallbackDataDirty
+
+    ksecdd.sys
+             1C00080F8 Import Address Table
+             1C0008518 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 BCryptFinishHash
+                           D BCryptDuplicateHash
+                          1B BCryptHashData
+                           5 BCryptCreateHash
+                          18 BCryptGenerateSymmetricKey
+                           A BCryptDestroyHash
+                           4 BCryptCloseAlgorithmProvider
+                          16 BCryptGenRandom
+                          1F BCryptOpenAlgorithmProvider
+                           6 BCryptDecrypt
+                          1A BCryptGetProperty
+                           B BCryptDestroyKey
+                           F BCryptEncrypt
+                          23 BCryptSetProperty
+
+    tbs.sys
+             1C0008388 Import Address Table
+             1C00087A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B Tbsip_Submit_Command
+                           A Tbsip_Context_Close
+                           2 Tbsi_Context_Create
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        7000 PAGE

@@ -1,0 +1,192 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\SysWOW64\cryptdlg.dll
+
+File Type: DLL
+
+  Section contains the following exports for CRYPTDLG.dll
+
+    00000000 characteristics
+     455CC2F time date stamp
+        0.00 version
+           1 ordinal base
+          21 number of functions
+          21 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00001A10 CertConfigureTrustA
+          2    1 00001A10 CertConfigureTrustW
+         13    2 00003FA0 CertModifyCertificatesToTrust
+         14    3 000019D0 CertSelectCertificateA
+         15    4 000019F0 CertSelectCertificateW
+          3    5 00003F80 CertTrustCertPolicy
+          4    6 00003F90 CertTrustCleanup
+          5    7 00003830 CertTrustFinalPolicy
+          6    8 00003F20 CertTrustInit
+         16    9 00002E90 CertViewPropertiesA
+         17    A 00002EB0 CertViewPropertiesW
+          7    B 00001F80 DecodeAttrSequence
+          8    C 000022A0 DecodeRecipientID
+         18    D 000023D0 DllRegisterServer
+         19    E 00002530 DllUnregisterServer
+          9    F 00001E40 EncodeAttrSequence
+         10   10 000021D0 EncodeRecipientID
+         11   11 00001DC0 FormatPKIXEmailProtection
+         12   12 00001D80 FormatVerisignExtension
+         20   13 00001C70 GetFriendlyNameOfCertA
+         21   14 00001CF0 GetFriendlyNameOfCertW
+
+  Image has the following dependencies:
+
+    msvcrt.dll
+    KERNEL32.dll
+    USER32.dll
+    ADVAPI32.dll
+    WINTRUST.dll
+    CRYPT32.dll
+    CRYPTUI.dll
+
+  Section contains the following imports:
+
+    msvcrt.dll
+              64487144 Import Address Table
+              64487350 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  4C5 free
+                  111 _amsg_exit
+                  509 memcpy
+                  16A _except_handler4_common
+                  1E8 _initterm
+                   6F _XcptFilter
+                  4FD malloc
+                  50D memset
+
+    KERNEL32.dll
+              6448709C Import Address Table
+              644872A8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  309 GetTickCount
+                  2EB GetSystemTimeAsFileTime
+                  3C0 LeaveCriticalSection
+                  57F Sleep
+                  44E QueryPerformanceCounter
+                  21A GetCurrentProcessId
+                  120 DisableThreadLibraryCalls
+                  3D2 LocalFree
+                  21E GetCurrentThreadId
+                  3CD LocalAlloc
+                  5AF UnhandledExceptionFilter
+                  3D5 LocalReAlloc
+                  533 SetLastError
+                  600 WideCharToMultiByte
+                  263 GetLastError
+                  360 InitializeCriticalSection
+                  112 DeleteCriticalSection
+                   99 CompareFileTime
+                  56F SetUnhandledExceptionFilter
+                  219 GetCurrentProcess
+                  58E TerminateProcess
+                  133 EnterCriticalSection
+
+    USER32.dll
+              644870F8 Import Address Table
+              64487304 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  32E SetDlgItemTextW
+                  371 SetWindowLongW
+                  32D SetDlgItemTextA
+                  14A GetDlgItem
+                  263 LoadStringW
+                  18E GetParent
+                  314 SendMessageW
+                  1E5 GetWindowLongW
+                  30B SendDlgItemMessageW
+                   EF EnableWindow
+                  384 ShowWindow
+
+    ADVAPI32.dll
+              64487000 Import Address Table
+              6448720C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  298 RegQueryValueExA
+                  25B RegCloseKey
+                  28B RegOpenKeyExA
+
+    WINTRUST.dll
+              64487128 Import Address Table
+              64487334 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   8F WinVerifyTrust
+                   65 WTHelperGetProvCertFromChain
+                   67 WTHelperGetProvSignerFromChain
+                   97 WintrustRemoveActionID
+                   91 WintrustAddActionID
+                   5E WTHelperCertIsSelfSigned
+
+    CRYPT32.dll
+              64487010 Import Address Table
+              6448721C Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                   25 CertDuplicateCertificateContext
+                   40 CertFreeCertificateContext
+                   37 CertFindExtension
+                   13 CertCompareCertificate
+                   79 CertVerifyTimeValidity
+                   E5 CryptUninstallDefaultContext
+                   45 CertGetCertificateChain
+                   AA CryptInstallDefaultContext
+                    F CertAddStoreToCollection
+                   24 CertDuplicateCertificateChain
+                   60 CertRemoveEnhancedKeyUsageIdentifier
+                   6C CertSetCertificateContextProperty
+                   21 CertDeleteCertificateFromStore
+                    B CertAddEnhancedKeyUsageIdentifier
+                    4 CertAddCertificateContextToStore
+                   35 CertFindCertificateInStore
+                   46 CertGetCertificateContextProperty
+                   26 CertDuplicateStore
+                   17 CertControlStore
+                   59 CertOpenStore
+                   3D CertFreeCertificateChain
+                   12 CertCloseStore
+                   96 CryptFormatObject
+                   E9 CryptUnregisterOIDFunction
+                   CA CryptRegisterOIDFunction
+                   85 CryptDecodeObjectEx
+                   84 CryptDecodeObject
+                   88 CryptEncodeObject
+                   4B CertGetNameStringW
+
+    CRYPTUI.dll
+              64487088 Import Address Table
+              64487294 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                    F CryptUIDlgSelectCertificateA
+                   1C CryptUIDlgViewCertificateW
+                   19 CryptUIDlgViewCertificateA
+                   11 CryptUIDlgSelectCertificateW
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text

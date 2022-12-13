@@ -1,0 +1,3070 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-win32kbase_31bf3856ad364e35_10.0.19041.2251_none_233b8cd21bef1663\win32kbase.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    watchdog.sys
+    msrpc.sys
+    ext-ms-win-ntos-werkernel-l1-1-1.dll
+    WppRecorder.sys
+    ksecdd.sys
+    dxgkrnl.sys
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    watchdog.sys
+             1C0272F18 Import Address Table
+             1C0273FD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           D DisplayScenarioJournalDisplayUniquenessIncremented
+                           E DisplayScenarioJournalFinalize
+                          16 DisplayScenarioJournalSetUniqueness
+                          15 DisplayScenarioJournalSetSpecializedData
+                           9 DisplayScenarioJounralSetTSDDDState
+                          10 DisplayScenarioJournalSetActualPathModality
+                           F DisplayScenarioJournalRetry
+                          12 DisplayScenarioJournalSetExpectedPathModality
+                          31 WdDiagNotifyUser
+                          13 DisplayScenarioJournalSetSDCPathsAndModes
+                           A DisplayScenarioJournalBegin
+                          42 WdLogEvent5_WdLowResource
+                          4F WdLogNewEntry5_WdLowResource
+                           6 DisplayRestoreVidPnJournalBegin
+                          52 WdLogNewEntry5_WdTrace
+                          46 WdLogEvent5_WdWarning
+                          53 WdLogNewEntry5_WdWarning
+                          41 WdLogEvent5_WdEvent
+                          45 WdLogEvent5_WdTrace
+                          4E WdLogNewEntry5_WdEvent
+                          3C WdLogEvent5_WdAssertion
+                          49 WdLogNewEntry5_WdAssertion
+                          40 WdLogEvent5_WdError
+                          4D WdLogNewEntry5_WdError
+                          3A WdInitialize
+                           7 DisplayRestoreVidPnJournalFinalize
+
+    msrpc.sys
+             1C02720A0 Import Address Table
+             1C0273158 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 Ndr64AsyncClientCall
+                          3F RpcBindingUnbind
+                          3A RpcBindingFree
+                           9 I_RpcGetCompleteAndFreeRoutine
+                          33 RpcAsyncCancelCall
+                          38 RpcBindingCopy
+                          34 RpcAsyncCompleteCall
+                          39 RpcBindingCreateW
+                          36 RpcAsyncInitializeHandle
+                          37 RpcBindingBind
+                           4 I_RpcExceptionFilter
+
+    ext-ms-win-ntos-werkernel-l1-1-1.dll
+             1C0272080 Import Address Table
+             1C0273138 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           6 WerSubmitUserCrashReport
+
+    WppRecorder.sys
+             1C0272010 Import Address Table
+             1C02730C8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B imp_WppRecorderLogCreate
+                           5 imp_WppRecorderConfigure
+                          10 imp_WppRecorderReplay
+                           C imp_WppRecorderLogDelete
+                           3 WppAutoLogStop
+                           4 WppAutoLogTrace
+                           2 WppAutoLogStart
+
+    ksecdd.sys
+             1C0272090 Import Address Table
+             1C0273148 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          16 BCryptGenRandom
+
+    dxgkrnl.sys
+             1C0272050 Import Address Table
+             1C0273108 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          5C DxgkGetSessionTokenManager
+                          9B DxgkReleaseCompositionObjectReference
+                          9A DxgkReferenceCompositionObject
+                          72 DxgkOpenDwmHandleForCompositionObjectReference
+                         1E4 g_OutputDuplicationTestControl
+
+    ntoskrnl.exe
+             1C0272100 Import Address Table
+             1C02731B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          AF ExCoreMessagingObjectType
+                         49D KeIsExecutingDpc
+                         12B ExSetTimer
+                         120 ExReleaseSpinLockExclusive
+                          B6 ExDeleteTimer
+                         103 ExRegisterCallback
+                          B0 ExCreateCallback
+                          A5 ExAllocateTimer
+                         123 ExReleaseSpinLockSharedFromDpcLevel
+                          F8 ExQueueWorkItem
+                         122 ExReleaseSpinLockShared
+                          98 ExAcquireSpinLockShared
+                          99 ExAcquireSpinLockSharedAtDpcLevel
+                          96 ExAcquireSpinLockExclusive
+                         967 RtlUpcaseUnicodeToMultiByteN
+                         798 RtlAnsiCharToUnicodeChar
+                         10F ExReleaseFastMutex
+                          87 ExAcquireFastMutex
+                         AD9 ZwOpenSection
+                         BBE sqrt
+                         BBF sqrtf
+                         BC5 strcmp
+                         BE2 wcscmp
+                         739 PsIsSystemProcess
+                         43F KeBugCheckEx
+                         705 PsGetProcessId
+                         721 PsGetThreadId
+                         834 RtlFreeHeap
+                          EE ExIsResourceAcquiredSharedLite
+                          ED ExIsResourceAcquiredExclusiveLite
+                         728 PsGetThreadWin32Thread
+                         6EC PsGetCurrentThreadProcess
+                         711 PsGetProcessSessionIdEx
+                         6E1 PsGetCurrentProcess
+                         49A KeIsAttachedProcess
+                         974 RtlWalkFrameChain
+                         6EA PsGetCurrentThreadId
+                         6E4 PsGetCurrentProcessWin32Process
+                         6E2 PsGetCurrentProcessId
+                         6E5 PsGetCurrentProcessWow64Process
+                         93D RtlTestBit
+                         7B5 RtlClearBit
+                         91E RtlSetBit
+                         817 RtlFindClearBits
+                         878 RtlInitializeBitMap
+                         7B3 RtlClearAllBits
+                         906 RtlRandomEx
+                         828 RtlFindSetBits
+                         658 ObReferenceObjectByHandle
+                         150 ExWindowStationObjectType
+                         668 ObfDereferenceObject
+                          B7 ExDesktopObjectType
+                         4E1 KeReleaseSemaphore
+                          BB ExEnterCriticalRegionAndAcquireResourceExclusive
+                         118 ExReleaseResourceAndLeaveCriticalRegion
+                         529 KeWaitForSingleObject
+                          BC ExEnterCriticalRegionAndAcquireResourceShared
+                          7F EtwWriteTransfer
+                          70 EtwActivityIdControl
+                         6F1 PsGetCurrentThreadWin32Thread
+                         6DD PsEnterPriorityRegion
+                         742 PsLeavePriorityRegion
+                         479 KeInitializeApc
+                         492 KeInsertQueueApc
+                         8D4 RtlNotifyFeatureUsage
+                          CA ExFreePoolWithTag
+                          A3 ExAllocatePoolWithTag
+                         B5B __C_specific_handler
+                         7BC RtlCompareMemory
+                          FA ExRaiseDatatypeMisalignment
+                         5C6 MmUserProbeAddress
+                         6C8 ProbeForWrite
+                         8D5 RtlNtStatusToDosError
+                         ADE ZwOpenThreadTokenEx
+                         AD6 ZwOpenProcessTokenEx
+                         74F PsReferenceImpersonationToken
+                         751 PsReferencePrimaryToken
+                         722 PsGetThreadProcess
+                         9C4 SeQueryAuthenticationIdToken
+                         9E5 SeTokenIsRestricted
+                         876 RtlInitUnicodeStringEx
+                         B36 ZwSetInformationThread
+                         561 MmCommitSessionMappedView
+                         59C MmMapViewOfSection
+                         A62 ZwAllocateVirtualMemory
+                         5C4 MmUnmapViewOfSection
+                         480 KeInitializeEvent
+                         A8A ZwCreateEvent
+                         A97 ZwCreateTimer
+                         487 KeInitializeSemaphore
+                         48C KeInitializeTimerEx
+                         A8C ZwCreateIoCompletion
+                         A9A ZwCreateWaitCompletionPacket
+                         A79 ZwAssociateWaitCompletionPacket
+                         66A ObfReferenceObject
+                         662 ObSetHandleAttributes
+                          C2 ExEventObjectType
+                         653 ObOpenObjectByPointer
+                         136 ExTimerObjectType
+                         723 PsGetThreadProcessId
+                         B40 ZwSetSystemInformation
+                         B0A ZwQuerySystemInformation
+                         458 KeEnterCriticalRegion
+                          8C ExAcquirePushLockExclusiveEx
+                          8D ExAcquirePushLockSharedEx
+                         116 ExReleasePushLockExclusiveEx
+                         4A2 KeLeaveCriticalRegion
+                         117 ExReleasePushLockSharedEx
+                          DB ExInitializeResourceLite
+                          B5 ExDeleteResourceLite
+                         AF9 ZwQueryInformationProcess
+                         AE2 ZwPowerInformation
+                         83E RtlGetActiveConsoleId
+                         348 IoGetRelatedDeviceObject
+                         4FE KeSetEvent
+                         91B RtlSetActiveConsoleId
+                         4F2 KeResetEvent
+                         797 RtlAllocateHeap
+                         65D ObReferenceObjectSafe
+                         A7F ZwClose
+                          BA ExEnterCriticalRegionAndAcquireFastMutexUnsafe
+                         111 ExReleaseFastMutexUnsafeAndLeaveCriticalRegion
+                         B56 ZwUpdateWnfStateData
+                         4C7 KeQueryTimeIncrement
+                         6BE PoSetUserPresent
+                         527 KeWaitForMultipleObjects
+                         6E3 PsGetCurrentProcessSessionId
+                         53F LpcRequestPort
+                         875 RtlInitUnicodeString
+                         ACF ZwOpenKey
+                         B0D ZwQueryValueKey
+                         440 KeCancelTimer
+                         7F6 RtlDestroyAtomTable
+                         81D RtlFindExportedRoutineByName
+                         7F7 RtlDestroyHeap
+                         5C2 MmUnmapViewInSessionSpace
+                          79 EtwUnregister
+                         4F0 KeRemoveSystemServiceTable
+                         95D RtlUnregisterFeatureConfigurationChangeNotification
+                         8F4 RtlQueryFeatureConfiguration
+                         90C RtlRegisterFeatureConfigurationChangeNotification
+                         8F5 RtlQueryFeatureConfigurationChangeStamp
+                         846 RtlGetCurrentServiceSessionId
+                         2EE IoCreateDriver
+                         433 KeAddSystemServiceTable
+                          64 DbgkLkmdRegisterCallback
+                          74 EtwRegister
+                          77 EtwSetInformation
+                         5A2 MmPageEntireDriver
+                          DC ExInitializeRundownProtection
+                         AD4 ZwOpenProcess
+                         65A ObReferenceObjectByName
+                         30C IoDriverObjectType
+                         8FD RtlQueryRegistryValues
+                         72A PsGetWin32KFilterSet
+                         9AE SeExports
+                         9A2 SeCreateAccessState
+                         63D ObCheckObjectAccess
+                         9A9 SeDeleteAccessState
+                         997 SeCaptureSubjectContext
+                         9B9 SeLockSubjectContext
+                         9C1 SePrivilegeCheck
+                         9C2 SePrivilegeObjectAuditAlarm
+                         9E9 SeUnlockSubjectContext
+                         9D2 SeReleaseSubjectContext
+                         B45 ZwSetValueKey
+                         B10 ZwQueryWnfStateData
+                         715 PsGetProcessWin32Process
+                         6FF PsGetProcessCreateTimeQuadPart
+                         953 RtlUnicodeStringToInteger
+                         647 ObDuplicateObject
+                         63E ObCloseHandle
+                         709 PsGetProcessPeb
+                          FD ExRaiseStatus
+                         70C PsGetProcessSectionBaseAddress
+                         B4B ZwTerminateProcess
+                         707 PsGetProcessInheritedFromUniqueProcessId
+                         779 PsSetThreadWin32Thread
+                         775 PsSetProcessWin32Process
+                         504 KeSetKernelStackSwapEnable
+                         9C5 SeQueryInformationToken
+                         841 RtlGetAppContainerSidType
+                         717 PsGetProcessWow64Process
+                         783 PsUpdateComponentPower
+                         758 PsReleaseProcessWakeCounter
+                         703 PsGetProcessExitStatus
+                         8F9 RtlQueryPackageClaims
+                          F4 ExQueryFastCacheDevLicense
+                         9D5 SeSecurityAttributePresent
+                         53D LpcPortObjectType
+                         726 PsGetThreadSessionId
+                         747 PsLookupThreadByThreadId
+                         73C PsIsThreadTerminating
+                         710 PsGetProcessSessionId
+                         745 PsLookupProcessByProcessId
+                         7D6 RtlCreateAtomTable
+                         790 RtlAddAtomToAtomTable
+                         8EC RtlPinAtomInAtomTable
+                         655 ObQueryNameInfo
+                         64A ObGetObjectSecurity
+                         987 SeAssignSecurity
+                         661 ObReleaseObjectSecurity
+                         663 ObSetSecurityDescriptorInfo
+                         9A8 SeDeassignSecurity
+                         920 RtlSetBits
+                         7B7 RtlClearBits
+                         63F ObCreateObject
+                         63B ObAssignSecurity
+                         831 RtlFormatCurrentUserKeyPath
+                         7D2 RtlCopyUnicodeString
+                         839 RtlFreeUnicodeString
+                         79E RtlAppendUnicodeToString
+                         79D RtlAppendUnicodeStringToString
+                         B01 ZwQueryKey
+                         AAB ZwEnumerateValueKey
+                         2B3 InitSafeBootMode
+                         14B ExUuidCreate
+                         706 PsGetProcessImageFileName
+                         714 PsGetProcessStartKey
+                         86C RtlInitAnsiString
+                         79A RtlAnsiStringToUnicodeString
+                         8FA RtlQueryPackageIdentity
+                         6D9 PsDereferencePrimaryToken
+                          7A EtwWrite
+                         B0E ZwQueryVirtualMemory
+                          66 DbgkWerCaptureLiveKernelDump
+                         64B ObGetObjectType
+                          9A ExActivationObjectType
+                         903 RtlRaiseException
+                         A60 ZwAllocateLocallyUniqueId
+                         64C ObInsertObject
+                         65B ObReferenceObjectByPointer
+                         7A8 RtlCapabilityCheck
+                          F9 ExRaiseAccessViolation
+                         74A PsProcessType
+                         7C7 RtlConvertSidToUnicodeString
+                         6D7 PsDereferenceImpersonationToken
+                         6ED PsGetCurrentThreadProcessId
+                          5E DbgPrintEx
+                         73D PsIsWin32KFilterAuditEnabled
+                         11B ExReleaseResourceLite
+                          8F ExAcquireResourceSharedLite
+                         642 ObDeleteCapturedInsertInfo
+                         567 MmCreateSection
+                         598 MmMapViewInSessionSpace
+                         A88 ZwCreateDirectoryObject
+                         7F3 RtlDeleteRegistryValue
+                         7BF RtlCompareUnicodeString
+                         5C9 NlsMbCodePageTag
+                         5C7 NlsAnsiCodePage
+                         73A PsIsSystemThread
+                         74B PsQueryProcessAttributesByToken
+                         869 RtlImageNtHeader
+                         708 PsGetProcessJob
+                         6FB PsGetJobUIRestrictionsClass
+                         6F6 PsGetJobLock
+                         716 PsGetProcessWin32WindowStation
+                         822 RtlFindMessage
+                         44F KeDelayExecutionThread
+                         73F PsIsWin32KFilterEnabled
+                         7D7 RtlCreateAtomTableEx
+                         791 RtlAddAtomToAtomTableEx
+                         8C3 RtlLookupAtomInAtomTable
+                         7EB RtlDeleteAtomFromAtomTable
+                         8F1 RtlQueryAtomInAtomTable
+                         7DA RtlCreateHeap
+                         2BF IoAllocateErrorLogEntry
+                         406 IoWriteErrorLogEntry
+                          F5 ExQueryPoolBlockSize
+                         88A RtlIntegerToUnicodeString
+                          72 EtwEventEnabled
+                         8BE RtlLengthSid
+                         57D MmGetSystemRoutineAddress
+                         3FF IoWMIRegistrationControl
+                         BC8 vDbgPrintEx
+                         2CE IoBuildDeviceIoControlRequest
+                         40C IofCallDriver
+                         5B8 MmSystemRangeStart
+                         484 KeInitializeMutex
+                         4DF KeReleaseMutex
+                         390 IoRegisterPlugPlayNotification
+                         330 IoGetDeviceInterfaces
+                         3E7 IoUnregisterPlugPlayNotificationEx
+                          5D DbgPrint
+                         5C5 MmUnsecureVirtualMemory
+                         B55 ZwUnmapViewOfSection
+                         AB1 ZwFreeVirtualMemory
+                         7AB RtlCaptureStackBackTrace
+                         5A4 MmPrefetchVirtualAddresses
+                         855 RtlGetNtGlobalFlags
+                         5B1 MmSecureVirtualMemory
+                         6F2 PsGetCurrentThreadWin32ThreadAndEnterCriticalRegion
+                         AFC ZwQueryInformationToken
+                         34F IoGetStackLimits
+                          B2 ExDeleteLookasideListEx
+                          D7 ExInitializeLookasideListEx
+                         15B ExpInterlockedPushEntrySList
+                          F3 ExQueryDepthSList
+                         15A ExpInterlockedPopEntrySList
+                         913 RtlRunOnceBeginInitialize
+                         914 RtlRunOnceComplete
+                         A8E ZwCreateKey
+                         809 RtlEqualUnicodeString
+                         950 RtlUnicodeStringToAnsiString
+                         868 RtlImageDirectoryEntryToData
+                         833 RtlFreeAnsiString
+                         8B6 RtlIsStateSeparationEnabled
+                         977 RtlWriteRegistryValue
+                         36C IoOpenDeviceRegistryKey
+                         AA9 ZwEnumerateKey
+                         BD9 wcsncpy_s
+                         325 IoGetAttachedDeviceReference
+                         2D0 IoBuildSynchronousFsdRequest
+                         332 IoGetDeviceObjectPointer
+                         BC2 swprintf_s
+                         333 IoGetDeviceProperty
+                         BD2 wcscpy_s
+                         7A9 RtlCapabilityCheckForSingleSessionSku
+                         856 RtlGetNtProductType
+                         85E RtlGetSuiteMask
+                         B2E ZwSetEvent
+                         B1D ZwResetEvent
+                          94 ExAcquireSharedStarveExclusive
+                          8E ExAcquireResourceExclusiveLite
+                          BF ExEnterPriorityRegionAndAcquireResourceShared
+                         481 KeInitializeGuardedMutex
+                         423 KeAcquireGuardedMutex
+                         4D8 KeReleaseGuardedMutex
+                         13B ExTryAcquirePushLockExclusiveEx
+                         6F0 PsGetCurrentThreadTeb
+                         BCB vsprintf_s
+                         882 RtlInsertElementGenericTableAvl
+                         8C5 RtlLookupElementGenericTableAvl
+                         7ED RtlDeleteElementGenericTableAvl
+                         8CF RtlMultiByteToUnicodeN
+                         958 RtlUnicodeToMultiByteN
+                         134 ExSystemTimeToLocalTime
+                         45C KeExpandKernelStackAndCallout
+                         87C RtlInitializeGenericTableAvl
+                         AC3 ZwMapViewOfSection
+                         802 RtlEnumerateGenericTableAvl
+                         848 RtlGetDefaultCodePage
+                         7B1 RtlCheckTokenMembership
+                         8BC RtlLengthRequiredSid
+                         87E RtlInitializeSid
+                         938 RtlSubAuthoritySid
+                         7CF RtlCopySid
+                         7DC RtlCreateSecurityDescriptor
+                         7D5 RtlCreateAcl
+                         78F RtlAddAce
+                         924 RtlSetDaclSecurityDescriptor
+                         92A RtlSetSaclSecurityDescriptor
+                         927 RtlSetOwnerSecurityDescriptor
+                         926 RtlSetGroupSecurityDescriptor
+                          AB ExCompositionObjectType
+                         445 KeClearEvent
+                          D9 ExInitializePagedLookasideList
+                          B4 ExDeletePagedLookasideList
+                         583 MmIsDriverVerifyingByAddress
+                         A8B ZwCreateFile
+                         312 IoFileObjectType
+                         3FA IoWMIOpenBlock
+                         3F9 IoWMIHandleToInstanceName
+                         3FD IoWMIQuerySingleInstance
+                         AA3 ZwDeviceIoControlFile
+                         A7A ZwCancelIoFile
+                         700 PsGetProcessDebugPort
+                          FE ExRawInputManagerObjectType
+                         50E KeSetTimer
+                         5D3 NtClose
+                         A7C ZwCancelTimer
+                         B42 ZwSetTimer
+                         5E3 NtDeviceIoControlFile
+                         334 IoGetDevicePropertyData
+                         ACD ZwOpenFile
+                         2F2 IoCreateNotificationEvent
+                         AEE ZwQueryDefaultUILanguage
+                         6C9 PsAcquireProcessExitSynchronization
+                         515 KeStackAttachProcess
+                         524 KeUnstackDetachProcess
+                         757 PsReleaseProcessExitSynchronization
+                         3E6 IoUnregisterPlugPlayNotification
+                         6A6 PoLatencySensitivityHint
+                         B12 ZwReadFile
+                         807 RtlEqualSid
+                         B02 ZwQueryLicenseValue
+                         A1C TtmNotifyDeviceArrival
+                         A1D TtmNotifyDeviceDeparture
+                         A1E TtmNotifyDeviceInput
+                         43E KeBugCheck
+                         9A0 SeConvertStringSecurityDescriptorToSecurityDescriptor
+                         4CC KeReadStateEvent
+                         B18 ZwRemoveIoCompletionEx
+                         AA5 ZwDuplicateObject
+                         B69 _purecall
+                         AF7 ZwQueryInformationFile
+                         ADB ZwOpenSymbolicLinkObject
+                         B08 ZwQuerySymbolicLinkObject
+                         656 ObQueryNameString
+                         785 PsWow64GetProcessMachine
+                         8F3 RtlQueryElevationFlags
+                         9B7 SeIsParentOfChildAppContainer
+                         5CB NlsOemCodePage
+                         287 HviGetHypervisorFeatures
+                         6D5 PsCreateSystemThread
+                         B4F ZwUnloadDriver
+                         ABB ZwLoadDriver
+                         863 RtlGetVersion
+                         411 KdDebuggerEnabled
+                         729 PsGetVersion
+                         659 ObReferenceObjectByHandleWithTag
+                         669 ObfDereferenceObjectWithTag
+                         5B0 MmSectionObjectType
+                         804 RtlEnumerateGenericTableWithoutSplaying
+                         7EC RtlDeleteElementGenericTable
+                         8C4 RtlLookupElementGenericTable
+                         881 RtlInsertElementGenericTable
+                         87B RtlInitializeGenericTable
+                         2B4 InitializeSListHead
+                         159 ExpInterlockedFlushSList
+                         70E PsGetProcessSequenceNumber
+                         A95 ZwCreateSection
+                         589 MmLoadSystemImage
+                         5BA MmUnloadSystemImage
+                         79C RtlAppendStringToString
+                         730 PsIsCurrentThreadInServerSilo
+                         6F5 PsGetHostSilo
+                         6CE PsAttachSiloToCurrentThread
+                         AF8 ZwQueryInformationJobObject
+                         6DB PsDetachSiloFromCurrentThread
+                         7C0 RtlCompareUnicodeStrings
+                         8AA RtlIsMultiSessionSku
+                          78 EtwTelemetryCoverageReport
+                         AA0 ZwDeleteValueKey
+                         43D KeAttachProcess
+                         9B8 SeLocateProcessImageName
+                         455 KeDetachProcess
+                         962 RtlUpcaseUnicodeString
+                         789 RtlAddAccessAllowedAce
+                         B3E ZwSetSecurityObject
+                         A67 ZwAlpcConnectPortEx
+                           3 AlpcInitializeMessageAttribute
+                           2 AlpcGetMessageAttribute
+                         147 ExUnregisterCallback
+                         A76 ZwAlpcSendWaitReceivePort
+                         A65 ZwAlpcCancelMessage
+                         A64 ZwAlpcAcceptConnectPort
+                         935 RtlStringFromGUID
+                         A68 ZwAlpcCreatePort
+                         A77 ZwAlpcSetInformation
+
+    HAL.dll
+             1C0272000 Import Address Table
+             1C02730B8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+  Section contains the following exports for win32kbase.sys
+
+    00000000 characteristics
+    3D5F2111 time date stamp
+        0.00 version
+           1 ordinal base
+        2464 number of functions
+        2464 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000086A0 ??0BRUSHMEMOBJ@@QEAA@KKHH@Z
+          2    1 00008330 ??0BRUSHMEMOBJ@@QEAA@PEAUHBITMAP__@@0HKKH@Z
+          3    2 00096550 ??0CAutoMutex@OPM@@QEAA@PEAVCMutex@1@@Z
+          4    3 000227F0 ??0CHMRefHwndByHandle@@QEAA@PEAUHWND__@@_N111@Z
+          5    4 0004F2F0 ??0CInputDest@@QEAA@AEBUtagINPUTDEST@@@Z
+          6    5 00083460 ??0CInputDest@@QEAA@AEBV0@@Z
+          7    6 000C85B0 ??0CMonitorPDO@OPM@@QEAA@AEAU_LUID@@KPEAJ@Z
+          8    7 0009B610 ??0CMultiPerObjectLockExclusivePpiPtiQ@@QEAA@PEAUtagTHREADINFO@@@Z
+          9    8 000BAAE0 ??0CMutex@OPM@@QEAA@PEAJ@Z
+         10    9 00049E30 ??0DCMEMOBJ@@QEAA@AEAVDCOBJ@@@Z
+         11    A 0011ACA0 ??0DwmHitTestLeaveEnterCrit@@QEAA@XZ
+         12    B 000C6570 ??0EXFORMOBJ@@QEAA@KK@Z
+         13    C 00092A00 ??0PATHMEMOBJ@@QEAA@XZ
+         14    D 00015DB0 ??0PDEVOBJ@@QEAA@PEAU_LDEV@@PEAU_devicemodeW@@PEAG22PEAXPEAUtagREMOTETYPEONENODE@@PEAU_GDIINFO@@PEAUtagDEVINFO@@HKK@Z
+         15    E 000097D0 ??0RGNMEMOBJ@@QEAA@HH@Z
+         16    F 00038A00 ??0RGNMEMOBJ@@QEAA@K@Z
+         17   10 0009F5D0 ??0RGNMEMOBJ@@QEAA@W4DestructorDisposition@0@@Z
+         18   11 000378B0 ??0RGNMEMOBJ@@QEAA@XZ
+         19   12 0003B2A0 ??0RGNOBJAPI@@QEAA@PEAUHRGN__@@H@Z
+         20   13 0004D580 ??0SPRITELOCK@@QEAA@AEAVPDEVOBJ@@@Z
+         21   14 0009E940 ??1CAutoMutex@OPM@@QEAA@XZ
+         22   15 00042090 ??1CHMRefHwndByHandle@@QEAA@XZ
+         23   16 0007DCE0 ??1CInputDest@@QEAA@XZ
+         24   17 0013FEB0 ??1CMonitorPDO@OPM@@UEAA@XZ
+         25   18 00099160 ??1CMultiPerObjectLockExclusivePpiPtiQ@@QEAA@XZ
+         26   19 000BC550 ??1CMutex@OPM@@QEAA@XZ
+         27   1A 0008D680 ??1DCMEMOBJ@@QEAA@XZ
+         28   1B 0011ACD0 ??1DwmHitTestLeaveEnterCrit@@QEAA@XZ
+         29   1C 00006020 ??1PALMEMOBJ@@QEAA@XZ
+         30   1D 00091260 ??1PATHMEMOBJ@@QEAA@XZ
+         31   1E 00091AA0 ??1SPRITELOCK@@QEAA@XZ
+         32   1F 00048890 ??1SURFMEM@@QEAA@XZ
+         33   20 00150420 ??1TargetInfo@CHwndTargetProp@@QEAA@XZ
+         34   21 00119EE0 ??4CHMRefHwndByHandle@@QEAAAEAV0@AEBV0@@Z
+         35   22 00182E40 ?AccessProceduresStream@@YAHPEAUtagKE@@KH@Z
+         36   23 00182EC0 ?AccessTimeOut@@YAXXZ
+         37   24 000A0570 ?AccessTimeOutReset@@YAXXZ
+         38   25 000ABB80 ?AddLSurf@SURFACE@@QEAAXPEAVSFMLOGICALSURFACE@@@Z
+         39   26 0001FED0 ?AddNotificationToken@SfmTokenArray@@QEAAJPEAU_D3DKMT_PRESENTHISTORYTOKEN@@@Z
+         40   27 001CDB20 ?AddRef@CompositionObject@@QEBAJXZ
+         41   28 001874D0 ?AddThreadPointerData@CTouchProcessor@@QEAAHPEAUtagTHREADINPUTPOINTERLIST@@GK_KIUtagINPUTDEST@@H@Z
+         42   29 001877E0 ?AddThreadPointerHookData@CTouchProcessor@@QEAAHPEAUtagTHREADINPUTPOINTERLIST@@GK_KIUtagINPUTDEST@@@Z
+         43   2A 00187900 ?AdjustCaptureOnRetrieval@CTouchProcessor@@QEAAXUtagINPUTDEST@@I_KHHHHI@Z
+         44   2B 00187A40 ?AdjustEdgyFrameInputDest@CTouchProcessor@@QEAAXPEAXUtagINPUTDEST@@@Z
+         45   2C 00006730 ?Allocate@PDEV@@SAPEAV1@H@Z
+         46   2D 00038BB0 ?AllocateRegion@RGNMEMOBJ@@SAPEAVREGION@@K@Z
+         47   2E 000CD3E0 ?ApplyGatheredKeyboardDeviceCount@CKeyboardProcessor@@QEAAXK@Z
+         48   2F 0002F280 ?BoundPoint@CCursorClip@@QEAA?AW4ClipResult@@UtagPOINT@@W4BoundPointOptions@@W4InputTracing_MouseUpdatePositionReason@@PEAU3@@Z
+         49   30 00187EA0 ?BreakEditionParentNotifyLoop@CTouchProcessor@@QEAAHPEAX@Z
+         50   31 000A05D0 ?CalculateMouseTable@@YAXXZ
+         51   32 0019F800 ?CallUserModeLockFree@InputExtensibilityCallout@@QEAAXPEAU_CLIENT_DEVICE_NOTIFICATION@@@Z
+         52   33 0019F8C0 ?CallUserModeWithLock@InputExtensibilityCallout@@QEAAXPEAU_CLIENT_DEVICE_NOTIFICATION@@@Z
+         53   34 000BFF60 ?CancelActivePointers@CTouchProcessor@@QEAAXXZ
+         56   35 000D2460 ?CleanupInputDestHwndRefsForDesktopThreadExit@CTouchProcessor@@QEAAXXZ
+         57   36 000C0AD0 ?CleanupManipulationThreadData@CTouchProcessor@@QEAAXXZ
+         58   37 0002F540 ?ClearClip@CCursorClip@@QEAAXXZ
+         59   38 0007DCE0 ?ClearForeground@CForegroundInfo@@QEAAXXZ
+         60   39 00005510 ?ClearPtiLastWoken@CInputGlobals@@QEAAXXZ
+         61   3A 000B2CE0 ?ClearSystemVisual@CHwndTargetProp@@QEAAHW4HwndTargetPropVisualType@@@Z
+         62   3B 000B4720 ?Close@IOCPDispatcher@@QEAAX_N@Z
+         63   3C 000BF030 ?Create@LegacyInputDispatcher@@SAJPEAPEAV1@@Z
+         64   3D 00062420 ?CreateHandle@CompositionObject@@QEBAJK_NDPEAPEAX@Z
+         67   3E 000BE680 ?CreateSessionGlobal@CInputManager@@SAJXZ
+         70   3F 0013E830 ?DbgPrintGDI@@YAXPEADZZ
+         71   40 0024BDE0 ?DcAttrDefault@@3UDC_ATTR_KM@@A
+         72   41 000AE340 ?DeInitialize@SfmTokenArray@@QEAAXXZ
+         73   42 000301A0 ?DecrementClientReferenceCount@PDEV@@QEAAKXZ
+         74   43 0018BC40 ?DelegateCapture@CTouchProcessor@@QEAA?AUtagINPUTDEST@@GKH@Z
+         75   44 0018BF70 ?DelegateCoalescePointerMessage@CTouchProcessor@@QEAAH_KHHHI@Z
+         76   45 0018C200 ?DelegateImplictCaptureAndReleaseIfNeeded@CTouchProcessor@@QEAAX_K@Z
+         77   46 000B2C90 ?Delete@CHwndTargetProp@@UEAAXXZ
+         78   47 0013FFD0 ?Destroy@CMonitorPDO@OPM@@UEAAJXZ
+         79   48 000BE770 ?DestroySessionGlobal@CInputManager@@SAXXZ
+         83   49 00054970 ?Dispatch@IOCPDispatcher@@QEAAXW4WaitCompletionPacketPurpose@@K@Z
+         84   4A 0018C960 ?DispatchFrameAndGetNext@CTouchProcessor@@QEAAPEAXPEAX@Z
+         85   4B 0018CA10 ?DispatchFramePostDelayZoneProcessingAndGetNext@CTouchProcessor@@QEAAPEAXPEAX@Z
+         86   4C 0018CE40 ?DoDeferredPointerActivate@CTouchProcessor@@QEAAXUtagINPUTDEST@@_K@Z
+         87   4D 000C7C30 ?DoesCurrentProcessOwnProtectedOutput@CMonitorPDO@OPM@@QEBAEXZ
+         88   4E 001400C0 ?DoesProcessOwnProtectedOutput@CMonitorPDO@OPM@@QEBAEPEAX@Z
+         89   4F 0019F390 ?EnableSpeedBump@CCursorClip@@QEAAX_N@Z
+         90   50 000D0730 ?EngDeletePaletteInternal@@YAHPEAUHPALETTE__@@K@Z
+         91   51 001A10D0 ?EnterGuard@CInpLockGuard@@QEAAXXZ
+         92   52 0007CD50 ?EnumDevices@CBaseInput@@QEBAXPEAXP6A_NQEAUDEVICEINFO@@0@Z@Z
+         93   53 0007CD10 ?EnvironmentChanged@CPTPProcessor@@SAXXZ
+         94   54 001A4BA0 ?ExecuteTimer@CAccessibilityTimer@@SAXW4_ACCESSIBILITY_TIMERS@@@Z
+         95   55 00183060 ?FilterKeys@@YAHPEAUtagKE@@KH@Z
+         96   56 001A0270 ?FindDeviceInfo@CBaseInput@@QEBAPEAUDEVICEINFO@@PEAXH@Z
+         97   57 0002C8A0 ?ForwardInputToISM@CKeyboardProcessor@@SAX_NGGGPEAXK0_KPEAU_KEYBOARD_VIRTUAL_DEVICE_INFO@@@Z
+         98   58 0019E9D0 ?ForwardInputToKeyboardOverrider@CKeyboardProcessor@@SAX_NGGGPEAXKGPEAU_KEYBOARD_VIRTUAL_DEVICE_INFO@@@Z
+         99   59 0018D7F0 ?ForwardInputToManipulationThread@CTouchProcessor@@QEAAXPEBUCPointerInputFrame@@@Z
+        100   5A 0018D8D0 ?ForwardPointerInputFrameToManipulationThread@CTouchProcessor@@SAXPEBUCPointerInputFrame@@@Z
+        101   5B 0000ADE0 ?Free@PDEV@@SAXPEAV1@H@Z
+        102   5C 00246EF0 ?G_fServiceSession@@3HA
+        103   5D 001F6C80 ?GetBaseWindowForInputType@CompositionInputObject@@QEBAJW4CompositionInputType@@PEAPEAUtagWND@@@Z
+        104   5E 000C8A00 ?GetClip@CCursorClip@@QEBA?AUtagRECT@@XZ
+        105   5F 0018FF50 ?GetContactVisualizationPointerEventInt@CTouchProcessor@@QEAAPEBUtagPOINTEREVENTINT@@PEAXPEAH@Z
+        106   60 0019FE30 ?GetDimmedState@CInputGlobals@@QEBA_NXZ
+        107   61 0019FE90 ?GetDisplayOnState@CInputGlobals@@QEBA_NXZ
+        108   62 0003FFA0 ?GetDomainLockRef@@YAAEAUtagDomLock@@W4DomainLockType@@@Z
+        109   63 00007AE0 ?GetFirstLSurf@SURFACE@@QEAAPEAVSFMLOGICALSURFACE@@XZ
+        110   64 0009B610 ?GetForeground@CForegroundInfo@@QEAAAEBVCInputDest@@XZ
+        111   65 0018FF90 ?GetFrameIdFromPointerMsgId@CTouchProcessor@@QEAAK_K@Z
+        112   66 00093D30 ?GetGlobalTickCount@CInputGlobals@@QEBA_KW4INPUT_GLOBALS_TICK_COUNT@@@Z
+        113   67 001520C0 ?GetHidVidPidStrings@RimTelemetry@@SAXQEAURIMDEV@@PEAU_UNICODE_STRING@@1@Z
+        114   68 0018FFE0 ?GetHwndReference@CTouchProcessor@@QEAAPEAUHWND__@@_KPEAGPEAI@Z
+        115   69 00119F00 ?GetInputFlags@CompositionInputObject@@QEBA?AW4CompositionInputFlags@@XZ
+        116   6A 00003D70 ?GetInstance@CInertiaManager@@SAPEAV1@XZ
+        117   6B 00070950 ?GetKernelHandleToRimObj@CHidInput@@QEAAJPEAPEAX@Z
+        118   6C 000197D0 ?GetLastInputTime@CInputGlobals@@QEBA_KXZ
+        119   6D 0019FEF0 ?GetLastInputType@CInputGlobals@@QEBA?AW4_LINP_SOURCE@@XZ
+        120   6E 00190140 ?GetMsgPointerIdFromEdition@CTouchProcessor@@QEAAG_K@Z
+        121   6F 00060060 ?GetNotificationTokens@SfmTokenArray@@QEAAJIPEAIPEAU_D3DKMT_PRESENTHISTORYTOKEN@@@Z
+        122   70 0011AB40 ?GetObjTypeDomainLockRef@@YAAEAUtagDomLock@@PEAX@Z
+        123   71 00190340 ?GetPointerBarrelVisualization@CTouchProcessor@@QEAAHG@Z
+        124   72 00190460 ?GetPointerCapture@CTouchProcessor@@QEAAX_KHPEAPEAXPEAH@Z
+        125   73 00190650 ?GetPointerCursorIdFromMsgData@CTouchProcessor@@QEAAH_KPEAK@Z
+        126   74 001906F0 ?GetPointerData@CTouchProcessor@@QEAAH_KKIPEAUtagPOINTER_INFO@@@Z
+        127   75 001908D0 ?GetPointerDataQPCTimeList@CTouchProcessor@@QEAAH_KIPEA_KPEAH@Z
+        128   76 00190BC0 ?GetPointerDataTimes@CTouchProcessor@@QEAAH_KIPEAUtagTELEMETRY_POINTER_FRAME_TIMES@@@Z
+        129   77 00190EB0 ?GetPointerDataWithHistory@CTouchProcessor@@QEAAH_KKKPEAIPEAE@Z
+        130   78 001911C0 ?GetPointerDownFrame@CTouchProcessor@@QEAAK_K@Z
+        131   79 00191420 ?GetPointerFrameDataWithHistory@CTouchProcessor@@QEAAH_KKHKPEAI1PEAE@Z
+        132   7A 00191B90 ?GetPointerInfo@CTouchProcessor@@QEAAPEBUtagPOINTER_INFO@@PEBUCPointerInputFrame@@K@Z
+        133   7B 00191C00 ?GetPointerInfo@CTouchProcessor@@QEAAPEBUtagPOINTER_INFO@@_K@Z
+        134   7C 00192200 ?GetPointerMessageInfo@CTouchProcessor@@QEAAH_KHPEAPEAUHWND__@@PEAH2PEAKPEAI@Z
+        135   7D 00192470 ?GetPointerMessagePoint@CTouchProcessor@@QEAAHGPEAUtagPOINT@@@Z
+        136   7E 00192A40 ?GetPointerRawDataWithHistory@CTouchProcessor@@QEAAH_KIIPEBUtagPOINTER_DEVICE_PROPERTY@@IPEAJ@Z
+        137   7F 001935A0 ?GetPointerVisualization@CTouchProcessor@@QEAAHGPEAH@Z
+        138   80 001A2730 ?GetProcessor@CPTPProcessorFactory@@SAPEAVCPTPProcessor@@PEAUDEVICEINFO@@@Z
+        139   81 00051CB0 ?GetPtiLastWoken@CInputGlobals@@QEBAPEAUtagTHREADINFO@@XZ
+        140   82 000B0BB0 ?GetPtiLastWokenHotKey@CInputGlobals@@QEBAPEAUtagTHREADINFO@@XZ
+        141   83 00193B00 ?GetThreadPointerData@CTouchProcessor@@QEAA_KPEAUtagTHREADINPUTPOINTERLIST@@GPEAKPEAHPEAPEAUHWND__@@@Z
+        142   84 00070350 ?GetThreadsWithPKL@@YAIPEAPEAPEAUtagTHREADINFO@@PEAU_TL@@PEAUtagKL@@@Z
+        143   85 00193BC0 ?GetTouchProcessorLock@CTouchProcessor@@QEAAAEAUCInpLockGuard@@XZ
+        144   86 0003EFE0 ?GetUserAttr@XDCOBJ@@AEAAPEAU_DC_ATTR@@XZ
+        145   87 00002310 ?GetWindowForInputType@CompositionInputObject@@QEBAJW4CompositionInputType@@PEAPEAUHWND__@@@Z
+        146   88 00001FE0 ?GetWindowForInputType@CompositionInputObject@@QEBAJW4CompositionInputType@@PEAPEAUtagWND@@@Z
+        147   89 00250208 ?GreEngLoadModuleAllocList@@3U_LIST_ENTRY@@A
+        148   8A 0024CBD0 ?GreEngLoadModuleAllocListLock@@3PEAUHSEMAPHORE__@@EA
+        149   8B 00070880 ?HandleDirectStartStopDeviceReadRequest@CHidInput@@QEAAXXZ
+        150   8C 000CD560 ?HandlePTPTelemetry@Usage@PTPTelemetry@@SAXXZ
+        151   8D 00022520 ?HandleTSRequest@CBaseInput@@QEAAXW4InputTSRequest@@@Z
+        152   8E 0019FDF0 ?HasForeground@CForegroundInfo@@QEAA_NAEBVCInputDest@@@Z
+        153   8F 00183330 ?HighContrastHotKey@@YAHPEAUtagKE@@KH@Z
+        155   90 00220580 ?INVALID_MONITOR_HANDLE@OPM@@3QEAXEA
+        156   91 00030170 ?IncrementClientReferenceCount@PDEV@@QEAAXXZ
+        157   92 001A1110 ?IncrementWaiters@CInpLockGuard@@QEAAXXZ
+        158   93 001A54A0 ?InertiaSourceFromPointerType@CInertiaManager@@SA?AW4INERTIA_SOURCE@@K@Z
+        159   94 000BA790 ?Initialize@LegacyInputDispatcher@@QEAAJD_NIIPEAULegacyDispatcherObject@@@Z
+        160   95 00025260 ?Initialize@SfmTokenArray@@QEAAXXZ
+        161   96 00085190 ?InitializeScanLookAsideList@RGNMEMOBJ@@SAHXZ
+        162   97 000A4410 ?InitializeSensor@CBaseInput@@QEAAJXZ
+        163   98 0011C730 ?InverseTransformPoint@@YA?AUTransformedPoint@@AEBU1@AEBUtagINPUT_TRANSFORM@@@Z
+        164   99 000C8540 ?IsDestroyed@CMonitorPDO@OPM@@UEAAEXZ
+        166   9A 0011CA30 ?IsIdentityTransform@@YA_NAEBUtagINPUT_TRANSFORM@@@Z
+        167   9B 000A65A0 ?IsImplicit@CompositionInputObject@@QEBAHXZ
+        168   9C 00194850 ?IsPointerMessageTouchpad@CTouchProcessor@@QEAAHPEAUtagTHREADINFO@@_KG@Z
+        169   9D 00194980 ?IsPointerMsgRedirected@CTouchProcessor@@QEAAH_KPEAH@Z
+        170   9E 00194A60 ?IsPointerPrimary@CTouchProcessor@@QEAAH_K@Z
+        171   9F 00194AB0 ?IsPointerWindowFrameMessage@CTouchProcessor@@QEAAH_KPEAUHWND__@@I_JH@Z
+        172   A0 00182C50 ?IsRawMouseSubscriber@CInputDest@@QEBA_NXZ
+        173   A1 00093F70 ?IsTimeFromLastInputEvent@CInputGlobals@@QEBA_NK@Z
+        174   A2 001A4D60 ?KillTimer@CAccessibilityTimer@@SA_NW4_ACCESSIBILITY_TIMERS@@@Z
+        175   A3 001A1120 ?LeaveGuard@CInpLockGuard@@QEAAXXZ
+        176   A4 0008BC40 ?LeaveGuardOnThreadTermination@CInpLockGuard@@QEAAXXZ
+        177   A5 00096580 ?Lock@CMutex@OPM@@QEAAXXZ
+        178   A6 000D2680 ?LockExclusive@CInpLockGuard@@QEAAXAEAVCRefUnRefPointerMsgId@@@Z
+        179   A7 00028CA0 ?LockExclusive@CInpPushLock@@QEAAXXZ
+        180   A8 0005B0E0 ?LockExclusive@tagDomLock@@QEBAXXZ
+        181   A9 0007B770 ?LockExclusive@tagObjLock@@QEBAXXZ
+        182   AA 001A11B0 ?LockExclusiveWithoutGuard@CInpLockGuard@@QEAAXXZ
+        183   AB 00063180 ?LockForRead@CompositionInputObject@@QEBAJPEAPEBVCInputSink@@@Z
+        184   AC 00096160 ?LockForWrite@CompositionInputObject@@QEAAJPEAPEAVCInputSink@@@Z
+        185   AD 000B8610 ?LockInitialize@tagDomLock@@QEBAJXZ
+        186   AE 00025260 ?LockInitialize@tagObjLock@@QEBAXXZ
+        187   AF 00025260 ?LockInitializeProcessCreator@tagObjLock@@QEBAXXZ
+        188   B0 00025260 ?LockInitializeThreadCreator@tagObjLock@@QEBAXXZ
+        189   B1 000D2A20 ?LockShared@CInpLockGuard@@QEAAXAEAVCRefUnRefPointerMsgId@@@Z
+        190   B2 00076FC0 ?LockShared@CInpPushLock@@QEAAXXZ
+        191   B3 0008DBA0 ?LockShared@tagDomLock@@QEBAXXZ
+        192   B4 0011D7B0 ?LockShared@tagObjLock@@QEBAXXZ
+        193   B5 0008DBA0 ?LockSharedWithoutGuard@CInpLockGuard@@QEAAXXZ
+        194   B6 000BA0F0 ?LockUnInitialize@tagDomLock@@QEBAXXZ
+        195   B7 00099160 ?LockUnInitialize@tagObjLock@@QEBAX_N@Z
+        196   B8 00099160 ?LockUnInitializeProcessCreator@tagObjLock@@QEBAXXZ
+        197   B9 00099160 ?LockUnInitializeThreadCreator@tagObjLock@@QEBAXXZ
+        198   BA 001833F0 ?MKButtonSelect@@YAHG@Z
+        199   BB 000A05B0 ?MKHideMouseCursor@@YAXXZ
+        200   BC 00183420 ?MKShowMouseCursor@@YAXXZ
+        201   BD 00076540 ?Map@SURFACE@@QEAA?AW4SurfaceMapStatus@1@PEAXPEAVDC@@@Z
+        202   BE 0019FF50 ?MarkLastInputAsJournalling@CInputGlobals@@QEAAXXZ
+        203   BF 00194DB0 ?MarkPointerMessageGenerated@CTouchProcessor@@QEAAXI_JHPEAX@Z
+        204   C0 00183480 ?MouseKeys@@YAHPEAUtagKE@@KH@Z
+        205   C1 0024CBD8 ?MultiUserEngAllocListLock@@3PEAUHSEMAPHORE__@@EA
+        206   C2 00250218 ?MultiUserGreEngAllocList@@3U_LIST_ENTRY@@A
+        207   C3 00220588 ?NOT_ALERTABLE@OPM@@3EB
+        208   C4 00194F20 ?NotifyCaptureChangedIfCaptured@CTouchProcessor@@QEAAPEAUtagINPUTDEST@@_KPEAU2@@Z
+        209   C5 00195070 ?NotifyCaptureChangedIfCapturedDelegate@CTouchProcessor@@QEAAPEAUtagINPUTDEST@@_KPEAU2@PEAG@Z
+        210   C6 000D3640 ?NotifyDwmInputThreadShutdown@CInputManager@@SAXPEAU_ETHREAD@@@Z
+        213   C7 001A3000 ?OnSettingsAvailable@PTPTelemetry@@SAXXZ
+        214   C8 001A3340 ?OnUserLogin@PTPTelemetry@@SAXXZ
+        215   C9 0002FE50 ?OpenDwmHandle@CompositionInputObject@@QEBAJPEAPEAX@Z
+        216   CA 000305D0 ?OpenDwmHandle@CompositionObject@@QEBAJPEAPEAX@Z
+        217   CB 00119F10 ?PopulateCustomDispatcherObjectsArray@IOCPDispatcher@@UEAAJIPEAPEAX@Z
+        218   CC 001A0D40 ?PopulateCustomDispatcherObjectsArray@LegacyInputDispatcher@@UEAAJIPEAPEAX@Z
+        219   CD 001A0DE0 ?PopulateDispatcherObjectWithCustomInputEvents@CBaseInput@@QEAAJAEAVCEventBitmap@@PEAVIRegisterInputDispatcherObjects@@@Z
+        220   CE 001965B0 ?PrepareMakePointerMessage@CTouchProcessor@@QEAAPEBUtagPOINTER_INFO@@_KPEAUtagPOINT@@PEAH22@Z
+        222   CF 001A71C0 ?ProcessPTPMouseInput@CHidInput@@QEAAXPEAXPEAU_MOUSE_INPUT_DATA@@_K2K@Z
+        223   D0 00198070 ?PromotePointerDataToMouse@CTouchProcessor@@QEAAH_KK@Z
+        224   D1 000C0000 ?PurgeInputDispatcherObjects@LegacyInputDispatcher@@QEAAXXZ
+        225   D2 001A57D0 ?QueryInertia@CInertiaManager@@QEBAPEBUINERTIA_INFO_INTERNAL@@UtagPOINT@@W4INERTIA_SOURCE@@@Z
+        226   D3 000A44E0 ?Read@CBaseInput@@QEAAJXZ
+        227   D4 000D2DB0 ?RefPointerMsgIdAndUnLock@CInpLockGuard@@QEAAXAEAVCRefUnRefPointerMsgId@@@Z
+        228   D5 00198580 ?ReferenceMsgDataExternal@CTouchProcessor@@QEAAX_KW4tagPOINTERMSGDATA_REFTYPE@@PEAX@Z
+        229   D6 000AE830 ?RegisterDispatcherObject@CBaseInput@@QEAAJPEAVIRegisterInputDispatcherObjects@@@Z
+        230   D7 00092E50 ?RegisterInputDispatcherObjects@IOCPDispatcher@@UEAAJPEAXIPEAUInputDispatcherObject@@@Z
+        231   D8 000B6080 ?RegisterInputDispatcherObjects@LegacyInputDispatcher@@UEAAJPEAXIPEAUInputDispatcherObject@@@Z
+        232   D9 00092DF0 ?RegisterThreadDispatcherObject@IOCPDispatcher@@QEAAXPEAX@Z
+        233   DA 000752E0 ?Release@CompositionObject@@QEBA_JXZ
+        234   DB 000ADA40 ?RemoveLSurf@SURFACE@@QEAAXPEAVSFMLOGICALSURFACE@@@Z
+        235   DC 000918D0 ?ResolveHandle@CompositionInputObject@@KAJPEAXKDPEAPEAU1@@Z
+        236   DD 00045430 ?RestoreAttributes@DC@@QEAAXPEAU_DC_ATTR@@@Z
+        237   DE 0003B4C0 ?SaveAttributes@DC@@QEAAHPEAU_DC_ATTR@@@Z
+        238   DF 001A7380 ?SearchAndSetKbdTbl@@YAXPEAUDEVICEINFO@@KK@Z
+        239   E0 000A0540 ?SetAccessEnabledFlag@@YAXXZ
+        240   E1 00140250 ?SetCachedDpiScaleValue@DC@@QEAAXJ@Z
+        241   E2 0019F510 ?SetClip@CCursorClip@@QEAAXUtagRECT@@@Z
+        242   E3 0019FFA0 ?SetDimmedState@CInputGlobals@@QEAAX_N@Z
+        243   E4 0019FFF0 ?SetDisplayOnState@CInputGlobals@@QEAAX_N@Z
+        244   E5 0019FE10 ?SetForeground@CForegroundInfo@@QEAAXAEBVCInputDest@@@Z
+        245   E6 000BA920 ?SetGlobalCursorLevel@@YAXH@Z
+        246   E7 001A0040 ?SetGlobalTickCount@CInputGlobals@@QEAAXW4INPUT_GLOBALS_TICK_COUNT@@_K@Z
+        247   E8 001999B0 ?SetPointerBarrelVisualization@CTouchProcessor@@QEAAXGH@Z
+        248   E9 00199C70 ?SetPointerFrameTargetWindows@CTouchProcessor@@QEAAHPEAUtagTHREADINFO@@_KIPEAH@Z
+        249   EA 0019ACD0 ?SetPointerInfoNodeFlagFromEdition@CTouchProcessor@@QEAAHKGI@Z
+        250   EB 0019B3C0 ?SetPointerVisualization@CTouchProcessor@@QEAAHGHPEAHH@Z
+        251   EC 000AC2E0 ?SetPtiLastWoken@CInputGlobals@@QEAAXPEAUtagTHREADINFO@@_N@Z
+        252   ED 000AFEC0 ?SetSystemVisual@CHwndTargetProp@@QEAAJW4HwndTargetPropVisualType@@PEAUCompositionObject@@@Z
+        253   EE 001A4DB0 ?SetTimer@CAccessibilityTimer@@SA?AW4_ACCESSIBILITY_TIMERS@@KP6AXPEAUtagWND@@I_K_J@ZH@Z
+        254   EF 00183640 ?StopFilterKeysTimers@@YAXXZ
+        255   F0 0019BD60 ?SuppressDeadzoneContactsInFrameAndGetNext@CTouchProcessor@@QEAAPEAXPEAX0UtagPOINT@@@Z
+        256   F1 0019BE90 ?ThreadHasPrimaryCapture@CTouchProcessor@@QEAAHQEAUtagTHREADINFO@@G@Z
+        257   F2 000B4590 ?TmpGetDeviceList@CBaseInput@@QEAAPEAUDEVICEINFO@@XZ
+        258   F3 000B5A80 ?TmpGetLock@CBaseInput@@QEAAAEAUCInpPushLock@@XZ
+        259   F4 00183690 ?ToggleKeys@@YAHPEAUtagKE@@KH@Z
+        260   F5 0001FE20 ?TransferTokens@SfmTokenArray@@QEAAJPEAV1@@Z
+        261   F6 0011D3F0 ?TransformPoint@@YA?AUTransformedPoint@@AEBU1@AEBUtagINPUT_TRANSFORM@@@Z
+        262   F7 00183810 ?TurnOffMouseKeys@@YAXXZ
+        263   F8 000D2E70 ?UnLock@CInpLockGuard@@QEAAXAEAVCRefUnRefPointerMsgId@@@Z
+        264   F9 00028B70 ?UnLockExclusive@CInpPushLock@@QEAAXXZ
+        265   FA 0008DB80 ?UnLockExclusive@tagDomLock@@QEBAXXZ
+        266   FB 00028B70 ?UnLockExclusive@tagObjLock@@QEBAXXZ
+        267   FC 00078130 ?UnLockShared@CInpPushLock@@QEAAXXZ
+        268   FD 0008DB80 ?UnLockShared@tagDomLock@@QEBAXXZ
+        269   FE 0011D7F0 ?UnLockShared@tagObjLock@@QEBAXXZ
+        270   FF 000D2EC0 ?UnLockWithoutGuard@CInpLockGuard@@QEAAXXZ
+        271  100 000D2EF0 ?UnRefPointerMsgIdAndLockExclusive@CInpLockGuard@@QEAAXAEAVCRefUnRefPointerMsgId@@@Z
+        272  101 00140220 ?Unlock@CMutex@OPM@@QEAAXXZ
+        273  102 000630A0 ?UnlockAndRelease@CInputSink@@QEBA_NXZ
+        274  103 0019C5C0 ?UnreferenceFrameExternal@CTouchProcessor@@QEAAXPEBUCPointerInputFrame@@@Z
+        275  104 0019C780 ?UnreferenceMsgDataExternal@CTouchProcessor@@QEAAX_KW4tagPOINTERMSGDATA_REFTYPE@@PEAX@Z
+        276  105 0019C870 ?UnreferenceUndispatchedFrame@CTouchProcessor@@QEAAXPEAU_LIST_ENTRY@@@Z
+        277  106 000A7740 ?UpdateGlobalTickCount@CInputGlobals@@QEAA_NW4INPUT_GLOBALS_TICK_COUNT@@@Z
+        278  107 00017820 ?UpdateInputGlobals@CInputGlobals@@QEAA_N_KW4_LINP_SOURCE@@GKK@Z
+        279  108 000234A0 ?UpdateKeyboardLEDs@CKeyboardSensor@@QEAAXXZ
+        280  109 000177B0 ?UpdateLastInputTime@CInputGlobals@@QEAAX_KW4_LINP_SOURCE@@@Z
+        281  10A 0019D5C0 ?UpdatePointerInfoTarget@CTouchProcessor@@QEAAH_KUtagINPUTDEST@@HHPEAUtagPOINT@@2@Z
+        282  10B 00077190 ?UpdateThreadPointerList@CTouchProcessor@@QEAAXPEAUtagTHREADINPUTPOINTERLIST@@G@Z
+        283  10C 0003AF90 ?UpdateUserRgn@RGNOBJ@@QEAAXXZ
+        285  10D 001A0EF0 ?Wait@IOCPDispatcher@@QEAAJPEAT_LARGE_INTEGER@@EPEAU_FILE_IO_COMPLETION_INFORMATION@@@Z
+        286  10E 00023090 ?WaitAndDispatch@LegacyInputDispatcher@@QEAAJXZ
+        287  10F 001A11F0 ?WaitForGuard@CInpLockGuard@@QEAAJXZ
+        288  110 001A0FC0 ?WaitForMessagesOrCustomInputEventsAndDispatch@LegacyInputDispatcher@@QEAAJXZ
+        289  111 001A00A0 ?WasLastInputInjected@CInputGlobals@@QEBA_NXZ
+        290  112 001A0100 ?WasLastInputJournalling@CInputGlobals@@QEBA_NXZ
+        291  113 0024CD50 ?_spfnInputHitTestCallback@CSpatialProcessor@@2P6AHPEAU_InputHitTestRequest@@PEAU_InputHitTestResult@@@ZEA
+        292  114 0013FC30 ?bAddIcmDIB@BRUSH@@QEAAHPEAXPEAUHBITMAP__@@@Z
+        293  115 00140BE0 ?bAllClosed@EPATHOBJ@@QEAAHXZ
+        294  116 0004D640 ?bAllowShareAccess@PDEVOBJ@@QEAAHXZ
+        295  117 00140C10 ?bAppend@EPATHOBJ@@QEAAHPEAV1@PEAU_POINTFIX@@@Z
+        296  118 0003D310 ?bCleanDC@XDCOBJ@@QEAAHH@Z
+        297  119 000C6A30 ?bClone@EPATHOBJ@@QEAAHAEAV1@@Z
+        298  11A 000963A0 ?bCloseFigure@EPATHOBJ@@QEAAHXZ
+        299  11B 00035850 ?bCompute@DC@@QEAAHXZ
+        300  11C 00140490 ?bComputeUnits@EXFORMOBJ@@QEAAHJPEAVPOINTFL@@PEAVEFLOAT@@1@Z
+        302  11D 00034120 ?bCopy@RGNOBJ@@QEAAHAEAV1@@Z
+        303  11E 00032750 ?bCopy@RGNOBJAPI@@QEAAHAEAVRGNOBJ@@@Z
+        304  11F 000C5770 ?bCreate@RGNOBJ@@QEAAHAEAVEPATHOBJ@@PEAVEXFORMOBJ@@@Z
+        305  120 00046CF0 ?bCreateDIB@SURFMEM@@QEAAHPEAU_DEVBITMAPINFO@@PEAX1K1_KHHHH@Z
+        306  121 000D0230 ?bCreatePalette@PALMEMOBJ@@QEAAHKKPEBKKKKKH@Z
+        307  122 000368F0 ?bDeleteRGNOBJAPI@RGNOBJAPI@@QEAAHXZ
+        308  123 000C3B20 ?bDeleteSurface@SURFACE@@QEAAHW4_CLEANUPTYPE@@H@Z
+        309  124 000C6F70 ?bEnum@EPATHOBJ@@QEAAHPEAU_PATHDATA@@@Z
+        310  125 0009B940 ?bEqual@RGNOBJ@@QEAAHAEAV1@@Z
+        311  126 0008BDB0 ?bEqualExceptTranslations@EXFORMOBJ@@QEAAHPEAVMATRIX@@@Z
+        312  127 00038160 ?bExpand@RGNOBJ@@QEAAHK@Z
+        313  128 000908D0 ?bFlatten@EPATHOBJ@@QEAAHXZ
+        314  129 000BA9C0 ?bIncludeSprites@SURFACE@@SAHXZ
+        315  12A 00090DC0 ?bInit@BEZIER32@@QEAAHPEAU_POINTFIX@@PEAU_RECTFX@@@Z
+        316  12B 00094190 ?bInside@RGNOBJ@@QEAAHPEAU_POINTL@@@Z
+        317  12C 0008F3F0 ?bInside@RGNOBJ@@QEAAHPEAU_RECTL@@@Z
+        318  12D 000B97F0 ?bIntersect@@YAHPEBU_RECTL@@0PEAU1@@Z
+        319  12E 0009A810 ?bInverse@EXFORMOBJ@@QEAAHAEAVMATRIX@@@Z
+        320  12F 00142650 ?bIsLocked@W32PIDLOCK@@QEAA_NXZ
+        321  130 00034B70 ?bLock@DEVLOCKOBJ@@QEAAHAEAVXDCOBJ@@H@Z
+        322  131 00060580 ?bMakeInfoDC@DC@@QEAAHH@Z
+        323  132 00015C00 ?bMakeSurface@PDEVOBJ@@QEAAHPEAUHSURF__@@@Z
+        324  133 000764F0 ?bMap@SURFREFVIEW@@QEAAHPEAU_SURFOBJ@@@Z
+        325  134 00038F30 ?bMerge@RGNOBJ@@QEAAHAEAV1@0E@Z
+        326  135 00094050 ?bMoveTo@EPATHOBJ@@QEAAHPEAVEXFORMOBJ@@PEAU_POINTL@@@Z
+        327  136 00053710 ?bMultiply@EXFORMOBJ@@QEAAHPEAVMATRIX@@0K@Z
+        328  137 00090B30 ?bNext@BEZIER32@@QEAAHPEAU_POINTFIX@@@Z
+        329  138 00144020 ?bNext@BEZIER64@@QEAAHPEAU_POINTFIX@@@Z
+        330  139 000361B0 ?bOffset@RGNOBJ@@QEAAHPEAU_POINTL@@@Z
+        331  13A 0008BFC0 ?bPolyBezierTo@EPATHOBJ@@QEAAHPEAVEXFORMOBJ@@PEAU_POINTL@@K@Z
+        332  13B 0008C020 ?bPolyLineTo@EPATHOBJ@@QEAAHPEAVEXFORMOBJ@@PEAU_POINTL@@K@Z
+        333  13C 00039720 ?bSetDefaultRegion@DC@@QEAAHXZ
+        335  13D 00034B20 ?bSwap@RGNOBJAPI@@QEAAHPEAVRGNOBJ@@@Z
+        336  13E 0024C6B4 ?bTouchInputAllowed@RawInputManagerObject@@2HA
+        337  13F 00076D00 ?bUnMap@SURFACE@@QEAAHPEAXPEAVDC@@@Z
+        338  140 00090170 ?bUnMap@SURFREFVIEW@@QEAAHXZ
+        339  141 00090040 ?bUnMapImmediate@SURFREFVIEW@@QEAAHXZ
+        340  142 0008CEA0 ?bValid@CHMRefHwndByHandle@@QEBA_NXZ
+        341  143 00140700 ?bXform@EXFORMOBJ@@QEAAHPEAU_POINTFIX@@PEAU_POINTL@@_K@Z
+        342  144 00031640 ?bXform@EXFORMOBJ@@QEAAHPEAU_POINTL@@0_K@Z
+        343  145 00140770 ?bXform@EXFORMOBJ@@QEAAHPEAU_POINTL@@PEAU_POINTFIX@@_K@Z
+        344  146 000C89B0 ?bXform@EXFORMOBJ@@QEAAHPEAU_VECTORFX@@PEAU_VECTORL@@_K@Z
+        345  147 001407E0 ?bXform@EXFORMOBJ@@QEAAHPEAU_VECTORL@@0_K@Z
+        346  148 000C6900 ?bXform@EXFORMOBJ@@QEAAHPEAU_VECTORL@@PEAU_VECTORFX@@_K@Z
+        347  149 00052730 ?bXform@EXFORMOBJ@@QEAAHPEAVVECTORFL@@0_K@Z
+        348  14A 000C5190 ?bXformRound@EXFORMOBJ@@QEAAHPEAU_POINTL@@PEAU_POINTFIX@@_K@Z
+        349  14B 00016B60 ?cFonts@PDEVOBJ@@QEAAKXZ
+        350  14C 000C8A50 ?cTotalCurves@EPATHOBJ@@QEAAKXZ
+        351  14D 00140D30 ?cTotalPts@EPATHOBJ@@QEAAKXZ
+        352  14E 000C6BD0 ?cjSize@EPATHOBJ@@QEAAKXZ
+        353  14F 0009AA10 ?dwSetLayout@DC@@QEAAKJK@Z
+        354  150 0024A418 ?ef16@@3VEFLOAT@@A
+        355  151 00145920 ?eqCross@EFLOAT@@QEAA?AV1@AEBVPOINTFL@@0@Z
+        356  152 0009B670 ?eqLength@EFLOAT@@QEAA?AV1@AEBVPOINTFL@@@Z
+        357  153 0024BF98 ?freelist@PATHALLOC@@0PEAV1@EA
+        358  154 0024C7A8 ?gCookie@@3_KA
+        359  155 002506D0 ?gDomainActiveLock@@3UtagDomLock@@A
+        360  156 002506F0 ?gDomainAsyncKeyStateLock@@3UtagDomLock@@A
+        361  157 00250710 ?gDomainClientLibLock@@3UtagDomLock@@A
+        362  158 002506E8 ?gDomainDesktopLock@@3UtagDomLock@@A
+        363  159 0024D2C0 ?gDomainDummyLock@@3UtagDomLock@@A
+        364  15A 002506B0 ?gDomainEtwLock@@3UtagDomLock@@A
+        365  15B 002506D8 ?gDomainForegroundLock@@3UtagDomLock@@A
+        366  15C 00250718 ?gDomainHandleManagerLock@@3UtagDomLock@@A
+        367  15D 00250730 ?gDomainHookLock@@3UtagDomLock@@A
+        368  15E 002506C8 ?gDomainInputDelegationLock@@3UtagDomLock@@A
+        369  15F 002506E0 ?gDomainJobLock@@3UtagDomLock@@A
+        370  160 00250748 ?gDomainPostLock@@3UtagDomLock@@A
+        371  161 00250708 ?gDomainPowerTransitionsStateLock@@3UtagDomLock@@A
+        372  162 00250758 ?gDomainProcessInfoLock@@3UtagDomLock@@A
+        373  163 00250738 ?gDomainQueueLock@@3UtagDomLock@@A
+        374  164 002506C0 ?gDomainQueueMgmtLock@@3UtagDomLock@@A
+        375  165 002506F8 ?gDomainRawInputLock@@3UtagDomLock@@A
+        376  166 00250740 ?gDomainSmsLock@@3UtagDomLock@@A
+        377  167 00250750 ?gDomainThreadInfoLock@@3UtagDomLock@@A
+        378  168 002506B8 ?gDomainThreadRundownLock@@3UtagDomLock@@A
+        379  169 00250700 ?gDomainTlLock@@3UtagDomLock@@A
+        380  16A 00250728 ?gDomainWinEventLock@@3UtagDomLock@@A
+        381  16B 00250720 ?gDomainWindowLock@@3UtagDomLock@@A
+        382  16C 002501F8 ?gDpiDepDefaultGuiFontsPushLock@@3U_EX_PUSH_LOCK@@A
+        383  16D 0024D2F0 ?gHidCountersLock@@3UtagObjLock@@A
+        384  16E 002503B0 ?gHidRequestTable@RawInputManagerObject@@2UtagHID_REQUEST_TABLE@@A
+        385  16F 0024D308 ?gObjDummyLock@@3UtagObjLock@@A
+        386  170 0024C7B0 ?gPreviousProtocolType@@3GA
+        387  171 0020B690 ?gSmartObjNullRef@@3U_SMARTOBJSTACKREF@@B
+        388  172 002473C4 ?gStockBitmapFree@@3JA
+        389  173 00253A90 ?gTPTelemState@Usage@PTPTelemetry@@2UtagTPTELEMSTATE@@A
+        390  174 0024CCF0 ?gTPTelemTimings@Usage@PTPTelemetry@@2UtagTPTELEMTIMINGS@@A
+        391  175 0024C1B0 ?gUMPDSecurityLevel@@3W4UMPDSecurityLevel@@A
+        392  176 0024D2D0 ?gValidLockListEntryPushLock@@3U_EX_PUSH_LOCK@@A
+        393  177 0024BC10 ?gWinLogonRpcHandle@@3PEAXEA
+        394  178 0024C69C ?g_bLockUpdatesForDwm@@3HA
+        395  179 00254408 ?g_pDwmState@@3PEAUDwmState@@EA
+        396  17A 0024C1A0 ?gahDpiDepDefaultGuiFonts@@3PEAPEAXEA
+        397  17B 0024C1A8 ?gahStockObjects96@@3PEAPEAXEA
+        398  17C 0024C198 ?gahStockObjects@@3PEAPEAXEA
+        399  17D 002543F8 ?gbMultiMonMismatchColor@@3HA
+        400  17E 0024C08C ?gcMaxHmgr@@3KA
+        401  17F 0024C1B4 ?gcModeChanges@@3KA
+        402  180 0024C1E0 ?gcRemoteNextGlobalDeviceNumber@@3KA
+        403  181 002471A0 ?gcRemoteNextGlobalPhysicalOutputNumber@@3KA
+        404  182 0024C210 ?gdmLogPixels@@3GA
+        405  183 0024CC10 ?gdmLogPixelsOfPrimary@@3GA
+        406  184 000B9FC0 ?getDLT@DLT_ACTIVE@@SA?AW4DomainLockType@@XZ
+        407  185 000BF890 ?getDLT@DLT_ASYNCKEYSTATE@@SA?AW4DomainLockType@@XZ
+        408  186 000B2410 ?getDLT@DLT_CLIENTLIB@@SA?AW4DomainLockType@@XZ
+        409  187 0009BA50 ?getDLT@DLT_DESKTOP@@SA?AW4DomainLockType@@XZ
+        410  188 0011ABA0 ?getDLT@DLT_ETW@@SA?AW4DomainLockType@@XZ
+        411  189 000BCCB0 ?getDLT@DLT_FOREGROUND@@SA?AW4DomainLockType@@XZ
+        412  18A 00051D80 ?getDLT@DLT_HANDLEMANAGER@@SA?AW4DomainLockType@@XZ
+        413  18B 000C4BA0 ?getDLT@DLT_INPUTDELEGATION@@SA?AW4DomainLockType@@XZ
+        414  18C 000AAFB0 ?getDLT@DLT_JOB@@SA?AW4DomainLockType@@XZ
+        415  18D 000967A0 ?getDLT@DLT_POST@@SA?AW4DomainLockType@@XZ
+        416  18E 0011ABB0 ?getDLT@DLT_POWERTRANSITIONSSTATE@@SA?AW4DomainLockType@@XZ
+        417  18F 000C48F0 ?getDLT@DLT_PROCESSINFO@@SA?AW4DomainLockType@@XZ
+        418  190 00025B30 ?getDLT@DLT_QUEUE@@SA?AW4DomainLockType@@XZ
+        419  191 0011ABC0 ?getDLT@DLT_QUEUEMGMT@@SA?AW4DomainLockType@@XZ
+        420  192 000A1A60 ?getDLT@DLT_RAWINPUT@@SA?AW4DomainLockType@@XZ
+        421  193 0008DBC0 ?getDLT@DLT_THREADINFO@@SA?AW4DomainLockType@@XZ
+        422  194 0005B150 ?getDLT@DLT_THREADLOCK@@SA?AW4DomainLockType@@XZ
+        423  195 0011ABD0 ?getDLT@DLT_THREADRUNDOWN@@SA?AW4DomainLockType@@XZ
+        424  196 0011ABE0 ?getDLT@DLT_WINDOW@@SA?AW4DomainLockType@@XZ
+        425  197 000952A0 ?getDLT@DLT_WINEVENT@@SA?AW4DomainLockType@@XZ
+        426  198 00254410 ?gfDwmDesktopOverlaysEnabled@@3HA
+        427  199 00254414 ?gfDwmOverlayTestMode@@3HA
+        428  19A 0024C218 ?giIcmGammaRange@@3IA
+        429  19B 0024CB70 ?giSpriteUniqueness@@3KA
+        430  19C 00250D44 ?giVisRgnUniqueness@@3KA
+        431  19D 00250D40 ?giVisRgnUniquenessStable@@3KA
+        432  19E 0024A558 ?gmxIdentity_LToL@@3VMATRIX@@A
+        433  19F 00250D30 ?gpCachedDbrush@@3PEAVRBRUSH@@EA
+        434  1A0 002507E8 ?gpCachedEngbrush@@3PEAVRBRUSH@@EA
+        435  1A1 0024BC40 ?gpEventPowerRequest@@3PEAU_KEVENT@@EA
+        436  1A2 0024C1F8 ?gpGraphicsDeviceList@@3PEAUtagGRAPHICS_DEVICE@@EA
+        437  1A3 0024CBA8 ?gpHandleManager@@3PEAVGdiHandleManager@@EA
+        438  1A4 0024C1D8 ?gpLocalGraphicsDeviceList@@3PEAUtagGRAPHICS_DEVICE@@EA
+        439  1A5 00254430 ?gpPFTPrivate@@3PEAVPFT@@EA
+        440  1A6 0024BDC0 ?gpPenNull@@3PEAVPEN@@EA
+        441  1A7 0024CBA0 ?gpRGBXlate@@3PEAEEA
+        442  1A8 0024D1F0 ?gpRemoteGraphicsDeviceList@@3PEAUtagGRAPHICS_DEVICE@@EA
+        443  1A9 0024D1E8 ?gpRemoteGraphicsDeviceListLast@@3PEAUtagGRAPHICS_DEVICE@@EA
+        444  1AA 00245918 ?gpSfmState@@3PEAUSfmState@@EA
+        445  1AB 0024BA00 ?gpStackRefLookAside@@3PEAXEA
+        446  1AC 0024C230 ?gpTypeIsolation@@3PEAPEAEEA
+        447  1AD 0024C798 ?gpUserTypeIsolation@@3PEAPEAEEA
+        448  1AE 0024BDB8 ?gpbrBackground@@3PEAVBRUSH@@EA
+        449  1AF 0024F9E8 ?gpbrNull@@3PEAVBRUSH@@EA
+        450  1B0 0024BDC8 ?gpbrText@@3PEAVBRUSH@@EA
+        451  1B1 0024ACD8 ?gpducstulHead@@3PEAUtagKERNELHANDLETABLEENTRY@@EA
+        452  1B2 0024CBB8 ?gpentHmgr@@3PEAU_ENTRY@@EA
+        453  1B3 00245910 ?gpeqErrorLow@@3PEA_JEA
+        454  1B4 0024C1B8 ?gpldevDrivers@@3PEAU_LDEV@@EA
+        455  1B5 0024CB98 ?gppalRGB@@3PEAVPALETTE@@EA
+        456  1B6 0024CB58 ?gppdevList@@3PEAVPDEV@@EA
+        457  1B7 0024D2D8 ?gpsiLock@@3UtagObjLock@@A
+        458  1B8 0013FD10 ?hFindIcmDIB@BRUSH@@QEAAPEAUHBITMAP__@@PEAX@Z
+        459  1B9 00254438 ?hForePID@@3PEAU_W32PROCESS@@EA
+        460  1BA 00254440 ?hForePalette@@3PEAUHPALETTE__@@EA
+        462  1BB 000C5DD0 ?hpath@DC@@QEAAPEAUHPATH__@@PEAU2@@Z
+        463  1BC 0024BFA8 ?hsemFreelist@PATHALLOC@@0PEAUHSEMAPHORE__@@EA
+        464  1BD 00036FA0 ?iCombine@DC@@QEAAJPEAU_RECTL@@J@Z
+        465  1BE 00143B60 ?iCombine@DC@@QEAAJPEAVEXFORMOBJ@@PEAU_RECTL@@J@Z
+        466  1BF 00033F30 ?iCombine@RGNOBJ@@QEAAJAEAV1@0J@Z
+        467  1C0 00034260 ?iCombine@RGNOBJAPI@@QEAAJAEAVRGNOBJ@@0J@Z
+        468  1C1 0008BC90 ?isOwned@CInpLockGuard@@QEAAHXZ
+        469  1C2 00099160 ?lock@CMultiPerObjectLockExclusivePpiPtiQ@@QEAAXXZ
+        470  1C3 00247360 ?logDefaultPal@@3U_PAL_LOGPALETTE@@A
+        471  1C4 00030BF0 ?pAdapterLuid@PDEVOBJ@@QEAAPEAU_LUID@@XZ
+        472  1C5 00141D70 ?pRenderAdapterLuid@PDEVOBJ@@QEAAPEAU_LUID@@XZ
+        473  1C6 0024BFD8 ?pdibDefault@SURFACE@@2PEAV1@EA
+        474  1C7 0024CB78 ?ppalDefault@@3PEAVPALETTE@@EA
+        475  1C8 0024CB90 ?ppalDefaultSurface8bpp@@3PEAVPALETTE@@EA
+        476  1C9 0024CB80 ?ppalMono@@3PEAVPALETTE@@EA
+        477  1CA 0024BFC0 ?prgnDefault@@3PEAVREGION@@EA
+        478  1CB 00076BF0 ?ptiSetDomainLockBit@@YAXW4DomainLockType@@@Z
+        479  1CC 00076B70 ?ptiUnSetDomainLockBit@@YAXW4DomainLockType@@@Z
+        480  1CD 00245B10 ?pvDispatchTable@@3PAPEAXA
+        481  1CE 0008FD30 ?rpwnd@CHMRefHwndByHandle@@QEBAPEAUtagWND@@XZ
+        482  1CF 00254358 ?s_atom@CHwndTargetProp@@2GA
+        483  1D0 0024C7C0 ?s_pLookaside@ThreadLockedPerfRegion@InputTraceLogging@@0PEAXEA
+        484  1D1 0024CB68 ?s_pSCANLookAsideList@RGNMEMOBJ@@2PEAXEA
+        485  1D2 0024C7B8 ?s_userCritLoggingEnabled@Perf@InputTraceLogging@@0_NA
+        486  1D3 0008D270 ?sizeSave@RGNOBJ@@QEAAKXZ
+        487  1D4 0024A5D0 ?tSize@SURFACE@@0_KA
+        488  1D5 00006EF0 ?ulDispatchGFPEFunction@XEPALOBJ@@QEAAKW4GFPE_FUNCTION_ID@@K@Z
+        489  1D6 000067C0 ?ulGetNearestFromPalentryNoExactMatchFirst@XEPALOBJ@@QEAAKUtagPALETTEENTRY@@@Z
+        490  1D7 00071760 ?ulIndexToRGB@XEPALOBJ@@QEAAKK@Z
+        491  1D8 00254448 ?ulTableIndex@@3KA
+        492  1D9 0024BFB8 ?ulUniqueREGION@REGION@@0KA
+        493  1DA 002473C0 ?ulXlatePalUnique@@3KA
+        494  1DB 00099160 ?unlock@CMultiPerObjectLockExclusivePpiPtiQ@@QEAAXXZ
+        495  1DC 000BD3D0 ?vClearIncludeSprites@SURFACE@@SAXXZ
+        496  1DD 000505D0 ?vCloseAllFigures@EPATHOBJ@@QEAAXXZ
+        497  1DE 00053520 ?vComputeAccelFlags@EXFORMOBJ@@QEAAXK@Z
+        498  1DF 0008F900 ?vComputeCallTables@XEPALOBJ@@QEAAXXZ
+        499  1E0 000386C0 ?vCopy@RGNOBJ@@QEAAXAEAV1@@Z
+        500  1E1 0004FF20 ?vCreate@RGNMEMOBJ@@QEAAXAEAVEPATHOBJ@@KPEAU_RECTL@@@Z
+        501  1E2 000375F0 ?vDelete@EBRUSHOBJ@@QEAAXXZ
+        502  1E3 00038900 ?vDeleteREGION@REGION@@QEAAXXZ
+        503  1E4 00038760 ?vDeleteRGNOBJ@RGNOBJ@@QEAAXXZ
+        504  1E5 00078B50 ?vDestroyScanLookAsideList@RGNMEMOBJ@@SAXXZ
+        505  1E6 0000C540 ?vDisableSurface@PDEVOBJ@@QEAAXW4_CLEANUPTYPE@@E@Z
+        506  1E7 0008D2B0 ?vDownload@RGNOBJ@@QEAAXPEAX@Z
+        507  1E8 00091320 ?vFreeBlocks@EPATHOBJ@@QEAAXXZ
+        509  1E9 00007050 ?vFreeOrCacheRBrush@RBRUSH@@QEAAXW4RBTYPE@@@Z
+        510  1EA 00140860 ?vGetCoefficient@EXFORMOBJ@@QEAAXPEAU_FD_XFORM@@@Z
+        511  1EB 00053AB0 ?vGetCoefficient@EXFORMOBJ@@QEAAXPEAU_XFORML@@@Z
+        512  1EC 00052420 ?vGetCoefficient@EXFORMOBJ@@QEAAXPEAUtagFLOATOBJ_XFORM@@@Z
+        513  1ED 00033440 ?vGetSubRect@RGNOBJ@@QEBAXPEAU_RECTL@@@Z
+        514  1EE 001445D0 ?vInit@BEZIER64@@QEAAXPEAU_POINTFIX@@PEAU_RECTFX@@PEB_J@Z
+        515  1EF 00052B70 ?vInit@EXFORMOBJ@@QEAAXAEAVXDCOBJ@@KH@Z
+        516  1F0 00006A10 ?vInitBrush@EBRUSHOBJ@@QEAAXPEAVDC@@PEAVBRUSH@@VXEPALOBJ@@2PEAVSURFACE@@H@Z
+        517  1F1 0009B0A0 ?vLock@NEEDGRELOCK@@QEAAXAEAVPDEVOBJ@@@Z
+        518  1F2 0004D4F0 ?vLock@NEEDGRELOCK@@QEAAXAEAVXDCOBJ@@@Z
+        519  1F3 000B3170 ?vLockGammaRamp@DEVLOCKOBJ@@QEAAXAEAVXDCOBJ@@@Z
+        520  1F4 0005E580 ?vLockNoDrawing@DEVLOCKOBJ@@QEAAXAEAVXDCOBJ@@@Z
+        521  1F5 0008D6C0 ?vLockSingleThread@W32PIDLOCK@@QEAAXXZ
+        522  1F6 0008DB00 ?vMakeNoXlate@XEPALOBJ@@QEAAXXZ
+        523  1F7 000C65A0 ?vOffset@EPATHOBJ@@QEAAXAEAVEPOINTL@@@Z
+        524  1F8 000526D0 ?vOrder@EXFORMOBJ@@QEBAXAEAU_RECTL@@@Z
+        525  1F9 00038100 ?vPopThreadGuardedObject@RGNMEMOBJ@@QEAAXXZ
+        526  1FA 00037FD0 ?vPushThreadGuardedObject@RGNMEMOBJ@@QEAAXXZ
+        527  1FB 000300D0 ?vReferencePdev@PDEVOBJ@@QEAAXXZ
+        528  1FC 0008F6F0 ?vRelease@UMPDOBJ@@SAXPEAV1@H@Z
+        529  1FD 0003B570 ?vReleaseRao@DC@@QEAAXXZ
+        530  1FE 0009A360 ?vRemoveTranslation@EXFORMOBJ@@QEAAXXZ
+        531  1FF 001420F0 ?vScale@RGNOBJ@@QEAAXVPOINTFL@@@Z
+        532  200 0003B150 ?vSet@RGNOBJ@@QEAAXPEAU_RECTL@@@Z
+        533  201 00038B70 ?vSet@RGNOBJ@@QEAAXXZ
+        534  202 000BD400 ?vSetIncludeSprites@SURFACE@@SAXXZ
+        535  203 0008D590 ?vSetRendering@DC@@QEAAXXZ
+        536  204 000344A0 ?vSetup@XCLIPOBJ@@QEAAXPEAVREGION@@AEAVERECTL@@H@Z
+        537  205 000382F0 ?vSwap@RGNOBJ@@QEAAXPEAV1@@Z
+        538  206 00010FF0 ?vSync@PDEVOBJ@@QEAAXPEAU_SURFOBJ@@PEAU_RECTL@@K@Z
+        539  207 000504F0 ?vTighten@RGNOBJ@@QEAAXXZ
+        540  208 00091290 ?vUnlock@EPATHOBJ@@QEAAXXZ
+        541  209 000924D0 ?vUnlock@NEEDGRELOCK@@QEAAXXZ
+        542  20A 0008DEC0 ?vUnlockSingleThread@W32PIDLOCK@@QEAAXXZ
+        543  20B 0008DEF0 ?vUnrefPalette@XEPALOBJ@@QEAAXXZ
+        544  20C 00037780 ?vUnreferencePdev@PDEVOBJ@@QEAAXW4_CLEANUPTYPE@@@Z
+        545  20D 000946F0 ?vUpdateScaledRegions@DC@@QEAAXXZ
+        546  20E 00052D70 ?vUpdateWtoDXform@DC@@QEAAXXZ
+        547  20F 0003B6D0 ?vUpdate_VisRect@DC@@QEAAXPEAVREGION@@@Z
+        548  210 00250230 ?xlateTable@@3PAU_XLATETABLE@@A
+        549  211 0024C240 ?xloIdent@@3VXLATE256@@A
+        550  212 00183860 ?xxxAccessTimeOutTimer@@YAXPEAUtagWND@@I_K_J@Z
+        551  213 00183A90 ?xxxMKButtonClick@@YAHG@Z
+        552  214 00183AD0 ?xxxMKButtonDoubleClick@@YAHG@Z
+        553  215 00183AF0 ?xxxMKButtonSetState@@YAHG@Z
+        554  216 00183B80 ?xxxMKMouseMove@@YAHG@Z
+        555  217 00184BA0 ?xxxMKToggleMouseKeys@@YAHG@Z
+        556  218 00184CA0 ?xxxStickyKeys@@YAHPEAUtagKE@@KH@Z
+        557  219 00185160 ?xxxTurnOffStickyKeys@@YAXXZ
+        558  21A 001851C0 ?xxxTwoKeysDown@@YAHH@Z
+        559  21B 00185240 ?xxxUnlatchStickyKeys@@YAXXZ
+        560  21C 001852B0 ?xxxUpdateModifierState@@YAXHH@Z
+        561  21D 000AC440 AccessCheckObject
+        562  21E 0007D130 AccessPTPEnabledStatus
+        563  21F 000BDC90 AcquireCriticalSectionAndCheckState
+        564  220 000BDC30 AcquireCriticalSectionCheckStateAndUpdateGraphicsDeviceList
+        565  221 001AA3C0 AddEdgePalmRejectionZone
+        566  222 0004AF50 AllocAce
+        567  223 00054010 AllocFreeTmpBuffer
+        568  224 000258B0 AllocQueue
+        569  225 00075A90 AllocThreadBufferWithTag
+        570  226 000485C0 AllocateObject
+        571  227 0004FD40 AllocateWindowManagerSid
+        572  228 000C1000 ApplyGatheredKeyboardDeviceCount
+        573  229 0006C170 ApplySecurityAttributesToWinsta
+        574  22A 00093170 AssociateKernelIocpWcp
+        575  22B 0007CA10 BroadcastSettingsUpdateToAllContainers
+        576  22C 000BE2F0 CSTPush
+        577  22D 00123800 CSTRemove
+        578  22E 000C8A90 CallMonitor
+        579  22F 001AAAE0 CancelCapturedMipOverride
+         54  230 000756A0 CaptureDEVMODEW
+         55  231 00075780 CaptureDriverInfo2W
+        580  232 0004F970 CaptureLogicalCursorPosToQMouseMove
+        581  233 00025F30 ChangeAcquireResourceType
+        582  234 0004E270 CheckAccess
+        583  235 001F77B0 CheckAndProcessSurfaceComplete
+        584  236 0002EE70 CheckDesktopPolicy
+        585  237 001238C0 CheckDesktopPolicyChange
+        586  238 000A7270 CheckDwmProcessSecurityIdentifier
+        587  239 001AAB10 CheckIntegrityAccessToCapture
+        588  23A 001AAB70 ChildProcessRootSynthesizedMouseInput
+        589  23B 00099160 CitDesktopSwitch
+        590  23C 000AC0D0 CitGetMonitorInfo
+        591  23D 00017CE0 CitLastInputUpdate
+        592  23E 001FA980 CitModerncoreProcessForegroundChange
+        593  23F 001FAA80 CitModerncoreShutdown
+        594  240 0001E780 CitProcessForegroundChange
+        595  241 000BE330 CitSessionConnectChange
+        596  242 00062560 CitSetInfo
+        597  243 000886B0 CitUserChange
+        598  244 00099190 CleanupInputDelegation
+        599  245 00078B10 CleanupLogonProcess
+        600  246 00018620 CleanupPowerRequestList
+        601  247 000BDF80 CleanupRemoteHandles
+        602  248 000AE380 CleanupSensorExplicitly
+        603  249 000A1130 ClearAppStarting
+        604  24A 000A07C0 ClearKeyboardToggleStates
+        605  24B 000C13C0 ClearLogicalCursorPos
+        606  24C 000617E0 CoalesceInputSourceMouseMoves
+        607  24D 0006C7E0 CommitReadOnlyMemory
+        608  24E 00032B00 CreateCacheDC
+        609  24F 000B7300 CreateDesktopObObject
+        610  250 00049E10 CreateEmptyRgn
+        611  251 0004D6D0 CreateEmptyRgnPublic
+        612  252 000A65D0 CreateGlobalAtomTable
+        613  253 000A3520 CreateKernelEvent
+        614  254 000BD170 CreateKernelIocp
+        615  255 000931C0 CreateKernelIocpWcp
+        616  256 000844D0 CreateKernelSemaphore
+        617  257 0011D820 CreateKernelTimer
+        618  258 0007CAF0 CreateProfileUserName
+         65  259 000929A0 CreateRegion
+         66  25A 00142800 CreateRegionFromRect
+        619  25B 0004FC00 CreateSecurityDescriptor
+        620  25C 000B0D20 CreateSharedSystemVisualObject
+        621  25D 0024B238 CsrApiPort
+        622  25E 00082210 DCompHitTest
+        623  25F 001CDB50 DCompositionCreateSynchronizationObject
+        624  260 00091C60 DCompositionNotifyCompositionTokenPresent
+        625  261 0009C6D0 DCompositionNotifyPresent
+        626  262 0005ED20 DCompositionProcessCallout
+        627  263 000721F0 DCompositionSessionInitialize
+        628  264 00091BA0 DCompositionShouldDeferToken
+        629  265 00072680 DCompositionThreadCallout
+        630  266 0003D0C0 DEC_SHARE_REF_CNT
+         68  267 0003BF50 DEC_SHARE_REF_CNT_LAZY0
+         69  268 000401B0 DEC_SHARE_REF_CNT_LAZY_DEL_LOGFONT
+        631  269 00001160 DeferSysPeekMsg
+        632  26A 00034340 DeleteMaybeSpecialRgn
+        633  26B 000210B0 DeleteProperties
+        634  26C 00093820 DereferenceDwmApiPort
+        635  26D 00093820 DereferenceDwmProcess
+        636  26E 0020D2F8 DesktopMapping
+        637  26F 00031EE0 DestroyCacheDC
+        638  270 00017360 DestroyMonitorDCs
+        639  271 00029110 DeviceTypeToRimInputType
+        640  272 000B6180 DisableDelegation
+         80  273 0011BE10 DispBrokerAsyncRefreshOrientation
+         81  274 0011BE50 DispBrokerAsyncRotationLockToggleKey
+         82  275 0007D5A0 DispBrokerAsyncSessionSwitched
+        641  276 000C48F0 DllUnload
+        642  277 001AAD30 DoAccel
+        643  278 0000F8E0 DrvBuildDevmodeList
+        644  279 0007B130 DrvCleanupOneGraphicsDevice
+        645  27A 000BF1E0 DrvCloseGraphicsDevices
+        646  27B 000C7F90 DrvCreatePhysicalMonitorObjects
+        647  27C 00015260 DrvDisableMDEV
+        648  27D 00080630 DrvDisplayConfigGetDeviceInfo
+        649  27E 00149C30 DrvDisplayConfigGetScaleFactorOverrides
+        650  27F 00149D60 DrvDisplayConfigSetDeviceInfo
+        651  280 0014A240 DrvDisplayConfigSetScaleFactorOverride
+        652  281 000BF760 DrvDxgkDisplayOnOff
+        653  282 0014A4E0 DrvDxgkGetMonitorDeviceObject
+        654  283 000CB290 DrvDxgkLogCodePointPacket
+        655  284 0014A500 DrvDxgkPollDisplayChildren
+        656  285 0014A530 DrvDxgkUpgradeLegacyDpiSettings
+        657  286 000C1250 DrvDxgkWriteDiagEntry
+        658  287 0004E360 DrvEnumDisplayDevices
+        659  288 0005F790 DrvEnumDisplaySettings
+        660  289 000CB670 DrvEscapeRemoteDrivers
+        661  28A 0005EAB0 DrvGetDeviceFromName
+        662  28B 00080650 DrvGetDisplayConfigBufferSizes
+        663  28C 00014B10 DrvGetDisplayDriverNames
+        664  28D 0005E1C0 DrvGetHDEV
+        665  28E 0005F600 DrvGetHdevName
+        666  28F 000C1450 DrvGetLogPixels
+        667  290 0014AB50 DrvGetMonitorOrientation
+        668  291 0009D9E0 DrvGetSuggestedPhysicalMonitorArraySize
+        669  292 00030D30 DrvGetWDDMAdapterInfo
+        670  293 000BD830 DrvInitializeDxgkrnlDpiCache
+        671  294 000BF820 DrvIsNotUsingGraphicsDevice
+        672  295 000C0A80 DrvIsSourceInHardwareClone
+        673  296 0006CE10 DrvIsUniformSpaceMapping
+        674  297 0001AB40 DrvLogDiagDisplayChange
+        675  298 0007AFA0 DrvNotifySessionStateChange
+        676  299 0006C990 DrvPixelSpaceToUniformSpacePoint
+        677  29A 00080740 DrvQueryDisplayConfig
+        678  29B 0001D3A0 DrvQueryMDEVPowerState
+        679  29C 000CD050 DrvSessionHasAnyGraphicsDevice
+        680  29D 0001BB30 DrvSetDisplayConfig
+        681  29E 000943A0 DrvSetGraphicsDevices
+        682  29F 000CCED0 DrvSetMDEVPowerState
+        683  2A0 000CACD0 DrvSetMonitorPowerState
+        684  2A1 0006CD80 DrvUniformSpaceToPixelSpacePoint
+        685  2A2 00056AE0 DrvUpdateGraphicsDeviceList
+        686  2A3 0014CC50 DwmSyncFlushAndWaitForBatch
+        687  2A4 00030300 DxLddmFindProcessEntry
+        688  2A5 0014D990 DxgkEngNotifyDisplayChange
+        689  2A6 000C1320 EnableMouseAcceleration
+        690  2A7 00121D70 EnablePTPDevices
+        691  2A8 0000D320 EnforceColorDependentSettings
+        692  2A9 0004E300 Enforced
+        693  2AA 00093780 EngAcquireFastMutex
+        694  2AB 0005EA10 EngAcquireSemaphore
+        695  2AC 000B0C40 EngAcquireSemaphoreNoWait
+        696  2AD 0014DD40 EngAcquireSemaphoreShared
+        697  2AE 000C7DB0 EngAcquireSemaphoreSharedNoWait
+        698  2AF 00077530 EngAllocMem
+        699  2B0 0014DD80 EngAllocSectionMem
+        700  2B1 000B8CA0 EngAllocUserMem
+        701  2B2 0009C890 EngAssociateSurface
+        702  2B3 0014DE40 EngBugCheckEx
+        703  2B4 0014E6F0 EngCombineRgn
+        704  2B5 0014E790 EngCopyRgn
+        705  2B6 0009C9E0 EngCreateBitmap
+        706  2B7 0014EF00 EngCreateClip
+        707  2B8 0014E6B0 EngCreateDeviceBitmap
+        708  2B9 0009C940 EngCreateDeviceSurface
+        709  2BA 0014DE70 EngCreateFastMutex
+        710  2BB 00077430 EngCreatePalette
+        711  2BC 0014E810 EngCreateRectRgn
+        712  2BD 0009C9A0 EngCreateRedirectionDeviceBitmap
+        713  2BE 00060560 EngCreateSemaphore
+        714  2BF 0014DE90 EngDebugBreak
+        715  2C0 0014DEA0 EngDebugPrint
+        716  2C1 0014EFC0 EngDeleteClip
+        717  2C2 0014F200 EngDeleteDriverObj
+        718  2C3 0014DF40 EngDeleteFastMutex
+        719  2C4 0007A140 EngDeletePalette
+        720  2C5 0014E890 EngDeleteRgn
+        721  2C6 0014DF60 EngDeleteSafeSemaphore
+        722  2C7 00060780 EngDeleteSemaphore
+        723  2C8 00007D70 EngDeleteSurface
+        724  2C9 0014DFA0 EngDeviceIoControl
+        725  2CA 0014E900 EngEqualRgn
+        726  2CB 0014E060 EngExpandStackAndCallout
+        727  2CC 0007A020 EngFreeMem
+        728  2CD 0014E090 EngFreeSectionMem
+        729  2CE 0005FF10 EngFreeUserMem
+        730  2CF 0014E0F0 EngGetLastError
+        731  2D0 000C48F0 EngGetProcessHandle
+        732  2D1 0014E9B0 EngGetRgnBox
+        733  2D2 0014EA10 EngGetRgnData
+        734  2D3 0014E120 EngInitializeSafeSemaphore
+        735  2D4 0014EA80 EngIntersectRgn
+        736  2D5 000BE440 EngIsSemaphoreOwned
+        737  2D6 0009B6D0 EngIsSemaphoreOwnedByCurrentThread
+        738  2D7 000B45F0 EngIsSemaphoreSharedByCurrentThread
+        739  2D8 0014F320 EngLockDriverObj
+        740  2D9 00042470 EngLockSurface
+        741  2DA 0014E170 EngMapSection
+        742  2DB 000A0A20 EngModifySurface
+        743  2DC 0005DB00 EngMulDiv
+        744  2DD 0014E290 EngMultiByteToUnicodeN
+        745  2DE 0014EB20 EngOffsetRgn
+        746  2DF 0014E2C0 EngProbeForRead
+        747  2E0 0014E310 EngQueryPerformanceCounter
+        748  2E1 0014E340 EngQueryPerformanceFrequency
+        749  2E2 0014E360 EngQuerySystemAttribute
+        750  2E3 000B6920 EngQueryW32kCddInterface
+        751  2E4 0014EB90 EngRectInRgn
+        752  2E5 000937A0 EngReleaseFastMutex
+        753  2E6 0008D340 EngReleaseSemaphore
+        754  2E7 0014E470 EngSecureMem
+        755  2E8 000AAEE0 EngSetLastError
+        756  2E9 0014EBF0 EngSetRectRgn
+        757  2EA 0014EC80 EngSubtractRgn
+        758  2EB 0014E4A0 EngUnicodeToMultiByteN
+        759  2EC 0014ED20 EngUnionRgn
+        760  2ED 0014F350 EngUnlockDriverObj
+        761  2EE 000404B0 EngUnlockSurface
+        762  2EF 0007E920 EngUpdateDeviceSurface
+        763  2F0 0014EDC0 EngXorRgn
+        764  2F1 0003F8E0 EnterCrit
+        765  2F2 0008F6C0 EnterHandleFlagsCrit
+        766  2F3 00019F90 EnterPowerCrit
+        767  2F4 000C0E80 EnterRenderBlock
+        768  2F5 0005A4E0 EnterSharedCrit
+        769  2F6 000C1130 EnterSharedRenderCrit
+        770  2F7 0014F3C0 EtwBindLogicalSurfaceRHEvent
+        771  2F8 000C91E0 EtwBindSwapChain
+        772  2F9 000A6670 EtwDevLockEndTightUpdate
+        773  2FA 00092AE0 EtwDevLockEndUpdate
+        774  2FB 00092930 EtwDirtyRectUpdate
+        775  2FC 000B5390 EtwDwmSpriteCreateEvent
+        776  2FD 000B6140 EtwDwmSpriteDestroyEvent
+        777  2FE 000B3130 EtwDwmSpriteLogicalSurfBindEvent
+        778  2FF 000B4420 EtwDwmSpriteLogicalSurfUnBindEvent
+        779  300 0014F3F0 EtwFontLoadAttemptEvent
+        780  301 000B2F80 EtwGdiSysMemToken
+        781  302 000B3150 EtwLogicalSurfCreateEvent
+        782  303 000B4570 EtwLogicalSurfDestroyEvent
+        783  304 000B66A0 EtwLogicalSurfEnableDirtyNotificationEvent
+        784  305 000B6060 EtwLogicalSurfPhysSurfBindEvent
+        785  306 000B66C0 EtwLogicalSurfPhysSurfUnbindEvent
+        786  307 0014F420 EtwLogicalSurfRemovedTranslationFromDirtyEvent
+        787  308 0014F460 EtwLogicalSurfRemovedTranslationFromMoveEvent
+        788  309 0009D970 EtwPhysicalSurfCreateEvent
+        789  30A 0014F4A0 EtwSyscallFilterMessage
+        790  30B 00126EC0 EtwTraceArmDitMouseFlush
+        791  30C 00097190 EtwTraceAuditApiRegisterRawInputDevices
+        792  30D 000975D0 EtwTraceAuditApiSetWinEventHook
+        793  30E 00126EF0 EtwTraceAuditApiSetWindowsHookEx
+        794  30F 0008CE20 EtwTraceBeginAppMessageProcessing
+        795  310 00076A90 EtwTraceBeginCallback
+        796  311 001270A0 EtwTraceBeginDelegateInputCallback
+        797  312 001271D0 EtwTraceBeginDelegatedInputWorker
+        798  313 0009DC40 EtwTraceBeginDispatchMessage
+        799  314 000B5CA0 EtwTraceBeginInjectMouse
+        800  315 001272A0 EtwTraceBeginPointerFrameBuildPartial
+        801  316 001272D0 EtwTraceBeginPointerFrameCoalesce
+        802  317 00127330 EtwTraceBeginPointerFrameCommit
+        803  318 00127370 EtwTraceBeginPointerFrameCreation
+        804  319 001273B0 EtwTraceBeginPointerFrameMessageGeneration
+        805  31A 001273F0 EtwTraceBeginPointerMessageGeneration
+        806  31B 00127420 EtwTraceBeginPointerMessageRetrieve
+        807  31C 00127480 EtwTraceBeginPointerSetTargetWindows
+        808  31D 0008FCD0 EtwTraceBeginRetrieveSendMessage
+        809  31E 0008CFA0 EtwTraceBeginSendMessage
+        810  31F 000B58C0 EtwTraceBeginTranslateMessage
+        811  320 000C06A0 EtwTraceChangeDisplayModeBroadcast
+        812  321 000C0AB0 EtwTraceCompleteInputDeviceRead
+        813  322 000B0C20 EtwTraceCompositionSurfaceObjectUpdateEvent
+        814  323 001274D0 EtwTraceContactVisualizationDown
+        815  324 00127500 EtwTraceContactVisualizationInfo
+        816  325 00127530 EtwTraceContactVisualizationUp
+        817  326 00127560 EtwTraceConvertTimeOutToBlocking
+        818  327 001275A0 EtwTraceConvertibleState
+        819  328 001275D0 EtwTraceCopyPointerInputFrameStart
+        820  329 00127600 EtwTraceCopyPointerInputFrameStop
+        821  32A 00127630 EtwTraceCursorSize
+        822  32B 00127670 EtwTraceDCompBeginFrameEvent
+        823  32C 00064060 EtwTraceDCompCommitBatchEvent
+        824  32D 00074640 EtwTraceDCompDeferBatchEvent
+        825  32E 00078110 EtwTraceDCompGetBatchEvent
+        826  32F 00002E70 EtwTraceDITResolveDCompInputHandleToHwnd
+        827  330 001276A0 EtwTraceDITSpeedHitTestFailedRevalidation
+        828  331 000A7F40 EtwTraceDWMGetDirtyRegion
+        829  332 000C0EE0 EtwTraceDisplayChange
+        830  333 000C1480 EtwTraceDitDisEngaged
+        831  334 000C14C0 EtwTraceDitEngaged
+        832  335 001276D0 EtwTraceDitMmcssWorkStart
+        833  336 00127700 EtwTraceDitMmcssWorkStop
+        834  337 000C1460 EtwTraceDitShutdown
+        835  338 00127730 EtwTraceDitTerminated
+        836  339 000C1500 EtwTraceDitWaitForRitDisEngagement
+        837  33A 00127760 EtwTraceDockState
+        838  33B 00127790 EtwTraceDwmManipulationFrameRouted
+        839  33C 001277C0 EtwTraceDwmManipulationFrameStart
+        840  33D 000B97D0 EtwTraceDwmSyncFlushForceRenderAndWaitForBatchBegin
+        841  33E 000B97B0 EtwTraceDwmSyncFlushForceRenderAndWaitForBatchEnd
+        842  33F 00094000 EtwTraceDwmVisRgnDirty
+        843  340 00096780 EtwTraceDwmVisRgnUpdate
+        844  341 001277F0 EtwTraceEdgyDetectionStart
+        845  342 00127820 EtwTraceEdgyDetectionStop
+        846  343 0008D390 EtwTraceEndAppMessageProcessing
+        847  344 00076AF0 EtwTraceEndCallback
+        848  345 00127850 EtwTraceEndDelegateInputCallback
+        849  346 00127980 EtwTraceEndDelegatedInputWorker
+        850  347 0009DC60 EtwTraceEndDispatchMessage
+        851  348 000B5C60 EtwTraceEndInjectMouse
+        852  349 00127A20 EtwTraceEndPointerFrameBuildPartial
+        853  34A 00127A50 EtwTraceEndPointerFrameCoalesce
+        854  34B 00127AB0 EtwTraceEndPointerFrameCommit
+        855  34C 00127AF0 EtwTraceEndPointerFrameCreation
+        856  34D 00127B30 EtwTraceEndPointerFrameMessageGeneration
+        857  34E 00127B70 EtwTraceEndPointerMessageGeneration
+        858  34F 00127BA0 EtwTraceEndPointerMessageRetrieve
+        859  350 00127C00 EtwTraceEndPointerSetTargetWindows
+        860  351 0008FD00 EtwTraceEndRetrieveSendMessage
+        861  352 0008FCA0 EtwTraceEndSendMessage
+        862  353 000B58A0 EtwTraceEndTranslateMessage
+        863  354 00127C50 EtwTraceFlipManagerStartCompleteToken
+        864  355 00127C80 EtwTraceFlipManagerStartTokenReleaseToFrame
+        865  356 00127CB0 EtwTraceFlipManagerStopCompleteToken
+        866  357 00127CE0 EtwTraceFlipManagerStopTokenReleaseToFrame
+        867  358 000B3F60 EtwTraceFocusChange
+        868  359 000B3CD0 EtwTraceFocusedProcessChange
+        869  35A 00127D10 EtwTraceForegroundWindowFullScreenStart
+        870  35B 00127D40 EtwTraceForegroundWindowFullScreenStop
+        871  35C 0008BCE0 EtwTraceGreLockAcquireSemaphoreExclusive
+        872  35D 0008CBD0 EtwTraceGreLockAcquireSemaphoreShared
+        873  35E 000CD580 EtwTraceGreLockAcquireSemaphoreSharedStarveExclusive
+        874  35F 00076B50 EtwTraceGreLockReleaseSemaphore
+        875  360 000BCD60 EtwTraceGreMovePointerBegin
+        876  361 000BCD40 EtwTraceGreMovePointerEnd
+        877  362 000BF980 EtwTraceIdleActionExpiration
+        878  363 0009C7E0 EtwTraceIdleStatus
+        879  364 000C2B40 EtwTraceInputProcessDelay
+        880  365 000A08B0 EtwTraceInputQueueLocked
+        881  366 000B70D0 EtwTraceInputQueueLockedPeekRecursion
+        882  367 000B9870 EtwTraceInputQueueNoRemoveLocker
+        883  368 000BFA80 EtwTraceInputQueueUnLocked
+        884  369 00090020 EtwTraceInternalSetTimer
+        885  36A 00092270 EtwTraceKillTimer
+        886  36B 00127D70 EtwTraceLatencyModeSwitchStart
+        887  36C 00127DA0 EtwTraceLatencyModeSwitchStop
+        888  36D 00127DD0 EtwTraceLegacyTouchPadDetected
+        889  36E 000C0FE0 EtwTraceLegacyTouchPadDetectionStart
+        890  36F 000C0FC0 EtwTraceLegacyTouchPadDetectionStop
+        891  370 0008CD60 EtwTraceLifetimeAccum
+        892  371 000C32D0 EtwTraceMessageCheckDelay
+        893  372 00127E00 EtwTraceMouseInputApc
+        894  373 000C06E0 EtwTraceMouseInputCoalesced
+        895  374 0014F4D0 EtwTraceMoveRegion
+        896  375 000B58E0 EtwTraceOnInputXformUpdate
+        897  376 00127E30 EtwTracePTPElasticDragModeStart
+        898  377 00127E60 EtwTracePTPElasticDragModeStop
+        899  378 00127E90 EtwTracePTPReadThresholdsStart
+        900  379 00127EC0 EtwTracePTPReadThresholdsStop
+        901  37A 00127EF0 EtwTracePointerCoalesce
+        902  37B 00127F50 EtwTracePointerDeviceArrivalStart
+        903  37C 00127F80 EtwTracePointerDeviceArrivalStop
+        904  37D 00127FB0 EtwTracePointerDeviceContactIds
+        905  37E 00127FF0 EtwTracePointerDeviceContactTimerStart
+        906  37F 00128020 EtwTracePointerDeviceContactTimerStop
+        907  380 00128050 EtwTracePointerDeviceInRangeMessageStart
+        908  381 00128080 EtwTracePointerDeviceInRangeMessageStop
+        909  382 001280B0 EtwTracePointerDeviceOutOfRangeMessageStart
+        910  383 001280E0 EtwTracePointerDeviceOutOfRangeMessageStop
+        911  384 00128110 EtwTracePointerDeviceReadStart
+        912  385 00128140 EtwTracePointerDeviceReadStop
+        913  386 00128170 EtwTracePointerDeviceTransformationStart
+        914  387 001281A0 EtwTracePointerDeviceTransformationStop
+        915  388 001281D0 EtwTracePointerNoCoalesce
+        916  389 00128230 EtwTracePointerPredictionStart
+        917  38A 00128260 EtwTracePointerPredictionStop
+        918  38B 00128290 EtwTracePostInjectedGestureMessage
+        919  38C 000CD540 EtwTracePowerOnGdiBegin
+        920  38D 000CD3C0 EtwTracePowerOnGdiEnd
+        921  38E 000768B0 EtwTraceProcessWindowInfo
+        922  38F 001282F0 EtwTracePseudoDevCreationStart
+        923  390 00128320 EtwTracePseudoDevCreationStop
+        924  391 0008CA80 EtwTraceQueueMessage
+        925  392 0009B9F0 EtwTraceRetrieveInputMessage
+        926  393 0008D540 EtwTraceRetrievePostMessage
+        927  394 000992F0 EtwTraceRetrievePseudoMessage
+        928  395 0009A6A0 EtwTraceRetrieveQueueEventMessage
+        929  396 000C14E0 EtwTraceRitDisEngaged
+        930  397 000C14A0 EtwTraceRitReEngaged
+        931  398 0014F600 EtwTraceSPIBlockedByFiltering
+        932  399 00091240 EtwTraceSleepInputIdle
+        933  39A 00128380 EtwTraceSmoothRotationStart
+        934  39B 001283B0 EtwTraceSmoothRotationStop
+        935  39C 0006D830 EtwTraceStartInputDeviceRead
+        936  39D 000A15A0 EtwTraceStartProcessQueuedMouseEvents
+        937  39E 000A15F0 EtwTraceStopProcessQueuedMouseEvents
+        938  39F 001283E0 EtwTraceTHQAStart
+        939  3A0 00128410 EtwTraceTHQAStop
+        940  3A1 00128440 EtwTraceTimerDelayStatistics
+        941  3A2 001284A0 EtwTraceTimerNoCoalescing
+        942  3A3 000902B0 EtwTraceTimerProc
+        943  3A4 000AC210 EtwTraceTokenCompositionSurfaceObjectEvent
+        944  3A5 001284F0 EtwTraceTokenIndependentFlipSkipCompleteEvent
+        945  3A6 0009E7B0 EtwTraceTokenStateChangedEvent
+        946  3A7 00128530 EtwTraceTouchHWTimeStamp
+        947  3A8 00128580 EtwTraceTouchInjectionStart
+        948  3A9 001285B0 EtwTraceTouchInjectionStop
+        949  3AA 001285E0 EtwTraceTouchPadAAP
+        950  3AB 00128620 EtwTraceTouchPadConfidenceCleared
+        951  3AC 00128650 EtwTraceTouchPadConfidenceUpped
+        952  3AD 00128680 EtwTraceTouchPadCurtainSize
+        953  3AE 001286B0 EtwTraceTouchPadCurtainState
+        954  3AF 001286E0 EtwTraceTouchPadEnabledStatusChangeStart
+        955  3B0 00128710 EtwTraceTouchPadEnabledStatusChangeStop
+        956  3B1 00128740 EtwTraceTouchPadHIDProcessingStart
+        957  3B2 00128770 EtwTraceTouchPadHIDProcessingStop
+        958  3B3 001287A0 EtwTraceTouchPadHWTimeStamp
+        959  3B4 00128870 EtwTraceTouchPadTypeDiscovered
+        960  3B5 001288A0 EtwTraceTouchPadWMPointerProcessingStart
+        961  3B6 001288D0 EtwTraceTouchPadWMPointerProcessingStop
+        962  3B7 00128900 EtwTraceTouchPadWhiteListDeviceDetected
+        963  3B8 00128930 EtwTraceTouchTargetingOffset
+        964  3B9 00128970 EtwTraceTouchTargetingPointerEvent
+        965  3BA 00128A00 EtwTraceTouchTargetingPointerTargetStart
+        966  3BB 00128A30 EtwTraceTouchTargetingPointerTargetStop
+        967  3BC 00128A60 EtwTraceTouchTargetingSpeedHitTestStart
+        968  3BD 00128A90 EtwTraceTouchTargetingSpeedHitTestStop
+        969  3BE 00128AC0 EtwTraceTouchTargetingWindowHitTestStart
+        970  3BF 00128AF0 EtwTraceTouchTargetingWindowHitTestStop
+        971  3C0 00128B20 EtwTraceTouchpadEndInertiaQueued
+        972  3C1 00128B50 EtwTraceTouchpadGestureDetected
+        973  3C2 00128B80 EtwTraceTouchpadInertiaContact
+        974  3C3 00128BB0 EtwTraceTouchpadStopInertiaQueued
+        975  3C4 00128BE0 EtwTraceTransformAgeDecay
+        976  3C5 0014F630 EtwTraceTrappedAppContainerRender
+        977  3C6 00128C10 EtwTraceUIPIClipboardError
+        978  3C7 00128D00 EtwTraceUIPIEventHookError
+        979  3C8 00128E00 EtwTraceUIPIHookError
+        980  3C9 00026540 EtwTraceUIPIInputError
+        981  3CA 000262D0 EtwTraceUIPIMsgError
+        982  3CB 00026480 EtwTraceUIPISystemError
+        983  3CC 000CF920 EtwTraceUiAuditReadClipboard
+        984  3CD 000BC5C0 EtwTraceUiAuditWriteClipboard
+        985  3CE 00128F00 EtwTraceUiLimitWriteClipboard
+        986  3CF 00017B50 EtwTraceUserIsActive
+        987  3D0 000AB900 EtwTraceWaitCursor
+        988  3D1 000A2860 EtwTraceWakeDIT
+        989  3D2 0008D3C0 EtwTraceWakeInputIdle
+        990  3D3 000614F0 EtwTraceWakePump
+        991  3D4 000BAF10 EtwTraceWakeRIT
+        992  3D5 000BD360 EtwTraceWindowRenderingOldToNewRedirectionBitmap
+        993  3D6 000CACB0 EtwTraceWinlogonSleepEndEvent
+        994  3D7 000CA410 EtwTraceWinlogonSleepStartEvent
+        995  3D8 000CD520 EtwTracexxxUserResetDisplayDeviceBegin
+        996  3D9 000CD500 EtwTracexxxUserResetDisplayDeviceEnd
+        997  3DA 0014F7F0 EtwTranslationUpdate
+        998  3DB 0014F830 EtwTranslationUpdateOffset
+        999  3DC 0014F870 EtwTranslationUpdateOffsetDWM
+       1000  3DD 00099BB0 EtwUpdateEvent
+       1001  3DE 0014F8B0 EtwWindowRendering
+       1002  3DF 001AAD60 ExecuteMarshaledInterceptRequest
+       1003  3E0 002543FC FP_0_0
+       1004  3E1 0024A61C FP_0_5
+       1005  3E2 0024A600 FP_1000_0
+       1006  3E3 0024A60C FP_180_0
+       1007  3E4 0024A5F0 FP_1DIV90
+       1008  3E5 0024A618 FP_1_0
+       1009  3E6 0024A608 FP_270_0
+       1010  3E7 0024A614 FP_2_0
+       1011  3E8 0024A5FC FP_3600_0
+       1012  3E9 0024A604 FP_360_0
+       1013  3EA 0024A610 FP_3_0
+       1014  3EB 0024A5F4 FP_4DIV3
+       1015  3EC 0024A420 FP_90_0
+       1016  3ED 0024A5E8 FP_ARCTAN_TABLE_SIZE
+       1017  3EE 0024A5EC FP_EPSILON
+       1018  3EF 0024A5F8 FP_M3600_0
+       1019  3F0 0024A5E4 FP_PI
+       1020  3F1 0024A41C FP_SINE_FACTOR
+       1021  3F2 000BD4F0 FastGetProfileDword
+       1022  3F3 000316E0 FastGetProfileDwordEx
+       1023  3F4 000303D0 FastGetProfileIntFromID
+       1024  3F5 00031560 FastGetProfileIntW
+       1025  3F6 000B6200 FastGetProfileIntsW
+       1026  3F7 00123A50 FastGetProfileKeysW
+       1027  3F8 00030530 FastGetProfileStringFromIDW
+       1028  3F9 00032E40 FastGetProfileStringW
+       1029  3FA 000AB640 FastGetProfileValue
+       1030  3FB 00123C80 FastUpdateWinIni
+       1031  3FC 000BE460 FastWriteProfileStringW
+       1032  3FD 00123CF0 FastWriteProfileValue
+       1033  3FE 000B6010 FixupGlobalCursor
+       1034  3FF 000BFCF0 ForceCapture
+       1035  400 000BBAC0 ForceResetMouseButtonsDownState
+       1036  401 000882E0 ForceUpdatePointerDeviceSystemMetrics
+       1037  402 00038830 FreeObject
+       1038  403 000BBA30 FreeProfileUserName
+       1039  404 000C12F0 FreeScancodeMap
+       1040  405 00076C70 FreeThreadBufferWithTag
+       1041  406 00053F60 FreeTmpBuffer
+       1042  407 0009FA10 GdiPreUserProcessCallout
+       1043  408 0000D8C0 GdiProcessCallout
+       1044  409 0000C990 GdiThreadCallout
+       1045  40A 000CD450 GdiThreadCalloutCleanup
+       1046  40B 0000E160 GdiUnmapGDIW32PIDLockedBitmaps
+       1047  40C 0004F450 GenerateMouseMove
+       1048  40D 000BA710 Get96DpiMetrics
+       1049  40E 00099170 Get96DpiServerInfo
+       1050  40F 001AADB0 GetAdjustedPointerLocations
+       1051  410 001AAE60 GetAdjustedPointerPixelLocation
+       1052  411 000A2C70 GetCoalesceableMouseMessage
+       1053  412 001ACBE0 GetCurrentKbdTables
+       1054  413 0007D2C0 GetDWORDSettingValues
+       1055  414 0007D2E0 GetDWORDSettingValuesEx
+       1056  415 001AAEC0 GetDelegationFlags
+       1057  416 0008FAF0 GetDispInfo
+       1058  417 0012C9B0 GetForegroundWindow
+       1059  418 0002D740 GetKeyEventInputSource
+       1060  419 0002C970 GetKeyboardInputRoutingPolicy
+       1061  41A 001ADC60 GetModificationNumber
+       1062  41B 00070180 GetModifierBits
+       1063  41C 0014B560 GetMonitorPhysicalDimensions
+       1064  41D 0009B7A0 GetMouseKeyFlags
+       1065  41E 001AAED0 GetMouseSensitivity
+       1066  41F 001AAF20 GetNextFrameId
+       1067  420 00123EA0 GetPointerFlagsFromMouse
+       1068  421 001ADA30 GetPointerInputSource
+       1069  422 00032A40 GetProcessLuid
+       1070  423 000CD2B0 GetProcessSyscallDisablePolicy
+       1071  424 00098550 GetRegEDID
+       1072  425 001AAFF0 GetSavedCursorPosition
+       1073  426 000A65C0 GetSessionDpiMetrics
+       1074  427 000A8200 GetSessionDpiServerInfo
+       1075  428 000C1560 GetSynthesizedContainerMouseInputEvent
+       1076  429 0012D360 GetTargetPti
+       1077  42A 0012C1C0 GetTouchTimeFromCPLValue
+       1078  42B 00128F30 GetW32kEtwEnabledKeyword
+       1079  42C 000048F0 GetWin32kDriverObject
+       1080  42D 00124280 GetWorkspaceId
+       1081  42E 000C13E0 GetausMouseVKey
+       1082  42F 00026D90 GiveForegroundActivateRight
+       1083  430 00093780 GreAcquireFastMutex
+       1084  431 0005E9C0 GreAcquireHmgrSemaphore
+       1085  432 0014E4D0 GreAcquirePushLockExclusive
+       1086  433 0008CE60 GreAcquirePushLockShared
+       1087  434 0005EA10 GreAcquireSemaphore
+       1088  435 00039580 GreAcquireSemaphoreSharedInternal
+       1089  436 000CD4B0 GreAcquireSemaphoreSharedStarveExclusiveInternal
+       1090  437 0005C830 GreCleanDC
+       1091  438 00039B60 GreCombineRgn
+       1092  439 000326B0 GreCopyVisRgn
+       1093  43A 00005CC0 GreCreateBitmap
+       1094  43B 00038D90 GreCreateCompatibleDC
+       1095  43C 000363C0 GreCreateDisplayDC
+       1096  43D 0014C8D0 GreCreatePalette
+       1097  43E 00005CA0 GreCreatePatternBrush
+       1098  43F 00008200 GreCreatePatternBrushInternal
+       1099  440 00005A40 GreCreateRectRgn
+       1100  441 000469F0 GreCreateRectRgnIndirect
+       1101  442 0005E2C0 GreCreateSemaphore
+       1102  443 000067A0 GreCreateSolidBrush
+       1103  444 00075E30 GreDCSelectBrush
+       1104  445 00075C00 GreDCSelectPen
+       1105  446 00077130 GreDecLockCount
+       1106  447 0009E6B0 GreDecNonRBLockCount
+       1107  448 0009CDE0 GreDecQuotaCount
+       1108  449 0006D220 GreDeleteDC
+       1109  44A 000367C0 GreDeleteObject
+       1110  44B 0005E380 GreDeleteSemaphore
+       1111  44C 00142AB0 GreDrvConnect
+       1112  44D 001F79B0 GreDwmDesktopOverlaysEnabled
+       1113  44E 0014DA00 GreDxgkEnableUnorderedWaitsForDevice
+       1114  44F 0014B750 GreDxgkRegisterDwmProcess
+       1115  450 0009C150 GreDxgkSetProcessStatus
+       1116  451 0003F870 GreEnterCriticalRegionAndAcquirePushLockExclusive
+       1117  452 00076FC0 GreEnterCriticalRegionAndAcquirePushLockShared
+       1118  453 0009B8B0 GreEqualRgn
+       1119  454 000527C0 GreExtCreateRegion
+       1120  455 000CCE80 GreGdoDeviceIoControlEx
+       1121  456 0003C0A0 GreGetBounds
+       1122  457 0013FDF0 GreGetBrushColor
+       1123  458 000347A0 GreGetClipBox
+       1124  459 00031620 GreGetDCOrg
+       1125  45A 00032140 GreGetDCOrgEx
+       1126  45B 000321D0 GreGetDCPoint
+       1127  45C 0000D200 GreGetDeviceCaps
+       1128  45D 00145560 GreGetDpiDepDefaultGuiFont
+       1129  45E 00142930 GreGetHandleCount
+       1130  45F 0008D020 GreGetLockCount
+       1131  460 0005F680 GreGetNearestColor
+       1132  461 000066A0 GreGetObjectOwner
+       1133  462 00142950 GreGetPeakHandleCount
+       1134  463 0008D190 GreGetRegionData
+       1135  464 000C0D20 GreGetRemoteContext
+       1136  465 00092380 GreGetRgnBox
+       1137  466 000C8800 GreGetScaledLogPixels
+       1138  467 0005CF80 GreGetStockObject
+       1139  468 0007BE80 GreGetSystemFont
+       1140  469 0008D700 GreIncLockCount
+       1141  46A 0009E6E0 GreIncNonRBLockCount
+       1142  46B 000994D0 GreIncQuotaCount
+       1143  46C 000BC9D0 GreIncrementDisplaySettingsUniqueness
+       1144  46D 000AFFF0 GreInitializePushLock
+       1145  46E 000C4350 GreIntersectClipRect
+       1146  46F 0014EFF0 GreIntersectVisRect
+       1147  470 0014E4F0 GreIsDisplayLocked
+       1148  471 00030C50 GreIsDwmStateLocked
+       1149  472 000B0E90 GreIsDynamicModeChangeLocked
+       1150  473 00142BA0 GreIsInLowBox
+       1151  474 00033B00 GreIsRendering
+       1152  475 0009B6D0 GreIsSemaphoreOwnedByCurrentThread
+       1153  476 00030CE0 GreIsSemaphoreOwnedOrSharedByCurrentThread
+       1154  477 000B4610 GreIsSemaphoreSharedByCurrentThread
+       1155  478 000B3C90 GreIsValidRegion
+       1156  479 0014E520 GreIsVisRgnLocked
+       1157  47A 0014E550 GreIsVisRgnLockedShared
+       1158  47B 0014E580 GreIsVisRgnPublishLocked
+       1159  47C 00005680 GreLddmProcessLockScreen
+       1160  47D 0003E8D0 GreLeaveCriticalRegionAndReleasePushLockExclusive
+       1161  47E 00078130 GreLeaveCriticalRegionAndReleasePushLockShared
+       1162  47F 00030220 GreLockDisplayDevice
+       1163  480 0005E730 GreLockDwmState
+       1164  481 000BFB30 GreLockDynamicModeChange
+       1165  482 000BC2C0 GreLockPointer
+       1166  483 000D17F0 GreLockRegion
+       1167  484 0005E810 GreLockSprite
+       1168  485 0005E920 GreLockVisRgn
+       1169  486 00091B50 GreLockVisRgnPublish
+       1170  487 0004D310 GreLockVisRgnShared
+       1171  488 0004D3B0 GreLockVisRgnSharedOrExclusive
+       1172  489 0014E5B0 GreLockVisRgnWithDmcLockAcquiredEx
+       1173  48A 000062B0 GreMakeBitmapNonStock
+       1174  48B 00094C80 GreMarkDeletableBitmap
+       1175  48C 00094CA0 GreMarkDeletableRgn
+       1176  48D 0000A950 GreMarkUndeletableBitmap
+       1177  48E 000C0B80 GreMarkUndeletableBrush
+       1178  48F 000CC770 GreMultiUserInitSession
+       1179  490 00034360 GreOffsetRgn
+       1180  491 00142970 GrePopThreadGuardedObject
+       1181  492 00094110 GrePtInRegion
+       1182  493 00142990 GrePushThreadGuardedObject
+       1183  494 000B9850 GreQuerySystemTime
+       1184  495 0008F390 GreRectInRegion
+       1185  496 0014B770 GreReinitializeDpiSetting
+       1186  497 000C0290 GreReinitializeStockFonts
+       1187  498 000937A0 GreReleaseFastMutex
+       1188  499 00039500 GreReleaseHmgrSemaphore
+       1189  49A 000B8660 GreReleasePushLockExclusive
+       1190  49B 0008CE80 GreReleasePushLockShared
+       1191  49C 00039550 GreReleaseSemaphoreInternal
+       1192  49D 001500B0 GreRestoreDC
+       1193  49E 000D1A40 GreRestoreDCInternal
+       1194  49F 000BC9B0 GreResumeDirectDraw
+       1195  4A0 00098A70 GreSelectBitmap
+       1196  4A1 0013FE50 GreSelectBrush
+       1197  4A2 000CFB30 GreSelectBrushInternal
+       1198  4A3 0008D8E0 GreSelectPalette
+       1199  4A4 0013FE70 GreSelectPen
+       1200  4A5 000CFBB0 GreSelectPenInternal
+       1201  4A6 0004A060 GreSelectVisRgn
+       1202  4A7 000C8840 GreSelectVisRgnShared
+       1203  4A8 0009E760 GreSetBitmapOwner
+       1204  4A9 0000A530 GreSetBrushOwner
+       1205  4AA 00032850 GreSetDCOrg
+       1206  4AB 00045760 GreSetDCOwnerEx
+       1207  4AC 0009A9B0 GreSetLayout
+       1208  4AD 000B5870 GreSetPaletteOwner
+       1209  4AE 00009340 GreSetRectRgn
+       1210  4AF 00048700 GreSetRegionOwner
+       1211  4B0 0013FE90 GreSetSolidBrush
+       1212  4B1 00075FA0 GreSetSolidBrushLight
+       1213  4B2 000A7060 GreSfmCleanupPresentHistory
+       1214  4B3 000AE290 GreSfmDwmShutdown
+       1215  4B4 0005EE80 GreSfmGetNotificationTokens
+       1216  4B5 0014C210 GreSfmGetPresentQueueEvent
+       1217  4B6 000B4440 GreSfmOpenTokenEvent
+       1218  4B7 0008CC90 GreStackExpansionRequired
+       1219  4B8 00016CB0 GreSuspendDirectDraw
+       1220  4B9 0014E610 GreSystemTimeToLocalTime
+       1221  4BA 00030260 GreUnlockDisplayDevice
+       1222  4BB 0005E770 GreUnlockDwmState
+       1223  4BC 000BE0D0 GreUnlockDynamicModeChange
+       1224  4BD 000BC300 GreUnlockPointer
+       1225  4BE 000D1820 GreUnlockRegion
+       1226  4BF 0005E7C0 GreUnlockSprite
+       1227  4C0 00038E80 GreUnlockVisRgn
+       1228  4C1 000922E0 GreUnlockVisRgnPublish
+       1229  4C2 0014E630 GreUnlockVisRgnWithDmcLockAcquiredEx
+       1230  4C3 0009A2C0 GreValidateServerHandle
+       1231  4C4 00096340 GuessMonitorOverrideForCoordinateConversions
+       1232  4C5 000CB860 HDXDrvEscape
+       1233  4C6 00070110 HKLtoPKL
+       1234  4C7 0004D900 HMAllocObject
+       1235  4C8 0004F390 HMAssignmentLock
+       1236  4C9 00051D10 HMAssignmentUnlock
+       1237  4CA 0011A960 HMChangeOwnerPheProcess
+       1238  4CB 00099330 HMChangeOwnerProcess
+       1239  4CC 0011A9A0 HMChangeOwnerProcessWorker
+       1240  4CD 000B1E40 HMChangeOwnerThread
+       1241  4CE 0006E460 HMCreateHandleForObject
+       1242  4CF 0006DD50 HMDestroyObject
+       1243  4D0 000C9080 HMDestroyUnlockedObject
+       1244  4D1 0011AA40 HMFindEntry
+       1245  4D2 0006DD90 HMFreeObject
+       1246  4D3 0003F8B0 HMLockObject
+       1247  4D4 00051E00 HMLockObjectWorker
+       1248  4D5 0008BE00 HMMarkObjectDestroy
+       1249  4D6 0003FF60 HMPkheFromPhe
+       1250  4D7 0004F420 HMPkheFromPheWorker
+       1251  4D8 0006E280 HMRemoveHandleForObject
+       1252  4D9 0006DC10 HMUnlockDestroyObject
+       1253  4DA 00040170 HMUnlockObject
+       1254  4DB 00051D90 HMUnlockObjectInternal
+       1255  4DC 0006DC50 HMUnlockObjectWorker
+       1256  4DD 001AB000 HandleBaseWindowDestruction
+       1257  4DE 00001270 HandleDeferredInput
+       1258  4DF 0004EF70 HandleFullWindowDestruction
+       1259  4E0 00123850 HandleSystemThreadCreationFailure
+       1260  4E1 001AB070 HasCapture
+       1261  4E2 00026A40 HasForegroundActivateRight
+       1262  4E3 000174E0 HdevFromMonitor
+       1263  4E4 00048420 HmgAlloc
+       1264  4E5 0003CC30 HmgDecrementExclusiveReferenceCountEx
+       1265  4E6 0003CE20 HmgDecrementShareReferenceCountEx
+       1266  4E7 00037660 HmgFree
+       1267  4E8 00042140 HmgIncrementShareReferenceCount
+        154  4E9 00046300 HmgInsertObjectInternal
+       1268  4EA 0003C760 HmgLock
+       1269  4EB 00006470 HmgLockAndModifyHandleType
+       1270  4EC 0003F150 HmgLockEx
+       1271  4ED 0008DE20 HmgLockIgnoreOwner
+       1272  4EE 00094CD0 HmgMarkDeletable
+       1273  4EF 00008D30 HmgMarkLazyDelete
+       1274  4F0 000A1350 HmgMarkUnXferable
+       1275  4F1 0000A970 HmgMarkUndeletable
+       1276  4F2 000A1DF0 HmgMarkXferable
+       1277  4F3 000064E0 HmgModifyHandleType
+       1278  4F4 00008530 HmgNextOwned
+       1279  4F5 0003E2D0 HmgPentryFromPobj
+       1280  4F6 0007B550 HmgPrefetchAllObjt
+       1281  4F7 00007C20 HmgQueryAltLock
+       1282  4F8 000AB080 HmgReferenceCheckLock
+       1283  4F9 00045A50 HmgRemoveObject
+       1284  4FA 00034980 HmgReplaceObject
+       1285  4FB 0000C290 HmgSafeNextObjt
+       1286  4FC 00047E90 HmgSetOwner
+       1287  4FD 0003EDF0 HmgShareLock
+       1288  4FE 0003C960 HmgShareLockCheck
+       1289  4FF 00071BD0 HmgShareLockCheckIgnoreStockBit
+       1290  500 0003B880 HmgShareLockEx
+       1291  501 00093B40 HmgShareUnlockRemoveObject
+       1292  502 00007D90 HmgSwapLockedHandleContents
+       1293  503 0009A2E0 HmgValidHandle
+       1294  504 00041090 INC_SHARE_REF_CNT
+       1295  505 000BCF40 IOCPDispatcher_Destroy
+       1296  506 000BE290 InitCreateSystemThreadsMsg
+       1297  507 000AB280 InitScancodeMap
+       1298  508 000A0D90 InitSystemThread
+       1299  509 00098B20 InitializeWin32KSyscallFilter
+       1300  50A 000AD960 InitiateWaitForInjectionCompletion
+       1301  50B 00099160 InputExtensibilityCalloutGuard
+       1302  50C 0005B3D0 InternalMapVirtualKeyEx
+       1303  50D 0006F8E0 InternalVkKeyScanEx
+       1304  50E 001AB0B0 IsAnyDelegationEnabled
+       1305  50F 000BFF10 IsCapturedBySystem
+       1306  510 001AB0D0 IsCapturedByThread
+       1307  511 00094DC0 IsDesktopApp
+       1308  512 000C1110 IsDwmApiPortRegistered
+        165  513 0009E780 IsDwmInputThread
+       1309  514 00061B80 IsEqualInputSource
+       1310  515 0009ADB0 IsGenuineMouseInput
+       1311  516 0006C140 IsIMMEnabledSystem
+       1312  517 00006190 IsImmersiveAppRestricted
+       1313  518 0005AF00 IsImmersiveBroker
+       1314  519 000A2890 IsInputProcessingActivated
+       1315  51A 00077000 IsInputThread
+       1316  51B 00025AA0 IsKeyStateCached
+       1317  51C 000262A0 IsKeyboardDelegationEnabledForThread
+       1318  51D 0011E190 IsLogonConnected
+       1319  51E 000B8960 IsMessageInputSourcePen
+       1320  51F 000B8970 IsMessageInputSourceTouch
+       1321  520 0009CE10 IsMiPMouseMessage
+       1322  521 001AB110 IsMouseButtonDown
+       1323  522 001AB140 IsMouseInterceptEnabled
+       1324  523 001242B0 IsPointerDeviceAccessible
+       1325  524 00121EA0 IsPrecisionTouchPadEnabled
+       1326  525 000BB7D0 IsPrivileged
+       1327  526 0005B050 IsProcessDwm
+       1328  527 000CD280 IsProcessWin32kLockedOut
+       1329  528 00094630 IsRestricted
+       1330  529 0011D9F0 IsSessionSwitchBlocked
+       1331  52A 00031210 IsSpatialDelegationEnabledForThread
+       1332  52B 001AB1C0 IsValidMouseSensitivity
+       1333  52C 00077880 IsWin32KSyscallFiltered
+       1334  52D 00077850 IsWindowDesktopComposed
+       1335  52E 00278030 KbdTablesFallback
+       1336  52F 0020AC40 KeyMapping
+       1337  530 00250D48 LastNlsTableBuffer
+       1338  531 00059CF0 LeaveCrit
+       1339  532 0008F690 LeaveHandleFlagsCrit
+       1340  533 00019F60 LeavePowerCrit
+       1341  534 000C0E50 LeaveRenderBlock
+       1342  535 000C0EB0 LeaveRenderCrit
+       1343  536 00093F10 LockObjectAssignment
+       1344  537 0005D6A0 LogicalCursorPosFromDpiAwarenessContext
+       1345  538 000760B0 LogicalToPhysicalDPIPoint
+       1346  539 0005D410 LogicalToPhysicalDPIRect
+       1347  53A 00032580 LookupDC
+       1348  53B 0000E9A0 MakeSystemRelativePath
+       1349  53C 001AB1E0 MarkQueuesForKeyStateUpdate
+       1350  53D 0009C720 MiPCheckMsgFilter
+       1351  53E 000A64E0 MilliSecsToQpcCount
+       1352  53F 001AB220 MouseAccelerationEnabled
+       1353  540 001AB240 MouseButtonAction
+       1354  541 0009C4E0 MouseButtonToPointerFlags
+       1355  542 001AB280 MouseMove
+       1356  543 0005E4F0 MultiUserGreTrackAddEngResource
+       1357  544 0005E3D0 MultiUserGreTrackRemoveEngResource
+       1358  545 000BBB40 NlsKbdInitializePerSystem
+       1359  546 000B45A0 NlsKbdSendIMENotificationBase
+       1360  547 000B2FA0 NotifySetPointerGraphicDevice
+       1361  548 00083280 NtCloseCompositionInputSink
+       1362  549 001F6F00 NtCompositionInputThread
+       1363  54A 00095810 NtCompositionSetDropTarget
+       1364  54B 0012D3D0 NtConfigureInputSpace
+       1365  54C 00081CE0 NtCreateCompositionInputSink
+       1366  54D 00081CC0 NtCreateImplicitCompositionInputSink
+       1367  54E 00002480 NtDCompositionAddCrossDeviceVisualChild
+       1368  54F 00073EC0 NtDCompositionBeginFrame
+       1369  550 000637C0 NtDCompositionCommitChannel
+       1370  551 001CDE10 NtDCompositionCommitSynchronizationObject
+       1371  552 00073350 NtDCompositionConfirmFrame
+       1372  553 001CDF40 NtDCompositionConnectPipe
+       1373  554 000A29E0 NtDCompositionCreateAndBindSharedSection
+       1374  555 00074A30 NtDCompositionCreateChannel
+       1375  556 00071E90 NtDCompositionCreateConnection
+       1376  557 00072AF0 NtDCompositionCreateDwmChannel
+       1377  558 000610B0 NtDCompositionCreateSharedResourceHandle
+       1378  559 001CDF50 NtDCompositionCreateSynchronizationObject
+       1379  55A 00074660 NtDCompositionDestroyChannel
+       1380  55B 001CE060 NtDCompositionDestroyConnection
+       1381  55C 0008C670 NtDCompositionDiscardFrame
+       1382  55D 001CE080 NtDCompositionDuplicateHandleToProcess
+       1383  55E 001CE400 NtDCompositionDuplicateSwapchainHandleToDwm
+       1384  55F 001CE5A0 NtDCompositionEnableMMCSS
+       1385  560 00076DE0 NtDCompositionGetBatchId
+       1386  561 001CDF40 NtDCompositionGetChannels
+       1387  562 00077950 NtDCompositionGetConnectionBatch
+       1388  563 0009F850 NtDCompositionGetDeletedResources
+       1389  564 00065580 NtDCompositionGetFrameLegacyTokens
+       1390  565 00065100 NtDCompositionGetFrameStatistics
+       1391  566 00065350 NtDCompositionGetFrameSurfaceUpdates
+       1392  567 00021520 NtDCompositionGetMaterialProperty
+       1393  568 0004B160 NtDCompositionProcessChannelBatchBuffer
+       1394  569 00063260 NtDCompositionReferenceSharedResourceOnDwmChannel
+       1395  56A 00003570 NtDCompositionRegisterThumbnailVisual
+       1396  56B 001CE690 NtDCompositionRegisterVirtualDesktopVisual
+       1397  56C 00072CB0 NtDCompositionReleaseAllResources
+       1398  56D 001CE7B0 NtDCompositionRemoveCrossDeviceVisualChild
+       1399  56E 0008C7C0 NtDCompositionRetireFrame
+       1400  56F 000753E0 NtDCompositionSetChannelCommitCompletionEvent
+       1401  570 000A8700 NtDCompositionSetChannelConnectionId
+       1402  571 001CE7D0 NtDCompositionSetChildRootVisual
+       1403  572 000B7FF0 NtDCompositionSetDebugCounter
+       1404  573 0001FB50 NtDCompositionSetMaterialProperty
+       1405  574 00064080 NtDCompositionSubmitDWMBatch
+       1406  575 001CE8C0 NtDCompositionSuspendAnimations
+       1407  576 00063590 NtDCompositionSynchronize
+       1408  577 000AC340 NtDCompositionTelemetryAnimationScenarioBegin
+       1409  578 000ADD70 NtDCompositionTelemetryAnimationScenarioReference
+       1410  579 000ADE70 NtDCompositionTelemetryAnimationScenarioUnreference
+       1411  57A 000A1480 NtDCompositionTelemetrySetApplicationId
+       1412  57B 00004480 NtDCompositionTelemetryTouchInteractionBegin
+       1413  57C 00004AF0 NtDCompositionTelemetryTouchInteractionEnd
+       1414  57D 00002CD0 NtDCompositionTelemetryTouchInteractionUpdate
+       1415  57E 001CE940 NtDCompositionUpdatePointerCapture
+       1416  57F 000AB940 NtDCompositionWaitForChannel
+       1417  580 001CE9A0 NtDesktopCaptureBits
+       1418  581 000622D0 NtDuplicateCompositionInputSink
+       1419  582 0012D6F0 NtEnableOneCoreTransformMode
+       1420  583 000A8660 NtGdiCombineRgn
+       1421  584 001435A0 NtGdiConfigureOPMProtectedOutput
+       1422  585 0014BCB0 NtGdiCreateColorSpace
+       1423  586 000363A0 NtGdiCreateCompatibleDC
+       1424  587 000AFB30 NtGdiCreateMetafileDC
+       1425  588 001436F0 NtGdiCreateOPMProtectedOutput
+       1426  589 000C7F00 NtGdiCreateOPMProtectedOutputs
+       1427  58A 000091D0 NtGdiCreateRectRgn
+       1428  58B 0014BDE0 NtGdiDeleteColorSpace
+       1429  58C 000379D0 NtGdiDeleteObjectApp
+       1430  58D 00143840 NtGdiDestroyOPMProtectedOutput
+       1431  58E 0009B8B0 NtGdiEqualRgn
+       1432  58F 00053E40 NtGdiExtCreateRegion
+       1433  590 000911F0 NtGdiFlush
+       1434  591 0014BE00 NtGdiGetAppliedDeviceGammaRamp
+       1435  592 00143860 NtGdiGetCOPPCompatibleOPMInformation
+       1436  593 00143980 NtGdiGetCertificate
+       1437  594 000C70C0 NtGdiGetCertificateByHandle
+       1438  595 00143AE0 NtGdiGetCertificateSize
+       1439  596 000C7030 NtGdiGetCertificateSizeByHandle
+       1440  597 000604C0 NtGdiGetCurrentDpiInfo
+       1441  598 0000D1E0 NtGdiGetDeviceCaps
+       1442  599 00145610 NtGdiGetDeviceCapsAll
+       1443  59A 000B6830 NtGdiGetEntry
+       1444  59B 0014BFD0 NtGdiGetGammaRampCapability
+       1445  59C 000C7880 NtGdiGetOPMInformation
+       1446  59D 000C71E0 NtGdiGetOPMRandomNumber
+       1447  59E 0008D080 NtGdiGetRegionData
+       1448  59F 00092330 NtGdiGetRgnBox
+       1449  5A0 001429B0 NtGdiGetStats
+       1450  5A1 000C9120 NtGdiGetSuggestedOPMProtectedOutputArraySize
+       1451  5A2 0008DBC0 NtGdiInit
+       1452  5A3 00030C30 NtGdiOffsetRgn
+       1453  5A4 0005DC60 NtGdiOpenDCW
+       1454  5A5 000C5FC0 NtGdiPolyPolyDraw
+       1455  5A6 00142720 NtGdiPtInRegion
+       1456  5A7 000C6E20 NtGdiRectInRegion
+       1457  5A8 0014CC30 NtGdiSetMagicColors
+       1458  5A9 000C7290 NtGdiSetOPMSigningKeyAndSequenceNumbers
+       1459  5AA 0014C0A0 NtGdiSetPrivateDeviceGammaRamp
+       1460  5AB 00142740 NtGdiSetRectRgn
+       1461  5AC 0014DA20 NtHWCursorUpdatePointer
+       1462  5AD 0012D720 NtInputSpaceRegionFromPoint
+       1463  5AE 0009C3C0 NtIsOneCoreTransformMode
+       1464  5AF 0012D900 NtMITAccessibilityTimerNotification
+       1465  5B0 000A3E00 NtMITActivateInputProcessing
+       1466  5B1 000B35F0 NtMITCoreMsgKOpenConnectionTo
+       1467  5B2 0012DE10 NtMITDeactivateInputProcessing
+       1468  5B3 0012E310 NtMITDisableMouseIntercept
+       1469  5B4 00054830 NtMITDispatchCompletion
+       1470  5B5 0012E830 NtMITEnableMouseIntercept
+       1471  5B6 000A3FE0 NtMITGetCursorUpdateHandle
+       1472  5B7 0012ED80 NtMITInitMinuserThread
+       1473  5B8 0012EF90 NtMITMinuserWindowCreated
+       1474  5B9 0012F440 NtMITMinuserWindowDestroyed
+       1475  5BA 0012F8F0 NtMITPostMouseInputMessage
+       1476  5BB 0012FA10 NtMITPostThreadEventMessage
+       1477  5BC 0012FB30 NtMITPostWindowEventMessage
+       1478  5BD 000A9090 NtMITSetInputCallbacks
+       1479  5BE 0009CF10 NtMITSetInputDelegationMode
+       1480  5BF 0012FCC0 NtMITSetInputObservationState
+       1481  5C0 000BF4F0 NtMITSetKeyboardInputRoutingPolicy
+       1482  5C1 0012FD70 NtMITSetKeyboardOverriderState
+       1483  5C2 0012FE30 NtMITSetLastInputRecipient
+       1484  5C3 001301E0 NtMITSynthesizeKeyboardInput
+       1485  5C4 00130580 NtMITSynthesizeMouseInput
+       1486  5C5 00130730 NtMITSynthesizeTouchInput
+       1487  5C6 00130890 NtMITUninitMinuserThread
+       1488  5C7 000B3260 NtMITUpdateInputGlobals
+       1489  5C8 0011D470 NtMapVisualRelativePoints
+       1490  5C9 000A6510 NtQueryCompositionInputIsImplicit
+       1491  5CA 00062E30 NtQueryCompositionInputQueueAndTransform
+       1492  5CB 0009D250 NtQueryCompositionInputSink
+       1493  5CC 00099E40 NtQueryCompositionInputSinkLuid
+       1494  5CD 00002C30 NtQueryCompositionInputSinkViewId
+       1495  5CE 001558E0 NtRIMAddInputObserver
+       1496  5CF 00155A20 NtRIMAreSiblingDevices
+       1497  5D0 00155A80 NtRIMDeviceIoControl
+       1498  5D1 00155B30 NtRIMEnableMonitorMappingForDevice
+       1499  5D2 00156000 NtRIMFreeInputBuffer
+       1500  5D3 00156040 NtRIMGetDevicePreparsedData
+       1501  5D4 001560B0 NtRIMGetDevicePreparsedDataLockfree
+       1502  5D5 001560D0 NtRIMGetDeviceProperties
+       1503  5D6 00156130 NtRIMGetDevicePropertiesLockfree
+       1504  5D7 00156150 NtRIMGetPhysicalDeviceRect
+       1505  5D8 001561A0 NtRIMGetSourceProcessId
+       1506  5D9 001561F0 NtRIMObserveNextInput
+       1507  5DA 000B2690 NtRIMOnPnpNotification
+       1508  5DB 00156210 NtRIMOnTimerNotification
+       1509  5DC 001566E0 NtRIMQueryDevicePath
+       1510  5DD 000B2600 NtRIMReadInput
+       1511  5DE 00156960 NtRIMRemoveInputObserver
+       1512  5DF 00156980 NtRIMSetExtendedDeviceProperty
+       1513  5E0 00156A60 NtRIMSetTestModeStatus
+       1514  5E1 00156A90 NtRIMUnregisterForInput
+       1515  5E2 00156F50 NtRIMUpdateInputObserverRegistration
+       1516  5E3 00130DC0 NtSetCursorInputSpace
+       1517  5E4 001312D0 NtSetPointerDeviceInputSpace
+       1518  5E5 001314B0 NtSetShellCursorState
+       1519  5E6 00001BA0 NtUpdateInputSinkTransforms
+       1520  5E7 0006F1B0 NtUserActivateKeyboardLayout
+       1521  5E8 001316B0 NtUserAddVisualIdentifier
+       1522  5E9 0001ABF0 NtUserChangeDisplaySettings
+       1523  5EA 000A5770 NtUserCheckProcessSession
+       1524  5EB 000C6F90 NtUserClipCursor
+       1525  5EC 000AFBE0 NtUserCloseDesktop
+       1526  5ED 000ADB90 NtUserCloseWindowStation
+       1527  5EE 001317C0 NtUserConfigureActivationObject
+       1528  5EF 001318C0 NtUserCreateActivationGroup
+       1529  5F0 000AE030 NtUserCreateActivationObject
+       1530  5F1 000B8300 NtUserCreateDesktopEx
+       1531  5F2 00131950 NtUserCreatePalmRejectionDelayZone
+       1532  5F3 0009C190 NtUserCreateWindowStation
+       1533  5F4 001318C0 NtUserDestroyActivationGroup
+       1534  5F5 000050D0 NtUserDestroyActivationObject
+       1535  5F6 00131AB0 NtUserDestroyPalmRejectionDelayZone
+       1536  5F7 0007FE70 NtUserDisplayConfigGetDeviceInfo
+       1537  5F8 00131F70 NtUserDisplayConfigSetDeviceInfo
+       1538  5F9 00132260 NtUserDownlevelTouchpad
+       1539  5FA 000B4120 NtUserEnableMouseInPointer
+       1540  5FB 00132380 NtUserEnableTouchPad
+       1541  5FC 00057AB0 NtUserEnumDisplayDevices
+       1542  5FD 0002F5A0 NtUserEnumDisplayMonitors
+       1543  5FE 000606B0 NtUserEnumDisplaySettings
+       1544  5FF 001328B0 NtUserFunctionalizeDisplayConfig
+       1545  600 00024F30 NtUserGetAsyncKeyState
+       1546  601 00132E00 NtUserGetClipCursor
+       1547  602 00059D80 NtUserGetDC
+       1548  603 0007F9C0 NtUserGetDisplayConfigBufferSizes
+       1549  604 000A77A0 NtUserGetDoubleClickTime
+       1550  605 0005CCE0 NtUserGetDpiForMonitor
+       1551  606 00132F40 NtUserGetExtendedPointerDeviceProperty
+       1552  607 0005F4F0 NtUserGetHDevName
+       1553  608 001330E0 NtUserGetInputContainerId
+       1554  609 000254B0 NtUserGetKeyState
+       1555  60A 000584C0 NtUserGetKeyboardLayout
+       1556  60B 0009BD40 NtUserGetKeyboardLayoutList
+       1557  60C 000252F0 NtUserGetKeyboardState
+       1558  60D 00093A30 NtUserGetObjectInformation
+       1559  60E 001332D0 NtUserGetPointerCursorId
+       1560  60F 001333C0 NtUserGetPointerDeviceInputSpace
+       1561  610 001334B0 NtUserGetPointerDeviceOrientation
+       1562  611 001335A0 NtUserGetPointerFrameTimes
+       1563  612 001336B0 NtUserGetPointerInfoList
+       1564  613 00133BB0 NtUserGetPointerInputTransform
+       1565  614 00133CE0 NtUserGetPointerProprietaryId
+       1566  615 00133DB0 NtUserGetPointerType
+       1567  616 00004CC0 NtUserGetPrecisionTouchPadConfiguration
+       1568  617 000B29C0 NtUserGetProcessDpiAwarenessContext
+       1569  618 0009C2D0 NtUserGetProcessWindowStation
+       1570  619 00133EC0 NtUserGetRawPointerDeviceData
+       1571  61A 001340F0 NtUserGetSystemDpiForProcess
+       1572  61B 00094490 NtUserGetThreadDesktop
+       1573  61C 0006CCD0 NtUserGetUniformSpaceMapping
+       1574  61D 001344D0 NtUserInitializeGenericHidInjection
+       1575  61E 00134840 NtUserInitializeInputDeviceInjection
+       1576  61F 00134A70 NtUserInitializePointerDeviceInjection
+       1577  620 00134AA0 NtUserInitializePointerDeviceInjectionEx
+       1578  621 00134C10 NtUserInjectDeviceInput
+       1579  622 00135040 NtUserInjectGenericHidInput
+       1580  623 00135850 NtUserInjectKeyboardInput
+       1581  624 00135C70 NtUserInjectMouseInput
+       1582  625 00136090 NtUserInjectPointerInput
+       1583  626 00136550 NtUserIsMouseInPointerEnabled
+       1584  627 00136890 NtUserLoadKeyboardLayoutEx
+       1585  628 000A79B0 NtUserLockCursor
+       1586  629 00136BA0 NtUserMapPointsByVisualIdentifier
+       1587  62A 000582A0 NtUserMapVirtualKeyEx
+       1588  62B 000B5180 NtUserOpenInputDesktop
+       1589  62C 00136F30 NtUserPostKeyboardInputMessage
+       1590  62D 000AED50 NtUserQueryActivationObject
+       1591  62E 0007FB80 NtUserQueryDisplayConfig
+       1592  62F 000BED80 NtUserRegisterManipulationThread
+       1593  630 000A6690 NtUserRegisterSessionPort
+       1594  631 000B5D60 NtUserRegisterTouchPadCapable
+       1595  632 0005A130 NtUserReleaseDC
+       1596  633 0008DBC0 NtUserReleaseDwmHitTestWaiters
+       1597  634 001370D0 NtUserRemoveInjectionDevice
+       1598  635 00137680 NtUserRemoveVisualIdentifier
+       1599  636 00003BD0 NtUserReportInertia
+       1600  637 00137750 NtUserSetDesktopVisualInputSink
+       1601  638 00137850 NtUserSetDisplayConfig
+       1602  639 00137F20 NtUserSetFeatureReportResponse
+       1603  63A 000A1610 NtUserSetInputServiceState
+       1604  63B 001381E0 NtUserSetManipulationInputTarget
+       1605  63C 001383D0 NtUserSetMouseInputRateLimitingTimer
+       1606  63D 001388C0 NtUserSetPrecisionTouchPadConfiguration
+       1607  63E 00078160 NtUserSetProcessDpiAwarenessContext
+       1608  63F 00138AA0 NtUserSetProcessMousewheelRoutingMode
+       1609  640 000AEE70 NtUserSetProcessWindowStation
+       1610  641 0007C0F0 NtUserSetSysColors
+       1611  642 00138FB0 NtUserStopAndEndInertia
+       1612  643 00139480 NtUserSystemParametersInfo
+       1613  644 0006FA60 NtUserToUnicodeEx
+       1614  645 0013A6A0 NtUserUnloadKeyboardLayout
+       1615  646 0013AB50 NtUserUnregisterSessionPort
+       1616  647 0006F6C0 NtUserVkKeyScanEx
+       1617  648 0013B010 NtUserWin32kSysCallFilterStub
+       1618  649 001CEBD0 NtVisualCaptureBits
+        211  64A 000BAC90 OPMAllocateMemory
+       1619  64B 00096400 OPMDestroyAllProtectedOutputs
+        212  64C 000BC590 OPMFreeMemory
+       1620  64D 00033B80 OpenCacheKeyEx
+       1621  64E 000A0750 OpenEffectiveToken
+       1622  64F 000C8970 PATHOBJ_bCloseFigure
+       1623  650 0004FB70 PATHOBJ_bEnum
+       1624  651 000C7E10 PATHOBJ_bMoveTo
+       1625  652 000C6CA0 PATHOBJ_bPolyBezierTo
+       1626  653 000C6E00 PATHOBJ_bPolyLineTo
+       1627  654 000C8990 PATHOBJ_vEnumStart
+       1628  655 000C88A0 PATHOBJ_vGetBounds
+       1629  656 0002A100 ParseWindowStation
+       1630  657 0005D770 PhysicalToLogicalDPIPoint
+       1631  658 0005D550 PhysicalToLogicalDPIRect
+       1632  659 000385B0 PopThreadGuardedObject
+       1633  65A 00031870 PostPendingMouseMove
+       1634  65B 00025CD0 PostUpdateKeyStateEvent
+       1635  65C 000A6F00 PostWinlogonMessage
+       1636  65D 00019750 PowerInputEvent
+       1637  65E 001201E0 PowerIsDisplayBurstActive
+       1638  65F 00093CC0 PowerIsDisplayIdleExpired
+       1639  660 00120280 PowerIsDisplayRequired
+       1640  661 000CA430 PowerOffMonitor
+       1641  662 000198B0 PowerOnMonitor
+       1642  663 000CA0F0 PowerResumeSuspendEvent
+        221  664 00054170 ProbeAndConvertXFORM
+       1643  665 001ACDF0 ProcessKeyboardInjectedInputViaRim
+       1644  666 001ACE50 ProcessKeyboardInputWorker
+       1645  667 000A15C0 ProcessMouseEvent
+       1646  668 00025E00 ProcessUpdateKeyStateEvent
+       1647  669 00091770 PtiFromThreadId
+       1648  66A 00038610 PushThreadGuardedObject
+       1649  66B 0024BD18 QEntryLookaside
+       1650  66C 001AB4A0 QpcCountToMilliSecs
+       1651  66D 00018A10 QueuePowerRequest
+       1652  66E 0015C5F0 RIMActivatePointerDeviceDeadzone
+       1653  66F 00157060 RIMAddInjectionDeviceOfType
+       1654  670 001574E0 RIMAddInputObserver
+       1655  671 00157530 RIMAddInputOfType
+       1656  672 001576C0 RIMAddNonPnpDeviceOfType
+       1657  673 00157A20 RIMAddNonPnpDeviceOfTypeUsingSuppliedFileHandle
+       1658  674 0015CEE0 RIMAllocKernelMem
+       1659  675 0015CF00 RIMAllocUserMem
+       1660  676 00157DD0 RIMAreSiblingDevices
+       1661  677 0015C720 RIMCreatePointerDeviceDeadzone
+       1662  678 0015C8A0 RIMDestroyPointerDeviceDeadzone
+       1663  679 000B55A0 RIMDeviceIoControl
+       1664  67A 000A5DF0 RIMDirectPnpRemoveDevicesOfType
+       1665  67B 000CC650 RIMDirectStartDeviceClassNotifications
+       1666  67C 000286D0 RIMDirectStartStopDeviceRead
+       1667  67D 00070760 RIMDirectStopDeviceClassNotifications
+       1668  67E 00157FD0 RIMEnableMonitorMappingForDevice
+       1669  67F 0015F070 RIMEndAllActiveContacts
+       1670  680 0015F270 RIMExtractPointerPropertyValues
+       1671  681 00158390 RIMFillDeviceHealthInfo
+       1672  682 00163620 RIMFindConfigDeviceForInput
+       1673  683 00166230 RIMFindMonitorForDigitizer
+       1674  684 001662C0 RIMFindTouchDigitizerWithSize
+       1675  685 000B5490 RIMFreeHidTLCInfo
+       1676  686 001584C0 RIMFreeInputBuffer
+       1677  687 00005660 RIMFreeKernelMem
+       1678  688 0015CF30 RIMFreeUserMem
+       1679  689 00158650 RIMGetDevicePreparsedData
+       1680  68A 001587C0 RIMGetDevicePreparsedDataLockfree
+       1681  68B 00158920 RIMGetDeviceProperties
+       1682  68C 00158A90 RIMGetDevicePropertiesLockfree
+       1683  68D 00158F40 RIMGetDownContactCount
+       1684  68E 001590D0 RIMGetLastInvertedPenTime
+       1685  68F 001664A0 RIMGetMonitorPhysicalSize
+       1686  690 001591E0 RIMGetPhysicalDeviceRect
+       1687  691 001601D0 RIMGetPointerDeviceProperties
+       1688  692 001593F0 RIMGetSourceProcessId
+       1689  693 000B7870 RIMGetVirtualDesktopPhysicalSize
+       1690  694 00084530 RIMInitialize
+       1691  695 00159860 RIMInjectInput
+       1692  696 000C0C60 RIMIsDefaultUILanguageRTL
+       1693  697 0015C9D0 RIMIsDeviceArbitrationEnabled
+       1694  698 0015C9F0 RIMIsPointInPenDeadzone
+       1695  699 00159B60 RIMIsPrimaryPointerDeviceDown
+       1696  69A 00028CA0 RIMLockExclusive
+       1697  69B 000BA8F0 RIMMilliSecsToQpcCount
+       1698  69C 00159F80 RIMObserveNextInput
+       1699  69D 00027FD0 RIMOnPnpNotification
+       1700  69E 00028910 RIMOnProcessDestroy
+       1701  69F 00159FA0 RIMOnTimerNotification
+       1702  6A0 00161230 RIMQpcCountToMilliSecs
+       1703  6A1 000270E0 RIMReadInput
+       1704  6A2 0015A510 RIMRefreshDeviceAttributes
+       1705  6A3 000A4990 RIMRegisterForInput
+       1706  6A4 000A4A00 RIMRegisterForInputWithCallbacks
+       1707  6A5 0015A6E0 RIMRemoveInjectionDevice
+       1708  6A6 0015A940 RIMRemoveInputObserver
+       1709  6A7 0007E000 RIMRemoveInputOfType
+       1710  6A8 000B78E0 RIMResetPointerDevices
+       1711  6A9 00163F70 RIMRevokeConfigurationChange
+       1712  6AA 00154CB0 RIMSetTestModeStatus
+       1713  6AB 00166E30 RIMTransformCoordinatesFromDigitizer
+       1714  6AC 00166F00 RIMTransformDimensionFromDigitizer
+       1715  6AD 000BE960 RIMUnInitialize
+       1716  6AE 001645A0 RIMUnRevokeConfigurationChange
+       1717  6AF 00028B70 RIMUnlockExclusive
+       1718  6B0 00027430 RIMUnregisterForInput
+       1719  6B1 0015AB70 RIMUpdateInputObserverRegistration
+       1720  6B2 0015CA20 RIMUpdatePointerDeviceDeadzoneOrigin
+       1721  6B3 00154CE0 RIMWalkDeviceList
+       1722  6B4 00028BA0 RIMWatchDog
+       1723  6B5 00154D80 RIMWatchDogTimerInit
+       1724  6B6 000752E0 RawInputManagerDeviceObjectDereference
+       1725  6B7 0006E5B0 RawInputManagerDeviceObjectReference
+       1726  6B8 00027940 RawInputManagerDeviceObjectResolveHandle
+       1727  6B9 00070990 RawInputManagerObjectCreateKernelHandle
+       1728  6BA 00028DB0 RawInputManagerObjectResolveHandle
+       1729  6BB 000AB250 ReadDefaultAccelerationCurves
+       1730  6BC 0007D440 ReadPointerDeviceCfgDWORDSetting
+       1731  6BD 0007C750 ReadPointerDeviceSettings
+       1732  6BE 00071840 RealGetProp
+       1733  6BF 00020C10 RealInternalRemoveProp
+       1734  6C0 00020BA0 RealInternalSetProp
+       1735  6C1 00091630 RecalculateQueueInfo
+       1736  6C2 0013C000 RecordPnpNotification
+       1737  6C3 00015A40 ReferenceDwmApiPort
+       1738  6C4 00031350 ReferenceDwmProcess
+       1739  6C5 00087990 RegisterCoreMsgProviderPreferences
+       1740  6C6 000406F0 ReleaseCacheDC
+       1741  6C7 001AB4C0 ReleaseMouseButton
+       1742  6C8 00059960 ReleaseUserCriticalSection
+       1743  6C9 001AA4B0 RemoveAllEdgePalmRejectionZonesForDevice
+       1744  6CA 00081190 ResetAccelerationCurves
+       1745  6CB 000B5A90 ResetAccessibilityCountersOnMouseInput
+       1746  6CC 000B8C40 ResolveMouseOrPointerDevice
+       1747  6CD 0007E230 RimInputTypeToDeviceType
+       1748  6CE 00030470 RtlLoadStringOrError
+       1749  6CF 000CD370 SafeDisableMDEV
+       1750  6D0 000CD2F0 SafeEnableMDEV
+       1751  6D1 001AB4F0 SaveCursorPosition
+       1752  6D2 0007ECB0 SendAppClipChanged
+       1753  6D3 0002C880 SendMessageTo
+       1754  6D4 001AB500 SendOrientationChanged
+       1755  6D5 000C05E0 SendPositionChanged
+       1756  6D6 001AB540 SendShellClipChanged
+       1757  6D7 001AB610 SendSuppressionStateChanged
+       1758  6D8 000B82C0 SendVisibilityChanged
+       1759  6D9 0009C0B0 SetAppStarting
+       1760  6DA 00017540 SetConnectCompletedState
+       1761  6DB 000C0BE0 SetConnectedState
+       1762  6DC 000BCCC0 SetConsoleSwitchInProgress
+       1763  6DD 000C0520 SetCsrApiPortHandle
+       1764  6DE 000A3800 SetDpiDepSysMet
+       1765  6DF 00009300 SetEmptyRgn
+       1766  6E0 0006F150 SetGlobalKeyboardTableInfo
+       1767  6E1 0008F560 SetHandleFlag
+       1768  6E2 001ADA90 SetHardwareInputSource
+       1769  6E3 001AB710 SetMouseInputRateLimitingTime
+       1770  6E4 000398E0 SetOrCreateRectRgnIndirectPublic
+       1771  6E5 000C1070 SetPendingInput
+       1772  6E6 000A7400 SetProtocolType
+       1773  6E7 0003AE70 SetRectRgnIndirect
+       1774  6E8 0012C170 SetSwapMouseButton
+       1775  6E9 000B7FD0 SetSystemInputSource
+       1776  6EA 000A8B40 SetThreadBasePriority
+       1777  6EB 000C03F0 SetThreadName
+       1778  6EC 000A87A0 SetThreadPriority
+       1779  6ED 0012C260 SetTouchInputStatus
+       1780  6EE 0008D570 SetUnavailableInputSource
+       1781  6EF 000AED10 SfmSignalTokenEvent
+       1782  6F0 000BBA60 SharedAlloc
+       1783  6F1 0009B990 SharedFree
+       1784  6F2 0008F870 ShouldDeferMessage
+       1785  6F3 00094D70 ShouldSetNoOwner
+       1786  6F4 000173E0 SnapshotMonitorRects
+       1787  6F5 000A74E0 SqmPowerState
+       1788  6F6 000ABF00 SynthesizeMouseInput
+       1789  6F7 001AB810 SynthesizeMouseInputForPTP
+       1790  6F8 001AB940 SynthesizeMouseInputWithNextPreview
+       1791  6F9 0008DBC0 TestHandleFlag
+       1792  6FA 0024D390 ThinWireCache
+       1793  6FB 0003D230 ThreadUnlock1
+       1794  6FC 0008BD00 ThreadUnlockWorker1
+       1795  6FD 001ABA60 TouchTargetingEnabledForInput
+       1796  6FE 0005FD00 TransformPointBetweenCoordinateSpaces
+       1797  6FF 0002FB10 TransformRectBetweenCoordinateSpaces
+       1798  700 0009AE00 UPDWORDPointer
+       1799  701 00054480 UnlockObjectAssignment
+       1800  702 000CF7E0 UnlockQueue
+       1801  703 000C1570 UnlockUpdatesForDwm
+       1802  704 000B3560 UpconvertTime
+       1803  705 0002D040 UpdateAsyncKeyState
+       1804  706 001ABB00 UpdateGlobalCursorOwner
+       1805  707 0013CC70 UpdateInputSettingWnfState
+       1806  708 000BACC0 UpdateKeyLights
+       1807  709 0009AB10 UpdateKeyStateForMessage
+       1808  70A 00012C20 UpdateMonitorDevices
+       1809  70B 0007C980 UpdateMouseSensitivity
+       1810  70C 001ABB40 UpdatePointerDeviceSystemMetrics
+       1811  70D 001ABB60 UpdateSavedPoint
+       1812  70E 0007CCB0 UpdateTPCurrentActiveState
+       1813  70F 000937E0 UpdatesLockedForDwm
+       1814  710 001AE2B0 UserActivateMITInputProcessingHelper
+       1815  711 000C0080 UserAddAtom
+       1816  712 0008FF80 UserAddAtomEx
+       1817  713 0006C2D0 UserAddAtomToAtomTableEx
+       1818  714 0013CFD0 UserAddBaseWindowHandle
+       1819  715 0004AAF0 UserAllocDefaultCompositionSecurityDescriptor
+       1820  716 0024AFE0 UserAtomTableHandle
+       1821  717 001AE370 UserCoreMsgOpenConnectionHandle
+       1822  718 00087190 UserCreateHeap
+       1823  719 001AE390 UserDeactivateMITInputProcessingHelper
+       1824  71A 00021030 UserDeleteAtom
+       1825  71B 00021050 UserDeleteAtomFromAtomTable
+       1826  71C 0013D270 UserDeleteBaseWindowHandle
+       1827  71D 0009A390 UserDeleteW32Process
+       1828  71E 00122610 UserDeleteW32Thread
+       1829  71F 00093820 UserDereferenceDwmApiPort
+       1830  720 00093820 UserDereferenceDwmProcess
+       1831  721 000752E0 UserDereferenceObject
+       1832  722 000B3D00 UserEnterUserCritSec
+       1833  723 000597B0 UserEnterUserCritSecShared
+       1834  724 0008FD60 UserFindAtom
+       1835  725 000AC020 UserFindAtomFromAtomTable
+       1836  726 00005660 UserFreeNKAPC
+       1837  727 0007B4F0 UserGetAtomName
+       1838  728 000A8100 UserGetAtomNameFromAtomTable
+       1839  729 000BD3C0 UserGetCurrentConnection
+       1840  72A 00121D50 UserGetDriverObject
+       1841  72B 0008D000 UserGetHDEV
+       1842  72C 000BE1D0 UserGetTerminalLuid
+       1843  72D 000B8A90 UserIsConsoleConnection
+       1844  72E 00060120 UserIsCurrentProcessDwm
+       1845  72F 0013DB90 UserIsCurrentProcessImmersive
+       1846  730 00006130 UserIsCurrentProcessImmersiveAppContainer
+       1847  731 0009F770 UserIsCurrentThreadDesktopComposed
+       1848  732 000BA130 UserIsCurrentThreadGdiScaled
+       1849  733 00057770 UserIsDisconnectConnection
+       1850  734 000060E0 UserIsProcessImmersiveAppContainer
+       1851  735 00057790 UserIsRemoteAndNotDisconnectConnection
+       1852  736 0004FF00 UserIsRemoteConnection
+       1853  737 00031820 UserIsUserCritSecIn
+       1854  738 0004F290 UserIsUserCritSecInExclusive
+       1855  739 0006DD10 UserIsUserCritSecInShared
+       1856  73A 00057A80 UserIsWddmConnectedSession
+       1857  73B 000C6C00 UserIsWindowDesktopComposed
+       1858  73C 000588D0 UserIsWindowGdiScaled
+       1859  73D 00059960 UserLeaveUserCritSec
+       1860  73E 0024AFD8 UserLibmgmtAtomTableHandle
+       1861  73F 0013DAC0 UserLogError
+       1862  740 000159A0 UserNotifyDisplayChange
+       1863  741 000C7E40 UserPostNKAPC
+       1864  742 0011B290 UserPostNKAPCBuffer
+       1865  743 0009F660 UserReAllocPool
+       1866  744 000B2210 UserReAllocPoolWithQuota
+       1867  745 000B21B0 UserReAllocPoolWithQuotaZInit
+       1868  746 0009F600 UserReAllocPoolZInit
+       1869  747 00030C70 UserReferenceDwmApiPort
+       1870  748 00031330 UserReferenceDwmProcess
+       1871  749 0005D1A0 UserReleaseDC
+       1872  74A 00080890 UserRemoteConnectedSessionUsingWddm
+       1873  74B 00012F70 UserRemoteConnectedSessionUsingXddm
+       1874  74C 000C91B0 UserRemoveWindowedSwapChain
+       1875  74D 0013DBC0 UserRtlAllocMem
+       1876  74E 00005660 UserRtlFreeMem
+       1877  74F 0008BE60 UserScreenAccessCheck
+       1878  750 00057BB0 UserSessionSwitchEnterCrit
+       1879  751 0005A7F0 UserSessionSwitchLeaveCrit
+       1880  752 000313D0 UserSetDCVisRgn
+       1881  753 000C9180 UserSetWindowedSwapChainApiExt
+       1882  754 000BA270 UserSleep
+       1883  755 00078740 UserSurfaceAccessCheck
+       1884  756 000590E0 UserThreadCallout
+       1885  757 00060120 UserUnsafeIsCurrentProcessDwm
+       1886  758 0005B050 UserUnsafeIsProcessDwm
+       1887  759 0009A260 UserValidateCopyRgn
+       1888  75A 001ADC80 VKFromVSC
+       1889  75B 0011B370 ValidateBaseHandleFromMinuserHandle
+       1890  75C 0004D720 ValidateHandleSecure
+       1891  75D 0011B3A0 ValidateHbwnd
+       1892  75E 000B1D90 ValidateHdesk
+       1893  75F 0004F840 ValidateHmenu
+       1894  760 0005D0D0 ValidateHmonitor
+       1895  761 0008CEB0 ValidateHmonitorNoRip
+       1896  762 000ADCD0 ValidateHwinsta
+       1897  763 0005ABE0 ValidateHwnd
+       1898  764 0005AC00 ValidateHwndEx
+       1899  765 0011B470 ValidateHwndMinuser
+       1900  766 0011B490 ValidateHwndMinuserEx
+        284  767 001A85B0 ValidateKbdNLSTable
+       1901  768 0011B4E0 ValidatePwndDesktop
+       1902  769 001202C0 VideoPortCallout
+       1903  76A 001ABBD0 VirtualizeFullKeyboardStates
+       1904  76B 00029820 W32CalloutDispatch
+       1905  76C 0021FDF4 W32ProcessSize
+       1906  76D 0021FDF0 W32ThreadSize
+       1907  76E 00085660 Win32AllocPagedLookasideList
+       1908  76F 00038CF0 Win32AllocPool
+       1909  770 0005EA50 Win32AllocPoolNonPaged
+       1910  771 0013DBE0 Win32AllocPoolWithPriority
+       1911  772 0004CBB0 Win32AllocPoolWithQuota
+       1912  773 0004CB30 Win32AllocPoolWithQuotaZInit
+       1913  774 00020DB0 Win32AllocPoolZInit
+       1914  775 00038C30 Win32AllocateFromPagedLookasideList
+       1915  776 000B1BF0 Win32ExtractSessionPoolTagInfo
+       1916  777 000798E0 Win32FreePagedLookasideList
+       1917  778 0004AF00 Win32FreePool
+       1918  779 000389B0 Win32FreeToPagedLookasideList
+       1919  77A 0011DA00 Win32HeapAlloc
+       1920  77B 0009B9C0 Win32HeapFree
+       1921  77C 0013DC70 Win32QueryPoolSize
+       1922  77D 0013DCB0 Win32UAFMAllocPagedLookasideList
+       1923  77E 0013DD50 Win32UAFMAllocPool
+       1924  77F 0013DDC0 Win32UAFMAllocPoolNonPaged
+       1925  780 0013DE30 Win32UAFMAllocPoolWithPriority
+       1926  781 0013DED0 Win32UAFMAllocPoolWithQuota
+       1927  782 0013DF60 Win32UAFMAllocPoolWithQuotaZInit
+       1928  783 0013DFA0 Win32UAFMAllocPoolZInit
+       1929  784 0013DFE0 Win32UAFMAllocateFromPagedLookasideList
+       1930  785 0013E050 Win32UAFMFreePagedLookasideList
+       1931  786 0013E0B0 Win32UAFMFreePool
+       1932  787 0013E110 Win32UAFMFreeToPagedLookasideList
+       1933  788 00296600 Win32kBaseDriverEntry
+       1934  789 000A2D00 Win32kBaseUserInitialize
+       1935  78A 00121610 Win32kBaseVideoPortCallout
+       1936  78B 0013E180 WinSqmAddToAverageDWORD
+       1937  78C 0013E1B0 WinSqmAddToStream
+       1938  78D 0013E3A0 WinSqmAddToStreamEx
+       1939  78E 000A75E0 WinSqmIncrementDWORD
+       1940  78F 000BC750 WinSqmIsOptedIn
+       1941  790 000BC770 WinSqmIsOptedInEx
+       1942  791 000A74B0 WinSqmSetDWORD
+       1943  792 00208DC0 WinStaMapping
+       1944  793 0012C270 WritePointerDeviceSettings
+       1945  794 0012C3A0 WriteSettingValues
+       1946  795 000B7CA0 _CloseWindowStation
+       1947  796 000A5980 _DwmCheckProcessSession
+       1948  797 00026210 _GetAsyncKeyState
+       1949  798 000AEA90 _GetDC
+       1950  799 00042E80 _GetDCEx
+       1951  79A 001ABBF0 _GetDeviceRects
+       1952  79B 00071530 _GetKeyNameText
+       1953  79C 000A06D0 _GetKeyState
+       1954  79D 0005B270 _GetKeyboardLayout
+       1955  79E 0007CB90 _GetPrecisionTouchPadConfiguration
+       1956  79F 0007B7D0 _HMObjectFromHandle
+       1957  7A0 00042100 _HMPheFromObject
+       1958  7A1 00051E10 _HMPheFromObjectWorker
+       1959  7A2 0006E420 _HMPkheFromObject
+       1960  7A3 001ABC70 _IsPseudoDevice
+       1961  7A4 000BB710 _RegisterLogonProcess
+       1962  7A5 00032680 _ReleaseDC
+       1963  7A6 001ABCB0 _SetHimetricToPixelRatio
+       1964  7A7 00247408 aVkNumpad
+       1965  7A8 0024B1E8 atomUSER32
+       1966  7A9 0024A4B8 ausNumPadCvt
+       1967  7AA 000C53E0 bConstructGET
+        301  7AB 00054230 bConvertDwordToFloat
+       1968  7AC 00008960 bDeleteBrush
+       1969  7AD 0006D240 bDeleteDCInternal
+       1970  7AE 00036DE0 bDeleteDCInternalEx
+       1971  7AF 0000C650 bDeletePalette
+       1972  7B0 00009A20 bDeleteRegion
+       1973  7B1 00009F50 bDeleteSurface
+       1974  7B2 000068A0 bDfbSurfacesMigrated
+       1975  7B3 0000C120 bDynamicProcessAllDriverRealizations
+       1976  7B4 001454C0 bIntersect
+       1977  7B5 000061B0 bIsCompatible
+       1978  7B6 00007360 bMigrateSurfaceForConversion
+       1979  7B7 000C64B0 bPolyPolygon
+       1980  7B8 00010260 bSetDeviceSessionUsage
+        334  7B9 00006250 bSetStockObject
+       1981  7BA 00213090 charsets
+       1982  7BB 0020D400 codepages
+       1983  7BC 0024D420 diStatic
+       1984  7BD 0009A6D0 efCos
+       1985  7BE 0009A700 efSin
+       1986  7BF 00245C60 ext_ms_win_core_win32k_base_export_l1_table
+       1987  7C0 0021F170 ext_ms_win_core_win32k_base_export_l1_table_size
+       1988  7C1 00245EC0 ext_ms_win_core_win32k_baseinit_l1_table
+       1989  7C2 0021FBC8 ext_ms_win_core_win32k_baseinit_l1_table_size
+       1990  7C3 00245F00 ext_ms_win_core_win32k_dcomp_l1_table
+       1991  7C4 0021FBCC ext_ms_win_core_win32k_dcomp_l1_table_size
+       1992  7C5 00246090 ext_ms_win_core_win32k_fulldcompbase_l1_table
+       1993  7C6 0021FBD0 ext_ms_win_core_win32k_fulldcompbase_l1_table_size
+       1994  7C7 002460B0 ext_ms_win_core_win32k_fulluserbase_l1_table
+       1995  7C8 0021FBD4 ext_ms_win_core_win32k_fulluserbase_l1_table_size
+       1996  7C9 00246130 ext_ms_win_core_win32k_gdi_l1_table
+       1997  7CA 0021FBF0 ext_ms_win_core_win32k_gdi_l1_table_size
+       1998  7CB 002461F0 ext_ms_win_core_win32k_input_l1_table
+       1999  7CC 0021FC08 ext_ms_win_core_win32k_input_l1_table_size
+       2000  7CD 00246370 ext_ms_win_core_win32k_inputmit_l1_table
+       2001  7CE 0021FC0C ext_ms_win_core_win32k_inputmit_l1_table_size
+       2002  7CF 00246440 ext_ms_win_core_win32k_inputrim_l1_table
+       2003  7D0 0021FC10 ext_ms_win_core_win32k_inputrim_l1_table_size
+       2004  7D1 002464F0 ext_ms_win_core_win32k_mininputmitbase_l1_table
+       2005  7D2 0021FC14 ext_ms_win_core_win32k_mininputmitbase_l1_table_size
+       2006  7D3 00246520 ext_ms_win_core_win32k_opmgdi_l1_table
+       2007  7D4 0021FC18 ext_ms_win_core_win32k_opmgdi_l1_table_size
+       2008  7D5 00246580 ext_ms_win_core_win32k_user_l1_table
+       2009  7D6 0021FC1C ext_ms_win_core_win32k_user_l1_table_size
+       2010  7D7 002466D0 ext_ms_win_core_win32k_userdisplay_l1_table
+       2011  7D8 0021FC20 ext_ms_win_core_win32k_userdisplay_l1_table_size
+       2012  7D9 00091370 freepathalloc
+       2013  7DA 00213040 fs
+       2014  7DB 00253B70 gAapState
+       2015  7DC 0024BB90 gAccessTimeOut
+       2016  7DD 0024BB68 gAudioDescription
+       2017  7DE 0024B9E3 gBounceVk
+       2018  7DF 00253E07 gCurrentModifierBit
+       2019  7E0 0024B8F0 gDriverObjectTimes
+       2020  7E1 0024C830 gDxgkInterface
+       2021  7E2 00241100 gDxgkWin32kEngInterface
+       2022  7E3 0024BBC8 gFilterKeys
+       2023  7E4 002507F0 gGdiInPageErrors
+       2024  7E5 002509D0 gHardErrorHandler
+       2025  7E6 00253DA0 gHidCounters
+       2026  7E7 0024BB78 gHighContrast
+       2027  7E8 0024ECE0 gHighContrastDefaultScheme
+       2028  7E9 00253EA0 gHighContrastRegistryKey
+       2029  7EA 00250400 gInputLock
+       2030  7EB 00253D20 gInputSinkInfoRetrieval
+       2031  7EC 002509E0 gKbdImeStatus
+       2032  7ED 00247AE0 gKeyboardInfo
+       2033  7EE 00253E09 gLastVkDown
+       2034  7EF 00250A21 gLatchBits
+       2035  7F0 00250A20 gLockBits
+       2036  7F1 00253E04 gMKPreviousVk
+       2037  7F2 002412D0 gMagnContext
+       2038  7F3 0024EB90 gMenuState
+       2039  7F4 002540C8 gMiPTracking
+       2040  7F5 0024BBA0 gMouseKeys
+       2041  7F6 00246CF8 gNestedWindowLimit
+       2042  7F7 00247AD8 gNumLockVk
+       2043  7F8 0024A4F0 gOemScrollVk
+       2044  7F9 00247AD0 gPTPEnabled
+       2045  7FA 0024D110 gPendingMonitorOnReason
+       2046  7FB 0024D680 gPendingNotifiesList
+       2047  7FC 0024D118 gPendingSleepInputReason
+       2048  7FD 00253E08 gPhysModifierState
+       2049  7FE 0024F9E0 gPlatformRole
+       2050  7FF 0024B1B0 gPowerAdaptiveState
+       2051  800 0024D120 gPowerDisplayState
+       2052  801 0024D0C0 gPowerState
+       2053  802 0024D1A8 gPowerTransitionsState
+       2054  803 00253E06 gPrevModifierState
+       2055  804 0024B0D4 gProtocolType
+       2056  805 002503F0 gQueueLock
+       2057  806 0024B0C0 gRemoteClientKeyboardType
+       2058  807 0024B0E0 gRemoteDisplayDeviceName
+       2059  808 0024B134 gRemoteNumMonitors
+       2060  809 0024B0D8 gRemotePreviousMonitorsCount
+       2061  80A 0024B130 gRemotePrimaryMonitor
+       2062  80B 0024B138 gRemoteSessionUseWddm
+       2063  80C 0024B140 gRemoteTerminalLuid
+       2064  80D 002412F0 gRemoteWndsMonitorSnapshotHead
+       2065  80E 0024D368 gRotationProcessLock
+       2066  80F 0024EAF8 gSMWP
+       2067  810 0024B154 gServiceSessionId
+       2068  811 0024B218 gSessionCreationTime
+       2069  812 00246CF0 gSessionId
+       2070  813 0024AD40 gSharedInfo
+       2071  814 0024EDE0 gSoundSentry
+       2072  815 0024AFF0 gSqmIsOptedIn
+       2073  816 0024AFE8 gSqmSession
+       2074  817 0024BBC0 gStickyKeys
+       2075  818 0024B9E1 gStickyKeysLeftShiftCount
+       2076  819 0024B9E0 gStickyKeysRightShiftCount
+       2077  81A 00253E05 gTKScanCode
+       2078  81B 00250350 gTLCInfoLock
+       2079  81C 00253BF0 gTPThresholds
+       2080  81D 0024EA90 gTermIO
+       2081  81E 0024D400 gThinwireFileObject
+       2082  81F 0024D690 gTimerHashTable
+       2083  820 0024DA90 gTimerId
+       2084  821 0024BB88 gToggleKeys
+       2085  822 0024AFB0 gTouchPadParameters
+       2086  823 0024B20C gUserPostMessageLimit
+       2087  824 0024AD1C gUserProcessHandleQuota
+       2088  825 0024B018 gVideoFileObject
+       2089  826 0024B158 gWinStationInfo
+       2090  827 0024D3E8 gWinstaRunRef
+       2091  828 00250410 gWndLock
+       2092  829 002412E0 gWndsMonitorSnapshotHead
+       2093  82A 00208A80 gZero
+       2094  82B 00250A90 g_hbmDesktopPattern
+       2095  82C 0024BC08 g_pWallpaperSettings
+       2096  82D 0024A650 gaefArctan
+       2097  82E 0024A620 gaefAxisAngle
+       2098  82F 0024A638 gaefAxisCoord
+       2099  830 0024A430 gaefSin
+       2100  831 0024B8A0 gafAsyncKeyState
+       2101  832 0024B880 gafAsyncKeyStateRecentDown
+       2102  833 0024B840 gafRawKeyState
+       2103  834 0024AF98 gafServiceFilterAuditCache
+       2104  835 00250988 gafServiceFilterAuditStackCache
+       2105  836 002054B0 gahti
+       2106  837 0024B240 gaptMouse
+       2107  838 00245A30 gapulCvt_VK
+       2108  839 00246AD0 gapulCvt_VK_84
+       2109  83A 0020D310 gargbInitial
+       2110  83B 00247B00 gasyscur
+       2111  83C 0024B1EC gatomFirstPinned
+       2112  83D 002509B4 gatomLastPinned
+       2113  83E 00253DC8 gatomMiPFlags
+       2114  83F 00250A38 gbBlockSendInputResets
+       2115  840 0024B180 gbCleanedUpResources
+       2116  841 0024B0B0 gbClientDoubleClickSupport
+       2117  842 0024B0CC gbConnectCompleted
+       2118  843 0024B0D0 gbConnected
+       2119  844 0024ABB0 gbDBCSCodePage
+       2120  845 0025097C gbDITInHitTest
+       2121  846 00253DF4 gbDesktopLocked
+       2122  847 0024B210 gbDisableAlpha
+       2123  848 002507E0 gbDisableLddmSpriteTearDown
+       2124  849 00253DAC gbExitInProgress
+       2125  84A 002509AC gbFirstConnectionDone
+       2126  84B 0024B148 gbFirstInteractiveSession
+       2127  84C 00253DB0 gbFreezeScreenUpdates
+       2128  84D 0024A4F8 gbFullScreen
+       2129  84E 0024A4E8 gbGDIOn
+       2130  84F 00254454 gbGUISetup
+       2131  850 0024CBCC gbGreSessionCleanup
+       2132  851 0024AD0C gbInDestroyHandleTableObjects
+       2133  852 00253DC4 gbInVideoPnpCallout
+       2134  853 0024ABB4 gbLockEtw
+       2135  854 0024C7A4 gbLockScreenActive
+       2136  855 00250900 gbMDEVDisabled
+       2137  856 0024B9E2 gbMKMouseMode
+       2138  857 0024B1B9 gbManualDimTimeOut
+       2139  858 00253DE0 gbMouseInjectionBlockedOnDIT
+       2140  859 00250990 gbNoMoreDITHitTest
+       2141  85A 0024B188 gbNoMorePowerCallouts
+       2142  85B 0024B150 gbNonServiceSession
+       2143  85C 0024AF95 gbOSTestSigningEnabled
+       2144  85D 0024D114 gbPendingMonitorOn
+       2145  85E 0024D11C gbPendingSleepInput
+       2146  85F 0024B18C gbPowerCalloutsReady
+       2147  860 0024B184 gbPowerHighPrecisionBrightnessSupported
+       2148  861 0024B14C gbRemoteFxSession
+       2149  862 00253B64 gbRootPartition
+       2150  863 0024D3F8 gbSnapShotWindowsAndMonitors
+       2151  864 0024AFA0 gbTraceLoggingInitialized
+       2152  865 0024B1B8 gbTtmEnabled
+       2153  866 00253DC0 gbUsingDefaultSectionSize
+       2154  867 0024AF94 gbValidateHandleForIL
+       2155  868 0024B190 gbVideoInitialized
+       2156  869 0024AF90 gcDITHitTestWaiters
+       2157  86A 0024AFC8 gcDITLuidHitTestWaiters
+       2158  86B 00253D90 gcDITMouseInjectionWaiters
+       2159  86C 0024C7B4 gcLocalNextGlobalDeviceNumber
+       2160  86D 0024B060 gcSwitchInProgressWaiters
+       2161  86E 00250A24 gcSysExpunge
+       2162  86F 0024AB84 gcTrueTypeFonts
+       2163  870 00250920 gcachedCaptions
+       2164  871 0024B220 gcmsLastTimer
+       2165  872 0024A400 gdtDblClk
+       2166  873 00253B5C gdwAtomicCheckLogSize
+       2167  874 00253B58 gdwAtomicCheckSerial
+       2168  875 0024B208 gdwDeferWinEvent
+       2169  876 0024B198 gdwDesktopSectionSize
+       2170  877 0024C828 gdwDirectDrawContext
+       2171  878 00250978 gdwExtraInstrumentations
+       2172  879 00250A10 gdwGTERMFlags
+       2173  87A 0024AFF4 gdwGuiThreads
+       2174  87B 00247AD4 gdwHungAppTimeout
+       2175  87C 0024AFF8 gdwHydraHint
+       2176  87D 0024A4F4 gdwIMEOpenStatus
+       2177  87E 0024AD08 gdwInAtomicOperation
+       2178  87F 0024BA30 gdwKeyboardAttributes
+       2179  880 0024AFA8 gdwMDAQThreshold
+       2180  881 0024AFA4 gdwMDAQTimeoutDefenseInDepth
+       2181  882 0024B194 gdwNOIOSectionSize
+       2182  883 00246D00 gdwPUDFlags
+       2183  884 0024A404 gdwPolicyFlags
+       2184  885 0024D370 gdwServiceFilterAuditCaptureWER
+       2185  886 0024D374 gdwServiceFilterAuditThrottleMode
+       2186  887 00250A28 gdwThreadEndSession
+       2187  888 0024D1E4 gdwUpdateKeyboard
+       2188  889 0024D3E4 gdwWaitToKillServiceTimeout
+       2189  88A 00250A3C gfEnableHexNumpad
+       2190  88B 00246CF4 gfEnableWindowsKey
+       2191  88C 0024BA50 gfInNumpadHexInput
+       2192  88D 0024D200 gfIsFadingInProgress
+       2193  88E 00253DE8 gfKanaToggle
+       2194  88F 0024D0B0 gfMonitorPowerInProgress
+       2195  890 00246D18 gfRecordPnpNotification
+       2196  891 002509A8 gfRemotingConsole
+       2197  892 0024B0B8 gfSessionSwitchBlock
+       2198  893 0024C7A0 gfSwitchInProgress
+       2199  894 0024D320 gfade
+       2200  895 0024AB94 gfsCurSignature
+       2201  896 00253DE4 gfsSASModifiersDown
+       2202  897 0024D360 gfsSave
+       2203  898 0024B000 ghKbdTblBase
+       2204  899 0024B118 ghRemoteBeepChannel
+       2205  89A 0024B110 ghRemoteKeyboardChannel
+       2206  89B 0024B120 ghRemoteMouseChannel
+       2207  89C 0024B108 ghRemoteThinwireChannel
+       2208  89D 0024B128 ghRemoteVideoChannel
+       2209  89E 0024B1E0 ghSMSS
+       2210  89F 0024D410 ghSectionKernelHandleTable
+       2211  8A0 0024D358 ghSectionShared
+       2212  8A1 0024EE20 ghWinstaDirectory
+       2213  8A2 0024D468 ghbrBlack
+       2214  8A3 0024ECB8 ghbrHungApp
+       2215  8A4 0024D470 ghbrWhite
+       2216  8A5 0024B980 ghdcMem
+       2217  8A6 0024B978 ghdcMem2
+       2218  8A7 0024BFE0 ghfmMemory
+       2219  8A8 0024B970 ghrgnGDC
+       2220  8A9 0024B998 ghrgnInv0
+       2221  8AA 0024B990 ghrgnInv1
+       2222  8AB 0024B988 ghrgnInv2
+       2223  8AC 0024B9A0 ghrgnInvalid
+       2224  8AD 0024B9C8 ghrgnInvalidSum
+       2225  8AE 0024B968 ghrgnSCR
+       2226  8AF 0024B960 ghrgnSPB1
+       2227  8B0 0024B958 ghrgnSPB2
+       2228  8B1 0024B950 ghrgnSW
+       2229  8B2 0024B9B8 ghrgnSWP1
+       2230  8B3 0024B948 ghrgnScrl1
+       2231  8B4 0024B940 ghrgnScrl2
+       2232  8B5 0024B928 ghrgnScrlDst
+       2233  8B6 0024B930 ghrgnScrlSrc
+       2234  8B7 0024B920 ghrgnScrlValid
+       2235  8B8 0024B938 ghrgnScrlVis
+       2236  8B9 0024B9B0 ghrgnValid
+       2237  8BA 0024B9A8 ghrgnValidSum
+       2238  8BB 0024B9C0 ghrgnVisNew
+       2239  8BC 0024ABA8 ghsemAtmfdInit
+       2240  8BD 0024AB98 ghsemCLISERV
+       2241  8BE 0024ABF0 ghsemDCVisRgn
+       2242  8BF 0024AC18 ghsemDriverMgmt
+       2243  8C0 0024ABC8 ghsemDwmState
+       2244  8C1 0024AC28 ghsemDynamicModeChange
+       2245  8C2 0024ABA0 ghsemFntCache
+       2246  8C3 0024ABE8 ghsemGreLock
+       2247  8C4 0024ABE0 ghsemHT
+       2248  8C5 0024C190 ghsemHmgr
+       2249  8C6 0024AC00 ghsemMapRot
+       2250  8C7 0024AC08 ghsemPalette
+       2251  8C8 0024AC20 ghsemPublicPFT
+       2252  8C9 0024ABC0 ghsemRFONTList
+       2253  8CA 0024AC10 ghsemSprite
+       2254  8CB 0024ABD8 ghsemVisRgnPublish
+       2255  8CC 0024ABD0 ghsemVisRgnUniqueness
+       2256  8CD 0024ABB8 ghsemWndobj
+       2257  8CE 002509B0 giDelayedPowerTimeout
+       2258  8CF 0024B1BC giDimTimeOutMs
+       2259  8D0 0024B1C4 giPowerOffTimeOutMs
+       2260  8D1 0024B1C0 giPowerSessionActivityTimeOutMs
+       2261  8D2 00253E28 giScreenSaveTimeOutMs
+       2262  8D3 0024AD14 giheCount
+       2263  8D4 0024AD10 giheCountPeak
+       2264  8D5 0024AD18 giheLast
+       2265  8D6 0024EAE8 giosbKbdControl
+       2266  8D7 0024AB90 gjCurCharset
+       2267  8D8 0024B8E0 gklp
+       2268  8D9 00253DEC gklpBootTime
+       2269  8DA 002509EC gktp
+       2270  8DB 00253E00 glMitInGuard
+       2271  8DC 0024ABFC glRenderEndDelete
+       2272  8DD 0024D380 gliQpcFreq
+       2273  8DE 00250A00 gnDCECount
+       2274  8DF 0024B0B4 gnPoSessionSwitchBlockCount
+       2275  8E0 00253DF0 gnRetryReadInput
+       2276  8E1 00250970 gpAtomickCheckStacks
+       2277  8E2 002509A0 gpClipFormatExceptionList
+       2278  8E3 00253DB8 gpConsoleShadowDisplayChangeEvent
+       2279  8E4 0024CCC0 gpCursorClip
+       2280  8E5 0024B9D0 gpDispInfo
+       2281  8E6 00253E18 gpDpiKernelModeMetricsCache
+       2282  8E7 00253E10 gpDpiKernelModeMetricsMRUNode
+       2283  8E8 0024BBF8 gpEventDiconnectDesktop
+       2284  8E9 0024B008 gpEventPnPWainting
+       2285  8EA 0024C6D0 gpForegroundInfo
+       2286  8EB 0024C188 gpGdiSharedMemory
+       2287  8EC 0024B1F0 gpHandleFlagsMutex
+       2288  8ED 0024C6E0 gpHidInput
+       2289  8EE 00250D18 gpHidInterfaceGuid
+       2290  8EF 0024C6D8 gpIOCPDispatcher
+       2291  8F0 0024C6C8 gpInputExtensibilityCallout
+       2292  8F1 0024CCC8 gpInputGlobals
+       2293  8F2 00250910 gpJobsList
+       2294  8F3 0024BA38 gpKL
+       2295  8F4 0024BA40 gpKbdNlsTbl
+       2296  8F5 0024BA48 gpKbdTbl
+       2297  8F6 0024AD38 gpKernelHandleTable
+       2298  8F7 0024C6E8 gpKeyboardSensor
+       2299  8F8 0024C000 gpLockShortDelay
+       2300  8F9 0024BC00 gpMonitorCached
+       2301  8FA 00250CB0 gpMonitorMouse
+       2302  8FB 0024C6F0 gpMouseSensor
+       2303  8FC 0024D408 gpRemoteBeepDevice
+       2304  8FD 0024BBF0 gpRemoteSessionOcclusionEvent
+       2305  8FE 00250A18 gpScancodeMap
+       2306  8FF 0024B010 gpThinWireCache
+       2307  900 0024C6C0 gpTouchProcessor
+       2308  901 0024BC50 gpW32FastMutex
+       2309  902 0024B900 gpWin32kDriverObject
+       2310  903 00253DD8 gpWinEventHooks
+       2311  904 0024ECC0 gpai
+       2312  905 0024B1A0 gpbIgnoreSleepInput
+       2313  906 0024B1A8 gpbInHiberBoot
+       2314  907 00250A30 gpbwlList
+       2315  908 0024BA18 gpdeskRecalcQueueAttach
+       2316  909 0024A3F8 gpdwCPUserPreferencesMask
+       2317  90A 0024ACE8 gpepCSRSS
+       2318  90B 0024B1C8 gpepInit
+       2319  90C 0024B0A8 gpevtDesktopDestroyed
+       2320  90D 0024B070 gpevtMonitorPowerWaiter
+       2321  90E 0024B0A0 gpevtPTPOperation
+       2322  90F 0024B088 gpevtQueueReadyForCallout
+       2323  910 0024B078 gpevtRitReadyForCallOut
+       2324  911 0024B098 gpevtSynthesizedContainerMouseInput
+       2325  912 0024B090 gpevtVideoInitialized
+       2326  913 0024B080 gpevtVideoportCallout
+       2327  914 0024B1D8 gpidLogon
+       2328  915 0024B1D0 gpidLogonUI
+       2329  916 0024B1F8 gpkdiStatic
+       2330  917 0024EB30 gpopupMenu
+       2331  918 002509B8 gppiDManipHook
+       2332  919 0024B9E8 gppiFullscreen
+       2333  91A 0024BA28 gppiInputProvider
+       2334  91B 0024BA08 gppiList
+       2335  91C 0024BA20 gppiLockSFW
+       2336  91D 0024B9F8 gppiScreenSaver
+       2337  91E 0024BA10 gppiStarting
+       2338  91F 002509C0 gppiUserApiHook
+       2339  920 0024BBE0 gpqCursor
+       2340  921 00250A50 gpqForeground
+       2341  922 0024BBE8 gpqForegroundPrev
+       2342  923 0024B908 gpresDitCompositionInputSinkQuery
+       2343  924 0024B910 gpresDitMouseInjectionFlush
+       2344  925 0024B918 gpresDitTouchInjection
+       2345  926 0024B8E8 gpresPTPEventQueue
+       2346  927 0024AF78 gpresRender
+       2347  928 0024AD00 gpresUser
+       2348  929 0024AF88 gpsemDITHitTestWaiters
+       2349  92A 0024AFD0 gpsemDITLuidHitTestWaiters
+       2350  92B 00253D98 gpsemDITMouseInjectionWaiters
+       2351  92C 0024B068 gpsemSwitchInProgressWaiters
+       2352  92D 0024AD30 gpsi
+       2353  92E 0024ECC8 gptCursorAsync
+       2354  92F 00246CFC gptInd
+       2355  930 0024B9F0 gptSSCursor
+       2356  931 00250A60 gptiBlockInput
+       2357  932 0024ACF0 gptiCurrent
+       2358  933 00250A68 gptiForeground
+       2359  934 00250A70 gptiLockUpdate
+       2360  935 0024B9D8 gptiManipulationThread
+       2361  936 00253B50 gptiModerncoreTimerThread
+       2362  937 00250918 gptiRit
+       2363  938 00250A78 gptiShutdownNotify
+       2364  939 00250998 gptiShutdownWaiter
+       2365  93A 0024AF80 gptiTSRequest
+       2366  93B 00250A80 gptiTasklist
+       2367  93C 0024B228 gptmrMaster
+       2368  93D 0024BD30 gptmrWD
+       2369  93E 00253DD0 gpusMouseVKey
+       2370  93F 0024AD28 gpvSharedAlloc
+       2371  940 0024AD20 gpvSharedBase
+       2372  941 002471B0 gpviCPUserPreferences
+       2373  942 002509F8 gpvwplHungRedraw
+       2374  943 0024EE18 gpwpiFirstWow
+       2375  944 00250A58 gpwtiFirst
+       2376  945 002509C8 grpWinStaList
+       2377  946 00250A08 grpdeskIODefault
+       2378  947 00250E80 grpdeskRitInput
+       2379  948 00253E20 grpwinstaLogoff
+       2380  949 0024EAD8 gsmsList
+       2381  94A 00253DF8 gspdeskShouldBeForeground
+       2382  94B 0024ECD0 gspklBaseLayout
+       2383  94C 00250778 gspklGlobalActive
+       2384  94D 00250A88 gspwndInternalCapture
+       2385  94E 0024D378 gstServiceFilterAuditStackCacheSize
+       2386  94F 0024B020 gstrBaseWinStationName
+       2387  950 0024EA70 gtmrAdjustmentListHead
+       2388  951 0024EA80 gtmrListHead
+       2389  952 00250A40 gtmridAccessTimeOut
+       2390  953 0024AFFC guKbdTblSize
+       2391  954 00253DCC guiActivateShellWindow
+       2392  955 002540C4 gulDelayedSwitchAction
+       2393  956 0024AB8C gulFontInformation
+       2394  957 0024D3F0 gullUserCritAcquireToken
+       2395  958 0024AB88 gusLanguageID
+       2396  959 00253E40 gwMKButtonState
+       2397  95A 0024A4FC gwMKCurrentButton
+       2398  95B 000BF2E0 hCreateKernelEvent
+       2399  95C 0011D8B0 hCreateKernelTimer
+       2400  95D 00008600 hCreateSolidBrushInternal
+       2401  95E 0024ACF8 hModuleWin
+       2402  95F 0024B200 hModuleWinKernel
+       2403  960 00098A90 hbmSelectBitmap
+        461  961 000D0C40 hbmSelectBitmapInternal
+       2404  962 0005DE70 hdcOpenDCW
+       2405  963 0002FFB0 hdevEnumerate
+       2406  964 0008CDC0 lNormAngle
+       2407  965 0000E390 ldevLoadDriver
+       2408  966 0000E670 ldevLoadImage
+       2409  967 000B37D0 ldevLoadInternal
+       2410  968 0000D3B0 ldevUnloadImage
+       2411  969 0021FCA0 luidSystem
+       2412  96A 0022090C nCharsets
+       2413  96B 0008C5E0 newpathalloc
+       2414  96C 00145AB0 pProcessDfbSurfaces
+       2415  96D 000070D0 pProcessDfbSurfaces2
+       2416  96E 000071C0 pProcessDfbSurfacesInternal
+       2417  96F 00247320 psTcb
+       2418  970 00006E20 rgbFromColorref
+       2419  971 00241000 s_rgSensorMap
+       2420  972 0021FC50 szCOMPOSITIONINPUTQUEUE_NAME
+       2421  973 0021FC88 szMIPFLAGS
+       2422  974 00208950 szNull
+       2423  975 0024D480 szWindowStationDirectory
+       2424  976 00150370 ulCharsetToCodePage
+       2425  977 000C9200 ulColorRefToRGB
+       2426  978 00094570 ulGetNearestIndexFromColorref
+       2427  979 00071710 ulIndexToRGB
+       2428  97A 000C5710 vAdvanceAETEdges
+       2429  97B 000535B0 vConvertXformToMatrix
+       2430  97C 0000AFA0 vDynamicConvertNewSurfaceDCs
+        508  97D 000C8DF0 vFreeDriverInfo2
+       2431  97E 000B3120 vMarkFreeW32Process
+       2432  97F 000AF3F0 vMarkFreeW32Thread
+       2433  980 00142220 vMatchAPal
+       2434  981 000C6760 vMoveNewEdges
+       2435  982 00092290 vRestoreRegion
+       2436  983 000C5F70 vXSortAETEdges
+       2437  984 0006F460 xxxActivateKeyboardLayout
+       2438  985 00070A50 xxxChangeForegroundKeyboardTable
+       2439  986 000799E0 xxxCreateSystemThreads
+       2440  987 00124680 xxxDisplayDiagBlackScreenDetected
+       2441  988 000A6E90 xxxDwmControl
+       2442  989 0002F6C0 xxxEnumDisplayMonitors
+       2443  98A 0006F520 xxxInternalActivateKeyboardLayout
+       2444  98B 0006FD90 xxxInternalToUnicode
+       2445  98C 000AD920 xxxKENLSProcs
+       2446  98D 001AD6E0 xxxKeyEvent
+       2447  98E 0002C990 xxxKeyEventEx
+       2448  98F 0002EF50 xxxODI_ColorInit
+       2449  990 001AD730 xxxProcessKeyEvent
+       2450  991 0011DA30 xxxRemoteConnect
+       2451  992 00016F80 xxxResetDisplayDevice
+       2452  993 0006E610 xxxSafeLoadKeyboardLayoutEx
+       2453  994 000CA950 xxxSendWinlogonPowerMessage
+       2454  995 00026C10 xxxSetProcessInitState
+       2455  996 0007C400 xxxSystemParametersInfo
+       2456  997 0006FC80 xxxToUnicodeEx
+       2457  998 001A7820 xxxUnloadKeyboardLayout
+       2458  999 0002CBB0 xxxUpdateGlobalsAndSendKeyEvent
+       2459  99A 0009FB40 xxxUpdatePerUserAccessPackSettings
+       2460  99B 0001D400 xxxUserChangeDisplaySettings
+       2461  99C 00018BD0 xxxUserPowerCalloutWorker
+       2462  99D 000589A0 xxxUserProcessCallout
+       2463  99E 00018110 xxxUserSetDisplayConfig
+       2464  99F 000544B0 zzzDestroyQueue
+
+  Summary
+
+       14000 .data
+       17000 .edata
+        6000 .idata
+        1000 .kbdfall
+       1D000 .pdata
+       44000 .rdata
+       12000 .reloc
+       25000 .rsrc
+      1FC000 .text
+        4000 GFIDS
+        5000 INIT
+        1000 NONPAGE
+        2000 PAGE

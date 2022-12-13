@@ -1,0 +1,178 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_dual_pmem.inf_31bf3856ad364e35_10.0.19041.1949_none_c78924d5e2ee35d4\pmem.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    cng.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0013050 Import Address Table
+             1C0013458 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         306 IoDeleteDevice
+                         35A IoInitializeRemoveLockEx
+                         7DF RtlCopyUnicodeString
+                         6C5 PoSetPowerState
+                         32C IoGetConfigurationInformation
+                         902 RtlQueryFeatureConfigurationChangeStamp
+                         2CC IoAttachDeviceToDeviceStack
+                          7F EtwWriteTransfer
+                         96A RtlUnregisterFeatureConfigurationChangeNotification
+                          79 EtwUnregister
+                          7A EtwWrite
+                         A95 ZwCreateDirectoryObject
+                          A3 ExAllocatePoolWithTag
+                          74 EtwRegister
+                         2EE IoCreateDevice
+                         40F IofCallDriver
+                          CA ExFreePoolWithTag
+                         410 IofCompleteRequest
+                         A8C ZwClose
+                         6CE PoStartNextPowerIrp
+                         14E ExWaitForRundownProtectionReleaseCacheAware
+                         5C9 MmUnmapIoSpace
+                         323 IoGetActivityIdIrp
+                         4E5 KeReleaseMutex
+                         122 ExReleaseSpinLockShared
+                          91 ExAcquireRundownProtectionCacheAware
+                          98 ExAcquireSpinLockShared
+                         59A MmMapIoSpaceEx
+                         532 KeWaitForSingleObject
+                         11D ExReleaseRundownProtectionCacheAware
+                         100 ExReInitializeRundownProtectionCacheAware
+                         397 IoReleaseRemoveLockAndWaitEx
+                         120 ExReleaseSpinLockExclusive
+                         35E IoInvalidateDeviceState
+                         7C6 RtlCmDecodeMemIoResource
+                         309 IoDetachDevice
+                         489 KeInitializeMutex
+                         846 RtlFreeUnicodeString
+                         48D KeInitializeSpinLock
+                         48F KeInitializeTimer
+                         308 IoDeleteSymbolicLink
+                         55D MmAllocateMappingAddress
+                          96 ExAcquireSpinLockExclusive
+                         842 RtlFreeNonVolatileToken
+                         942 RtlStringFromGUID
+                         579 MmFreeMappingAddress
+                         6BE PoRequestPowerIrp
+                         861 RtlGetNonVolatileToken
+                         46B KeFlushQueuedDpcs
+                         7C9 RtlCompareMemory
+                          C8 ExFreeCacheAwareRundownProtection
+                         90B RtlQueryRegistryValuesEx
+                         36F IoOpenDeviceRegistryKey
+                         507 KeSetEvent
+                         AAD ZwDeleteValueKey
+                         485 KeInitializeEvent
+                         B52 ZwSetValueKey
+                         ADC ZwOpenKey
+                         B63 ZwUpdateWnfStateData
+                         582 MmGetPhysicalAddress
+                         2C7 IoAllocateWorkItem
+                         7A7 RtlAnsiStringToUnicodeString
+                         481 KeInitializeDpc
+                          77 EtwSetInformation
+                         4CE KeQueryUnbiasedInterruptTime
+                         879 RtlInitAnsiString
+                         443 KeCancelTimer
+                         322 IoFreeWorkItem
+                         37E IoQueueWorkItem
+                         505 KeSetCoalescableTimer
+                         3A7 IoReportTargetDeviceChangeAsynchronous
+                         59E MmMapMdl
+                         431 KeAcquireSpinLockRaiseToDpc
+                         59D MmMapLockedPagesWithReservedMapping
+                         983 RtlWriteNonVolatileMemory
+                         4E8 KeReleaseSpinLock
+                         4AB KeLowerIrql
+                         5CB MmUnmapReservedMapping
+                          9D ExAllocateCacheAwareRundownProtection
+                         534 KfRaiseIrql
+                         2D2 IoBuildSynchronousFsdRequest
+                         31C IoFreeIrp
+                         675 ObfDereferenceObject
+                         335 IoGetDeviceObjectPointer
+                         3EA IoUnregisterPlugPlayNotificationEx
+                         393 IoRegisterPlugPlayNotification
+                         336 IoGetDeviceProperty
+                         2C2 IoAllocateIrp
+                         328 IoGetAttachedDeviceReference
+                         2D0 IoBuildDeviceIoControlRequest
+                         5A0 MmMapMemoryDumpMdlEx
+                         6C2 PoSetHiberRange
+                         474 KeGetCurrentProcessorNumberEx
+                         882 RtlInitUnicodeString
+                         B8F _vsnprintf
+                         ACE ZwMakeTemporaryObject
+                         684 PoCallDriver
+                         901 RtlQueryFeatureConfiguration
+                         919 RtlRegisterFeatureConfigurationChangeNotification
+                         B91 _vsnwprintf
+                         398 IoReleaseRemoveLockEx
+                         2FA IoCreateSymbolicLink
+                         2BA IoAcquireRemoveLockEx
+                         83C RtlFlushNonVolatileMemory
+                         4B6 KeQueryActiveProcessorCountEx
+                         B69 __chkstk
+
+    HAL.dll
+             1C0013000 Import Address Table
+             1C0013408 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    cng.sys
+             1C0013010 Import Address Table
+             1C0013418 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           1 BCryptCloseAlgorithmProvider
+                          12 BCryptFinishHash
+                          1E BCryptOpenAlgorithmProvider
+                          18 BCryptGetProperty
+                           8 BCryptDestroyHash
+                          1A BCryptHashData
+                           2 BCryptCreateHash
+
+  Section contains the following exports for pmem.sys
+
+    00000000 characteristics
+    A1C6CED5 time date stamp
+        0.00 version
+           1 ordinal base
+           2 number of functions
+           2 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000015A0 DumpPreInitialize
+          2    1 000015C0 DumpUninitialize
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        2000 .idata
+        1000 .pdata
+        5000 .rdata
+        1000 .reloc
+        8000 .rsrc
+        B000 .text
+        1000 GFIDS
+        1000 INIT
+        6000 PAGE

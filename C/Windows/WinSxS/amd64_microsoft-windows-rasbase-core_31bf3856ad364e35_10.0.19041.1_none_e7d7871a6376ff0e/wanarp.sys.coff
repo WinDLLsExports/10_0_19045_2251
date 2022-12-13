@@ -1,0 +1,182 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-rasbase-core_31bf3856ad364e35_10.0.19041.1_none_e7d7871a6376ff0e\wanarp.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    NETIO.SYS
+    NDIS.SYS
+    fwpkclnt.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000A1E8 Import Address Table
+             1C000A660 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         42D KeAcquireSpinLockAtDpcLevel
+                         45E KeExpandKernelStackAndCalloutEx
+                         7C5 RtlCompareMemory
+                         599 MmMapLockedPagesSpecifyCache
+                         37C IoQueueWorkItem
+                         320 IoFreeWorkItem
+                         2C7 IoAllocateWorkItem
+                         AD8 ZwOpenKey
+                         4B4 KeQueryActiveProcessorCountEx
+                         A88 ZwClose
+                         394 IoReleaseCancelSpinLock
+                         2F8 IoCreateSymbolicLink
+                         40E IofCompleteRequest
+                         2B8 IoAcquireCancelSpinLock
+                         B16 ZwQueryValueKey
+                          D8 ExInitializeNPagedLookasideList
+                         306 IoDeleteSymbolicLink
+                         4E3 KeReleaseMutex
+                         7DB RtlCopyUnicodeString
+                         304 IoDeleteDevice
+                          B3 ExDeleteNPagedLookasideList
+                         592 MmLockPagableDataSection
+                         487 KeInitializeMutex
+                         7A6 RtlAppendUnicodeStringToString
+                         450 KeDelayExecutionThread
+                          F3 ExQueryDepthSList
+                         15B ExpInterlockedPushEntrySList
+                         15A ExpInterlockedPopEntrySList
+                         530 KeWaitForSingleObject
+                         483 KeInitializeEvent
+                          CA ExFreePoolWithTag
+                         4E8 KeReleaseSpinLockFromDpcLevel
+                          A3 ExAllocatePoolWithTag
+                         42F KeAcquireSpinLockRaiseToDpc
+                         4A9 KeLowerIrql
+                         959 RtlUnicodeStringToAnsiString
+                         584 MmGetSystemRoutineAddress
+                         65D ObOpenObjectByPointer
+                         2EC IoCreateDevice
+                         30A IoDeviceObjectType
+                         B47 ZwSetSecurityObject
+                         92D RtlSetDaclSecurityDescriptor
+                         367 IoIsWdmVersionAvailable
+                         8C7 RtlLengthSid
+                         792 RtlAddAccessAllowedAce
+                         791 RtlAbsoluteToSelfRelativeSD
+                         BDD wcschr
+                         B93 _wcsnicmp
+                         7E5 RtlCreateSecurityDescriptor
+                         9B7 SeExports
+                         8C6 RtlLengthSecurityDescriptor
+                         B78 _snwprintf
+                         99F SeCaptureSecurityDescriptor
+                         864 RtlGetSaclSecurityDescriptor
+                         861 RtlGetOwnerSecurityDescriptor
+                         857 RtlGetGroupSecurityDescriptor
+                         850 RtlGetDaclSecurityDescriptor
+                         842 RtlFreeUnicodeString
+                         A97 ZwCreateKey
+                         B4E ZwSetValueKey
+                         505 KeSetEvent
+                         4E6 KeReleaseSpinLock
+                         48B KeInitializeSpinLock
+                          F8 ExQueueWorkItem
+                         87E RtlInitUnicodeString
+                         96B RtlUpcaseUnicodeString
+
+    NETIO.SYS
+             1C000A0D0 Import Address Table
+             1C000A548 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          EC NetioAllocateMdl
+                         16D NetioRetreatNetBufferList
+                          FF NetioDereferenceNetBufferList
+                          DF NetioAdvanceNetBufferList
+                         108 NetioFreeMdl
+                         100 NetioDereferenceNetBufferListChain
+                         1B8 RtlCopyBufferToMdl
+                          E2 NetioAllocateAndReferenceCloneNetBufferList
+                         17D NmrRegisterClient
+                         17F NmrWaitForClientDeregisterComplete
+                         178 NmrClientAttachProvider
+                         179 NmrClientDetachProviderComplete
+                         17A NmrDeregisterClient
+                         17B NmrDeregisterProvider
+                         116 NetioInitializeNetBufferListContext
+                          F6 NetioCompleteCopyNetBufferListChain
+                         172 NetioUnInitializeNetBufferListLibrary
+                         16A NetioRegisterProcessorAddCallback
+                         173 NetioUnRegisterProcessorAddCallback
+                         118 NetioInitializeNetBufferListLibrary
+                         170 NetioStackBlockProcessorAddHandler
+                         17E NmrRegisterProvider
+                         10F NetioFreeStackBlock
+                          E1 NetioAllocateAndInitializeStackBlock
+                         17C NmrProviderDetachClientComplete
+                         180 NmrWaitForProviderDeregisterComplete
+                          E4 NetioAllocateAndReferenceCopyNetBufferListEx
+
+    NDIS.SYS
+             1C000A000 Import Address Table
+             1C000A478 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          EB NdisIfAddIfStackEntry
+                          3F NdisCloseAdapterEx
+                          63 NdisCompleteBindAdapterEx
+                          68 NdisCompleteUnbindAdapterEx
+                         1A6 NdisOpenAdapterEx
+                          F5 NdisIfRegisterInterface
+                          EF NdisIfDeregisterInterface
+                          F3 NdisIfGetNetLuidFromInterfaceIndex
+                           9 NdisAdjustNetBufferCurrentMdl
+                         1D6 NdisReturnNetBufferLists
+                         1DA NdisSendNetBufferLists
+                          BA NdisGetDataBuffer
+                         1D4 NdisRetreatNetBufferDataStart
+                          A8 NdisFreeNetBufferListContext
+                          2D NdisCancelSendNetBufferLists
+                           A NdisAdvanceNetBufferDataStart
+                          1A NdisAllocateNetBufferListContext
+                         1CA NdisRegisterProtocolDriver
+                          F0 NdisIfDeregisterProvider
+                          F6 NdisIfRegisterProvider
+                          EC NdisIfAllocateNetLuidIndex
+                          F1 NdisIfFreeNetLuidIndex
+                          76 NdisDeregisterProtocolDriver
+                         1DE NdisSetEvent
+                         1A4 NdisOidRequest
+
+    fwpkclnt.sys
+             1C000A1B0 Import Address Table
+             1C000A628 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           7 FwpiCalloutRegisterAndAddWithoutDevice0
+                          2D FwpmEngineOpen0
+                           9 FwpiCalloutUnregisterAndDeleteByKey0
+                          32 FwpmFilterDeleteById0
+                          30 FwpmFilterAdd0
+                          2A FwpmEngineClose0
+
+  Summary
+
+        1000 .data
+        2000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        3000 PAGE
+        A000 PAGEWArp

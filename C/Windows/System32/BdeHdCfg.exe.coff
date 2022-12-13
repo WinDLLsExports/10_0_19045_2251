@@ -1,0 +1,252 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\BdeHdCfg.exe
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    KERNEL32.dll
+    msvcrt.dll
+    SHELL32.dll
+    BDEHDCFGLIB.dll
+    WINBRAND.dll
+    api-ms-win-core-com-l1-1-0.dll
+    api-ms-win-core-synch-l1-2-0.dll
+    api-ms-win-core-processthreads-l1-1-0.dll
+    api-ms-win-core-errorhandling-l1-1-0.dll
+    api-ms-win-core-libraryloader-l1-2-0.dll
+    api-ms-win-core-profile-l1-1-0.dll
+    api-ms-win-core-sysinfo-l1-1-0.dll
+    api-ms-win-core-rtlsupport-l1-1-0.dll
+    api-ms-win-core-version-l1-1-0.dll
+
+  Section contains the following imports:
+
+    KERNEL32.dll
+             140005278 Import Address Table
+             140006258 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         27C GetModuleFileNameW
+                         358 HeapSetInformation
+                          DC CreateMutexW
+                         475 ReadConsoleW
+                         508 SetConsoleMode
+                         204 GetConsoleMode
+                          78 CancelWaitableTimer
+                         5E9 WaitForSingleObjectEx
+                         586 SetWaitableTimer
+                         5E8 WaitForSingleObject
+                         33F GlobalFree
+                         1AF FormatMessageW
+                         4FC SetConsoleCursorPosition
+                         175 FillConsoleOutputCharacterW
+                         20A GetConsoleScreenBufferInfo
+                         364 InitOnceExecuteOnce
+                         3D5 LocalFree
+                         238 GetDriveTypeW
+                         269 GetLastError
+                         1DF GetCommandLineW
+                         208 GetConsoleOutputCP
+                         4F8 SetConsoleCtrlHandler
+                         3C3 LeaveCriticalSection
+                         137 EnterCriticalSection
+                         56C SetThreadPreferredUILanguages
+                         525 SetEvent
+                         113 DeleteCriticalSection
+                          88 CloseHandle
+                         369 InitializeCriticalSection
+                         103 CreateWaitableTimerW
+                          C1 CreateEventW
+                         2DB GetStdHandle
+
+    msvcrt.dll
+             140005488 Import Address Table
+             140006468 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2F ?terminate@@YAXXZ
+                         369 _vsnwprintf
+                         3EA _wsetlocale
+                         38A _wcsicmp
+                         394 _wcsnicmp
+                         46F iswalpha
+                         4EC towupper
+                         406 _wtoi64
+                         520 wprintf
+                         44C free
+                         486 malloc
+                          BF _callnewh
+                          55 _XcptFilter
+                          AE _amsg_exit
+                          7F __getmainargs
+                          8E __set_app_type
+                         432 exit
+                         10E _exit
+                          C1 _cexit
+                         199 _ismbblead
+                          90 __setusermatherr
+                         17D _initterm
+                          A2 _acmdln
+                          57 __C_specific_handler
+                         4DC swprintf_s
+                         127 _fmode
+                          D2 _commode
+                         496 memset
+
+    SHELL32.dll
+             140005380 Import Address Table
+             140006360 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 CommandLineToArgvW
+
+    BDEHDCFGLIB.dll
+             140005148 Import Address Table
+             140006128 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          42 ?Unload@CBdeCfgLibraryLoader@@QEAAXXZ
+                          3B ?Load@CBdeCfgLibraryLoader@@QEAAJXZ
+                          5E BdeCfgIsElevated
+                           C ??1CDriveConfiguration@@QEAA@XZ
+                           8 ??0CDriveConfiguration@@QEAA@XZ
+                           B ??1CBdeCfgLibraryLoader@@QEAA@XZ
+                           6 ??0CBdeCfgLibraryLoader@@QEAA@XZ
+                          67 BdeCfgLogError
+                          64 BdeCfgLogCommandLineParams
+                          60 BdeCfgLoadErrorString
+                          22 ?GetActionType@CDriveConfiguration@@QEAA?AW4BDECFG_ACTION_TYPE@@XZ
+                          2B ?GetTargetDriveLetter@CDriveConfiguration@@QEAAGXZ
+                          2A ?GetTargetDiskNumber@CDriveConfiguration@@QEAAKXZ
+                          2C ?GetTargetPartitionNumber@CDriveConfiguration@@QEAAKXZ
+                          28 ?GetShrinkSize@CDriveConfiguration@@QEAA_KXZ
+                          2D ?GetTargetPartitionSize@CDriveConfiguration@@QEAA_KXZ
+                          16 ?ActionRequiresShrink@CDriveConfiguration@@QEAA_NXZ
+                          14 ?ActionRequiresCreate@CDriveConfiguration@@QEAA_NXZ
+                          26 ?GetNewDriveLetter@CDriveConfiguration@@QEAAGXZ
+                          15 ?ActionRequiresMerge@CDriveConfiguration@@QEAA_NXZ
+                          43 BdeCfgCalculateSizeRequirements
+                          45 BdeCfgCheckAndGetBootVolume
+                          59 BdeCfgGetVolumeDisk
+                          44 BdeCfgCanCreateActivePartOnDisk
+                          51 BdeCfgFindLargestUnallocatedExtent
+                          4F BdeCfgFindCandidateVolumes
+                          53 BdeCfgFindVolumeWithName
+                          47 BdeCfgCheckVolumeAsCandidate
+                          2F ?Initialize@CDriveConfiguration@@QEAAJPEBU_BDECFG_PARAMS@@QEAU_BDECFG_SIZE_REQUIREMENTS@@PEAVIConfigurationProgress@@@Z
+                          1B ?ConfigureDrive@CDriveConfiguration@@QEAAJXZ
+                          63 BdeCfgLogClose
+                          6A BdeCfgLogInit
+                          6E BdeCfgRestart
+                          3D ?QueryStepPercentComplete@CDriveConfiguration@@QEAAJPEAK@Z
+                          6D BdeCfgMoveWinRE
+                          5F BdeCfgIsWinREOnOSVolume
+                          61 BdeCfgLoadResourceString
+
+    WINBRAND.dll
+             140005390 Import Address Table
+             140006370 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 BrandingFormatString
+
+    api-ms-win-core-com-l1-1-0.dll
+             1400053A0 Import Address Table
+             140006380 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          28 CoInitializeEx
+                          46 CoUninitialize
+
+    api-ms-win-core-synch-l1-2-0.dll
+             140005440 Import Address Table
+             140006420 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          2D Sleep
+
+    api-ms-win-core-processthreads-l1-1-0.dll
+             1400053E0 Import Address Table
+             1400063C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          20 GetStartupInfoW
+                           C GetCurrentProcess
+                          4E TerminateProcess
+                           D GetCurrentProcessId
+                          11 GetCurrentThreadId
+
+    api-ms-win-core-errorhandling-l1-1-0.dll
+             1400053B8 Import Address Table
+             140006398 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           F SetUnhandledExceptionFilter
+                          11 UnhandledExceptionFilter
+
+    api-ms-win-core-libraryloader-l1-2-0.dll
+             1400053D0 Import Address Table
+             1400063B0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 GetModuleHandleW
+
+    api-ms-win-core-profile-l1-1-0.dll
+             140005410 Import Address Table
+             1400063F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           0 QueryPerformanceCounter
+
+    api-ms-win-core-sysinfo-l1-1-0.dll
+             140005450 Import Address Table
+             140006430 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1A GetTickCount
+                          16 GetSystemTimeAsFileTime
+
+    api-ms-win-core-rtlsupport-l1-1-0.dll
+             140005420 Import Address Table
+             140006400 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           2 RtlCaptureContext
+                           A RtlLookupFunctionEntry
+                          10 RtlVirtualUnwind
+
+    api-ms-win-core-version-l1-1-0.dll
+             140005468 Import Address Table
+             140006448 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           5 VerQueryValueW
+                           1 GetFileVersionInfoSizeExW
+                           0 GetFileVersionInfoExW
+
+  Summary
+
+        1000 .data
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+       1A000 .rsrc
+        4000 .text

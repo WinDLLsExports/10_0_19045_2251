@@ -1,0 +1,173 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\tpm.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    cng.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0039090 Import Address Table
+             1C00394E8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         4F6 KeResetEvent
+                          E4 ExInterlockedInsertTailList
+                         B91 _wcsicmp
+                         789 PsTerminateSystemThread
+                         7B2 RtlCapabilityCheck
+                         6EC PsGetCurrentProcess
+                         585 MmGetSystemRoutineAddress
+                         400 IoWMIRegistrationControl
+                         BE8 wcsncpy_s
+                         BE5 wcsncat_s
+                         863 RtlGetPersistedStateLocation
+                         A95 ZwCreateFile
+                         B63 ZwWriteFile
+                         B8E _vsnwprintf
+                         334 IoGetDeviceProperty
+                         2F8 IoCreateSymbolicLink
+                         306 IoDeleteSymbolicLink
+                          9F ExAllocatePool2
+                          CA ExFreePoolWithTag
+                         446 KeClearEvent
+                         4D0 KeReadStateEvent
+                         484 KeInitializeGuardedMutex
+                         424 KeAcquireGuardedMutex
+                         4DC KeReleaseGuardedMutex
+                         487 KeInitializeMutex
+                         530 KeWaitForSingleObject
+                         4E3 KeReleaseMutex
+                         48A KeInitializeSemaphore
+                         4E5 KeReleaseSemaphore
+                         AD6 ZwOpenEvent
+                         9A1 SeCaptureSubjectContext
+                          D1 ExGetPreviousMode
+                         988 SeAccessCheck
+                         9DC SeReleaseSubjectContext
+                         4CA KeQueryTimeIncrement
+                         52E KeWaitForMultipleObjects
+                         65E ObOpenObjectByPointer
+                         B06 ZwQueryInformationToken
+                         450 KeDelayExecutionThread
+                         2F3 IoCreateNotificationEvent
+                         B60 ZwUpdateWnfStateData
+                         246 HalDispatchTable
+                         B73 _purecall
+                          E7 ExInterlockedRemoveHeadList
+                         505 KeSetEvent
+                         598 MmMapIoSpaceEx
+                         5C7 MmUnmapIoSpace
+                         580 MmGetPhysicalAddress
+                         575 MmFreeContiguousMemory
+                         3D2 IoSizeofWorkItem
+                         35A IoInitializeWorkItem
+                         37C IoQueueWorkItem
+                         3E1 IoUninitializeWorkItem
+                         675 ObfReferenceObject
+                         35B IoInvalidateDeviceRelations
+                         558 MmAllocateContiguousMemorySpecifyCache
+                         55A MmAllocateContiguousNodeMemory
+                         7C9 RtlCompareUnicodeString
+                         BB3 memmove_s
+                         BA0 bsearch
+                         7D1 RtlConvertSidToUnicodeString
+                         843 RtlFreeUnicodeString
+                         9C2 SeLocateProcessImageName
+                         B94 _wcsnicmp
+                         A98 ZwCreateKey
+                         655 ObGetObjectSecurity
+                         992 SeAssignSecurityEx
+                         92D RtlSetControlSecurityDescriptor
+                         B48 ZwSetSecurityObject
+                         9B2 SeDeassignSecurity
+                         66C ObReleaseObjectSecurity
+                         AD9 ZwOpenKey
+                         AB3 ZwEnumerateKey
+                         AA9 ZwDeleteKey
+                         AAA ZwDeleteValueKey
+                         B17 ZwQueryValueKey
+                         908 RtlQueryRegistryValuesEx
+                         AB5 ZwEnumerateValueKey
+                         BC2 strcmp
+                         92E RtlSetDaclSecurityDescriptor
+                         367 IoIsWdmVersionAvailable
+                         8C8 RtlLengthSid
+                         793 RtlAddAccessAllowedAce
+                         792 RtlAbsoluteToSelfRelativeSD
+                         BDE wcschr
+                          A3 ExAllocatePoolWithTag
+                         7E6 RtlCreateSecurityDescriptor
+                         9B8 SeExports
+                         48B KeInitializeSpinLock
+                         673 ObfDereferenceObject
+                         864 RtlGetProductInfo
+                         86D RtlGetVersion
+                         A89 ZwClose
+                         663 ObReferenceObjectByHandle
+                         6E0 PsCreateSystemThread
+                         87F RtlInitUnicodeString
+                          74 EtwRegister
+                         391 IoRegisterPlugPlayNotification
+                          79 EtwUnregister
+                          5E DbgPrintEx
+                         7DC RtlCopyUnicodeString
+                          7F EtwWriteTransfer
+                         40D IofCallDriver
+                         2D0 IoBuildDeviceIoControlRequest
+                         3E8 IoUnregisterPlugPlayNotificationEx
+                         483 KeInitializeEvent
+                         B66 __chkstk
+                         BDF wcscmp
+
+    cng.sys
+             1C0039028 Import Address Table
+             1C0039480 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          14 BCryptGenRandom
+                          12 BCryptFinishHash
+                          1A BCryptHashData
+                           1 BCryptCloseAlgorithmProvider
+                           8 BCryptDestroyHash
+                           2 BCryptCreateHash
+                          18 BCryptGetProperty
+                          1E BCryptOpenAlgorithmProvider
+                          2B EntropyProvideData
+                          2E EntropyUnregisterSource
+                          2C EntropyRegisterCallback
+                          2D EntropyRegisterSource
+
+    WDFLDR.SYS
+             1C0039000 Import Address Table
+             1C0039458 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           9 WdfVersionUnbindClass
+                           6 WdfVersionBind
+                           8 WdfVersionUnbind
+                           7 WdfVersionBindClass
+
+  Summary
+
+        2000 .data
+        2000 .idata
+        3000 .pdata
+        2000 .reloc
+        4000 .rsrc
+       2B000 .text
+        1000 GFIDS
+        1000 INIT
+        8000 NONPAGE
+        1000 PAGERO

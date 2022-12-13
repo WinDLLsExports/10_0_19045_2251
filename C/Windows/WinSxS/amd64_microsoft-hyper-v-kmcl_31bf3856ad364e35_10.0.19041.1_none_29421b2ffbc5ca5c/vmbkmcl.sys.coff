@@ -1,0 +1,226 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-hyper-v-kmcl_31bf3856ad364e35_10.0.19041.1_none_29421b2ffbc5ca5c\vmbkmcl.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0016010 Import Address Table
+             1C0016338 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          88 ExAcquireFastMutexUnsafe
+                         10F ExReleaseFastMutex
+                         459 KeEnterCriticalRegion
+                          B3 ExDeleteNPagedLookasideList
+                         672 ObfDereferenceObject
+                         842 RtlFreeUnicodeString
+                         677 PcwAddInstance
+                         505 KeSetEvent
+                         4A9 KeLowerIrql
+                         674 ObfReferenceObject
+                          D8 ExInitializeNPagedLookasideList
+                         67B PcwUnregister
+                          87 ExAcquireFastMutex
+                         289 HviGetHypervisorFeatures
+                         320 IoFreeWorkItem
+                          A3 ExAllocatePoolWithTag
+                         4CA KeQueryTimeIncrement
+                          CA ExFreePoolWithTag
+                         483 KeInitializeEvent
+                         4B7 KeQueryDpcWatchdogInformation
+                         532 KfRaiseIrql
+                         530 KeWaitForSingleObject
+                         804 RtlDuplicateUnicodeString
+                         8DD RtlNotifyFeatureUsage
+                         110 ExReleaseFastMutexUnsafe
+                         4A5 KeLeaveCriticalRegion
+                         496 KeInsertQueueDpc
+                         4A0 KeIsExecutingDpc
+                         42F KeAcquireSpinLockRaiseToDpc
+                         4C3 KeQueryNodeActiveAffinity
+                         47F KeInitializeDpc
+                         15A ExpInterlockedPopEntrySList
+                         15B ExpInterlockedPushEntrySList
+                         512 KeSetSystemGroupAffinityThread
+                          F3 ExQueryDepthSList
+                         4FB KeRevertToUserGroupAffinityThread
+                          7F EtwWriteTransfer
+                         4E6 KeReleaseSpinLock
+                         42D KeAcquireSpinLockAtDpcLevel
+                         67A PcwRegister
+                         7C5 RtlCompareMemory
+                         B64 __C_specific_handler
+                         515 KeSetTimer
+                         5C4 MmUnlockPages
+                         5AD MmProbeAndLockPages
+                         440 KeBugCheckEx
+                         4CC KeQueryUnbiasedInterruptTime
+                         48B KeInitializeSpinLock
+                         48D KeInitializeTimer
+                         441 KeCancelTimer
+                         37C IoQueueWorkItem
+                         599 MmMapLockedPagesSpecifyCache
+                         2C4 IoAllocateMdl
+                         31D IoFreeMdl
+                         31A IoFreeIrp
+                         333 IoGetDeviceObjectPointer
+                         2CF IoBuildAsynchronousFsdRequest
+                         40D IofCallDriver
+                         2D2 IoBuildSynchronousFsdRequest
+                         326 IoGetAttachedDeviceReference
+                         477 KeGetProcessorNumberFromIndex
+                         B8D _vsnwprintf
+                         2D5 IoCancelIrp
+                         6DF PsCreateSystemThread
+                         32D IoGetDeviceAttachmentBaseRef
+                         2D0 IoBuildDeviceIoControlRequest
+                         345 IoGetLowerDeviceObject
+                         3E8 IoUnregisterPlugPlayNotificationEx
+                         391 IoRegisterPlugPlayNotification
+                         334 IoGetDeviceProperty
+                         2C2 IoAllocateIrp
+                         3AD IoReuseIrp
+                         A88 ZwClose
+                         87E RtlInitUnicodeString
+                         86C RtlGetVersion
+                          79 EtwUnregister
+                         584 MmGetSystemRoutineAddress
+                          74 EtwRegister
+                         400 IoWMIRegistrationControl
+                         7A6 RtlAppendUnicodeStringToString
+                         7A7 RtlAppendUnicodeToString
+                         93E RtlStringFromGUID
+                         80E RtlEnumerateGenericTableWithoutSplayingAvl
+                         4E8 KeReleaseSpinLockFromDpcLevel
+                         2C7 IoAllocateWorkItem
+                         7F6 RtlDeleteElementGenericTableAvl
+                         8CE RtlLookupElementGenericTableAvl
+                         5C7 MmUnmapLockedPages
+
+    HAL.dll
+             1C0016000 Import Address Table
+             1C0016328 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+  Section contains the following exports for vmbkmcl.sys
+
+    00000000 characteristics
+    C0467B50 time date stamp
+        0.00 version
+           1 ordinal base
+          83 number of functions
+          83 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0001A080 DllInitialize
+          2    1 0000F620 DllUnload
+          3    2 00006060 VmbChannelAllocate
+          4    3 0000EF60 VmbChannelAllocateBounceBuffer
+          5    4 0000EF90 VmbChannelAllocateForStorage
+          6    5 00006110 VmbChannelCleanup
+          7    6 0000EFD0 VmbChannelCreateGpadlFromBuffer
+          8    7 0000F030 VmbChannelCreateGpadlFromMdl
+          9    8 0000F080 VmbChannelCreateGpadlFromPfnList
+         10    9 0000F0F0 VmbChannelDeleteGpadl
+         11    A 0000E410 VmbChannelDisable
+         12    B 0000E430 VmbChannelEnable
+         13    C 0000F120 VmbChannelGetClientStatsBuffer
+         14    D 0000F130 VmbChannelGetInterfaceInstance
+         15    E 0000F150 VmbChannelGetMmioSpace
+         16    F 0000F170 VmbChannelGetNumaNodeMap
+         17   10 0000F1B0 VmbChannelGetOfferData
+         18   11 00003B00 VmbChannelGetPacketDescriptor
+         19   12 0000F220 VmbChannelGetParentDeviceObject
+         20   13 00003B40 VmbChannelGetPointer
+         21   14 0000F240 VmbChannelGetRingBuffer
+         22   15 00018440 VmbChannelGetStatistics
+         23   16 0000F2B0 VmbChannelGetTargetDeviceObject
+         24   17 0000F2D0 VmbChannelGetTargetProcessorIndex
+         25   18 0000F2E0 VmbChannelGetVMBusInterface
+         26   19 0000F390 VmbChannelGetVirtualProcessorCount
+         27   1A 00006460 VmbChannelInitSetBounceBufferSizes
+         28   1B 000170A0 VmbChannelInitSetClientContextSize
+         29   1C 000064F0 VmbChannelInitSetFlags
+         30   1D 000170C0 VmbChannelInitSetFriendlyName
+         31   1E 00017110 VmbChannelInitSetInlinePacketContextSize
+         32   1F 00017140 VmbChannelInitSetMaximumExternalData
+         33   20 00017180 VmbChannelInitSetMaximumPacketCount
+         34   21 00006530 VmbChannelInitSetMaximumPacketSize
+         35   22 00006570 VmbChannelInitSetPrimaryChannel
+         36   23 00006710 VmbChannelInitSetProcessPacketCallbacks
+         37   24 00006740 VmbChannelInitSetProcessPacketCallbacksEx
+         38   25 000171B0 VmbChannelInitSetShortLifetimeThreshold
+         39   26 00006780 VmbChannelInitSetStateChangeCallbacks
+         40   27 000171D0 VmbChannelInitSuppressQueueManagement
+         41   28 00017200 VmbChannelInitialize
+         42   29 00003620 VmbChannelPacketComplete
+         43   2A 0000F3D0 VmbChannelPacketDeferToPassive
+         44   2B 0000F3F0 VmbChannelPacketDeferUntilPolled
+         45   2C 0000F3F0 VmbChannelPacketFail
+         46   2D 00003B20 VmbChannelPacketGetClientContext
+         47   2E 0000F410 VmbChannelPacketGetExternalData
+         48   2F 0000F490 VmbChannelPacketShortLifetime
+         49   30 000181F0 VmbChannelPause
+         50   31 0000F4B0 VmbChannelPollRingBuffer
+         51   32 00018210 VmbChannelPurge
+         52   33 00003470 VmbChannelSendInterrupt
+         53   34 00009D30 VmbChannelSendSynchronousRequest
+         54   35 0000F4D0 VmbChannelSetAllowableDpcCpuUsage
+         55   36 0000F540 VmbChannelSetIncomingPollOnCompletion
+         56   37 0000F560 VmbChannelSetIncomingProcessingAtPassive
+         57   38 0000EA60 VmbChannelSetInterruptLatency
+         58   39 0000F580 VmbChannelSetPointer
+         59   3A 0000F590 VmbChannelSetPollingMode
+         60   3B 0000F5C0 VmbChannelSetTransactionQuota
+         61   3C 00003B70 VmbChannelSizeofPacket
+         62   3D 00018330 VmbChannelStart
+         63   3E 0000F5D0 VmbChannelUpdateClientContextSize
+         64   3F 0000F5F0 VmbChannelUpdateInterruptProcessor
+         65   40 000068B0 VmbClientChannelInitSetRingBufferPageCount
+         66   41 00017250 VmbClientChannelInitSetTargetFile
+         67   42 000068E0 VmbClientChannelInitSetTargetPnp
+         68   43 00006940 VmbClientChannelInitSetTargetProcessorIndex
+         69   44 00009D90 VmbPacketAddTransferPageRanges
+         70   45 00009DB0 VmbPacketAllocate
+         71   46 00009AF0 VmbPacketFree
+         72   47 00003B90 VmbPacketGetChannel
+         73   48 00009E60 VmbPacketGetInlinePacketContextPointer
+         74   49 00003AF0 VmbPacketGetPointer
+         75   4A 00003A90 VmbPacketInitialize
+         76   4B 00002110 VmbPacketSend
+         77   4C 00002050 VmbPacketSendWithExternalMdl
+         78   4D 00009E70 VmbPacketSendWithExternalPfns
+         79   4E 00009F60 VmbPacketSendWithTransferPageRanges
+         80   4F 00003B60 VmbPacketSetCompletionRoutine
+         81   50 00009FD0 VmbPacketSetCompletionRoutineEx
+         82   51 00003B50 VmbPacketSetPointer
+         83   52 00006970 VmbSizeofChannel
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        2000 .pdata
+        2000 .rdata
+        1000 .reloc
+        3000 .rsrc
+       10000 .text
+        1000 GFIDS
+        1000 INIT
+        2000 PAGE

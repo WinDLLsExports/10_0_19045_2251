@@ -1,0 +1,127 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft.windows.h..pedrive-driverclass_31bf3856ad364e35_10.0.19041.1_none_481addfb5cac00db\tape.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    CLASSPNP.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00070A8 Import Address Table
+             1C0007300 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         306 IoDeleteSymbolicLink
+                         2CC IoAttachDeviceToDeviceStack
+                         959 RtlUnicodeStringToAnsiString
+                         2C0 IoAllocateDriverObjectExtension
+                         AA8 ZwDeleteKey
+                         AB2 ZwEnumerateKey
+                         584 MmGetSystemRoutineAddress
+                         2C2 IoAllocateIrp
+                          A3 ExAllocatePoolWithTag
+                         40D IofCallDriver
+                         32A IoGetConfigurationInformation
+                          CA ExFreePoolWithTag
+                         3BD IoSetHardErrorOrVerifyDevice
+                         7B5 RtlCharToInteger
+                         2F8 IoCreateSymbolicLink
+                         A88 ZwClose
+                         B4E ZwSetValueKey
+                         326 IoGetAttachedDeviceReference
+                         AD8 ZwOpenKey
+                         7C5 RtlCompareMemory
+                         440 KeBugCheckEx
+                         906 RtlQueryRegistryValues
+                          F3 ExQueryDepthSList
+                         304 IoDeleteDevice
+                         36D IoOpenDeviceRegistryKey
+                         48B KeInitializeSpinLock
+                         A97 ZwCreateKey
+                         87E RtlInitUnicodeString
+                         B8B _vsnprintf
+                         842 RtlFreeUnicodeString
+                         15B ExpInterlockedPushEntrySList
+                         672 ObfDereferenceObject
+                         31A IoFreeIrp
+                         3A5 IoReportTargetDeviceChangeAsynchronous
+                         15A ExpInterlockedPopEntrySList
+                         3B4 IoSetDeviceInterfaceState
+                         33A IoGetDriverObjectExtension
+                          E1 ExInterlockedAddUlong
+                         B8D _vsnwprintf
+                         83C RtlFreeAnsiString
+                         B16 ZwQueryValueKey
+                         38A IoRegisterDeviceInterface
+                         BDE wcscmp
+
+    CLASSPNP.SYS
+             1C0007000 Import Address Table
+             1C0007258 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          3C ClassWmiCompleteRequest
+                          35 ClassSetFailurePredictionPoll
+                          29 ClassReleaseQueue
+                           B ClassDeviceControl
+                          2A ClassReleaseRemoveLock
+                          1B ClassInterpretSenseInfo
+                           7 ClassCompleteRequest
+                           A ClassDeleteSrbLookasideList
+                          18 ClassInitializeSrbLookasideList
+                          15 ClassInitialize
+                          1D ClassIoComplete
+                           8 ClassCreateDeviceObject
+                          3B ClassUpdateInformationInRegistry
+                          17 ClassInitializeMediaChangeDetection
+                          10 ClassGetDescriptor
+                           5 ClassClaimDevice
+                          32 ClassSendSrbSynchronous
+                          22 ClassModeSense
+                          3D ClassWmiFireEvent
+                          14 ClassGetVpb
+
+  Section contains the following exports for TAPE.SYS
+
+    00000000 characteristics
+    BDF18AC2 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0          ScsiPortNotification (forwarded to TAPE.TapeClassNotification)
+          2    1 00008E70 TapeClassAllocateSrbBuffer
+          3    2 00008F10 TapeClassCompareMemory
+          4    3 00008010 TapeClassInitialize
+          5    4 00008F30 TapeClassLiDiv
+          6    5 0000A710 TapeClassLogicalBlockToPhysicalBlock
+          7    6 00002BE0 TapeClassNotification
+          8    7 0000A600 TapeClassPhysicalBlockToLogicalBlock
+          9    8 00008EF0 TapeClassZeroMemory
+         10    9 00002BC0 TapeDebugPrint
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        1000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        3000 .text
+        1000 GFIDS
+        1000 INIT
+        3000 PAGE

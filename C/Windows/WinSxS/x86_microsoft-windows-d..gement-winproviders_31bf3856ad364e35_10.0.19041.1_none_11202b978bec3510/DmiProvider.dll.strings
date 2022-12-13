@@ -1,0 +1,1819 @@
+                            an offline image or a running operating system.
+                            in an offline image or a running operating system.
+                            offline image or a running operating system.
+            [/recurse] [/ForceUnsigned]
+           Windows image unbootable.
+        /Driver:D:\Drivers\Usb\Usb.inf
+        clsid="{4799AA1D-FF5A-4804-9CF3-786A9E861663}"
+        description="DriverManager"
+        helpdir=""/>
+        threadingModel = "Apartment" />
+        tlbid="{BB79CEFE-A8FD-4AA4-9C42-B53DC37A20ED}"
+        version="1.0"
+      DISM.exe /Image:C:\test\offline /Add-Driver
+      DISM.exe /Image:C:\test\offline /Add-Driver /Driver:D:\Drivers /recurse
+      DISM.exe /Image:C:\test\offline /Export-Driver /Destination:C:\destpath
+      DISM.exe /Image:C:\test\offline /Get-DriverInfo 
+      DISM.exe /Image:C:\test\offline /Get-DriverInfo /Driver:oem1.inf
+      DISM.exe /Image:C:\test\offline /Get-Drivers
+      DISM.exe /Image:C:\test\offline /Get-Drivers /all
+      DISM.exe /Image:C:\test\offline /Get-Drivers /Format:Table
+      DISM.exe /Image:C:\test\offline /Remove-Driver /Driver:oem1.inf
+    %s : %s
+    <comClass
+    <typelib
+    Example:
+    Examples:
+    iid="{6A064B65-3CEC-491B-A2D4-8D1D4DA6DECC}"
+    name="IDriverManager"
+    proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
+    tlbid = "{BB79CEFE-A8FD-4AA4-9C42-B53DC37A20ED}"
+   name="DmiProvider.1"
+   processorArchitecture="x86"
+   type="win32"
+   version="5.1.0.0" />
+  Adds drivers to an offline image. Use /recurse to query all subfolders for
+  Displays information about an INF file installed in the image, or one that is
+  Displays information about drivers in an image.  Use the /Format option to
+  drivers. Use /ForceUnsigned to add unsigned drivers to X64-based images.
+  Export all third-party driver packages from a Windows image to a destination path.
+  not yet installed. Installed 3rd party drivers will be named OEM1.inf,
+  OEM2.inf, and so on. Use the Published Name from the /Get-Drivers list to
+  Removes the specified out-of-box driver from the image. 
+  specify a table or list format for the output.  If /Format is not specified,
+  the output is formatted as a list.  Only shows out-of-box drivers by default.
+  This command is not supported against an online image.
+  Use /all switch to show all drivers in the image.
+  Use /Get-Drivers to see a list of installed drivers.
+  view information on installed drivers.
+  WARNING: Removing a boot-critical driver package can make the offline 
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ http://www.microsoft.com/windows0
+ Microsoft Corporation. All rights reserved.
+ Operating System
+ S?t|
+ SShTW
+ Windows
+! !!!"!#!$!%!&!'!(!)!*!+!,!-!.!/!0!1!2!3!4!5!6!7!8!9!:!;!<!=!>!?!@!A!B!C!D!E!F!G!H!I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z![!\!]!^!_!p!q!r!s!t!u!v!w!x!y!z!{!|!}!~!
+!p!q!r!s!t!u!v!w!x!y!z!{!|!}!~!
+!This program cannot be run in DOS mode.
+"<>|*?:
+"Could not find the default user registry hive location"
+"Could not get root path length."
+"Error creating SOFTWARE hive mapping for ProfileList check"
+"Error creating the current control set symlink"
+"Error determining hive key name"
+"Error getting default user registry hive location"
+"Error looking for CurrentControlSet registry key"
+"Error opening ProfileList registry key"
+"Error opening Select registry key"
+"Error querying Current value under Select registry key"
+"Error querying Default value under ProfileList registry key"
+"Invalid path to windows directory."
+"Microsoft Window
+"The the default user registry hive location %s indicated by registry does not exist"
+$`2X`F
+$Microsoft Ireland Operations Limited1
+$Microsoft Ireland Operations Limited1&0$
+%%-%ds
+%%-%ds %c 
+%0d.%0d.%0d.%0d
+%1!s! %2!s! Error: 0x%3!X!.
+%Microsoft Windows Production PCA 2011
+%Microsoft Windows Production PCA 20110
+%s %c 
+%s ( HRESULT = 0x%X )
+%s : %0d.%0d.%0d.%0d
+%s : %s
+%s option not valid for the /get-driverinfo command.
+%s option not valid for the /remove-driver command.
+%s option not valid for this driver command.
+%S:%d
+%s\%s
+%s\%s.mui
+%s\%s\%s.mui
+%systemdrive%
+%u.%u.%u.%u
+%u}Qz8
+%WINDIR%\System32\drvstore.dll
+%ws\ControlSet%03u
+%ws\Select
+%ws\system32\config\%ws
+%ws\Users\Default\%ws
+)Found %1!d! driver package(s) to remove.
+)Microsoft Root Certificate Authority 20100
+*Found %1!d! driver package(s) to install.
+,qRsPFG0nkLv6tYyJhz2dvsdNPC45uDY+SlLS+svOTFk=0Z
+.?AU?$CAtlValidateModuleConfiguration@$00VCDmiProviderModule@@@ATL@@
+.?AU_ATL_MODULE70@ATL@@
+.?AUIClassFactory@@
+.?AUIDismCommand@@
+.?AUIDismCommandCollection@@
+.?AUIDismDeviceIdCollection@@
+.?AUIDismDriver@@
+.?AUIDismDriverCollection@@
+.?AUIDismDriverManager@@
+.?AUIDismDriverPackage@@
+.?AUIDismDriverPackage2@@
+.?AUIDismDriverPackage3@@
+.?AUIDismDriverPackage4@@
+.?AUIDismDriverPackageCollection@@
+.?AUIDismError@@
+.?AUIDismErrorCollection@@
+.?AUIDismHelpItem@@
+.?AUIDismHelpItemCollection@@
+.?AUIDismItemManager@@
+.?AUIDismObject@@
+.?AUIDismProvider@@
+.?AUIDismProviderPrivate@@
+.?AUIDismServicingProvider@@
+.?AUIDismSupportCommands@@
+.?AUIDismSupportUnattend@@
+.?AUIDispatch@@
+.?AUIEnumVARIANT@@
+.?AUISupportErrorInfo@@
+.?AUIUnknown@@
+.?AV?$CAtlDllModuleT@VCDmiProviderModule@@@ATL@@
+.?AV?$CAtlModuleT@VCDmiProviderModule@@@ATL@@
+.?AV?$CComAggObject@VCDriverManager@@@ATL@@
+.?AV?$CComCoClass@VCDeviceIdCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMCommand@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMCommandCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDismError@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDismErrorCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMHelpItem@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDISMHelpItemCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDriver@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDriverCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDriverManager@@$1?CLSID_DriverManager@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDriverPackage@@$1?CLSID_DriverPackage@@3U_GUID@@B@ATL@@
+.?AV?$CComCoClass@VCDriverPackageCollection@@$1?GUID_NULL@@3U_GUID@@B@ATL@@
+.?AV?$CComContainedObject@VCDriverManager@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriver@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriverPackage@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismError@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U_CopyVariantFromAdaptBstr@@V?$list@V?$CAdapt@VCComBSTR@ATL@@@ATL@@V?$allocator@V?$CAdapt@VCComBSTR@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriver@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriverPackage@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismError@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U_CopyVariantFromAdaptBstr@@V?$list@V?$CAdapt@VCComBSTR@ATL@@@ATL@@V?$allocator@V?$CAdapt@VCComBSTR@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@ATL@@@ATL@@
+.?AV?$CComObject@VCDeviceIdCollection@@@ATL@@
+.?AV?$CComObject@VCDISMCommand@@@ATL@@
+.?AV?$CComObject@VCDISMCommandCollection@@@ATL@@
+.?AV?$CComObject@VCDismError@@@ATL@@
+.?AV?$CComObject@VCDismErrorCollection@@@ATL@@
+.?AV?$CComObject@VCDISMHelpItem@@@ATL@@
+.?AV?$CComObject@VCDISMHelpItemCollection@@@ATL@@
+.?AV?$CComObject@VCDriver@@@ATL@@
+.?AV?$CComObject@VCDriverCollection@@@ATL@@
+.?AV?$CComObject@VCDriverManager@@@ATL@@
+.?AV?$CComObject@VCDriverPackage@@@ATL@@
+.?AV?$CComObject@VCDriverPackageCollection@@@ATL@@
+.?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@
+.?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@
+.?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismCommandCollection@@$1?IID_IDismCommandCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@PAUIDismCommand@@U?$_CopyItfFromAdaptItf@UIDismCommand@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismDeviceIdCollection@@$1?IID_IDismDeviceIdCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@VCComBSTR@ATL@@@ATL@@V?$allocator@V?$CAdapt@VCComBSTR@ATL@@@ATL@@@std@@@std@@PAGU_CopyBstrFromAdaptBstr@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U_CopyVariantFromAdaptBstr@@V?$list@V?$CAdapt@VCComBSTR@ATL@@@ATL@@V?$allocator@V?$CAdapt@VCComBSTR@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismDriverCollection@@$1?IID_IDismDriverCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@@std@@@std@@PAUIDismDriver@@U?$_CopyItfFromAdaptItf@UIDismDriver@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriver@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismDriverPackageCollection@@$1?IID_IDismDriverPackageCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@@std@@@std@@PAUIDismDriverPackage@@U?$_CopyItfFromAdaptItf@UIDismDriverPackage@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriverPackage@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismErrorCollection@@$1?IID_IDismErrorCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@@std@@@std@@PAUIDismError@@U?$_CopyItfFromAdaptItf@UIDismError@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismError@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$ICollectionOnSTLImpl@V?$IDispatchImpl@UIDismHelpItemCollection@@$1?IID_IDismHelpItemCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@PAUIDismHelpItem@@U?$_CopyItfFromAdaptItf@UIDismHelpItem@@@@V?$CComEnumOnSTL@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@VCComSingleThreadModel@ATL@@@2@@ATL@@
+.?AV?$IDispatchImpl@UIDismCommandCollection@@$1?IID_IDismCommandCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismDeviceIdCollection@@$1?IID_IDismDeviceIdCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismDriver@@$1?IID_IDismDriver@@3U_GUID@@B$1?LIBID_DmiProviderLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismDriverCollection@@$1?IID_IDismDriverCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismDriverManager@@$1?IID_IDismDriverManager@@3U_GUID@@B$1?LIBID_DmiProviderLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismDriverPackage4@@$1?IID_IDismDriverPackage4@@3U_GUID@@B$1?LIBID_DmiProviderLib@@3U3@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismDriverPackageCollection@@$1?IID_IDismDriverPackageCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismError@@$1?_GUID_18caabcd_eb4c_4df3_9ff1_b5d24e655f33@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismErrorCollection@@$1?IID_IDismErrorCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismHelpItemCollection@@$1?IID_IDismHelpItemCollection@@3U_GUID@@B$1?m_libid@CAtlModule@ATL@@2U_GUID@@A$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismItemManager@@$1?_GUID_f316031b_3c98_4f20_b9cb_a3b8702dddd8@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismProvider@@$1?_GUID_33f93018_edb7_4092_978a_4b37d5dfb1c0@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismProviderPrivate@@$1?_GUID_2114daec_42fd_4847_8a04_5f2dde3276a3@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismSupportCommands@@$1?_GUID_7234ec82_c68b_4c4e_ba1d_d333f5b87b37@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IDispatchImpl@UIDismSupportUnattend@@$1?_GUID_dadad7bb_2b1d_4edb_9014_b1912e1a2e3d@@3U__s_GUID@@B$1?LIBID_DismLib@@3U_GUID@@B$00$0A@VCComTypeInfoHolder@ATL@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismCommand@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismCommand@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriver@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriver@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismDriverPackage@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismDriverPackage@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismError@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismError@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U?$_CopyVariantFromAdaptItf@UIDismHelpItem@@@@V?$list@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@V?$allocator@V?$CAdapt@V?$CComPtr@UIDismHelpItem@@@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AV?$IEnumOnSTLImpl@UIEnumVARIANT@@$1?IID_IEnumVARIANT@@3U_GUID@@BUtagVARIANT@@U_CopyVariantFromAdaptBstr@@V?$list@V?$CAdapt@VCComBSTR@ATL@@@ATL@@V?$allocator@V?$CAdapt@VCComBSTR@ATL@@@ATL@@@std@@@std@@@ATL@@
+.?AVbad_alloc@std@@
+.?AVCAtlException@ATL@@
+.?AVCAtlModule@ATL@@
+.?AVCComClassFactory@ATL@@
+.?AVCComObjectRootBase@ATL@@
+.?AVCDeviceIdCollection@@
+.?AVCDISMCommand@@
+.?AVCDISMCommandCollection@@
+.?AVCDismError@@
+.?AVCDismErrorCollection@@
+.?AVCDISMHelpItem@@
+.?AVCDISMHelpItemCollection@@
+.?AVCDmiProviderModule@@
+.?AVCDriver@@
+.?AVCDriverCollection@@
+.?AVCDriverManager@@
+.?AVCDriverPackage@@
+.?AVCDriverPackageCollection@@
+.?AVCDriverService@@
+.?AVCRegistryMapping@@
+.?AVexception@@
+.?AVlength_error@std@@
+.?AVlogic_error@std@@
+.?AVout_of_range@std@@
+.\%s.mui
+.\%s\%s.mui
+.00cfg
+.CRT$XCA
+.CRT$XCL
+.CRT$XCU
+.CRT$XCZ
+.CRT$XIA
+.CRT$XIAA
+.CRT$XIZ
+.data
+.data$brc
+.data$r$brc
+.didat$2
+.didat$3
+.didat$4
+.didat$5
+.didat$6
+.didat$7
+.edata
+.gfids
+.giats
+.idata
+.idata$2
+.idata$3
+.idata$4
+.idata$5
+.idata$6
+.rdata
+.rdata$brc
+.rdata$r$brc
+.rdata$sxdata
+.rdata$zzzdbg
+.rsrc
+.rsrc$01
+.rsrc$02
+.text
+.text$di
+.text$mn
+.text$mn$01
+.text$x
+.text$yd
+.xdata$x
+/%s option does not accept parameters.
+/%s option was specified more than once on the command line.
+/%s was not recognized by the driver manager provider.
+/Add-Driver {/Driver:<folder_containing_INF> | /Driver:<path_to_driver.inf>} 
+/all does not accept parameters.
+/Export-Driver /Destination:<path_to_destination_folder> 
+/export-driver does not accept parameters.
+/export-driver only accept /destination argument.
+/Get-DriverInfo /Driver:<path_to_driver.inf> 
+/Get-Drivers [/Format:<output_format>] [/all]
+/get-drivers does not accept parameters.
+/Remove-Driver /Driver:<path_to_driver.inf>
+: :$:(:,:0:4:8:<:@:D:H:L:P:T:X:\:`:d:h:l:p:t:x:|:
+: :':.:4:
+: :0:@:P:`:p:
+: :k:
+:!:):M:X:]:y:
+:!:,:1:a:r:}:
+:!:4:<:O:W:j:r:
+:":':.:H:O:V:\:
+:":-:2:F:Q:Y:b:g:q:
+:$:*:E:V:i:
+:$:,:4:@:H:h:
+:$:<:d:x:
+:$:0:T:\:d:l:t:|:
+:$:4:?:D:X:i:p:w:}:
+:$;H;l;
+:%:0:5:F:i:t:
+:(:/:6:<:n:y:~:
+:(:\:p:x:
+:(=x=
+:*:>:D:X:e:n:
+:,:0:H:L:d:h:
+:.:3:@:N:d:W;];c;
+:/:V:w:
+:/;R;
+:::A:H:V:
+:-:4:>:I:N:_:
+:;:c:
+:@:d:
+:_;h;q;z;
+:<:G:L:^:j:
+:<;{;
+:5;h;
+:6:K:
+:6;S;f;
+:C;c;n;
+:D:\:d:|:
+:D:a:l:q:
+:e;u;
+:G:]:h:m:
+:k;};
+:W:a:l:}:
+:Y:b:l:w:|:
+:Y;g;~;
+; ;';.;4;r;
+; ;';-;M;X;];q;
+; ;0;@;P;`;p;
+; ;8;H;X;\;`;d;h;l;p;t;x;
+;!;,;1;B;h;u;
+;!;B;V;l;
+;";4;@;v;
+;#;*;0;V;a;f;z;
+;#<E<f<
+;$;);;;G;Y;p;
+;$;,;4;<;D;P;X;|;
+;$;,;4;<;H;P;l;t;|;
+;$;4;@;H;|;
+;$;5;?;^;w;|;
+;%;S;v;
+;(;,;D;H;`;d;|;
+;(;0;8;@;H;P;X;`;h;p;x;
+;(;1;:;
+;(;4;@;L;X;d;p;|;
+;,<`<
+;:<U<`<k<
+;';2;7;H;a;l;w;|;
+;+;n;
+;<;Y;m;
+;=;N;Y;^;p;|;
+;=<_<
+;0;9;Q;\;a;u;
+;2;F;M;T;Z;
+;3<@<K<P<j<|<
+;4;|;
+;5;b;
+;9;A;R;f;q;v;
+;A;I;w;~;
+;C;U;\;n;x;
+;d;k;u;
+;D;T;`;h;
+;t04u
+? ?$?,?
+? ?0?4?D?H?X?\?l?p?
+?"?)?0?6?P?Y?b?{?
+?$?,?4?<?T?\?d?l?x?
+?$?,?8?X?`?l?t?
+?$?+?2?;?g?p?
+?$?1?@?S?]?f?k?p?v?{?
+?$?4?A?L?Q?b?v?}?
+?&?;?B?I?O?f?q?v?
+?&?M?X?]?q?
+?(?=?D?K?Q?s?~?
+?)?4?9?M?
+?*?6?^?
+?*?6?H?O?V?\?
+?,?4?<?D?L?T?\?d?l?x?
+??0exception@@QAE@ABQBD@Z
+??0exception@@QAE@ABV0@@Z
+??0exception@@QAE@XZ
+??1exception@@UAE@XZ
+??1type_info@@UAE@XZ
+?<?o?
+?2?;?
+?3?:?A?G?
+?4???a?v?}?
+?4?8?P?T?l?p?
+?6???^?g?
+?8?H?P?
+?8?Q?r?~?
+?terminate@@YAXXZ
+?what@exception@@UBEPBDXZ
+?Y?z?
+@.didat
+@.reloc
+\\?\UNC
+\Implemented Categories
+\Registry\Machine\%ws\ControlSet%03u
+\Required Categories
+^VSh`
+__CxxFrameHandler3
+__dllonexit
+__RTDynamicCast
+_amsg_exit
+_callnewh
+_CxxThrowException
+_errno
+_except_handler4_common
+_initterm
+_lock
+_onexit
+_purecall
+_T("Failed to initialize the NetDriverInstall API")
+_unlock
+_vscwprintf
+_vsnwprintf
+_wcsicmp
+_wcslwr_s
+_wcsnicmp
+_XcptFilter
+`.data
+{bf1a281b-ad7b-4476-ac95-f47682990ce7}
+|hK,_
+}bgk#!F
+~(9~0t
+< <0<@<P<`<p<
+< <8<H<X<h<x<
+< <D<L<T<\<d<l<t<|<
+<!-- Copyright (c) Microsoft Corporation -->
+<!<&<:<O<b<g<{<
+<"<+<?<J<O<`<z<
+<"=6===N=k=
+<#<(</<K<X<c<h<o<
+<#<.<A<T<d<~<
+<#<3<:<A<G<u<
+<$<(<@<D<\<`<x<|<
+<$<,<4<@<H<l<
+<$</<4<H<i<
+<$<:<D<_<
+<$<1<E<d<o<
+<$<A<J<P<q<y<
+<%<,<2<_<j<o<
+<%<I<
+<%<P<
+<(<H<T<t<|<
+<)<;<B<I<O<p<y<
+<)<?<
+<*</<A<M<x<
+<,<4<<<D<L<T<\<d<l<x<
+<.<9<><P<\<z<
+<.<9<E<a<~<
+<.<B<I<P<V<
+</assembly>
+</file>
+<:=E=J=^=o=v=}=
+<?=N=k=|=
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<0<<<`<l<
+<4<P<
+<5<C<N<S<g<x<
+<5<N<T<[<h<
+<7<><E<P<W<_<o<
+<8<H<P<\<|<
+<9=\=
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+<comInterfaceExternalProxyStub 
+<description>Windows deployment image servicing and management driver provider</description>
+<E=U=`=e=w=
+<f<q<v<
+<file name="DmiProvider.dll" hashalg="SHA1">
+<G<U<`<e<n<
+<I<h<
+<J<Z<_<r<
+= =$=,=0=L=P=p=
+= =$=<=@=X=\=t=x=
+= =0=<=H=`=p=|=
+= >@?
+=!=3=:=A=G=a=l=q=
+="=(=U={=
+="=)=/=T=
+="=*=6=R=o=z=
+="=,=7=<=I=U=
+="=.=?=G=Z=f=n=
+="=C=
+=#=)=F=r=
+=$=,=4=@=`=l=t=
+=$=,=4=<=D=L=T=\=d=l=t=|=
+=$=,=D=L=T=\=h=
+=$=@=X=|=
+=%=4=?=D=j=y=
+=%>@>Q>x>
+=&=:=@=F=S=
+=&=M=v=
+=(=,=<=@=P=T=d=h=x=|=
+=(=3=8=?=J=O=
+=)=P=}=
+=,>4><>H>P>t>
+=.=:=G=L=\=g=l=
+=/>V>l>
+=_=j=o=
+=+=V=a=f=
+='=.=G=N=s=
+='=-=4=H=
+===g=
+=0=4=L=P=h=x=
+=0>x>
+=4=?=D=V=b=}=
+=4>b>r>y>
+=6=A=F=W=g=t=
+=7=j=
+=A=b=o=
+=A=h=
+=D>O>T>k>|>
+=f=q=v=
+=K=T=]=f=o=x=
+=L9o<
+=P=l=
+=P=X=`=l=
+=q>|>
+> >$>(>,>0>4>8>@>X>`>x>|>
+> >,>4>T>\>x>
+> >8><>T>X>p>t>
+> >C>R>~>
+>!?,?A?v?
+>!>(>.>M>X>]>n>u>
+>">'>9>E>q>
+>#>(>/>L>Y>d>i>p>
+>$>(>0>D>L>T>\>p>x>
+>$>,>4>\>d>l>t>
+>(?4?G?T?q?
+>(?l?
+>)?f?
+>)>.>B>S>Z>a>g>
+>*?5?:?K?_?f?m?s?
+>*>C>u>
+>,?A?j?t?
+>,?H?
+>,>0>@>D>T>X>h>l>|>
+>,>4><>H>h>p>x>
+>.?~?
+>.>Z>n>s>
+>/>f>p>
+>/>N>Y>^>o>v>
+>?usf9F
+>+>c>
+>+>L>U>a>h>n>
+>=>l>r>
+>'>,>T>
+>0?[?f?k?
+>1>U?m?
+>2?=?B?\?n?u?|?
+>5?V?g?r?w?
+>9>T>u>
+>B?Q?n?
+>D>l>
+>E>j>
+>h?l?p?t?
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+>Y>b>k>t>
+0 0$0(0@0D0H0\0l0p0t0
+0 0$0<0@0X0\0t0x0
+0 0$00040P0T0p0t0
+0 0,040x0
+0 0.030F0R0y0
+0 1*11171y1
+0!0H0
+0#0(0I0c0j0q0w0
+0$0*0T0_0d0t0
+0$0+010_0}0
+0$080L0T0\0
+0%0_0m0x0}0
+0(0.0;0S0x0
+0(0<0D0L0T0\0d0l0t0|0
+0(010C0k0v0{0
+0(010O0c0w0
+0(0H0P0X0`0h0x0
+0,030L0
+0,0c0m0x0}0
+0:0G0
+0:1E1J1r1
+0\0`0h0p0
+0_0h0t0
+0<1]1
+0'0/080B0T0\0e0o0
+00040L0P0h0l0
+0090Q0\0a0u0
+0'0E0y0
+010G0R0W0l0
+030D0K0R0X0
+040904B0
+070c0n0s0
+081`1
+0E1`1
+0J0[0
+0Q0\0a0r0
+0Qh`V
+0T0_0d0~0
+0T0|0
+1 1$1(1,1014181<1@1D1H1L1P1T1X1\1`1d1h1l1p1t1x1|1
+1 1(10181D1L1
+1#1Z1
+1$11161M1U1Z1q1x1
+1$14191P1a1h1o1u1
+1%10151O1`1g1n1t1
+1&2F2Q2V2p2
+1(0&0
+1(1,1D1H1\1`1x1|1
+1)151b1s1~1
+1*1/1@1T1[1b1h1
+1*1;1B1I1O1
+1*2W2r2
+1,1<1L1P1X1\1`1d1h1l1p1t1x1|1
+1,101H1L1d1h1
+1.1D1V1s1
+1/0-0
+1?1F1M1S1m1
+1?1k1v1{1
+1?2H2R2]2b2l2
+1<2C2M2X2]2n2
+1=1_1
+10.0.19041.1
+10.0.19041.1 (WinBuild.160101.0800)
+100701213655Z
+101<1\1d1l1t1|1
+10141P1T1p1t1
+10191I1R1s1
+111019184142Z
+1-131G1o1~1
+1'181?1F1L1g1p1
+1'1I1h1
+1-1j1
+141C1W1]1d1x1
+161?1Y1g1l1
+161C1I1U1s1
+181H1T1\1|1
+190502212436Z
+191023231920Z
+1D1R1p1{1
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+1L1T1\1h1p1
+1M1X1]1s1{1
+1M2s2
+1R2]2b2s2
+1W1p1
+1Z1|1
+2 2$2(2,2024282<2@2D2H2L2P2T2X2\2`2d2h2l2p2t2x2|2
+2 2$2(2,202D2T2X2\2`2d2h2l2p2t2x2|2
+2 2(202<2\2d2l2t2|2
+2 2'2-2c2l2u2~2
+2!242S2o2
+2$2(2,2024282<2D2H2L2P2T2X2\2d2h2l2p2x2|2
+2$2(2,2H2L2P2h2
+2$2,242<2D2L2T2\2h2
+2$2-22282?2I2M2]2c2i2t2z2
+2%2-2Q2Z2
+2&21262J2[2b2i2o2
+2&3=3R3
+2(2,2D2H2`2d2|2
+2)2.2@2L2z2
+2)2.2I2\2a2u2
+2)22282D2Z2
+2)222O2
+2)232;2q2y2
+2)323C3N3S3d3x3
+2*252K2^2m2x2}2
+2,2G2R2W2h2r2{2
+2.292J2h2s2x2
+2/2D2P2Y2
+2:3u3L4R4
+2?2J2O2^2m2
+2]2i2
+2^2j2t2
+2^2o2z2
+2_2j2o2
+200502212436Z0p1
+20191207004354.942Z0
+20191207034425Z
+20191208034425Z0w0=
+210121231920Z0
+212=2N2u2
+2'2,2>2J2
+229879+4541120
+242@2`2l2t2
+250701214655Z0|1
+261019185142Z0
+262S2v2
+292H2\2b2v2
+2H2\2d2l2t2|2
+3 3$3(3,3034383<3@3D3H3L3P3T3X3\3`3d3h3l3p3t3x3|3
+3 3+303b3{3
+3 3+303D3U3\3c3i3
+3 343K3Z3x3
+3!31373A3O3]3d3i3o3u3{3
+3"3,373<3M3]3
+3#3(393O3Z3_3p3
+3#323[3g3q3
+3#3P3[3`3o3~3
+3$3(3@3D3\3`3x3|3
+3$3,343<3D3L3T3\3d3l3|3
+3$3,343<3D3L3T3\3h3
+3$3+32393@3G3O3W3_3k3t3y3
+3$3-363O3d3
+3$343Z3
+3$353<3C3I3
+3$353<3C3I3q3|3
+3&393T3_3d3x3
+3(343<3\3d3
+3.4H4Y4o4
+3:4v4{4
+3;4M4h4
+3?4S4
+3@4 5
+3\3h3
+314:4C4L4e4
+3-343;3A3`3|3
+3'343=3F3O3X3|3
+34383P3T3l3p3
+34j&V
+363V3s3
+3A3H3Y3h3s3x3
+3B3g3
+3B3M3X3]3o3{3
+3H3Z3
+3I3z3
+3I4V4m4
+3J4U4Z4k4
+3V3g3
+3Y3b3p3
+4 4$4(4,4044484<4@4D4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4$4(4,40484<4@4H4L4P4T4X4\4`4d4h4l4p4t4x4|4
+4 4$4<4@4X4\4t4x4
+4 4$44484H4L4P4T4X4\4`4d4h4p4t4x4|4
+4 4?4J4O4
+4 5;5`5
+4!5,515F5W5^5e5k5
+4"444@4|4
+4"4'4K4\4c4j4p4
+4#4:4K4R4Y4_4
+4#545>5K5U5}5
+4$4*4
+4$4,444<4D4L4d4l4t4
+4$4,444<4D4P4X4p4
+4$4,484@4t4|4
+4$4<4D4L4T4\4d4l4t4|4
+4$40484X4`4|4
+4%4,434:4A4H4O4U4a4l4q4v4|4
+4%4.434=4Q4\4a4r4}4
+4%444a4l4q4
+4%494D4X4p4
+4&4-4H4R4^4e4n4
+4&5C5f5
+4)4:4A4H4N4
+4)4<4
+4/444H4Y4`4g4m4
+4[4g4
+404T4_4d4u4
+41585_5
+435[5
+4'42494t4|4
+445Y5e5
+494D4I4]4q4x4
+4J5n5
+4L5o5
+4O4r4
+4Q4X4b4k4
+4T5b5z5
+5 5$5(5,5054585<5@5D5H5L5P5T5X5\5`5d5h5l5p5t5x5|5
+5 5$5(5,5054585<5@5D5H5L5T5X5\5`5d5h5l5t5|5
+5 5(545T5`5h5
+5 585<5T5X5p5t5
+5 5D5X5l5t5|5
+5 646;6B6H6
+5!5&5?5`5
+5!545?5R5]5y5
+5"5'585C5N5W5\5f5z5
+5#505^5y5
+5$5(5,54585<5D5\5`5x5|5
+5$5,585@5d5l5t5|5
+5%5@5S5
+5%Lxlx
+5&676T6e6
+5(505L5\5h5p5
+5(595@5G5M5
+5(6T6x7
+5)6F6Q617>7
+5*5>5E5L5R5
+5,5@5T5\5d5l5t5|5
+5.656?6J6O6d6v6}6
+5:5J5O5`5
+5`6n6y6~6
+5<6T6c6w6}6
+5=5c5
+50676A6L6Q6f6
+516<6A6P6\6
+535I5P5W5]5
+545?5J5O5a5m5
+555@5E5W5c5
+5'565
+585C5|5
+5B5a5g5
+5F5T5Z5_5
+5I6|6
+5K5`5v5
+5K6R6
+5T5Z5g5v5
+5Y5f5
+5Z5f5
+6 6$6(6,6064686<6@6D6H6L6P6T6X6\6`6d6h6l6p6t6x6|6
+6 6$6(6064686<6@6D6H6L6P6X6\6`6d6h6l6p6t6|6
+6 6$6<6@6X6\6t6x6
+6!626M6X6]6n6
+6"656:6N6_6f6m6s6
+6"6-626H6^6i6n6
+6#6F6l6
+6#717W7e7
+6$6,646<6D6L6\6t6|6
+6$6,646<6D6L6T6\6d6l6t6|6
+6$6,646<6H6P6t6
+6$6,6L6T6\6x6
+6$6/646O6
+6$606Q6u6
+6&676>6E6K6
+6(606P6l6|6
+6*636<6I6z6
+6*656>6G6P6Z6e6j6{6
+6?7F7P7[7`7u7
+6@6|7
+6@6I6m6
+6|sipyZG
+6+6C6M6d6
+6>Q>a>p>y>
+61787Z7e7j7~7
+64686P6T6l6p6
+657@7E7f7}7
+667<7
+6-6t6z6
+676d6
+686C6H6\6p6}6
+687Z7f7|7
+6D7S7
+6M6T6^6i6n6
+6O6Z6_6q6}6
+6P6{6
+6QPQS
+6R6_6d6
+6Y6_6
+7 7$7(7,7074787<7@7D7H7L7P7T7X7\7`7d7h7l7p7t7x7|7
+7 7&7J7Z7_7p7
+7 7(7,7074787@7D7H7L7T7\7`7d7h7l7p7t7x7|7
+7 8.898>8O8_8o8t8
+7!7K7e7l7
+7!888F8M8T8[8b8i8p8}8
+7"7)7/7k7v7{7
+7"7'7>7I7\7g7
+7#7*71777b7l7u7~7
+7$7,747<7H7h7p7x7
+7$7<7d7l7t7|7
+7$7<7T7l7
+7$70787\7d7l7t7
+7%7*7:7K7R7Y7_7
+7%7T7
+7)7N7q7
+7)848Y8
+7,7<7L7P7`7d7t7x7
+7,878h8n8
+7/7\7
+7?7J7O7e7m7
+7+7<7C7J7P7
+7=8_8p8
+7>7Y7
+70=0v0
+70747L7P7h7l7
+707A7y7
+707E7L7S7Y7
+707F7O7Y7u7
+747@7H7
+748=8F8O8t8
+7'7@7K7P7b7w7~7
+7'7L7W7b7g7y7
+7'7Q7
+7'82878_8
+7'82878M8U8u8
+787V7s7
+797M7
+7x7}7
+8 8$8(8,8084888@8D8H8L8P8X8\8`8d8l8t8|8
+8 8$8(8,8084888<8@8D8H8L8P8T8X8\8`8d8h8l8p8t8x8|8
+8 8$8,8084888<8@8H8L8P8T8X8`8d8h8l8t8x8|8
+8 8(8L8T8\8d8l8t8|8
+8 808@8P8`8p8
+8!8@8K8P8g8
+8"868
+8"9+949=9F9O9X9a9j9s9|9
+8#8>8Q8V8j8{8
+8$8,848@8H8d8l8
+8$8<8D8L8T8\8d8l8|8
+8$8D8P8X8x8
+8%81878L8q8
+8%969X9i9
+8&8[8
+8*8G8V8y8
+8,8@8T8\8d8l8t8|8
+8,888n8y8~8
+8,8C8H8b8m8r8
+8.8<8C8W8^8f8o8w8
+8.858<8B8
+8/868=8C8l8w8|8
+8/8U8b8m8r8
+8+9:9N9U9\9c9j9q9x9
+808;8@8m8
+828s8
+829<9E9O9p9x9
+838>8C8W8b8j8s8x8
+838G8X8y8
+849I9_9n9
+8-888=8M8]8d8k8q8
+889D9J9_9
+8'9.989C9H9Y9^9t9~9
+898K8P8d8t8{8
+8C9X9c9h9
+8H8S8X8g8q8
+8K8T8]8
+8N9u9
+8R8X8b8
+9 9$9(9,9094989<9@9D9H9L9P9T9X9\9`9d9h9l9p9t9x9|9
+9 9$9(9094989@9D9H9L9T9X9\9d9h9l9p9t9x9
+9 9&939H9c9w9}9
+9 9@9H9X9|9
+9 909@9P9`9p9
+9 949u9
+9"9e9k9q9w9}9
+9#9*91979Q9_9
+9$9*9R9]9b9t9
+9$9,949<9D9L9T9\9d9l9t9
+9$9,949<9D9L9T9\9d9l9t9|9
+9$90989T9
+9$989L9`9t9
+9%9,93999}9
+9&9/9d9m9w9
+9&929
+9(;-;
+9(90999>9H9\9g9l9
+9*9/9F9h9~9
+9^8u8
+9_(ui
+9{8ts
+9+:::E:J:\:h:
+9+92999?9n9y9~9
+9+969;9M9Y9
+90949L9P9h9l9
+90979>9D9e9
+909B9M9R9c9u9
+919\9o9}9
+96:A:N:
+96:I:W:s:|:
+969S9v9
+9'9G9R9W9k9
+9B9M9o9
+9E9q9
+9H9S9X9o9
+9J:Q:
+9J9e9
+9K8tQh<
+9M9R9~9
+9n:w:
+9t$Pt
+9Y:d:
+9Y9d9o9t9
+A boot drive was specified without a system path when opening the driver store.
+A destination path must be specified.
+AcquireSRWLockExclusive
+add-driver
+Add-Driver)Adds driver packages to an offline image.
+advapi32.dll
+ADVAPI32.dll
+amd64
+An error occurred searching for driver packages on the specified path '%1!s!'
+An error occurred trying to list the driver packages in the offline image.
+An error occurred trying to list the drivers for the specified driver package '%1!s!'.
+An error occurred. The driver package '%1!s!' could not be opened.
+An error occurred. The driver package '%1!s!' could not be removed.
+An error occurred. The driver package could not be installed in the driver store of the offline image.
+An error occurred. The driver package could not be installed. 
+An error occurred. The driver store for the image could not be opened.
+An error occurred. The report could not be formatted. 
+An error occurred. The specified driver package '%1!s!' could not be found.
+API-MS-Win-Core-LocalRegistry-L1-1-0.dll
+APPID
+Architecture
+arm64
+ATL$__a
+ATL$__m
+ATL$__z
+Attempting to delete [%s] registry key.
+B0M0R0f0w0~0
+Beginning install for driver package '%s'.
+Beginning removal for driver package '%s'.
+Boot Critical,Searching for driver packages to install...
+Building driver collection for package '%s'.
+calloc
+Cannot add drivers from an unattend online.
+Cannot find the specified file '%1!s!'
+Cannot install non-signed boot-critical drivers on amd64 images. Use /forceunsigned switch to override. %s
+Cannot remove drivers using a folder specification. Select an INF file from the driver store.
+Cannot specify more than one .inf file for this command.
+Cannot specify more than one driver file for the /get-driverinfo command.
+Cannot specify multiple driver paths when a driver path was given with the provider command directly.
+CDeviceIdCollection::Create
+CDmiApi::AddDriverFromUnattend
+CDmiApi::DriverPackageOpenW
+CDmiApi::get_DriverStore
+CDmiApi::get_NetDriverInstall
+CDmiApi::LoadDrUpdateModule
+CDmiApi::LoadDrvStoreModule
+CDmiConsoleFormatter::Initialize
+CDmiConsoleFormatter::PrintDeviceIdCollection
+CDmiConsoleFormatter::PrintDriverCollection
+CDmiConsoleFormatter::PrintDriverDetail
+CDmiConsoleFormatter::PrintDriverPackageDetailHeader
+CDmiConsoleFormatter::PrintDriverPackageList
+CDmiConsoleFormatter::PrintDriverPackages_ListFormat
+CDmiConsoleFormatter::PrintDriverPackages_TableFormat
+CDmiDriverStore::Create
+CDmiDriverStore::Delete
+CDmiDriverStore::Find
+CDmiDriverStore::GetDriverPackageCollection
+CDmiDriverStore::GetProperty
+CDmiDriverStore::Import
+CDmiDriverStore::Open
+CDmiDriverStore::SetProperty
+CDmiNetDriverInstall::BindNetDriverInstallApis
+CDmiNetDriverInstall::Create
+CDmiNetDriverInstall::Initialize
+CDmiNetDriverInstall::OpenNetDriverInstallForTarget
+CDmiNetDriverInstall::OpenTargetCurrentControlSet
+CDmiNetDriverInstall::ProcessAdditions
+CDmiNetDriverInstall::ProcessRemovals
+CDriver::Create
+CDriver::Initialize
+CDriverManager::AddDriverPackagesFromCollection
+CDriverManager::Apply
+CDriverManager::CheckClientAddDriverScenarios
+CDriverManager::ExecuteCmdLine
+CDriverManager::Final_OnConnect
+CDriverManager::get_ConsoleFormatter
+CDriverManager::GetCommandCollection
+CDriverManager::GetDriverPackageCollection
+CDriverManager::GetHelpItemCollection
+CDriverManager::Initialize
+CDriverManager::Internal_DoAddDriverPackage
+CDriverManager::Internal_DoDetailDriverPackage
+CDriverManager::Internal_DoExportDriverPackage
+CDriverManager::Internal_DoListDriverPackages
+CDriverManager::Internal_DoRemoveDriverPackage
+CDriverManager::Internal_DoUnattendCleanup
+CDriverManager::OnConnect
+CDriverManager::OpenPackageByFile
+CDriverManager::OpenPackageByFolder
+CDriverManager::OpenPackageInStore
+CDriverManager::ParseCommandLineTokens
+CDriverManager::RemoveDriverPackagesFromCollection
+CDriverManager::ReportDismErrorsToConsole
+CDriverPackage::Create
+CDriverPackage::CreateDriverCollection
+CDriverPackage::FillInPackageDetails
+CDriverPackage::GetProperty
+CDriverPackage::InitBootCriticalFlag
+CDriverPackage::Initialize
+CDriverPackage::InitPublishedInfName
+CDriverPackage::InitSignatureStatus
+CDriverPackage::InstallEx2
+CDriverPackage::InternalInstall
+CDriverPackage::InternalRemove
+CDriverPackage::IsUniversalNetworkDriver
+CDriverPackage::OpenDmiDriverPackages
+CDriverPackage::Remove
+CDriverPackage::RemoveValidate
+CDriverPackage::SetProperty
+CDriverService::Initialize
+CharLowerBuffW
+CharNextW
+Chttp://www.microsoft.com/pkiops/crl/MicWinProPCA2011_2011-10-19.crl0a
+Class Description$Exporting %1!d! of %2!d! - %3!s!: %0*The driver package successfully exported.
+Class GUID
+Class GUID %s is unknown. Unable to set class description.
+Class GUID is not a valid GUID. ClassGuid='%s'.
+Class Name
+CloseHandle
+CLSID\
+CLSIDFromString
+CoCreateInstance
+CompanyName
+CompareStringW
+Compatible IDs
+COMPONENTS
+CopyDirectoryDirCallback: The copy was canceled by the user.
+CopyDirectoryEx2: Failed to copy [%s] to [%s], GLE = 0x%x; will retry in %u ms; am on try %u.
+CopyDirectoryEx2: Specified directory [%s] doesn't exist
+CopyDirectoryFileCallback: The copy was canceled by the user.
+CopyDirectoryFileCallback: Unable to %s file from [%s] to [%s]; GLE = 0x%x
+CopyFileExW
+CoTaskMemFree
+Could not add a driver into the driver enumeration list.  This driver may be corrupt: %s
+Could not find DriverPackageClose function in drvstore.dll
+Could not find DriverPackageEnumDriversW function in drvstore.dll
+Could not find DriverPackageEnumServicesW function in drvstore.dll
+Could not find DriverPackageGetVersionInfoW function in drvstore.dll
+Could not find DriverPackageOpenW function in drvstore.dll
+Could not find DriverStoreClose function in drvstore.dll
+Could not find DriverStoreDeleteW function in drvstore.dll
+Could not find DriverStoreEnumW function in drvstore.dll
+Could not find DriverStoreFindW function in drvstore.dll
+Could not find DriverStoreGetObjectPropertyW function in drvstore.dll
+Could not find DriverStoreImportW function in drvstore.dll
+Could not find DriverStoreOpenW function in drvstore.dll
+Could not find DriverStoreReflectCriticalW function in drvstore.dll
+Could not find DriverStoreSetObjectPropertyW function in drvstore.dll
+Could not find DriverStoreUnreflectCriticalW function in drvstore.dll
+Could not find InstallDriversOffline function in drupdate.dll.
+Could not find NetDriverInstallClose in NetDriverInstall.dll
+Could not find NetDriverInstallCommit in NetDriverInstall.dll
+Could not find NetDriverInstallInitialize in NetDriverInstall.dll
+Could not find NetDriverInstallProcessAdditions in NetDriverInstall.dll
+Could not find NetDriverInstallProcessRemovals in NetDriverInstall.dll
+Could not get boot critical status for the driver class %s from driver store. Assuming that this is not boot critical.
+Could not get driver signature for driver: %s.
+Could not get module handle for SetupApi.dll. hr = 0x%X
+Could not get the driver store.
+Could not load drvstore.dll from servicing stack online; trying system directory.
+CreateDirectoryW
+CreateFileMappingW
+CreateFileW
+CreatePath: Unable to create [%s]; GLE = 0x%x
+CreatePath: Unable to create parent directory for [%s]; GLE = 0x%x
+CRegistryMapping::CreateCurrentControlSetSymlink
+CRegistryMapping::Init
+CRegistryMapping::SetHiveFilePathToDefaultUser
+Current
+CurrentControlSet
+D$$PV
+D$(_^[3
+D$@j(P3
+D$DPSW
+D$hPW
+D$lSP
+DEFAULT
+Default
+DeleteCriticalSection
+DeleteFileEx: hardlink given to us is: %s
+DeleteFileEx: Trying to set back attributes on: %s
+DeleteFileEx: Unable to allocate hardlink path buffer
+DeleteFileEx: Unable to clear out attributes on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to delete [%s]; GLE = 0x%x
+DeleteFileEx: Unable to get information on [%s]; GLE = 0x%x
+DeleteFileEx: Unable to open [%s]; GLE = 0x%x
+DeleteFileEx: Unable to restore attributes on [%s]; GLE = 0x%x
+DeleteFileW
+Description
+destination
+Detected attempt to install a driver package that was already in the driver store.
+DeviceIds ClassWWW
+DeviceIoControl
+Did not find driver package '%s' in the driver store.
+DisableThreadLibraryCalls
+DISM does not support adding drivers online.
+DISM Driver Manager
+DISM Driver Provider
+DISM has skipped driver signature check because the version of running OS and that of target OS do not match.
+DISM only supports getting property of drivers in the driver store.
+DISM only supports installing drivers to an offline image.
+DISM only supports removing drivers from an offline image.
+DISM only supports setting property of drivers in the driver store.
+dismcore.tlbWW
+DllCanUnloadNow
+DllGetClassObject
+DLLGetDISMProviderCLSID
+DllRegisterServer
+DllUnregisterServer
+DmiProvider 1.0 Type LibraryWW
+DmiProvider.dll
+DmiProvider.DLL
+dmiprovider.dll
+DmiProvider.pdb
+DmiProviderLibWW
+driver
+Driver %s is boot-critical.
+Driver ClassWW
+Driver package '%1!s!' was successfully installed.
+Driver package '%s' already present in store as '%s'. Not re-importing.
+Driver package %s failed to install. (hr:0x%x).
+Driver package %s failed to uninstall. (hr:0x%x).
+Driver package '%s' is marked as in-box. Removing is not supported.
+Driver package information:
+Driver packages listing:
+Driver provider is processing /add-driver command.
+Driver provider is processing /export-driver command.
+Driver provider is processing /get-driverinfo command.
+Driver provider is processing /get-drivers command.
+Driver provider is processing /remove-driver command.
+DRIVER SERVICING COMMANDS:
+Driver Store Path
+DriverCollection
+DriverCommands,Information on the available driver commands
+DriverManager
+DriverManager ClassWWW
+DriverManagerWWWd
+DriverPackage ClassWWW
+DriverPackageClose
+DriverPackageEnumDriversW
+DriverPackageEnumServicesW
+DriverPackageGetVersionInfoW
+DriverPackageOpenW
+DriverPackageWWW
+DRIVERS
+Drivers collection classWW
+Drivers for architecture
+DriversCallback
+DriverStoreClose
+DriverStoreDeleteW
+DriverStoreEnumW
+DriverStoreFindW
+DriverStoreGetObjectPropertyW
+DriverStoreImportW
+DriverStoreOpenW
+DriverStoreReflectCriticalW
+DriverStoreSetObjectPropertyW
+DriverStoreUnreflectCriticalW
+DriverWW,
+drupdate.dll
+drvstore.dll
+DtCSV
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+Ehttp://www.microsoft.com/pkiops/certs/MicWinProPCA2011_2011-10-19.crt0
+EnterCriticalSection
+EnumDriverPackageRoutine
+EnumDriversRoutine
+EnumeratePathEx: Callback requested enumeration interruption or hit internal enumeration failure on [%s]; GLE = 0x%x
+EnumeratePathEx: Failed search path is >= MAX_PATH!
+EnumeratePathEx: FindFirstFile failed for [%s]; GLE = 0x%x
+EnumeratePathEx: Unable to construct path under [%s]; GLE = 0x%x
+EnumeratePathEx: Unable to enumerate [%s]; GLE = 0x%x
+EnumeratePathEx: Unable to get reparse tag for persistent reparse point; GLE = 0x%x
+EnumPathCallback
+EnumServicesRoutine
+en-US
+Error - %1!s!%0
+Error, file not found '%s'.
+Errors were found opening driver package %s.
+Errors were found opening driver package %s. Is the driver in the driver store?
+Errors were found opening driver packages on the path %s.
+Exception has been thrown accessing the driver APIs. The driver provider has probably been closed and in an invalid state.
+Exclude IDs
+ExpandEnvironmentStringsW
+export-driver
+Export-DriverwExport all third-party driver packages from an
+Exporting driver %s.
+F]&hp&
+Failed accessing the BootCritical property of the driver package %s
+Failed accessing the Count property of the driver collection.
+Failed accessing the item property of the driver collection.
+Failed accessing the PublishedInfName property of the driver package.
+Failed accessing the SignatureStatus property of the driver package %s
+Failed adding driver package to collection of packages to install.
+Failed adding ID strings to the CDeviceIdCollection instance.
+Failed getting the option string from token at index %d.
+Failed getting the token collection count.
+Failed getting the token count at index %d.
+Failed opening driver package for amd64: INF Name='%s'
+Failed opening driver package for arm: INF Name='%s'
+Failed opening driver package for arm64: INF Name='%s'
+Failed opening driver package for ia64: INF Name='%s'
+Failed opening driver package for x86: INF Name='%s'
+Failed opening the driver store of the image.
+Failed searching for INF files on the path '%s'.
+Failed to access property buffer data.
+Failed to access safe array data for property buffer of driver package '%s'.
+Failed to add drivers from unattend file.
+Failed to add the command to the collection.
+Failed to allocate property buffer memory for driver package '%s'.
+Failed to append path %s
+Failed to bind the NetDriverInstall APIs
+Failed to build path to drupdate.dll.
+Failed to build path to NetDriverInstall.dll.
+Failed to build path to NetSetupApi.dll.
+Failed to build path to servicing stack drvstore.dll.
+Failed to build path to system drvstore.dll.
+Failed to commit new net driver registrations.
+Failed to commit new net driver removals.
+Failed to convert GUID to string using StringFromGUID2. Buffer too small.
+Failed to convert the path '%s' to an absolute path.
+Failed to create a CDeviceIdCollection instance.
+Failed to create a CDriver ATL object.
+Failed to create a CDriverPackageInfo object.
+Failed to create a DeviceIdCollection ATL object for CompatibleIds.
+Failed to create a DeviceIdCollection ATL object for ExcludeIds.
+Failed to create a DismError object to represent the driver package open failure.
+Failed to create a Driver ATL object.
+Failed to create a driver package ATL object.
+Failed to create a DriverPackageInfo instance for driver path '%s'.
+Failed to create a DriverService object.
+Failed to create a new command collection.
+Failed to create a new command object.
+Failed to create a path to inf file in the image.
+Failed to create an instance of CDriverPackage.
+Failed to create property buffer safe array for driver package '%s'.
+Failed to create the Driver ATL object.
+Failed to create the driver package collection ATL object.
+Failed to create the driver package collection object.
+Failed to create the DriverCollection ATL object.
+Failed to create the DriverPackage ATL object.
+Failed to create the error collection ATL object.
+Failed to create the report formatter.
+Failed to delete 'PnpUnattend' registry key.
+Failed to determine whether the driver is a network driver. Assuming false.
+Failed to enumerate the amd64 services in the driver package '%s'.
+Failed to enumerate the arm services in the driver package '%s'.
+Failed to enumerate the arm64 services in the driver package '%s'.
+Failed to enumerate the drivers in the driver package '%s'.
+Failed to enumerate the ia64 services in the driver package '%s'.
+Failed to enumerate the x86 services in the driver package '%s'.
+Failed to enumerating driver packages in the driver store.
+Failed to find the INF package in the driver store (hr = 0x%X); falling back to INF file name
+Failed to format the error string.
+Failed to generating the collection of packages in the image.
+Failed to get class name from INF '%s'. Unable to set class name.
+Failed to get driver package property InfPath.
+Failed to get driver package property LocaleName.
+Failed to get driver package property PublishedInfName.
+Failed to get driver package version info from DMI. Package INF='%s'.
+Failed to get file name from full path %s
+Failed to get IDismEventManager interface from driver provider parent.
+Failed to get OS State
+Failed to get published inf name.
+Failed to get safe array lower bound for property buffer.
+Failed to get safe array upper bound for property buffer.
+Failed to get the class description resource string.
+Failed to get the class name resource string.
+Failed to get the count property from the error collection.
+Failed to get the display type from the configuration interface.
+Failed to get the display type.
+Failed to get the DMI handle for the given architecture '%d'. Package INF='%s'
+Failed to get the driver collection for the target architecture from the driver package %s
+Failed to get the driver count from the driver collection for the driver package %s
+Failed to get the driver inf path from the package.
+Failed to get the driver package count from the driver collection.
+Failed to get the driver package count from the packages collection.
+Failed to get the driver package from the inbox collection.
+Failed to get the driver package from the packages collection.
+Failed to get the driver published inf name from the package.
+Failed to get the image flags from the configuration interface.
+Failed to get the inbox driver package collection from the driver store.
+Failed to get the INF path for the driver package.
+Failed to get the list of drivers for the specified driver package '%s'.
+Failed to get the NetDriverInstall API.
+Failed to get the option and its value.
+Failed to get the OS architecture from the os services provider.
+Failed to get the OS state from the os services provider.
+Failed to get the out of box driver package collection from the driver store.
+Failed to get the parent configuration object.
+Failed to get the parent's interface from OnConnect
+Failed to get the path to the offline target's SYSTEM registry hive
+Failed to get the servicing stack path from the os services provider.
+Failed to get the System directory from the os services provider.
+Failed to get the unattend folder path.
+Failed to get the Windows directory from the os services provider.
+Failed to get underlying collection class.
+Failed to getting the boot drive from the os services provider.
+Failed to import driver package '%s'.
+Failed to initialize CDmiNetDriverInstall.
+Failed to initialize HNETDRIVERINSTALL instance.
+Failed to initialize message wrapper.
+Failed to initialize the CDriver ATL object.
+Failed to initialize the console event handler.
+Failed to initialize the instance of CDriverPackage.
+Failed to initialize the message wrapper.
+Failed to initialize the NetDriverInstall API. SystemPath='%s'
+Failed to initialize the offline driver store API.
+Failed to install drivers.
+Failed to install the driver package '%s'.
+Failed to load the driver store module.
+Failed to load the driver update module.
+Failed to mount software registry hive.
+Failed to mount the registry for the target.
+Failed to open a driver package object.
+Failed to open key for %s. hr = 0x%x
+Failed to open offline CurrentControlSet key.
+Failed to open the DMI driver store.
+Failed to open the DMI driver store. SystemPath='%s' BootDrive='%s'
+Failed to open the driver from a driver info instance.
+Failed to open the driver store.
+Failed to open the DriverPackage '%s'.
+Failed to open the offline target's SYSTEM hive at %ws
+Failed to output error message to the console.
+Failed to process new net driver registration.
+Failed to process new net driver removals.
+Failed to process new network driver registrations. Look at the target image's HKLM\SYSTEM\CurrentControlSet\Control\NetFilters|NetProtocols to see which drivers failed to install and why.
+Failed to process removed network driver registrations. Look at the target image's HKLM\SYSTEM\CurrentControlSet\Control\NetFilters|NetProtocols to see which drivers failed to install and why.
+Failed to QI IDismOSServiceManager2 on m_osServiceManager.
+Failed to QI the CDISMHelpItemCollection for IDismHelpItemCollection.
+Failed to QI the CDriverPackage instance for the IDismDriverPackage interface.
+Failed to read the offline target's Current value %ws
+Failed to reflect critical driver package '%s'.
+Failed to remove driver package '%s'.
+Failed to remove the driver package '%s'.
+Failed to retrieve the error description from the error object.
+Failed to retrieve the error object from the error collection.
+Failed to retrieve the error source from the error object.
+Failed to retrieve the HRESULT from the error object.
+Failed to to create the collection of drivers for amd64. Package INF='%s'.
+Failed to to create the collection of drivers for arm. Package INF='%s'.
+Failed to to create the collection of drivers for arm64. Package INF='%s'.
+Failed to to create the collection of drivers for ia64. Package INF='%s'.
+Failed to to create the collection of drivers for x86. Package INF='%s'.
+Failed to unaccess safe array data for property buffer of driver package '%s'.
+Failed to unreflect the boot critical driver package '%s'.
+Failed trying to find driver package '%s' in the driver store.
+Failed trying to find the specified driver package '%s' in the driver store.
+Failed trying to get property for driver package '%s' in the driver store.
+Failed trying to load %s
+Failed trying to load drupdate.dll
+Failed trying to load NetDriverInstall.dll
+Failed trying to load NetSetupApi.dll
+Failed trying to set property for driver package '%s' in the driver store.
+Failed while copying directory %s
+Failed while searching for drivers. Error adding '%s' to driver list.
+Fbad allocation
+FileDescription
+FileTimeToSystemTime
+FileVersion
+FindClose
+FindFirstFileNameW
+FindFirstFileW
+FindNextFileNameW
+FindNextFileW
+FindResourceExW
+Flags parameter passed to GetDriverPackageCollection API was invalid.
+For more information about valid syntax, refer to the help.
+For more information, check for log files in the <windir>\inf folder of the target image.
+For more information, refer to the help.
+For more information, review the log file.
+forceunsigned
+FormatMessageW
+Found driver package '%s' in the driver store.
+Found flag to force-reflect this driver.
+Found flag to hardlink this driver during import.
+Found flag to not reflect. Skipping reflection for %s.
+FreeLibrary
+Further logs for driver related operations can be found in the target operating system at %%WINDIR%%\inf\setupapi.offline.log
+GetCurrentProcess
+GetCurrentProcessId
+GetCurrentThreadId
+GetDateFormatEx
+get-driverinfo
+Get-DriverInfo{Displays information about a specific driver
+get-drivers
+Get-Drivers
+GetFileAttributesW
+GetFileInformationByHandle
+GetFileInformationByHandleEx
+GetFullPathNameW
+GetInterfaceErrorInfo failed on IDismDriverPackage (hr:0x%x).
+GetLastError
+GetMessageStringBSTR failed (hr:0x%x).
+GetModuleFileNameW
+GetModuleHandleW
+GetProcAddress
+GetProcessHeap
+GetSystemInfo
+GetSystemTimeAsFileTime
+GetThreadLocale
+GetTickCount
+GetVersionExW
+globalroot
+HA1o7w
+Hardware ID
+HeapAlloc
+HeapDestroy
+HeapFree
+HeapReAlloc
+HeapSize
+Hive already mounted at %s.
+Hive is not mounted at %s.
+HKEY_CURRENT_USER
+HKEY_LOCAL_MACHINE\COMPONENTS
+HKEY_LOCAL_MACHINE\DRIVERS
+HKEY_LOCAL_MACHINE\SAM
+HKEY_LOCAL_MACHINE\SECURITY
+HKEY_LOCAL_MACHINE\SOFTWARE
+HKEY_LOCAL_MACHINE\SYSTEM
+HKEY_USERS\.DEFAULT
+HKLM\%ws
+HKLM\COMPONENTS
+HKLM\DRIVERS
+HKLM\SAM
+HKLM\SECURITY
+HKLM\SOFTWARE
+HKLM\SYSTEM
+HKU\.DEFAULT
+i{i{g
+I0G1-0+
+ImageTopLevelHelp
+Inbox
+Inconsistent property size parameters for driver package '%s'.
+INFO: DISM has skipped driver signature check because the version of running OS and that of target OS do not match.
+InitializeCriticalSection
+InstallDriversOffline
+InternalName
+Invalid parameter passed to C runtime function.
+Invalid safe array dimension %d for property buffer.
+invalid string position
+Invalid value for the driver service start type '%d'.
+ipa.F
+iswalpha
+j Xf9
+j Yf;
+j:Xf;F
+j:Xf9C
+j:Yf9H
+j\Xf9
+j\Xf9C
+j\Xf9F
+j\Yf;
+j\Yuj
+j\Zf;Ty
+j+v^fwn
+JUEX`
+KERNEL32.dll
+kernel32.dll
+L$hQS
+L+x`r
+LeaveCriticalSection
+Legal_Policy_Statement
+LegalCopyright
+list<T> too long
+Loading '%s'.
+LoadLibraryExA
+LoadLibraryExW
+LoadResource
+LoadStringW
+LocalFree
+LockResource
+M0K0I
+Malformed Current value at %ws (length %u, type %u)
+malloc
+Manufacturer
+MapViewOfFile
+memcmp
+memcpy
+memcpy_s
+memmove_s
+memset
+Method does not accept null arguments.
+Microsoft
+Microsoft Corporation
+Microsoft Corporation1
+Microsoft Corporation1&0$
+Microsoft Corporation1.0,
+Microsoft Corporation1-0+
+Microsoft Corporation1200
+Microsoft Time-Stamp PCA 2010
+Microsoft Time-Stamp PCA 20100
+Microsoft Time-Stamp Service
+Microsoft Time-Stamp Service0
+Microsoft Windows0
+Microsoft\Windows NT\CurrentVersion\ProfileList
+Microsoft\Windows NT\CurrentVersion\UnattendSettings\PnpUnattend
+msvcrt.dll
+MUI\%04hx
+MultiByteToWideChar
+Multiple driver paths cannot be specified with this command. 
+N0L0J
+Ne_3b:
+Ne_3D
+NetDriverInstall.dll
+NetDriverInstallClose
+NetDriverInstallCommit
+NetDriverInstallInitialize
+NetDriverInstallProcessAdditions
+NetDriverInstallProcessRemovals
+NetSetupApi.dll
+No destination path is given.
+No driver packages were found on the specified path. 
+No driver path was given for the /driver option.
+No valid INF files found on the path '%s'.
+No-reflection and force-reflection flags cannot be specified together.
+Not operating offline.  No unattend work to be done for DMI.
+ntdll.dll
+NtSetInformationFile
+NTUSER.DAT
+O0M0K
+Offline Registry
+oK0D$"<
+OLE32.dll
+OLEAUT32.dll
+OnCliOutput event failed (hr:0x%x).
+onecore\base\ntsetup\opktools\dism\providers\dmiprovider\dll\dmiapi.cpp
+onecore\base\ntsetup\opktools\dism\providers\dmiprovider\dll\dmiconsoleformatter.cpp
+onecore\base\ntsetup\opktools\dism\providers\dmiprovider\dll\drivermanager.cpp
+onecore\base\ntsetup\opktools\dism\providers\dmiprovider\dll\driverpackage.cpp
+Original File Name
+OriginalFilename
+OutputDebugStringA
+OutputDebugStringW
+PID=%d TID=%d %s - %s
+PID=%d TID=%d %s - %s(hr:0x%x)
+PPPPP
+Processing added network driver registrations
+Processing removed network driver registrations
+ProductName
+ProductVersion
+ProgIDFromCLSID
+Provider Name
+PSSSV
+Published Name
+PWh`^
+q(9>u
+q09>uu
+QQSVW
+QRPh4
+QSVWj
+QueryPerformanceCounter
+R!s4Z
+r~akow
+RaiseException
+realloc
+recurse
+Redmond1
+Re-enter the command, specifying a file.
+Re-enter the command, specifying only one .inf file.
+Re-enter the command, specifying the %1!s! option only once.
+RegCloseKey
+RegCreateKeyExW
+RegDeleteKeyExW
+RegDeleteKeyW
+RegDeleteTreeW
+RegFlushKey
+RegLoadKeyW
+RegOpenKeyExW
+RegQueryInfoKeyW
+RegQueryValueExW
+RegSetValueExW
+RegUnLoadKeyW
+ReleaseSRWLockExclusive
+remove-driver
+Remove-Driver.Removes driver packages from an offline image.
+RSDSF]&hp&
+RtlAllocateHeap
+RtlFreeHeap
+RtlGetVersion
+RtlNtStatusToDosError
+s(PhX
+SearchPathW
+SECURITY
+Select
+SendMessageW
+Service Name
+SetFileAttributesW
+SetFileInformationByHandle
+SetLastError
+SetThreadLocale
+SetThreadUILanguage
+SetUnhandledExceptionFilter
+setupapi.dll
+SetupApi.dll
+SetupDiGetClassDescriptionW
+SetupDiGetINFClassW
+SetupVerifyInfFileW
+Signature status of driver %s is: SIGNED
+Signature status of driver %s is: UNKNOWN
+Signature status of driver %s is: UNSIGNED
+SizeofResource
+Sleep
+SOFTWARE
+Specifying folders for this command is not supported.
+SSSSSSSPSSSV
+String operation exception!
+string too long
+StringFileInfo
+StringFromGUID2
+Successfully created a driver package instance for '%s'.
+Successfully deleted [%s] registry key.
+Successfully imported driver package '%s' to store as '%s'.
+Successfully opened driver package '%s' in the offline driver store.
+Successfully opened driver package file '%s'.
+Successfully opened the driver store.
+Successfully proccessed driver package '%s'.
+Successfully reflected driver package '%s'.
+Successfully removed driver package '%s'.
+Sut9u_'+
+swscanf_s
+SymbolicLinkValue
+SYSTEM
+t SSSj
+t(9\$
+t(j|P
+t:SSSj
+t[VW3
+t=j:Xf9F
+t1j\P
+tb9t$
+TerminateProcess
+Thales TSS ESN:A240-4B82-130E1%0#
+The %1!s! option can only be specified once on the command-line.
+The %1!s! option is not a valid command. 
+The %s option is not a valid command.
+The /%1!s! option does not take arguments. 
+The argument specified with the /Format option is not supported with this command.  
+The argument specified with the /Format option is not supported with this command.  For more information about valid syntax, refer to the help.
+The command completed with errors. For more information, refer to the log file.
+The command-line is missing the /%1 option.
+The default location of default user hive %s does not exist; trying ProfileList key
+The destination path %1!s! does not exist.
+The destination path %s does not exist.
+The driver command does not support folder arguments in this context.
+The driver command does not support folder specifications in this context.
+The driver command is missing a path to an INF file or folder.
+The driver package contains x64 boot-critical drivers, but the drivers are not properly signed. 
+The driver package did not contain any drivers matching the architecture of the image.
+The driver package was successfully installed.
+-The driver package was successfully removed.
+The Select registry key does not exist; skipping current control set creation
+The specified driver cannot be removed. Removing a default driver package is not supported.
+The specified driver package is already present in the driver store.
+There was a problem opening the INF file.%0
+This command can only be used with an offline image.
+tIVS3
+tJj:Xf9C
+tK97t(
+TlP0X
+tLVVVW
+tLVW3
+Too many arguments passed to get-drivers command.
+towlower
+towupper
+Translation
+Try adding the path and running the command again. For more information, refer to the help.
+Try specifying a specific INF file and running the command again. For more information, refer to the help.
+Try the command again without the argument. For more information, refer to the help for the %1!s! option.
+tVV9_
+t'Wj\V
+TYPELIB
+u_SSSSSSS
+u`WhO
+u<Vh`
+U0S0Q
+uDisplays information about all drivers in
+uGf9G
+Unable to find the specified driver package '%1!s!'.
+UnhandledExceptionFilter
+Universal Network Drivers can only be installed via an offline DISM servicing operation.
+Unknown
+Unknown architecture type '%d': INF Name='%s'
+Unknown device class5(No drivers found in the image matching the criteria)<Obtaining list of 3rd party drivers from the driver store...6Obtaining list of all drivers from the driver store...%Installing %1!d! of %2!d! - %3!s!: %0#Removing %1!d! of %2!d! - %3!s!: %0/The driver package was successfully installed.
+Unknown Error
+UnmapViewOfFile
+urWhO
+Use the /forceunsigned option to install the drivers.
+User canceled get driver info operation.
+USER32.dll
+user32.dll
+Using registry data %s as-is as the default user hive location
+uw!\$
+V([_^
+VarFileInfo
+Verify that the driver .INF files are in the specified location and try the command again.
+Verify the path is valid and try the command again.
+Version
+VirtualProtect
+VirtualQuery
+VQh`V
+VS_VERSION_INFO
+vswprintf_s
+VWh`T
+w4s4rF
+WaitForSingleObject
+Washington1
+wcscat_s
+wcschr
+wcscpy_s
+wcsncpy_s
+wcsrchr
+wcsstr
+WdsCopyFileEx: Failed to copy [%s] to [%s], GLE = 0x%x; will retry in %u ms
+WdsCopyFileEx: Failed to delete %s. GLE = 0x%x
+WdsCopyFileEx: Failed to strip file attributes for %s, will delete. GLE = 0x%x
+WdsRemoveDirectory: Unable to clear attributes on [%s]; GLE = 0x%x
+WdsRemoveDirectory: Unable to prepare path [%s]; GLE = 0x%x
+WdsRemoveDirectory: Unable to remove directory [%s]; GLE = 0x%x
+WinTrust.dll
+WinVerifyTrust
+WVVRQ
+x"VhH
+Y__^[
+YDeviceIdCollectionWW
+YL2fXu
+ySj@j
+YYhLn
+YYSh(}
+YYSh|
+YYSh8b
+YYShD
+YYShLn
+YYSht
+YYShX
+YYWh@
+YYWh8
+YYWhD
+YYWhH
+YYWhHo
+YYWhhY
+YYWhl
+YYWhp
+YYWhX
+z.9Wv

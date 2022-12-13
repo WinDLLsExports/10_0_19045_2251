@@ -1,0 +1,99 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\drmk.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    ks.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C000B010 Import Address Table
+             1C000B178 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         5C5 MmUnlockPages
+                         5AE MmProbeAndLockPages
+                         440 KeBugCheckEx
+                         5C4 MmUnlockPagableImageSection
+                         593 MmLockPagableDataSection
+                         10F ExReleaseFastMutex
+                         B65 __C_specific_handler
+                         568 MmChangeImageProtection
+                         31D IoFreeMdl
+                          87 ExAcquireFastMutex
+                         483 KeInitializeEvent
+                         5C8 MmUnmapLockedPages
+                         59A MmMapLockedPagesSpecifyCache
+                         2C4 IoAllocateMdl
+                         673 ObfDereferenceObject
+                         2D0 IoBuildDeviceIoControlRequest
+                         40D IofCallDriver
+                         530 KeWaitForSingleObject
+                         345 IoGetLowerDeviceObject
+                          A3 ExAllocatePoolWithTag
+                         35E IoIs32bitProcess
+                         663 ObReferenceObjectByHandle
+                         313 IoFileObjectType
+                         349 IoGetRelatedDeviceObject
+                         591 MmIsVerifierEnabled
+                         487 KeInitializeMutex
+                         4E3 KeReleaseMutex
+                         675 ObfReferenceObject
+                         813 RtlEqualUnicodeString
+                         87F RtlInitUnicodeString
+                          C9 ExFreePool
+                          9E ExAllocatePool
+
+    ks.sys
+             1C000B000 Import Address Table
+             1C000B168 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          D7 KsSynchronousIoControlDevice
+
+  Section contains the following exports for drmk.sys
+
+    00000000 characteristics
+    38043810 time date stamp
+        0.00 version
+           1 ordinal base
+          10 number of functions
+          10 number of names
+
+    ordinal hint RVA      name
+
+          1    0 0000C020 DllInitialize
+          2    1 0000C040 DllUnload
+          3    2 0000C9E0 DrmAddContentHandlers
+          4    3 0000C2F0 DrmCreateContentMixed
+          5    4 0000C930 DrmDestroyContent
+          6    5 0000C710 DrmForwardContentToDeviceObject
+          7    6 0000C560 DrmForwardContentToFileObject
+          8    7 0000C3A0 DrmForwardContentToInterface
+          9    8 0000C980 DrmGetContentRights
+         10    9 0000C2D0 DrmGetFilterDescriptor
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        1000 .idata
+        1000 .pdata
+        3000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
+        1000 GFIDS
+        1000 INIT
+        E000 PAGE
+        1000 PAGEHrx
+        1000 PAGEwx2

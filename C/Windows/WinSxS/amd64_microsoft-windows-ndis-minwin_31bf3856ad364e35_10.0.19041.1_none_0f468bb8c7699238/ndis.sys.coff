@@ -1,0 +1,995 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\WinSxS\amd64_microsoft-windows-ndis-minwin_31bf3856ad364e35_10.0.19041.1_none_0f468bb8c7699238\ndis.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    NETIO.SYS
+    WppRecorder.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C00F30C0 Import Address Table
+             1C00F3CF8 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         A5F WmiGetClock
+                         450 KeDelayExecutionThread
+                         532 KfRaiseIrql
+                         4A9 KeLowerIrql
+                         36D IoOpenDeviceRegistryKey
+                         B8D _vsnwprintf
+                         7DB RtlCopyUnicodeString
+                         7A6 RtlAppendUnicodeStringToString
+                         93E RtlStringFromGUID
+                         842 RtlFreeUnicodeString
+                         AD8 ZwOpenKey
+                         A88 ZwClose
+                         AB2 ZwEnumerateKey
+                         812 RtlEqualUnicodeString
+                         893 RtlIntegerToUnicodeString
+                         907 RtlQueryRegistryValuesEx
+                         95C RtlUnicodeStringToInteger
+                         980 RtlWriteRegistryValue
+                         7B5 RtlCharToInteger
+                         487 KeInitializeMutex
+                         2C0 IoAllocateDriverObjectExtension
+                         590 MmIsVerifierEnabled
+                         58A MmIsDriverVerifying
+                         674 ObfReferenceObject
+                         33A IoGetDriverObjectExtension
+                         2EC IoCreateDevice
+                         2F8 IoCreateSymbolicLink
+                         304 IoDeleteDevice
+                         306 IoDeleteSymbolicLink
+                         597 MmMapIoSpaceEx
+                         5C6 MmUnmapIoSpace
+                          5E DbgPrintEx
+                         459 KeEnterCriticalRegion
+                          8E ExAcquireResourceExclusiveLite
+                         11B ExReleaseResourceLite
+                         4A5 KeLeaveCriticalRegion
+                         338 IoGetDmaAdapter
+                         265 HalPrivateDispatchTable
+                         4D8 KeRegisterBugCheckCallback
+                         452 KeDeregisterBugCheckCallback
+                         843 RtlGUIDFromString
+                         B5F ZwUpdateWnfStateData
+                         693 PoFxEnableDStateReporting
+                         2D2 IoBuildSynchronousFsdRequest
+                         40D IofCallDriver
+                         2CC IoAttachDeviceToDeviceStack
+                         38A IoRegisterDeviceInterface
+                         307 IoDetachDevice
+                         96B RtlUpcaseUnicodeString
+                         405 IoWMIWriteEvent
+                         4E3 KeReleaseMutex
+                         35C IoInvalidateDeviceState
+                         478 KeGetRecommendedSharedDataAlignment
+                         58B MmIsDriverVerifyingByAddress
+                          5D DbgPrint
+                         538 KseQueryDeviceFlags
+                         7B7 RtlCheckRegistryKey
+                         15A ExpInterlockedPopEntrySList
+                         15B ExpInterlockedPushEntrySList
+                          F3 ExQueryDepthSList
+                         31D IoFreeMdl
+                         2C4 IoAllocateMdl
+                         566 MmBuildMdlForNonPagedPool
+                         4BD KeQueryHighestNodeNumber
+                         472 KeGetCurrentProcessorNumberEx
+                         509 KeSetIdealProcessorThread
+                         512 KeSetSystemGroupAffinityThread
+                         55A MmAllocateContiguousNodeMemory
+                         57F MmGetPhysicalAddress
+                         4FB KeRevertToUserGroupAffinityThread
+                         576 MmFreeContiguousMemorySpecifyCache
+                         47F KeInitializeDpc
+                         50A KeSetImportanceDpc
+                         496 KeInsertQueueDpc
+                         4B7 KeQueryDpcWatchdogInformation
+                         67A PcwRegister
+                         87E RtlInitUnicodeString
+                         4CA KeQueryTimeIncrement
+                          74 EtwRegister
+                          77 EtwSetInformation
+                          62 DbgSetDebugFilterState
+                          DB ExInitializeResourceLite
+                          B0 ExCreateCallback
+                          D8 ExInitializeNPagedLookasideList
+                         5BF MmSizeOfMdl
+                         388 IoRegisterBootDriverReinitialization
+                         38B IoRegisterDriverReinitialization
+                         598 MmMapLockedPages
+                         B64 __C_specific_handler
+                          D1 ExGetPreviousMode
+                         5CE MmUserProbeAddress
+                          FA ExRaiseDatatypeMisalignment
+                         8BF RtlIsStateSeparationEnabled
+                         7FC RtlDeleteRegistryValue
+                         7A7 RtlAppendUnicodeToString
+                         B16 ZwQueryValueKey
+                         86C RtlGetVersion
+                         412 KdDebuggerEnabled
+                         334 IoGetDeviceProperty
+                         BE8 wcsnlen
+                         477 KeGetProcessorNumberFromIndex
+                         514 KeSetTargetProcessorDpcEx
+                         2E7 IoConnectInterruptEx
+                         30C IoDisconnectInterruptEx
+                         522 KeSynchronizeExecution
+                         476 KeGetProcessorIndexFromNumber
+                         45E KeExpandKernelStackAndCalloutEx
+                         599 MmMapLockedPagesSpecifyCache
+                          F8 ExQueueWorkItem
+                         B9F bsearch
+                         672 ObfDereferenceObject
+                         7E4 RtlCreateRegistryKey
+                         7C8 RtlCompareUnicodeString
+                         5C7 MmUnmapLockedPages
+                         2C1 IoAllocateErrorLogEntry
+                         407 IoWriteErrorLogEntry
+                         394 IoReleaseCancelSpinLock
+                          A4 ExAllocatePoolWithTagPriority
+                         324 IoGetAffinityInterrupt
+                         3B4 IoSetDeviceInterfaceState
+                         400 IoWMIRegistrationControl
+                         48A KeInitializeSemaphore
+                         358 IoInitializeRemoveLockEx
+                         332 IoGetDeviceNumaNode
+                         621 NtQuerySystemInformationEx
+                         A69 ZwAllocateLocallyUniqueId
+                         2C7 IoAllocateWorkItem
+                         37C IoQueueWorkItem
+                         320 IoFreeWorkItem
+                         391 IoRegisterPlugPlayNotification
+                         AD6 ZwOpenFile
+                         662 ObReferenceObjectByHandle
+                         313 IoFileObjectType
+                         2B8 IoAcquireCancelSpinLock
+                         4D0 KeReadStateEvent
+                         530 KeWaitForSingleObject
+                         B13 ZwQuerySystemInformation
+                         4B4 KeQueryActiveProcessorCountEx
+                          A5 ExAllocateTimer
+                         12B ExSetTimer
+                         413 KdDebuggerNotPresent
+                         5C0 MmSystemRangeStart
+                         4BF KeQueryLogicalProcessorRelationship
+                         4C2 KeQueryMaximumProcessorCountEx
+                         BB5 qsort
+                         4DB KeRegisterProcessorChangeCallback
+                         4C3 KeQueryNodeActiveAffinity
+                         35E IoIs32bitProcess
+                         2D5 IoCancelIrp
+                         36E IoOpenDriverRegistryKey
+                         677 PcwAddInstance
+                         7BC RtlClearAllBits
+                         927 RtlSetBit
+                         821 RtlFindClearBitsAndSet
+                         7BE RtlClearBit
+                         469 KeFlushQueuedDpcs
+                         7E7 RtlCreateUnicodeString
+                         6F4 PsGetCurrentThreadId
+                         4CB KeQueryTotalCycleTimeThread
+                         575 MmFreeContiguousMemory
+                         AC4 ZwLoadDriver
+                         4E8 KeReleaseSpinLockFromDpcLevel
+                         6BB PoRequestPowerIrp
+                         2BA IoAcquireRemoveLockEx
+                         6C2 PoSetPowerState
+                         335 IoGetDevicePropertyData
+                         4F6 KeResetEvent
+                         33B IoGetFileObjectGenericMapping
+                         8D4 RtlMapGenericMask
+                         8C5 RtlLengthRequiredSid
+                         887 RtlInitializeSid
+                         8C7 RtlLengthSid
+                         9B7 SeExports
+                         7DE RtlCreateAcl
+                         846 RtlGetAce
+                         792 RtlAddAccessAllowedAce
+                         654 ObGetObjectSecurity
+                         850 RtlGetDaclSecurityDescriptor
+                         861 RtlGetOwnerSecurityDescriptor
+                         857 RtlGetGroupSecurityDescriptor
+                         864 RtlGetSaclSecurityDescriptor
+                         922 RtlSelfRelativeToAbsoluteSD
+                         92D RtlSetDaclSecurityDescriptor
+                         66E ObSetSecurityObjectByPointer
+                         66B ObReleaseObjectSecurity
+                         7E5 RtlCreateSecurityDescriptor
+                         8C6 RtlLengthSecurityDescriptor
+                         9E3 SeSetSecurityDescriptorInfo
+                         9C2 SeLockSubjectContext
+                         987 SeAccessCheck
+                         98F SeAppendPrivileges
+                         9B9 SeFreePrivileges
+                         9F2 SeUnlockSubjectContext
+                         930 RtlSetOwnerSecurityDescriptor
+                         92F RtlSetGroupSecurityDescriptor
+                         539 KseRegisterShim
+                         134 ExSystemTimeToLocalTime
+                         3FB IoWMIOpenBlock
+                         875 RtlInitAnsiString
+                         7A3 RtlAnsiStringToUnicodeString
+                         3F8 IoWMIDeviceObjectToProviderId
+                         592 MmLockPagableDataSection
+                         5C3 MmUnlockPagableImageSection
+                         594 MmLockPagableSectionByHandle
+                         7C9 RtlCompareUnicodeStrings
+                         4E5 KeReleaseSemaphore
+                         881 RtlInitializeBitMap
+                         929 RtlSetBits
+                         8F8 RtlPrefixUnicodeString
+                          F2 ExNotifyCallback
+                         6DF PsCreateSystemThread
+                         789 PsThreadType
+                         50D KeSetPriorityThread
+                          B3 ExDeleteNPagedLookasideList
+                         515 KeSetTimer
+                         526 KeTestSpinLock
+                         52A KeTryToAcquireSpinLockAtDpcLevel
+                         577 MmFreeMappingAddress
+                         55B MmAllocateMappingAddress
+                         55F MmAllocateNodePagesForMdlEx
+                         59A MmMapLockedPagesWithReservedMapping
+                         57A MmFreePagesFromMdl
+                         584 MmGetSystemRoutineAddress
+                         A62 WmiTraceMessageVa
+                         A33 VfQueryDispatchTable
+                         554 MmAddVerifierThunks
+                         871 RtlImageDirectoryEntryToData
+                         959 RtlUnicodeStringToAnsiString
+                         83C RtlFreeAnsiString
+                          DC ExInitializeRundownProtection
+                         14D ExWaitForRundownProtectionRelease
+                          FF ExReInitializeRundownProtection
+                          90 ExAcquireRundownProtection
+                         11C ExReleaseRundownProtection
+                         48D KeInitializeTimer
+                         6B3 PoQueryWatchdogTime
+                         4B1 KeQueryActiveGroupCount
+                         500 KeSetActualBasePriorityThread
+                         517 KeSetTimerEx
+                         BDA vswprintf_s
+                         42D KeAcquireSpinLockAtDpcLevel
+                         503 KeSetCoalescableTimer
+                         40E IofCompleteRequest
+                         446 KeClearEvent
+                         505 KeSetEvent
+                         441 KeCancelTimer
+                          7A EtwWrite
+                         890 RtlInt64ToUnicodeString
+                          CA ExFreePoolWithTag
+                         483 KeInitializeEvent
+                         48B KeInitializeSpinLock
+                          A3 ExAllocatePoolWithTag
+                         6B9 PoRegisterPowerSettingCallback
+                         130 ExSubscribeWnfStateChange
+                         AEB ZwPowerInformation
+                         4E6 KeReleaseSpinLock
+                         42F KeAcquireSpinLockRaiseToDpc
+                         31A IoFreeIrp
+                         AA9 ZwDeleteValueKey
+                         B4E ZwSetValueKey
+                          8C ExAcquirePushLockExclusiveEx
+                         116 ExReleasePushLockExclusiveEx
+                          8D ExAcquirePushLockSharedEx
+                         115 ExReleasePushLockEx
+                         BD0 swprintf_s
+                         B93 _wcsnicmp
+                         B58 ZwUnloadDriver
+                         11F ExReleaseRundownProtectionEx
+                          C9 ExFreePool
+                         2D1 IoBuildPartialMdl
+                          B2 ExDeleteLookasideListEx
+                          D7 ExInitializeLookasideListEx
+                         2B6 InitializeSListHead
+                         703 PsGetJobSessionId
+                         74A PsJobType
+                         701 PsGetJobProperty
+                         775 PsSetJobProperty
+                         712 PsGetProcessJob
+                         9CE SeQueryInformationToken
+                         71A PsGetProcessSessionId
+                         72E PsGetThreadProperty
+                         6ED PsGetCurrentProcessSessionId
+                         781 PsSetThreadProperty
+                         758 PsReferenceImpersonationToken
+                         730 PsGetThreadSessionId
+                         6E1 PsDereferenceImpersonationToken
+                         14B ExUuidCreate
+                         91F RtlRunOnceInitialize
+                         91E RtlRunOnceExecuteOnce
+                         6EB PsGetCurrentProcess
+                         649 ObCreateObject
+                         64A ObCreateObjectType
+                         7C5 RtlCompareMemory
+                         947 RtlTestBitEx
+                         928 RtlSetBitEx
+                         822 RtlFindClearBitsAndSetEx
+                         7BF RtlClearBitEx
+                         882 RtlInitializeBitMapEx
+                          E3 ExInterlockedInsertHeadList
+                          E0 ExInterlockedAddLargeInteger
+                         4C0 KeQueryMaximumGroupCount
+                         8E9 RtlNumberOfSetBitsUlongPtr
+                         4B9 KeQueryGroupAffinity
+                         579 MmFreeNonCachedMemory
+                         560 MmAllocateNonCachedMemory
+                         B1B ZwReadFile
+                         A94 ZwCreateFile
+                         B00 ZwQueryInformationFile
+                          CC ExGetCurrentProcessorCpuUsage
+                         48F KeInitializeTimerEx
+                          CB ExGetCurrentProcessorCounts
+                          E1 ExInterlockedAddUlong
+                          E4 ExInterlockedInsertTailList
+                          E5 ExInterlockedPopEntryList
+                          E7 ExInterlockedRemoveHeadList
+                          E6 ExInterlockedPushEntryList
+                         831 RtlFindSetBits
+                         8E5 RtlNumberOfSetBits
+                         7E1 RtlCreateHashTable
+                         7B4 RtlCaptureStackBackTrace
+                         916 RtlRemoveEntryHashTable
+                         88E RtlInsertEntryHashTable
+                         8D1 RtlLookupEntryHashTable
+                         65D ObOpenObjectByPointer
+                         30A IoDeviceObjectType
+                         B47 ZwSetSecurityObject
+                         367 IoIsWdmVersionAvailable
+                         791 RtlAbsoluteToSelfRelativeSD
+                         BDD wcschr
+                         B78 _snwprintf
+                         99F SeCaptureSecurityDescriptor
+                         A97 ZwCreateKey
+                         3AD IoReuseIrp
+                         3DA IoSynchronousCallDriver
+                         2C2 IoAllocateIrp
+                          66 DbgkWerCaptureLiveKernelDump
+                         4CC KeQueryUnbiasedInterruptTime
+                         440 KeBugCheckEx
+                         124 ExRundownCompleted
+                         14E ExWaitForRundownProtectionReleaseCacheAware
+                          91 ExAcquireRundownProtectionCacheAware
+                          9D ExAllocateCacheAwareRundownProtection
+                         11D ExReleaseRundownProtectionCacheAware
+                         100 ExReInitializeRundownProtectionCacheAware
+                          C8 ExFreeCacheAwareRundownProtection
+                          7F EtwWriteTransfer
+                         396 IoReleaseRemoveLockEx
+                          F7 ExQueryWnfStateData
+                         BE0 wcscpy_s
+                         BDC wcscat_s
+                         BDE wcscmp
+
+    HAL.dll
+             1C00F3000 Import Address Table
+             1C00F3C38 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          55 KeStallExecutionProcessor
+                          48 HalTranslateBusAddress
+                          54 KeQueryPerformanceCounter
+
+    NETIO.SYS
+             1C00F3020 Import Address Table
+             1C00F3C58 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         180 NmrWaitForProviderDeregisterComplete
+                         17E NmrRegisterProvider
+                         19E NsiSetAllParametersEx
+                         18E NsiEnumerateObjectsAllParametersEx
+                         1A2 NsiSetParameterEx
+                         19A NsiRegisterChangeNotificationEx
+                         1FE WfpNblInfoCleanup
+                         200 WfpNblInfoClone
+                         179 NmrClientDetachProviderComplete
+                         178 NmrClientAttachProvider
+                         17D NmrRegisterClient
+                         16E NetioSetTriageBlock
+                         17B NmrDeregisterProvider
+                         1A0 NsiSetObjectSecurity
+
+    WppRecorder.sys
+             1C00F3098 Import Address Table
+             1C00F3CD0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          10 imp_WppRecorderReplay
+                           9 imp_WppRecorderIsDefaultLogAvailable
+                           4 WppAutoLogTrace
+                           2 WppAutoLogStart
+
+  Section contains the following exports for NDIS.SYS
+
+    00000000 characteristics
+    2B0398C8 time date stamp
+        0.00 version
+           1 ordinal base
+         550 number of functions
+         550 number of names
+
+    ordinal hint RVA      name
+
+          1    0 00063920 EthFilterDprIndicateReceive
+          2    1 00063D50 EthFilterDprIndicateReceiveComplete
+         21    2 000BE4E0 NDIS_BUFFER_TO_SPAN_PAGES
+         22    3 00005910 NdisAcquireRWLockRead
+         23    4 000042F0 NdisAcquireRWLockWrite
+         24    5 0003C6B0 NdisAcquireReadWriteLock
+         25    6 000BC040 NdisAcquireSpinLock
+         26    7 000BC0F0 NdisActiveGroupCount
+         27    8 000BE520 NdisAdjustBufferLength
+         28    9 00007060 NdisAdjustNetBufferCurrentMdl
+         29    A 000078F0 NdisAdvanceNetBufferDataStart
+         30    B 000ABFC0 NdisAdvanceNetBufferListDataStart
+         31    C 000BE530 NdisAllocateBuffer
+         32    D 000BE5A0 NdisAllocateBufferPool
+         33    E 00003650 NdisAllocateCloneNetBufferList
+         34    F 0000E430 NdisAllocateCloneOidRequest
+         35   10 000AC870 NdisAllocateFragmentNetBufferList
+         36   11 00036F90 NdisAllocateGenericObject
+         37   12 00038E60 NdisAllocateIoWorkItem
+         38   13 00033560 NdisAllocateMdl
+         39   14 000BC270 NdisAllocateMemory
+         40   15 00019BC0 NdisAllocateMemoryWithTag
+         41   16 00016780 NdisAllocateMemoryWithTagPriority
+         42   17 00017E90 NdisAllocateNetBuffer
+         43   18 00003B10 NdisAllocateNetBufferAndNetBufferList
+         44   19 00003E20 NdisAllocateNetBufferList
+         45   1A 000AC020 NdisAllocateNetBufferListContext
+         46   1B 00026C60 NdisAllocateNetBufferListPool
+         47   1C 00003370 NdisAllocateNetBufferMdlAndData
+         48   1D 00037F30 NdisAllocateNetBufferPool
+         49   1E 00032450 NdisAllocatePacket
+         50   1F 000C05C0 NdisAllocatePacketPool
+         51   20 000320D0 NdisAllocatePacketPoolEx
+         52   21 0002CE00 NdisAllocateRWLock
+         53   22 000ACCA0 NdisAllocateReassembledNetBufferList
+         54   23 0002BBE0 NdisAllocateRefCount
+         55   24 00033A00 NdisAllocateSharedMemory
+         56   25 000BC070 NdisAllocateSpinLock
+         57   26 000BC4A0 NdisAllocateTimerObject
+         58   27 000BCCE0 NdisAnsiStringToUnicodeString
+          3   28 000BE4D0 NdisBufferLength
+         59   29 000BE5B0 NdisBufferVirtualAddress
+         60   2A 00063200 NdisBuildScatterGatherList
+         61   2B 000ADF80 NdisCancelDirectOidRequest
+         62   2C 000A0F70 NdisCancelOidRequest
+         63   2D 000978B0 NdisCancelSendNetBufferLists
+         64   2E 00097350 NdisCancelSendPackets
+         65   2F 00019E70 NdisCancelTimer
+         66   30 000BC630 NdisCancelTimerObject
+         67   31 000B52A0 NdisClAddParty
+         68   32 000B55C0 NdisClCloseAddressFamily
+         69   33 000B65B0 NdisClCloseCall
+         70   34 000B7270 NdisClDeregisterSap
+         71   35 00070D30 NdisClDropParty
+         72   36 000B75E0 NdisClGetProtocolVcContextFromTapiCallId
+         73   37 000B6720 NdisClIncomingCallComplete
+         74   38 000B6840 NdisClMakeCall
+         75   39 000B69D0 NdisClModifyCallQoS
+         76   3A 000B5670 NdisClNotifyCloseAddressFamilyComplete
+         77   3B 0013BB30 NdisClOpenAddressFamily
+         78   3C 000B56F0 NdisClOpenAddressFamilyEx
+         79   3D 000B7310 NdisClRegisterSap
+         80   3E 0013AD40 NdisCloseAdapter
+         81   3F 000978E0 NdisCloseAdapterEx
+         82   40 00028300 NdisCloseConfiguration
+         83   41 000BCDF0 NdisCloseFile
+         84   42 000986C0 NdisCloseNDKAdapter
+         85   43 000B7A00 NdisCmActivateVc
+         86   44 000B52C0 NdisCmAddPartyComplete
+         87   45 000B5BB0 NdisCmCloseAddressFamilyComplete
+         88   46 000B6A00 NdisCmCloseCallComplete
+         89   47 000B7B80 NdisCmDeactivateVc
+         90   48 000B7410 NdisCmDeregisterSapComplete
+         91   49 000B6BA0 NdisCmDispatchCallConnected
+         92   4A 000B6BD0 NdisCmDispatchIncomingCall
+         93   4B 000B6CC0 NdisCmDispatchIncomingCallQoSChange
+         94   4C 000B6CE0 NdisCmDispatchIncomingCloseCall
+         95   4D 000B5340 NdisCmDispatchIncomingDropParty
+         96   4E 000B5360 NdisCmDropPartyComplete
+         97   4F 000B6D20 NdisCmMakeCallComplete
+         98   50 000B6F70 NdisCmModifyCallQoSComplete
+         99   51 000B5CB0 NdisCmNotifyCloseAddressFamily
+        100   52 000B5E40 NdisCmOpenAddressFamilyComplete
+        101   53 0013BB50 NdisCmRegisterAddressFamily
+        102   54 000B6050 NdisCmRegisterAddressFamilyEx
+        103   55 000B7470 NdisCmRegisterSapComplete
+        104   56 000B7C30 NdisCoAssignInstanceName
+        105   57 000B7C50 NdisCoCreateVc
+        106   58 000B87B0 NdisCoDeleteVc
+        107   59 000B7610 NdisCoGetTapiCallId
+        108   5A 000B9760 NdisCoOidRequest
+        109   5B 000B9BC0 NdisCoOidRequestComplete
+        110   5C 000B9C90 NdisCoRequest
+        111   5D 000BA060 NdisCoRequestComplete
+        112   5E 000BBA50 NdisCoSendNetBufferLists
+        113   5F 000BBA70 NdisCoSendPackets
+        114   60          NdisCompareAnsiString (forwarded to NTOSKRNL.RtlCompareString)
+        115   61          NdisCompareUnicodeString (forwarded to NTOSKRNL.RtlCompareUnicodeString)
+        116   62 000C07B0 NdisCompleteBindAdapter
+        117   63 000979A0 NdisCompleteBindAdapterEx
+        118   64 000C0930 NdisCompleteDmaTransfer
+        119   65 00080280 NdisCompleteNetPnPEvent
+        120   66 00080350 NdisCompletePnPEvent
+        121   67 000C0870 NdisCompleteUnbindAdapter
+        122   68 0013AFB0 NdisCompleteUnbindAdapterEx
+        123   69 00018F90 NdisConvertNdisStatusToNtStatus
+        124   6A 0002B9B0 NdisConvertNtStatusToNdisStatus
+        125   6B 000BE5F0 NdisCopyBuffer
+        126   6C 000ABF20 NdisCopyFromNetBufferToNetBuffer
+        127   6D 000C0AB0 NdisCopyFromPacketToPacket
+        128   6E 000C0CB0 NdisCopyFromPacketToPacketSafe
+        129   6F 000AC1B0 NdisCopyReceiveNetBufferListInfo
+        130   70 000AC3D0 NdisCopySendNetBufferListInfo
+        131   71 000BC110 NdisCurrentGroupAndProcessor
+        132   72 00008970 NdisCurrentProcessorIndex
+        133   73 0000EFB0 NdisDereferenceWithTag
+        134   74 0005F8B0 NdisDeregisterDeviceEx
+        135   75 0013B060 NdisDeregisterProtocol
+        136   76 00097A60 NdisDeregisterProtocolDriver
+        137   77 00089A60 NdisDeregisterTdiCallBack
+        138   78 000AEDC0 NdisDirectOidRequest
+        139   79 00035E90 NdisDllInitialize
+        140   7A 000A4070 NdisDprAcquireReadWriteLock
+        141   7B 000BC090 NdisDprAcquireSpinLock
+        142   7C 00032450 NdisDprAllocatePacket
+        143   7D 00032450 NdisDprAllocatePacketNonInterlocked
+        144   7E 00032390 NdisDprFreePacket
+        145   7F 00032390 NdisDprFreePacketNonInterlocked
+        146   80 000A4090 NdisDprReleaseReadWriteLock
+        147   81 000BC0B0 NdisDprReleaseSpinLock
+        148   82 000694F0 NdisEnumerateFilterModules
+        149   83          NdisEqualString (forwarded to NTOSKRNL.RtlEqualUnicodeString)
+        150   84 000AE0B0 NdisFCancelDirectOidRequest
+        151   85 00069C70 NdisFCancelOidRequest
+        152   86 00069CD0 NdisFCancelSendNetBufferLists
+        153   87 00069CF0 NdisFDeregisterFilterDriver
+        154   88 00016110 NdisFDevicePnPEventNotify
+        155   89 000AEDE0 NdisFDirectOidRequest
+        156   8A 000AF410 NdisFDirectOidRequestComplete
+        157   8B 00069DD0 NdisFGetOptionalSwitchHandlers
+        158   8C 00007FE0 NdisFIndicateReceiveNetBufferLists
+        159   8D 00018AA0 NdisFIndicateStatus
+        160   8E 000158D0 NdisFNetPnPEvent
+        161   8F 0000C370 NdisFOidRequest
+        162   90 0000F0E0 NdisFOidRequestComplete
+        163   91 00069FC0 NdisFPauseComplete
+        164   92 0002F0A0 NdisFRegisterFilterDriver
+        165   93 0006A070 NdisFRestartComplete
+        166   94 0006A140 NdisFRestartFilter
+        167   95 00116550 NdisFRetryAttach
+        168   96 000070A0 NdisFReturnNetBufferLists
+        169   97 00005AA0 NdisFSendNetBufferLists
+        170   98 000055E0 NdisFSendNetBufferListsComplete
+        171   99 00038B70 NdisFSetAttributes
+        172   9A 000AFD90 NdisFSynchronousOidRequest
+        173   9B 000BC250 NdisFreeBuffer
+        174   9C 00013D80 NdisFreeBufferPool
+        175   9D 00013340 NdisFreeCloneNetBufferList
+        176   9E 0000E390 NdisFreeCloneOidRequest
+        177   9F 000ACFF0 NdisFreeFragmentNetBufferList
+        178   A0 000708E0 NdisFreeGenericObject
+        179   A1 00070990 NdisFreeIoWorkItem
+        180   A2 000BC250 NdisFreeMdl
+        181   A3 00017380 NdisFreeMemory
+        182   A4 00019F30 NdisFreeMemoryWithTag
+        183   A5 000BC310 NdisFreeMemoryWithTagPriority
+        184   A6 000082D0 NdisFreeNetBuffer
+        185   A7 00005310 NdisFreeNetBufferList
+        186   A8 000AC5E0 NdisFreeNetBufferListContext
+        187   A9 000AD300 NdisFreeNetBufferListPool
+        188   AA 000AD120 NdisFreeNetBufferPool
+        189   AB 00032390 NdisFreePacket
+        190   AC 000C0600 NdisFreePacketPool
+        191   AD 00038A80 NdisFreeRWLock
+        192   AE 000AD0C0 NdisFreeReassembledNetBufferList
+        193   AF 000BDF80 NdisFreeRefCount
+        194   B0 000633E0 NdisFreeScatterGatherList
+        195   B1 00063430 NdisFreeSharedMemory
+        196   B2 00013D80 NdisFreeSpinLock
+        197   B3 000BC780 NdisFreeTimerObject
+        198   B4 00039CD0 NdisGeneratePartialCancelId
+        199   B5 000B0320 NdisGetAndReferenceCompartmentJobObject
+        200   B6 000BE690 NdisGetBufferPhysicalArraySize
+        201   B7 000BD3F0 NdisGetCurrentProcessorCounts
+        202   B8 000BD410 NdisGetCurrentProcessorCpuUsage
+        203   B9 000BD430 NdisGetCurrentSystemTime
+        204   BA 00007360 NdisGetDataBuffer
+        205   BB 0003D460 NdisGetDeviceReservedExtension
+        206   BC 00097B10 NdisGetDriverHandle
+        207   BD 000C0F30 NdisGetFirstBufferFromPacket
+        208   BE 000C0FC0 NdisGetFirstBufferFromPacketSafe
+        209   BF 00020F80 NdisGetHypervisorInfo
+        210   C0 000B0340 NdisGetJobObjectCompartmentId
+        211   C1 000AC6E0 NdisGetNetBufferListProtocolId
+        212   C2 00097BD0 NdisGetPacketCancelId
+        213   C3 00070A20 NdisGetPacketFromNetBufferList
+        214   C4 000AD210 NdisGetPoolFromNetBuffer
+        215   C5 000AD3F0 NdisGetPoolFromNetBufferList
+        216   C6 00061230 NdisGetPoolFromPacket
+        217   C7 0001DE20 NdisGetProcessObjectCompartmentId
+        218   C8 0003BE10 NdisGetProcessorInformation
+        219   C9 00036DE0 NdisGetProcessorInformationEx
+        220   CA 00070A30 NdisGetReceivedPacket
+        221   CB 000BDFF0 NdisGetRefCount
+        222   CC 0003C820 NdisGetRoutineAddress
+        223   CD 000268E0 NdisGetRssProcessorInformation
+        224   CE 00013C90 NdisGetSessionCompartmentId
+        225   CF 00008B20 NdisGetSessionToCompartmentMappingEpochAndZero
+        226   D0 0005FAC0 NdisGetSharedDataAlignment
+        227   D1 000BD450 NdisGetSystemUpTime
+        228   D2 000394F0 NdisGetSystemUpTimeEx
+        229   D3 00007B30 NdisGetThreadObjectCompartmentId
+        230   D4 00005DD0 NdisGetThreadObjectCompartmentScope
+        231   D5 00032330 NdisGetVersion
+        232   D6 00038E40 NdisGroupActiveProcessorCount
+        233   D7 000BC140 NdisGroupActiveProcessorMask
+        234   D8 000BC160 NdisGroupMaxProcessorCount
+        235   D9 0005FAE0 NdisIMAssociateMiniport
+        236   DA 00065C30 NdisIMCancelInitializeDeviceInstance
+        237   DB 000C1110 NdisIMCopySendCompletePerPacketInfo
+        238   DC 000C1130 NdisIMCopySendPerPacketInfo
+        239   DD 0005FB00 NdisIMDeInitializeDeviceInstance
+        240   DE 00013D80 NdisIMDeregisterLayeredMiniport
+        241   DF 00065D00 NdisIMGetBindingContext
+        242   E0 000C1060 NdisIMGetCurrentPacketStack
+        243   E1 00137C30 NdisIMGetDeviceContext
+          4   E2 000654B0 NdisIMInitializeDeviceInstance
+        244   E3 00065DB0 NdisIMInitializeDeviceInstanceEx
+        245   E4 00080420 NdisIMNotifyPnPEvent
+        246   E5 00070A70 NdisIMQueueMiniportCallback
+        247   E6 0005FCB0 NdisIMRegisterLayeredMiniport
+        248   E7 00070BF0 NdisIMRevertBack
+        249   E8 00070C80 NdisIMSwitchToMiniport
+        250   E9 00065FB0 NdisIMVBusDeviceAdd
+        251   EA 000660A0 NdisIMVBusDeviceRemove
+        252   EB 00025450 NdisIfAddIfStackEntry
+        253   EC 001262D0 NdisIfAllocateNetLuidIndex
+        254   ED 001262F0 NdisIfAllocateNetLuidIndexEx
+        255   EE 000B0CD0 NdisIfDeleteIfStackEntry
+        256   EF 00126530 NdisIfDeregisterInterface
+        257   F0 000B14F0 NdisIfDeregisterProvider
+        258   F1 00126320 NdisIfFreeNetLuidIndex
+        259   F2 000B12E0 NdisIfGetInterfaceIndexFromNetLuid
+        260   F3 000B1360 NdisIfGetNetLuidFromInterfaceIndex
+        261   F4 0010AB60 NdisIfQueryBindingIfIndex
+        262   F5 000B13F0 NdisIfRegisterInterface
+        263   F6 00032760 NdisIfRegisterProvider
+        264   F7 0013BE00 NdisImmediateReadPciSlotInformation
+        265   F8 000BD7D0 NdisImmediateReadPortUchar
+        266   F9 000BD7F0 NdisImmediateReadPortUlong
+        267   FA 000BD810 NdisImmediateReadPortUshort
+        268   FB 000BD830 NdisImmediateReadSharedMemory
+        269   FC 0013BED0 NdisImmediateWritePciSlotInformation
+        270   FD 000BD850 NdisImmediateWritePortUchar
+        271   FE 000BD880 NdisImmediateWritePortUlong
+        272   FF 000BD8B0 NdisImmediateWritePortUshort
+        273  100 000BD8E0 NdisImmediateWriteSharedMemory
+        274  101          NdisInitAnsiString (forwarded to NTOSKRNL.RtlInitAnsiString)
+        275  102          NdisInitUnicodeString (forwarded to NTOSKRNL.RtlInitUnicodeString)
+        276  103 00039200 NdisInitializeEvent
+        277  104 0003D410 NdisInitializeReadWriteLock
+        278  105 0003AC60 NdisInitializeString
+        279  106 00023400 NdisInitializeTimer
+        280  107 000C11A0 NdisInitializeWrapper
+        281  108 00013D80 NdisInitiateOffload
+        282  109          NdisInterlockedAddLargeInterger (forwarded to NTOSKRNL.ExInterlockedAddLargeInteger)
+        283  10A 000BD900 NdisInterlockedAddUlong
+        284  10B 000BD920 NdisInterlockedDecrement
+        285  10C 000BD940 NdisInterlockedIncrement
+        286  10D 000BD960 NdisInterlockedInsertHeadList
+        287  10E 000BD980 NdisInterlockedInsertTailList
+        288  10F 000BD9A0 NdisInterlockedPopEntryList
+        289  110 000BD9C0 NdisInterlockedPushEntryList
+        290  111 000BD9E0 NdisInterlockedRemoveHeadList
+        291  112 00013D80 NdisInvalidateOffload
+        292  113 0006A280 NdisIsStatusIndicationCloneable
+        293  114 0005FDC0 NdisLWMDeregisterMiniportDriver
+        294  115 0005FE90 NdisLWMInitializeNetworkInterface
+        295  116 0005FFE0 NdisLWMRegisterMiniportDriver
+        296  117 00060230 NdisLWMStartNetworkInterface
+        297  118 000603A0 NdisLWMUninitializeNetworkInterface
+        298  119 001365E0 NdisMAllocateMapRegisters
+        299  11A 00004C00 NdisMAllocateNetBufferSGList
+        300  11B 00081DA0 NdisMAllocatePort
+        301  11C 000244F0 NdisMAllocateSharedMemory
+        302  11D 00060550 NdisMAllocateSharedMemoryAsync
+        303  11E 00060720 NdisMAllocateSharedMemoryAsyncEx
+        304  11F 00017690 NdisMCancelTimer
+        305  120 00072650 NdisMCloseLog
+        306  121 000B8B20 NdisMCmActivateVc
+        307  122 000B8BB0 NdisMCmCreateVc
+        308  123 000B9110 NdisMCmDeactivateVc
+        309  124 000B9180 NdisMCmDeleteVc
+        310  125 000BA110 NdisMCmOidRequest
+        311  126 0013BB60 NdisMCmRegisterAddressFamily
+        312  127 000B63D0 NdisMCmRegisterAddressFamilyEx
+        313  128 00070D30 NdisMCmRequest
+        314  129 000B91B0 NdisMCoActivateVcComplete
+        315  12A 000B9240 NdisMCoDeactivateVcComplete
+        316  12B 000BBA90 NdisMCoIndicateReceiveNetBufferLists
+        317  12C 000BBAB0 NdisMCoIndicateReceivePacket
+        318  12D 000BBE80 NdisMCoIndicateStatus
+        319  12E 000BBF80 NdisMCoIndicateStatusEx
+        320  12F 000BA210 NdisMCoOidRequestComplete
+        321  130 000BBAD0 NdisMCoReceiveComplete
+        322  131 000BA300 NdisMCoRequestComplete
+        323  132 000BBB70 NdisMCoSendComplete
+        324  133 000BBB90 NdisMCoSendNetBufferListsComplete
+        325  134 00072F60 NdisMCompleteBufferPhysicalMapping
+        326  135 0003B9A0 NdisMConfigMSIXTableEntry
+        327  136 000726C0 NdisMCreateLog
+        328  137 00060740 NdisMDeregisterAdapterShutdownHandler
+        329  138 000607F0 NdisMDeregisterDevice
+        330  139 00136C10 NdisMDeregisterDmaChannel
+        331  13A 000C19F0 NdisMDeregisterInterrupt
+        332  13B 00137CE0 NdisMDeregisterInterruptEx
+        333  13C 000608B0 NdisMDeregisterIoPortRange
+        334  13D 00060950 NdisMDeregisterMiniportDriver
+        335  13E 00063660 NdisMDeregisterScatterGatherDma
+        336  13F 00125A60 NdisMDeregisterWdiMiniportDriver
+        337  140 000AF4F0 NdisMDirectOidRequestComplete
+        338  141 0007B760 NdisMEnableVirtualization
+        339  142 000727A0 NdisMFlushLog
+        340  143 00136D20 NdisMFreeMapRegisters
+        341  144 00005F00 NdisMFreeNetBufferSGList
+        342  145 00082110 NdisMFreePort
+        343  146 00060980 NdisMFreeSharedMemory
+        344  147 0003A740 NdisMGetBusData
+        345  148 00039640 NdisMGetDeviceProperty
+        346  149 00020600 NdisMGetDmaAlignment
+        347  14A 00070D30 NdisMGetMiniportInitAttributes
+        348  14B 00070D30 NdisMGetOffloadHandlers
+        349  14C 0007B860 NdisMGetVirtualDeviceLocation
+        350  14D 0007B940 NdisMGetVirtualFunctionBusData
+        351  14E 0007BA40 NdisMGetVirtualFunctionLocation
+        352  14F 000A86A0 NdisMIdleNotificationComplete
+        353  150 000A86C0 NdisMIdleNotificationCompleteEx
+        354  151 000A8800 NdisMIdleNotificationConfirm
+        355  152 00004990 NdisMIndicateReceiveNetBufferLists
+        356  153 00070D40 NdisMIndicateStatus
+        357  154 00013D80 NdisMIndicateStatusComplete
+        358  155 00019AA0 NdisMIndicateStatusEx
+        359  156 000C09B0 NdisMInitializeScatterGatherDma
+        360  157 0003CB90 NdisMInitializeTimer
+        361  158 00013D80 NdisMInitiateOffloadComplete
+        362  159 0007BB20 NdisMInvalidateConfigBlock
+        363  15A 00013D80 NdisMInvalidateOffloadComplete
+        364  15B 0003B860 NdisMMapIoSpace
+        365  15C 000804B0 NdisMNetPnPEvent
+        366  15D 00013D80 NdisMOffloadEventIndicate
+        367  15E 0001E990 NdisMOidRequestComplete
+        368  15F 0003BD10 NdisMPauseComplete
+        369  160 00060AB0 NdisMPciAssignResources
+        370  161 00071000 NdisMPromoteMiniport
+        371  162 0003CD80 NdisMQueryAdapterInstanceName
+        372  163 00060BB0 NdisMQueryAdapterResources
+          5  164 00099070 NdisMQueryInformationComplete
+        373  165 00013D80 NdisMQueryOffloadStateComplete
+        374  166 0007BC80 NdisMQueryProbedBars
+        375  167 00066A00 NdisMQueueDpc
+        376  168 00066A30 NdisMQueueDpcEx
+        377  169 0007BD60 NdisMReadConfigBlock
+        378  16A 00060CB0 NdisMReadDmaCounter
+        379  16B 00080640 NdisMReenumerateFailedAdapter
+        380  16C 00060CE0 NdisMRegisterAdapterShutdownHandler
+        381  16D 00136EC0 NdisMRegisterDevice
+        382  16E 00137190 NdisMRegisterDmaChannel
+        383  16F 000C1B00 NdisMRegisterInterrupt
+        384  170 001303B0 NdisMRegisterInterruptEx
+        385  171 00060DB0 NdisMRegisterIoPortRange
+        386  172 00060EF0 NdisMRegisterMiniport
+        387  173 000365C0 NdisMRegisterMiniportDriver
+        388  174 000335C0 NdisMRegisterScatterGatherDma
+        389  175 00060FE0 NdisMRegisterUnloadHandler
+        390  176 00125AD0 NdisMRegisterWdiMiniportDriver
+        391  177 00061020 NdisMRemoveMiniport
+        392  178 00070A20 NdisMRequestDpc
+        393  179 00071210 NdisMResetComplete
+        394  17A 00072EA0 NdisMResetMiniport
+        395  17B 0003A8F0 NdisMRestartComplete
+        396  17C 000BF860 NdisMSendComplete
+        397  17D 00002F10 NdisMSendNetBufferListsComplete
+          6  17E 000BE8F0 NdisMSendResourcesAvailable
+        398  17F 00071380 NdisMSetAttributes
+        399  180 0012C0F0 NdisMSetAttributesEx
+        400  181 0005E2D0 NdisMSetBusData
+          7  182 00099180 NdisMSetInformationComplete
+        401  183 000B1420 NdisMSetInterfaceCompartment
+        402  184 00022ED0 NdisMSetMiniportAttributes
+        403  185 00071450 NdisMSetMiniportSecondary
+        404  186 00017740 NdisMSetPeriodicTimer
+          8  187 000175E0 NdisMSetTimer
+        405  188 0007BE60 NdisMSetVirtualFunctionBusData
+        406  189 00017300 NdisMSleep
+        407  18A 00072FC0 NdisMStartBufferPhysicalMapping
+        408  18B 000C1ED0 NdisMSynchronizeWithInterrupt
+        409  18C 00066B90 NdisMSynchronizeWithInterruptEx
+        410  18D 00013D80 NdisMTerminateOffloadComplete
+          9  18E 000BF9F0 NdisMTransferDataComplete
+        411  18F 0007D7B0 NdisMTriggerPDDrainNotification
+        412  190 00061040 NdisMUnmapIoSpace
+        413  191 00013D80 NdisMUpdateOffloadComplete
+        414  192 00071600 NdisMWanIndicateReceive
+        415  193 000716D0 NdisMWanIndicateReceiveComplete
+        416  194 000C2290 NdisMWanSendComplete
+        417  195 0007BF60 NdisMWriteConfigBlock
+        418  196 000727F0 NdisMWriteLogData
+        419  197 0013BD30 NdisMapFile
+        420  198 000C10C0 NdisMatchPdoWithPacket
+        421  199 000BC180 NdisMaxGroupCount
+        422  19A 000202D0 NdisNblTrackerDeregisterComponent
+        423  19B 00073AC0 NdisNblTrackerQueryNblCurrentOwner
+        424  19C 00073AD0 NdisNblTrackerRecordEvent
+        425  19D 0002CC30 NdisNblTrackerRegisterComponent
+        426  19E 00073B00 NdisNblTrackerTransferOwnership
+        427  19F 00070D30 NdisOffloadTcpDisconnect
+        428  1A0 00070D30 NdisOffloadTcpForward
+        429  1A1 00070D30 NdisOffloadTcpReceive
+        430  1A2 00013D80 NdisOffloadTcpReceiveReturn
+        431  1A3 00070D30 NdisOffloadTcpSend
+        432  1A4 00018160 NdisOidRequest
+        433  1A5 0013B230 NdisOpenAdapter
+        434  1A6 0012DF30 NdisOpenAdapterEx
+        435  1A7 00028800 NdisOpenConfiguration
+        436  1A8 000280C0 NdisOpenConfigurationEx
+        437  1A9 00032970 NdisOpenConfigurationKeyByIndex
+        438  1AA 00027670 NdisOpenConfigurationKeyByName
+        439  1AB 000BCEA0 NdisOpenFile
+        440  1AC 000205A0 NdisOpenNDKAdapter
+        441  1AD 00028D50 NdisOpenProtocolConfiguration
+        442  1AE 00013D80 NdisOverrideBusNumber
+        443  1AF 0007D870 NdisPDStartup
+        444  1B0 000C06A0 NdisPacketPoolUsage
+        445  1B1 000326E0 NdisPacketSize
+        446  1B2 000BC1A0 NdisProcessorIndexToNumber
+        447  1B3 000BC1C0 NdisProcessorNumberToIndex
+        448  1B4 00097BF0 NdisQueryAdapterInstanceName
+        449  1B5 00097D50 NdisQueryBindInstanceName
+        450  1B6 000BE6D0 NdisQueryBuffer
+        451  1B7 000BE730 NdisQueryBufferOffset
+        452  1B8 000BE750 NdisQueryBufferSafe
+        453  1B9 00117410 NdisQueryDiagnosticSetting
+        454  1BA 0013B6B0 NdisQueryMapRegisterCount
+        455  1BB 000BE7C0 NdisQueryNetBufferPhysicalCount
+        456  1BC 00013D80 NdisQueryOffloadState
+        457  1BD 00097EB0 NdisQueryPendingIOCount
+        458  1BE 00039820 NdisQueueIoWorkItem
+        459  1BF 00097F30 NdisReEnumerateProtocolBindings
+        460  1C0 000283E0 NdisReadConfiguration
+         10  1C1 000BFE10 NdisReadEisaSlotInformation
+         11  1C2 000BFEC0 NdisReadEisaSlotInformationEx
+        461  1C3 00098540 NdisReadMcaPosInformation
+        462  1C4 00039400 NdisReadNetworkAddress
+        463  1C5 000C0090 NdisReadPciSlotInformation
+        464  1C6 000C0160 NdisReadPcmciaAttributeMemory
+        465  1C7 0000DE10 NdisReferenceWithTag
+        466  1C8 00023F20 NdisRegisterDeviceEx
+        467  1C9 000980A0 NdisRegisterProtocol
+        468  1CA 0002DE50 NdisRegisterProtocolDriver
+        469  1CB 00039D70 NdisRegisterTdiCallBack
+        470  1CC 0005D7A0 NdisReleaseNicActive
+        471  1CD 000059D0 NdisReleaseRWLock
+        472  1CE 0003D350 NdisReleaseReadWriteLock
+        473  1CF 000BC0D0 NdisReleaseSpinLock
+        474  1D0 0006BB60 NdisRequest
+        475  1D1 00018160 NdisRequestEx
+        476  1D2 0006BB90 NdisReset
+        477  1D3 00008BB0 NdisResetEvent
+        478  1D4 000083D0 NdisRetreatNetBufferDataStart
+        479  1D5 000AC700 NdisRetreatNetBufferListDataStart
+        480  1D6 000043D0 NdisReturnNetBufferLists
+        481  1D7 00071780 NdisReturnPackets
+        482  1D8 000BDA00 NdisScheduleWorkItem
+         12  1D9 0006A2D0 NdisSend
+        483  1DA 00002460 NdisSendNetBufferLists
+        484  1DB 0006BBD0 NdisSendPackets
+        485  1DC 00114900 NdisSetAoAcOptions
+        486  1DD 000BC800 NdisSetCoalescableTimerObject
+        487  1DE 00008B30 NdisSetEvent
+        488  1DF 00024340 NdisSetOptionalHandlers
+        489  1E0 00098520 NdisSetPacketCancelId
+        490  1E1 000C0750 NdisSetPacketPoolProtocolId
+        491  1E2 000C1100 NdisSetPacketStatus
+        492  1E3 000BCD40 NdisSetPeriodicTimer
+        493  1E4 00098540 NdisSetProtocolFilter
+        494  1E5 000B0660 NdisSetSessionCompartmentId
+        495  1E6 000FF070 NdisSetThreadObjectCompartmentId
+        496  1E7 000F84A0 NdisSetThreadObjectCompartmentScope
+        497  1E8 00019EC0 NdisSetTimer
+        498  1E9 000BCD90 NdisSetTimerEx
+        499  1EA 000BC960 NdisSetTimerObject
+        500  1EB 000C09D0 NdisSetupDmaTransfer
+        501  1EC 000AFEA0 NdisSynchronousOidRequest
+        502  1ED 000BC1F0 NdisSystemActiveProcessorCount
+        503  1EE 000BC230 NdisSystemProcessorCount
+        504  1EF 00013D80 NdisTerminateOffload
+        505  1F0 000C12B0 NdisTerminateWrapper
+        506  1F1 000A4640 NdisTestRWLockHeldByCurrentProcessorRead
+        507  1F2 000A4670 NdisTestRWLockHeldByCurrentProcessorWrite
+        508  1F3 0006BBF0 NdisTransferData
+        509  1F4 000012B0 NdisTryAcquireNicActive
+        510  1F5 000A46B0 NdisTryAcquireRWLockRead
+        511  1F6 000A4770 NdisTryAcquireRWLockWrite
+        512  1F7 000A4850 NdisTryPromoteRWLockFromReadToWrite
+        513  1F8 00098550 NdisUnbindAdapter
+        514  1F9 000BE860 NdisUnchainBufferAtBack
+        515  1FA 000BE8C0 NdisUnchainBufferAtFront
+        516  1FB 000BCD00 NdisUnicodeStringToAnsiString
+        517  1FC 000BD360 NdisUnmapFile
+        518  1FD 000BCD20 NdisUpcaseUnicodeString
+        519  1FE 00013D80 NdisUpdateOffload
+        520  1FF 00013D80 NdisUpdateSharedMemory
+        521  200 00038D40 NdisWaitEvent
+        522  201 00121250 NdisWdfAsyncPowerReferenceCompleteNotification
+        523  202 00061100 NdisWdfChangeSingleInstance
+        524  203 00061120 NdisWdfCloseIrpHandler
+        525  204 00061150 NdisWdfCreateIrpHandler
+        526  205 00061180 NdisWdfDeregisterCx
+        527  206 00061190 NdisWdfDeviceControlIrpHandler
+        528  207 000611C0 NdisWdfDeviceInternalControlIrpHandler
+        529  208 000611F0 NdisWdfExecuteMethod
+        530  209 00061210 NdisWdfGenerateFdoNameIndex
+        531  20A 00061230 NdisWdfGetAdapterContextFromAdapterHandle
+        532  20B 00061240 NdisWdfGetGuidToOidMap
+        533  20C 00061260 NdisWdfMiniportDataPathPause
+        534  20D 00061340 NdisWdfMiniportDataPathStart
+        535  20E 00061420 NdisWdfMiniportDereference
+        536  20F 00061440 NdisWdfMiniportSetPower
+        537  210 000614B0 NdisWdfMiniportStarted
+        538  211 000614D0 NdisWdfMiniportTryReference
+        539  212 000614F0 NdisWdfPnPAddDevice
+        540  213 00061510 NdisWdfPnpPowerEventHandler
+        541  214 00061690 NdisWdfQueryAllData
+        542  215 000616C0 NdisWdfQuerySingleInstance
+        543  216 0005E810 NdisWdfReadConfiguration
+        544  217 000616E0 NdisWdfRegisterCx
+        545  218 00061800 NdisWdfRegisterMiniportDriver
+        546  219 00027070 NdisWriteConfiguration
+        547  21A 0006BC60 NdisWriteErrorLogEntry
+        548  21B 0001DEC0 NdisWriteEventLogEntry
+        549  21C 000C0240 NdisWritePciSlotInformation
+        550  21D 000C0310 NdisWritePcmciaAttributeMemory
+         13  21E 00013D80 NetDmaDeregisterProvider
+         14  21F 0008D460 NetDmaGetVersion
+         15  220 00013D80 NetDmaInterruptDpc
+         16  221 0008D470 NetDmaIsr
+         17  222 00013D80 NetDmaPnPEventNotify
+         18  223 00013D80 NetDmaProviderStart
+         19  224 00013D80 NetDmaProviderStop
+         20  225 0008D480 NetDmaRegisterProvider
+
+  Summary
+
+        4000 .data
+        5000 .edata
+        4000 .idata
+        C000 .pdata
+       1C000 .rdata
+        7000 .reloc
+       1E000 .rsrc
+       C6000 .text
+        2000 GFIDS
+        5000 INIT
+        1000 NONPAGE
+       32000 PAGE
+        2000 PAGEDATA
+       12000 PAGENPNP

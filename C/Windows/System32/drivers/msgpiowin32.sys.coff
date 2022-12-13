@@ -1,0 +1,109 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\msgpiowin32.sys
+
+File Type: EXECUTABLE IMAGE
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    WppRecorder.sys
+    CEA.sys
+    WDFLDR.SYS
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0009088 Import Address Table
+             1C00092C0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          A3 ExAllocatePoolWithTag
+                         483 KeInitializeEvent
+                         2E7 IoConnectInterruptEx
+                         30C IoDisconnectInterruptEx
+                         3A0 IoReportInterruptInactive
+                         39F IoReportInterruptActive
+                         459 KeEnterCriticalRegion
+                          88 ExAcquireFastMutexUnsafe
+                         110 ExReleaseFastMutexUnsafe
+                         40E IofCompleteRequest
+                         BEB wcsstr
+                          CA ExFreePoolWithTag
+                         48B KeInitializeSpinLock
+                         47F KeInitializeDpc
+                             Ordinal     4
+                          7F EtwWriteTransfer
+                         AB8 ZwFlushKey
+                         6B9 PoRegisterPowerSettingCallback
+                         6CD PoUnregisterPowerSettingCallback
+                         B90 _wcsicmp
+                         496 KeInsertQueueDpc
+                          A8 ExCancelTimer
+                         6C0 PoSetPowerButtonHoldState
+                         12B ExSetTimer
+                         4E1 KeReleaseInterruptSpinLock
+                         42A KeAcquireInterruptSpinLock
+                         4E6 KeReleaseSpinLock
+                         4A5 KeLeaveCriticalRegion
+                         42F KeAcquireSpinLockRaiseToDpc
+                          79 EtwUnregister
+                          74 EtwRegister
+                         400 IoWMIRegistrationControl
+                          5E DbgPrintEx
+                         7DB RtlCopyUnicodeString
+                         584 MmGetSystemRoutineAddress
+                         87E RtlInitUnicodeString
+                          B6 ExDeleteTimer
+                          77 EtwSetInformation
+
+    WppRecorder.sys
+             1C0009040 Import Address Table
+             1C0009278 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           B imp_WppRecorderLogCreate
+                           C imp_WppRecorderLogDelete
+                           5 imp_WppRecorderConfigure
+                           3 WppAutoLogStop
+                           2 WppAutoLogStart
+                          10 imp_WppRecorderReplay
+                           4 WppAutoLogTrace
+                           F imp_WppRecorderLogSetIdentifier
+
+    CEA.sys
+             1C0009000 Import Address Table
+             1C0009238 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           C EADeleteAggregateEvent
+                           B EACreateAggregateEvent
+
+    WDFLDR.SYS
+             1C0009018 Import Address Table
+             1C0009250 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                           8 WdfVersionUnbind
+                           6 WdfVersionBind
+                           7 WdfVersionBindClass
+                           9 WdfVersionUnbindClass
+
+  Summary
+
+        1000 .data
+        1000 .idata
+        1000 .pdata
+        2000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        4000 .text
+        1000 GFIDS
+        1000 INIT
+        4000 PAGE

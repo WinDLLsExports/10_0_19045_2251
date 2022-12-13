@@ -1,0 +1,289 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\rpchttp.dll
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntdll.dll
+    KERNEL32.dll
+    ADVAPI32.dll
+    Secur32.dll
+
+  Image has the following delay load dependencies:
+
+    RPCRT4.dll
+    WS2_32.dll
+    WINHTTP.dll
+
+  Section contains the following exports for rpchttp.dll
+
+    00000000 characteristics
+     77558D4 time date stamp
+        0.00 version
+           1 ordinal base
+          19 number of functions
+          19 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000013C0 CompareHttpTransportCredentials
+          2    1 000014F0 ConvertToUnicodeHttpTransportCredentials
+          3    2 00001200 DuplicateHttpTransportCredentials
+          4    3 00001140 FreeHttpTransportCredentials
+          5    4 0001F340 HTTP2GetRpcConnectionTransport
+          6    5 000054D0 HTTP2ProcessComplexTReceive
+          7    6 00005730 HTTP2ProcessComplexTSend
+          8    7 00005430 HTTP2ProcessRuntimePostedEvent
+          9    8 00005890 HTTP2TestHook
+         10    9 00021D40 HttpParseNetworkOptions
+         11    A 00002A40 HttpSendIdentifyResponse
+         17    B 000010A0 I_RpcExtInitializeExtensionPoint
+         12    C 00022590 I_RpcGetRpcProxy
+         18    D 00004110 I_RpcProxyNewConnection
+         19    E 00004590 I_RpcReplyToClientWithStatus
+         13    F 000017E0 I_RpcTransFreeHttpCredentials
+         14   10 00001730 I_RpcTransGetHttpCredentials
+         15   11 00001CA0 WS_HTTP2_CONNECTION__Initialize
+         16   12 00001C70 WS_HTTP2_INITIAL_CONNECTION__new
+
+  Section contains the following imports:
+
+    ntdll.dll
+             18002D638 Import Address Table
+             180030958 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         956 strtol
+                         48D RtlIntegerToChar
+                         36E RtlDeleteCriticalSection
+                         478 RtlInitializeCriticalSectionAndSpinCount
+                         6B9 TpSetPoolStackInformation
+                         6A6 TpDisablePoolCallbackChecks
+                         627 RtlVirtualUnwind
+                         4E8 RtlLookupFunctionEntry
+                         48E RtlIntegerToUnicodeString
+                         2F2 RtlCaptureContext
+                         974 wcsrchr
+                         967 wcschr
+                         8E8 _stricmp
+                         912 atoi
+                         206 NtReadFile
+                         47D RtlInitializeGenericTableAvl
+                         487 RtlInsertElementGenericTableAvl
+                         4E3 RtlLookupElementGenericTableAvl
+                         370 RtlDeleteElementGenericTableAvl
+                         935 memcpy
+                         564 RtlReleaseSRWLockExclusive
+                         6E0 WinSqmIsOptedIn
+                         6DF WinSqmIncrementDWORD
+                         5FB RtlUnicodeToMultiByteN
+                         5FC RtlUnicodeToMultiByteSize
+                         978 wcstol
+                          22 DbgPrint
+                         8EB _strnicmp
+                         976 wcsstr
+                         97A wcstoul
+                         903 _wcsnicmp
+                         8D3 _itow_s
+                         290 NtWriteFile
+                         54A RtlRaiseException
+                         56D RtlReportException
+                         4CE RtlLeaveCriticalSection
+                         3AC RtlEnterCriticalSection
+                         4FD RtlNtStatusToDosError
+                         1F8 NtQuerySystemInformation
+                         8D1 _itoa_s
+                         8C2 __C_specific_handler
+                         483 RtlInitializeSRWLock
+                         900 _wcsicmp
+                         2AC RtlAcquireSRWLockExclusive
+                         4EF RtlMultiByteToUnicodeN
+                         8C3 __chkstk
+                         934 memcmp
+                         939 memset
+
+    KERNEL32.dll
+             18002D4D0 Import Address Table
+             1800307F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         5E6 WaitForMultipleObjects
+                         1E6 GetComputerNameExW
+                         4AE RegisterWaitForSingleObject
+                         5C7 UnregisterWait
+                         4CE ResolveDelayLoadedAPI
+                         110 DelayLoadFailureHook
+                          99 CompareFileTime
+                         220 GetCurrentProcessId
+                         5E9 WaitForSingleObjectEx
+                         597 SwitchToThread
+                          8E CloseThreadpool
+                          F5 CreateThreadpool
+                         5B8 TrySubmitThreadpoolCallback
+                          F8 CreateThreadpoolTimer
+                          76 CancelThreadpoolIo
+                         593 StartThreadpoolIo
+                         5EB WaitForThreadpoolTimerCallbacks
+                         38E IsThreadpoolTimerSet
+                         576 SetThreadpoolTimer
+                          92 CloseThreadpoolTimer
+                         280 GetModuleHandleW
+                         2B7 GetProcAddress
+                         525 SetEvent
+                         269 GetLastError
+                         58D Sleep
+                         21F GetCurrentProcess
+                         59C TerminateProcess
+                          C1 CreateEventW
+                         5E8 WaitForSingleObject
+                          88 CloseHandle
+                         4CB ResetEvent
+                         2F2 GetSystemTimeAsFileTime
+                          FC CreateTimerQueueTimer
+                         11D DeleteTimerQueueTimer
+                          9D CompareStringW
+                         224 GetCurrentThreadId
+                         33F GlobalFree
+                         5BE UnhandledExceptionFilter
+                         57D SetUnhandledExceptionFilter
+                         451 QueryPerformanceCounter
+                         310 GetTickCount
+                         223 GetCurrentThread
+
+    ADVAPI32.dll
+             18002D408 Import Address Table
+             180030728 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                         28C RegOpenKeyExW
+                          ED DeregisterEventSource
+                         129 EventWriteTransfer
+                         121 EventRegister
+                         2AE RegisterEventSourceW
+                         2C0 ReportEventW
+                         11E EventActivityIdControl
+                         293 RegQueryInfoKeyW
+                         27A RegEnumKeyExW
+                         2C1 RevertToSelf
+                         2F3 SetThreadToken
+                         25B RegCloseKey
+                         28F RegOpenKeyW
+                         217 OpenSCManagerW
+                         219 OpenServiceW
+                         2FB StartServiceW
+                         250 QueryServiceStatus
+                         281 RegGetValueW
+                          65 CloseServiceHandle
+                         170 GetTokenInformation
+                         21A OpenThreadToken
+                         11A EqualSid
+                          85 CopySid
+                         14B GetLengthSid
+
+    Secur32.dll
+             18002D628 Import Address Table
+             180030948 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          1D GetUserNameExW
+
+  Section contains the following delay load imports:
+
+    RPCRT4.dll
+              00000001 Characteristics
+      0000000180032630 Address of HMODULE
+      0000000180035000 Import Address Table
+      000000018002FC68 Import Name Table
+      0000000180030200 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018002ABB1    31 I_RpcFree
+                                    000000018002B08E   21D UuidCreate
+                                    000000018002AC3C    12 I_RpcAllocate
+                                    000000018002AC4E    43 I_RpcLogEvent
+                                    000000018002AC60    7C I_RpcTransGetThreadEventThreadOptional
+                                    000000018002AC72    7B I_RpcTransGetThreadEvent
+                                    000000018002AC84    2E I_RpcExceptionFilter
+                                    000000018002AC96   198 RpcErrorAddRecord
+                                    000000018002ACA8    7D I_RpcTransIoCancelled
+                                    000000018002B07C   174 RpcBindingFree
+                                    000000018002B06A    9A NdrAsyncClientCall
+                                    000000018002B058   16B RpcAsyncCancelCall
+                                    000000018002B046   214 RpcStringFreeW
+                                    000000018002B034   185 RpcBindingSetAuthInfoExW
+                                    000000018002B022   16C RpcAsyncCompleteCall
+                                    000000018002B010   210 RpcStringBindingComposeW
+                                    000000018002AFFE   176 RpcBindingFromStringBindingW
+                                    000000018002AFEC   226 UuidToStringW
+                                    000000018002AFDA   1A1 RpcExceptionFilter
+                                    000000018002AFC8   205 RpcSsDestroyClientContext
+                                    000000018002AFB6   16E RpcAsyncInitializeHandle
+                                    000000018002B0A0   222 UuidFromStringW
+
+    WS2_32.dll
+              00000001 Characteristics
+      0000000180032638 Address of HMODULE
+      0000000180035150 Import Address Table
+      000000018002FDB8 Import Name Table
+      0000000180030248 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018002ADE7     2 FreeAddrInfoW
+                                    000000018002ADD5     7 GetAddrInfoW
+                                    000000018002ADC3       Ordinal    16
+                                    000000018002ADB1       Ordinal   111
+                                    000000018002AD9F       Ordinal     8
+                                    000000018002AD8D    A4 freeaddrinfo
+                                    000000018002AD7B    A9 getnameinfo
+                                    000000018002AD69    A5 getaddrinfo
+                                    000000018002AD57       Ordinal     4
+                                    000000018002AD45       Ordinal     9
+                                    000000018002ACBA       Ordinal    19
+
+    WINHTTP.dll
+              00000001 Characteristics
+      0000000180032640 Address of HMODULE
+      00000001800350B8 Import Address Table
+      000000018002FD20 Import Name Table
+      00000001800302A8 Bound Import Name Table
+      0000000000000000 Unload Import Name Table
+                     0 time date stamp
+
+                                    000000018002AE84    39 WinHttpSetStatusCallback
+                                    000000018002AE96    37 WinHttpSetOption
+                                    000000018002AEA8     9 WinHttpConnect
+                                    000000018002AEBA    27 WinHttpOpenRequest
+                                    000000018002AECC    2D WinHttpQueryOption
+                                    000000018002ADF9    26 WinHttpOpen
+                                    000000018002AEF0     4 WinHttpAddRequestHeaders
+                                    000000018002AF02    34 WinHttpSendRequest
+                                    000000018002AF14    43 WinHttpWriteData
+                                    000000018002AF26    31 WinHttpReceiveResponse
+                                    000000018002AF38     8 WinHttpCloseHandle
+                                    000000018002AF4A    2E WinHttpReadData
+                                    000000018002AF5C    2C WinHttpQueryHeaders
+                                    000000018002AF6E    2B WinHttpQueryDataAvailable
+                                    000000018002AF80    2A WinHttpQueryAuthSchemes
+                                    000000018002AF92    1D WinHttpGetIEProxyConfigForCurrentUser
+                                    000000018002AEDE    35 WinHttpSetCredentials
+                                    000000018002AFA4    1E WinHttpGetProxyForUrl
+
+  Summary
+
+        1000 .data
+        1000 .didat
+        2000 .pdata
+        6000 .rdata
+        1000 .reloc
+        2000 .rsrc
+       2B000 .text

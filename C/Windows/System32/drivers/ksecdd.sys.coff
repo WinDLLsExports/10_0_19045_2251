@@ -1,0 +1,299 @@
+Microsoft (R) COFF/PE Dumper Version 14.29.30137.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Windows\System32\drivers\ksecdd.sys
+
+File Type: DLL
+
+  Image has the following dependencies:
+
+    ntoskrnl.exe
+    HAL.dll
+    msrpc.sys
+
+  Section contains the following imports:
+
+    ntoskrnl.exe
+             1C0019068 Import Address Table
+             1C00194F0 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          CA ExFreePoolWithTag
+                         8E3 RtlNtStatusToDosErrorNoTeb
+                         7A7 RtlAnsiStringToUnicodeString
+                         846 RtlFreeUnicodeString
+                         BE1 wcschr
+                         816 RtlEqualUnicodeString
+                         452 KeDelayExecutionThread
+                         73D PsIsCurrentThreadInServerSilo
+                         45B KeEnterCriticalRegion
+                          8C ExAcquirePushLockExclusiveEx
+                         116 ExReleasePushLockExclusiveEx
+                         4A7 KeLeaveCriticalRegion
+                          8D ExAcquirePushLockSharedEx
+                         117 ExReleasePushLockSharedEx
+                         13F ExTryConvertPushLockSharedToExclusiveEx
+                         71A PsGetProcessSecurityPort
+                         335 IoGetDeviceObjectPointer
+                         485 KeInitializeEvent
+                         2D0 IoBuildDeviceIoControlRequest
+                         40F IofCallDriver
+                         532 KeWaitForSingleObject
+                         675 ObfDereferenceObject
+                         660 ObOpenObjectByPointer
+                         2EE IoCreateDevice
+                         104 ExRegisterExtension
+                         775 PsSetCreateProcessNotifyRoutineEx2
+                         763 PsRegisterSiloMonitor
+                         729 PsGetSiloMonitorContextSlot
+                         789 PsStartSiloMonitor
+                         78F PsUnregisterSiloMonitor
+                         395 IoRegisterShutdownNotification
+                         148 ExUnregisterExtension
+                         306 IoDeleteDevice
+                         671 ObSetSecurityObjectByPointer
+                         59C MmMapLockedPagesSpecifyCache
+                         410 IofCompleteRequest
+                         34C IoGetRequestorProcess
+                         677 ObfReferenceObject
+                         360 IoIs32bitProcess
+                         ABE ZwFreeVirtualMemory
+                         AEB ZwOpenThreadTokenEx
+                         AE3 ZwOpenProcessTokenEx
+                         B09 ZwQueryInformationToken
+                         AB3 ZwDuplicateToken
+                         AB2 ZwDuplicateObject
+                         5D1 MmUserProbeAddress
+                         A6F ZwAllocateVirtualMemory
+                         744 PsIsProtectedProcess
+                         6EE PsGetCurrentProcess
+                         9BB SeExports
+                          87 ExAcquireFastMutex
+                         10F ExReleaseFastMutex
+                         507 KeSetEvent
+                         5C6 MmUnlockPagableImageSection
+                         595 MmLockPagableDataSection
+                         738 PsImpersonateClient
+                         9F0 SeTokenImpersonationLevel
+                         5F1 NtDuplicateObject
+                         730 PsGetThreadProcessId
+                         897 RtlIntegerToUnicodeString
+                         58A MmHighestUserAddress
+                         56E MmCopyVirtualMemory
+                         9E9 SeSetSessionIdTokenWithLinked
+                         B1B ZwQueryVirtualMemory
+                         665 ObReferenceObjectByHandle
+                         757 PsProcessType
+                         BC7 strcpy_s
+                          5E DbgPrintEx
+                         B90 _vsnprintf_s
+                          5D DbgPrint
+                          D7 ExInitializeLookasideListEx
+                         15A ExpInterlockedPopEntrySList
+                         15B ExpInterlockedPushEntrySList
+                          F3 ExQueryDepthSList
+                         67D PcwRegister
+                         67A PcwAddInstance
+                         6F3 PsGetCurrentServerSilo
+                         4B6 KeQueryActiveProcessorCountEx
+                         4C4 KeQueryMaximumProcessorCountEx
+                         474 KeGetCurrentProcessorNumberEx
+                         48D KeInitializeSpinLock
+                          B2 ExDeleteLookasideListEx
+                         486 KeInitializeGuardedMutex
+                         2FF IoCsqInitializeEx
+                         426 KeAcquireGuardedMutex
+                         303 IoCsqRemoveNextIrp
+                         4DE KeReleaseGuardedMutex
+                         301 IoCsqInsertIrpEx
+                         5F5 NtFreeVirtualMemory
+                         431 KeAcquireSpinLockRaiseToDpc
+                         4E8 KeReleaseSpinLock
+                          E4 ExInterlockedInsertTailList
+                          E3 ExInterlockedInsertHeadList
+                          E7 ExInterlockedRemoveHeadList
+                          74 EtwRegister
+                          77 EtwSetInformation
+                          7F EtwWriteTransfer
+                         6E1 PsCreateSiloContext
+                         740 PsIsHostSilo
+                         70A PsGetPermanentSiloContext
+                         702 PsGetHostSilo
+                         442 KeBugCheckEx
+                         73A PsInsertPermanentSiloContext
+                          F8 ExQueueWorkItem
+                         728 PsGetSiloIdentifier
+                         6F7 PsGetCurrentThreadId
+                         712 PsGetProcessId
+                         B68 __C_specific_handler
+                         7DF RtlCopyUnicodeString
+                         7DC RtlCopySid
+                         8CB RtlLengthSid
+                          A3 ExAllocatePoolWithTag
+                         BCD strncpy_s
+                         A8C ZwClose
+                         B65 ZwWaitForSingleObject
+                         AD9 ZwOpenEvent
+                         8D9 RtlMapSecurityErrorToNtStatus
+                         882 RtlInitUnicodeString
+                         BE2 wcscmp
+
+    HAL.dll
+             1C0019000 Import Address Table
+             1C0019488 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          54 KeQueryPerformanceCounter
+
+    msrpc.sys
+             1C0019010 Import Address Table
+             1C0019498 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                          36 RpcAsyncInitializeHandle
+                          34 RpcAsyncCompleteCall
+                          37 RpcBindingBind
+                          3A RpcBindingFree
+                          3F RpcBindingUnbind
+                           4 I_RpcExceptionFilter
+                          42 RpcSsDestroyClientContext
+                          39 RpcBindingCreateW
+                          16 Ndr64AsyncClientCall
+                          1A NdrClientCall3
+
+  Section contains the following exports for ksecdd.sys
+
+    00000000 characteristics
+    68502EC0 time date stamp
+        0.00 version
+           1 ordinal base
+         106 number of functions
+         106 number of names
+
+    ordinal hint RVA      name
+
+          2    0 0001BF50 AcceptSecurityContext
+          3    1 0001BC00 AcquireCredentialsHandleW
+          4    2 00020C90 AddCredentialsW
+          5    3 00020D40 ApplyControlToken
+          6    4 00002970 BCryptCloseAlgorithmProvider
+          7    5 00002080 BCryptCreateHash
+          8    6 0000D750 BCryptDecrypt
+          9    7 0000D7E0 BCryptDeriveKey
+         10    8 0000D840 BCryptDeriveKeyCapi
+         11    9 0000D890 BCryptDeriveKeyPBKDF2
+         12    A 00002160 BCryptDestroyHash
+         13    B 00002810 BCryptDestroyKey
+         14    C 0000D910 BCryptDestroySecret
+         15    D 00001330 BCryptDuplicateHash
+         16    E 000014E0 BCryptDuplicateKey
+         17    F 0000D950 BCryptEncrypt
+         18   10 0000D9E0 BCryptEnumAlgorithms
+         19   11 0000DA20 BCryptEnumProviders
+         20   12 0000DA60 BCryptExportKey
+         21   13 0000DAC0 BCryptFinalizeKeyPair
+         22   14 000020F0 BCryptFinishHash
+         23   15 0000DB00 BCryptFreeBuffer
+         24   16 00002620 BCryptGenRandom
+         25   17 0000DB30 BCryptGenerateKeyPair
+         26   18 00002850 BCryptGenerateSymmetricKey
+         27   19 0000DB70 BCryptGetFipsAlgorithmMode
+         28   1A 000025C0 BCryptGetProperty
+         29   1B 00002040 BCryptHashData
+         30   1C 000028F0 BCryptImportKey
+         31   1D 000060F0 BCryptImportKeyPair
+         32   1E 000027B0 BCryptKeyDerivation
+         33   1F 000028B0 BCryptOpenAlgorithmProvider
+         34   20 0000DBB0 BCryptRegisterConfigChangeNotify
+         35   21 0000DBF0 BCryptResolveProviders
+         36   22 0000DC60 BCryptSecretAgreement
+         37   23 00006200 BCryptSetProperty
+         38   24 0000DCA0 BCryptSignHash
+         39   25 0000DD20 BCryptUnregisterConfigChangeNotify
+         40   26 00002750 BCryptVerifySignature
+         41   27 00023430 CompleteAuthToken
+         42   28 0001B4B0 CredMarshalTargetInfo
+         43   29 0001BD90 DeleteSecurityContext
+         44   2A 00020ED0 EnumerateSecurityPackagesW
+         45   2B 00020F80 ExportSecurityContext
+         46   2C 0001B240 FreeContextBuffer
+         47   2D 0001B8F0 FreeCredentialsHandle
+         48   2E 0000CE70 GetSecurityUserInfo
+         49   2F 000234D0 ImpersonateSecurityContext
+         50   30 00021040 ImportSecurityContextW
+         51   31 00006250 InitSecurityInterfaceW
+         52   32 0001B010 InitializeSecurityContextW
+         53   33 0000C830 KSecRegisterSecurityProvider
+         54   34 0000CA80 KSecValidateBuffer
+         55   35 00020EF0 LsaEnumerateLogonSessions
+         56   36 0001B150 LsaGetLogonSessionData
+         57   37 000235B0 MakeSignature
+         58   38 00002690 MapSecurityError
+         59   39 000230F0 QueryContextAttributesW
+         60   3A 00020F10 QueryCredentialsAttributesW
+         61   3B 00023010 QuerySecurityContextToken
+         62   3C 00020F30 QuerySecurityPackageInfoW
+         63   3D 00023670 RevertSecurityContext
+         64   3E 000232A0 SealMessage
+         65   3F 0000BA80 SecLookupAccountName
+         66   40 0000BAD0 SecLookupAccountSid
+         67   41 0000BB00 SecLookupWellKnownSid
+         68   42 000216E0 SecMakeSPN
+         69   43 00021740 SecMakeSPNEx
+         70   44 0001B260 SecMakeSPNEx2
+         71   45 0000CC60 SecSetPagingMode
+         72   46 00020F50 SetCredentialsAttributesW
+         73   47 0000DD60 SslDecryptPacket
+         74   48 0000DDE0 SslEncryptPacket
+         75   49 0000DE70 SslExportKey
+         76   4A 0000DED0 SslFreeObject
+         77   4B 0000DF10 SslGetExtensions
+         78   4C 0000DF70 SslGetServerIdentity
+         79   4D 0000DFC0 SslImportKey
+         80   4E 0000E010 SslLookupCipherSuiteInfo
+         81   4F 0000E070 SslOpenProvider
+         82   50 0001DE70 SspiAcceptSecurityContextAsync
+         83   51 000217A0 SspiAcquireCredentialsHandleAsyncW
+         84   52 000090C0 SspiCompareAuthIdentities
+         85   53 000093C0 SspiCopyAuthIdentity
+         86   54 0001DDE0 SspiCreateAsyncContext
+         87   55 0001D2A0 SspiDeleteSecurityContextAsync
+         88   56 000098F0 SspiEncodeAuthIdentityAsStrings
+         89   57 0000A500 SspiEncodeStringsAsAuthIdentity
+         90   58 0001DB10 SspiFreeAsyncContext
+         91   59 00001410 SspiFreeAuthIdentity
+         92   5A 00021820 SspiFreeCredentialsHandleAsync
+         93   5B 0001DFC0 SspiGetAsyncCallStatus
+         94   5C 00021840 SspiInitializeSecurityContextAsyncW
+         95   5D 000029F0 SspiLocalFree
+         96   5E 0000AB60 SspiMarshalAuthIdentity
+         97   5F 000218C0 SspiReinitAsyncContext
+         98   60 0001DF90 SspiSetAsyncNotifyCallback
+         99   61 0000AE50 SspiUnmarshalAuthIdentity
+        100   62 0000AE70 SspiValidateAuthIdentity
+        101   63 00001480 SspiZeroAuthIdentity
+          1   64 0000D710 SystemPrng
+        102   65 0001F5B0 TokenBindingGetHighestSupportedVersion
+        103   66 0001F200 TokenBindingGetKeyTypesServer
+        104   67 000220B0 TokenBindingVerifyMessage
+        105   68 000231E0 UnsealMessage
+        106   69 000236B0 VerifySignature
+
+  Summary
+
+        1000 .data
+        1000 .edata
+        2000 .idata
+        2000 .pdata
+        7000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        E000 .text
+        1000 GFIDS
+        1000 INIT
+        8000 PAGE
+        1000 PAGEMSG
